@@ -32,11 +32,10 @@ const allTimeFavorites = [
       },
     ],
   },
-
   {
-    name: "Niggas on the Moon",
-    playcount: 1069056,
-    url: "https://www.last.fm/music/Death+Grips/Niggas+on+the+Moon",
+    name: "the powers that b",
+    playcount: 4934403,
+    url: "https://www.last.fm/music/Death+Grips/the+powers+that+b",
     artist: {
       name: "Death Grips",
       mbid: "f9133036-ab3d-4e97-bd11-7a2c98ad148a",
@@ -45,22 +44,22 @@ const allTimeFavorites = [
     image: [
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/34s/6a23b39140814db0cd83aa34bf7da500.png",
+          "https://lastfm.freetls.fastly.net/i/u/34s/3c9e7fdb97214aefca5a964c6c1240dc.png",
         size: "small",
       },
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/64s/6a23b39140814db0cd83aa34bf7da500.png",
+          "https://lastfm.freetls.fastly.net/i/u/64s/3c9e7fdb97214aefca5a964c6c1240dc.png",
         size: "medium",
       },
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/174s/6a23b39140814db0cd83aa34bf7da500.png",
+          "https://lastfm.freetls.fastly.net/i/u/174s/3c9e7fdb97214aefca5a964c6c1240dc.png",
         size: "large",
       },
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/300x300/6a23b39140814db0cd83aa34bf7da500.png",
+          "https://lastfm.freetls.fastly.net/i/u/300x300/3c9e7fdb97214aefca5a964c6c1240dc.png",
         size: "extralarge",
       },
     ],
@@ -638,33 +637,34 @@ const ladies = [
     ],
   },
   {
-    name: "Charli",
-    playcount: 12090561,
-    url: "https://www.last.fm/music/Charli+XCX/Charli",
+    name: "...and Justice for All",
+    playcount: 15674895,
+    mbid: "4dede30f-58cf-4d43-a857-b342ad7be945",
+    url: "https://www.last.fm/music/Metallica/...and+Justice+for+All",
     artist: {
-      name: "Charli XCX",
-      mbid: "260b6184-8828-48eb-945c-bc4cb6fc34ca",
-      url: "https://www.last.fm/music/Charli+XCX",
+      name: "Metallica",
+      mbid: "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+      url: "https://www.last.fm/music/Metallica",
     },
     image: [
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/34s/46990bdddbf71b485633cb920d505a34.png",
+          "https://lastfm.freetls.fastly.net/i/u/34s/bd0914dacdcda8ba23d9fc2ccb5168bf.png",
         size: "small",
       },
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/64s/46990bdddbf71b485633cb920d505a34.png",
+          "https://lastfm.freetls.fastly.net/i/u/64s/bd0914dacdcda8ba23d9fc2ccb5168bf.png",
         size: "medium",
       },
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/174s/46990bdddbf71b485633cb920d505a34.png",
+          "https://lastfm.freetls.fastly.net/i/u/174s/bd0914dacdcda8ba23d9fc2ccb5168bf.png",
         size: "large",
       },
       {
         "#text":
-          "https://lastfm.freetls.fastly.net/i/u/300x300/46990bdddbf71b485633cb920d505a34.png",
+          "https://lastfm.freetls.fastly.net/i/u/300x300/bd0914dacdcda8ba23d9fc2ccb5168bf.png",
         size: "extralarge",
       },
     ],
