@@ -1,10 +1,11 @@
 import "./App.css";
-import LASTFM_API from "./LASTFM_API";
+import { allAlbums } from "./Example.js";
+import Toppings from "./Toppings";
 
 function App() {
   return (
     <div className='App'>
-      <LASTFM_API />
+      <Toppings albums={allAlbums} />
     </div>
   );
 }
