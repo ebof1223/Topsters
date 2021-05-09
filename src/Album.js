@@ -1,7 +1,20 @@
 import React from "react";
 import "./styles/Album.css";
-import { spotifySVG } from "./svgs";
-export default function Album({ cover, album, artist }) {
+import { spotifySVG, appleSVG, youtubeSVG } from "./svgs";
+export default function Album({ cover, album, musicProvider }) {
+  const generateMusicProviderSVG = (value) => {
+    switch (value) {
+      case "spotify":
+        return <div className='social-links'>{spotifySVG}</div>;
+      case "applemusic":
+        return <div className='social-links'>{appleSVG}</div>;
+      case "youtube":
+        return <div className='social-links'>{youtubeSVG}</div>;
+      default:
+        break;
+    }
+  };
+
   return (
     <div
       style={{
@@ -13,7 +26,7 @@ export default function Album({ cover, album, artist }) {
         <div className='album-content'>
           <span>{album}</span>
         </div>
-        <div className='social-links'>{spotifySVG}</div>
+        {generateMusicProviderSVG(musicProvider)}
       </div>
     </div>
   );
