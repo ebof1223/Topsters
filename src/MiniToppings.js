@@ -13,15 +13,20 @@ const styles = {
       cursor: "pointer",
     },
   },
-  colors: {
-    backgroundColor: "grey",
+  albums: {
+    backgroundColor: "#dae1e4",
+    borderRadius: "5px",
+    height: "150px",
+    width: "100%",
+    overflow: "hidden",
   },
   title: {
     display: "flex",
     justifyContent: "space-between",
+    margin: "0",
     alignItems: "center",
     color: "black",
-    paddingTop: "0,5rem",
+    paddingTop: "0.5rem",
     fontSize: "1rem",
     position: "relative",
   },
@@ -29,14 +34,31 @@ const styles = {
     marginLeft: "0.5rem",
     fontSize: "1.5rem",
   },
+  miniToppings: {
+    height: "25%",
+    width: "20%",
+    display: "inline-block",
+    margin: "0 auto",
+    position: "relative",
+    marginBottom: "-3.5px",
+  },
 };
 
 function MiniToppings(props) {
-  const { classes, title } = props;
+  const { classes, title, albums } = props;
+  const miniToppings = albums.map((item) => (
+    <div
+      className={classes.miniToppings}
+      style={{
+        background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
+      }}
+      key={item.name}
+    ></div>
+  ));
 
   return (
     <div className={classes.root}>
-      <div className={classes.albums} />
+      <div className={classes.albums}>{miniToppings}</div>
       <h5 className={classes.title}>
         {title} <span className={classes.avatar}>🙈</span>
       </h5>
