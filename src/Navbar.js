@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -15,7 +16,7 @@ export default function Navbar({
   return (
     <header className='Navbar'>
       <div className='logo'>
-        <a href='#'>toppings</a>
+        <Link to={"/"}>toppings</Link>
       </div>
       <div className='select-container'>
         <Select onChange={handleMusicProviderChange} value={musicProvider}>
