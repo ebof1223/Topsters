@@ -2,8 +2,15 @@ import React, { useState } from "react";
 import Album from "./Album";
 import "./styles/Toppings.css";
 import Navbar from "./Navbar";
+
 export default function Toppings(props) {
   const [musicProvider, setMusicProvider] = useState("spotify");
+  const [open, setOpen] = useState(false);
+
+  const handleMusicProviderChange = (e) => {
+    setMusicProvider(e.target.value);
+    setOpen(!open);
+  };
 
   const albumComponents = props.albums.map((item) => (
     <Album
@@ -19,7 +26,9 @@ export default function Toppings(props) {
   return (
     <div className='Toppings'>
       <Navbar
-        handleChange={(e) => setMusicProvider(e.target.value)}
+        open={open}
+        setOpen={setOpen}
+        handleMusicProviderChange={handleMusicProviderChange}
         musicProvider={musicProvider}
       />
       <div className='Toppings-albums'>{albumComponents}</div>
