@@ -1,6 +1,7 @@
 import React from "react";
 import Album from "./Album";
 import "./styles/Toppings.css";
+import Navbar from "./Navbar";
 export default function Toppings(props) {
   const albumComponents = props.albums.map((item) => (
     <Album
@@ -14,7 +15,7 @@ export default function Toppings(props) {
 
   return (
     <div className='Toppings'>
-      {/* Navbar  */}
+      <Navbar />
       <div className='Toppings-albums'>{albumComponents}</div>
       {/* Footer */}
     </div>

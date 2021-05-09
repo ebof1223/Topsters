@@ -18,16 +18,15 @@
   position: absolute;
   display: inline-block;
   margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
+  bottom: 0;
+  right: 0;
+  margin-right: 0.25rem;
   opacity: 0;
 }
 
 .spotify-btn {
-  height: 100px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
 }
 
 .lastfm-btn {
