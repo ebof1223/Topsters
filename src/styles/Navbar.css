@@ -1,0 +1,23 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6vh;
+}
+
+.logo {
+  margin-right: 1rem;
+  padding: 0 1rem;
+  background: #eceff1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
