@@ -4,7 +4,7 @@ export default function Album({ cover, album, artist }) {
   return (
     <div
       style={{
-        background: `url(${cover}) no-repeat`,
+        background: `url(${cover}) no-repeat center center/cover`,
       }}
       className='Album'
     >
