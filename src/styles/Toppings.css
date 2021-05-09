@@ -1,7 +1,19 @@
 .Toppings {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .Toppings-albums {
   height: 90%;
+}
+
+.Toppings-footer {
+  background-color: white;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+  font-weight: bold;
 }

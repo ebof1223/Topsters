@@ -6,13 +6,14 @@ import Navbar from "./Navbar";
 export default function Toppings(props) {
   const [musicProvider, setMusicProvider] = useState("spotify");
   const [open, setOpen] = useState(false);
+  const { title, albums } = props;
 
   const handleMusicProviderChange = (e) => {
     setMusicProvider(e.target.value);
     setOpen(!open);
   };
 
-  const albumComponents = props.albums.map((item) => (
+  const albumComponents = albums.map((item) => (
     <Album
       album={item.name}
       artist={item.artist.name}
@@ -32,7 +33,7 @@ export default function Toppings(props) {
         musicProvider={musicProvider}
       />
       <div className='Toppings-albums'>{albumComponents}</div>
-      {/* Footer */}
+      <footer className='Toppings-footer'>{title}</footer>
     </div>
   );
 }
