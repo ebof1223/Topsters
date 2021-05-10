@@ -41,7 +41,9 @@ function Navbar({
   return (
     <header className={classes.Navbar}>
       <div className={classes.logo}>
-        <Link to={"/"}>toppings</Link>
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          toppings
+        </Link>
       </div>
       <div className={classes.selectContainer}>
         <Select onChange={handleMusicProviderChange} value={musicProvider}>

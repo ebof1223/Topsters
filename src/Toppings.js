@@ -36,7 +36,6 @@ function Toppings(props) {
 
   const albumComponents = albums.map((item) => (
     <Album
-      album={item.name}
       artist={item.artist.name}
       key={item.artist.mbid}
       url={item.url}

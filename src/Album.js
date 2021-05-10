@@ -41,7 +41,7 @@ const styles = {
   },
 };
 
-function Album({ cover, album, musicProvider, classes }) {
+function Album({ cover, musicProvider, classes }) {
   const generateMusicProviderSVG = (value) => {
     switch (value) {
       case "spotify":
@@ -63,9 +63,7 @@ function Album({ cover, album, musicProvider, classes }) {
       className={classes.Album}
     >
       <div>
-        <div className={classes.boxContent}>
-          <span>{album}</span>
-        </div>
+        <div className={classes.boxContent}></div>
         {generateMusicProviderSVG(musicProvider)}
       </div>
     </div>
