@@ -57,7 +57,7 @@ function MiniToppings(props) {
   ));
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} onClick={props.handleClick}>
       <div className={classes.albums}>{miniToppings}</div>
       <h5 className={classes.title}>
         {title} <span className={classes.avatar}>🙈</span>

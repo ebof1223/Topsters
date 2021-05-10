@@ -40,6 +40,7 @@ const defaultToppings = [
       },
       {
         name: "the powers that b",
+        mbid: uuidv4(),
         playcount: 4934403,
         url: "https://www.last.fm/music/Death+Grips/the+powers+that+b",
         artist: {
@@ -106,6 +107,7 @@ const defaultToppings = [
       },
       {
         name: "Titanic Rising",
+        mbid: uuidv4(),
         playcount: 7404799,
         url: "https://www.last.fm/music/Weyes+Blood/Titanic+Rising",
         artist: {
@@ -204,6 +206,7 @@ const defaultToppings = [
       },
       {
         name: "You Won't Get What You Want",
+        mbid: uuidv4(),
         playcount: 3245202,
         url:
           "https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want",
@@ -506,6 +509,7 @@ const defaultToppings = [
       },
       {
         name: "Chemtrails Over the Country Club",
+        mbid: uuidv4(),
         playcount: 8432214,
         url:
           "https://www.last.fm/music/Lana+Del+Rey/Chemtrails+Over+the+Country+Club",
@@ -540,6 +544,7 @@ const defaultToppings = [
 
       {
         name: "Retired from Sad, New Career in Business",
+        mbid: uuidv4(),
         playcount: 3508679,
         url:
           "https://www.last.fm/music/Mitski/Retired+from+Sad,+New+Career+in+Business",
@@ -574,6 +579,7 @@ const defaultToppings = [
 
       {
         name: "magdalene",
+        mbid: uuidv4(),
         playcount: 9302724,
         url: "https://www.last.fm/music/FKA+twigs/magdalene",
         artist: {
@@ -678,6 +684,7 @@ const defaultToppings = [
     albums: [
       {
         name: "To Pimp a Butterfly",
+        mbid: uuidv4(),
         playcount: 32553793,
         url: "https://www.last.fm/music/Kendrick+Lamar/To+Pimp+a+Butterfly",
         artist: {
@@ -709,35 +716,35 @@ const defaultToppings = [
         ],
       },
       {
-        name: "My Beautiful Dark Twisted Fantasy",
-        playcount: 52945554,
-        mbid: "cd7d8c81-d519-4149-8cd0-ade722ad19b9",
+        name: "Plastic Surgery Disasters/In God We Trust, Inc.",
+        mbid: uuidv4(),
+        playcount: 1293488,
         url:
-          "https://www.last.fm/music/Kanye+West/My+Beautiful+Dark+Twisted+Fantasy",
+          "https://www.last.fm/music/Dead+Kennedys/Plastic+Surgery+Disasters%2FIn+God+We+Trust,+Inc.",
         artist: {
-          name: "Kanye West",
-          mbid: "164f0d73-1234-4e2c-8743-d77bf2191051",
-          url: "https://www.last.fm/music/Kanye+West",
+          name: "Dead Kennedys",
+          mbid: "37c78aeb-d196-42b5-b991-6afb4fc9bc2e",
+          url: "https://www.last.fm/music/Dead+Kennedys",
         },
         image: [
           {
             "#text":
-              "https://lastfm.freetls.fastly.net/i/u/34s/2adfa022aa7db053a2961b6948adc8ac.png",
+              "https://lastfm.freetls.fastly.net/i/u/34s/5fd6ead77cb746d8c643f3d01fab9274.png",
             size: "small",
           },
           {
             "#text":
-              "https://lastfm.freetls.fastly.net/i/u/64s/2adfa022aa7db053a2961b6948adc8ac.png",
+              "https://lastfm.freetls.fastly.net/i/u/64s/5fd6ead77cb746d8c643f3d01fab9274.png",
             size: "medium",
           },
           {
             "#text":
-              "https://lastfm.freetls.fastly.net/i/u/174s/2adfa022aa7db053a2961b6948adc8ac.png",
+              "https://lastfm.freetls.fastly.net/i/u/174s/5fd6ead77cb746d8c643f3d01fab9274.png",
             size: "large",
           },
           {
             "#text":
-              "https://lastfm.freetls.fastly.net/i/u/300x300/2adfa022aa7db053a2961b6948adc8ac.png",
+              "https://lastfm.freetls.fastly.net/i/u/300x300/5fd6ead77cb746d8c643f3d01fab9274.png",
             size: "extralarge",
           },
         ],

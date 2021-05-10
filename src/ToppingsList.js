@@ -36,6 +36,10 @@ const styles = {
 };
 
 function ToppingsList(props) {
+  const goToToppings = (id) => {
+    props.history.push(`/toppings/${id}`);
+  };
+
   const { classes, toppings } = props;
   return (
     <div className={classes.root}>
@@ -45,7 +49,7 @@ function ToppingsList(props) {
         </nav>
         <div className={classes.albums}>
           {toppings.map((item) => (
-            <MiniToppings {...item} />
+            <MiniToppings {...item} handleClick={() => goToToppings(item.id)} />
           ))}
         </div>
       </div>

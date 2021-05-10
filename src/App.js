@@ -16,7 +16,9 @@ function App() {
       <Route
         exact
         path='/'
-        render={() => <ToppingsList toppings={defaultToppings} />}
+        render={(routeProps) => (
+          <ToppingsList toppings={defaultToppings} {...routeProps} />
+        )}
       />
       <Route
         exact
