@@ -1,12 +1,33 @@
 import React, { useState } from "react";
+import { withStyles } from "@material-ui/styles";
 import Album from "./Album";
-import "./styles/Toppings.css";
 import Navbar from "./Navbar";
 
-export default function Toppings(props) {
+const styles = {
+  Toppings: {
+    height: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  },
+  ToppingsAlbums: {
+    height: "90%",
+  },
+
+  ToppingsFooter: {
+    backgroundColor: "white",
+    height: "5vh",
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    marginRight: "1rem",
+    fontWeight: "bold",
+  },
+};
+
+function Toppings(props) {
   const [musicProvider, setMusicProvider] = useState("spotify");
   const [open, setOpen] = useState(false);
-  const { title, albums } = props;
+  const { title, albums, classes } = props;
 
   const handleMusicProviderChange = (e) => {
     setMusicProvider(e.target.value);
@@ -25,15 +46,17 @@ export default function Toppings(props) {
   ));
 
   return (
-    <div className='Toppings'>
+    <div className={classes.Toppings}>
       <Navbar
         open={open}
         setOpen={setOpen}
         handleMusicProviderChange={handleMusicProviderChange}
         musicProvider={musicProvider}
       />
-      <div className='Toppings-albums'>{albumComponents}</div>
-      <footer className='Toppings-footer'>{title}</footer>
+      <div className={classes.ToppingsAlbums}>{albumComponents}</div>
+      <footer className={classes.ToppingsFooter}>{title}</footer>
     </div>
   );
 }
+
+export default withStyles(styles)(Toppings);
