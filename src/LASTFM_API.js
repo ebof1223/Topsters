@@ -23,18 +23,7 @@ const styles = {
 const LASTFM_API = ({ classes }) => {
   const [userSearch, setUserSearch] = React.useState("");
   const [results, setResults] = React.useState("");
-
-  const appendHiddenAlbums = (resultsArray) => {
-    var albumPlaceholder = <div className={classes.Album}></div>;
-    if (!resultsArray.length) return;
-    if (resultsArray.length % 3) {
-      if ((!results.length + 2) % 3) {
-        setResults([...results, albumPlaceholder, albumPlaceholder]);
-      } else if ((!results.length + 1) % 3) {
-        setResults([...results, albumPlaceholder]);
-      }
-    }
-  };
+  console.log(results);
 
   const getDiscography = async (artist) => {
     setResults("");
@@ -55,7 +44,7 @@ const LASTFM_API = ({ classes }) => {
               style={{
                 background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
               }}
-              key={res.data.topalbums.album.name}
+              key={item.name}
               className={classes.Album}
             ></div>
           ))

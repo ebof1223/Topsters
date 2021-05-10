@@ -13,7 +13,6 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { Link } from "react-router-dom";
 import LASTFM_API from "./LASTFM_API";
 
-//305
 const drawerWidth = 500;
 
 const useStyles = makeStyles((theme) => ({
@@ -73,59 +72,72 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function NewToppingsForm() {
+  //need 10 albums as sample data to test the toppigns grid
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  // const [userToppings, setUserToppings] = React.useState();
 
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar
-        position='fixed'
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}
-      >
-        <Toolbar>
-          <IconButton
-            color='inherit'
-            aria-label='open drawer'
-            onClick={() => setOpen(!open)}
-            edge='start'
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant='h6' noWrap>
-            <Link to={"/"} style={{ textDecoration: "none" }}>
-              toppings
-            </Link>
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        className={classes.drawer}
-        variant='persistent'
-        anchor='left'
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={() => setOpen(!open)}>
-            <ChevronLeftIcon />
-          </IconButton>
-        </div>
-        <Divider />
-        <LASTFM_API />
-      </Drawer>
-      <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: open,
-        })}
-      >
-        <div className={classes.drawerHeader} />
-      </main>
-    </div>
+    <>
+      <div className={classes.root}>
+        <CssBaseline />
+        <AppBar
+          position='fixed'
+          className={clsx(classes.appBar, {
+            [classes.appBarShift]: open,
+          })}
+        >
+          <Toolbar>
+            <IconButton
+              color='inherit'
+              aria-label='open drawer'
+              onClick={() => setOpen(!open)}
+              edge='start'
+              className={clsx(classes.menuButton, open && classes.hide)}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant='h6' noWrap>
+              <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
+                toppings
+              </Link>
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          className={classes.drawer}
+          variant='persistent'
+          anchor='left'
+          open={open}
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.drawerHeader}>
+            <IconButton onClick={() => setOpen(!open)}>
+              <ChevronLeftIcon />
+            </IconButton>
+          </div>
+          <Divider />
+          <LASTFM_API />
+        </Drawer>
+        <main
+          className={clsx(classes.content, {
+            [classes.contentShift]: open,
+          })}
+        >
+          <div className={classes.drawerHeader} />
+        </main>
+      </div>
+      <div className={classes.test}>
+        <div
+          style={{
+            background: `url("https://lastfm.freetls.fastly.net/i/u/34s/2ed343318c844d19cd897ec67fad11c4.png) no-repeat center center/cover`,
+            width: "500px",
+            height: "500px",
+          }}
+        />
+      </div>
+    </>
   );
 }
