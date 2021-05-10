@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const defaultToppings = [
   {
-    title: "This is a toppings title test but no really these are the best",
+    title: "test1",
     id: "default1",
     albums: [
       {
@@ -679,7 +679,7 @@ const defaultToppings = [
     ],
   },
   {
-    title: "More records that I think are top notch!",
+    title: "test2",
     id: "default2",
     albums: [
       {

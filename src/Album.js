@@ -1,15 +1,55 @@
 import React from "react";
-import "./styles/Album.css";
+import { withStyles } from "@material-ui/styles";
 import { spotifySVG, appleSVG, youtubeSVG } from "./svgs";
-export default function Album({ cover, album, musicProvider }) {
+
+const styles = {
+  Album: {
+    width: "20%",
+    height: "25%",
+    margin: "0 auto",
+    display: "inline-block",
+    position: "relative",
+    cursor: "pointer",
+    marginBottom: "-3.5px",
+    "&:hover div": {
+      opacity: 1,
+      transition: "0.5s",
+    },
+  },
+  boxContent: {
+    position: "absolute",
+    width: "100%",
+    left: 0,
+    bottom: 0,
+    padding: " 10px",
+    color: "black",
+    letterSpacing: "1px",
+    textTransform: "uppercase",
+    fontSize: "0.7rem",
+  },
+  links: {
+    position: "absolute",
+    display: "inline-block",
+    margin: "0 auto",
+    bottom: 0,
+    right: 0,
+    marginRight: "0.25rem",
+    marginBottom: "0.25rem",
+    opacity: 0,
+    height: "25px",
+    width: "25px",
+  },
+};
+
+function Album({ cover, album, musicProvider, classes }) {
   const generateMusicProviderSVG = (value) => {
     switch (value) {
       case "spotify":
-        return <div className='social-links'>{spotifySVG}</div>;
+        return <div className={classes.links}>{spotifySVG}</div>;
       case "applemusic":
-        return <div className='social-links'>{appleSVG}</div>;
+        return <div className={classes.links}>{appleSVG}</div>;
       case "youtube":
-        return <div className='social-links'>{youtubeSVG}</div>;
+        return <div className={classes.links}>{youtubeSVG}</div>;
       default:
         break;
     }
@@ -20,10 +60,10 @@ export default function Album({ cover, album, musicProvider }) {
       style={{
         background: `url(${cover}) no-repeat center center/cover`,
       }}
-      className='Album'
+      className={classes.Album}
     >
       <div>
-        <div className='album-content'>
+        <div className={classes.boxContent}>
           <span>{album}</span>
         </div>
         {generateMusicProviderSVG(musicProvider)}
@@ -31,3 +71,5 @@ export default function Album({ cover, album, musicProvider }) {
     </div>
   );
 }
+
+export default withStyles(styles)(Album);

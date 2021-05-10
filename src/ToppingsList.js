@@ -24,6 +24,7 @@ const styles = {
     width: "100%",
     justifyContent: "space-between",
     color: "white",
+    padding: "1rem",
   },
 
   albums: {
