@@ -1,24 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withStyles } from "@material-ui/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import Snackbar from "@material-ui/core/Snackbar";
 import IconButton from "@material-ui/core/IconButton";
 import DoneIcon from "@material-ui/icons/Done";
-import "./styles/Navbar.css";
 
-export default function Navbar({
+const styles = {
+  Navbar: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    height: "6vh",
+  },
+
+  logo: {
+    marginRight: "1rem",
+    padding: "0 1rem",
+    background: "#eceff1",
+    fontFamily:
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, OxygenUbuntu, Cantarell,'Open Sans', 'Helvetica Neue',sans-serif",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+  },
+
+  selectContainer: {
+    marginRight: "1rem",
+  },
+};
+
+function Navbar({
   handleMusicProviderChange,
   musicProvider,
   open,
   setOpen,
+  classes,
 }) {
   return (
-    <header className='Navbar'>
-      <div className='logo'>
+    <header className={classes.Navbar}>
+      <div className={classes.logo}>
         <Link to={"/"}>toppings</Link>
       </div>
-      <div className='select-container'>
+      <div className={classes.selectContainer}>
         <Select onChange={handleMusicProviderChange} value={musicProvider}>
           <MenuItem value='spotify'>Spotify</MenuItem>
           <MenuItem value='applemusic'>Apple Music</MenuItem>
@@ -43,3 +68,5 @@ export default function Navbar({
     </header>
   );
 }
+
+export default withStyles(styles)(Navbar);
