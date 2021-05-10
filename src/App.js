@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { defaultToppings } from "./Example.js";
 import Toppings from "./Toppings";
 import ToppingsList from "./ToppingsList";
+import NewToppingsForm from "./NewToppingsForm";
 
 function App() {
   const findToppings = (id) => {
@@ -13,6 +14,11 @@ function App() {
 
   return (
     <Switch>
+      <Route
+        exact
+        path='/toppings/new'
+        render={(routeProps) => <NewToppingsForm {...routeProps} />}
+      />
       <Route
         exact
         path='/'

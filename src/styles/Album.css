@@ -1,10 +1,10 @@
-/* Hover classes, will be togglable */
+/* Hover classes, will be togglable
 .Album:hover .social-links {
   opacity: 1;
   transition: 0.5s;
 }
 
-/* .social-links {
+.social-links {
   position: absolute;
   display: inline-block;
   margin: 0 auto;
@@ -12,14 +12,14 @@
   right: 0;
   margin-right: 0.25rem;
   opacity: 0;
-} */
+}
 
-/* .spotify-btn {
+.spotify-btn {
   height: 25px;
   width: 25px;
-} */
+}
 
-/* .album-content {
+.album-content {
   position: absolute;
   width: 100%;
   left: 0;

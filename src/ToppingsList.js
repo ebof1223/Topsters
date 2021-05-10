@@ -1,6 +1,9 @@
 import React from "react";
 import MiniToppings from "./MiniToppings";
 import { withStyles } from "@material-ui/styles";
+import Fab from "@material-ui/core/Fab";
+import AddIcon from "@material-ui/icons/Add";
+import { Link } from "react-router-dom";
 
 const styles = {
   root: {
@@ -47,6 +50,11 @@ function ToppingsList(props) {
       <div className={classes.container}>
         <nav className={classes.nav}>
           <h1>Toppings List</h1>
+          <Link to={"/toppings/new"}>
+            <Fab color='white' aria-label='add' size='small'>
+              <AddIcon />
+            </Fab>
+          </Link>
         </nav>
         <div className={classes.albums}>
           {toppings.map((item) => (
