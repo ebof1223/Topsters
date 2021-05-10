@@ -10,8 +10,11 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import { Link } from "react-router-dom";
+import LASTFM_API from "./LASTFM_API";
 
-const drawerWidth = 400;
+//305
+const drawerWidth = 500;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -93,7 +96,9 @@ export default function NewToppingsForm() {
             <MenuIcon />
           </IconButton>
           <Typography variant='h6' noWrap>
-            Persistent drawer
+            <Link to={"/"} style={{ textDecoration: "none" }}>
+              toppings
+            </Link>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -112,6 +117,7 @@ export default function NewToppingsForm() {
           </IconButton>
         </div>
         <Divider />
+        <LASTFM_API />
       </Drawer>
       <main
         className={clsx(classes.content, {

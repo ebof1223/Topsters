@@ -51,14 +51,18 @@ function ToppingsList(props) {
         <nav className={classes.nav}>
           <h1>Toppings List</h1>
           <Link to={"/toppings/new"}>
-            <Fab color='white' aria-label='add' size='small'>
+            <Fab color='inherit' aria-label='add' size='small'>
               <AddIcon />
             </Fab>
           </Link>
         </nav>
         <div className={classes.albums}>
           {toppings.map((item) => (
-            <MiniToppings {...item} handleClick={() => goToToppings(item.id)} />
+            <MiniToppings
+              {...item}
+              key={item.id}
+              handleClick={() => goToToppings(item.id)}
+            />
           ))}
         </div>
       </div>
@@ -67,5 +71,3 @@ function ToppingsList(props) {
 }
 
 export default withStyles(styles)(ToppingsList);
-
-/* <Link to={`/toppings/${item.id}`}>{item.title}</Link> */

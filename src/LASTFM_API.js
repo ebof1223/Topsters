@@ -1,26 +1,71 @@
-//test
-// http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=mitski&api_key=831b8cd6b674bc8b0ddd4d8a7ea249e5&format=json
-
 import React from "react";
 import axios from "axios";
+import { withStyles } from "@material-ui/styles";
 import { LASTFM_API_KEY } from "./sensitive";
 const LASTFM_API_URL = "http://ws.audioscrobbler.com/2.0/";
 
-export default function LASTFM_API() {
+const styles = {
+  resultsContainer: {
+    width: "100%",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  },
+  Album: {
+    backgroundColor: "#dae1e4",
+    borderRadius: "5px",
+    height: "150px",
+    width: "150px",
+    overflow: "hidden",
+  },
+};
+
+const LASTFM_API = ({ classes }) => {
   const [userSearch, setUserSearch] = React.useState("");
+  const [results, setResults] = React.useState("");
+
+  const appendHiddenAlbums = (resultsArray) => {
+    var albumPlaceholder = <div className={classes.Album}></div>;
+    if (!resultsArray.length) return;
+    if (resultsArray.length % 3) {
+      if ((!results.length + 2) % 3) {
+        setResults([...results, albumPlaceholder, albumPlaceholder]);
+      } else if ((!results.length + 1) % 3) {
+        setResults([...results, albumPlaceholder]);
+      }
+    }
+  };
 
   const getDiscography = async (artist) => {
+    setResults("");
     await axios
       .get(
         `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${LASTFM_API_KEY}&format=json`
       )
       .then((res) => {
-        console.log(res.data.topalbums.album);
+        let albumsArray = res.data.topalbums.album.filter(
+          (item) => item.image[3]["#text"]
+        );
+        while (albumsArray.length % 3 !== 0) {
+          albumsArray.splice(albumsArray.length - 1, 1);
+        }
+        setResults(
+          albumsArray.map((item) => (
+            <div
+              style={{
+                background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
+              }}
+              key={res.data.topalbums.album.name}
+              className={classes.Album}
+            ></div>
+          ))
+        );
       });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    return getDiscography(userSearch);
+    getDiscography(userSearch);
+    setUserSearch("");
   };
 
   return (
@@ -38,6 +83,9 @@ export default function LASTFM_API() {
         ></input>
         <button>Search</button>
       </form>
+      <div className={classes.resultsContainer}>{results}</div>
     </>
   );
-}
+};
+
+export default withStyles(styles)(LASTFM_API);
