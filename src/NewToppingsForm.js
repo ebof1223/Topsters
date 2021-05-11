@@ -82,16 +82,13 @@ export default function NewToppingsForm({ saveToppings, history }) {
   console.log(userToppings);
 
   const handleSubmit = () => {
-    // generate new object for each submission with uniqe name and id
-    //drag and dropb to update userToppings
-    // let newName = 'new test name';
-    // const newToppings = {
-    //   title: newName,
-    //   id: newName.toLowerCase().replace(/ /g, "-"),
-    //   albums: userToppings
-    // }
-    // saveToppings(newToppings)
-    saveToppings(userToppings);
+    let newName = "new test name";
+    const newToppings = {
+      title: newName,
+      id: newName.toLowerCase().replace(/ /g, "-"),
+      albums: userToppings,
+    };
+    saveToppings(newToppings);
     history.push("/");
   };
 
