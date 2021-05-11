@@ -79,7 +79,7 @@ export default function NewToppingsForm({ saveToppings, history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [userToppings, setUserToppings] = React.useState([]);
-  // console.log(userToppings);
+  console.log(userToppings);
 
   const handleSubmit = () => {
     // generate new object for each submission with uniqe name and id
@@ -153,11 +153,9 @@ export default function NewToppingsForm({ saveToppings, history }) {
         >
           <div className={classes.drawerHeader} />
           {/* useToppings go here */}
-          {/* <ul>
-            {userToppings.toppings.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>{" "} */}
+          {userToppings.map((item) => (
+            <DraggableAlbum cover={item.image[3]["#text"]} />
+          ))}
         </main>
       </div>
     </>

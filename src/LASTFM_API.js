@@ -26,8 +26,7 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   const [results, setResults] = useState([]);
 
   const addToToppings = (itemIdx) => {
-    // setUserToppings([...userToppings, results[itemIdx]]);
-    console.log(results[itemIdx]);
+    setUserToppings([...userToppings, results[itemIdx]]);
   };
   const getDiscography = async (artist) => {
     setResults([]);
