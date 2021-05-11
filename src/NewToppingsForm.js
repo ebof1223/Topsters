@@ -78,9 +78,19 @@ const useStyles = makeStyles((theme) => ({
 export default function NewToppingsForm({ saveToppings, history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [userToppings, setUserToppings] = React.useState(defaultToppings[0]);
+  const [userToppings, setUserToppings] = React.useState([]);
+  console.log(userToppings);
 
   const handleSubmit = () => {
+    // generate new object for each submission with uniqe name and id
+    //drag and dropb to update userToppings
+    // let newName = 'new test name';
+    // const newToppings = {
+    //   title: newName,
+    //   id: newName.toLowerCase().replace(/ /g, "-"),
+    //   albums: userToppings
+    // }
+    // saveToppings(newToppings)
     saveToppings(userToppings);
     history.push("/");
   };
@@ -131,7 +141,10 @@ export default function NewToppingsForm({ saveToppings, history }) {
             </IconButton>
           </div>
           <Divider />
-          <LASTFM_API />
+          <LASTFM_API
+            setUserToppings={setUserToppings}
+            userToppings={userToppings}
+          />
         </Drawer>
         <main
           className={clsx(classes.content, {
@@ -140,9 +153,11 @@ export default function NewToppingsForm({ saveToppings, history }) {
         >
           <div className={classes.drawerHeader} />
           {/* useToppings go here */}
-          {userToppings.albums.map((item) => (
-            <DraggableAlbum cover={item.image[3]["#text"]} />
-          ))}
+          {/* <ul>
+            {userToppings.toppings.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>{" "} */}
         </main>
       </div>
     </>

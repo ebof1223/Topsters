@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import axios from "axios";
 import { withStyles } from "@material-ui/styles";
 import { LASTFM_API_KEY } from "./sensitive";
@@ -20,10 +21,14 @@ const styles = {
   },
 };
 
-const LASTFM_API = ({ classes }) => {
-  const [userSearch, setUserSearch] = React.useState("");
-  const [results, setResults] = React.useState("");
+const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
+  const [userSearch, setUserSearch] = useState("");
+  const [results, setResults] = useState("");
 
+  const addToToppings = (itemIdx) => {
+    console.log(results[itemIdx]);
+    setUserToppings([...userToppings, results[itemIdx]]);
+  };
   const getDiscography = async (artist) => {
     setResults("");
     await axios
@@ -38,13 +43,15 @@ const LASTFM_API = ({ classes }) => {
           albumsArray.splice(albumsArray.length - 1, 1);
         }
         setResults(
-          albumsArray.map((item) => (
+          albumsArray.map((item, index) => (
             <div
               style={{
                 background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
               }}
               key={item.name}
               className={classes.Album}
+              onDoubleClick={(e) => addToToppings(e.target.dataset.index)}
+              data-index={index}
             ></div>
           ))
         );
