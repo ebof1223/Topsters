@@ -10,9 +10,11 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import LASTFM_API from "./LASTFM_API";
 import DraggableAlbum from "./DraggableAlbum";
+import { defaultToppings } from "./Example";
 
 const drawerWidth = 500;
 
@@ -73,17 +75,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NewToppingsForm() {
-  //need 10 albums as sample data to test the toppigns grid
+export default function NewToppingsForm({ saveToppings, history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  // const [userToppings, setUserToppings] = React.useState();
-  const test = new Array(20).fill(0);
+  const [userToppings, setUserToppings] = React.useState(defaultToppings[0]);
+
+  const handleSubmit = () => {
+    saveToppings(userToppings);
+    history.push("/");
+  };
+
   return (
     <>
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
+          color='inherit'
           position='fixed'
           className={clsx(classes.appBar, {
             [classes.appBarShift]: open,
@@ -100,10 +107,13 @@ export default function NewToppingsForm() {
               <MenuIcon />
             </IconButton>
             <Typography variant='h6' noWrap>
-              <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
+              <Link to={"/"} style={{ textDecoration: "none" }}>
                 toppings
               </Link>
             </Typography>
+            <Button variant='contained' color='primary' onClick={handleSubmit}>
+              Save
+            </Button>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -130,12 +140,8 @@ export default function NewToppingsForm() {
         >
           <div className={classes.drawerHeader} />
           {/* useToppings go here */}
-          {test.map(() => (
-            <DraggableAlbum
-              cover={
-                "https://lastfm.freetls.fastly.net/i/u/300x300/3c9e7fdb97214aefca5a964c6c1240dc.png"
-              }
-            />
+          {userToppings.albums.map((item) => (
+            <DraggableAlbum cover={item.image[3]["#text"]} />
           ))}
         </main>
       </div>
