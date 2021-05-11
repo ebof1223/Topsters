@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { withStyles } from "@material-ui/styles";
 import { LASTFM_API_KEY } from "./sensitive";
@@ -25,9 +25,13 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   const [userSearch, setUserSearch] = useState("");
   const [results, setResults] = useState("");
 
+  useEffect(() => {
+    console.log(results, "in useEffect");
+  }, [results]);
+
   const addToToppings = (itemIdx) => {
-    console.log(results[itemIdx]);
-    setUserToppings([...userToppings, results[itemIdx]]);
+    console.log(results);
+    // setUserToppings([...userToppings, results[itemIdx]]);
   };
   const getDiscography = async (artist) => {
     setResults("");
@@ -50,7 +54,7 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
               }}
               key={item.name}
               className={classes.Album}
-              onDoubleClick={(e) => addToToppings(e.target.dataset.index)}
+              onClick={(e) => addToToppings(e.target.dataset.index)}
               data-index={index}
             ></div>
           ))
@@ -78,6 +82,7 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
         ></input>
         <button>Search</button>
       </form>
+      {console.log(results, "in render")}
       <div className={classes.resultsContainer}>{results}</div>
     </>
   );
