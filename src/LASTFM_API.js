@@ -23,7 +23,6 @@ const styles = {
 const LASTFM_API = ({ classes }) => {
   const [userSearch, setUserSearch] = React.useState("");
   const [results, setResults] = React.useState("");
-  console.log(results);
 
   const getDiscography = async (artist) => {
     setResults("");

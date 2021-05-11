@@ -12,6 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { Link } from "react-router-dom";
 import LASTFM_API from "./LASTFM_API";
+import DraggableAlbum from "./DraggableAlbum";
 
 const drawerWidth = 500;
 
@@ -54,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
   },
   content: {
+    height: "calc(100vh - 64px)",
     flexGrow: 1,
     padding: theme.spacing(3),
     transition: theme.transitions.create("margin", {
@@ -76,7 +78,7 @@ export default function NewToppingsForm() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   // const [userToppings, setUserToppings] = React.useState();
-
+  const test = new Array(20).fill(0);
   return (
     <>
       <div className={classes.root}>
@@ -127,16 +129,15 @@ export default function NewToppingsForm() {
           })}
         >
           <div className={classes.drawerHeader} />
+          {/* useToppings go here */}
+          {test.map(() => (
+            <DraggableAlbum
+              cover={
+                "https://lastfm.freetls.fastly.net/i/u/300x300/3c9e7fdb97214aefca5a964c6c1240dc.png"
+              }
+            />
+          ))}
         </main>
-      </div>
-      <div className={classes.test}>
-        <div
-          style={{
-            background: `url("https://lastfm.freetls.fastly.net/i/u/34s/2ed343318c844d19cd897ec67fad11c4.png) no-repeat center center/cover`,
-            width: "500px",
-            height: "500px",
-          }}
-        />
       </div>
     </>
   );
