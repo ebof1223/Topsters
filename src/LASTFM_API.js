@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { withStyles } from "@material-ui/styles";
 import { LASTFM_API_KEY } from "./sensitive";
@@ -23,18 +23,14 @@ const styles = {
 
 const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   const [userSearch, setUserSearch] = useState("");
-  const [results, setResults] = useState("");
-
-  useEffect(() => {
-    console.log(results, "in useEffect");
-  }, [results]);
+  const [results, setResults] = useState([]);
 
   const addToToppings = (itemIdx) => {
-    console.log(results);
     // setUserToppings([...userToppings, results[itemIdx]]);
+    console.log(results[itemIdx]);
   };
   const getDiscography = async (artist) => {
-    setResults("");
+    setResults([]);
     await axios
       .get(
         `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${LASTFM_API_KEY}&format=json`
@@ -46,19 +42,7 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
         while (albumsArray.length % 3 !== 0) {
           albumsArray.splice(albumsArray.length - 1, 1);
         }
-        setResults(
-          albumsArray.map((item, index) => (
-            <div
-              style={{
-                background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
-              }}
-              key={item.name}
-              className={classes.Album}
-              onClick={(e) => addToToppings(e.target.dataset.index)}
-              data-index={index}
-            ></div>
-          ))
-        );
+        setResults(albumsArray);
       });
   };
   const handleSubmit = (e) => {
@@ -82,8 +66,19 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
         ></input>
         <button>Search</button>
       </form>
-      {console.log(results, "in render")}
-      <div className={classes.resultsContainer}>{results}</div>
+      <div className={classes.resultsContainer}>
+        {results.map((item, index) => (
+          <div
+            style={{
+              background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
+            }}
+            key={item.name}
+            className={classes.Album}
+            onClick={(e) => addToToppings(e.target.dataset.index)}
+            data-index={index}
+          ></div>
+        ))}
+      </div>
     </>
   );
 };

@@ -79,7 +79,7 @@ export default function NewToppingsForm({ saveToppings, history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [userToppings, setUserToppings] = React.useState([]);
-  console.log(userToppings);
+  // console.log(userToppings);
 
   const handleSubmit = () => {
     // generate new object for each submission with uniqe name and id
