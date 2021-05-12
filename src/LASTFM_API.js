@@ -10,7 +10,9 @@ const styles = {
     width: "100%",
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "center",
+    justifyContent: "flexStart",
+    marginLeft: "1.5rem",
+    marginBottom: "1.5rem",
   },
   Album: {
     backgroundColor: "#dae1e4",
@@ -46,9 +48,9 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
         let albumsArray = res.data.topalbums.album.filter(
           (item) => item.image[3]["#text"]
         );
-        while (albumsArray.length % 3 !== 0) {
-          albumsArray.splice(albumsArray.length - 1, 1);
-        }
+        // while (albumsArray.length % 3 !== 0) {
+        //   albumsArray.splice(albumsArray.length - 1, 1);
+        // }
         setResults(albumsArray);
       });
   };
