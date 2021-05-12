@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -12,6 +13,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import LASTFM_API from "./LASTFM_API";
 import DraggableAlbum from "./DraggableAlbum";
 
@@ -78,16 +80,16 @@ export default function NewToppingsForm({ saveToppings, history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [userToppings, setUserToppings] = React.useState([]);
-
+  const [userToppingsName, setUserToppingsName] = useState("");
   const handleSubmit = () => {
-    let newName = "new test name";
     const newToppings = {
-      title: newName,
-      id: newName.toLowerCase().replace(/ /g, "-"),
+      title: userToppingsName,
+      id: userToppingsName.toLowerCase().replace(/ /g, "-"),
       albums: userToppings,
     };
     saveToppings(newToppings);
     history.push("/");
+    setUserToppingsName("");
   };
 
   return (
@@ -116,9 +118,17 @@ export default function NewToppingsForm({ saveToppings, history }) {
                 toppings
               </Link>
             </Typography>
-            <Button variant='contained' color='primary' onClick={handleSubmit}>
-              Save
-            </Button>
+            <ValidatorForm onSubmit={handleSubmit}>
+              <TextValidator
+                label='Toppings Name'
+                name='userToppingsName'
+                value={userToppingsName}
+                onChange={(e) => setUserToppingsName(e.target.value)}
+              />
+              <Button variant='contained' color='primary' type='submit'>
+                Save
+              </Button>
+            </ValidatorForm>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -147,7 +157,6 @@ export default function NewToppingsForm({ saveToppings, history }) {
           })}
         >
           <div className={classes.drawerHeader} />
-          {/* useToppings go here */}
           {userToppings.map((item) => (
             <DraggableAlbum
               cover={item.image[3]["#text"]}

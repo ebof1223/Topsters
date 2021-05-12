@@ -24,10 +24,13 @@ const styles = {
 const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   const [userSearch, setUserSearch] = useState("");
   const [results, setResults] = useState([]);
-
   const addToToppings = (itemIdx) => {
     if (userToppings.some((item) => item.name === results[itemIdx].name)) {
-      console.log("ui to designate duplicate goes here");
+      console.log("DUPLICATE ERROR");
+      return;
+    }
+    if (userToppings.length > 19) {
+      console.log("EXCEEDED MAX TOPPINGS VALUE");
       return;
     }
     setUserToppings([...userToppings, results[itemIdx]]);

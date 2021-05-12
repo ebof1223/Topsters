@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const styles = {
   root: {
-    backgroundColor: "blue",
+    backgroundColor: "pink",
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
