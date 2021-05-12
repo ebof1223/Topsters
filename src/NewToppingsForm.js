@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -13,9 +13,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 import LASTFM_API from "./LASTFM_API";
 import DraggableAlbum from "./DraggableAlbum";
+import TextField from "@material-ui/core/TextField";
 
 const drawerWidth = 500;
 
@@ -82,7 +82,8 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
   const [userToppings, setUserToppings] = React.useState([]);
   const [userToppingsName, setUserToppingsName] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const newToppings = {
       title: userToppingsName,
       id: userToppingsName.toLowerCase().replace(/ /g, "-"),
@@ -123,9 +124,17 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
               </Link>
             </Typography>
             {/* Redo */}
-            <ValidatorForm onSubmit={handleSubmit}>
-              <TextValidator
+
+            <form
+              onSubmit={(e) => handleSubmit(e)}
+              className={classes.root}
+              noValidate
+              autoComplete='off'
+            >
+              <TextField
+                id='standard-basic'
                 label='Toppings Name'
+                onSubmit={handleSubmit}
                 name='userToppingsName'
                 value={userToppingsName}
                 onChange={(e) => setUserToppingsName(e.target.value)}
@@ -133,7 +142,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
               <Button variant='contained' color='primary' type='submit'>
                 Save
               </Button>
-            </ValidatorForm>
+            </form>
           </Toolbar>
         </AppBar>
         <Drawer
