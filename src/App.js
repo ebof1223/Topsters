@@ -15,13 +15,7 @@ function App() {
     });
   };
 
-  //last thing we did, passed down saveToppings to form
   const saveToppings = (newToppings) => {
-    if (toppings.toppings.some((item) => item.title === newToppings.title)) {
-      // we want this to appear on the form, not go back to the home page and see that the new toppings isnt there
-      console.log("TITLE DUPLICATE ERROR");
-      return;
-    }
     setToppings({ toppings: [...toppings.toppings, newToppings] });
   };
 
@@ -31,7 +25,11 @@ function App() {
         exact
         path='/toppings/new'
         render={(routeProps) => (
-          <NewToppingsForm saveToppings={saveToppings} {...routeProps} />
+          <NewToppingsForm
+            saveToppings={saveToppings}
+            {...routeProps}
+            toppings={toppings}
+          />
         )}
       />
       <Route

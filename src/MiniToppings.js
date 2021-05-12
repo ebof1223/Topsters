@@ -46,6 +46,7 @@ const styles = {
 
 function MiniToppings(props) {
   const { classes, title, albums } = props;
+
   const miniToppings = albums.map((item) => (
     <div
       className={classes.miniToppings}

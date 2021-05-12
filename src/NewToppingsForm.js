@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -76,20 +76,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NewToppingsForm({ saveToppings, history }) {
+export default function NewToppingsForm({ saveToppings, history, toppings }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [userToppings, setUserToppings] = React.useState([]);
   const [userToppingsName, setUserToppingsName] = useState("");
+
   const handleSubmit = () => {
     const newToppings = {
       title: userToppingsName,
       id: userToppingsName.toLowerCase().replace(/ /g, "-"),
       albums: userToppings,
     };
+    if (toppings.toppings.some((item) => item.title === newToppings.title)) {
+      console.log("TITLE DUPLICATE ERROR");
+      return;
+    }
     saveToppings(newToppings);
     history.push("/");
-    setUserToppingsName("");
   };
 
   return (
@@ -118,6 +122,7 @@ export default function NewToppingsForm({ saveToppings, history }) {
                 toppings
               </Link>
             </Typography>
+            {/* Redo */}
             <ValidatorForm onSubmit={handleSubmit}>
               <TextValidator
                 label='Toppings Name'
