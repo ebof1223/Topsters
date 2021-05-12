@@ -25,6 +25,7 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   const [userSearch, setUserSearch] = useState("");
   const [results, setResults] = useState([]);
   const addToToppings = (itemIdx) => {
+    //maybe jiggle everything?
     if (userToppings.some((item) => item.name === results[itemIdx].name)) {
       console.log("DUPLICATE ERROR");
       return;

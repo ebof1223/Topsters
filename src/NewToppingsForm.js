@@ -174,10 +174,15 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
           })}
         >
           <div className={classes.drawerHeader} />
-          {userToppings.map((item) => (
+          {userToppings.map((item, index) => (
             <DraggableAlbum
               cover={item.image[3]["#text"]}
               key={`${item.name}-topping`}
+              onClick={() =>
+                setUserToppings(
+                  userToppings.filter((item) => item !== userToppings[index])
+                )
+              }
             />
           ))}
         </main>

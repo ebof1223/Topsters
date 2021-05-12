@@ -39,13 +39,14 @@ const styles = {
   },
   deleteIcon: {},
 };
-function DraggableAlbum({ cover, classes }) {
+function DraggableAlbum({ cover, classes, onClick }) {
   return (
     <div
       style={{
         background: `url(${cover}) no-repeat center center/cover`,
       }}
       className={classes.root}
+      onClick={onClick}
     >
       <div className={classes.boxContent}>
         <span className={classes.links}>
