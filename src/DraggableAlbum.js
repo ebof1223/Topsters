@@ -1,4 +1,5 @@
 import { withStyles } from "@material-ui/styles";
+import { SortableElement } from "react-sortable-hoc";
 import DeleteIcon from "@material-ui/icons/Delete";
 
 const styles = {
@@ -37,9 +38,8 @@ const styles = {
     marginRight: "0.25rem",
     marginBottom: "0.25rem",
   },
-  deleteIcon: {},
 };
-function DraggableAlbum({ cover, classes, onClick }) {
+const DraggableAlbum = SortableElement(({ cover, classes, onClick }) => {
   return (
     <div
       style={{
@@ -55,6 +55,6 @@ function DraggableAlbum({ cover, classes, onClick }) {
       </div>
     </div>
   );
-}
+});
 
 export default withStyles(styles)(DraggableAlbum);

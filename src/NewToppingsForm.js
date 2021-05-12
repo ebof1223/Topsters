@@ -14,9 +14,9 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import LASTFM_API from "./LASTFM_API";
-import DraggableAlbum from "./DraggableAlbum";
 import TextField from "@material-ui/core/TextField";
-
+import DraggableToppingsList from "./DraggableToppingsList";
+const arrayMove = require("array-move");
 const drawerWidth = 500;
 
 const useStyles = makeStyles((theme) => ({
@@ -101,6 +101,9 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
     history.push("/");
   };
 
+  const onSortEnd = ({ oldIndex, newIndex }) => {
+    setUserToppings(arrayMove(userToppings, oldIndex, newIndex));
+  };
   return (
     <>
       <div className={classes.root}>
@@ -174,17 +177,12 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
           })}
         >
           <div className={classes.drawerHeader} />
-          {userToppings.map((item, index) => (
-            <DraggableAlbum
-              cover={item.image[3]["#text"]}
-              key={`${item.name}-topping`}
-              onClick={() =>
-                setUserToppings(
-                  userToppings.filter((item) => item !== userToppings[index])
-                )
-              }
-            />
-          ))}
+          <DraggableToppingsList
+            axis='xy'
+            userToppings={userToppings}
+            setUserToppings={setUserToppings}
+            onSortEnd={onSortEnd}
+          />
         </main>
       </div>
     </>
