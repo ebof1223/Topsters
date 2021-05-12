@@ -81,18 +81,22 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
   const [open, setOpen] = React.useState(false);
   const [userToppings, setUserToppings] = React.useState([]);
   const [userToppingsName, setUserToppingsName] = useState("");
+  const [errors, setErrors] = React.useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setErrors({ title: "" });
     const newToppings = {
       title: userToppingsName,
       id: userToppingsName.toLowerCase().replace(/ /g, "-"),
       albums: userToppings,
     };
-    if (toppings.toppings.some((item) => item.title === newToppings.title)) {
-      console.log("TITLE DUPLICATE ERROR");
-      return;
-    }
+
+    if (toppings.toppings.some((item) => item.title === newToppings.title))
+      return setErrors({ title: "This title has already been taken" });
+
+    if (!userToppingsName) return setErrors({ title: "Please enter a title" });
+
     saveToppings(newToppings);
     history.push("/");
   };
@@ -123,21 +127,20 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
                 toppings
               </Link>
             </Typography>
-            {/* Redo */}
 
             <form
               onSubmit={(e) => handleSubmit(e)}
               className={classes.root}
-              noValidate
               autoComplete='off'
             >
               <TextField
                 id='standard-basic'
                 label='Toppings Name'
-                onSubmit={handleSubmit}
                 name='userToppingsName'
                 value={userToppingsName}
                 onChange={(e) => setUserToppingsName(e.target.value)}
+                helperText={errors?.title}
+                error={Boolean(errors?.title)}
               />
               <Button variant='contained' color='primary' type='submit'>
                 Save
