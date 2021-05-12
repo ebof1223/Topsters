@@ -14,7 +14,6 @@ import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import LASTFM_API from "./LASTFM_API";
 import DraggableAlbum from "./DraggableAlbum";
-import { defaultToppings } from "./Example";
 
 const drawerWidth = 500;
 
@@ -79,7 +78,6 @@ export default function NewToppingsForm({ saveToppings, history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [userToppings, setUserToppings] = React.useState([]);
-  console.log(userToppings);
 
   const handleSubmit = () => {
     let newName = "new test name";
@@ -151,7 +149,10 @@ export default function NewToppingsForm({ saveToppings, history }) {
           <div className={classes.drawerHeader} />
           {/* useToppings go here */}
           {userToppings.map((item) => (
-            <DraggableAlbum cover={item.image[3]["#text"]} />
+            <DraggableAlbum
+              cover={item.image[3]["#text"]}
+              key={`${item.name}-topping`}
+            />
           ))}
         </main>
       </div>

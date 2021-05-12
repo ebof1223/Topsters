@@ -26,6 +26,10 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   const [results, setResults] = useState([]);
 
   const addToToppings = (itemIdx) => {
+    if (userToppings.some((item) => item.name === results[itemIdx].name)) {
+      console.log("ui to designate duplicate goes here");
+      return;
+    }
     setUserToppings([...userToppings, results[itemIdx]]);
   };
   const getDiscography = async (artist) => {
@@ -71,7 +75,7 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
             style={{
               background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
             }}
-            key={item.name}
+            key={`${item.name}-result`}
             className={classes.Album}
             onClick={(e) => addToToppings(e.target.dataset.index)}
             data-index={index}
