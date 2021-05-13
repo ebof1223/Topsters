@@ -20,6 +20,9 @@ const styles = {
     height: "150px",
     width: "150px",
     overflow: "hidden",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 };
 
