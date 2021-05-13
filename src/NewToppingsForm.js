@@ -105,6 +105,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
   };
 
   const onSortEnd = ({ oldIndex, newIndex }) => {
+    document.body.style.cursor = "default";
     setUserToppings(arrayMove(userToppings, oldIndex, newIndex));
   };
 
@@ -209,6 +210,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
             axis='xy'
             userToppings={userToppings}
             setUserToppings={setUserToppings}
+            onSortStart={() => (document.body.style.cursor = "grabbing")}
             onSortEnd={onSortEnd}
           />
         </main>

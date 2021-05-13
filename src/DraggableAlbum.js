@@ -9,8 +9,11 @@ const styles = {
     margin: "0 auto",
     display: "inline-block",
     position: "relative",
-    cursor: "pointer",
     marginBottom: "-3.5px",
+    cursor: "grab",
+    "&:active": {
+      cursor: "none",
+    },
   },
   boxContent: {
     position: "absolute",
@@ -36,6 +39,7 @@ const styles = {
       color: "white",
       transition: "0.5s",
       transform: "scale(1.2)",
+      cursor: "pointer",
     },
   },
 };
@@ -47,6 +51,7 @@ const DraggableAlbum = SortableElement(({ cover, classes, onClick }) => {
       }}
       className={classes.root}
       onClick={onClick}
+      id='draggable'
     >
       <div className={classes.boxContent}>
         <span className={classes.links}>
