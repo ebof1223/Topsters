@@ -16,6 +16,9 @@ import { Link } from "react-router-dom";
 import LASTFM_API from "./LASTFM_API";
 import TextField from "@material-ui/core/TextField";
 import DraggableToppingsList from "./DraggableToppingsList";
+import ShuffleIcon from "@material-ui/icons/Shuffle";
+import UndoIcon from "@material-ui/icons/Undo";
+import RedoIcon from "@material-ui/icons/Redo";
 const arrayMove = require("array-move");
 const drawerWidth = 500;
 
@@ -104,6 +107,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
   const onSortEnd = ({ oldIndex, newIndex }) => {
     setUserToppings(arrayMove(userToppings, oldIndex, newIndex));
   };
+
   return (
     <>
       <div className={classes.root}>
@@ -126,6 +130,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
               <MenuIcon />
             </IconButton>
             <Typography variant='h6' noWrap>
+              {/* go back! */}
               <Link to={"/"} style={{ textDecoration: "none" }}>
                 toppings
               </Link>
@@ -149,6 +154,29 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
                 Save
               </Button>
             </form>
+            {/* BUTTONS HERE */}
+            <Button
+              variant='contained'
+              color='secondary'
+              onClick={() => setUserToppings([])}
+            >
+              Clear Toppings
+            </Button>
+            <Button
+              onClick={() =>
+                setUserToppings([
+                  ...userToppings.sort((a, b) => 0.5 - Math.random()),
+                ])
+              }
+            >
+              <ShuffleIcon />
+            </Button>
+            <Button>
+              <UndoIcon />
+            </Button>
+            <Button>
+              <RedoIcon />
+            </Button>
           </Toolbar>
         </AppBar>
         <Drawer
