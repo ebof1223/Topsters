@@ -11,11 +11,6 @@ const styles = {
     position: "relative",
     cursor: "pointer",
     marginBottom: "-3.5px",
-    "&:hover svg": {
-      color: "white",
-      transition: "0.5s",
-      transform: "scale(1.2)",
-    },
   },
   boxContent: {
     position: "absolute",
@@ -37,6 +32,11 @@ const styles = {
     opacity: 1,
     marginRight: "0.25rem",
     marginBottom: "0.25rem",
+    "&:hover svg": {
+      color: "white",
+      transition: "0.5s",
+      transform: "scale(1.2)",
+    },
   },
 };
 const DraggableAlbum = SortableElement(({ cover, classes, onClick }) => {
