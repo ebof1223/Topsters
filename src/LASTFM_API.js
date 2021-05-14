@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { withStyles } from "@material-ui/styles";
 import { LASTFM_API_KEY } from "./sensitive";
+import Result_Album from "./Result_Album";
 const LASTFM_API_URL = "http://ws.audioscrobbler.com/2.0/";
 
 const styles = {
@@ -11,8 +12,10 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "flexStart",
-    marginLeft: "1.5rem",
     marginBottom: "1.5rem",
+    overflowX: "hidden",
+    overflowY: "scroll",
+    marginLeft: "1.5rem",
   },
   Album: {
     backgroundColor: "#dae1e4",
@@ -27,9 +30,9 @@ const styles = {
 };
 
 const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
-  console.log("render");
   const [userSearch, setUserSearch] = useState("");
   const [results, setResults] = useState([]);
+
   const addToToppings = (itemIdx) => {
     //maybe jiggle everything?
     if (userToppings.some((item) => item.name === results[itemIdx].name)) {
@@ -52,9 +55,6 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
         let albumsArray = res.data.topalbums.album.filter(
           (item) => item.image[3]["#text"]
         );
-        // while (albumsArray.length % 3 !== 0) {
-        //   albumsArray.splice(albumsArray.length - 1, 1);
-        // }
         setResults(albumsArray);
       });
   };
@@ -66,30 +66,29 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
 
   return (
     <>
-      <h1>LastFM API Call</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          autoFocus
-          autoComplete='off'
-          className='search-bar'
-          value={userSearch}
-          type='text'
-          onChange={(e) => setUserSearch(e.target.value)}
-          placeholder='Enter artist'
-        ></input>
-        <button>Search</button>
-      </form>
+      <div style={{ margin: "0 auto" }}>
+        <h1>LastFM API Call</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            autoFocus
+            autoComplete='off'
+            className='search-bar'
+            value={userSearch}
+            type='text'
+            onChange={(e) => setUserSearch(e.target.value)}
+            placeholder='Enter artist'
+          ></input>
+          <button>Search</button>
+        </form>
+      </div>
       <div className={classes.resultsContainer}>
         {results.map((item, index) => (
-          <div
-            style={{
-              background: `url(${item.image[3]["#text"]}) no-repeat center center/cover`,
-            }}
+          <Result_Album
             key={`${item.name}-result`}
-            className={classes.Album}
-            onClick={(e) => addToToppings(e.target.dataset.index)}
-            data-index={index}
-          ></div>
+            onClick={() => addToToppings(index)}
+            index={index}
+            cover={item.image[3]["#text"]}
+          />
         ))}
       </div>
     </>
