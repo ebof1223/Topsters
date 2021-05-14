@@ -27,6 +27,7 @@ const styles = {
 };
 
 const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
+  console.log("render");
   const [userSearch, setUserSearch] = useState("");
   const [results, setResults] = useState([]);
   const addToToppings = (itemIdx) => {
