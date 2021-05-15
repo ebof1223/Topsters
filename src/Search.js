@@ -29,7 +29,7 @@ const styles = {
   },
 };
 
-const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
+const Search = ({ classes, setUserToppings, userToppings }) => {
   const [userSearch, setUserSearch] = useState("");
   const [results, setResults] = useState([]);
 
@@ -95,4 +95,4 @@ const LASTFM_API = ({ classes, setUserToppings, userToppings }) => {
   );
 };
 
-export default withStyles(styles)(LASTFM_API);
+export default withStyles(styles)(Search);

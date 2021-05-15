@@ -13,7 +13,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import LASTFM_API from "./LASTFM_API";
+import Search from "./Search";
 import TextField from "@material-ui/core/TextField";
 import DraggableToppingsList from "./DraggableToppingsList";
 import ShuffleIcon from "@material-ui/icons/Shuffle";
@@ -195,7 +195,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
             </IconButton>
           </div>
           <Divider />
-          <LASTFM_API
+          <Search
             setUserToppings={setUserToppings}
             userToppings={userToppings}
           />
