@@ -19,6 +19,7 @@ import DraggableToppingsList from "./DraggableToppingsList";
 import ShuffleIcon from "@material-ui/icons/Shuffle";
 import UndoIcon from "@material-ui/icons/Undo";
 import RedoIcon from "@material-ui/icons/Redo";
+import ClearAllIcon from "@material-ui/icons/ClearAll";
 const arrayMove = require("array-move");
 const drawerWidth = 500;
 
@@ -156,12 +157,9 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
               </Button>
             </form>
             {/* BUTTONS HERE */}
-            <Button
-              variant='contained'
-              color='secondary'
-              onClick={() => setUserToppings([])}
-            >
-              Clear Toppings
+
+            <Button onClick={() => setUserToppings([])}>
+              <ClearAllIcon />
             </Button>
             <Button
               onClick={() =>
