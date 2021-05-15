@@ -133,9 +133,7 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
             </IconButton>
             <Typography variant='h6' noWrap>
               {/* go back! */}
-              <Link to={"/"} style={{ textDecoration: "none" }}>
-                toppings
-              </Link>
+              toppings
             </Typography>
 
             <form
@@ -156,7 +154,11 @@ export default function NewToppingsForm({ saveToppings, history, toppings }) {
                 Save
               </Button>
             </form>
-            {/* BUTTONS HERE */}
+            <Link to={"/"} style={{ textDecoration: "none" }}>
+              <Button variant='contained' color='secondary' type='submit'>
+                Go Back
+              </Button>
+            </Link>
 
             <Button onClick={() => setUserToppings([])}>
               <ClearAllIcon />
