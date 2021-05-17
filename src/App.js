@@ -1,10 +1,10 @@
-import "./styles/App.css";
-import { Route, Switch } from "react-router-dom";
-import { defaultToppings } from "./Example.js";
-import { useState } from "react";
-import Toppings from "./Toppings";
-import ToppingsList from "./ToppingsList";
-import NewToppingsForm from "./NewToppingsForm";
+import './styles/App.css';
+import { Route, Switch } from 'react-router-dom';
+import { defaultToppings } from './Example.js';
+import { useState } from 'react';
+import Toppings from './Toppings';
+import ToppingsList from './ToppingsList';
+import NewToppingsForm from './NewToppingsForm';
 
 function App() {
   const [toppings, setToppings] = useState({ toppings: defaultToppings });
@@ -23,7 +23,7 @@ function App() {
     <Switch>
       <Route
         exact
-        path='/toppings/new'
+        path="/toppings/new"
         render={(routeProps) => (
           <NewToppingsForm
             saveToppings={saveToppings}
@@ -34,14 +34,14 @@ function App() {
       />
       <Route
         exact
-        path='/'
+        path="/"
         render={(routeProps) => (
           <ToppingsList toppings={toppings.toppings} {...routeProps} />
         )}
       />
       <Route
         exact
-        path='/toppings/:id'
+        path="/toppings/:id"
         render={(routeProps) => (
           <Toppings
             title={findToppings(routeProps.match.params.id).title}

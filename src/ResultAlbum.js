@@ -1,15 +1,15 @@
-import React from "react";
-import { withStyles } from "@material-ui/styles";
+import React from 'react';
+import { withStyles } from '@material-ui/styles';
 
 const styles = {
   Album: {
-    backgroundColor: "#dae1e4",
-    borderRadius: "5px",
-    height: "150px",
-    width: "150px",
-    overflow: "hidden",
-    "&:hover": {
-      cursor: "pointer",
+    backgroundColor: '#dae1e4',
+    borderRadius: '5px',
+    height: '150px',
+    width: '150px',
+    overflow: 'hidden',
+    '&:hover': {
+      cursor: 'pointer',
     },
   },
 };

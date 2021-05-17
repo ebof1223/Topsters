@@ -1,31 +1,31 @@
-import React, { useState } from "react";
-import { withStyles } from "@material-ui/styles";
-import Album from "./Album";
-import Navbar from "./Navbar";
+import React, { useState } from 'react';
+import { withStyles } from '@material-ui/styles';
+import Album from './Album';
+import Navbar from './Navbar';
 
 const styles = {
   Toppings: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
   },
   ToppingsAlbums: {
-    height: "90%",
+    height: '90%',
   },
 
   ToppingsFooter: {
-    backgroundColor: "white",
-    height: "5vh",
-    display: "flex",
-    justifyContent: "flex-end",
-    alignItems: "center",
-    marginRight: "1rem",
-    fontWeight: "bold",
+    backgroundColor: 'white',
+    height: '5vh',
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    marginRight: '1rem',
+    fontWeight: 'bold',
   },
 };
 
 function Toppings(props) {
-  const [musicProvider, setMusicProvider] = useState("spotify");
+  const [musicProvider, setMusicProvider] = useState('spotify');
   const [open, setOpen] = useState(false);
   const { title, albums, classes } = props;
 
@@ -39,7 +39,7 @@ function Toppings(props) {
       artist={item.artist.name}
       key={item.name}
       url={item.url}
-      cover={item.image[3]["#text"]}
+      cover={item.image[3]['#text']}
       musicProvider={musicProvider}
     />
   ));

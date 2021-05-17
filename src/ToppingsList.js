@@ -1,41 +1,41 @@
-import React from "react";
-import MiniToppings from "./MiniToppings";
-import { withStyles } from "@material-ui/styles";
-import Fab from "@material-ui/core/Fab";
-import AddIcon from "@material-ui/icons/Add";
-import { Link } from "react-router-dom";
+import React from 'react';
+import MiniToppings from './MiniToppings';
+import { withStyles } from '@material-ui/styles';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import { Link } from 'react-router-dom';
 
 const styles = {
   root: {
-    backgroundColor: "pink",
-    height: "100vh",
-    display: "flex",
-    alignItems: "flex-start",
-    justifyContent: "center",
+    backgroundColor: 'pink',
+    height: '100vh',
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
   },
 
   container: {
-    width: "50%",
-    display: "flex",
-    alignItems: "flex-start",
-    flexDirection: "column",
-    flexWrap: "wrap",
+    width: '50%',
+    display: 'flex',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
+    flexWrap: 'wrap',
   },
 
   nav: {
-    display: "flex",
-    width: "100%",
-    justifyContent: "space-between",
-    color: "white",
-    padding: "1rem",
+    display: 'flex',
+    width: '100%',
+    justifyContent: 'space-between',
+    color: 'white',
+    padding: '1rem',
   },
 
   albums: {
-    boxSizing: "border-box",
-    width: "100%",
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 30%)",
-    gridGap: "5%",
+    boxSizing: 'border-box',
+    width: '100%',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 30%)',
+    gridGap: '5%',
   },
 };
 
@@ -50,8 +50,8 @@ function ToppingsList(props) {
       <div className={classes.container}>
         <nav className={classes.nav}>
           <h1>Toppings List</h1>
-          <Link to={"/toppings/new"}>
-            <Fab color='inherit' aria-label='add' size='small'>
+          <Link to={'/toppings/new'}>
+            <Fab color="inherit" aria-label="add" size="small">
               <AddIcon />
             </Fab>
           </Link>
