@@ -54,7 +54,7 @@ export default function NewToppingsModal({
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+        <DialogTitle id="form-dialog-title">Save Toppings</DialogTitle>
         <form onSubmit={(e) => handleSubmit(e)} autoComplete="off">
           <DialogContent>
             <DialogContentText>

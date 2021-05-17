@@ -8,12 +8,11 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import TextField from '@material-ui/core/TextField';
 import ShuffleIcon from '@material-ui/icons/Shuffle';
 import UndoIcon from '@material-ui/icons/Undo';
 import RedoIcon from '@material-ui/icons/Redo';
 import ClearAllIcon from '@material-ui/icons/ClearAll';
-import { withStyles } from '@material-ui/styles';
+import { withStyles } from '@material-ui/core/styles';
 import NewToppingsModal from './NewToppingsModal';
 const drawerWidth = 500;
 
@@ -23,24 +22,25 @@ const styles = (theme) => ({
   },
   appBar: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     height: '64px',
-    // transition: theme.transitions.create(['margin', 'width'], {
-    //   easing: theme.transitions.easing.sharp,
-    //   duration: theme.transitions.duration.leavingScreen,
-    // }),
+    alignItems: 'center',
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
   },
-  // appBarShift: {
-  //   width: `calc(100% - ${drawerWidth}px)`,
-  //   marginLeft: drawerWidth,
-  //   transition: theme.transitions.create(['margin', 'width'], {
-  //     easing: theme.transitions.easing.easeOut,
-  //     duration: theme.transitions.duration.enteringScreen,
-  //   }),
-  // },
-  // menuButton: {
-  //   marginRight: theme.spacing(2),
-  // },
+  appBarShift: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    marginLeft: drawerWidth,
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
 });
 
 function NewToppingsFormNav({
@@ -120,20 +120,20 @@ function NewToppingsFormNav({
           <Button>
             <RedoIcon />
           </Button>
-          <NewToppingsModal
-            userToppingsName={userToppingsName}
-            setUserToppingsName={setUserToppingsName}
-            userToppings={userToppings}
-            toppings={toppings}
-            history={history}
-            saveToppings={saveToppings}
-          />
-          <Link to={'/'} style={{ textDecoration: 'none' }}>
-            <Button variant="contained" color="secondary" type="submit">
-              Go Back
-            </Button>
-          </Link>
         </div>
+        <NewToppingsModal
+          userToppingsName={userToppingsName}
+          setUserToppingsName={setUserToppingsName}
+          userToppings={userToppings}
+          toppings={toppings}
+          history={history}
+          saveToppings={saveToppings}
+        />
+        <Link to={'/'} style={{ textDecoration: 'none' }}>
+          <Button variant="contained" color="secondary" type="submit">
+            Go Back
+          </Button>
+        </Link>
       </AppBar>
     </div>
   );
