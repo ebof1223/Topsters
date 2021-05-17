@@ -14,6 +14,7 @@ import UndoIcon from '@material-ui/icons/Undo';
 import RedoIcon from '@material-ui/icons/Redo';
 import ClearAllIcon from '@material-ui/icons/ClearAll';
 import { withStyles } from '@material-ui/styles';
+import NewToppingsModal from './NewToppingsModal';
 const drawerWidth = 500;
 
 const styles = (theme) => ({
@@ -54,26 +55,6 @@ function NewToppingsFormNav({
   userToppingsName,
   setUserToppingsName,
 }) {
-  const [errors, setErrors] = React.useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setErrors({ title: '' });
-    const newToppings = {
-      title: userToppingsName,
-      id: userToppingsName.toLowerCase().replace(/ /g, '-'),
-      albums: userToppings,
-    };
-
-    if (toppings.toppings.some((item) => item.title === newToppings.title))
-      return setErrors({ title: 'This title has already been taken' });
-
-    if (!userToppingsName) return setErrors({ title: 'Please enter a title' });
-
-    saveToppings(newToppings);
-    history.push('/');
-  };
-
   return (
     <div classes={classes.root}>
       <CssBaseline />
@@ -121,30 +102,6 @@ function NewToppingsFormNav({
           </Typography>
         </Toolbar>
         <div className={classes.buttonContainer}>
-          <form
-            onSubmit={(e) => handleSubmit(e)}
-            className={classes.root}
-            autoComplete="off"
-          >
-            <TextField
-              id="standard-basic"
-              label="Toppings Name"
-              name="userToppingsName"
-              value={userToppingsName}
-              onChange={(e) => setUserToppingsName(e.target.value)}
-              helperText={errors?.title}
-              error={Boolean(errors?.title)}
-            />
-            <Button variant="contained" color="primary" type="submit">
-              Save
-            </Button>
-          </form>
-          <Link to={'/'} style={{ textDecoration: 'none' }}>
-            <Button variant="contained" color="secondary" type="submit">
-              Go Back
-            </Button>
-          </Link>
-
           <Button onClick={() => setUserToppings([])}>
             <ClearAllIcon />
           </Button>
@@ -163,6 +120,19 @@ function NewToppingsFormNav({
           <Button>
             <RedoIcon />
           </Button>
+          <NewToppingsModal
+            userToppingsName={userToppingsName}
+            setUserToppingsName={setUserToppingsName}
+            userToppings={userToppings}
+            toppings={toppings}
+            history={history}
+            saveToppings={saveToppings}
+          />
+          <Link to={'/'} style={{ textDecoration: 'none' }}>
+            <Button variant="contained" color="secondary" type="submit">
+              Go Back
+            </Button>
+          </Link>
         </div>
       </AppBar>
     </div>
