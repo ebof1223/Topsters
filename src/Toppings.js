@@ -45,7 +45,7 @@ function Toppings(props) {
   ));
 
   return (
-    <div className={classes.Toppings}>
+    <div elevation={3} className={classes.Toppings}>
       <Navbar
         open={open}
         setOpen={setOpen}

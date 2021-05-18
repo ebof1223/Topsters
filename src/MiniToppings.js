@@ -1,6 +1,9 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
+import Avatar from '@material-ui/core/Avatar';
+import fantano from './userImgs/fantano.jpeg';
+
 const styles = {
   root: {
     backgroundColor: 'white',
@@ -63,7 +66,10 @@ function MiniToppings(props) {
           <div className={classes.albums}>{miniToppings}</div>
         </Paper>
         <h5 className={classes.title}>
-          {title} <span className={classes.avatar}>🙈</span>
+          {title}{' '}
+          <span className={classes.avatar}>
+            <Avatar alt="fantano" src={fantano} height="10px" />
+          </span>
         </h5>
       </div>
     </Paper>

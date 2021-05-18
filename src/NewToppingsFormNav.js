@@ -101,9 +101,12 @@ function NewToppingsFormNav({
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            toppings
-          </Typography>
+
+          <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
+            <Typography variant="h6" noWrap>
+              toppings
+            </Typography>
+          </Link>
         </Toolbar>
         <div className={classes.btnContainer}>
           <Button onClick={() => setUserToppings([])}>

@@ -79,7 +79,7 @@ export default function NewToppingsModal({
             <Button onClick={handleClose} color="primary">
               Cancel
             </Button>
-            <Button type="submit" color="primary">
+            <Button variant="contained" type="submit" color="primary">
               Submit
             </Button>
           </DialogActions>
