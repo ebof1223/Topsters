@@ -46,7 +46,12 @@ export default function NewToppingsModal({
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={handleClickOpen}>
+      <Button
+        style={{ marginLeft: '1rem' }}
+        variant="contained"
+        color="primary"
+        onClick={handleClickOpen}
+      >
         Save
       </Button>
       <Dialog

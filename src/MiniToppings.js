@@ -1,10 +1,9 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
-
+import Paper from '@material-ui/core/Paper';
 const styles = {
   root: {
     backgroundColor: 'white',
-    border: '1px solid black',
     borderRadius: '5px',
     padding: '0.5rem',
     position: 'relative',
@@ -58,12 +57,16 @@ function MiniToppings(props) {
   ));
 
   return (
-    <div className={classes.root} onClick={props.handleClick}>
-      <div className={classes.albums}>{miniToppings}</div>
-      <h5 className={classes.title}>
-        {title} <span className={classes.avatar}>🙈</span>
-      </h5>
-    </div>
+    <Paper variant="outlined">
+      <div className={classes.root} onClick={props.handleClick}>
+        <Paper elevation={3} square>
+          <div className={classes.albums}>{miniToppings}</div>
+        </Paper>
+        <h5 className={classes.title}>
+          {title} <span className={classes.avatar}>🙈</span>
+        </h5>
+      </div>
+    </Paper>
   );
 }
 

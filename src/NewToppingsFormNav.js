@@ -23,6 +23,8 @@ const styles = (theme) => ({
   appBar: {
     flexDirection: 'row',
     height: '64px',
+    display: 'flex',
+    justifyContent: 'space-between',
     alignItems: 'center',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -42,8 +44,7 @@ const styles = (theme) => ({
   },
   btnContainer: {
     display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
+    marginRight: '2rem',
   },
 });
 
@@ -101,7 +102,6 @@ function NewToppingsFormNav({
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            {/* go back! */}
             toppings
           </Typography>
         </Toolbar>
@@ -124,10 +124,12 @@ function NewToppingsFormNav({
           <Button>
             <RedoIcon />
           </Button>
-          <Button variant="contained" color="secondary" type="submit">
-            Go Back
-          </Button>
 
+          <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
+            <Button variant="contained" color="secondary" type="submit">
+              Go Back
+            </Button>
+          </Link>
           <NewToppingsModal
             userToppingsName={userToppingsName}
             setUserToppingsName={setUserToppingsName}
@@ -136,7 +138,6 @@ function NewToppingsFormNav({
             history={history}
             saveToppings={saveToppings}
           />
-          <Link to={'/'} style={{ textDecoration: 'none' }}></Link>
         </div>
       </AppBar>
     </div>
