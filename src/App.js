@@ -6,15 +6,15 @@ import ToppingsList from './ToppingsList';
 import NewToppingsForm from './NewToppingsForm';
 
 function App() {
-  const savedToppings = JSON.parse(window.localStorage.toppings);
+  // const savedToppings = window.localStorage.toppings;
   const [toppings, setToppings] = useState({
-    toppings: savedToppings.toppings || defaultToppings,
+    toppings: defaultToppings,
   });
 
-  useLayoutEffect(() => {
-    console.log('saving to local storage');
-    window.localStorage.setItem('toppings', JSON.stringify(toppings));
-  });
+  // useLayoutEffect(() => {
+  //   console.log('saving to local storage');
+  //   window.localStorage.setItem('toppings', JSON.stringify(toppings));
+  // });
 
   const findToppings = (id) => {
     return toppings.toppings.find((topping) => {

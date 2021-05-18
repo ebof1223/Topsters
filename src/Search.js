@@ -25,16 +25,20 @@ const Search = ({ classes, setUserToppings, userToppings }) => {
   };
   const getDiscography = async (artist) => {
     setResults([]);
-    await axios
-      .get(
-        `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${LASTFM_API_KEY}&format=json`
-      )
-      .then((res) => {
-        let albumsArray = res.data.topalbums.album.filter(
-          (item) => item.image[3]['#text']
-        );
-        setResults(albumsArray);
-      });
+    try {
+      await axios
+        .get(
+          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${LASTFM_API_KEY}&format=json`
+        )
+        .then((res) => {
+          let albumsArray = res.data.topalbums.album.filter(
+            (item) => item.image[3]['#text']
+          );
+          setResults(albumsArray);
+        });
+    } catch (error) {
+      console.log(error);
+    }
   };
   const handleSubmit = (e) => {
     e.preventDefault();
