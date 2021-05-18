@@ -1,14 +1,14 @@
-import React from "react";
-import { SortableContainer } from "react-sortable-hoc";
-import DraggableAlbum from "./DraggableAlbum";
+import React from 'react';
+import { SortableContainer } from 'react-sortable-hoc';
+import DraggableAlbum from './DraggableAlbum';
 
 const DraggableToppingsList = SortableContainer(
   ({ userToppings, setUserToppings }) => {
     return (
-      <div style={{ height: "100%" }}>
+      <div style={{ height: '92.25vh' }}>
         {userToppings.map((item, index) => (
           <DraggableAlbum
-            cover={item.image[3]["#text"]}
+            cover={item.image[3]['#text']}
             key={`${item.name}-topping`}
             index={index}
             onClick={() =>
