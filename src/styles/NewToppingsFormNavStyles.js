@@ -3,6 +3,9 @@ const styles = (theme) => ({
   root: {
     display: 'flex',
   },
+  hide: {
+    display: 'none',
+  },
   appBar: {
     flexDirection: 'row',
     height: '64px',

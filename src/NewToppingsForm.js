@@ -47,7 +47,7 @@ function NewToppingsForm({ saveToppings, history, toppings, classes }) {
         >
           <div className={classes.drawerHeader}>
             <IconButton onClick={() => setOpen(!open)}>
-              <ChevronLeftIcon />
+              <ChevronLeftIcon color="primary" />
             </IconButton>
           </div>
           <Divider />

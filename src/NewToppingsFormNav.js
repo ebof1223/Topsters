@@ -14,6 +14,7 @@ import RedoIcon from '@material-ui/icons/Redo';
 import ClearAllIcon from '@material-ui/icons/ClearAll';
 import { withStyles } from '@material-ui/core/styles';
 import NewToppingsModal from './NewToppingsModal';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
 
 function NewToppingsFormNav({
@@ -67,7 +68,7 @@ function NewToppingsFormNav({
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <MenuIcon />
+            <ChevronRightIcon color="primary" />
           </IconButton>
 
           <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
