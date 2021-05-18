@@ -1,12 +1,20 @@
 import { Route, Switch } from 'react-router-dom';
 import { defaultToppings } from './Example.js';
-import { useState } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import Toppings from './Toppings';
 import ToppingsList from './ToppingsList';
 import NewToppingsForm from './NewToppingsForm';
 
 function App() {
-  const [toppings, setToppings] = useState({ toppings: defaultToppings });
+  const savedToppings = JSON.parse(window.localStorage.toppings);
+  const [toppings, setToppings] = useState({
+    toppings: savedToppings.toppings || defaultToppings,
+  });
+
+  useLayoutEffect(() => {
+    console.log('saving to local storage');
+    window.localStorage.setItem('toppings', JSON.stringify(toppings));
+  });
 
   const findToppings = (id) => {
     return toppings.toppings.find((topping) => {
