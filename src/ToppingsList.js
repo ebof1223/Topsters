@@ -4,40 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
-
-const styles = {
-  root: {
-    backgroundColor: 'pink',
-    height: '100vh',
-    display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-  },
-
-  container: {
-    width: '50%',
-    display: 'flex',
-    alignItems: 'flex-start',
-    flexDirection: 'column',
-    flexWrap: 'wrap',
-  },
-
-  nav: {
-    display: 'flex',
-    width: '100%',
-    justifyContent: 'space-between',
-    color: 'white',
-    padding: '1rem',
-  },
-
-  albums: {
-    boxSizing: 'border-box',
-    width: '100%',
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 30%)',
-    gridGap: '5%',
-  },
-};
+import styles from './styles/ToppingsListStyles';
 
 function ToppingsList(props) {
   const goToToppings = (id) => {

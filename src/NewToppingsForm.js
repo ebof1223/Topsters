@@ -9,49 +9,8 @@ import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
+import styles from './styles/NewToppingsFormStyles';
 const arrayMove = require('array-move');
-const drawerWidth = 500;
-
-const styles = (theme) => ({
-  root: {
-    display: 'flex',
-  },
-
-  hide: {
-    display: 'none',
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  drawerHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing(0, 1),
-    ...theme.mixins.toolbar,
-    justifyContent: 'flex-end',
-  },
-  content: {
-    height: 'calc(100vh - 64px)',
-    flexGrow: 1,
-    padding: theme.spacing(3),
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginLeft: -drawerWidth,
-  },
-  contentShift: {
-    transition: theme.transitions.create('margin', {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginLeft: 0,
-  },
-});
 
 function NewToppingsForm({ saveToppings, history, toppings, classes }) {
   const [open, setOpen] = useState(false);

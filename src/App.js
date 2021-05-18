@@ -1,4 +1,3 @@
-import './styles/App.css';
 import { Route, Switch } from 'react-router-dom';
 import { defaultToppings } from './Example.js';
 import { useState } from 'react';

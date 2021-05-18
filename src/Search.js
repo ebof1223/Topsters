@@ -2,32 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 import { withStyles } from '@material-ui/styles';
+import styles from './styles/SearchStyles';
 import { LASTFM_API_KEY } from './sensitive';
 import ResultAlbum from './ResultAlbum';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
-
-const styles = {
-  resultsContainer: {
-    width: '100%',
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'flexStart',
-    marginBottom: '1.5rem',
-    overflowX: 'hidden',
-    overflowY: 'scroll',
-    marginLeft: '1.5rem',
-  },
-  Album: {
-    backgroundColor: '#dae1e4',
-    borderRadius: '5px',
-    height: '150px',
-    width: '150px',
-    overflow: 'hidden',
-    '&:hover': {
-      cursor: 'pointer',
-    },
-  },
-};
 
 const Search = ({ classes, setUserToppings, userToppings }) => {
   const [userSearch, setUserSearch] = useState('');

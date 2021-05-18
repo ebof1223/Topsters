@@ -1,18 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
-
-const styles = {
-  Album: {
-    backgroundColor: '#dae1e4',
-    borderRadius: '5px',
-    height: '150px',
-    width: '150px',
-    overflow: 'hidden',
-    '&:hover': {
-      cursor: 'pointer',
-    },
-  },
-};
+import styles from './styles/ResultAlbumStyles';
 
 function Result_Album({ cover, onClick, classes }) {
   return (
