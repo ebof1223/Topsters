@@ -21,7 +21,6 @@ function MiniToppings(props) {
 
   const handleDelete = (e) => {
     e.stopPropagation();
-    console.log(id);
     let newToppings = toppings.toppings.filter((item) => item.id !== id);
     setToppings({ toppings: [...newToppings] });
   };
