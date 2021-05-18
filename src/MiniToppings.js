@@ -4,9 +4,10 @@ import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
 import fantano from './userImgs/fantano.jpeg';
 import styles from './styles/MiniToppingsStyles';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 function MiniToppings(props) {
-  const { classes, title, albums } = props;
+  const { classes, title, albums, id, setToppings, toppings } = props;
 
   const miniToppings = albums.map((item) => (
     <div
@@ -18,9 +19,19 @@ function MiniToppings(props) {
     ></div>
   ));
 
+  const handleDelete = (e) => {
+    e.stopPropagation();
+    console.log(id);
+    let newToppings = toppings.toppings.filter((item) => item.id !== id);
+    setToppings({ toppings: [...newToppings] });
+  };
+
   return (
     <Paper variant="outlined">
       <div className={classes.root} onClick={props.handleClick}>
+        <Paper outlined="true" className={classes.delete}>
+          <DeleteIcon className={classes.deleteIcon} onClick={handleDelete} />
+        </Paper>
         <Paper elevation={3} square>
           <div className={classes.albums}>{miniToppings}</div>
         </Paper>

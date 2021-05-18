@@ -43,7 +43,11 @@ function App() {
         exact
         path="/"
         render={(routeProps) => (
-          <ToppingsList toppings={toppings.toppings} {...routeProps} />
+          <ToppingsList
+            toppings={toppings}
+            {...routeProps}
+            setToppings={setToppings}
+          />
         )}
       />
       <Route

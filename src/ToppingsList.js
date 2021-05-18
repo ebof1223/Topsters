@@ -6,12 +6,11 @@ import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
 import styles from './styles/ToppingsListStyles';
 
-function ToppingsList(props) {
+function ToppingsList({ classes, toppings, history, setToppings }) {
   const goToToppings = (id) => {
-    props.history.push(`/toppings/${id}`);
+    history.push(`/toppings/${id}`);
   };
 
-  const { classes, toppings } = props;
   return (
     <div className={classes.root}>
       <div className={classes.container}>
@@ -24,11 +23,14 @@ function ToppingsList(props) {
           </Link>
         </nav>
         <div className={classes.albums}>
-          {toppings.map((item) => (
+          {toppings.toppings.map((item) => (
             <MiniToppings
               {...item}
               key={item.id}
               handleClick={() => goToToppings(item.id)}
+              id={item.id}
+              setToppings={setToppings}
+              toppings={toppings}
             />
           ))}
         </div>
