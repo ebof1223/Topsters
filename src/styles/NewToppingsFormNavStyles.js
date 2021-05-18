@@ -1,4 +1,5 @@
-import drawerWidth from './DrawerWidth';
+import drawerWidth from './constants';
+
 const styles = (theme) => ({
   root: {
     display: 'flex',

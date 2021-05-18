@@ -1,7 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
 import { appleSVG } from './svgs';
-import styles from './styles/Album';
+import styles from './styles/AlbumStyles';
 
 function Album({ cover, musicProvider, classes }) {
   const generateMusicProviderSVG = (value) => {
