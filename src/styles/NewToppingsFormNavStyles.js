@@ -1,4 +1,5 @@
 import drawerWidth from './constants';
+import sizes from './sizes';
 
 const styles = (theme) => ({
   root: {
@@ -31,7 +32,7 @@ const styles = (theme) => ({
   },
   btnContainer: {
     display: 'flex',
-    marginRight: '2rem',
+    marginRight: '0.5rem',
   },
 });
 
