@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styles from './styles/ToppingsListStyles';
 
 function ToppingsList({ classes, toppings, history, setToppings }) {
@@ -22,18 +23,20 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
             </Fab>
           </Link>
         </nav>
-        <div className={classes.albums}>
+        <TransitionGroup className={classes.albums}>
           {toppings.toppings.map((item) => (
-            <MiniToppings
-              {...item}
-              key={item.id}
-              handleClick={() => goToToppings(item.id)}
-              id={item.id}
-              setToppings={setToppings}
-              toppings={toppings}
-            />
+            <CSSTransition key={item.id} classNames="fade" timeout={2000}>
+              <MiniToppings
+                {...item}
+                key={item.id}
+                handleClick={() => goToToppings(item.id)}
+                id={item.id}
+                setToppings={setToppings}
+                toppings={toppings}
+              />
+            </CSSTransition>
           ))}
-        </div>
+        </TransitionGroup>
       </div>
     </div>
   );
