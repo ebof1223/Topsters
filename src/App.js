@@ -4,6 +4,8 @@ import { useState, useLayoutEffect } from 'react';
 import Toppings from './Toppings';
 import ToppingsList from './ToppingsList';
 import NewToppingsForm from './NewToppingsForm';
+import './styles/App.css';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function App() {
   const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
@@ -27,40 +29,50 @@ function App() {
   };
 
   return (
-    <Switch>
-      <Route
-        exact
-        path="/toppings/new"
-        render={(routeProps) => (
-          <NewToppingsForm
-            saveToppings={saveToppings}
-            {...routeProps}
-            toppings={toppings}
-          />
-        )}
-      />
-      <Route
-        exact
-        path="/"
-        render={(routeProps) => (
-          <ToppingsList
-            toppings={toppings}
-            {...routeProps}
-            setToppings={setToppings}
-          />
-        )}
-      />
-      <Route
-        exact
-        path="/toppings/:id"
-        render={(routeProps) => (
-          <Toppings
-            title={findToppings(routeProps.match.params.id).title}
-            albums={findToppings(routeProps.match.params.id).albums}
-          />
-        )}
-      />
-    </Switch>
+    <Route
+      render={({ location }) => (
+        <TransitionGroup>
+          <CSSTransition classNames="fade" timeout={500} key={location.key}>
+            <Switch location={location}>
+              <Route
+                exact
+                path="/toppings/new"
+                render={(routeProps) => (
+                  <div className="page">
+                    <NewToppingsForm
+                      saveToppings={saveToppings}
+                      {...routeProps}
+                      toppings={toppings}
+                    />
+                  </div>
+                )}
+              />
+              <Route
+                exact
+                path="/"
+                render={(routeProps) => (
+                  <ToppingsList
+                    toppings={toppings}
+                    {...routeProps}
+                    setToppings={setToppings}
+                  />
+                )}
+              />
+              <Route
+                exact
+                path="/toppings/:id"
+                render={(routeProps) => (
+                  <Toppings
+                    title={findToppings(routeProps.match.params.id).title}
+                    albums={findToppings(routeProps.match.params.id).albums}
+                  />
+                )}
+              />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}
+    />
   );
 }
 

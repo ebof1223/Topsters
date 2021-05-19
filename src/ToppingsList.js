@@ -29,7 +29,6 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
     let newToppings = toppings.toppings.filter(
       (item) => item.id !== toBeDeleted
     );
-    console.log(toBeDeleted);
     setToppings({ toppings: [...newToppings] });
     setToBeDeleted(null);
     setDeleteDialog(!deleteDialog);

@@ -11,8 +11,6 @@ function MiniToppings({
   title,
   albums,
   id,
-  setToppings,
-  toppings,
   deleteDialog,
   setDeleteDialog,
   handleClick,
