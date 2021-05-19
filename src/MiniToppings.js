@@ -6,9 +6,19 @@ import fantano from './userImgs/fantano.jpeg';
 import styles from './styles/MiniToppingsStyles';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-function MiniToppings(props) {
-  const { classes, title, albums, id, setToppings, toppings } = props;
-
+function MiniToppings({
+  classes,
+  title,
+  albums,
+  id,
+  setToppings,
+  toppings,
+  deleteDialog,
+  setDeleteDialog,
+  handleClick,
+  toBeDeleted,
+  setToBeDeleted,
+}) {
   const miniToppings = albums.map((item) => (
     <div
       className={classes.miniToppings}
@@ -21,15 +31,18 @@ function MiniToppings(props) {
 
   const handleDelete = (e) => {
     e.stopPropagation();
-    let newToppings = toppings.toppings.filter((item) => item.id !== id);
-    setToppings({ toppings: [...newToppings] });
+    setToBeDeleted(id);
+    setDeleteDialog(!deleteDialog);
   };
 
   return (
     <Paper variant="outlined">
-      <div className={classes.root} onClick={props.handleClick}>
+      <div className={classes.root} onClick={handleClick}>
         <Paper outlined="true" className={classes.delete}>
-          <DeleteIcon className={classes.deleteIcon} onClick={handleDelete} />
+          <DeleteIcon
+            className={classes.deleteIcon}
+            onClick={(e) => handleDelete(e)}
+          />
         </Paper>
         <Paper elevation={3} square>
           <div className={classes.albums}>{miniToppings}</div>
