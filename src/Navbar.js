@@ -19,7 +19,7 @@ function Navbar({
     <header className={classes.Navbar}>
       <div className={classes.logo}>
         <Link to={'/'} style={{ textDecoration: 'none' }}>
-          toppings
+          Toppings
         </Link>
       </div>
       <div className={classes.selectContainer}>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import NewToppingsFormNav from './NewToppingsFormNav';
-import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';

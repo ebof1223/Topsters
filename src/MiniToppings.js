@@ -14,7 +14,6 @@ function MiniToppings({
   deleteDialog,
   setDeleteDialog,
   handleClick,
-  toBeDeleted,
   setToBeDeleted,
 }) {
   const miniToppings = albums.map((item) => (

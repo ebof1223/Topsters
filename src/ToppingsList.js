@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import MiniToppings from './MiniToppings';
 import { withStyles } from '@material-ui/styles';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import MiniToppings from './MiniToppings';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 import styles from './styles/ToppingsListStyles';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -37,7 +37,7 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
     <div className={classes.root}>
       <div className={classes.container}>
         <nav className={classes.nav}>
-          <h1 className={classes.heading}>Toppings List</h1>
+          <h1 className={classes.heading}>Toppings </h1>
           <Link to={'/toppings/new'}>
             <Fab color="inherit" aria-label="add" size="small">
               <AddIcon />
@@ -46,7 +46,7 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
         </nav>
         <TransitionGroup className={classes.albums}>
           {toppings.toppings.map((item) => (
-            <CSSTransition key={item.id} classNames="fade" timeout={2000}>
+            <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <MiniToppings
                 {...item}
                 key={item.id}

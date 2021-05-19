@@ -73,6 +73,18 @@ function App() {
                   </Page>
                 )}
               />
+              <Route
+                render={(routeProps) => (
+                  <Page>
+                    <ToppingsList
+                      toppings={toppings}
+                      {...routeProps}
+                      setToppings={setToppings}
+                    />
+                  </Page>
+                )}
+              />
+              >
             </Switch>
           </CSSTransition>
         </TransitionGroup>
