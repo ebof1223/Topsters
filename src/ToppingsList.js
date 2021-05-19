@@ -15,7 +15,7 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
     <div className={classes.root}>
       <div className={classes.container}>
         <nav className={classes.nav}>
-          <h1>Toppings List</h1>
+          <h1 className={classes.heading}>Toppings List</h1>
           <Link to={'/toppings/new'}>
             <Fab color="inherit" aria-label="add" size="small">
               <AddIcon />
