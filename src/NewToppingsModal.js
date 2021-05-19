@@ -41,6 +41,7 @@ export default function NewToppingsModal({
     if (!userToppingsName) return setErrors({ title: 'Please enter a title' });
 
     saveToppings(newToppings);
+    setOpen(false);
     history.push('/');
   };
 

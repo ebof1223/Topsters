@@ -4,8 +4,9 @@ import { useState, useLayoutEffect } from 'react';
 import Toppings from './Toppings';
 import ToppingsList from './ToppingsList';
 import NewToppingsForm from './NewToppingsForm';
-import './styles/App.css';
+import './styles/Page.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Page from './Page';
 
 function App() {
   const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
@@ -32,40 +33,44 @@ function App() {
     <Route
       render={({ location }) => (
         <TransitionGroup>
-          <CSSTransition classNames="fade" timeout={500} key={location.key}>
+          <CSSTransition classNames="page" timeout={500} key={location.key}>
             <Switch location={location}>
               <Route
                 exact
                 path="/toppings/new"
                 render={(routeProps) => (
-                  <div className="page">
+                  <Page>
                     <NewToppingsForm
                       saveToppings={saveToppings}
                       {...routeProps}
                       toppings={toppings}
                     />
-                  </div>
+                  </Page>
                 )}
               />
               <Route
                 exact
                 path="/"
                 render={(routeProps) => (
-                  <ToppingsList
-                    toppings={toppings}
-                    {...routeProps}
-                    setToppings={setToppings}
-                  />
+                  <Page>
+                    <ToppingsList
+                      toppings={toppings}
+                      {...routeProps}
+                      setToppings={setToppings}
+                    />
+                  </Page>
                 )}
               />
               <Route
                 exact
                 path="/toppings/:id"
                 render={(routeProps) => (
-                  <Toppings
-                    title={findToppings(routeProps.match.params.id).title}
-                    albums={findToppings(routeProps.match.params.id).albums}
-                  />
+                  <Page>
+                    <Toppings
+                      title={findToppings(routeProps.match.params.id).title}
+                      albums={findToppings(routeProps.match.params.id).albums}
+                    />
+                  </Page>
                 )}
               />
             </Switch>
