@@ -8,8 +8,10 @@ import './styles/Page.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
 
-function App() {
+export default function App() {
   const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
+
+  const [authCode, setAuthCode] = useState(null);
   const [toppings, setToppings] = useState({
     toppings: savedToppings ? savedToppings.toppings : defaultToppings,
   });
@@ -57,6 +59,7 @@ function App() {
                       toppings={toppings}
                       {...routeProps}
                       setToppings={setToppings}
+                      setAuthCode={setAuthCode}
                     />
                   </Page>
                 )}
@@ -69,6 +72,7 @@ function App() {
                     <Toppings
                       title={findToppings(routeProps.match.params.id).title}
                       albums={findToppings(routeProps.match.params.id).albums}
+                      authCode={authCode}
                     />
                   </Page>
                 )}
@@ -80,11 +84,11 @@ function App() {
                       toppings={toppings}
                       {...routeProps}
                       setToppings={setToppings}
+                      setAuthCode={setAuthCode}
                     />
                   </Page>
                 )}
               />
-              >
             </Switch>
           </CSSTransition>
         </TransitionGroup>
@@ -92,5 +96,3 @@ function App() {
     />
   );
 }
-
-export default App;

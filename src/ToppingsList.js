@@ -17,8 +17,15 @@ import CloseIcon from '@material-ui/icons/Close';
 import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
+import Login from './spotify/Login';
 
-function ToppingsList({ classes, toppings, history, setToppings }) {
+function ToppingsList({
+  classes,
+  toppings,
+  history,
+  setToppings,
+  setAuthCode,
+}) {
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
@@ -33,8 +40,10 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
     setToBeDeleted(null);
     setDeleteDialog(!deleteDialog);
   };
+
   return (
     <div className={classes.root}>
+      <Login setAuthCode={setAuthCode} />
       <div className={classes.container}>
         <nav className={classes.nav}>
           <h1 className={classes.heading}>Toppings </h1>
