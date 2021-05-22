@@ -5,6 +5,7 @@ import Album from './Album';
 import Navbar from './Navbar';
 import styles from './styles/ToppingsStyles';
 import SpotifyWebApi from 'spotify-web-api-node';
+import Player from './Player';
 
 const spotifyApi = new SpotifyWebApi({
   clientId: '0423b49839824b2d8056e7a5a8666622',
@@ -13,6 +14,7 @@ const spotifyApi = new SpotifyWebApi({
 function Toppings({ title, albums, classes, authCode }) {
   const [musicProvider, setMusicProvider] = useState('spotify');
   const [open, setOpen] = useState(false);
+  const [playingAlbum, setPlayingAlbum] = useState();
   const accessToken = useAuth(authCode);
 
   useEffect(() => {
@@ -83,18 +85,22 @@ function Toppings({ title, albums, classes, authCode }) {
               console.log('pagination results', matchArray);
               console.log(
                 'pagination filter',
-                filterMatches(matchArray, albums[index].name)
+                filterMatches(matchArray, albums[index].name).uri
               );
-              //filter to 1 and return
+              setPlayingAlbum(
+                filterMatches(matchArray, albums[index].name).uri
+              );
             });
         } else if (matchArray.length > 1) {
           console.log('multiple match results', matchArray);
           console.log(
             'multiple match filter',
-            filterMatches(matchArray, albums[index].name)
+            filterMatches(matchArray, albums[index].name).uri
           );
+          setPlayingAlbum(filterMatches(matchArray, albums[index].name).uri);
         } else {
-          console.log('match array === 1', matchArray);
+          console.log('match array === 1', matchArray[0].uri);
+          setPlayingAlbum(matchArray[0].uri);
         }
       });
   };
@@ -125,7 +131,9 @@ function Toppings({ title, albums, classes, authCode }) {
         authCode={authCode}
       />
       <div className={classes.ToppingsAlbums}>{albumComponents}</div>
-      <footer className={classes.ToppingsFooter}>{title}</footer>
+      <footer className={classes.ToppingsFooter}>
+        <Player accessToken={accessToken} albumUri={playingAlbum} />
+      </footer>
     </div>
   );
 }
