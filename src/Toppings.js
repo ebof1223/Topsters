@@ -11,11 +11,12 @@ const spotifyApi = new SpotifyWebApi({
   clientId: '0423b49839824b2d8056e7a5a8666622',
 });
 
-function Toppings({ title, albums, classes, authCode }) {
+function Toppings({ albums, classes, authCode }) {
   const [musicProvider, setMusicProvider] = useState('spotify');
   const [open, setOpen] = useState(false);
   const [playingAlbum, setPlayingAlbum] = useState();
   const accessToken = useAuth(authCode);
+  console.log(accessToken);
 
   useEffect(() => {
     if (!accessToken) return;
@@ -73,8 +74,6 @@ function Toppings({ title, albums, classes, authCode }) {
             .then((res) => {
               let results = res.body.items;
               for (let result of results) {
-                // console.log(result.name.toUpperCase());
-                // console.log(albums[index].name.toUpperCase());
                 if (
                   result.name
                     .toUpperCase()
