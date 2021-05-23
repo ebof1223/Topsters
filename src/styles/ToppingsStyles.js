@@ -6,6 +6,7 @@ const styles = {
   },
   ToppingsAlbums: {
     height: '90%',
+    overflow: 'scroll',
   },
 
   ToppingsFooter: {
