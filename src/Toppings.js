@@ -131,17 +131,7 @@ function Toppings({ albums, classes, authCode }) {
       />
       <div className={classes.ToppingsAlbums}>{albumComponents}</div>
       <footer className={classes.ToppingsFooter}>
-        <Player
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: '100%',
-          }}
-          accessToken={accessToken}
-          albumUri={playingAlbum}
-        />
+        <Player accessToken={accessToken} albumUri={playingAlbum} />
       </footer>
     </div>
   );
