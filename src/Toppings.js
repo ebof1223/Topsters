@@ -121,7 +121,7 @@ function Toppings({ albums, classes, authCode }) {
   ));
 
   return (
-    <div elevation={3} className={classes.Toppings}>
+    <div className={classes.Toppings}>
       <Navbar
         open={open}
         setOpen={setOpen}
@@ -131,7 +131,17 @@ function Toppings({ albums, classes, authCode }) {
       />
       <div className={classes.ToppingsAlbums}>{albumComponents}</div>
       <footer className={classes.ToppingsFooter}>
-        <Player accessToken={accessToken} albumUri={playingAlbum} />
+        <Player
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: '100%',
+          }}
+          accessToken={accessToken}
+          albumUri={playingAlbum}
+        />
       </footer>
     </div>
   );

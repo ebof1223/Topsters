@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/refresh', (req, res) => {
-  const refreshToken = req.body.refreshToken;
+  const refreshToken = req.body.refreshToken; 
   const spotifyApi = new SpotifyWebApi({
     redirectUri: 'http://localhost:3000',
     clientId: '0423b49839824b2d8056e7a5a8666622',

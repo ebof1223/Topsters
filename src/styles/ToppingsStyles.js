@@ -6,16 +6,14 @@ const styles = {
   },
   ToppingsAlbums: {
     height: '90%',
+    overflow: 'scroll',
   },
 
   ToppingsFooter: {
     backgroundColor: 'white',
     height: '5vh',
     display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    marginRight: '1rem',
-    fontWeight: 'bold',
+    position: 'relative',
   },
 };
 
