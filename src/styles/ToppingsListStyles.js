@@ -1,5 +1,4 @@
 import sizes from './sizes';
-import bg from './bg.svg';
 
 const styles = {
   '@global': {
@@ -10,8 +9,7 @@ const styles = {
   },
 
   root: {
-    backgroundColor: '#000022',
-    backgroundImage: `url(${bg})`,
+    backgroundColor: 'rgb(47,48,52)',
     height: '100vh',
     display: 'flex',
     alignItems: 'flex-start',
