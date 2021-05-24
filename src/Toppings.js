@@ -6,7 +6,6 @@ import styles from './styles/ToppingsStyles';
 
 function Toppings({ title, albums, classes }) {
   const [open, setOpen] = useState(false);
-  console.log(albums);
 
   const albumComponents = albums.map((item) => (
     <Album
