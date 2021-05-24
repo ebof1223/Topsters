@@ -29,8 +29,6 @@ function App() {
     setToppings([...toppings, newToppings]);
   };
 
-  console.log(savedToppings);
-
   return (
     <Route
       render={({ location }) => (
