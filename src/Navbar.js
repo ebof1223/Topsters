@@ -4,13 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import Button from '@material-ui/core/Button';
 import styles from './styles/NavbarStyles';
 
-function Navbar({
-  handleMusicProviderChange,
-  musicProvider,
-  open,
-  setOpen,
-  classes,
-}) {
+function Navbar({ open, setOpen, classes }) {
   return (
     <header className={classes.Navbar}>
       <div className={classes.logo}>

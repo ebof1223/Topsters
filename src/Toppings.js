@@ -4,15 +4,9 @@ import Album from './Album';
 import Navbar from './Navbar';
 import styles from './styles/ToppingsStyles';
 
-function Toppings(props) {
-  const [musicProvider, setMusicProvider] = useState('spotify');
+function Toppings({ title, albums, classes }) {
   const [open, setOpen] = useState(false);
-  const { title, albums, classes } = props;
-
-  const handleMusicProviderChange = (e) => {
-    setMusicProvider(e.target.value);
-    setOpen(!open);
-  };
+  console.log(albums);
 
   const albumComponents = albums.map((item) => (
     <Album
@@ -20,18 +14,12 @@ function Toppings(props) {
       key={item.name}
       url={item.url}
       cover={item.image[3]['#text']}
-      musicProvider={musicProvider}
     />
   ));
 
   return (
     <div elevation={3} className={classes.Toppings}>
-      <Navbar
-        open={open}
-        setOpen={setOpen}
-        handleMusicProviderChange={handleMusicProviderChange}
-        musicProvider={musicProvider}
-      />
+      <Navbar open={open} setOpen={setOpen} />
       <div className={classes.ToppingsAlbums}>{albumComponents}</div>
       <footer className={classes.ToppingsFooter}>{title}</footer>
     </div>

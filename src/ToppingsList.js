@@ -17,6 +17,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
+import { ContactSupportOutlined } from '@material-ui/icons';
 
 function ToppingsList({ classes, toppings, history, setToppings }) {
   const [deleteDialog, setDeleteDialog] = useState(false);
@@ -33,6 +34,7 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
     setToBeDeleted(null);
     setDeleteDialog(!deleteDialog);
   };
+
   return (
     <div className={classes.root}>
       <div className={classes.container}>
