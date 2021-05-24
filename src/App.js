@@ -9,10 +9,10 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
 
 function App() {
-  // const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
-  const [toppings, setToppings] = useState({
-    toppings: defaultToppings,
-  });
+  const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
+  const [toppings, setToppings] = useState(
+    savedToppings ? savedToppings : defaultToppings
+  );
 
   useLayoutEffect(() => {
     console.log('saving to local storage');
@@ -20,14 +20,16 @@ function App() {
   });
 
   const findToppings = (id) => {
-    return toppings.toppings.find((topping) => {
+    return toppings.find((topping) => {
       return topping.id === id;
     });
   };
 
   const saveToppings = (newToppings) => {
-    setToppings({ toppings: [...toppings.toppings, newToppings] });
+    setToppings([...toppings, newToppings]);
   };
+
+  console.log(savedToppings);
 
   return (
     <Route

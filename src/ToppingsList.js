@@ -17,7 +17,6 @@ import CloseIcon from '@material-ui/icons/Close';
 import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
-import { ContactSupportOutlined } from '@material-ui/icons';
 
 function ToppingsList({ classes, toppings, history, setToppings }) {
   const [deleteDialog, setDeleteDialog] = useState(false);
@@ -27,10 +26,8 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
     history.push(`/toppings/${id}`);
   };
   const handleDeleteConfirmation = () => {
-    let newToppings = toppings.toppings.filter(
-      (item) => item.id !== toBeDeleted
-    );
-    setToppings({ toppings: [...newToppings] });
+    let newToppings = toppings.filter((item) => item.id !== toBeDeleted);
+    setToppings([...newToppings]);
     setToBeDeleted(null);
     setDeleteDialog(!deleteDialog);
   };
@@ -47,7 +44,7 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
           </Link>
         </nav>
         <TransitionGroup className={classes.albums}>
-          {toppings.toppings.map((item) => (
+          {toppings.map((item) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <MiniToppings
                 {...item}

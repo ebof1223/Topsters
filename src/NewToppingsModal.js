@@ -35,7 +35,7 @@ export default function NewToppingsModal({
       albums: userToppings,
     };
 
-    if (toppings.toppings.some((item) => item.title === newToppings.title))
+    if (toppings.some((item) => item.title === newToppings.title))
       return setErrors({ title: 'This title has already been taken' });
 
     if (!userToppingsName) return setErrors({ title: 'Please enter a title' });
