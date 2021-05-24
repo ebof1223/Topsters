@@ -9,9 +9,9 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
 
 function App() {
-  const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
+  // const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
   const [toppings, setToppings] = useState({
-    toppings: savedToppings ? savedToppings.toppings : defaultToppings,
+    toppings: defaultToppings,
   });
 
   useLayoutEffect(() => {
