@@ -22,7 +22,7 @@ const Search: React.FC<Props> = ({
   userToppings,
 }) => {
   const [userSearch, setUserSearch] = useState('');
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<Album[]>([]);
 
   const addToToppings = (itemIdx: number) => {
     if (
@@ -81,7 +81,7 @@ const Search: React.FC<Props> = ({
         </form>
       </div>
       <div className={classes.resultsContainer}>
-        {results.map((item, index) => (
+        {results.map((item: Album, index: number) => (
           <ResultAlbum
             key={`${item.name}-result`}
             onClick={() => addToToppings(index)}
