@@ -303,39 +303,6 @@ const defaultToppings = [
           },
         ],
       },
-      {
-        name: 'Blue',
-        playcount: 8446541,
-        mbid: '243fb7b0-e7f3-42e8-bdfc-a66fd9e23d0e',
-        url: 'https://www.last.fm/music/Joni+Mitchell/Blue',
-        artist: {
-          name: 'Joni Mitchell',
-          mbid: 'a6de8ef9-b1a1-4756-97aa-481bbb8a4069',
-          url: 'https://www.last.fm/music/Joni+Mitchell',
-        },
-        image: [
-          {
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/4be0f660c814dc0164c20ed938dc0003.png',
-            size: 'small',
-          },
-          {
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/4be0f660c814dc0164c20ed938dc0003.png',
-            size: 'medium',
-          },
-          {
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/4be0f660c814dc0164c20ed938dc0003.png',
-            size: 'large',
-          },
-          {
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/4be0f660c814dc0164c20ed938dc0003.png',
-            size: 'extralarge',
-          },
-        ],
-      },
     ],
   },
   {

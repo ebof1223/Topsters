@@ -1,5 +1,5 @@
 import React from 'react';
-import Album from './interface';
+import AlbumStructure from './interface';
 import { useState } from 'react';
 import axios from 'axios';
 import { withStyles } from '@material-ui/styles';
@@ -13,7 +13,7 @@ interface Props {
     resultsContainer: string;
   };
   setUserToppings: (args: object) => void;
-  userToppings: Album[];
+  userToppings: AlbumStructure[];
 }
 
 const Search: React.FC<Props> = ({
@@ -22,11 +22,13 @@ const Search: React.FC<Props> = ({
   userToppings,
 }) => {
   const [userSearch, setUserSearch] = useState('');
-  const [results, setResults] = useState<Album[]>([]);
+  const [results, setResults] = useState<AlbumStructure[]>([]);
 
   const addToToppings = (itemIdx: number) => {
     if (
-      userToppings.some((item: Album) => item.name === results[itemIdx].name)
+      userToppings.some(
+        (item: AlbumStructure) => item.name === results[itemIdx].name
+      )
     ) {
       console.log('DUPLICATE ERROR');
       return;
@@ -48,7 +50,7 @@ const Search: React.FC<Props> = ({
         .then((res) => {
           console.log('this is our log', res.data.topalbums.album);
           let albumsArray = res.data.topalbums.album.filter(
-            (item: Album) => item.image[3]['#text']
+            (item: AlbumStructure) => item.image[3]['#text']
           );
           setResults(albumsArray);
         });
@@ -62,6 +64,8 @@ const Search: React.FC<Props> = ({
     getDiscography(userSearch);
     setUserSearch('');
   };
+
+  console.log(results);
 
   return (
     <>
@@ -81,7 +85,7 @@ const Search: React.FC<Props> = ({
         </form>
       </div>
       <div className={classes.resultsContainer}>
-        {results.map((item: Album, index: number) => (
+        {results.map((item: AlbumStructure, index: number) => (
           <ResultAlbum
             key={`${item.name}-result`}
             onClick={() => addToToppings(index)}

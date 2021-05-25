@@ -1,5 +1,5 @@
-export default interface Album {
-  aritst: {};
+export default interface AlbumStructure {
+  artist: { name: string };
   image: {
     '#text': string;
   }[];
