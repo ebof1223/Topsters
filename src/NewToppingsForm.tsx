@@ -18,7 +18,7 @@ interface Props {
   history: {
     push: (input: string) => void;
   };
-  toppings: ToppingsStructure;
+  toppings: ToppingsStructure[];
   classes: {
     root: string;
     hide: string;
@@ -38,7 +38,7 @@ const NewToppingsForm: React.FC<Props> = ({
 }) => {
   const [open, setOpen] = useState(false);
   const [userToppings, setUserToppings] = useState<AlbumStructure[]>([]);
-  const [userToppingsName, setUserToppingsName] = useState('');
+  const [userToppingsName, setUserToppingsName] = useState<any>('');
 
   const onSortEnd = ({
     oldIndex,

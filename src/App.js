@@ -84,7 +84,6 @@ function App() {
                   </Page>
                 )}
               />
-              >
             </Switch>
           </CSSTransition>
         </TransitionGroup>

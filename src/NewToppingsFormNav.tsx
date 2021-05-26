@@ -37,7 +37,7 @@ interface Props {
   toppings: ToppingsStructure[];
   saveToppings: () => void;
   userToppingsName: 'string';
-  setUserToppingsName: () => void;
+  setUserToppingsName: (input: string) => void;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({

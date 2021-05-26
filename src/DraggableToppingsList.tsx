@@ -4,7 +4,7 @@ import { AlbumStructure } from './interface';
 
 interface Props {
   userToppings: AlbumStructure[];
-  setUserToppings: (args: object) => void;
+  setUserToppings: (input: AlbumStructure[]) => void;
 }
 
 const DraggableToppingsList = SortableContainer(

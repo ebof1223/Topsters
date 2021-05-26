@@ -1,4 +1,4 @@
-export default interface AlbumStructure {
+export interface AlbumStructure {
   artist: { name: string };
   image: {
     '#text': string;
@@ -9,4 +9,11 @@ export default interface AlbumStructure {
   url: string;
   some: (item: { name: string }) => boolean;
   length: number;
+}
+
+export interface ToppingsStructure {
+  title: string;
+  id: string;
+  albums: AlbumStructure[];
+  some?: (item: { title: string }) => boolean;
 }
