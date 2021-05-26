@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
+import AlbumStructure from './interface';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,7 +18,27 @@ import NewToppingsModal from './NewToppingsModal';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
 
-function NewToppingsFormNav({
+interface Props {
+  classes: {
+    root: string;
+    hide: string;
+    appBar: string;
+    appBarShift: string;
+    menuButton: string;
+    btnContainer: string;
+  };
+  open: boolean;
+  setOpen: (input: boolean) => void;
+  history: {};
+  setUserToppings: (args: object) => void;
+  userToppings: AlbumStructure[];
+  toppings: AlbumStructure[];
+  saveToppings: () => void;
+  userToppingsName: 'string';
+  setUserToppingsName: () => void;
+}
+
+const NewToppingsFormNav: React.FC<Props> = ({
   classes,
   open,
   setOpen,
@@ -28,9 +49,9 @@ function NewToppingsFormNav({
   saveToppings,
   userToppingsName,
   setUserToppingsName,
-}) {
+}) => {
   return (
-    <div classes={classes.root}>
+    <div className={classes.root}>
       <CssBaseline />
       <AppBar
         color="inherit"
@@ -114,6 +135,6 @@ function NewToppingsFormNav({
       </AppBar>
     </div>
   );
-}
+};
 
 export default withStyles(styles, { withTheme: true })(NewToppingsFormNav);
