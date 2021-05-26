@@ -7,8 +7,9 @@ import NewToppingsForm from './NewToppingsForm';
 import './styles/Page.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
+import { ToppingsStructure } from './interface.js';
 
-function App() {
+const App: React.FC = () => {
   const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
   const [toppings, setToppings] = useState(
     savedToppings ? savedToppings : defaultToppings
@@ -19,13 +20,13 @@ function App() {
     window.localStorage.setItem('toppings', JSON.stringify(toppings));
   });
 
-  const findToppings = (id) => {
-    return toppings.find((topping) => {
+  const findToppings = (id: string) => {
+    return toppings.find((topping: ToppingsStructure) => {
       return topping.id === id;
     });
   };
 
-  const saveToppings = (newToppings) => {
+  const saveToppings = (newToppings: any) => {
     setToppings([...toppings, newToppings]);
   };
 
@@ -90,6 +91,6 @@ function App() {
       )}
     />
   );
-}
+};
 
 export default App;

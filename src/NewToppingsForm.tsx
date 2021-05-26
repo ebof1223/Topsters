@@ -14,7 +14,7 @@ import { AlbumStructure, ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
 
 interface Props {
-  saveToppings: () => void;
+  saveToppings: (input: any) => void;
   history: {
     push: (input: string) => void;
   };

@@ -35,7 +35,7 @@ interface Props {
   setUserToppings: (args: object) => void;
   userToppings: AlbumStructure[];
   toppings: ToppingsStructure[];
-  saveToppings: () => void;
+  saveToppings: (input: any) => void;
   userToppingsName: 'string';
   setUserToppingsName: (input: string) => void;
 }
