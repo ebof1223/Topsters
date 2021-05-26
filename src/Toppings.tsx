@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { withStyles } from '@material-ui/styles';
-import AlbumStructure from './interface';
+import { AlbumStructure } from './interface';
 import Album from './Album';
 import Navbar from './Navbar';
 import styles from './styles/ToppingsStyles';

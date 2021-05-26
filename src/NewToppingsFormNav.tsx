@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import AlbumStructure from './interface';
+import { AlbumStructure, ToppingsStructure } from './interface';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -32,7 +32,7 @@ interface Props {
   history: {};
   setUserToppings: (args: object) => void;
   userToppings: AlbumStructure[];
-  toppings: AlbumStructure[];
+  toppings: ToppingsStructure[];
   saveToppings: () => void;
   userToppingsName: 'string';
   setUserToppingsName: () => void;

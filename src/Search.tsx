@@ -1,4 +1,4 @@
-import AlbumStructure from './interface';
+import { AlbumStructure } from './interface';
 import { useState } from 'react';
 import axios from 'axios';
 import { withStyles } from '@material-ui/styles';
@@ -63,8 +63,6 @@ const Search: React.FC<Props> = ({
     getDiscography(userSearch);
     setUserSearch('');
   };
-
-  console.log(results);
 
   return (
     <>
