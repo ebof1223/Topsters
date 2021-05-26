@@ -9,7 +9,6 @@ interface Props {
     boxContent: string;
   };
 }
-
 const Album: React.FC<Props> = ({ cover, classes }) => {
   return (
     <div

@@ -1,6 +1,7 @@
+import { createStyles } from '@material-ui/styles';
 import sizes from './sizes';
 
-const styles = {
+const styles = createStyles({
   '@global': {
     '.fade-exit-active': {
       opacity: 0,
@@ -55,6 +56,6 @@ const styles = {
       gridGap: '1.4rem',
     },
   },
-};
+});
 
 export default styles;
