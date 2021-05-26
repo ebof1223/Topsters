@@ -28,7 +28,7 @@ const NewToppingsModal: React.FC<Props> = ({
   saveToppings,
 }) => {
   const [errors, setErrors] = React.useState<{ title: string }>({ title: '' });
-  const [open, setOpen] = React.useState<boolean>(false);
+  const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

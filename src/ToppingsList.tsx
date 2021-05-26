@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -17,12 +17,33 @@ import CloseIcon from '@material-ui/icons/Close';
 import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
+import { ToppingsStructure } from './interface';
 
-function ToppingsList({ classes, toppings, history, setToppings }) {
+interface Props {
+  toppings: ToppingsStructure[];
+  history: {
+    push: (input: string) => void;
+  };
+  setToppings: (input: ToppingsStructure[]) => void;
+  classes: {
+    root: string;
+    heading: string;
+    container: string;
+    nav: string;
+    albums: string;
+  };
+}
+
+const ToppingsList: React.FC<Props> = ({
+  toppings,
+  history,
+  setToppings,
+  classes,
+}) => {
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
-  const goToToppings = (id) => {
+  const goToToppings = (id: string) => {
     history.push(`/toppings/${id}`);
   };
   const handleDeleteConfirmation = () => {
@@ -87,6 +108,6 @@ function ToppingsList({ classes, toppings, history, setToppings }) {
       </Dialog>
     </div>
   );
-}
+};
 
 export default withStyles(styles)(ToppingsList);

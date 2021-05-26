@@ -11,7 +11,7 @@ interface Props {
   classes: {
     resultsContainer: string;
   };
-  setUserToppings: (args: object) => void;
+  setUserToppings: (args: AlbumStructure[]) => void;
   userToppings: AlbumStructure[];
 }
 

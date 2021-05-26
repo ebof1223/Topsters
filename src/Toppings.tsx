@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { AlbumStructure } from './interface';
 import Album from './Album';
@@ -17,11 +16,9 @@ interface Props {
 }
 
 const Toppings: React.FC<Props> = ({ title, albums, classes }) => {
-  const [open, setOpen] = useState(false);
-
   return (
     <Paper elevation={3} className={classes.Toppings}>
-      <Navbar open={open} setOpen={setOpen} />
+      <Navbar />
       <div className={classes.ToppingsAlbums}>
         {albums.map((item: AlbumStructure) => (
           <Album key={item.name} cover={item.image[3]['#text']} />

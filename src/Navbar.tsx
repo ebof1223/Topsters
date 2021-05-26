@@ -5,15 +5,13 @@ import Button from '@material-ui/core/Button';
 import styles from './styles/NavbarStyles';
 
 interface Props {
-  open: boolean;
-  setOpen: () => void;
   classes: {
     Navbar: string;
     logo: string;
   };
 }
 
-const Navbar: React.FC<Props> = ({ open, setOpen, classes }) => {
+const Navbar: React.FC<Props> = ({ classes }) => {
   return (
     <header className={classes.Navbar}>
       <div className={classes.logo}>
