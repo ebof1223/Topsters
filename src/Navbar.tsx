@@ -4,7 +4,16 @@ import { withStyles } from '@material-ui/styles';
 import Button from '@material-ui/core/Button';
 import styles from './styles/NavbarStyles';
 
-function Navbar({ open, setOpen, classes }) {
+interface Props {
+  open: boolean;
+  setOpen: () => void;
+  classes: {
+    Navbar: string;
+    logo: string;
+  };
+}
+
+const Navbar: React.FC<Props> = ({ open, setOpen, classes }) => {
   return (
     <header className={classes.Navbar}>
       <div className={classes.logo}>
@@ -17,15 +26,11 @@ function Navbar({ open, setOpen, classes }) {
           Go Back
         </Button>
       </Link>
-      <Button
-        variant="contained"
-        color="primary"
-        // onClick={handleClickOpen}
-      >
+      <Button variant="contained" color="primary">
         Edit
       </Button>
     </header>
   );
-}
+};
 
 export default withStyles(styles)(Navbar);
