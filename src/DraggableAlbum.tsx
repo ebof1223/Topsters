@@ -3,7 +3,18 @@ import { SortableElement } from 'react-sortable-hoc';
 import DeleteIcon from '@material-ui/icons/Delete';
 import styles from './styles/DraggableAlbumStyles';
 
-const DraggableAlbum = SortableElement(({ cover, classes, onClick }) => {
+interface Props {
+  cover: string;
+  onClick: () => void;
+  classes: {
+    root: string;
+    boxContent: string;
+    links: string;
+    deleteIcon?: string;
+  };
+}
+
+const DraggableAlbum = SortableElement(({ cover, classes, onClick }: Props) => {
   return (
     <div
       style={{

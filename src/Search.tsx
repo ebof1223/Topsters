@@ -1,4 +1,3 @@
-import React from 'react';
 import AlbumStructure from './interface';
 import { useState } from 'react';
 import axios from 'axios';

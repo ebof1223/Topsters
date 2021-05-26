@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import AlbumStructure from './interface';
 import Album from './Album';
@@ -18,7 +18,6 @@ interface Props {
 
 const Toppings: React.FC<Props> = ({ title, albums, classes }) => {
   const [open, setOpen] = useState(false);
-  console.log(albums);
 
   return (
     <Paper elevation={3} className={classes.Toppings}>
