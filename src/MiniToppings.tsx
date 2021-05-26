@@ -19,9 +19,9 @@ interface Props {
   albums: AlbumStructure[];
   id: string;
   deleteDialog: boolean;
-  setDeleteDialog: (input: boolean) => boolean;
+  setDeleteDialog: (input: any) => any;
   handleClick: () => void;
-  setToBeDeleted: (input: string) => string;
+  setToBeDeleted: (input: any) => any;
 }
 
 const MiniToppings: React.FC<Props> = ({

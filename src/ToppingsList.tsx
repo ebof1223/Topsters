@@ -40,8 +40,8 @@ const ToppingsList: React.FC<Props> = ({
   setToppings,
   classes,
 }) => {
-  const [deleteDialog, setDeleteDialog] = useState(false);
-  const [toBeDeleted, setToBeDeleted] = useState(null);
+  const [deleteDialog, setDeleteDialog] = useState<any>(false);
+  const [toBeDeleted, setToBeDeleted] = useState<any>(null);
 
   const goToToppings = (id: string) => {
     history.push(`/toppings/${id}`);
@@ -72,11 +72,8 @@ const ToppingsList: React.FC<Props> = ({
                 key={item.id}
                 handleClick={() => goToToppings(item.id)}
                 id={item.id}
-                setToppings={setToppings}
-                toppings={toppings}
                 deleteDialog={deleteDialog}
                 setDeleteDialog={setDeleteDialog}
-                toBeDeleted={toBeDeleted}
                 setToBeDeleted={setToBeDeleted}
               />
             </CSSTransition>
