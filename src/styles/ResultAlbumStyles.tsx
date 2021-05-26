@@ -1,4 +1,6 @@
-const styles = {
+import { createStyles } from '@material-ui/styles';
+
+const styles = createStyles({
   Album: {
     backgroundColor: '#dae1e4',
     borderRadius: '5px',
@@ -9,6 +11,6 @@ const styles = {
       cursor: 'pointer',
     },
   },
-};
+});
 
 export default styles;

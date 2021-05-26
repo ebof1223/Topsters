@@ -50,7 +50,6 @@ const NewToppingsModal: React.FC<Props> = ({
 
     saveToppings(newToppings);
     setOpen(false);
-    console.log(history.push);
     history.push('/');
   };
 

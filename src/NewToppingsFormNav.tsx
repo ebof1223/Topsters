@@ -29,7 +29,9 @@ interface Props {
   };
   open: boolean;
   setOpen: (input: boolean) => void;
-  history: {};
+  history: {
+    push: (input: string) => void;
+  };
   setUserToppings: (args: object) => void;
   userToppings: AlbumStructure[];
   toppings: ToppingsStructure[];
