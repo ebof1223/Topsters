@@ -10,11 +10,11 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import { ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
 
 interface Props {
-  saveToppings: (input: any) => void;
+  saveToppings: (input: ToppingsStructure) => void;
   history: {
     push: (input: string) => void;
   };
@@ -37,8 +37,8 @@ const NewToppingsForm: React.FC<Props> = ({
   classes,
 }) => {
   const [open, setOpen] = useState(false);
-  const [userToppings, setUserToppings] = useState<any>([]);
-  const [userToppingsName, setUserToppingsName] = useState<any>('');
+  const [userToppings, setUserToppings] = useState([]);
+  const [userToppingsName, setUserToppingsName] = useState('');
 
   const onSortEnd = ({
     oldIndex,

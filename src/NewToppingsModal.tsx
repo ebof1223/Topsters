@@ -10,7 +10,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 
 interface Props {
   setUserToppingsName: (input: string) => void;
-  userToppingsName: 'string';
+  userToppingsName: string | null;
   userToppings: AlbumStructure[];
   toppings: ToppingsStructure[];
   history: {
@@ -83,7 +83,9 @@ const NewToppingsModal: React.FC<Props> = ({
               label="Toppings Name"
               name="userToppingsName"
               value={userToppingsName}
-              onChange={(e) => setUserToppingsName(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+                setUserToppingsName(e.target.value)
+              }
               helperText={errors?.title}
               error={Boolean(errors?.title)}
             />

@@ -28,7 +28,8 @@ const App: React.FC = () => {
     });
   };
 
-  const saveToppings = (newToppings: any) => {
+  const saveToppings = (newToppings: ToppingsStructure) => {
+    console.log(newToppings);
     setToppings([...toppings, newToppings]);
   };
 

@@ -40,8 +40,8 @@ const ToppingsList: React.FC<Props> = ({
   setToppings,
   classes,
 }) => {
-  const [deleteDialog, setDeleteDialog] = useState<any>(false);
-  const [toBeDeleted, setToBeDeleted] = useState<any>(null);
+  const [deleteDialog, setDeleteDialog] = useState(false);
+  const [toBeDeleted, setToBeDeleted] = useState(null);
 
   const goToToppings = (id: string) => {
     history.push(`/toppings/${id}`);
@@ -49,7 +49,7 @@ const ToppingsList: React.FC<Props> = ({
   const handleDeleteConfirmation = () => {
     let newToppings = toppings.filter((item) => item.id !== toBeDeleted);
     setToppings([...newToppings]);
-    setToBeDeleted(null);
+
     setDeleteDialog(!deleteDialog);
   };
 
