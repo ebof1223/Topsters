@@ -10,9 +10,11 @@ import Page from './Page';
 import { ToppingsStructure } from './interface.js';
 
 const App: React.FC = () => {
-  const savedToppings = JSON.parse(window.localStorage.getItem('toppings'));
+  const savedToppings = JSON.parse(
+    window.localStorage.getItem('toppings') || '{}'
+  );
   const [toppings, setToppings] = useState(
-    savedToppings ? savedToppings : defaultToppings
+    Object.keys(savedToppings).length ? savedToppings : defaultToppings
   );
 
   useLayoutEffect(() => {
