@@ -10,16 +10,46 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-const arrayMove = require('array-move');
+import { ToppingsStructure } from './interface';
+import arrayMove from 'array-move';
 
-function NewToppingsForm({ saveToppings, history, toppings, classes }) {
+interface Props {
+  saveToppings: (input: ToppingsStructure) => void;
+  history: {
+    push: (input: string) => void;
+  };
+  toppings: ToppingsStructure[];
+  classes: {
+    root: string;
+    hide: string;
+    drawer: string;
+    drawerPaper: string;
+    drawerHeader: string;
+    content: string;
+    contentShift: string;
+  };
+}
+
+const NewToppingsForm: React.FC<Props> = ({
+  saveToppings,
+  history,
+  toppings,
+  classes,
+}) => {
   const [open, setOpen] = useState(false);
   const [userToppings, setUserToppings] = useState([]);
   const [userToppingsName, setUserToppingsName] = useState('');
 
-  const onSortEnd = ({ oldIndex, newIndex }) => {
+  const onSortEnd = ({
+    oldIndex,
+    newIndex,
+  }: {
+    oldIndex: number;
+    newIndex: number;
+  }) => {
     document.body.style.cursor = 'default';
-    setUserToppings(arrayMove(userToppings, oldIndex, newIndex));
+    let newToppings = arrayMove(userToppings, oldIndex, newIndex);
+    setUserToppings(newToppings);
   };
 
   return (
@@ -32,8 +62,8 @@ function NewToppingsForm({ saveToppings, history, toppings, classes }) {
         toppings={toppings}
         saveToppings={saveToppings}
         userToppingsName={userToppingsName}
-        setUserToppingsName={setUserToppingsName}
         userToppings={userToppings}
+        setUserToppingsName={setUserToppingsName}
       />
       <div className={classes.root}>
         <Drawer
@@ -73,6 +103,6 @@ function NewToppingsForm({ saveToppings, history, toppings, classes }) {
       </div>
     </>
   );
-}
+};
 
 export default withStyles(styles, { withTheme: true })(NewToppingsForm);

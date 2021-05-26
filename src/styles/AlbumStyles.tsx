@@ -1,5 +1,6 @@
 import sizes from './sizes';
-const styles = {
+import { createStyles } from '@material-ui/styles';
+const styles = createStyles({
   Album: {
     width: '20%',
     height: '25%',
@@ -32,5 +33,5 @@ const styles = {
     textTransform: 'uppercase',
     fontSize: '0.7rem',
   },
-};
+});
 export default styles;

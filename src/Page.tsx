@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Page.css';
-function Page({ children }) {
+const Page: React.FC = ({ children }) => {
   return <section className="page">{children}</section>;
-}
+};
 
 export default Page;

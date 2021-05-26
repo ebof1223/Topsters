@@ -1,5 +1,7 @@
+import { createStyles } from '@material-ui/styles';
 import sizes from './sizes';
-const styles = {
+
+const styles = createStyles({
   root: {
     width: '20%',
     height: '25%',
@@ -51,5 +53,5 @@ const styles = {
       cursor: 'pointer',
     },
   },
-};
+});
 export default styles;

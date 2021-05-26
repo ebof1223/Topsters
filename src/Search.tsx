@@ -1,4 +1,4 @@
-import React from 'react';
+import { AlbumStructure } from './interface';
 import { useState } from 'react';
 import axios from 'axios';
 import { withStyles } from '@material-ui/styles';
@@ -7,12 +7,28 @@ import { LASTFM_API_KEY } from './sensitive';
 import ResultAlbum from './ResultAlbum';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 
-const Search = ({ classes, setUserToppings, userToppings }) => {
-  const [userSearch, setUserSearch] = useState('');
-  const [results, setResults] = useState([]);
+interface Props {
+  classes: {
+    resultsContainer: string;
+  };
+  setUserToppings: (args: AlbumStructure[]) => void;
+  userToppings: AlbumStructure[];
+}
 
-  const addToToppings = (itemIdx) => {
-    if (userToppings.some((item) => item.name === results[itemIdx].name)) {
+const Search: React.FC<Props> = ({
+  classes,
+  setUserToppings,
+  userToppings,
+}) => {
+  const [userSearch, setUserSearch] = useState('');
+  const [results, setResults] = useState<AlbumStructure[]>([]);
+
+  const addToToppings = (itemIdx: number) => {
+    if (
+      userToppings.some(
+        (item: AlbumStructure) => item.name === results[itemIdx].name
+      )
+    ) {
       console.log('DUPLICATE ERROR');
       return;
     }
@@ -22,7 +38,8 @@ const Search = ({ classes, setUserToppings, userToppings }) => {
     }
     setUserToppings([...userToppings, results[itemIdx]]);
   };
-  const getDiscography = async (artist) => {
+
+  const getDiscography = async (artist: string) => {
     setResults([]);
     try {
       await axios
@@ -30,8 +47,9 @@ const Search = ({ classes, setUserToppings, userToppings }) => {
           `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${LASTFM_API_KEY}&format=json`
         )
         .then((res) => {
+          console.log('this is our log', res.data.topalbums.album);
           let albumsArray = res.data.topalbums.album.filter(
-            (item) => item.image[3]['#text']
+            (item: AlbumStructure) => item.image[3]['#text']
           );
           setResults(albumsArray);
         });
@@ -39,7 +57,8 @@ const Search = ({ classes, setUserToppings, userToppings }) => {
       console.log(error);
     }
   };
-  const handleSubmit = (e) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     getDiscography(userSearch);
     setUserSearch('');
@@ -63,11 +82,10 @@ const Search = ({ classes, setUserToppings, userToppings }) => {
         </form>
       </div>
       <div className={classes.resultsContainer}>
-        {results.map((item, index) => (
+        {results.map((item: AlbumStructure, index: number) => (
           <ResultAlbum
             key={`${item.name}-result`}
             onClick={() => addToToppings(index)}
-            index={index}
             cover={item.image[3]['#text']}
           />
         ))}

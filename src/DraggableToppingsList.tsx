@@ -1,9 +1,14 @@
-import React from 'react';
 import { SortableContainer } from 'react-sortable-hoc';
 import DraggableAlbum from './DraggableAlbum';
+import { AlbumStructure } from './interface';
+
+interface Props {
+  userToppings: AlbumStructure[];
+  setUserToppings: (input: AlbumStructure[]) => void;
+}
 
 const DraggableToppingsList = SortableContainer(
-  ({ userToppings, setUserToppings }) => {
+  ({ userToppings, setUserToppings }: Props) => {
     return (
       <div style={{ height: '92.25vh' }}>
         {userToppings.map((item, index) => (

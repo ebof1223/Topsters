@@ -1,4 +1,6 @@
-const styles = {
+import { createStyles } from '@material-ui/core';
+
+const styles = createStyles({
   Toppings: {
     height: '100vh',
     display: 'flex',
@@ -18,6 +20,6 @@ const styles = {
     marginRight: '1rem',
     fontWeight: 'bold',
   },
-};
+});
 
 export default styles;
