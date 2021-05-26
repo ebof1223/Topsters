@@ -1,4 +1,6 @@
-const styles = {
+import { createStyles } from '@material-ui/styles';
+
+const styles = createStyles({
   root: {
     backgroundColor: 'white',
     borderRadius: '5px',
@@ -39,7 +41,6 @@ const styles = {
     position: 'relative',
     marginBottom: '-3.5px',
   },
-  delete: {},
   deleteIcon: {
     color: 'white',
     backgroundColor: '#eb3d30',
@@ -54,5 +55,5 @@ const styles = {
     transition: 'all 0.3s ease-in-out',
     borderRadius: '5px',
   },
-};
+});
 export default styles;
