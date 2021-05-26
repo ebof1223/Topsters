@@ -37,7 +37,7 @@ const NewToppingsForm: React.FC<Props> = ({
   classes,
 }) => {
   const [open, setOpen] = useState(false);
-  const [userToppings, setUserToppings] = useState<AlbumStructure[]>([]);
+  const [userToppings, setUserToppings] = useState<any>([]);
   const [userToppingsName, setUserToppingsName] = useState<any>('');
 
   const onSortEnd = ({
