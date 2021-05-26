@@ -1,12 +1,30 @@
-import React from 'react';
 import { withStyles } from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
 import fantano from './userImgs/fantano.jpeg';
 import styles from './styles/MiniToppingsStyles';
 import DeleteIcon from '@material-ui/icons/Delete';
+import { AlbumStructure } from './interface';
 
-function MiniToppings({
+interface Props {
+  classes: {
+    root: string;
+    albums: string;
+    title: string;
+    avatar: string;
+    miniToppings: string;
+    deleteIcon: string;
+  };
+  title: string;
+  albums: AlbumStructure[];
+  id: string;
+  deleteDialog: boolean;
+  setDeleteDialog: (input: boolean) => boolean;
+  handleClick: () => void;
+  setToBeDeleted: (input: string) => string;
+}
+
+const MiniToppings: React.FC<Props> = ({
   classes,
   title,
   albums,
@@ -15,7 +33,7 @@ function MiniToppings({
   setDeleteDialog,
   handleClick,
   setToBeDeleted,
-}) {
+}) => {
   const miniToppings = albums.map((item) => (
     <div
       className={classes.miniToppings}
@@ -26,7 +44,7 @@ function MiniToppings({
     ></div>
   ));
 
-  const handleDelete = (e) => {
+  const handleDelete = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
     e.stopPropagation();
     setToBeDeleted(id);
     setDeleteDialog(!deleteDialog);
@@ -35,7 +53,7 @@ function MiniToppings({
   return (
     <Paper variant="outlined">
       <div className={classes.root} onClick={handleClick}>
-        <Paper outlined="true" className={classes.delete}>
+        <Paper variant="outlined">
           <DeleteIcon
             className={classes.deleteIcon}
             onClick={(e) => handleDelete(e)}
@@ -47,12 +65,12 @@ function MiniToppings({
         <h5 className={classes.title}>
           {title}{' '}
           <span className={classes.avatar}>
-            <Avatar alt="fantano" src={fantano} height="10px" />
+            <Avatar alt="fantano" src={fantano} />
           </span>
         </h5>
       </div>
     </Paper>
   );
-}
+};
 
 export default withStyles(styles)(MiniToppings);
