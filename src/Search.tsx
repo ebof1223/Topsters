@@ -24,6 +24,7 @@ const Search: React.FC<Props> = ({
   const [results, setResults] = useState<AlbumStructure[]>([]);
 
   const addToToppings = (itemIdx: number) => {
+    console.log(results[itemIdx]);
     if (
       userToppings.some(
         (item: AlbumStructure) => item.name === results[itemIdx].name
@@ -48,9 +49,20 @@ const Search: React.FC<Props> = ({
         )
         .then((res) => {
           console.log('this is our log', res.data.topalbums.album);
-          let albumsArray = res.data.topalbums.album.filter(
+          var albumsArray = res.data.topalbums.album.filter(
             (item: AlbumStructure) => item.image[3]['#text']
           );
+          return albumsArray;
+        })
+
+        .then(async (albumsArray) => {
+          for (let [index, album] of albumsArray.entries()) {
+            let res = await axios.get(
+              `${LASTFM_API_URL}?method=album.getinfo&api_key=${LASTFM_API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
+            );
+            if (!res.data.album.tracks.length) albumsArray.splice(index, 1);
+          }
+
           setResults(albumsArray);
         });
     } catch (error) {

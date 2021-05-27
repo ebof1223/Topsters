@@ -10,22 +10,30 @@ interface Props {
   albums: AlbumStructure[];
   classes: {
     Toppings: string;
+    ToppingsContainer: string;
     ToppingsAlbums: string;
     ToppingsFooter: string;
   };
 }
 
 const Toppings: React.FC<Props> = ({ title, albums, classes }) => {
+  console.log(albums[0]);
   return (
-    <Paper elevation={3} className={classes.Toppings}>
-      <Navbar />
-      <div className={classes.ToppingsAlbums}>
-        {albums.map((item: AlbumStructure) => (
-          <Album key={item.name} cover={item.image[3]['#text']} />
-        ))}
+    <div className={classes.Toppings}>
+      {/* <Navbar /> */}
+      <div className="ToppingsDescription">
+        <h1>{albums[0].name}</h1>
+        <h2>{albums[0].artist.name}</h2>
       </div>
-      <footer className={classes.ToppingsFooter}>{title}</footer>
-    </Paper>
+      <Paper square className={classes.ToppingsContainer}>
+        <div className={classes.ToppingsAlbums}>
+          {albums.map((item: AlbumStructure) => (
+            <Album key={item.name} cover={item.image[3]['#text']} />
+          ))}
+        </div>
+      </Paper>
+      {/* <footer className={classes.ToppingsFooter}>{title}</footer> */}
+    </div>
   );
 };
 

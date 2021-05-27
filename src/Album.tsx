@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
+import { Paper } from '@material-ui/core';
 import styles from './styles/AlbumStyles';
 
 interface Props {
@@ -11,7 +12,9 @@ interface Props {
 }
 const Album: React.FC<Props> = ({ cover, classes }) => {
   return (
-    <div
+    <Paper
+      elevation={3}
+      square
       style={{
         background: `url(${cover}) no-repeat center center/cover`,
       }}
@@ -20,7 +23,7 @@ const Album: React.FC<Props> = ({ cover, classes }) => {
       <div>
         <div className={classes.boxContent}></div>
       </div>
-    </div>
+    </Paper>
   );
 };
 
