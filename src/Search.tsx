@@ -56,14 +56,16 @@ const Search: React.FC<Props> = ({
         })
 
         .then(async (albumsArray) => {
-          for (let [index, album] of albumsArray.entries()) {
+          let albumsArrayCopy = [];
+          for (let album of albumsArray) {
             let res = await axios.get(
               `${LASTFM_API_URL}?method=album.getinfo&api_key=${LASTFM_API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
             );
-            if (!res.data.album.tracks.length) albumsArray.splice(index, 1);
+            if (res.data.album && res.data.album.tracks.track.length > 1) {
+              albumsArrayCopy.push(res.data.album);
+            }
           }
-
-          setResults(albumsArray);
+          setResults(albumsArrayCopy);
         });
     } catch (error) {
       console.log(error);
