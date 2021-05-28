@@ -62,6 +62,7 @@ const styles = createStyles({
     flexDirection: 'column',
     color: 'rgb(255,255,255)',
     margin: '0 auto',
+    width: '35vw',
   },
   ToppingsContainer: {
     background: 'rgb(255,255,255)',

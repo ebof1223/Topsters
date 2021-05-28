@@ -1,7 +1,7 @@
 const defaultToppings = [
   {
-    title: 'test1',
-    id: 'test1',
+    title: 'alf alfies',
+    id: 'alf alfies',
     albums: [
       {
         name: 'Kid A',
@@ -1790,8 +1790,8 @@ const defaultToppings = [
     ],
   },
   {
-    title: 'test2',
-    id: 'test2',
+    title: 'cooptie doop',
+    id: 'cooptie doop',
     albums: [
       {
         name: 'Exmilitary',
