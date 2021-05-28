@@ -8,8 +8,40 @@ const styles = createStyles({
     backgroundColor: 'rgb(47,48,52)',
     height: '92.5vh',
     width: '92.5vw',
-    margin: '5vh auto',
+    margin: '4vh auto',
+    justifyContent: 'space-between',
   },
+
+  LeftPanel: {
+    display: 'flex',
+    position: 'absolute',
+    alignItems: 'center',
+    left: 0,
+    bottom: '50%',
+    marginLeft: '1.5rem',
+    '& h3': {
+      fontFamily: 'Lexend, sans-serif',
+      transform: 'rotate(-90deg)',
+      fontSize: '2rem',
+      marginLeft: '-7rem',
+    },
+  },
+
+  RightPanel: {
+    display: 'flex',
+    position: 'absolute',
+    alignItems: 'center',
+    right: 0,
+    bottom: '50%',
+    marginRight: '1.5rem',
+    '& h3': {
+      fontFamily: 'Lexend, sans-serif',
+      transform: 'rotate(-270deg)',
+      fontSize: '2rem',
+      marginRight: '-4.5rem',
+    },
+  },
+
   ToppingsDescription: {
     '& h1': {
       fontSize: '2rem',
@@ -22,9 +54,6 @@ const styles = createStyles({
     '& ol': {
       marginLeft: '1rem',
       marginTop: '1rem',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
       lineHeight: '2rem',
       fontWeight: '600',
     },
@@ -38,6 +67,9 @@ const styles = createStyles({
     background: 'rgb(255,255,255)',
     margin: '0 auto',
     padding: '0.5rem',
+    borderRadius: '2px',
+    display: 'flex',
+    flexDirection: 'column',
   },
 
   ToppingsAlbums: {
@@ -46,18 +78,19 @@ const styles = createStyles({
     gridTemplateColumns: '250px 250px 250px',
     maxHeight: '750px',
     background: 'rgb(255,255,255)',
-    marginBottom: 0,
   },
 
   ToppingsFooter: {
-    backgroundColor: 'white',
+    position: 'absolute',
+    bottom: 0,
     flexDirection: 'row',
-    height: '5vh',
+    width: '100%',
+    minHeight: '3.5vh',
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
-    marginRight: '1rem',
-    fontWeight: 'bold',
+    fontFamily: 'Lexend, sans-serif',
+    fontSize: '2rem',
   },
 });
 

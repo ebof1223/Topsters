@@ -3,20 +3,16 @@ import { createStyles } from '@material-ui/styles';
 const styles = createStyles({
   Navbar: {
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    height: '6vh',
+    position: 'absolute',
+    top: 0,
+    minWidth: '100%',
+    padding: '1rem 2rem',
   },
 
-  logo: {
-    marginRight: '1rem',
-    padding: '0 1rem',
-    background: '#eceff1',
-    fontFamily:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, OxygenUbuntu, Cantarell,'Open Sans', 'Helvetica Neue',sans-serif",
-    height: '100%',
+  Navigation: {
     display: 'flex',
-    alignItems: 'center',
+    justifyContent: 'flex-end',
   },
 
   selectContainer: {

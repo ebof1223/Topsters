@@ -1,32 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/styles';
-import Button from '@material-ui/core/Button';
 import styles from './styles/NavbarStyles';
+
+import EditIcon from '@material-ui/icons/Edit';
+import HomeIcon from '@material-ui/icons/Home';
 
 interface Props {
   classes: {
     Navbar: string;
-    logo: string;
+    Navigation: string;
   };
 }
 
 const Navbar: React.FC<Props> = ({ classes }) => {
   return (
     <header className={classes.Navbar}>
-      <div className={classes.logo}>
-        <Link to={'/'} style={{ textDecoration: 'none' }}>
-          Toppings
-        </Link>
-      </div>
-      <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
-        <Button variant="contained" color="secondary" type="submit">
-          Go Back
-        </Button>
+      <Link to={'/'}>
+        <HomeIcon style={{ marginLeft: '3rem' }} />
       </Link>
-      <Button variant="contained" color="primary">
-        Edit
-      </Button>
+      {/* <div className={classes.Navigation}>
+        <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
+        </Link>
+      </div> */}
+      <EditIcon style={{ marginRight: '3rem' }} />
     </header>
   );
 };
