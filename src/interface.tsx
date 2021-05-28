@@ -1,4 +1,5 @@
 export interface AlbumStructure {
+  tracks: any;
   artist: { name: string };
   image: {
     '#text': string;

@@ -33,7 +33,7 @@ const Search: React.FC<Props> = ({
       console.log('DUPLICATE ERROR');
       return;
     }
-    if (userToppings.length > 19) {
+    if (userToppings.length > 8) {
       console.log('EXCEEDED MAX TOPPINGS VALUE');
       return;
     }

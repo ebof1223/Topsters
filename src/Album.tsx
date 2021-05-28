@@ -13,7 +13,7 @@ interface Props {
 const Album: React.FC<Props> = ({ cover, classes }) => {
   return (
     <Paper
-      elevation={3}
+      elevation={5}
       square
       style={{
         background: `url(${cover}) no-repeat center center/cover`,
