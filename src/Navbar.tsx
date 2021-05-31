@@ -20,8 +20,10 @@ const Navbar: React.FC<Props> = ({ classes }) => {
         <HomeIcon style={{ marginLeft: '3rem' }} />
       </Link>
       {/* <div className={classes.Navigation}>
-        <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
-        </Link>
+        <Link
+          to={'/'}
+          style={{ textDecoration: 'none', marginLeft: '2rem' }}
+        ></Link>
       </div> */}
       <EditIcon style={{ marginRight: '3rem' }} />
     </header>

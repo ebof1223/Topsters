@@ -7,7 +7,7 @@ const styles = createStyles({
     position: 'absolute',
     top: 0,
     minWidth: '100%',
-    padding: '1rem 2rem',
+    padding: '0.75rem 2rem',
   },
 
   Navigation: {

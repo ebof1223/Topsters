@@ -1,7 +1,7 @@
 const defaultToppings = [
   {
     title: 'alf alfies',
-    id: 'alf alfies',
+    id: 'alf-alfies',
     albums: [
       {
         name: 'Kid A',
@@ -1791,7 +1791,7 @@ const defaultToppings = [
   },
   {
     title: 'cooptie doop',
-    id: 'cooptie doop',
+    id: 'cooptie-doop',
     albums: [
       {
         name: 'Exmilitary',

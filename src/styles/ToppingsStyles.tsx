@@ -6,10 +6,11 @@ const styles = createStyles({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: 'rgb(47,48,52)',
-    height: '92.5vh',
-    width: '92.5vw',
+    height: '91.5vh',
+    width: '91.5vw',
     margin: '4vh auto',
     justifyContent: 'space-between',
+    overflow: 'none',
   },
 
   LeftPanel: {
@@ -28,7 +29,7 @@ const styles = createStyles({
       fontSize: '2rem',
       width: '10vw',
       alignItems: 'center',
-      marginLeft: '-6rem',
+      marginLeft: '-5.5rem',
     },
   },
 
@@ -41,10 +42,14 @@ const styles = createStyles({
     marginRight: '1.5rem',
     cursor: 'pointer',
     '& h3': {
+      display: 'flex',
+      flexDirection: 'column',
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-270deg)',
       fontSize: '2rem',
-      marginRight: '-4.5rem',
+      marginRight: '-5.5rem',
+      alignItems: 'center',
+      width: '10vw',
     },
   },
 
@@ -98,6 +103,7 @@ const styles = createStyles({
     alignItems: 'center',
     fontFamily: 'Lexend, sans-serif',
     fontSize: '2rem',
+    marginBottom: '0.5rem',
   },
 });
 

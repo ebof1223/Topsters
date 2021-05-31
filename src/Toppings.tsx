@@ -39,30 +39,39 @@ const Toppings: React.FC<Props> = ({
     setSelectedAlbum(albums[index]);
   };
 
-  const prevToppingsIndex = (input: string) => {
-    for (let [index, topping] of toppings.entries()) {
-      if (topping.title === input && index - 1 > -1) return index - 1;
+  const toppingsIndex = (input: string, direction: string) => {
+    if (direction === 'left') {
+      for (let [index, topping] of toppings.entries()) {
+        if (topping.title === input && index - 1 > -1) return index - 1;
+      }
+    } else {
+      for (let [index, topping] of toppings.entries()) {
+        if (topping.title === input && index + 1 < toppings.length)
+          return index + 1;
+      }
     }
     return null;
   };
 
-  const previousToppings = () => {
-    let index = prevToppingsIndex(title);
+  const shiftToppings = (direction: string) => {
+    let index = toppingsIndex(title, direction);
+
     if (index === null) {
       return -1;
     }
-    history.push(`/toppings/${toppings[index].title}`);
+    history.push(`/toppings/${toppings[index].id}`);
   };
   return (
     <>
       <Navbar />
-      {prevToppingsIndex(title) !== null ? (
-        <div className={classes.LeftPanel} onClick={previousToppings}>
+      {toppingsIndex(title, 'left') !== null && (
+        <div
+          className={classes.LeftPanel}
+          onClick={() => shiftToppings('left')}
+        >
           <ArrowBackIosIcon />
-          <h3>{toppings[prevToppingsIndex(title)].title}</h3>
+          <h3>{toppings[toppingsIndex(title, 'left')].title}</h3>
         </div>
-      ) : (
-        ''
       )}
       <div className={classes.Toppings}>
         <div className={classes.ToppingsDescription}>
@@ -86,10 +95,15 @@ const Toppings: React.FC<Props> = ({
           </div>
         </Paper>
       </div>
-      <div className={classes.RightPanel}>
-        <h3>Alfie's Tunes</h3>
-        <ArrowForwardIosIcon />
-      </div>
+      {toppingsIndex(title, 'right') !== null && (
+        <div
+          className={classes.RightPanel}
+          onClick={() => shiftToppings('right')}
+        >
+          <h3>{toppings[toppingsIndex(title, 'right')].title}</h3>
+          <ArrowForwardIosIcon />
+        </div>
+      )}
       <footer className={classes.ToppingsFooter}>{title}</footer>
     </>
   );
