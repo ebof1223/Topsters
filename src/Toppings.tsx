@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/styles';
-import { AlbumStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from './interface';
 import Album from './Album';
 import Navbar from './Navbar';
 import styles from './styles/ToppingsStyles';
@@ -19,22 +19,51 @@ interface Props {
     ToppingsAlbums: string;
     ToppingsFooter: string;
   };
+  toppings: ToppingsStructure[];
+  history: {
+    push: (input: string) => void;
+  };
 }
 
-const Toppings: React.FC<Props> = ({ title, albums, classes }) => {
+const Toppings: React.FC<Props> = ({
+  title,
+  albums,
+  classes,
+  toppings,
+  history,
+}) => {
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumStructure>(albums[0]);
 
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
     setSelectedAlbum(albums[index]);
   };
+
+  const prevToppingsIndex = (input: string) => {
+    for (let [index, topping] of toppings.entries()) {
+      if (topping.title === input && index - 1 > -1) return index - 1;
+    }
+    return null;
+  };
+
+  const previousToppings = () => {
+    let index = prevToppingsIndex(title);
+    if (index === null) {
+      return -1;
+    }
+    history.push(`/toppings/${toppings[index].title}`);
+  };
   return (
     <>
       <Navbar />
-      <div className={classes.LeftPanel}>
-        <ArrowBackIosIcon />
-        <h3>Fantano Forever</h3>
-      </div>
+      {prevToppingsIndex(title) !== null ? (
+        <div className={classes.LeftPanel} onClick={previousToppings}>
+          <ArrowBackIosIcon />
+          <h3>{toppings[prevToppingsIndex(title)].title}</h3>
+        </div>
+      ) : (
+        ''
+      )}
       <div className={classes.Toppings}>
         <div className={classes.ToppingsDescription}>
           <h1>{selectedAlbum.name}</h1>

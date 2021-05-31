@@ -73,6 +73,8 @@ const App: React.FC = () => {
                     <Toppings
                       title={findToppings(routeProps.match.params.id).title}
                       albums={findToppings(routeProps.match.params.id).albums}
+                      toppings={toppings}
+                      {...routeProps}
                     />
                   </Page>
                 )}

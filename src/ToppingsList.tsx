@@ -52,7 +52,6 @@ const ToppingsList: React.FC<Props> = ({
 
     setDeleteDialog(!deleteDialog);
   };
-
   return (
     <div className={classes.root}>
       <div className={classes.container}>

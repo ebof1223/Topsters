@@ -18,12 +18,13 @@ const styles = createStyles({
     alignItems: 'center',
     left: 0,
     bottom: '50%',
-    marginLeft: '1.5rem',
+    marginLeft: '1rem',
+    cursor: 'pointer',
     '& h3': {
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-90deg)',
       fontSize: '2rem',
-      marginLeft: '-7rem',
+      marginLeft: '-3rem',
     },
   },
 
@@ -34,6 +35,7 @@ const styles = createStyles({
     right: 0,
     bottom: '50%',
     marginRight: '1.5rem',
+    cursor: 'pointer',
     '& h3': {
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-270deg)',
