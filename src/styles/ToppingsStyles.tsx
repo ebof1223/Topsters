@@ -21,10 +21,14 @@ const styles = createStyles({
     marginLeft: '1rem',
     cursor: 'pointer',
     '& h3': {
+      display: 'flex',
+      flexDirection: 'column',
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-90deg)',
       fontSize: '2rem',
-      marginLeft: '-3rem',
+      width: '10vw',
+      alignItems: 'center',
+      marginLeft: '-6rem',
     },
   },
 
