@@ -44,7 +44,7 @@ const Toppings: React.FC<Props> = ({
       for (let [index, topping] of toppings.entries()) {
         if (topping.title === input && index - 1 > -1) return index - 1;
       }
-    } else {
+    } else if (direction === 'right') {
       for (let [index, topping] of toppings.entries()) {
         if (topping.title === input && index + 1 < toppings.length)
           return index + 1;
@@ -78,7 +78,18 @@ const Toppings: React.FC<Props> = ({
           <h1>{selectedAlbum.name}</h1>
           <h2>{selectedAlbum.artist}</h2>
           <ol>
-            {selectedAlbum.tracks.track.map((item: AlbumStructure) => (
+            {Object.values(
+              selectedAlbum.tracks.track.reduce(
+                (
+                  unique: { [x: string]: any },
+                  o: { name: string | number }
+                ) => {
+                  if (!unique[o.name]) unique[o.name] = o;
+                  return unique;
+                },
+                {}
+              )
+            ).map((item: AlbumStructure) => (
               <li key={item.name}>{item.name.toUpperCase()}</li>
             ))}
           </ol>

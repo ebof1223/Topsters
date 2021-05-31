@@ -48,6 +48,12 @@ const NewToppingsModal: React.FC<Props> = ({
 
     if (!userToppingsName) return setErrors({ title: 'Please enter a title' });
 
+    if (userToppingsName.length > 21)
+      return setErrors({
+        title:
+          'You have exceeded the maximum character length of 21.\n Please enter a valid length.',
+      });
+
     saveToppings(newToppings);
     setOpen(false);
     history.push('/');

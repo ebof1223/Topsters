@@ -27,9 +27,9 @@ const styles = createStyles({
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-90deg)',
       fontSize: '2rem',
-      width: '10vw',
+      width: '15vw',
       alignItems: 'center',
-      marginLeft: '-5.5rem',
+      marginLeft: '-9rem',
     },
   },
 
@@ -47,9 +47,9 @@ const styles = createStyles({
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-270deg)',
       fontSize: '2rem',
-      marginRight: '-5.5rem',
+      marginRight: '-9rem',
       alignItems: 'center',
-      width: '10vw',
+      width: '15vw',
     },
   },
 
@@ -57,16 +57,20 @@ const styles = createStyles({
     '& h1': {
       fontSize: '2rem',
       fontFamily: 'Lexend Peta, sans-serif',
+      marginLeft: '1rem',
     },
     '& h2': {
       fontSize: '1.5rem',
       fontWeight: '700',
+      marginLeft: '1rem',
     },
     '& ol': {
-      marginLeft: '1rem',
       marginTop: '1rem',
       lineHeight: '2rem',
       fontWeight: '600',
+      marginLeft: '2rem',
+      listStylePosition: 'inside',
+      overflow: 'scroll',
     },
     fontFamily: 'Lexend, sans-serif',
     display: 'flex',
@@ -74,6 +78,7 @@ const styles = createStyles({
     color: 'rgb(255,255,255)',
     margin: '0 auto',
     width: '35vw',
+    height: '65vh',
   },
   ToppingsContainer: {
     background: 'rgb(255,255,255)',
