@@ -7,6 +7,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import CharacterCounter from './CharacterCounter';
 
 interface Props {
   setUserToppingsName: (input: string) => void;
@@ -96,6 +97,7 @@ const NewToppingsModal: React.FC<Props> = ({
               error={Boolean(errors?.title)}
             />
           </DialogContent>
+          <CharacterCounter userToppingsNameLength={userToppingsName.length} />
           <DialogActions>
             <Button
               onClick={() => {

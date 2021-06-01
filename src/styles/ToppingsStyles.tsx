@@ -57,15 +57,15 @@ const styles = createStyles({
     '& h1': {
       fontSize: '2rem',
       fontFamily: 'Lexend Peta, sans-serif',
-      marginLeft: '1rem',
+      marginLeft: '2rem',
     },
     '& h2': {
       fontSize: '1.5rem',
       fontWeight: '700',
-      marginLeft: '1rem',
+      marginLeft: '2rem',
     },
     '& ol': {
-      marginTop: '1rem',
+      marginTop: '3rem',
       lineHeight: '2rem',
       fontWeight: '600',
       marginLeft: '2rem',
@@ -76,7 +76,7 @@ const styles = createStyles({
     display: 'flex',
     flexDirection: 'column',
     color: 'rgb(255,255,255)',
-    margin: '0 auto',
+    margin: 'auto',
     width: '35vw',
     height: '65vh',
   },

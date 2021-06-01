@@ -63,7 +63,7 @@ const Toppings: React.FC<Props> = ({
   };
   return (
     <>
-      <Navbar />
+      <Navbar title={title} />
       {toppingsIndex(title, 'left') !== null && (
         <div
           className={classes.LeftPanel}
