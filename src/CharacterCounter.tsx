@@ -1,11 +1,18 @@
+import { withStyles } from '@material-ui/styles';
 import { useLayoutEffect, useState } from 'react';
+import styles from './styles/CharacterCounterStyles';
 
 interface Props {
   userToppingsNameLength: number;
+  classes: {
+    root: string;
+  };
 }
 
-const CharacterCounter: React.FC<Props> = (userToppingsNameLength) => {
-  let titleLength = userToppingsNameLength.userToppingsNameLength;
+const CharacterCounter: React.FC<Props> = ({
+  classes,
+  userToppingsNameLength,
+}) => {
   const [ringState, setRingState] = useState({
     ringStyle: {
       stroke: '',
@@ -13,7 +20,7 @@ const CharacterCounter: React.FC<Props> = (userToppingsNameLength) => {
     },
   });
   const circleLength = 2 * Math.PI * 15;
-  const colored = (circleLength * titleLength) / 21;
+  const colored = (circleLength * userToppingsNameLength) / 21;
   const gray = circleLength - colored > 0 ? circleLength - colored : 0;
   const twitterBlue = 'rgb(29, 161, 242)';
 
@@ -21,52 +28,28 @@ const CharacterCounter: React.FC<Props> = (userToppingsNameLength) => {
     setRingState({
       ringStyle: {
         stroke:
-          21 - titleLength <= 0
+          21 - userToppingsNameLength <= 0
             ? 'red'
-            : 21 - titleLength <= 10
+            : 21 - userToppingsNameLength <= 10
             ? 'orange'
             : twitterBlue,
         strokeDasharray: `${colored} ${gray}`,
       },
     });
-  }, [circleLength, colored, gray, titleLength]);
+  }, [circleLength, colored, gray, userToppingsNameLength]);
   return (
-    <>
-      <svg
+    <svg className={classes.root}>
+      <circle r="15" cx="50%" cy="50%" stroke="lightgray"></circle>
+      <circle
+        r="15"
+        cx="50%"
+        cy="50%"
         style={{
-          width: '15%',
-          height: '15%',
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          marginTop: '1rem',
+          ...ringState.ringStyle,
         }}
-      >
-        <circle
-          id="gray"
-          cx="50%"
-          cy="50%"
-          r="15"
-          stroke="lightgray"
-          style={{
-            fill: 'none',
-            strokeWidth: '3',
-          }}
-        ></circle>
-        <circle
-          id="colored"
-          cx="50%"
-          cy="50%"
-          r="15"
-          style={{
-            fill: 'none',
-            strokeWidth: '3',
-            ...ringState.ringStyle,
-          }}
-        ></circle>
-      </svg>
-    </>
+      ></circle>
+    </svg>
   );
 };
 
-export default CharacterCounter;
+export default withStyles(styles)(CharacterCounter);

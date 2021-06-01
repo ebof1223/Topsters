@@ -95,6 +95,7 @@ const NewToppingsModal: React.FC<Props> = ({
               }
               helperText={errors?.title}
               error={Boolean(errors?.title)}
+              fullWidth
             />
           </DialogContent>
           <CharacterCounter userToppingsNameLength={userToppingsName.length} />
