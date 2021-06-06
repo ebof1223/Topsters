@@ -91,9 +91,8 @@ const styles = createStyles({
 
   ToppingsAlbums: {
     display: 'grid',
-    gridTemplateRows: '250px 250px 250px',
-    gridTemplateColumns: '250px 250px 250px',
-    maxHeight: '750px',
+    gridTemplateColumns: 'repeat(3, 250px)',
+    gridTemplateRows: 'repeat(3, 250px)',
     background: 'rgb(255,255,255)',
   },
 

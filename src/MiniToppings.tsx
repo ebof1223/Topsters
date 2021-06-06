@@ -50,14 +50,14 @@ const MiniToppings: React.FC<Props> = ({
 
   return (
     <div className={classes.root}>
-      <div className={classes.card} onClick={handleClick}>
+      <Paper elevation={3} className={classes.card} onClick={handleClick}>
         <DeleteIcon
           className={classes.deleteIcon}
           onClick={(e) => handleDelete(e)}
         />
         {miniToppings}
         {/* <h5 className={classes.title}>{title}</h5> */}
-      </div>
+      </Paper>
     </div>
   );
 };
