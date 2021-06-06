@@ -39,7 +39,7 @@ const styles = createStyles({
     alignItems: 'center',
     right: 0,
     bottom: '50%',
-    marginRight: '1.5rem',
+    marginRight: '1rem',
     cursor: 'pointer',
     '& h3': {
       display: 'flex',
@@ -47,9 +47,9 @@ const styles = createStyles({
       fontFamily: 'Lexend, sans-serif',
       transform: 'rotate(-270deg)',
       fontSize: '2rem',
-      marginRight: '-9rem',
-      alignItems: 'center',
       width: '15vw',
+      alignItems: 'center',
+      marginRight: '-9rem',
     },
   },
 

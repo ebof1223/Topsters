@@ -1,7 +1,5 @@
 import { withStyles } from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
-import Avatar from '@material-ui/core/Avatar';
-import fantano from './userImgs/fantano.jpeg';
 import styles from './styles/MiniToppingsStyles';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { AlbumStructure } from './interface';
@@ -9,11 +7,11 @@ import { AlbumStructure } from './interface';
 interface Props {
   classes: {
     root: string;
-    albums: string;
     title: string;
     avatar: string;
     miniToppings: string;
     deleteIcon: string;
+    card: string;
   };
   title: string;
   albums: AlbumStructure[];
@@ -41,7 +39,7 @@ const MiniToppings: React.FC<Props> = ({
         background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
       }}
       key={item.name}
-    ></div>
+    />
   ));
 
   const handleDelete = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
@@ -51,25 +49,16 @@ const MiniToppings: React.FC<Props> = ({
   };
 
   return (
-    <Paper variant="outlined">
-      <div className={classes.root} onClick={handleClick}>
-        <Paper variant="outlined">
-          <DeleteIcon
-            className={classes.deleteIcon}
-            onClick={(e) => handleDelete(e)}
-          />
-        </Paper>
-        <Paper elevation={3} square>
-          <div className={classes.albums}>{miniToppings}</div>
-        </Paper>
-        <h5 className={classes.title}>
-          {title}{' '}
-          <span className={classes.avatar}>
-            <Avatar alt="fantano" src={fantano} />
-          </span>
-        </h5>
+    <div className={classes.root}>
+      <div className={classes.card} onClick={handleClick}>
+        <DeleteIcon
+          className={classes.deleteIcon}
+          onClick={(e) => handleDelete(e)}
+        />
+        {miniToppings}
+        {/* <h5 className={classes.title}>{title}</h5> */}
       </div>
-    </Paper>
+    </div>
   );
 };
 

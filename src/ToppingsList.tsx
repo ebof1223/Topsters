@@ -28,9 +28,9 @@ interface Props {
   classes: {
     root: string;
     heading: string;
-    container: string;
+    OuterContainer: string;
     nav: string;
-    albums: string;
+    toppings: string;
   };
 }
 
@@ -54,21 +54,20 @@ const ToppingsList: React.FC<Props> = ({
   };
   return (
     <div className={classes.root}>
-      <div className={classes.container}>
+      <div className={classes.OuterContainer}>
         <nav className={classes.nav}>
-          <h1 className={classes.heading}>Toppings </h1>
+          <h1 className={classes.heading}>Toppings</h1>
           <Link to={'/toppings/new'}>
             <Fab color="inherit" aria-label="add" size="small">
               <AddIcon />
             </Fab>
           </Link>
         </nav>
-        <TransitionGroup className={classes.albums}>
+        <TransitionGroup className={classes.toppings}>
           {toppings.map((item) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <MiniToppings
                 {...item}
-                key={item.id}
                 handleClick={() => goToToppings(item.id)}
                 id={item.id}
                 deleteDialog={deleteDialog}

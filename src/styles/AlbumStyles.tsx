@@ -15,15 +15,15 @@ const styles = createStyles({
       transition: 'all 0.1s ease',
       cursor: 'pointer',
     },
-    [sizes.down('lg')]: {
-      width: '25%',
-    },
-    [sizes.down('md')]: {
-      width: '50%',
-    },
-    [sizes.down('xs')]: {
-      width: '100%',
-    },
+    // [sizes.down('lg')]: {
+    //   width: '25%',
+    // },
+    // [sizes.down('md')]: {
+    //   width: '50%',
+    // },
+    // [sizes.down('xs')]: {
+    //   width: '100%',
+    // },
   },
 });
 export default styles;

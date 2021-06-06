@@ -12,9 +12,6 @@ const styles = createStyles({
     '& circle': {
       fill: 'none',
       strokeWidth: '3',
-      r: '15',
-      cx: '50%',
-      cy: '50%',
     },
   },
 });

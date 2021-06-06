@@ -11,27 +11,27 @@ const styles = createStyles({
 
   root: {
     backgroundColor: 'rgb(47,48,52)',
-    height: '100vh',
+    height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
-    overflow: 'scroll',
   },
   heading: {
-    fontSize: '2rem',
+    fontSize: '3rem',
+    marginBottom: '3rem',
   },
-  container: {
+  OuterContainer: {
     width: '50%',
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    [sizes.down('xl')]: {
-      width: '80%',
-    },
-    [sizes.down('xs')]: {
-      width: '75%',
-    },
+    // [sizes.down('xl')]: {
+    //   width: '80%',
+    // },
+    // [sizes.down('xs')]: {
+    //   width: '75%',
+    // },
   },
 
   nav: {
@@ -42,19 +42,21 @@ const styles = createStyles({
     padding: '1rem',
   },
 
-  albums: {
-    boxSizing: 'border-box',
-    width: '100%',
+  toppings: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 30%)',
-    gridGap: '2.5rem',
-    [sizes.down('md')]: {
-      gridTemplateColumns: 'repeat(2, 50%)',
-    },
-    [sizes.down('xs')]: {
-      gridTemplateColumns: 'repeat(1, 100%)',
-      gridGap: '1.4rem',
-    },
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    // gridAutoRows: 'repeat(3, 1fr)',
+    boxSizing: 'border-box',
+    margin: '0 auto',
+    // width: '100%',
+    // height: 'calc(100vh - 4rem)',
+    //   [sizes.down('md')]: {
+    //     // gridTemplateColumns: 'repeat(2, 50%)',
+    //   },
+    //   [sizes.down('xs')]: {
+    //     // gridTemplateColumns: 'repeat(1, 100%)',
+    //     gridGap: '1.4rem',
+    //   },
   },
 });
 
