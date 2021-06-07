@@ -49,6 +49,17 @@ const styles = (theme: {
       }),
       marginLeft: 0,
     },
+    background: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: 'rgb(47,48,52)',
+      height: '90vh',
+      width: '90vw',
+      margin: '2vh auto',
+      justifyContent: 'space-between',
+      borderRadius: '2px',
+    },
   });
 
 export default styles;

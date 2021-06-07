@@ -17,7 +17,6 @@ const styles = createStyles({
     '&:active': {
       cursor: 'none',
     },
-
     // [sizes.down('lg')]: {
     //   width: '25%',
     //   height: '20%',
