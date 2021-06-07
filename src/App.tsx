@@ -27,7 +27,6 @@ const App: React.FC = () => {
       return topping.id === id;
     });
   };
-
   const saveToppings = (newToppings: ToppingsStructure) => {
     console.log(newToppings);
     setToppings([...toppings, newToppings]);
@@ -42,6 +41,19 @@ const App: React.FC = () => {
               <Route
                 exact
                 path="/toppings/new"
+                render={(routeProps) => (
+                  <Page>
+                    <NewToppingsForm
+                      saveToppings={saveToppings}
+                      {...routeProps}
+                      toppings={toppings}
+                    />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/toppings/edit/:id"
                 render={(routeProps) => (
                   <Page>
                     <NewToppingsForm
@@ -72,6 +84,7 @@ const App: React.FC = () => {
                   <Page>
                     <Toppings
                       title={findToppings(routeProps.match.params.id).title}
+                      id={findToppings(routeProps.match.params.id).id}
                       albums={findToppings(routeProps.match.params.id).albums}
                       toppings={toppings}
                       {...routeProps}

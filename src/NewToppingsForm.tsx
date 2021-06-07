@@ -18,6 +18,8 @@ interface Props {
   history: {
     push: (input: string) => void;
   };
+  // FIX LATER
+  match: { params: any };
   toppings: ToppingsStructure[];
   classes: {
     root: string;
@@ -30,15 +32,19 @@ interface Props {
     background: string;
   };
 }
-
 const NewToppingsForm: React.FC<Props> = ({
   saveToppings,
   history,
+  match,
   toppings,
   classes,
 }) => {
+  let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
+  const editAlbums =
+    match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
+
   const [open, setOpen] = useState(false);
-  const [userToppings, setUserToppings] = useState([]);
+  const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState('');
 
   const onSortEnd = ({
@@ -65,6 +71,7 @@ const NewToppingsForm: React.FC<Props> = ({
         userToppingsName={userToppingsName}
         userToppings={userToppings}
         setUserToppingsName={setUserToppingsName}
+        match={match}
       />
       <div className={classes.root}>
         <Drawer

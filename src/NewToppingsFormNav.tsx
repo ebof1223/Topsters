@@ -32,6 +32,7 @@ interface Props {
   history: {
     push: (input: string) => void;
   };
+  match: { params: any };
   setUserToppings: (args: object) => void;
   userToppings: AlbumStructure[];
   toppings: ToppingsStructure[];
@@ -51,6 +52,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
   saveToppings,
   userToppingsName,
   setUserToppingsName,
+  match,
 }) => {
   return (
     <div className={classes.root}>
@@ -121,6 +123,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
           </Button>
 
           <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
+            {/* ARE YOU SURE YOU WANT TO GO BACK AND NOT SAVE YOUR BEATIFUL TOPPINGS? */}
             <Button variant="contained" color="secondary" type="submit">
               Go Back
             </Button>
@@ -132,6 +135,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
             toppings={toppings}
             history={history}
             saveToppings={saveToppings}
+            match={match}
           />
         </div>
       </AppBar>

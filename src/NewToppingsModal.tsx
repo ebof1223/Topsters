@@ -13,6 +13,7 @@ interface Props {
   setUserToppingsName: (input: string) => void;
   userToppingsName: string | null;
   userToppings: AlbumStructure[];
+  match: { params: any };
   toppings: ToppingsStructure[];
   history: {
     push: (input: string) => void;
@@ -27,6 +28,7 @@ const NewToppingsModal: React.FC<Props> = ({
   toppings,
   history,
   saveToppings,
+  match,
 }) => {
   const [errors, setErrors] = React.useState<{ title: string }>({ title: '' });
   const [open, setOpen] = React.useState(false);
@@ -39,7 +41,6 @@ const NewToppingsModal: React.FC<Props> = ({
       id: userToppingsName.toLowerCase().replace(/ /g, '-'),
       albums: userToppings,
     };
-
     if (
       toppings.some(
         (item: ToppingsStructure) => item.title === newToppings.title
@@ -55,7 +56,16 @@ const NewToppingsModal: React.FC<Props> = ({
           'You have exceeded the maximum character length of 21.\n Please enter a valid length.',
       });
 
-    saveToppings(newToppings);
+    if (match.params.id) {
+      for (let [index, item] of toppings.entries()) {
+        if (item.id === match.params.id) {
+          toppings.splice(index, 1, newToppings);
+        }
+      }
+    } else {
+      saveToppings(newToppings);
+    }
+
     setOpen(false);
     history.push('/');
   };

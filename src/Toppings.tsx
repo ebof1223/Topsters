@@ -9,6 +9,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { useState } from 'react';
 interface Props {
   title: string;
+  id: string;
   albums: AlbumStructure[];
   classes: {
     Toppings: string;
@@ -28,13 +29,13 @@ interface Props {
 
 const Toppings: React.FC<Props> = ({
   title,
+  id,
   albums,
   classes,
   toppings,
   history,
 }) => {
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumStructure>(albums[0]);
-
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
     setSelectedAlbum(albums[index]);
@@ -64,7 +65,7 @@ const Toppings: React.FC<Props> = ({
   };
   return (
     <>
-      <Navbar title={title} />
+      <Navbar title={title} toppings={toppings} history={history} id={id} />
       {toppingsIndex(title, 'left') !== null && (
         <div
           className={classes.LeftPanel}

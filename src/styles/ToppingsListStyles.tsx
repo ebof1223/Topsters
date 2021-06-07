@@ -17,6 +17,7 @@ const styles = createStyles({
     justifyContent: 'center',
   },
   heading: {
+    fontFamily: 'Lexend, sans-serif',
     fontSize: '3rem',
     marginBottom: '3rem',
   },

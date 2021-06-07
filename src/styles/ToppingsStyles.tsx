@@ -5,6 +5,7 @@ const styles = createStyles({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: 'rgb(47,48,52)',
     height: '91.5vh',
     width: '91.5vw',
@@ -85,6 +86,7 @@ const styles = createStyles({
     borderRadius: '2px',
     display: 'flex',
     flexDirection: 'column',
+    zIndex: 1,
   },
 
   ToppingsAlbums: {
@@ -92,14 +94,14 @@ const styles = createStyles({
     gridTemplateColumns: 'repeat(3, 250px)',
     gridTemplateRows: 'repeat(3, 250px)',
     background: 'rgb(255,255,255)',
-    zIndex: 10,
+    zIndex: 2,
   },
   record: {
     position: 'absolute',
     right: 0,
     marginRight: '5%',
     height: '750px',
-    zIndex: 5,
+    zIndex: 0,
   },
   ToppingsFooter: {
     position: 'absolute',
