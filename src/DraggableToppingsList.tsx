@@ -17,7 +17,7 @@ interface Props {
 const DraggableToppingsList = SortableContainer(
   ({ userToppings, setUserToppings, classes }: Props) => {
     return (
-      <div className={classes.UserToppingsContainer}>
+      <Paper elevation={3} className={classes.UserToppingsContainer}>
         {userToppings.map((item, index) => (
           <DraggableAlbum
             cover={item.image[3]['#text']}
@@ -30,7 +30,7 @@ const DraggableToppingsList = SortableContainer(
             }
           />
         ))}
-      </div>
+      </Paper>
     );
   }
 );

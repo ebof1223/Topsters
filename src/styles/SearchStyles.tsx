@@ -7,10 +7,9 @@ const styles = () =>
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'flexStart',
-      marginBottom: '1.5rem',
-      overflowX: 'hidden',
-      overflowY: 'scroll',
-      marginLeft: '1.5rem',
+      margin: '1.5rem 0',
+      overflow: 'auto',
+      paddingLeft: '1.5rem',
     },
     Album: {
       backgroundColor: '#dae1e4',
