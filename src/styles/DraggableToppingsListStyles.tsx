@@ -4,12 +4,12 @@ const styles = createStyles({
   record: {
     position: 'absolute',
     right: 0,
-    marginRight: '6rem',
+    marginRight: '15%',
     height: '750px',
   },
   UserToppingsContainer: {
     background: 'rgb(255,255,255)',
-    margin: '0 auto',
+    margin: '0 20%',
     padding: '0.5rem',
     borderRadius: '2px',
     display: 'grid',

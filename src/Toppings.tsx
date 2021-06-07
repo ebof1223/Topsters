@@ -17,6 +17,7 @@ interface Props {
     ToppingsContainer: string;
     ToppingsDescription: string;
     ToppingsAlbums: string;
+    record: string;
     ToppingsFooter: string;
   };
   toppings: ToppingsStructure[];
@@ -105,6 +106,11 @@ const Toppings: React.FC<Props> = ({
             ))}
           </div>
         </Paper>
+        <img
+          className={classes.record}
+          src="https://upload.wikimedia.org/wikipedia/commons/7/75/Vinyl_record.svg"
+          alt="vinyl-record"
+        />
       </div>
       {toppingsIndex(title, 'right') !== null && (
         <div

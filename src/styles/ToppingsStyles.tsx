@@ -9,8 +9,6 @@ const styles = createStyles({
     height: '91.5vh',
     width: '91.5vw',
     margin: '4vh auto',
-    justifyContent: 'space-between',
-    overflow: 'none',
   },
 
   LeftPanel: {
@@ -94,8 +92,15 @@ const styles = createStyles({
     gridTemplateColumns: 'repeat(3, 250px)',
     gridTemplateRows: 'repeat(3, 250px)',
     background: 'rgb(255,255,255)',
+    zIndex: 10,
   },
-
+  record: {
+    position: 'absolute',
+    right: 0,
+    marginRight: '5%',
+    height: '750px',
+    zIndex: 5,
+  },
   ToppingsFooter: {
     position: 'absolute',
     bottom: 0,
