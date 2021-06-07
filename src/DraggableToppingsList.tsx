@@ -1,16 +1,23 @@
+import { Paper } from '@material-ui/core';
+import { withStyles } from '@material-ui/styles';
 import { SortableContainer } from 'react-sortable-hoc';
 import DraggableAlbum from './DraggableAlbum';
 import { AlbumStructure } from './interface';
+import styles from './styles/DraggableToppingsListStyles';
 
 interface Props {
   userToppings: AlbumStructure[];
   setUserToppings: (input: AlbumStructure[]) => void;
+  classes: {
+    UserToppingsContainer: string;
+    BackDrop: string;
+  };
 }
 
 const DraggableToppingsList = SortableContainer(
-  ({ userToppings, setUserToppings }: Props) => {
+  ({ userToppings, setUserToppings, classes }: Props) => {
     return (
-      <div style={{ height: '92.25vh' }}>
+      <div className={classes.UserToppingsContainer}>
         {userToppings.map((item, index) => (
           <DraggableAlbum
             cover={item.image[3]['#text']}
@@ -28,4 +35,4 @@ const DraggableToppingsList = SortableContainer(
   }
 );
 
-export default DraggableToppingsList;
+export default withStyles(styles)(DraggableToppingsList);

@@ -27,6 +27,7 @@ interface Props {
     drawerHeader: string;
     content: string;
     contentShift: string;
+    background: string;
   };
 }
 
@@ -92,13 +93,15 @@ const NewToppingsForm: React.FC<Props> = ({
           })}
         >
           <div className={classes.drawerHeader} />
-          <DraggableToppingsList
-            axis="xy"
-            userToppings={userToppings}
-            setUserToppings={setUserToppings}
-            onSortStart={() => (document.body.style.cursor = 'grabbing')}
-            onSortEnd={onSortEnd}
-          />
+          <div className={classes.background}>
+            <DraggableToppingsList
+              axis="xy"
+              userToppings={userToppings}
+              setUserToppings={setUserToppings}
+              onSortStart={() => (document.body.style.cursor = 'grabbing')}
+              onSortEnd={onSortEnd}
+            />
+          </div>
         </main>
       </div>
     </>
