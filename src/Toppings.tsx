@@ -35,7 +35,9 @@ const Toppings: React.FC<Props> = ({
   toppings,
   history,
 }) => {
-  const [selectedAlbum, setSelectedAlbum] = useState<AlbumStructure>(albums[0]);
+  const [selectedAlbum, setSelectedAlbum] = useState<AlbumStructure>(
+    albums[Math.floor(Math.random() * 8)]
+  );
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
     setSelectedAlbum(albums[index]);

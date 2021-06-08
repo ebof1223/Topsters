@@ -40,7 +40,14 @@ const NewToppingsForm: React.FC<Props> = ({
   classes,
 }) => {
   let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
-  let editTitle = match.params.id ? match.params.id : '';
+  let editTitle = match.params.id
+    ? match.params.id
+        .replace(/-/g, ' ')
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ')
+    : '';
+  console.log(editTitle);
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
