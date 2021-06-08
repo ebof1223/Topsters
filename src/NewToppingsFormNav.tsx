@@ -17,6 +17,7 @@ import ClearAllIcon from '@material-ui/icons/ClearAll';
 import NewToppingsModal from './NewToppingsModal';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
+import { TextareaAutosize, TextField } from '@material-ui/core';
 
 interface Props {
   classes: {
@@ -102,6 +103,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
             </Typography>
           </Link>
         </Toolbar>
+
         <div className={classes.btnContainer}>
           <Button onClick={() => setUserToppings([])}>
             <ClearAllIcon />

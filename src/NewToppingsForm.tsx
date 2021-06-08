@@ -40,12 +40,13 @@ const NewToppingsForm: React.FC<Props> = ({
   classes,
 }) => {
   let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
+  let editTitle = match.params.id ? match.params.id : '';
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
   const [open, setOpen] = useState(false);
   const [userToppings, setUserToppings] = useState(editAlbums);
-  const [userToppingsName, setUserToppingsName] = useState('');
+  const [userToppingsName, setUserToppingsName] = useState(editTitle);
 
   const onSortEnd = ({
     oldIndex,

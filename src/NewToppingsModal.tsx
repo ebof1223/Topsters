@@ -30,30 +30,26 @@ const NewToppingsModal: React.FC<Props> = ({
   saveToppings,
   match,
 }) => {
-  const [errors, setErrors] = React.useState<{ title: string }>({ title: '' });
+  const [errors, setErrors] = React.useState<{ title: string }>({
+    title: '',
+  });
   const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setErrors({ title: '' });
+
     const newToppings: ToppingsStructure = {
       title: userToppingsName,
       id: userToppingsName.toLowerCase().replace(/ /g, '-'),
       albums: userToppings,
     };
-    if (
-      toppings.some(
-        (item: ToppingsStructure) => item.title === newToppings.title
-      )
-    )
-      return setErrors({ title: 'This title has already been taken' });
 
     if (!userToppingsName) return setErrors({ title: 'Please enter a title' });
 
-    if (userToppingsName.length > 21)
+    if (newToppings.albums.length !== 9)
       return setErrors({
-        title:
-          'You have exceeded the maximum character length of 21.\n Please enter a valid length.',
+        title: 'Toppings must contain 9 albums. Please complete your toppings,',
       });
 
     if (match.params.id) {
@@ -63,6 +59,13 @@ const NewToppingsModal: React.FC<Props> = ({
         }
       }
     } else {
+      if (
+        toppings.some(
+          (item: ToppingsStructure) => item.title === newToppings.title
+        )
+      )
+        return setErrors({ title: 'This title has already been taken' });
+
       saveToppings(newToppings);
     }
 
