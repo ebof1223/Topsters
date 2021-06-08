@@ -29,7 +29,7 @@ const ConfirmationModal: React.FC<Props> = ({ userToppings, history }) => {
   };
 
   return (
-    <div>
+    <div style={{ marginLeft: '2rem' }}>
       <Button variant="contained" color="secondary" onClick={handleClickOpen}>
         Go Back
       </Button>

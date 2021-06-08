@@ -51,6 +51,8 @@ const NewToppingsModal: React.FC<Props> = ({
       return setErrors({
         title: 'Toppings must contain 9 albums. Please complete your toppings,',
       });
+    if (userToppingsName.length > 20)
+      return setErrors({ title: 'Topping names may not exceed 21 characters' });
 
     if (match.params.id) {
       for (let [index, item] of toppings.entries()) {

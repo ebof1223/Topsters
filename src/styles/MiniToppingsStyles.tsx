@@ -7,6 +7,7 @@ const styles = createStyles({
   },
   card: {
     display: 'grid',
+    position: 'relative',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridAutoRows: 'repeat(3, 1fr)',
     background: 'white',
@@ -35,6 +36,7 @@ const styles = createStyles({
     padding: '1rem',
   },
   deleteIcon: {
+    zIndex: 1,
     color: 'white',
     backgroundColor: '#eb3d30',
     width: '25px',
@@ -46,6 +48,9 @@ const styles = createStyles({
     opacity: 0,
     transition: 'all 0.3s ease-in-out',
     borderRadius: '5px',
+    '&:hover': {
+      opacity: 1,
+    },
   },
 });
 export default styles;

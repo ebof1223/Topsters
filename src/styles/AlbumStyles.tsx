@@ -10,9 +10,6 @@ const styles = createStyles({
     margin: '0.4rem 0.3rem',
     borderRadius: '1px',
     '&:hover': {
-      // boxShadow: '15px 15px #c04b1519, 15px 15px #c04b1519',
-      transform: 'translateY(-35px)',
-      transition: 'all 0.1s ease',
       cursor: 'pointer',
     },
     // [sizes.down('lg')]: {
@@ -24,6 +21,17 @@ const styles = createStyles({
     // [sizes.down('xs')]: {
     //   width: '100%',
     // },
+  },
+  SelectedAlbum: {
+    background: '#444',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#AAA',
+    margin: '0.4rem 0.3rem',
+    borderRadius: '1px',
+    transform: 'translateY(-55px)',
+    transition: 'all 0.1s ease',
   },
 });
 export default styles;

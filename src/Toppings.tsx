@@ -103,6 +103,7 @@ const Toppings: React.FC<Props> = ({
                 key={item.name}
                 cover={item.image[3]['#text']}
                 onClick={() => selectAlbum(index)}
+                selected={albums[index] === selectedAlbum ? true : false}
               />
             ))}
           </div>

@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import styles from './styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import { ToppingsStructure } from './interface';
 
 interface Props {
   classes: {

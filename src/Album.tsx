@@ -8,10 +8,12 @@ interface Props {
   classes: {
     Album: string;
     boxContent: string;
+    SelectedAlbum: string;
   };
   onClick: () => void;
+  selected: boolean;
 }
-const Album: React.FC<Props> = ({ cover, classes, onClick }) => {
+const Album: React.FC<Props> = ({ cover, classes, onClick, selected }) => {
   return (
     <Paper
       elevation={5}
@@ -19,7 +21,7 @@ const Album: React.FC<Props> = ({ cover, classes, onClick }) => {
       style={{
         background: `url(${cover}) no-repeat center center/cover`,
       }}
-      className={classes.Album}
+      className={selected ? classes.SelectedAlbum : classes.Album}
       onClick={onClick}
     ></Paper>
   );

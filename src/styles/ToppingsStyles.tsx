@@ -81,7 +81,7 @@ const styles = createStyles({
   },
   ToppingsContainer: {
     background: 'rgb(255,255,255)',
-    margin: '0 auto',
+    marginRight: '16rem',
     padding: '0.5rem',
     borderRadius: '2px',
     display: 'flex',

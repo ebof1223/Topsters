@@ -46,7 +46,7 @@ const styles = createStyles({
   toppings: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    // gridAutoRows: 'repeat(3, 1fr)',
+    gridAutoRows: 'repeat(3, 1fr)',
     boxSizing: 'border-box',
     margin: '0 auto',
     // width: '100%',
