@@ -44,7 +44,7 @@ const NewToppingsForm: React.FC<Props> = ({
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
 

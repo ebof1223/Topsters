@@ -23,7 +23,10 @@ const ConfirmationModal: React.FC<Props> = ({ userToppings, history }) => {
     setOpen(false);
   };
 
-  const handleBack = () => {};
+  const handleBack = () => {
+    history.push(`/`);
+    setOpen(false);
+  };
 
   return (
     <div>
@@ -49,7 +52,7 @@ const ConfirmationModal: React.FC<Props> = ({ userToppings, history }) => {
           <Button onClick={handleClose} color="secondary">
             On Second Thought..
           </Button>
-          <Button onClick={() => history.push(`/`)} color="primary" autoFocus>
+          <Button onClick={handleBack} color="primary" autoFocus>
             Yeah I'm Good
           </Button>
         </DialogActions>

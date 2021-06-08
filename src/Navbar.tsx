@@ -21,10 +21,6 @@ const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
   const handleEdit = () => {
     history.push(`/toppings/edit/${id}`);
   };
-  // const handleHome = () => {
-  //   if ()
-
-  // }
 
   return (
     <header className={classes.Navbar}>
