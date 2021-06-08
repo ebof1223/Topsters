@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import styles from './styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
-import { ToppingsStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from './interface';
 
 interface Props {
   classes: {
@@ -18,9 +18,13 @@ interface Props {
 }
 
 const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
-  const handleClick = () => {
+  const handleEdit = () => {
     history.push(`/toppings/edit/${id}`);
   };
+  // const handleHome = () => {
+  //   if ()
+
+  // }
 
   return (
     <header className={classes.Navbar}>
@@ -30,7 +34,7 @@ const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
       <div className={classes.Title}>{title}</div>
       <EditIcon
         style={{ marginRight: '3rem', cursor: 'pointer' }}
-        onClick={handleClick}
+        onClick={handleEdit}
       />
     </header>
   );

@@ -17,7 +17,7 @@ import ClearAllIcon from '@material-ui/icons/ClearAll';
 import NewToppingsModal from './NewToppingsModal';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
-import { TextareaAutosize, TextField } from '@material-ui/core';
+import ConfirmationModal from './ConfirmationModal';
 
 interface Props {
   classes: {
@@ -96,14 +96,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
           >
             <ChevronRightIcon color="primary" />
           </IconButton>
-
-          <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
-            <Typography variant="h6" noWrap>
-              toppings
-            </Typography>
-          </Link>
         </Toolbar>
-
         <div className={classes.btnContainer}>
           <Button onClick={() => setUserToppings([])}>
             <ClearAllIcon />
@@ -123,13 +116,8 @@ const NewToppingsFormNav: React.FC<Props> = ({
           <Button>
             <RedoIcon />
           </Button>
+          <ConfirmationModal userToppings={userToppings} history={history} />
 
-          <Link to={'/'} style={{ textDecoration: 'none', marginLeft: '2rem' }}>
-            {/* ARE YOU SURE YOU WANT TO GO BACK AND NOT SAVE YOUR BEATIFUL TOPPINGS? */}
-            <Button variant="contained" color="secondary" type="submit">
-              Go Back
-            </Button>
-          </Link>
           <NewToppingsModal
             userToppingsName={userToppingsName}
             setUserToppingsName={setUserToppingsName}
