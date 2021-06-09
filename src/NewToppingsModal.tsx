@@ -13,7 +13,7 @@ interface Props {
   setUserToppingsName: (input: string) => void;
   userToppingsName: string | null;
   userToppings: AlbumStructure[];
-  match: { params: any };
+  match: { params: { id: string } };
   toppings: ToppingsStructure[];
   history: {
     push: (input: string) => void;
@@ -98,7 +98,9 @@ const NewToppingsModal: React.FC<Props> = ({
         <form onSubmit={(e) => handleSubmit(e)} autoComplete="off">
           <DialogContent>
             <DialogContentText>
-              Enter a name for your new toppings list for the world to see!
+              {match.params.id
+                ? 'Please confirm the title of your toppings.'
+                : 'Enter a name for your new toppings for the world to see!'}
             </DialogContentText>
             <TextField
               id="standard-basic"

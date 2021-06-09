@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { AlbumStructure, ToppingsStructure } from './interface';
 import clsx from 'clsx';
@@ -34,11 +34,12 @@ interface Props {
   };
   match: { params: any };
   setUserToppings: (args: object) => void;
-  userToppings: AlbumStructure[];
+  userToppings: AlbumStructure[] | undefined;
   toppings: ToppingsStructure[];
   saveToppings: (input: ToppingsStructure) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
+  redoUserToppings: AlbumStructure[];
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -53,6 +54,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
   userToppingsName,
   setUserToppingsName,
   match,
+  redoUserToppings,
 }) => {
   return (
     <div className={classes.root}>
@@ -110,7 +112,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
             <ShuffleIcon />
           </Button>
           <Button>
-            <UndoIcon />
+            <UndoIcon onClick={() => setUserToppings(redoUserToppings)} />
           </Button>
           <Button>
             <RedoIcon />

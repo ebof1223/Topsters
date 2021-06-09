@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import NewToppingsFormNav from './NewToppingsFormNav';
 import { withStyles } from '@material-ui/core/styles';
@@ -10,7 +10,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-import { ToppingsStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
 
 interface Props {
@@ -18,8 +18,7 @@ interface Props {
   history: {
     push: (input: string) => void;
   };
-  // FIX LATER
-  match: { params: any };
+  match: { params: { id?: string } };
   toppings: ToppingsStructure[];
   classes: {
     root: string;
@@ -40,21 +39,27 @@ const NewToppingsForm: React.FC<Props> = ({
   classes,
 }) => {
   let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
-  //this needs title
-  let editTitle = match.params.id
-    ? match.params.id
-        .replace(/-/g, ' ')
-        .split(' ')
-        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-        .join(' ')
-    : '';
-  console.log(editTitle);
+
+  const retrieveTitle = () => {
+    for (let [index, item] of toppings.entries()) {
+      if (item.id === match.params.id) return toppings[index].title;
+    }
+  };
+  const editTitle = match.params.id ? retrieveTitle() : '';
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
   const [open, setOpen] = useState(true);
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
+
+  const redoUserToppingsRef = useRef(userToppings);
+  useEffect(() => {
+    redoUserToppingsRef.current = userToppings;
+
+    console.log(redoUserToppings, 'after useEffect');
+  });
+  const redoUserToppings = redoUserToppingsRef.current;
 
   const onSortEnd = ({
     oldIndex,
@@ -81,6 +86,7 @@ const NewToppingsForm: React.FC<Props> = ({
         userToppings={userToppings}
         setUserToppingsName={setUserToppingsName}
         match={match}
+        redoUserToppings={redoUserToppings}
       />
       <div className={classes.root}>
         <Drawer
