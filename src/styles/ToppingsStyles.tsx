@@ -28,7 +28,7 @@ const styles = createStyles({
       fontSize: '2rem',
       width: '15vw',
       alignItems: 'center',
-      marginLeft: '-9rem',
+      marginLeft: '-8rem',
     },
   },
 
@@ -48,7 +48,7 @@ const styles = createStyles({
       fontSize: '2rem',
       width: '15vw',
       alignItems: 'center',
-      marginRight: '-9rem',
+      marginRight: '-8rem',
     },
   },
 
@@ -75,8 +75,8 @@ const styles = createStyles({
     display: 'flex',
     flexDirection: 'column',
     color: 'rgb(255,255,255)',
-    margin: 'auto',
     width: '35vw',
+    marginLeft: '5rem',
     height: '65vh',
   },
   ToppingsContainer: {

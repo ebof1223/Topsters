@@ -4,7 +4,7 @@ const styles = createStyles({
   record: {
     position: 'absolute',
     right: 0,
-    marginRight: '15%',
+    marginRight: '10%',
     height: '750px',
   },
   UserToppingsContainer: {
