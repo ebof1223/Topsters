@@ -50,6 +50,7 @@ const styles = createStyles({
     opacity: 1,
     marginRight: '0.25rem',
     marginBottom: '0.25rem',
+    zIndex: 10,
     '&:hover svg': {
       color: 'white',
       transition: '0.5s',

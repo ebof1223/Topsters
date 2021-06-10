@@ -12,9 +12,11 @@ interface Props {
     record: string;
   };
   setUserToppings: (input: AlbumStructure[]) => void;
+  temporis: {};
 }
+
 const DraggableToppingsList = SortableContainer(
-  ({ userToppings, setUserToppings, classes }: Props) => {
+  ({ userToppings, setUserToppings, classes, temporis }: Props) => {
     return (
       <>
         <Paper elevation={3} className={classes.UserToppingsContainer}>
@@ -23,11 +25,12 @@ const DraggableToppingsList = SortableContainer(
               cover={item.image[3]['#text']}
               key={`${item.name}-topping`}
               index={index}
-              onClick={() =>
-                setUserToppings(
-                  userToppings.filter((item) => item !== userToppings[index])
-                )
-              }
+              onClick={() => {
+                let newToppings = userToppings.filter(
+                  (item) => item !== userToppings[index]
+                );
+                setUserToppings(newToppings);
+              }}
             />
           ))}
         </Paper>

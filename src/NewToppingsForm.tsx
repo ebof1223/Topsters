@@ -71,6 +71,7 @@ const NewToppingsForm: React.FC<Props> = ({
     let newToppings = arrayMove(userToppings, oldIndex, newIndex);
     temporis.pushOne(newToppings);
     setUserToppings(newToppings);
+    console.log(temporis.getCurrentItem(), 'Drag and Drop');
   };
 
   const undo = () => {
@@ -138,6 +139,7 @@ const NewToppingsForm: React.FC<Props> = ({
               setUserToppings={setUserToppings}
               onSortStart={() => (document.body.style.cursor = 'grabbing')}
               onSortEnd={onSortEnd}
+              temporis={temporis}
             />
           </div>
         </main>
