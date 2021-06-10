@@ -40,8 +40,6 @@ interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
-  undo: () => void;
-  redo: () => void;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -56,8 +54,6 @@ const NewToppingsFormNav: React.FC<Props> = ({
   userToppingsName,
   setUserToppingsName,
   match,
-  undo,
-  redo,
 }) => {
   return (
     <div className={classes.root}>
@@ -115,10 +111,10 @@ const NewToppingsFormNav: React.FC<Props> = ({
             <ShuffleIcon />
           </Button>
           <Button>
-            <UndoIcon onClick={undo} />
+            <UndoIcon />
           </Button>
           <Button>
-            <RedoIcon onClick={redo} />
+            <RedoIcon />
           </Button>
           <ConfirmationModal userToppings={userToppings} history={history} />
 

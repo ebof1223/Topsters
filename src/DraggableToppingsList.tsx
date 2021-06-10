@@ -12,11 +12,10 @@ interface Props {
     record: string;
   };
   setUserToppings: (input: AlbumStructure[]) => void;
-  temporis: {};
 }
 
 const DraggableToppingsList = SortableContainer(
-  ({ userToppings, setUserToppings, classes, temporis }: Props) => {
+  ({ userToppings, setUserToppings, classes }: Props) => {
     return (
       <>
         <Paper elevation={3} className={classes.UserToppingsContainer}>
