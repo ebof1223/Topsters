@@ -9,7 +9,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import { ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
 
 interface Props {
