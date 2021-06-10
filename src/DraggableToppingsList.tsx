@@ -13,7 +13,6 @@ interface Props {
   };
   setUserToppings: (input: AlbumStructure[]) => void;
 }
-
 const DraggableToppingsList = SortableContainer(
   ({ userToppings, setUserToppings, classes }: Props) => {
     return (

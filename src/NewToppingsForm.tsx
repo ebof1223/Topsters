@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NewToppingsFormNav from './NewToppingsFormNav';
 import { withStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -11,6 +10,7 @@ import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
 import { AlbumStructure, ToppingsStructure } from './interface';
+import Temporis from 'temporis';
 import arrayMove from 'array-move';
 
 interface Props {
@@ -31,6 +31,9 @@ interface Props {
     background: string;
   };
 }
+type Items = AlbumStructure[];
+const temporis = Temporis<Items>();
+
 const NewToppingsForm: React.FC<Props> = ({
   saveToppings,
   history,
@@ -52,14 +55,10 @@ const NewToppingsForm: React.FC<Props> = ({
   const [open, setOpen] = useState(true);
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
-
-  const redoUserToppingsRef = useRef(userToppings);
   useEffect(() => {
-    redoUserToppingsRef.current = userToppings;
-
-    console.log(redoUserToppings, 'after useEffect');
-  });
-  const redoUserToppings = redoUserToppingsRef.current;
+    temporis.pushOne(userToppings);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const onSortEnd = ({
     oldIndex,
@@ -70,7 +69,23 @@ const NewToppingsForm: React.FC<Props> = ({
   }) => {
     document.body.style.cursor = 'default';
     let newToppings = arrayMove(userToppings, oldIndex, newIndex);
+    temporis.pushOne(newToppings);
     setUserToppings(newToppings);
+  };
+
+  const undo = () => {
+    temporis.undo();
+    const current = temporis.getCurrentItem();
+    if (current) {
+      setUserToppings(current);
+    }
+  };
+  const redo = () => {
+    temporis.redo();
+    const current = temporis.getCurrentItem();
+    if (current) {
+      setUserToppings(current);
+    }
   };
 
   return (
@@ -86,7 +101,8 @@ const NewToppingsForm: React.FC<Props> = ({
         userToppings={userToppings}
         setUserToppingsName={setUserToppingsName}
         match={match}
-        redoUserToppings={redoUserToppings}
+        undo={undo}
+        redo={redo}
       />
       <div className={classes.root}>
         <Drawer
