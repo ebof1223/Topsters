@@ -7,19 +7,10 @@ const styles = () =>
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'flexStart',
-      margin: '1.5rem 0',
-      overflow: 'auto',
+      margin: '0.2rem 0',
       paddingLeft: '1.5rem',
-    },
-    Album: {
-      backgroundColor: '#dae1e4',
-      borderRadius: '5px',
-      height: '150px',
-      width: '150px',
-      overflow: 'hidden',
-      '&:hover': {
-        cursor: 'pointer',
-      },
+      overflow: 'auto',
+      scrollSnapType: 'y mandatory',
     },
   });
 export default styles;

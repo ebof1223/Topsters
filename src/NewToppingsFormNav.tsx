@@ -152,7 +152,10 @@ const NewToppingsFormNav: React.FC<Props> = ({
           </IconButton>
         </Toolbar>
         <div className={classes.btnContainer}>
-          <Button onClick={handleClearAll}>
+          <Button
+            disabled={!Boolean(userToppings.length)}
+            onClick={handleClearAll}
+          >
             <ClearAllIcon />
           </Button>
           <Button
