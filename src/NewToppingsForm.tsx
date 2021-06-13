@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NewToppingsFormNav from './NewToppingsFormNav';
 import { withStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -9,8 +9,9 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-import { ToppingsStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
+import DoublyLinkedList from 'dbly-linked-list';
 
 interface Props {
   saveToppings: (input: ToppingsStructure) => void;
@@ -30,7 +31,7 @@ interface Props {
     background: string;
   };
 }
-
+const userToppingsHistory = new DoublyLinkedList();
 const NewToppingsForm: React.FC<Props> = ({
   saveToppings,
   history,
@@ -38,21 +39,28 @@ const NewToppingsForm: React.FC<Props> = ({
   toppings,
   classes,
 }) => {
-  let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
-
   const retrieveTitle = () => {
     for (let [index, item] of toppings.entries()) {
       if (item.id === match.params.id) return toppings[index].title;
     }
   };
   const editTitle = match.params.id ? retrieveTitle() : '';
+  let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
+
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
   const [open, setOpen] = useState(true);
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
+  const [currentNode, setCurrentNode] = useState(null);
 
+  useEffect(() => {
+    userToppingsHistory.insert(userToppings);
+    setCurrentNode(userToppingsHistory.getTailNode());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  // console.log(currentNode);
   const onSortEnd = ({
     oldIndex,
     newIndex,
@@ -61,10 +69,12 @@ const NewToppingsForm: React.FC<Props> = ({
     newIndex: number;
   }) => {
     document.body.style.cursor = 'default';
+    if (oldIndex === newIndex) return;
     let newToppings = arrayMove(userToppings, oldIndex, newIndex);
+    userToppingsHistory.insert(newToppings);
     setUserToppings(newToppings);
+    setCurrentNode(userToppingsHistory.getTailNode());
   };
-
   return (
     <>
       <NewToppingsFormNav
@@ -78,6 +88,9 @@ const NewToppingsForm: React.FC<Props> = ({
         userToppings={userToppings}
         setUserToppingsName={setUserToppingsName}
         match={match}
+        userToppingsHistory={userToppingsHistory}
+        setCurrentNode={setCurrentNode}
+        currentNode={currentNode}
       />
       <div className={classes.root}>
         <Drawer
@@ -113,6 +126,8 @@ const NewToppingsForm: React.FC<Props> = ({
               setUserToppings={setUserToppings}
               onSortStart={() => (document.body.style.cursor = 'grabbing')}
               onSortEnd={onSortEnd}
+              userToppingsHistory={userToppingsHistory}
+              setCurrentNode={setCurrentNode}
             />
           </div>
         </main>

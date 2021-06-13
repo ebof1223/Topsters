@@ -12,10 +12,18 @@ interface Props {
     record: string;
   };
   setUserToppings: (input: AlbumStructure[]) => void;
+  userToppingsHistory: any;
+  setCurrentNode: any;
 }
 
 const DraggableToppingsList = SortableContainer(
-  ({ userToppings, setUserToppings, classes }: Props) => {
+  ({
+    userToppings,
+    setUserToppings,
+    classes,
+    userToppingsHistory,
+    setCurrentNode,
+  }: Props) => {
     return (
       <>
         <Paper elevation={3} className={classes.UserToppingsContainer}>
@@ -28,7 +36,9 @@ const DraggableToppingsList = SortableContainer(
                 let newToppings = userToppings.filter(
                   (item) => item !== userToppings[index]
                 );
+                userToppingsHistory.insert(newToppings);
                 setUserToppings(newToppings);
+                setCurrentNode(userToppingsHistory.getTailNode());
               }}
             />
           ))}

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { AlbumStructure, ToppingsStructure } from './interface';
 import clsx from 'clsx';
@@ -39,6 +38,9 @@ interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
+  userToppingsHistory: any;
+  setCurrentNode: any;
+  currentNode: any;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -53,7 +55,18 @@ const NewToppingsFormNav: React.FC<Props> = ({
   userToppingsName,
   setUserToppingsName,
   match,
+  userToppingsHistory,
+  setCurrentNode,
+  currentNode,
 }) => {
+  const handleUndo = () => {
+    setUserToppings(currentNode.prev.data);
+    setCurrentNode(currentNode.prev);
+  };
+  const handleRedo = () => {
+    setUserToppings(currentNode.next.data);
+    setCurrentNode(currentNode.next);
+  };
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -109,10 +122,16 @@ const NewToppingsFormNav: React.FC<Props> = ({
           >
             <ShuffleIcon />
           </Button>
-          <Button>
+          <Button
+            onClick={handleUndo}
+            disabled={currentNode && currentNode.prev === null}
+          >
             <UndoIcon />
           </Button>
-          <Button>
+          <Button
+            onClick={handleRedo}
+            disabled={currentNode && currentNode.next === null}
+          >
             <RedoIcon />
           </Button>
           <ConfirmationModal userToppings={userToppings} history={history} />
