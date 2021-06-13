@@ -81,7 +81,6 @@ const NewToppingsForm: React.FC<Props> = ({
     setUserToppings(newToppings);
     setCurrentNode(userToppingsHistory.getTailNode());
   };
-  console.log(userToppingsHistory);
   return (
     <>
       <NewToppingsFormNav
