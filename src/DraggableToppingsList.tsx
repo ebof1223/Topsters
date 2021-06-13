@@ -4,6 +4,13 @@ import { SortableContainer } from 'react-sortable-hoc';
 import DraggableAlbum from './DraggableAlbum';
 import { AlbumStructure } from './interface';
 import styles from './styles/DraggableToppingsListStyles';
+import DoublyLinkedList from 'dbly-linked-list';
+
+type Node = {
+  data: AlbumStructure[] | null;
+  next: AlbumStructure[] | null;
+  prev: AlbumStructure[] | null;
+};
 
 interface Props {
   userToppings: AlbumStructure[];
@@ -12,8 +19,16 @@ interface Props {
     record: string;
   };
   setUserToppings: (input: AlbumStructure[]) => void;
-  userToppingsHistory: any;
-  setCurrentNode: any;
+  userToppingsHistory: DoublyLinkedList | any;
+  setCurrentNode: (input: {}) => void;
+  ////FIX
+  currentNode:
+    | {
+        data: Node;
+        next: Node;
+        prev: Node;
+      }
+    | any;
 }
 
 const DraggableToppingsList = SortableContainer(
@@ -23,6 +38,7 @@ const DraggableToppingsList = SortableContainer(
     classes,
     userToppingsHistory,
     setCurrentNode,
+    currentNode,
   }: Props) => {
     return (
       <>
@@ -36,7 +52,11 @@ const DraggableToppingsList = SortableContainer(
                 let newToppings = userToppings.filter(
                   (item) => item !== userToppings[index]
                 );
-                userToppingsHistory.insert(newToppings);
+                userToppingsHistory.toppingsInsert(
+                  currentNode,
+                  newToppings,
+                  userToppingsHistory
+                );
                 setUserToppings(newToppings);
                 setCurrentNode(userToppingsHistory.getTailNode());
               }}

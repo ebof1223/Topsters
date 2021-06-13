@@ -40,7 +40,7 @@ const styles = (theme: {
     },
     btnContainer: {
       display: 'flex',
-      marginRight: '0.5rem',
+      marginRight: '2rem',
     },
   });
 

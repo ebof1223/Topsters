@@ -9,7 +9,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Search from './Search';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import { ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
 
@@ -60,7 +60,6 @@ const NewToppingsForm: React.FC<Props> = ({
     setCurrentNode(userToppingsHistory.getTailNode());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  // console.log(currentNode);
   const onSortEnd = ({
     oldIndex,
     newIndex,
@@ -128,6 +127,7 @@ const NewToppingsForm: React.FC<Props> = ({
               onSortEnd={onSortEnd}
               userToppingsHistory={userToppingsHistory}
               setCurrentNode={setCurrentNode}
+              currentNode={currentNode}
             />
           </div>
         </main>

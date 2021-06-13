@@ -16,6 +16,13 @@ import NewToppingsModal from './NewToppingsModal';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
 import ConfirmationModal from './ConfirmationModal';
+import DoublyLinkedList from 'dbly-linked-list';
+
+type Node = {
+  data: AlbumStructure[] | null;
+  next: AlbumStructure[] | null;
+  prev: AlbumStructure[] | null;
+};
 
 interface Props {
   classes: {
@@ -38,9 +45,13 @@ interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
-  userToppingsHistory: any;
-  setCurrentNode: any;
-  currentNode: any;
+  userToppingsHistory: DoublyLinkedList;
+  setCurrentNode: (input: {}) => void;
+  currentNode: {
+    data: Node;
+    next: Node;
+    prev: Node;
+  };
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -59,6 +70,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
   setCurrentNode,
   currentNode,
 }) => {
+  // console.log(currentNode);
   const handleUndo = () => {
     setUserToppings(currentNode.prev.data);
     setCurrentNode(currentNode.prev);

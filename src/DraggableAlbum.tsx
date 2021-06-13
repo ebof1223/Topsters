@@ -5,7 +5,7 @@ import styles from './styles/DraggableAlbumStyles';
 
 interface Props {
   cover: string;
-  onClick: any;
+  onClick: () => void;
   classes: {
     root: string;
     boxContent: string;
