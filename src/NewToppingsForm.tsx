@@ -30,8 +30,8 @@ interface Props {
     contentShift: string;
     background: string;
   };
-}
-const userToppingsHistory = new DoublyLinkedList();
+} ///DFIXXXX
+const userToppingsHistory: any = new DoublyLinkedList();
 const NewToppingsForm: React.FC<Props> = ({
   saveToppings,
   history,
@@ -54,6 +54,7 @@ const NewToppingsForm: React.FC<Props> = ({
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
   const [currentNode, setCurrentNode] = useState(null);
+  const [nodesFromTail, setNodesFromTail] = useState(0);
 
   useEffect(() => {
     userToppingsHistory.insert(userToppings);
@@ -70,10 +71,17 @@ const NewToppingsForm: React.FC<Props> = ({
     document.body.style.cursor = 'default';
     if (oldIndex === newIndex) return;
     let newToppings = arrayMove(userToppings, oldIndex, newIndex);
-    userToppingsHistory.insert(newToppings);
+    userToppingsHistory.toppingsInsert(
+      currentNode,
+      newToppings,
+      userToppingsHistory,
+      nodesFromTail
+    );
+    setNodesFromTail(0);
     setUserToppings(newToppings);
     setCurrentNode(userToppingsHistory.getTailNode());
   };
+  console.log(userToppingsHistory);
   return (
     <>
       <NewToppingsFormNav
@@ -90,6 +98,8 @@ const NewToppingsForm: React.FC<Props> = ({
         userToppingsHistory={userToppingsHistory}
         setCurrentNode={setCurrentNode}
         currentNode={currentNode}
+        nodesFromTail={nodesFromTail}
+        setNodesFromTail={setNodesFromTail}
       />
       <div className={classes.root}>
         <Drawer
@@ -128,6 +138,8 @@ const NewToppingsForm: React.FC<Props> = ({
               userToppingsHistory={userToppingsHistory}
               setCurrentNode={setCurrentNode}
               currentNode={currentNode}
+              nodesFromTail={nodesFromTail}
+              setNodesFromTail={setNodesFromTail}
             />
           </div>
         </main>

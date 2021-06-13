@@ -45,13 +45,15 @@ interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
-  userToppingsHistory: DoublyLinkedList;
+  userToppingsHistory: DoublyLinkedList | any;
   setCurrentNode: (input: {}) => void;
   currentNode: {
     data: Node;
     next: Node;
     prev: Node;
   };
+  nodesFromTail: number;
+  setNodesFromTail: (input: number) => void;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -69,16 +71,44 @@ const NewToppingsFormNav: React.FC<Props> = ({
   userToppingsHistory,
   setCurrentNode,
   currentNode,
+  nodesFromTail,
+  setNodesFromTail,
 }) => {
-  // console.log(currentNode);
   const handleUndo = () => {
     setUserToppings(currentNode.prev.data);
     setCurrentNode(currentNode.prev);
+    setNodesFromTail(nodesFromTail + 1);
   };
   const handleRedo = () => {
     setUserToppings(currentNode.next.data);
     setCurrentNode(currentNode.next);
+    setNodesFromTail(nodesFromTail - 1);
   };
+  const handleShuffle = () => {
+    let newToppings = [...userToppings.sort(() => 0.5 - Math.random())];
+    userToppingsHistory.toppingsInsert(
+      currentNode,
+      newToppings,
+      userToppingsHistory,
+      nodesFromTail
+    );
+    setNodesFromTail(0);
+    setUserToppings(newToppings);
+    setCurrentNode(userToppingsHistory.getTailNode());
+  };
+  const handleClearAll = () => {
+    let newToppings = [];
+    userToppingsHistory.toppingsInsert(
+      currentNode,
+      newToppings,
+      userToppingsHistory,
+      nodesFromTail
+    );
+    setNodesFromTail(0);
+    setUserToppings(newToppings);
+    setCurrentNode(userToppingsHistory.getTailNode());
+  };
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -122,15 +152,12 @@ const NewToppingsFormNav: React.FC<Props> = ({
           </IconButton>
         </Toolbar>
         <div className={classes.btnContainer}>
-          <Button onClick={() => setUserToppings([])}>
+          <Button onClick={handleClearAll}>
             <ClearAllIcon />
           </Button>
           <Button
-            onClick={() =>
-              setUserToppings([
-                ...userToppings.sort((a, b) => 0.5 - Math.random()),
-              ])
-            }
+            disabled={!Boolean(userToppings.length)}
+            onClick={handleShuffle}
           >
             <ShuffleIcon />
           </Button>
@@ -146,7 +173,12 @@ const NewToppingsFormNav: React.FC<Props> = ({
           >
             <RedoIcon />
           </Button>
-          <ConfirmationModal userToppings={userToppings} history={history} />
+          <ConfirmationModal
+            userToppings={userToppings}
+            history={history}
+            setCurrentNode={setCurrentNode}
+            userToppingsHistory={userToppingsHistory}
+          />
 
           <NewToppingsModal
             userToppingsName={userToppingsName}
@@ -156,6 +188,8 @@ const NewToppingsFormNav: React.FC<Props> = ({
             history={history}
             saveToppings={saveToppings}
             match={match}
+            setCurrentNode={setCurrentNode}
+            userToppingsHistory={userToppingsHistory}
           />
         </div>
       </AppBar>

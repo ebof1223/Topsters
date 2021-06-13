@@ -11,8 +11,16 @@ interface Props {
   history: {
     push: (input: string) => void;
   };
+  ///FIXC
+  setCurrentNode: (input: any) => void;
+  userToppingsHistory: any;
 }
-const ConfirmationModal: React.FC<Props> = ({ userToppings, history }) => {
+const ConfirmationModal: React.FC<Props> = ({
+  userToppings,
+  history,
+  setCurrentNode,
+  userToppingsHistory,
+}) => {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -24,6 +32,8 @@ const ConfirmationModal: React.FC<Props> = ({ userToppings, history }) => {
   };
 
   const handleBack = () => {
+    userToppingsHistory.clear();
+    setCurrentNode(null);
     history.push(`/`);
     setOpen(false);
   };

@@ -29,6 +29,8 @@ interface Props {
         prev: Node;
       }
     | any;
+  nodesFromTail: number;
+  setNodesFromTail: (input: number) => void;
 }
 
 const DraggableToppingsList = SortableContainer(
@@ -39,6 +41,8 @@ const DraggableToppingsList = SortableContainer(
     userToppingsHistory,
     setCurrentNode,
     currentNode,
+    nodesFromTail,
+    setNodesFromTail,
   }: Props) => {
     return (
       <>
@@ -55,8 +59,10 @@ const DraggableToppingsList = SortableContainer(
                 userToppingsHistory.toppingsInsert(
                   currentNode,
                   newToppings,
-                  userToppingsHistory
+                  userToppingsHistory,
+                  nodesFromTail
                 );
+                setNodesFromTail(0);
                 setUserToppings(newToppings);
                 setCurrentNode(userToppingsHistory.getTailNode());
               }}

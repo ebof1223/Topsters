@@ -19,6 +19,9 @@ interface Props {
     push: (input: string) => void;
   };
   saveToppings: (input: ToppingsStructure) => void;
+  //FICXCC
+  setCurrentNode: (any) => void;
+  userToppingsHistory: any;
 }
 
 const NewToppingsModal: React.FC<Props> = ({
@@ -29,6 +32,8 @@ const NewToppingsModal: React.FC<Props> = ({
   history,
   saveToppings,
   match,
+  setCurrentNode,
+  userToppingsHistory,
 }) => {
   const [errors, setErrors] = React.useState<{ title: string }>({
     title: '',
@@ -72,6 +77,8 @@ const NewToppingsModal: React.FC<Props> = ({
     }
 
     setOpen(false);
+    userToppingsHistory.clear();
+    setCurrentNode(null);
     history.push('/');
   };
 
