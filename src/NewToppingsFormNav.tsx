@@ -17,7 +17,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
 import ConfirmationModal from './ConfirmationModal';
 import DoublyLinkedList from 'dbly-linked-list';
-import { useEffect } from 'react';
 
 type Node = {
   data: AlbumStructure[] | null;
@@ -75,42 +74,18 @@ const NewToppingsFormNav: React.FC<Props> = ({
   nodesFromTail,
   setNodesFromTail,
 }) => {
-  console.log(userToppingsHistory);
+  // console.log('history', userToppingsHistory);
+  // console.log('current', currentNode);
+  // console.log(nodesFromTail);
   const handleUndo = () => {
     setUserToppings(currentNode.prev.data);
     setCurrentNode(currentNode.prev);
-    setNodesFromTail(nodesFromTail - 1);
+    setNodesFromTail(nodesFromTail + 1);
   };
   const handleRedo = () => {
     setUserToppings(currentNode.next.data);
     setCurrentNode(currentNode.next);
-    setNodesFromTail(nodesFromTail + 1);
-  };
-
-  const handleShuffle = () => {
-    let newToppings = [...userToppings.sort(() => 0.5 - Math.random())];
-
-    userToppingsHistory.toppingsInsert(
-      currentNode,
-      newToppings,
-      userToppingsHistory,
-      nodesFromTail
-    );
-    setNodesFromTail(0);
-    setUserToppings(newToppings);
-    setCurrentNode(userToppingsHistory.getTailNode());
-  };
-  const handleClearAll = () => {
-    let newToppings = [];
-    userToppingsHistory.toppingsInsert(
-      currentNode,
-      newToppings,
-      userToppingsHistory,
-      nodesFromTail
-    );
-    setNodesFromTail(0);
-    setUserToppings(newToppings);
-    setCurrentNode(userToppingsHistory.getTailNode());
+    setNodesFromTail(nodesFromTail - 1);
   };
 
   return (
@@ -156,18 +131,6 @@ const NewToppingsFormNav: React.FC<Props> = ({
           </IconButton>
         </Toolbar>
         <div className={classes.btnContainer}>
-          <Button
-            disabled={!Boolean(userToppings.length)}
-            onClick={handleClearAll}
-          >
-            <ClearAllIcon />
-          </Button>
-          <Button
-            disabled={!Boolean(userToppings.length)}
-            onClick={handleShuffle}
-          >
-            <ShuffleIcon />
-          </Button>
           <Button
             onClick={handleUndo}
             disabled={currentNode && currentNode.prev === null}

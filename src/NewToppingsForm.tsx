@@ -55,9 +55,8 @@ const NewToppingsForm: React.FC<Props> = ({
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
   const [currentNode, setCurrentNode] = useState(null);
   const [nodesFromTail, setNodesFromTail] = useState(0);
-
   useEffect(() => {
-    userToppingsHistory.insert(userToppings);
+    userToppingsHistory.insert(editAlbums);
     setCurrentNode(userToppingsHistory.getTailNode());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -81,6 +80,13 @@ const NewToppingsForm: React.FC<Props> = ({
     setUserToppings(newToppings);
     setCurrentNode(userToppingsHistory.getTailNode());
   };
+  // console.log(userToppingsHistory.getTailNode());
+  // try {
+  //   console.log(userToppingsHistory.getTailNode().prev);
+  // } catch {
+  //   console.log('no prev');
+  // }
+
   return (
     <>
       <NewToppingsFormNav
