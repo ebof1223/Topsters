@@ -8,10 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
-import ShuffleIcon from '@material-ui/icons/Shuffle';
 import UndoIcon from '@material-ui/icons/Undo';
 import RedoIcon from '@material-ui/icons/Redo';
-import ClearAllIcon from '@material-ui/icons/ClearAll';
 import NewToppingsModal from './NewToppingsModal';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
@@ -45,7 +43,7 @@ interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
-  userToppingsHistory: DoublyLinkedList | any;
+  userToppingsHistory: DoublyLinkedList;
   setCurrentNode: (input: {}) => void;
   currentNode: {
     data: Node;

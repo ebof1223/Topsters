@@ -18,7 +18,7 @@ interface Props {
   history: {
     push: (input: string) => void;
   };
-  match: { params: { id?: string } };
+  match: { params: any };
   toppings: ToppingsStructure[];
   classes: {
     root: string;
@@ -80,12 +80,6 @@ const NewToppingsForm: React.FC<Props> = ({
     setUserToppings(newToppings);
     setCurrentNode(userToppingsHistory.getTailNode());
   };
-  // console.log(userToppingsHistory.getTailNode());
-  // try {
-  //   console.log(userToppingsHistory.getTailNode().prev);
-  // } catch {
-  //   console.log('no prev');
-  // }
 
   return (
     <>

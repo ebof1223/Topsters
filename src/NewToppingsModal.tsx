@@ -20,7 +20,7 @@ interface Props {
   };
   saveToppings: (input: ToppingsStructure) => void;
   //FICXCC
-  setCurrentNode: (any) => void;
+  setCurrentNode: (input: any) => void;
   userToppingsHistory: any;
 }
 
