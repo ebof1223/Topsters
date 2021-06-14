@@ -78,6 +78,15 @@ const ToppingsList: React.FC<Props> = ({
           ))}
         </TransitionGroup>
       </div>
+      <div
+        style={{
+          backgroundColor: 'white',
+          width: '100%',
+          height: '5vh',
+          position: 'absolute',
+          bottom: 0,
+        }}
+      ></div>
       <Dialog open={deleteDialog} aria-labelledby="delete-dialog-title">
         <DialogTitle id="delete-dialog-title">
           Delete this Toppings?

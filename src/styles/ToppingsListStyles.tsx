@@ -15,6 +15,8 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
+    overflowY: 'scroll',
+    overflowX: 'hidden',
   },
   heading: {
     fontFamily: 'Lexend, sans-serif',

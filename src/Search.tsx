@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/styles';
 import styles from './styles/SearchStyles';
 import { LASTFM_API_KEY } from './sensitive';
 import ResultAlbum from './ResultAlbum';
+import DoublyLinkedList from 'dbly-linked-list';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 
 interface Props {
@@ -13,12 +14,26 @@ interface Props {
   };
   setUserToppings: (args: AlbumStructure[]) => void;
   userToppings: AlbumStructure[];
+  currentNode: {
+    data: Node;
+    next: Node;
+    prev: Node;
+  };
+  userToppingsHistory: any;
+  nodesFromTail: number;
+  setNodesFromTail: (input: number) => void;
+  setCurrentNode: (input: {}) => void;
 }
 
 const Search: React.FC<Props> = ({
   classes,
   setUserToppings,
   userToppings,
+  currentNode,
+  setCurrentNode,
+  userToppingsHistory,
+  nodesFromTail,
+  setNodesFromTail,
 }) => {
   const [userSearch, setUserSearch] = useState('');
   const [results, setResults] = useState<AlbumStructure[]>([]);
@@ -37,7 +52,17 @@ const Search: React.FC<Props> = ({
       console.log('EXCEEDED MAX TOPPINGS VALUE');
       return;
     }
-    setUserToppings([...userToppings, results[itemIdx]]);
+
+    let newToppings = [...userToppings, results[itemIdx]];
+    userToppingsHistory.toppingsInsert(
+      currentNode,
+      newToppings,
+      userToppingsHistory,
+      nodesFromTail
+    );
+    setNodesFromTail(0);
+    setUserToppings(newToppings);
+    setCurrentNode(userToppingsHistory.getTailNode());
   };
 
   const getDiscography = async (artist: string) => {

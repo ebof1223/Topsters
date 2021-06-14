@@ -30,7 +30,7 @@ interface Props {
     contentShift: string;
     background: string;
   };
-} ///DFIXXXX
+}
 const userToppingsHistory: any = new DoublyLinkedList();
 const NewToppingsForm: React.FC<Props> = ({
   saveToppings,
@@ -119,6 +119,11 @@ const NewToppingsForm: React.FC<Props> = ({
           <Search
             setUserToppings={setUserToppings}
             userToppings={userToppings}
+            currentNode={currentNode}
+            userToppingsHistory={userToppingsHistory}
+            nodesFromTail={nodesFromTail}
+            setNodesFromTail={setNodesFromTail}
+            setCurrentNode={setCurrentNode}
           />
         </Drawer>
         <main
