@@ -56,15 +56,23 @@ const ToppingsList: React.FC<Props> = ({
     <div className={classes.root}>
       <div className={classes.OuterContainer}>
         <nav className={classes.nav}>
-          <h1 className={classes.heading}>Toppings</h1>
           <Link to={'/toppings/new'}>
-            <Fab color="inherit" aria-label="add" size="small">
+            <Fab
+              color="inherit"
+              aria-label="add"
+              size="large"
+              style={{
+                position: 'absolute',
+                right: '10%',
+              }}
+            >
               <AddIcon />
             </Fab>
           </Link>
         </nav>
+        {console.log(toppings)}
         <TransitionGroup className={classes.toppings}>
-          {toppings.map((item) => (
+          {toppings.map((item: ToppingsStructure) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <MiniToppings
                 {...item}
@@ -78,15 +86,6 @@ const ToppingsList: React.FC<Props> = ({
           ))}
         </TransitionGroup>
       </div>
-      <div
-        style={{
-          backgroundColor: 'white',
-          width: '100%',
-          height: '5vh',
-          position: 'absolute',
-          bottom: 0,
-        }}
-      ></div>
       <Dialog open={deleteDialog} aria-labelledby="delete-dialog-title">
         <DialogTitle id="delete-dialog-title">
           Delete this Toppings?

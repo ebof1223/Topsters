@@ -5,7 +5,6 @@ import { withStyles } from '@material-ui/styles';
 import styles from './styles/SearchStyles';
 import { LASTFM_API_KEY } from './sensitive';
 import ResultAlbum from './ResultAlbum';
-import DoublyLinkedList from 'dbly-linked-list';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 
 interface Props {
