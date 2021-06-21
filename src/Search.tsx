@@ -22,6 +22,7 @@ interface Props {
   nodesFromTail: number;
   setNodesFromTail: (input: number) => void;
   setCurrentNode: (input: {}) => void;
+  setIsLoading: (input: boolean) => void;
 }
 
 const Search: React.FC<Props> = ({
@@ -33,6 +34,7 @@ const Search: React.FC<Props> = ({
   userToppingsHistory,
   nodesFromTail,
   setNodesFromTail,
+  setIsLoading,
 }) => {
   const [userSearch, setUserSearch] = useState('');
   const [results, setResults] = useState<AlbumStructure[]>([]);
@@ -65,6 +67,7 @@ const Search: React.FC<Props> = ({
   };
 
   const getDiscography = async (artist: string) => {
+    setIsLoading(true);
     setResults([]);
     try {
       await axios
@@ -94,6 +97,7 @@ const Search: React.FC<Props> = ({
     } catch (error) {
       console.log(error);
     }
+    setIsLoading(false);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {

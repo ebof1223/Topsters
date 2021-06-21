@@ -55,6 +55,8 @@ const NewToppingsForm: React.FC<Props> = ({
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
   const [currentNode, setCurrentNode] = useState(null);
   const [nodesFromTail, setNodesFromTail] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     userToppingsHistory.insert(editAlbums);
     setCurrentNode(userToppingsHistory.getTailNode());
@@ -99,6 +101,7 @@ const NewToppingsForm: React.FC<Props> = ({
         currentNode={currentNode}
         nodesFromTail={nodesFromTail}
         setNodesFromTail={setNodesFromTail}
+        isLoading={isLoading}
       />
       <div className={classes.root}>
         <Drawer
@@ -124,6 +127,7 @@ const NewToppingsForm: React.FC<Props> = ({
             nodesFromTail={nodesFromTail}
             setNodesFromTail={setNodesFromTail}
             setCurrentNode={setCurrentNode}
+            setIsLoading={setIsLoading}
           />
         </Drawer>
         <main

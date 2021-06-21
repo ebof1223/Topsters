@@ -15,6 +15,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
 import BackButton from './BackButton';
 import DoublyLinkedList from 'dbly-linked-list';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 type Node = {
   data: AlbumStructure[] | null;
@@ -52,6 +53,7 @@ interface Props {
   };
   nodesFromTail: number;
   setNodesFromTail: (input: number) => void;
+  isLoading: boolean;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -71,6 +73,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
   currentNode,
   nodesFromTail,
   setNodesFromTail,
+  isLoading,
 }) => {
   // console.log('history', userToppingsHistory);
   // console.log('current', currentNode);
@@ -138,16 +141,19 @@ const NewToppingsFormNav: React.FC<Props> = ({
           <Button
             onClick={handleRedo}
             disabled={currentNode && currentNode.next === null}
+            style={{ marginRight: '5rem' }}
           >
             <RedoIcon />
           </Button>
+          {isLoading && (
+            <CircularProgress style={{ position: 'absolute', right: '18%' }} />
+          )}
           <BackButton
             userToppings={userToppings}
             history={history}
             setCurrentNode={setCurrentNode}
             userToppingsHistory={userToppingsHistory}
           />
-
           <SaveButton
             userToppingsName={userToppingsName}
             setUserToppingsName={setUserToppingsName}
