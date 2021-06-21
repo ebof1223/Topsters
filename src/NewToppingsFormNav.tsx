@@ -10,10 +10,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
 import UndoIcon from '@material-ui/icons/Undo';
 import RedoIcon from '@material-ui/icons/Redo';
-import NewToppingsModal from './NewToppingsModal';
+import SaveButton from './SaveButton';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import styles from './styles/NewToppingsFormNavStyles';
-import ConfirmationModal from './ConfirmationModal';
+import BackButton from './BackButton';
 import DoublyLinkedList from 'dbly-linked-list';
 
 type Node = {
@@ -141,14 +141,14 @@ const NewToppingsFormNav: React.FC<Props> = ({
           >
             <RedoIcon />
           </Button>
-          <ConfirmationModal
+          <BackButton
             userToppings={userToppings}
             history={history}
             setCurrentNode={setCurrentNode}
             userToppingsHistory={userToppingsHistory}
           />
 
-          <NewToppingsModal
+          <SaveButton
             userToppingsName={userToppingsName}
             setUserToppingsName={setUserToppingsName}
             userToppings={userToppings}

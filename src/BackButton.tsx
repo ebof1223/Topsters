@@ -15,7 +15,7 @@ interface Props {
   setCurrentNode: (input: any) => void;
   userToppingsHistory: any;
 }
-const ConfirmationModal: React.FC<Props> = ({
+const BackButton: React.FC<Props> = ({
   userToppings,
   history,
   setCurrentNode,
@@ -71,4 +71,4 @@ const ConfirmationModal: React.FC<Props> = ({
   );
 };
 
-export default ConfirmationModal;
+export default BackButton;

@@ -24,7 +24,7 @@ interface Props {
   userToppingsHistory: any;
 }
 
-const NewToppingsModal: React.FC<Props> = ({
+const SaveButton: React.FC<Props> = ({
   setUserToppingsName,
   userToppingsName,
   userToppings,
@@ -142,4 +142,4 @@ const NewToppingsModal: React.FC<Props> = ({
   );
 };
 
-export default NewToppingsModal;
+export default SaveButton;
