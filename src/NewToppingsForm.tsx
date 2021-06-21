@@ -50,7 +50,7 @@ const NewToppingsForm: React.FC<Props> = ({
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
   const [currentNode, setCurrentNode] = useState(null);
@@ -114,11 +114,11 @@ const NewToppingsForm: React.FC<Props> = ({
           }}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={() => setOpen(!open)}>
+            <IconButton onClick={() => setOpen(!open)} disabled={isLoading}>
               <ChevronLeftIcon color="primary" />
             </IconButton>
           </div>
-          <Divider />
+
           <Search
             setUserToppings={setUserToppings}
             userToppings={userToppings}
@@ -129,6 +129,7 @@ const NewToppingsForm: React.FC<Props> = ({
             setCurrentNode={setCurrentNode}
             setIsLoading={setIsLoading}
           />
+          <Divider />
         </Drawer>
         <main
           className={clsx(classes.content, {

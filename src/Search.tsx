@@ -10,6 +10,7 @@ const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 interface Props {
   classes: {
     resultsContainer: string;
+    SearchBar: string;
   };
   setUserToppings: (args: AlbumStructure[]) => void;
   userToppings: AlbumStructure[];
@@ -108,19 +109,16 @@ const Search: React.FC<Props> = ({
 
   return (
     <>
-      <div style={{ margin: '0 auto' }}>
-        <h1>LastFM API Call</h1>
+      <div>
         <form onSubmit={handleSubmit}>
           <input
             autoFocus
             autoComplete="off"
-            className="search-bar"
+            className={classes.SearchBar}
             value={userSearch}
             type="text"
             onChange={(e) => setUserSearch(e.target.value)}
-            placeholder="Enter artist"
           ></input>
-          <button>Search</button>
         </form>
       </div>
       <div className={classes.resultsContainer}>
