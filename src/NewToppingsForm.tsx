@@ -6,12 +6,13 @@ import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import Search from './Search';
+import Results from './Results';
 import DraggableToppingsList from './DraggableToppingsList';
 import styles from './styles/NewToppingsFormStyles';
-import { ToppingsStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from './interface';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
+import Search from './Search';
 
 interface Props {
   saveToppings: (input: ToppingsStructure) => void;
@@ -56,12 +57,15 @@ const NewToppingsForm: React.FC<Props> = ({
   const [currentNode, setCurrentNode] = useState(null);
   const [nodesFromTail, setNodesFromTail] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+  const [userSearch, setUserSearch] = useState('');
+  const [results, setResults] = useState<AlbumStructure[]>([]);
 
   useEffect(() => {
     userToppingsHistory.insert(editAlbums);
     setCurrentNode(userToppingsHistory.getTailNode());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   const onSortEnd = ({
     oldIndex,
     newIndex,
@@ -119,7 +123,7 @@ const NewToppingsForm: React.FC<Props> = ({
             </IconButton>
           </div>
 
-          <Search
+          <Results
             setUserToppings={setUserToppings}
             userToppings={userToppings}
             currentNode={currentNode}
@@ -128,9 +132,18 @@ const NewToppingsForm: React.FC<Props> = ({
             setNodesFromTail={setNodesFromTail}
             setCurrentNode={setCurrentNode}
             setIsLoading={setIsLoading}
+            results={results}
           />
           <Divider />
         </Drawer>
+        <Search
+          setUserSearch={setUserSearch}
+          userSearch={userSearch}
+          setIsLoading={setIsLoading}
+          setResults={setResults}
+          setOpen={setOpen}
+        />
+
         <main
           className={clsx(classes.content, {
             [classes.contentShift]: open,

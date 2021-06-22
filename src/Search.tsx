@@ -1,72 +1,38 @@
-import { AlbumStructure } from './interface';
-import { useState } from 'react';
-import axios from 'axios';
-import { withStyles } from '@material-ui/styles';
 import styles from './styles/SearchStyles';
+import { withStyles } from '@material-ui/styles';
+import axios from 'axios';
 import { LASTFM_API_KEY } from './sensitive';
-import ResultAlbum from './ResultAlbum';
+import { AlbumStructure } from './interface';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
-
 interface Props {
   classes: {
-    resultsContainer: string;
+    root: string;
     SearchBar: string;
   };
-  setUserToppings: (args: AlbumStructure[]) => void;
-  userToppings: AlbumStructure[];
-  currentNode: {
-    data: Node;
-    next: Node;
-    prev: Node;
-  };
-  userToppingsHistory: any;
-  nodesFromTail: number;
-  setNodesFromTail: (input: number) => void;
-  setCurrentNode: (input: {}) => void;
+  userSearch: string;
+  setUserSearch: (input: string) => void;
   setIsLoading: (input: boolean) => void;
+  setResults: (input: AlbumStructure[]) => void;
+  setOpen: (input: boolean) => void;
 }
-
 const Search: React.FC<Props> = ({
   classes,
-  setUserToppings,
-  userToppings,
-  currentNode,
-  setCurrentNode,
-  userToppingsHistory,
-  nodesFromTail,
-  setNodesFromTail,
+  setUserSearch,
+  userSearch,
+  setResults,
   setIsLoading,
+  setOpen,
 }) => {
-  const [userSearch, setUserSearch] = useState('');
-  const [results, setResults] = useState<AlbumStructure[]>([]);
-
-  const addToToppings = (itemIdx: number) => {
-    console.log(results[itemIdx]);
-    if (
-      userToppings.some(
-        (item: AlbumStructure) => item.name === results[itemIdx].name
-      )
-    ) {
-      console.log('DUPLICATE ERROR');
-      return;
-    }
-    if (userToppings.length > 8) {
-      console.log('EXCEEDED MAX TOPPINGS VALUE');
-      return;
-    }
-
-    let newToppings = [...userToppings, results[itemIdx]];
-    userToppingsHistory.toppingsInsert(
-      currentNode,
-      newToppings,
-      userToppingsHistory,
-      nodesFromTail
-    );
-    setNodesFromTail(0);
-    setUserToppings(newToppings);
-    setCurrentNode(userToppingsHistory.getTailNode());
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    getDiscography(userSearch);
+    setUserSearch('');
   };
-
+  document.addEventListener('keydown', (event) => {
+    if (/^[a-z0-9]$/i.test(event.key)) {
+      document.getElementById('search').focus();
+    }
+  });
   const getDiscography = async (artist: string) => {
     setIsLoading(true);
     setResults([]);
@@ -98,40 +64,23 @@ const Search: React.FC<Props> = ({
     } catch (error) {
       console.log(error);
     }
+    setOpen(true);
     setIsLoading(false);
   };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    getDiscography(userSearch);
-    setUserSearch('');
-  };
-
   return (
-    <>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <input
-            autoFocus
-            autoComplete="off"
-            className={classes.SearchBar}
-            value={userSearch}
-            type="text"
-            onChange={(e) => setUserSearch(e.target.value)}
-          ></input>
-        </form>
-      </div>
-      <div className={classes.resultsContainer}>
-        {results.map((item: AlbumStructure, index: number) => (
-          <ResultAlbum
-            key={`${item.name}-result`}
-            onClick={() => addToToppings(index)}
-            cover={item.image[3]['#text']}
-          />
-        ))}
-      </div>
-    </>
+    <div className={classes.root}>
+      <form onSubmit={handleSubmit}>
+        <input
+          autoFocus
+          autoComplete="off"
+          className={classes.SearchBar}
+          value={userSearch}
+          type="text"
+          onChange={(e) => setUserSearch(e.target.value)}
+          id="search"
+        ></input>
+      </form>
+    </div>
   );
 };
-
 export default withStyles(styles)(Search);
