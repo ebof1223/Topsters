@@ -3,11 +3,17 @@ import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
 import { LASTFM_API_KEY } from './sensitive';
 import { AlbumStructure } from './interface';
+import { useRef, useState } from 'react';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 interface Props {
   classes: {
     root: string;
     SearchBar: string;
+    ProgressBar: string;
+    Fill: string;
+    Overlay: string;
+    '@keyframes fill': string;
+    Hide: string;
   };
   userSearch: string;
   setUserSearch: (input: string) => void;
@@ -23,15 +29,30 @@ const Search: React.FC<Props> = ({
   setIsLoading,
   setOpen,
 }) => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
+  const focusSearch: React.MutableRefObject<any> = useRef();
+  const overlay: React.MutableRefObject<any> = useRef();
+
+  const [isTyping, setIsTyping] = useState(false);
+  let timer: any;
+
+  const handleSubmit = (): void => {
+    // e.preventDefault();
     getDiscography(userSearch);
     setUserSearch('');
   };
-  document.addEventListener('keydown', (event) => {
-    if (/^[a-z0-9]$/i.test(event.key)) {
-      document.getElementById('search').focus();
-    }
+
+  document.addEventListener('keydown', () => {
+    setIsTyping(true);
+    focusSearch.current.focus();
+    clearInterval(timer);
+    timer = setInterval(
+      () => {
+        setIsTyping(false);
+        handleSubmit();
+      },
+
+      5000
+    );
   });
   const getDiscography = async (artist: string) => {
     setIsLoading(true);
@@ -67,19 +88,25 @@ const Search: React.FC<Props> = ({
     setOpen(true);
     setIsLoading(false);
   };
+  console.log(overlay.current);
   return (
     <div className={classes.root}>
-      <form onSubmit={handleSubmit}>
-        <input
-          autoFocus
-          autoComplete="off"
-          className={classes.SearchBar}
-          value={userSearch}
-          type="text"
-          onChange={(e) => setUserSearch(e.target.value)}
-          id="search"
-        ></input>
-      </form>
+      <div className={isTyping ? classes.Overlay : classes.Hide} ref={overlay}>
+        <form onSubmit={handleSubmit}>
+          <input
+            ref={focusSearch}
+            autoFocus
+            autoComplete="off"
+            className={classes.SearchBar}
+            value={userSearch}
+            type="text"
+            onChange={(e) => setUserSearch(e.target.value)}
+          ></input>
+        </form>
+        <div className={classes.ProgressBar}>
+          <div className={isTyping ? classes.Fill : ''} />
+        </div>
+      </div>
     </div>
   );
 };
