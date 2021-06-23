@@ -73,7 +73,7 @@ const ToppingsList: React.FC<Props> = ({
             </Tooltip>
           </Link>
         </nav>
-        {console.log(toppings)}
+        {/* {console.log(toppings)} */}
         <TransitionGroup className={classes.toppings}>
           {toppings.map((item: ToppingsStructure) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>

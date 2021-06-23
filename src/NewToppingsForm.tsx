@@ -18,6 +18,7 @@ interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   history: {
     push: (input: string) => void;
+    location: any;
   };
   match: { params: any };
   toppings: ToppingsStructure[];
@@ -32,7 +33,7 @@ interface Props {
     background: string;
   };
 }
-const userToppingsHistory: any = new DoublyLinkedList();
+var userToppingsHistory: any;
 const NewToppingsForm: React.FC<Props> = ({
   saveToppings,
   history,
@@ -62,6 +63,7 @@ const NewToppingsForm: React.FC<Props> = ({
   const [noResults, setNoResults] = useState(false);
 
   useEffect(() => {
+    userToppingsHistory = new DoublyLinkedList();
     userToppingsHistory.insert(editAlbums);
     setCurrentNode(userToppingsHistory.getTailNode());
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -145,6 +147,7 @@ const NewToppingsForm: React.FC<Props> = ({
           setResults={setResults}
           setOpen={setOpen}
           setNoResults={setNoResults}
+          history={history}
         />
 
         <main

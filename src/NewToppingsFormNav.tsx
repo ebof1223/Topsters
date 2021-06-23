@@ -153,15 +153,10 @@ const NewToppingsFormNav: React.FC<Props> = ({
               <RedoIcon />
             </Button>
           </Tooltip>
-          {isLoading && (
-            <CircularProgress style={{ position: 'absolute', right: '18%' }} />
-          )}
+          {isLoading && <CircularProgress />}
           {!isLoading && noResults && (
             <Tooltip title="No results found. Please try again.">
-              <ErrorIcon
-                style={{ position: 'absolute', right: '18%' }}
-                fontSize="large"
-              />
+              <ErrorIcon fontSize="large" />
             </Tooltip>
           )}
           <BackButton

@@ -20,6 +20,10 @@ interface Props {
   setResults: (input: AlbumStructure[]) => void;
   setOpen: (input: boolean) => void;
   setNoResults: (i: boolean) => void;
+  history: {
+    push: (input: string) => void;
+    location: any;
+  };
 }
 const Search: React.FC<Props> = ({
   classes,
@@ -29,11 +33,29 @@ const Search: React.FC<Props> = ({
   setIsLoading,
   setOpen,
   setNoResults,
+  history,
 }) => {
   const focusSearch: React.MutableRefObject<any> = useRef();
   const overlay: React.MutableRefObject<any> = useRef();
   const [isTyping, setIsTyping] = useState(false);
   var timer: any;
+  if (
+    history.location.pathname.includes('edit') ||
+    history.location.pathname.includes('new')
+  ) {
+    document.addEventListener('keydown', () => {
+      clearTimeout(timer);
+      if (/^[0-9a-zA-Z]*$/) {
+        setIsTyping(true);
+        focusSearch.current.focus();
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          setIsTyping(false);
+          setUserSearch('');
+        }, 3000);
+      }
+    });
+  }
 
   const handleSubmit = (e: any): void => {
     e.preventDefault();
@@ -42,18 +64,6 @@ const Search: React.FC<Props> = ({
     setUserSearch('');
   };
 
-  document.addEventListener('keydown', () => {
-    clearTimeout(timer);
-    if (/^[a-z0-9]+$/i) {
-      setIsTyping(true);
-      focusSearch.current.focus();
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        setIsTyping(false);
-        setUserSearch('');
-      }, 3000);
-    }
-  });
   const getDiscography = async (artist: string) => {
     setResults([]);
     setIsLoading(true);
