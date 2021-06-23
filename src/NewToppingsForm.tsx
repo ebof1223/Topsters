@@ -59,6 +59,7 @@ const NewToppingsForm: React.FC<Props> = ({
   const [isLoading, setIsLoading] = useState(false);
   const [userSearch, setUserSearch] = useState('');
   const [results, setResults] = useState<AlbumStructure[]>([]);
+  const [noResults, setNoResults] = useState(false);
 
   useEffect(() => {
     userToppingsHistory.insert(editAlbums);
@@ -106,6 +107,7 @@ const NewToppingsForm: React.FC<Props> = ({
         nodesFromTail={nodesFromTail}
         setNodesFromTail={setNodesFromTail}
         isLoading={isLoading}
+        noResults={noResults}
       />
       <div className={classes.root}>
         <Drawer
@@ -142,6 +144,7 @@ const NewToppingsForm: React.FC<Props> = ({
           setIsLoading={setIsLoading}
           setResults={setResults}
           setOpen={setOpen}
+          setNoResults={setNoResults}
         />
 
         <main

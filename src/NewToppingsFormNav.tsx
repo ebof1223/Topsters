@@ -16,6 +16,8 @@ import styles from './styles/NewToppingsFormNavStyles';
 import BackButton from './BackButton';
 import DoublyLinkedList from 'dbly-linked-list';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import ErrorIcon from '@material-ui/icons/Error';
+import Tooltip from '@material-ui/core/Tooltip';
 
 type Node = {
   data: AlbumStructure[] | null;
@@ -54,6 +56,7 @@ interface Props {
   nodesFromTail: number;
   setNodesFromTail: (input: number) => void;
   isLoading: boolean;
+  noResults: boolean;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
@@ -74,6 +77,7 @@ const NewToppingsFormNav: React.FC<Props> = ({
   nodesFromTail,
   setNodesFromTail,
   isLoading,
+  noResults,
 }) => {
   // console.log('history', userToppingsHistory);
   // console.log('current', currentNode);
@@ -132,21 +136,33 @@ const NewToppingsFormNav: React.FC<Props> = ({
           </IconButton>
         </Toolbar>
         <div className={classes.btnContainer}>
-          <Button
-            onClick={handleUndo}
-            disabled={currentNode && currentNode.prev === null}
-          >
-            <UndoIcon />
-          </Button>
-          <Button
-            onClick={handleRedo}
-            disabled={currentNode && currentNode.next === null}
-            style={{ marginRight: '5rem' }}
-          >
-            <RedoIcon />
-          </Button>
+          <Tooltip title="Undo">
+            <Button
+              onClick={handleUndo}
+              disabled={currentNode && currentNode.prev === null}
+            >
+              <UndoIcon />
+            </Button>
+          </Tooltip>
+          <Tooltip title="Redo">
+            <Button
+              onClick={handleRedo}
+              disabled={currentNode && currentNode.next === null}
+              style={{ marginRight: '5rem' }}
+            >
+              <RedoIcon />
+            </Button>
+          </Tooltip>
           {isLoading && (
             <CircularProgress style={{ position: 'absolute', right: '18%' }} />
+          )}
+          {!isLoading && noResults && (
+            <Tooltip title="No results found. Please try again.">
+              <ErrorIcon
+                style={{ position: 'absolute', right: '18%' }}
+                fontSize="large"
+              />
+            </Tooltip>
           )}
           <BackButton
             userToppings={userToppings}

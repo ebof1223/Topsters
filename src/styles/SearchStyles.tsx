@@ -18,11 +18,9 @@ const styles = () =>
       right: '35%',
       top: '50%',
       zIndex: 10,
-
-      // opacity: 0,
     },
     SearchBar: {
-      backgroundColor: 'grey',
+      backgroundColor: 'yellow',
       backdropFilter: 'blur(100px)',
       width: '23vw',
       height: '10vh',
@@ -39,13 +37,6 @@ const styles = () =>
     ProgressBar: {
       height: '5px',
       width: '100%',
-    },
-    Fill: {
-      height: '100%',
-      animation: 'fill 3s',
-      animationTimingFunction: 'linear',
-      borderRadius: '5px',
-      backgroundColor: 'green',
     },
     Hide: {
       display: 'none',

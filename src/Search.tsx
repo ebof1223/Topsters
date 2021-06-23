@@ -10,7 +10,6 @@ interface Props {
     root: string;
     SearchBar: string;
     ProgressBar: string;
-    Fill: string;
     Overlay: string;
     '@keyframes fill': string;
     Hide: string;
@@ -20,6 +19,7 @@ interface Props {
   setIsLoading: (input: boolean) => void;
   setResults: (input: AlbumStructure[]) => void;
   setOpen: (input: boolean) => void;
+  setNoResults: (i: boolean) => void;
 }
 const Search: React.FC<Props> = ({
   classes,
@@ -28,35 +28,36 @@ const Search: React.FC<Props> = ({
   setResults,
   setIsLoading,
   setOpen,
+  setNoResults,
 }) => {
   const focusSearch: React.MutableRefObject<any> = useRef();
   const overlay: React.MutableRefObject<any> = useRef();
-
   const [isTyping, setIsTyping] = useState(false);
-  let timer: any;
+  var timer: any;
 
-  const handleSubmit = (): void => {
-    // e.preventDefault();
+  const handleSubmit = (e: any): void => {
+    e.preventDefault();
+    setIsTyping(false);
     getDiscography(userSearch);
     setUserSearch('');
   };
 
   document.addEventListener('keydown', () => {
-    setIsTyping(true);
-    focusSearch.current.focus();
-    clearInterval(timer);
-    timer = setInterval(
-      () => {
+    clearTimeout(timer);
+    if (/^[a-z0-9]+$/i) {
+      setIsTyping(true);
+      focusSearch.current.focus();
+      clearTimeout(timer);
+      timer = setTimeout(() => {
         setIsTyping(false);
-        handleSubmit();
-      },
-
-      5000
-    );
+        setUserSearch('');
+      }, 3000);
+    }
   });
   const getDiscography = async (artist: string) => {
-    setIsLoading(true);
     setResults([]);
+    setIsLoading(true);
+    setNoResults(false);
     try {
       await axios
         .get(
@@ -81,18 +82,17 @@ const Search: React.FC<Props> = ({
             }
           }
           setResults(albumsArrayCopy);
+          setOpen(true);
         });
     } catch (error) {
-      console.log(error);
+      setNoResults(true);
     }
-    setOpen(true);
     setIsLoading(false);
   };
-  console.log(overlay.current);
   return (
     <div className={classes.root}>
       <div className={isTyping ? classes.Overlay : classes.Hide} ref={overlay}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <input
             ref={focusSearch}
             autoFocus
@@ -103,9 +103,7 @@ const Search: React.FC<Props> = ({
             onChange={(e) => setUserSearch(e.target.value)}
           ></input>
         </form>
-        <div className={classes.ProgressBar}>
-          <div className={isTyping ? classes.Fill : ''} />
-        </div>
+        <div className={classes.ProgressBar} />
       </div>
     </div>
   );

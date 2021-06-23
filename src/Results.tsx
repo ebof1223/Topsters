@@ -3,27 +3,27 @@ import { withStyles } from '@material-ui/styles';
 import styles from './styles/ResultsStyles';
 import ResultAlbum from './ResultAlbum';
 
-// interface Props {
-//   classes: {
-//     root: string;
-//     resultsContainer: string;
-//   };
-//   setUserToppings: (args: AlbumStructure[]) => void;
-//   userToppings: AlbumStructure[];
-//   currentNode: {
-//     data: Node;
-//     next: Node;
-//     prev: Node;
-//   };
-//   userToppingsHistory: any;
-//   nodesFromTail: number;
-//   setNodesFromTail: (input: number) => void;
-//   setCurrentNode: (input: {}) => void;
-//   setIsLoading: (input: boolean) => void;
-//   results:AlbumStructure[]
-// }
+interface Props {
+  classes: {
+    root: string;
+    resultsContainer: string;
+  };
+  setUserToppings: (args: AlbumStructure[]) => void;
+  userToppings: AlbumStructure[];
+  currentNode: {
+    data: Node;
+    next: Node;
+    prev: Node;
+  };
+  userToppingsHistory: any;
+  nodesFromTail: number;
+  setNodesFromTail: (input: number) => void;
+  setCurrentNode: (input: {}) => void;
+  setIsLoading: (input: boolean) => void;
+  results: AlbumStructure[];
+}
 
-const Results: React.FC<any> = ({
+const Results: React.FC<Props> = ({
   classes,
   setUserToppings,
   userToppings,

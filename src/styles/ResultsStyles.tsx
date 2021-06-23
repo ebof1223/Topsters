@@ -7,7 +7,7 @@ const styles = () =>
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'flexStart',
-      margin: '2.5rem 0',
+      margin: '1.5rem 0',
       paddingLeft: '1.5rem',
       overflow: 'auto',
       scrollSnapType: 'y mandatory',

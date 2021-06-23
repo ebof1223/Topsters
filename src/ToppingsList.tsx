@@ -18,6 +18,7 @@ import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
 import { ToppingsStructure } from './interface';
+import Tooltip from '@material-ui/core/Tooltip';
 
 interface Props {
   toppings: ToppingsStructure[];
@@ -57,17 +58,19 @@ const ToppingsList: React.FC<Props> = ({
       <div className={classes.OuterContainer}>
         <nav className={classes.nav}>
           <Link to={'/toppings/new'}>
-            <Fab
-              color="inherit"
-              aria-label="add"
-              size="large"
-              style={{
-                position: 'absolute',
-                right: '10%',
-              }}
-            >
-              <AddIcon />
-            </Fab>
+            <Tooltip title="Add">
+              <Fab
+                color="inherit"
+                aria-label="add"
+                size="large"
+                style={{
+                  position: 'absolute',
+                  right: '10%',
+                }}
+              >
+                <AddIcon />
+              </Fab>
+            </Tooltip>
           </Link>
         </nav>
         {console.log(toppings)}
