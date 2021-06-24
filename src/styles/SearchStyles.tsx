@@ -4,15 +4,15 @@ const styles = () =>
   createStyles({
     '@keyframes fill': {
       '0%': {
-        width: '0%',
+        width: '100%',
       },
       '100%': {
-        width: '100%',
+        width: '0%',
       },
     },
     root: { position: 'static' },
     Overlay: {
-      // pointerEvents: 'none',
+      pointerEvents: 'none',
       position: 'absolute',
       bottom: 0,
       right: '35%',
@@ -27,20 +27,25 @@ const styles = () =>
       borderRadius: '2px',
       padding: '1rem 2rem',
       border: 0,
-      // border: '5px solid red',
       fontSize: '4rem',
       textAlign: 'center',
       outline: 'none',
-      // '& focus': {
-      //   opacity: 0.7,
-      // },
     },
     ProgressBar: {
       height: '5px',
-      width: '100%',
     },
     Hide: {
       display: 'none',
+    },
+    fill: {
+      height: '100%',
+      animation: '$fill 3s',
+      animationTimingFunction: 'linear',
+      borderRadius: '5px',
+      backgroundColor: 'red',
+    },
+    yellow: {
+      backgroundColor: 'yellow',
     },
   });
 

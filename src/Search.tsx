@@ -13,6 +13,7 @@ interface Props {
     Overlay: string;
     '@keyframes fill': string;
     Hide: string;
+    fill: any;
   };
   userSearch: string;
   setUserSearch: (input: string) => void;
@@ -36,13 +37,11 @@ const Search: React.FC<Props> = ({
   setOpenDrawer,
   setNoResults,
   history,
-  setOpenConfirm,
   openConfirm,
 }) => {
-  // const focusSearch: React.MutableRefObject<any> = useRef();
+  const focusSearch: React.MutableRefObject<any> = useRef();
   const overlay: React.MutableRefObject<any> = useRef();
   const [isTyping, setIsTyping] = useState(false);
-
   useEffect(() => {
     var timer: any;
     if (
@@ -54,10 +53,14 @@ const Search: React.FC<Props> = ({
     const keydownEventListener = () => {
       if (openConfirm) return;
       if (!/^[0-9a-zA-Z]*$/) return;
-
+      document.getElementById('fill').classList.remove(classes.fill);
+      setTimeout(
+        () => document.getElementById('fill').classList.add(classes.fill),
+        0
+      );
       clearTimeout(timer);
       setIsTyping(true);
-      document.getElementById('focusSearch').focus();
+      focusSearch.current.focus();
       clearTimeout(timer);
       timer = setTimeout(() => {
         setIsTyping(false);
@@ -70,7 +73,7 @@ const Search: React.FC<Props> = ({
     return () => {
       document.removeEventListener('keydown', keydownEventListener);
     };
-  }, [history.location.pathname, openConfirm, setUserSearch]);
+  }, [classes.fill, history.location.pathname, openConfirm, setUserSearch]);
 
   const handleSubmit = (e: any): void => {
     e.preventDefault();
@@ -114,6 +117,7 @@ const Search: React.FC<Props> = ({
     }
     setIsLoading(false);
   };
+
   return (
     <div className={classes.root}>
       <form onSubmit={(e) => handleSubmit(e)}>
@@ -122,7 +126,7 @@ const Search: React.FC<Props> = ({
           ref={overlay}
         >
           <input
-            // ref={focusSearch}
+            ref={focusSearch}
             id="focusSearch"
             autoFocus
             autoComplete="off"
@@ -130,10 +134,12 @@ const Search: React.FC<Props> = ({
             value={userSearch}
             type="text"
             onChange={(e) => setUserSearch(e.target.value)}
-          ></input>
+          />
+          <div className={classes.ProgressBar}>
+            <div className={classes.fill} id="fill" />
+          </div>
         </div>
       </form>
-      <div className={classes.ProgressBar} />
     </div>
   );
 };
