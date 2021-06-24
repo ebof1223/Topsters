@@ -25,11 +25,13 @@ const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
   return (
     <header className={classes.Navbar}>
       <Link to={'/'}>
-        <HomeIcon style={{ marginLeft: '3rem' }} />
+        <HomeIcon
+          style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
+        />
       </Link>
       <div className={classes.Title}>{title}</div>
       <EditIcon
-        style={{ marginRight: '3rem', cursor: 'pointer' }}
+        style={{ marginRight: '3rem', cursor: 'pointer', color: 'black' }}
         onClick={handleEdit}
       />
     </header>
