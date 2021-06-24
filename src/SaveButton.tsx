@@ -16,6 +16,7 @@ interface Props {
   match: { params: { id: string } };
   toppings: ToppingsStructure[];
   history: {
+    goBack: () => void;
     push: (input: string) => void;
   };
   saveToppings: (input: ToppingsStructure) => void;
@@ -82,7 +83,7 @@ const SaveButton: React.FC<Props> = ({
     setOpenConfirm(false);
     userToppingsHistory.clear();
     setCurrentNode(null);
-    history.push('/');
+    history.push(`/toppings/${newToppings.id}`);
   };
   return (
     <div>

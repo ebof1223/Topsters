@@ -17,6 +17,7 @@ import Search from './Search';
 interface Props {
   saveToppings: (input: ToppingsStructure) => void;
   history: {
+    goBack: () => void;
     push: (input: string) => void;
     location: any;
   };

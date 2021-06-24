@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -9,10 +9,11 @@ import { AlbumStructure } from './interface';
 interface Props {
   userToppings: AlbumStructure[];
   history: {
+    goBack: () => void;
     push: (input: string) => void;
   };
   ///FIXC
-  setCurrentNode: (input: any) => void;
+  setCurrentNode: (input: Node) => void;
   userToppingsHistory: any;
 }
 const BackButton: React.FC<Props> = ({
@@ -21,30 +22,29 @@ const BackButton: React.FC<Props> = ({
   setCurrentNode,
   userToppingsHistory,
 }) => {
-  const [open, setOpen] = React.useState(false);
+  const [openConfirm, setOpenConfirm] = useState(false);
 
   const handleClickOpen = () => {
-    userToppings.length ? setOpen(true) : history.push(`/`);
+    userToppings.length ? setOpenConfirm(true) : history.goBack();
   };
 
   const handleClose = () => {
-    setOpen(false);
+    setOpenConfirm(false);
   };
 
   const handleBack = () => {
     userToppingsHistory.clear();
     setCurrentNode(null);
-    history.push(`/`);
-    setOpen(false);
+    history.goBack();
+    setOpenConfirm(false);
   };
-
   return (
     <div style={{ marginLeft: '2rem' }}>
       <Button variant="contained" color="secondary" onClick={handleClickOpen}>
         Go Back
       </Button>
       <Dialog
-        open={open}
+        open={openConfirm}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"

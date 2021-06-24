@@ -23,6 +23,7 @@ interface Props {
   };
   toppings: ToppingsStructure[];
   history: {
+    goBack: () => void;
     push: (input: string) => void;
   };
 }

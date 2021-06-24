@@ -37,6 +37,7 @@ interface Props {
   openDrawer: boolean;
   setOpenDrawer: (input: boolean) => void;
   history: {
+    goBack: () => void;
     push: (input: string) => void;
   };
   match: { params: any };

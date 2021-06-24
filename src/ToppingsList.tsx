@@ -23,6 +23,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 interface Props {
   toppings: ToppingsStructure[];
   history: {
+    goBack: () => void;
     push: (input: string) => void;
   };
   setToppings: (input: ToppingsStructure[]) => void;
