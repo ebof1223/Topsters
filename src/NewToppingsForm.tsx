@@ -52,7 +52,7 @@ const NewToppingsForm: React.FC<Props> = ({
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
-  const [open, setOpen] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
   const [userToppings, setUserToppings] = useState(editAlbums);
   const [userToppingsName, setUserToppingsName] = useState(editTitle);
   const [currentNode, setCurrentNode] = useState(null);
@@ -61,11 +61,15 @@ const NewToppingsForm: React.FC<Props> = ({
   const [userSearch, setUserSearch] = useState('');
   const [results, setResults] = useState<AlbumStructure[]>([]);
   const [noResults, setNoResults] = useState(false);
+  const [openConfirm, setOpenConfirm] = useState(false);
 
   useEffect(() => {
     userToppingsHistory = new DoublyLinkedList();
     userToppingsHistory.insert(editAlbums);
     setCurrentNode(userToppingsHistory.getTailNode());
+    return () => {
+      userToppingsHistory.clear();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -93,8 +97,8 @@ const NewToppingsForm: React.FC<Props> = ({
   return (
     <>
       <NewToppingsFormNav
-        open={open}
-        setOpen={setOpen}
+        openDrawer={openDrawer}
+        setOpenDrawer={setOpenDrawer}
         history={history}
         setUserToppings={setUserToppings}
         toppings={toppings}
@@ -110,19 +114,24 @@ const NewToppingsForm: React.FC<Props> = ({
         setNodesFromTail={setNodesFromTail}
         isLoading={isLoading}
         noResults={noResults}
+        openConfirm={openConfirm}
+        setOpenConfirm={setOpenConfirm}
       />
       <div className={classes.root}>
         <Drawer
           className={classes.drawer}
           variant="persistent"
           anchor="left"
-          open={open}
+          open={openDrawer}
           classes={{
             paper: classes.drawerPaper,
           }}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={() => setOpen(!open)} disabled={isLoading}>
+            <IconButton
+              onClick={() => setOpenDrawer(!openDrawer)}
+              disabled={isLoading}
+            >
               <ChevronLeftIcon color="primary" />
             </IconButton>
           </div>
@@ -145,14 +154,16 @@ const NewToppingsForm: React.FC<Props> = ({
           userSearch={userSearch}
           setIsLoading={setIsLoading}
           setResults={setResults}
-          setOpen={setOpen}
+          setOpenDrawer={setOpenDrawer}
           setNoResults={setNoResults}
           history={history}
+          openConfirm={openConfirm}
+          setOpenConfirm={setOpenConfirm}
         />
 
         <main
           className={clsx(classes.content, {
-            [classes.contentShift]: open,
+            [classes.contentShift]: openDrawer,
           })}
         >
           <div className={classes.drawerHeader} />

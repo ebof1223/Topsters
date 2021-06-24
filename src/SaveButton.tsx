@@ -22,6 +22,8 @@ interface Props {
   //FICXCC
   setCurrentNode: (input: any) => void;
   userToppingsHistory: any;
+  setOpenConfirm: (i: boolean) => void;
+  openConfirm: boolean;
 }
 
 const SaveButton: React.FC<Props> = ({
@@ -34,11 +36,12 @@ const SaveButton: React.FC<Props> = ({
   match,
   setCurrentNode,
   userToppingsHistory,
+  setOpenConfirm,
+  openConfirm,
 }) => {
   const [errors, setErrors] = React.useState<{ title: string }>({
     title: '',
   });
-  const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -76,12 +79,11 @@ const SaveButton: React.FC<Props> = ({
       saveToppings(newToppings);
     }
 
-    setOpen(false);
+    setOpenConfirm(false);
     userToppingsHistory.clear();
     setCurrentNode(null);
     history.push('/');
   };
-
   return (
     <div>
       <Button
@@ -89,15 +91,15 @@ const SaveButton: React.FC<Props> = ({
         variant="contained"
         color="primary"
         onClick={() => {
-          setOpen(true);
+          setOpenConfirm(true);
         }}
       >
         Save
       </Button>
       <Dialog
-        open={open}
+        open={openConfirm}
         onClose={() => {
-          setOpen(true);
+          setOpenConfirm(true);
         }}
         aria-labelledby="form-dialog-title"
       >
@@ -126,7 +128,7 @@ const SaveButton: React.FC<Props> = ({
           <DialogActions>
             <Button
               onClick={() => {
-                setOpen(false);
+                setOpenConfirm(false);
               }}
               color="primary"
             >

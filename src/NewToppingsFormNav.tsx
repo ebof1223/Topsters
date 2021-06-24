@@ -34,8 +34,8 @@ interface Props {
     menuButton: string;
     btnContainer: string;
   };
-  open: boolean;
-  setOpen: (input: boolean) => void;
+  openDrawer: boolean;
+  setOpenDrawer: (input: boolean) => void;
   history: {
     push: (input: string) => void;
   };
@@ -57,12 +57,14 @@ interface Props {
   setNodesFromTail: (input: number) => void;
   isLoading: boolean;
   noResults: boolean;
+  setOpenConfirm: (i: boolean) => void;
+  openConfirm: boolean;
 }
 
 const NewToppingsFormNav: React.FC<Props> = ({
   classes,
-  open,
-  setOpen,
+  openDrawer,
+  setOpenDrawer,
   history,
   setUserToppings,
   userToppings,
@@ -78,10 +80,9 @@ const NewToppingsFormNav: React.FC<Props> = ({
   setNodesFromTail,
   isLoading,
   noResults,
+  openConfirm,
+  setOpenConfirm,
 }) => {
-  // console.log('history', userToppingsHistory);
-  // console.log('current', currentNode);
-  // console.log(nodesFromTail);
   const handleUndo = () => {
     setUserToppings(currentNode.prev.data);
     setCurrentNode(currentNode.prev);
@@ -93,6 +94,25 @@ const NewToppingsFormNav: React.FC<Props> = ({
     setNodesFromTail(nodesFromTail - 1);
   };
 
+  var Undo = (
+    <Button
+      onClick={handleUndo}
+      disabled={currentNode && currentNode.prev === null}
+    >
+      <UndoIcon />
+    </Button>
+  );
+
+  var Redo = (
+    <Button
+      onClick={handleRedo}
+      disabled={currentNode && currentNode.next === null}
+      style={{ marginRight: '5rem' }}
+    >
+      <RedoIcon />
+    </Button>
+  );
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -100,16 +120,16 @@ const NewToppingsFormNav: React.FC<Props> = ({
         color="inherit"
         position="fixed"
         className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
+          [classes.appBarShift]: openDrawer,
         })}
       >
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpenDrawer(!openDrawer)}
             edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
+            className={clsx(classes.menuButton, openDrawer && classes.hide)}
           >
             <MenuIcon />
           </IconButton>
@@ -121,38 +141,31 @@ const NewToppingsFormNav: React.FC<Props> = ({
         color="inherit"
         position="fixed"
         className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
+          [classes.appBarShift]: openDrawer,
         })}
       >
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpenDrawer(!openDrawer)}
             edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
+            className={clsx(classes.menuButton, openDrawer && classes.hide)}
           >
             <ChevronRightIcon color="primary" />
           </IconButton>
         </Toolbar>
         <div className={classes.btnContainer}>
-          <Tooltip title="Undo">
-            <Button
-              onClick={handleUndo}
-              disabled={currentNode && currentNode.prev === null}
-            >
-              <UndoIcon />
-            </Button>
-          </Tooltip>
-          <Tooltip title="Redo">
-            <Button
-              onClick={handleRedo}
-              disabled={currentNode && currentNode.next === null}
-              style={{ marginRight: '5rem' }}
-            >
-              <RedoIcon />
-            </Button>
-          </Tooltip>
+          {currentNode && currentNode.prev === null ? (
+            Undo
+          ) : (
+            <Tooltip title="Undo">{Undo}</Tooltip>
+          )}
+          {currentNode && currentNode.next === null ? (
+            Redo
+          ) : (
+            <Tooltip title="Redo">{Redo}</Tooltip>
+          )}
           {isLoading && <CircularProgress />}
           {!isLoading && noResults && (
             <Tooltip title="No results found. Please try again.">
@@ -175,6 +188,8 @@ const NewToppingsFormNav: React.FC<Props> = ({
             match={match}
             setCurrentNode={setCurrentNode}
             userToppingsHistory={userToppingsHistory}
+            openConfirm={openConfirm}
+            setOpenConfirm={setOpenConfirm}
           />
         </div>
       </AppBar>

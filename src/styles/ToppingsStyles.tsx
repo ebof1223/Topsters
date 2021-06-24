@@ -101,7 +101,6 @@ const styles = createStyles({
     right: 0,
     marginRight: '5%',
     height: '750px',
-    zIndex: 0,
   },
   ToppingsFooter: {
     position: 'absolute',

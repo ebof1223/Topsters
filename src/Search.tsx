@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
 import { LASTFM_API_KEY } from './sensitive';
 import { AlbumStructure } from './interface';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 interface Props {
   classes: {
@@ -18,12 +18,14 @@ interface Props {
   setUserSearch: (input: string) => void;
   setIsLoading: (input: boolean) => void;
   setResults: (input: AlbumStructure[]) => void;
-  setOpen: (input: boolean) => void;
+  setOpenDrawer: (input: boolean) => void;
   setNoResults: (i: boolean) => void;
   history: {
     push: (input: string) => void;
     location: any;
   };
+  setOpenConfirm: (i: boolean) => void;
+  openConfirm: boolean;
 }
 const Search: React.FC<Props> = ({
   classes,
@@ -31,31 +33,44 @@ const Search: React.FC<Props> = ({
   userSearch,
   setResults,
   setIsLoading,
-  setOpen,
+  setOpenDrawer,
   setNoResults,
   history,
+  setOpenConfirm,
+  openConfirm,
 }) => {
-  const focusSearch: React.MutableRefObject<any> = useRef();
+  // const focusSearch: React.MutableRefObject<any> = useRef();
   const overlay: React.MutableRefObject<any> = useRef();
   const [isTyping, setIsTyping] = useState(false);
-  var timer: any;
-  if (
-    history.location.pathname.includes('edit') ||
-    history.location.pathname.includes('new')
-  ) {
-    document.addEventListener('keydown', () => {
+
+  useEffect(() => {
+    var timer: any;
+    if (
+      !history.location.pathname.includes('edit') &&
+      !history.location.pathname.includes('new')
+    )
+      return;
+
+    const keydownEventListener = () => {
+      if (openConfirm) return;
+      if (!/^[0-9a-zA-Z]*$/) return;
+
       clearTimeout(timer);
-      if (/^[0-9a-zA-Z]*$/) {
-        setIsTyping(true);
-        focusSearch.current.focus();
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          setIsTyping(false);
-          setUserSearch('');
-        }, 3000);
-      }
-    });
-  }
+      setIsTyping(true);
+      document.getElementById('focusSearch').focus();
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        setIsTyping(false);
+        setUserSearch('');
+      }, 3000);
+    };
+
+    document.addEventListener('keydown', keydownEventListener);
+
+    return () => {
+      document.removeEventListener('keydown', keydownEventListener);
+    };
+  }, [history.location.pathname, openConfirm, setUserSearch]);
 
   const handleSubmit = (e: any): void => {
     e.preventDefault();
@@ -92,7 +107,7 @@ const Search: React.FC<Props> = ({
             }
           }
           setResults(albumsArrayCopy);
-          setOpen(true);
+          setOpenDrawer(true);
         });
     } catch (error) {
       setNoResults(true);
@@ -101,10 +116,14 @@ const Search: React.FC<Props> = ({
   };
   return (
     <div className={classes.root}>
-      <div className={isTyping ? classes.Overlay : classes.Hide} ref={overlay}>
-        <form onSubmit={(e) => handleSubmit(e)}>
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <div
+          className={isTyping ? classes.Overlay : classes.Hide}
+          ref={overlay}
+        >
           <input
-            ref={focusSearch}
+            // ref={focusSearch}
+            id="focusSearch"
             autoFocus
             autoComplete="off"
             className={classes.SearchBar}
@@ -112,9 +131,9 @@ const Search: React.FC<Props> = ({
             type="text"
             onChange={(e) => setUserSearch(e.target.value)}
           ></input>
-        </form>
-        <div className={classes.ProgressBar} />
-      </div>
+        </div>
+      </form>
+      <div className={classes.ProgressBar} />
     </div>
   );
 };

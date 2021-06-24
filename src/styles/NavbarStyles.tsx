@@ -8,9 +8,9 @@ const styles = createStyles({
     top: 0,
     minWidth: '100%',
     padding: '0.75rem 2rem',
+    fontFamily: 'Lexend, sans-serif',
   },
   Title: {
-    fontFamily: 'Lexend, sans-serif',
     fontSize: '2rem',
     margin: '-0.5rem',
   },

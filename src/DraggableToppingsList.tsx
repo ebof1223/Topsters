@@ -69,11 +69,6 @@ const DraggableToppingsList = SortableContainer(
             />
           ))}
         </Paper>
-        <img
-          className={classes.record}
-          src="https://upload.wikimedia.org/wikipedia/commons/7/75/Vinyl_record.svg"
-          alt="vinyl-record"
-        />
       </>
     );
   }
