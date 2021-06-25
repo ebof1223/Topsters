@@ -44,9 +44,6 @@ const styles = () =>
       borderRadius: '5px',
       backgroundColor: 'red',
     },
-    yellow: {
-      backgroundColor: 'yellow',
-    },
   });
 
 export default styles;
