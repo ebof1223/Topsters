@@ -5,7 +5,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MiniToppings from './MiniToppings';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import styles from './styles/ToppingsListStyles';
+import styles from './main-styles/ToppingsListStyles';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import List from '@material-ui/core/List';
@@ -17,7 +17,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
-import { ToppingsStructure } from './interface';
+import { ToppingsStructure } from '../interface';
 import Tooltip from '@material-ui/core/Tooltip';
 
 interface Props {

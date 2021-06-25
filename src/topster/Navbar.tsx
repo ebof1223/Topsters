@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/styles';
-import styles from './styles/NavbarStyles';
+import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
-import { ToppingsStructure } from './interface';
+import { ToppingsStructure } from '../interface';
 
 interface Props {
   classes: {

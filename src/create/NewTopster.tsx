@@ -7,9 +7,9 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Results from './Results';
-import DraggableToppingsList from './DraggableToppingsList';
-import styles from './styles/NewToppingsFormStyles';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import DraggableTopsterList from './DraggableTopsterList';
+import styles from '../create/create-styles/NewTopsterStyles';
+import { AlbumStructure, ToppingsStructure } from '../interface';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
 import Search from './Search';
@@ -35,7 +35,7 @@ interface Props {
   };
 }
 var userToppingsHistory: any;
-const NewToppingsForm: React.FC<Props> = ({
+const NewTopster: React.FC<Props> = ({
   saveToppings,
   history,
   match,
@@ -169,7 +169,7 @@ const NewToppingsForm: React.FC<Props> = ({
         >
           <div className={classes.drawerHeader} />
           <div className={classes.background}>
-            <DraggableToppingsList
+            <DraggableTopsterList
               axis="xy"
               userToppings={userToppings}
               setUserToppings={setUserToppings}
@@ -188,4 +188,4 @@ const NewToppingsForm: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles, { withTheme: true })(NewToppingsForm);
+export default withStyles(styles, { withTheme: true })(NewTopster);

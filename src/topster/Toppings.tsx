@@ -1,8 +1,8 @@
 import { withStyles } from '@material-ui/styles';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from '../interface';
 import Album from './Album';
 import Navbar from './Navbar';
-import styles from './styles/ToppingsStyles';
+import styles from './topster-styles/ToppingsStyles';
 import { Paper } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';

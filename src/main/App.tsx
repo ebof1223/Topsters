@@ -1,13 +1,13 @@
 import { Route, Switch } from 'react-router-dom';
-import { defaultToppings } from './Example.js';
+import { defaultToppings } from './Example';
 import { useState, useLayoutEffect } from 'react';
-import Toppings from './Toppings';
+import Toppings from '../topster/Toppings';
 import ToppingsList from './ToppingsList';
-import NewToppingsForm from './NewToppingsForm';
-import './styles/Page.css';
+import NewTopster from '../create/NewTopster';
+import './main-styles/Page.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
-import { ToppingsStructure } from './interface.js';
+import { ToppingsStructure } from '../interface.js';
 
 const App: React.FC = () => {
   const savedToppings = JSON.parse(
@@ -43,7 +43,7 @@ const App: React.FC = () => {
                 path="/toppings/new"
                 render={(routeProps) => (
                   <Page>
-                    <NewToppingsForm
+                    <NewTopster
                       saveToppings={saveToppings}
                       {...routeProps}
                       toppings={toppings}
@@ -56,7 +56,7 @@ const App: React.FC = () => {
                 path="/toppings/edit/:id"
                 render={(routeProps) => (
                   <Page>
-                    <NewToppingsForm
+                    <NewTopster
                       saveToppings={saveToppings}
                       {...routeProps}
                       toppings={toppings}

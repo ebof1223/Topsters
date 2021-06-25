@@ -2,9 +2,8 @@ import { Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import { SortableContainer } from 'react-sortable-hoc';
 import DraggableAlbum from './DraggableAlbum';
-import { AlbumStructure } from './interface';
-import styles from './styles/DraggableToppingsListStyles';
-import sad from './imgs/sad-cry.svg';
+import { AlbumStructure } from '../interface';
+import styles from './create-styles/DraggableTopsterListStyles';
 import DoublyLinkedList from 'dbly-linked-list';
 
 type Node = {
@@ -34,7 +33,7 @@ interface Props {
   setNodesFromTail: (input: number) => void;
 }
 
-const DraggableToppingsList = SortableContainer(
+const DraggableTopsterList = SortableContainer(
   ({
     userToppings,
     setUserToppings,
@@ -73,4 +72,4 @@ const DraggableToppingsList = SortableContainer(
   }
 );
 
-export default withStyles(styles)(DraggableToppingsList);
+export default withStyles(styles)(DraggableTopsterList);

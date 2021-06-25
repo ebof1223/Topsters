@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/styles';
 import { useLayoutEffect, useState } from 'react';
-import styles from './styles/CharacterCounterStyles';
+import styles from './create-styles/CharacterCounterStyles';
 
 interface Props {
   userToppingsNameLength: number;

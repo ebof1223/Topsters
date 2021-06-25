@@ -17,5 +17,14 @@
     "downlevelIteration": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "newTopster/newTopster-styles/CharacterCounterStyles.tsx",
+    "newTopster/BackButton.tsx",
+    "topster/Album.tsx",
+    "topster/NavbarStyles.tsx",
+    "topster/Navbar.tsx",
+    "topster/topster-styles/ToppingsStyles.tsx",
+    "topster/Toppings.tsx"
+  ]
 }

@@ -1,8 +1,8 @@
 import { withStyles } from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
-import styles from './styles/MiniToppingsStyles';
+import styles from './main-styles/MiniToppingsStyles';
 import DeleteIcon from '@material-ui/icons/Delete';
-import { AlbumStructure } from './interface';
+import { AlbumStructure } from '../interface';
 
 interface Props {
   classes: {

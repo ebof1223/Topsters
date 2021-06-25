@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/core/styles';
-import { AlbumStructure, ToppingsStructure } from './interface';
+import { AlbumStructure, ToppingsStructure } from '../interface';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,7 +12,7 @@ import UndoIcon from '@material-ui/icons/Undo';
 import RedoIcon from '@material-ui/icons/Redo';
 import SaveButton from './SaveButton';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import styles from './styles/NewToppingsFormNavStyles';
+import styles from './create-styles/NewTopsterNavStyles';
 import BackButton from './BackButton';
 import DoublyLinkedList from 'dbly-linked-list';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -62,7 +62,7 @@ interface Props {
   openConfirm: boolean;
 }
 
-const NewToppingsFormNav: React.FC<Props> = ({
+const NewTopsterNavStyles: React.FC<Props> = ({
   classes,
   openDrawer,
   setOpenDrawer,
@@ -198,4 +198,4 @@ const NewToppingsFormNav: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles, { withTheme: true })(NewToppingsFormNav);
+export default withStyles(styles, { withTheme: true })(NewTopsterNavStyles);

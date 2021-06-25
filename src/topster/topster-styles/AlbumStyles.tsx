@@ -1,4 +1,4 @@
-import sizes from './sizes';
+// import sizes from './sizes';
 import { createStyles } from '@material-ui/styles';
 const styles = createStyles({
   Album: {

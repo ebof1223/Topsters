@@ -1,8 +1,8 @@
-import styles from './styles/SearchStyles';
+import styles from './create-styles/SearchStyles';
 import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
-import { LASTFM_API_KEY } from './sensitive';
-import { AlbumStructure } from './interface';
+import { LASTFM_API_KEY } from '../sensitive';
+import { AlbumStructure } from '../interface';
 import { useEffect, useRef, useState } from 'react';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 interface Props {

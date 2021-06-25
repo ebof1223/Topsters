@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Page.css';
+import './main-styles/Page.css';
 const Page: React.FC = ({ children }) => {
   return <section className="page">{children}</section>;
 };

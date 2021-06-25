@@ -1,5 +1,5 @@
 import { createStyles } from '@material-ui/styles';
-import sizes from './sizes';
+// import sizes from '../../styles/sizes';
 
 const styles = createStyles({
   '@global': {

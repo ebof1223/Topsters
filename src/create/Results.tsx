@@ -1,6 +1,6 @@
-import { AlbumStructure } from './interface';
+import { AlbumStructure } from '../interface';
 import { withStyles } from '@material-ui/styles';
-import styles from './styles/ResultsStyles';
+import styles from './create-styles/ResultsStyles';
 import ResultAlbum from './ResultAlbum';
 
 interface Props {
