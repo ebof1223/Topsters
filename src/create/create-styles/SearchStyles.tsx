@@ -39,8 +39,7 @@ const styles = () =>
     },
     fill: {
       height: '100%',
-      animation: '$fill 3s',
-      animationTimingFunction: 'linear',
+      animation: '$fill 3s linear',
       borderRadius: '5px',
       backgroundColor: 'red',
     },

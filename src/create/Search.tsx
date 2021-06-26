@@ -1,7 +1,6 @@
 import styles from './create-styles/SearchStyles';
 import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
-import { LASTFM_API_KEY } from '../sensitive';
 import { AlbumStructure } from '../interface';
 import { useEffect, useRef, useState } from 'react';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
@@ -28,6 +27,7 @@ interface Props {
   setOpenConfirm: (i: boolean) => void;
   openConfirm: boolean;
 }
+const API_KEY = process.env.REACT_APP_API_KEY;
 const Search: React.FC<Props> = ({
   classes,
   setUserSearch,
@@ -89,7 +89,7 @@ const Search: React.FC<Props> = ({
     try {
       await axios
         .get(
-          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${LASTFM_API_KEY}&format=json`
+          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json`
         )
         .then((res) => {
           console.log('this is our log', res.data.topalbums.album);
@@ -103,7 +103,7 @@ const Search: React.FC<Props> = ({
           let albumsArrayCopy = [];
           for (let album of albumsArray) {
             let res = await axios.get(
-              `${LASTFM_API_URL}?method=album.getinfo&api_key=${LASTFM_API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
+              `${LASTFM_API_URL}?method=album.getinfo&api_key=${API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
             );
             if (res.data.album && res.data.album.tracks.track.length > 1) {
               albumsArrayCopy.push(res.data.album);

@@ -8,6 +8,7 @@ import './main-styles/Page.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
 import { ToppingsStructure } from '../interface.js';
+import Landing from '../landing/Landing';
 
 const App: React.FC = () => {
   const savedToppings = JSON.parse(
@@ -18,7 +19,6 @@ const App: React.FC = () => {
   );
 
   useLayoutEffect(() => {
-    console.log('saving to local storage');
     window.localStorage.setItem('toppings', JSON.stringify(toppings));
   });
 
@@ -28,7 +28,6 @@ const App: React.FC = () => {
     });
   };
   const saveToppings = (newToppings: ToppingsStructure) => {
-    console.log(newToppings);
     setToppings([...toppings, newToppings]);
   };
 
@@ -38,6 +37,35 @@ const App: React.FC = () => {
         <TransitionGroup>
           <CSSTransition classNames="page" timeout={500} key={location.key}>
             <Switch location={location}>
+              <Route exact path="/" render={() => <Landing />} />
+              <Route
+                exact
+                path="/home"
+                render={(routeProps) => (
+                  <Page>
+                    <ToppingsList
+                      toppings={toppings}
+                      {...routeProps}
+                      setToppings={setToppings}
+                    />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
+                path="/toppings/:id"
+                render={(routeProps) => (
+                  <Page>
+                    <Toppings
+                      title={findToppings(routeProps.match.params.id).title}
+                      id={findToppings(routeProps.match.params.id).id}
+                      albums={findToppings(routeProps.match.params.id).albums}
+                      toppings={toppings}
+                      {...routeProps}
+                    />
+                  </Page>
+                )}
+              />
               <Route
                 exact
                 path="/toppings/new"
@@ -60,34 +88,6 @@ const App: React.FC = () => {
                       saveToppings={saveToppings}
                       {...routeProps}
                       toppings={toppings}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/"
-                render={(routeProps) => (
-                  <Page>
-                    <ToppingsList
-                      toppings={toppings}
-                      {...routeProps}
-                      setToppings={setToppings}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/toppings/:id"
-                render={(routeProps) => (
-                  <Page>
-                    <Toppings
-                      title={findToppings(routeProps.match.params.id).title}
-                      id={findToppings(routeProps.match.params.id).id}
-                      albums={findToppings(routeProps.match.params.id).albums}
-                      toppings={toppings}
-                      {...routeProps}
                     />
                   </Page>
                 )}
