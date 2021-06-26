@@ -20,25 +20,24 @@ const styles = createStyles({
   Frame: {
     width: '100%',
     position: 'relative',
-    animation: '$infiniteScrollBg 30s infinite linear',
-    '&:after': {
-      pointer: 'cursor',
-      content: '',
+    animation: '$infiniteScrollBg 200s infinite linear',
+    '&::after': {
+      content: '""',
       height: '500%',
       width: '100%',
       position: 'absolute',
       left: 0,
       top: 0,
-      backgroundColor: '#4277a3',
       backgroundImage: `url(
         ${image}
         )`,
+      backgroundColor: '#4277a3',
       backgroundSize: '100% 20%',
+      filter: 'blur(6px)',
     },
   },
   Image: {
-    // filter: 'blur(4px)',
-    // width: '100%',
+    width: '100%',
   },
 });
 export default styles;
