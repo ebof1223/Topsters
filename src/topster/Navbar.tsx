@@ -24,7 +24,7 @@ const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
 
   return (
     <header className={classes.Navbar}>
-      <Link to={'/'}>
+      <Link to={'/home'}>
         <HomeIcon
           style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
         />

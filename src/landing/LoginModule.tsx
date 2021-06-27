@@ -1,27 +1,23 @@
-import React from 'react';
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
+import { useState } from 'react';
+import useStyles from './landing-styles/LoginModuleStyles';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    paper: {
-      position: 'absolute',
-      width: 400,
-      backgroundColor: theme.palette.background.paper,
-      border: '1px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
-  })
-);
+interface Props {
+  history: any;
+}
 
-const LoginModule: React.FC = () => {
+const LoginModule: React.FC<Props> = ({ history }) => {
+  const [open, setOpen] = useState(true);
   const classes = useStyles();
-
+  const handleClose = () => {
+    setOpen(false);
+    history.push('/home');
+  };
   return (
     <div>
       <Modal
-        open={true}
+        open={open}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
@@ -33,10 +29,20 @@ const LoginModule: React.FC = () => {
           }}
           className={classes.paper}
         >
-          <h2 id="simple-modal-title">Text in a modal</h2>
-          <p id="simple-modal-description">
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          <h2 className={classes.title}>Welcome to Topsters</h2>
+          <p className={classes.subtitle}>
+            A site dedicated to helping you share your favorite music with the
+            world
           </p>
+          <Button
+            onClick={handleClose}
+            variant="contained"
+            size="large"
+            color="primary"
+            className={classes.margin}
+          >
+            Get Started
+          </Button>
         </div>
       </Modal>
     </div>

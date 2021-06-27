@@ -10,12 +10,13 @@ interface Props {
     Frame: string;
     Image: string;
   };
+  history: any;
 }
 
-const Landing: React.FC<Props> = ({ classes }) => {
+const Landing: React.FC<Props> = ({ classes, history }) => {
   return (
     <>
-      <LoginModule />
+      <LoginModule history={history} />
       <div className={classes.Scene}>
         <div className={classes.Frame}>
           <img className={classes.Image} src={image1} alt="background albums" />

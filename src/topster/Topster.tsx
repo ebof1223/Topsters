@@ -2,7 +2,7 @@ import { withStyles } from '@material-ui/styles';
 import { AlbumStructure, ToppingsStructure } from '../interface';
 import Album from './Album';
 import Navbar from './Navbar';
-import styles from './topster-styles/ToppingsStyles';
+import styles from './topster-styles/TopsterStyles';
 import { Paper } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -28,7 +28,7 @@ interface Props {
   };
 }
 
-const Toppings: React.FC<Props> = ({
+const Topster: React.FC<Props> = ({
   title,
   id,
   albums,
@@ -129,4 +129,4 @@ const Toppings: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles)(Toppings);
+export default withStyles(styles)(Topster);

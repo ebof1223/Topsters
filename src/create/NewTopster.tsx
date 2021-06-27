@@ -47,6 +47,7 @@ const NewTopster: React.FC<Props> = ({
       if (item.id === match.params.id) return toppings[index].title;
     }
   };
+  console.log(match.params);
   const editTitle = match.params.id ? retrieveTitle() : '';
   let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
 
