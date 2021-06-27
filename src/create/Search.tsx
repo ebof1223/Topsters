@@ -1,7 +1,7 @@
 import styles from './create-styles/SearchStyles';
 import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
-import { AlbumStructure } from '../interface';
+import { AlbumTemplate } from '../interface';
 import { useEffect, useRef, useState } from 'react';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 interface Props {
@@ -17,7 +17,7 @@ interface Props {
   userSearch: string;
   setUserSearch: (input: string) => void;
   setIsLoading: (input: boolean) => void;
-  setResults: (input: AlbumStructure[]) => void;
+  setResults: (input: AlbumTemplate[]) => void;
   setOpenDrawer: (input: boolean) => void;
   setNoResults: (i: boolean) => void;
   history: {
@@ -94,7 +94,7 @@ const Search: React.FC<Props> = ({
         .then((res) => {
           console.log('this is our log', res.data.topalbums.album);
           var albumsArray = res.data.topalbums.album.filter(
-            (item: AlbumStructure) => item.image[3]['#text']
+            (item: AlbumTemplate) => item.image[3]['#text']
           );
           return albumsArray;
         })

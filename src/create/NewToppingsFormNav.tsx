@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/core/styles';
-import { AlbumStructure, ToppingsStructure } from '../interface';
+import { AlbumTemplate, TopsterTemplate } from '../interface';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -20,9 +20,9 @@ import ErrorIcon from '@material-ui/icons/Error';
 import Tooltip from '@material-ui/core/Tooltip';
 
 type Node = {
-  data: AlbumStructure[] | null;
-  next: AlbumStructure[] | null;
-  prev: AlbumStructure[] | null;
+  data: AlbumTemplate[] | null;
+  next: AlbumTemplate[] | null;
+  prev: AlbumTemplate[] | null;
 };
 
 interface Props {
@@ -42,9 +42,9 @@ interface Props {
   };
   match: { params: any };
   setUserToppings: (args: object) => void;
-  userToppings: AlbumStructure[] | undefined;
-  toppings: ToppingsStructure[];
-  saveToppings: (input: ToppingsStructure) => void;
+  userToppings: AlbumTemplate[] | undefined;
+  toppings: TopsterTemplate[];
+  saveToppings: (input: TopsterTemplate) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
   userToppingsHistory: DoublyLinkedList;

@@ -2,12 +2,12 @@ import { Route, Switch } from 'react-router-dom';
 import { defaultToppings } from './Example';
 import { useState, useLayoutEffect } from 'react';
 import Topster from '../topster/Topster';
-import ToppingsList from './ToppingsList';
+import TopsterList from './TopsterList';
 import NewTopster from '../create/NewTopster';
 import './main-styles/Page.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
-import { ToppingsStructure } from '../interface.js';
+import { TopsterTemplate } from '../interface.js';
 import Landing from '../landing/Landing';
 
 const App: React.FC = () => {
@@ -23,11 +23,11 @@ const App: React.FC = () => {
   });
 
   const findToppings = (id: string) => {
-    return toppings.find((topping: ToppingsStructure) => {
+    return toppings.find((topping: TopsterTemplate) => {
       return topping.id === id;
     });
   };
-  const saveToppings = (newToppings: ToppingsStructure) => {
+  const saveToppings = (newToppings: TopsterTemplate) => {
     setToppings([...toppings, newToppings]);
   };
 
@@ -51,7 +51,7 @@ const App: React.FC = () => {
                 path="/home"
                 render={(routeProps) => (
                   <Page>
-                    <ToppingsList
+                    <TopsterList
                       toppings={toppings}
                       {...routeProps}
                       setToppings={setToppings}
@@ -103,7 +103,7 @@ const App: React.FC = () => {
               <Route
                 render={(routeProps) => (
                   <Page>
-                    <ToppingsList
+                    <TopsterList
                       toppings={toppings}
                       {...routeProps}
                       setToppings={setToppings}

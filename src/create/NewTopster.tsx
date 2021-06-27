@@ -9,20 +9,20 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Results from './Results';
 import DraggableTopsterList from './DraggableTopsterList';
 import styles from '../create/create-styles/NewTopsterStyles';
-import { AlbumStructure, ToppingsStructure } from '../interface';
+import { AlbumTemplate, TopsterTemplate } from '../interface';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
 import Search from './Search';
 
 interface Props {
-  saveToppings: (input: ToppingsStructure) => void;
+  saveToppings: (input: TopsterTemplate) => void;
   history: {
     goBack: () => void;
     push: (input: string) => void;
     location: any;
   };
   match: { params: any };
-  toppings: ToppingsStructure[];
+  toppings: TopsterTemplate[];
   classes: {
     root: string;
     hide: string;
@@ -47,7 +47,6 @@ const NewTopster: React.FC<Props> = ({
       if (item.id === match.params.id) return toppings[index].title;
     }
   };
-  console.log(match.params);
   const editTitle = match.params.id ? retrieveTitle() : '';
   let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
 
@@ -61,7 +60,7 @@ const NewTopster: React.FC<Props> = ({
   const [nodesFromTail, setNodesFromTail] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [userSearch, setUserSearch] = useState('');
-  const [results, setResults] = useState<AlbumStructure[]>([]);
+  const [results, setResults] = useState<AlbumTemplate[]>([]);
   const [noResults, setNoResults] = useState(false);
   const [openConfirm, setOpenConfirm] = useState(false);
 

@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
-import { ToppingsStructure } from '../interface';
+import { TopsterTemplate } from '../interface';
 
 interface Props {
   classes: {
@@ -12,7 +12,7 @@ interface Props {
     Title: string;
   };
   title: string;
-  toppings: ToppingsStructure[];
+  toppings: TopsterTemplate[];
   history: { push: (input: string) => void };
   id: string;
 }

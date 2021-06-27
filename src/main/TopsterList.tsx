@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import MiniToppings from './MiniToppings';
+import { TopsterTemplate } from '../interface';
+import MiniToppings from './MiniTopster';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import styles from './main-styles/ToppingsListStyles';
+import styles from './main-styles/TopsterList-styles';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import List from '@material-ui/core/List';
@@ -17,16 +18,15 @@ import CloseIcon from '@material-ui/icons/Close';
 import Avatar from '@material-ui/core/Avatar';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
-import { ToppingsStructure } from '../interface';
 import Tooltip from '@material-ui/core/Tooltip';
 
 interface Props {
-  toppings: ToppingsStructure[];
+  toppings: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
   };
-  setToppings: (input: ToppingsStructure[]) => void;
+  setToppings: (input: TopsterTemplate[]) => void;
   classes: {
     root: string;
     heading: string;
@@ -36,7 +36,7 @@ interface Props {
   };
 }
 
-const ToppingsList: React.FC<Props> = ({
+const TopsterList: React.FC<Props> = ({
   toppings,
   history,
   setToppings,
@@ -75,7 +75,7 @@ const ToppingsList: React.FC<Props> = ({
           </Link>
         </nav>
         <TransitionGroup className={classes.toppings}>
-          {toppings.map((item: ToppingsStructure) => (
+          {toppings.map((item: TopsterTemplate) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <MiniToppings
                 {...item}
@@ -116,4 +116,4 @@ const ToppingsList: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles)(ToppingsList);
+export default withStyles(styles)(TopsterList);

@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/styles';
-import { AlbumStructure, ToppingsStructure } from '../interface';
+import { AlbumTemplate, TopsterTemplate } from '../interface';
 import Album from './Album';
 import Navbar from './Navbar';
 import styles from './topster-styles/TopsterStyles';
@@ -10,7 +10,7 @@ import { useState } from 'react';
 interface Props {
   title: string;
   id: string;
-  albums: AlbumStructure[];
+  albums: AlbumTemplate[];
   classes: {
     Toppings: string;
     LeftPanel: string;
@@ -21,7 +21,7 @@ interface Props {
     record: string;
     ToppingsFooter: string;
   };
-  toppings: ToppingsStructure[];
+  toppings: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -36,7 +36,7 @@ const Topster: React.FC<Props> = ({
   toppings,
   history,
 }) => {
-  const [selectedAlbum, setSelectedAlbum] = useState<AlbumStructure>(albums[0]);
+  const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
     setSelectedAlbum(albums[index]);
@@ -92,14 +92,14 @@ const Topster: React.FC<Props> = ({
                 },
                 {}
               )
-            ).map((item: AlbumStructure) => (
+            ).map((item: AlbumTemplate) => (
               <li key={item.name}>{item.name.toUpperCase()}</li>
             ))}
           </ol>
         </div>
         <Paper elevation={5} square className={classes.ToppingsContainer}>
           <div className={classes.ToppingsAlbums}>
-            {albums.map((item: AlbumStructure, index: number) => (
+            {albums.map((item: AlbumTemplate, index: number) => (
               <Album
                 key={item.name}
                 cover={item.image[3]['#text']}

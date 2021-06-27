@@ -1,4 +1,4 @@
-export interface AlbumStructure {
+export interface AlbumTemplate {
   tracks: any;
   artist: { name: string };
   image: {
@@ -12,9 +12,9 @@ export interface AlbumStructure {
   length: number;
 }
 
-export interface ToppingsStructure {
+export interface TopsterTemplate {
   title: string;
   id: string;
-  albums: AlbumStructure[];
+  albums: AlbumTemplate[];
   some?: (item: { title: string }) => boolean;
 }

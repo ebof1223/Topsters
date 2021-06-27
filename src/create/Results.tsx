@@ -1,4 +1,4 @@
-import { AlbumStructure } from '../interface';
+import { AlbumTemplate } from '../interface';
 import { withStyles } from '@material-ui/styles';
 import styles from './create-styles/ResultsStyles';
 import ResultAlbum from './ResultAlbum';
@@ -8,8 +8,8 @@ interface Props {
     root: string;
     resultsContainer: string;
   };
-  setUserToppings: (args: AlbumStructure[]) => void;
-  userToppings: AlbumStructure[];
+  setUserToppings: (args: AlbumTemplate[]) => void;
+  userToppings: AlbumTemplate[];
   currentNode: {
     data: Node;
     next: Node;
@@ -20,7 +20,7 @@ interface Props {
   setNodesFromTail: (input: number) => void;
   setCurrentNode: (input: {}) => void;
   setIsLoading: (input: boolean) => void;
-  results: AlbumStructure[];
+  results: AlbumTemplate[];
 }
 
 const Results: React.FC<Props> = ({
@@ -38,7 +38,7 @@ const Results: React.FC<Props> = ({
     console.log(results[itemIdx]);
     if (
       userToppings.some(
-        (item: AlbumStructure) => item.name === results[itemIdx].name
+        (item: AlbumTemplate) => item.name === results[itemIdx].name
       )
     ) {
       console.log('DUPLICATE ERROR');
@@ -64,7 +64,7 @@ const Results: React.FC<Props> = ({
   return (
     <>
       <div className={classes.resultsContainer}>
-        {results.map((item: AlbumStructure, index: number) => (
+        {results.map((item: AlbumTemplate, index: number) => (
           <ResultAlbum
             key={`${item.name}-result`}
             onClick={() => addToToppings(index)}

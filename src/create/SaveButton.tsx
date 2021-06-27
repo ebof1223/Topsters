@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlbumStructure, ToppingsStructure } from '../interface';
+import { AlbumTemplate, TopsterTemplate } from '../interface';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -12,14 +12,14 @@ import CharacterCounter from './CharacterCounter';
 interface Props {
   setUserToppingsName: (input: string) => void;
   userToppingsName: string | null;
-  userToppings: AlbumStructure[];
+  userToppings: AlbumTemplate[];
   match: { params: { id: string } };
-  toppings: ToppingsStructure[];
+  toppings: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
   };
-  saveToppings: (input: ToppingsStructure) => void;
+  saveToppings: (input: TopsterTemplate) => void;
   //FICXCC
   setCurrentNode: (input: any) => void;
   userToppingsHistory: any;
@@ -48,7 +48,7 @@ const SaveButton: React.FC<Props> = ({
     e.preventDefault();
     setErrors({ title: '' });
 
-    const newToppings: ToppingsStructure = {
+    const newToppings: TopsterTemplate = {
       title: userToppingsName,
       id: userToppingsName.toLowerCase().replace(/ /g, '-'),
       albums: userToppings,
@@ -72,7 +72,7 @@ const SaveButton: React.FC<Props> = ({
     } else {
       if (
         toppings.some(
-          (item: ToppingsStructure) => item.title === newToppings.title
+          (item: TopsterTemplate) => item.title === newToppings.title
         )
       )
         return setErrors({ title: 'This title has already been taken' });

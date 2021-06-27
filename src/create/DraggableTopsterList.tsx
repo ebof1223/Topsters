@@ -2,23 +2,23 @@ import { Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import { SortableContainer } from 'react-sortable-hoc';
 import DraggableAlbum from './DraggableAlbum';
-import { AlbumStructure } from '../interface';
+import { AlbumTemplate } from '../interface';
 import styles from './create-styles/DraggableTopsterListStyles';
 import DoublyLinkedList from 'dbly-linked-list';
 
 type Node = {
-  data: AlbumStructure[] | null;
-  next: AlbumStructure[] | null;
-  prev: AlbumStructure[] | null;
+  data: AlbumTemplate[] | null;
+  next: AlbumTemplate[] | null;
+  prev: AlbumTemplate[] | null;
 };
 
 interface Props {
-  userToppings: AlbumStructure[];
+  userToppings: AlbumTemplate[];
   classes: {
     UserToppingsContainer: string;
     record: string;
   };
-  setUserToppings: (input: AlbumStructure[]) => void;
+  setUserToppings: (input: AlbumTemplate[]) => void;
   userToppingsHistory: DoublyLinkedList | any;
   setCurrentNode: (input: {}) => void;
   ////FIX
