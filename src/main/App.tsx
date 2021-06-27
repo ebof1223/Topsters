@@ -1,28 +1,28 @@
 import { Route, Switch } from 'react-router-dom';
-import { defaultToppings } from './Example';
+import { defaultTopsters } from './Example';
 import { useState, useLayoutEffect } from 'react';
+import { TopsterTemplate } from '../interface.js';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Topster from '../topster/Topster';
 import TopsterList from './TopsterList';
 import NewTopster from '../create/NewTopster';
 import './main-styles/Page.css';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Page from './Page';
-import { TopsterTemplate } from '../interface.js';
 import Landing from '../landing/Landing';
 
 const App: React.FC = () => {
-  const savedToppings = JSON.parse(
+  const savedTopsters = JSON.parse(
     window.localStorage.getItem('toppings') || '{}'
   );
   const [toppings, setToppings] = useState(
-    Object.keys(savedToppings).length ? savedToppings : defaultToppings
+    Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
   );
 
   useLayoutEffect(() => {
     window.localStorage.setItem('toppings', JSON.stringify(toppings));
   });
 
-  const findToppings = (id: string) => {
+  const findTopsters = (id: string) => {
     return toppings.find((topping: TopsterTemplate) => {
       return topping.id === id;
     });
@@ -61,7 +61,7 @@ const App: React.FC = () => {
               />
               <Route
                 exact
-                path="/toppings/new"
+                path="/topsters/new"
                 render={(routeProps) => (
                   <Page>
                     <NewTopster
@@ -74,13 +74,13 @@ const App: React.FC = () => {
               />
               <Route
                 exact
-                path="/toppings/:id"
+                path="/topsters/:id"
                 render={(routeProps) => (
                   <Page>
                     <Topster
-                      title={findToppings(routeProps.match.params.id).title}
-                      id={findToppings(routeProps.match.params.id).id}
-                      albums={findToppings(routeProps.match.params.id).albums}
+                      title={findTopsters(routeProps.match.params.id).title}
+                      id={findTopsters(routeProps.match.params.id).id}
+                      albums={findTopsters(routeProps.match.params.id).albums}
                       toppings={toppings}
                       {...routeProps}
                     />
@@ -89,7 +89,7 @@ const App: React.FC = () => {
               />
               <Route
                 exact
-                path="/toppings/edit/:id"
+                path="/topsters/edit/:id"
                 render={(routeProps) => (
                   <Page>
                     <NewTopster

@@ -46,7 +46,7 @@ const TopsterList: React.FC<Props> = ({
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
   const goToToppings = (id: string) => {
-    history.push(`/toppings/${id}`);
+    history.push(`/topsters/${id}`);
   };
   const handleDeleteConfirmation = () => {
     let newToppings = toppings.filter((item) => item.id !== toBeDeleted);
@@ -58,7 +58,7 @@ const TopsterList: React.FC<Props> = ({
     <div className={classes.root}>
       <div className={classes.OuterContainer}>
         <nav className={classes.nav}>
-          <Link to={'/toppings/new'}>
+          <Link to={'/topsters/new'}>
             <Tooltip title="Add">
               <Fab
                 color="inherit"

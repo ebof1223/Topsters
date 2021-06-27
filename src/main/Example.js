@@ -1,4 +1,4 @@
-const defaultToppings = [
+const defaultTopsters = [
   {
     title: 'Hardcore',
     id: 'hardcore',
@@ -23095,6 +23095,6 @@ const defaultToppings = [
     ],
   },
 ];
-export { defaultToppings };
+export { defaultTopsters };
 
 //need to account for artists with no mbid with user populations

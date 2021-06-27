@@ -24,7 +24,6 @@ interface Props {
 
 const MiniToppings: React.FC<Props> = ({
   classes,
-  title,
   albums,
   id,
   deleteDialog,
@@ -56,7 +55,6 @@ const MiniToppings: React.FC<Props> = ({
           onClick={(e) => handleDelete(e)}
         />
         {miniToppings}
-        {/* <h5 className={classes.title}>{title}</h5> */}
       </Paper>
     </div>
   );
