@@ -1,6 +1,8 @@
 import { withStyles } from '@material-ui/styles';
 import styles from './landing-styles/LandingStyles';
-import backgroundImage from './landing-styles/topster-landing.jpg';
+import image1 from './landing-styles/topster-landing1.jpg';
+// import image2 from './landing-styles/topster-landing2.jpg';
+import LoginModule from './LoginModule';
 
 interface Props {
   classes: {
@@ -12,15 +14,14 @@ interface Props {
 
 const Landing: React.FC<Props> = ({ classes }) => {
   return (
-    <div className={classes.Scene}>
-      <div className={classes.Frame}>
-        <img
-          className={classes.Image}
-          src={backgroundImage}
-          alt="background albums"
-        />
+    <>
+      <LoginModule />
+      <div className={classes.Scene}>
+        <div className={classes.Frame}>
+          <img className={classes.Image} src={image1} alt="background albums" />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
