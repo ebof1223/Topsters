@@ -16,13 +16,15 @@ const styles = createStyles({
     height: '100vh',
     position: 'fixed',
     minHeight: '400px',
+    filter: 'blur(6px)',
   },
   Frame: {
     width: '100%',
     position: 'relative',
+    perspective: '1500px',
     animation: '$infiniteScrollBg 200s infinite linear',
     '&::after': {
-      content: '""',
+      content: "''",
       height: '500%',
       width: '100%',
       position: 'absolute',
@@ -31,13 +33,14 @@ const styles = createStyles({
       backgroundImage: `url(
         ${image}
         )`,
-      backgroundColor: '#4277a3',
+      transform: 'rotateX(10deg) rotateY(-15deg) rotateZ(10deg) scale(2)',
       backgroundSize: '100% 20%',
-      filter: 'blur(6px)',
+      // filter: 'blur(6px)',
     },
   },
   Image: {
     width: '100%',
+    transform: 'rotateX(10deg) rotateY(-15deg) rotateZ(10deg) scale(2)',
   },
 });
 export default styles;
