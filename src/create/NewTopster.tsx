@@ -13,6 +13,7 @@ import { AlbumTemplate, TopsterTemplate } from '../interface';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
 import Search from './Search';
+import HowToUse from './HowToUse';
 
 interface Props {
   saveTopsters: (input: TopsterTemplate) => void;
@@ -33,6 +34,8 @@ interface Props {
     contentShift: string;
     background: string;
   };
+  openHowTo: boolean;
+  setOpenHowTo: (i: boolean) => void;
 }
 var newTopstersHistory: any;
 const NewTopster: React.FC<Props> = ({
@@ -41,6 +44,8 @@ const NewTopster: React.FC<Props> = ({
   match,
   topsters,
   classes,
+  openHowTo,
+  setOpenHowTo,
 }) => {
   const retrieveTitle = () => {
     for (let [index, item] of topsters.entries()) {
@@ -97,6 +102,7 @@ const NewTopster: React.FC<Props> = ({
 
   return (
     <>
+      <HowToUse openHowTo={openHowTo} setOpenHowTo={setOpenHowTo} />
       <NewTopsterNav
         openDrawer={openDrawer}
         setOpenDrawer={setOpenDrawer}

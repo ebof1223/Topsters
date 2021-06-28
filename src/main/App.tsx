@@ -14,13 +14,19 @@ const App: React.FC = () => {
   const savedTopsters = JSON.parse(
     window.localStorage.getItem('topsters') || '{}'
   );
-  const [topsters, setTopsters] = useState(
-    Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
-  );
 
   useLayoutEffect(() => {
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
+    window.localStorage.setItem('How to use prompt', JSON.stringify(openHowTo));
   });
+
+  const [openHowTo, setOpenHowTo] = useState(
+    JSON.parse(window.localStorage.getItem('How to use prompt'))
+  );
+  const [topsters, setTopsters] = useState(
+    Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
+  );
+  console.log(window.localStorage);
 
   const findTopsters = (id: string) => {
     return topsters.find((topping: TopsterTemplate) => {
@@ -30,7 +36,6 @@ const App: React.FC = () => {
   const saveTopsters = (newTopster: TopsterTemplate) => {
     setTopsters([...topsters, newTopster]);
   };
-
   return (
     <Route
       render={({ location }) => (
@@ -68,6 +73,8 @@ const App: React.FC = () => {
                       saveTopsters={saveTopsters}
                       {...routeProps}
                       topsters={topsters}
+                      openHowTo={openHowTo}
+                      setOpenHowTo={setOpenHowTo}
                     />
                   </Page>
                 )}
@@ -96,6 +103,8 @@ const App: React.FC = () => {
                       saveTopsters={saveTopsters}
                       {...routeProps}
                       topsters={topsters}
+                      openHowTo={openHowTo}
+                      setOpenHowTo={setOpenHowTo}
                     />
                   </Page>
                 )}
