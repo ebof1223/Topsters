@@ -13,13 +13,13 @@ type Node = {
 };
 
 interface Props {
-  userToppings: AlbumTemplate[];
+  newTopsters: AlbumTemplate[];
   classes: {
-    UserToppingsContainer: string;
+    newTopstersContainer: string;
     record: string;
   };
-  setUserToppings: (input: AlbumTemplate[]) => void;
-  userToppingsHistory: DoublyLinkedList | any;
+  setNewTopsters: (input: AlbumTemplate[]) => void;
+  newTopstersHistory: DoublyLinkedList | any;
   setCurrentNode: (input: {}) => void;
   ////FIX
   currentNode:
@@ -35,35 +35,35 @@ interface Props {
 
 const DraggableTopsterContainer = SortableContainer(
   ({
-    userToppings,
-    setUserToppings,
+    newTopsters,
+    setNewTopsters,
     classes,
-    userToppingsHistory,
+    newTopstersHistory,
     setCurrentNode,
     currentNode,
     nodesFromTail,
     setNodesFromTail,
   }: Props) => {
     return (
-      <Paper elevation={3} className={classes.UserToppingsContainer}>
-        {userToppings.map((item, index) => (
+      <Paper elevation={3} className={classes.newTopstersContainer}>
+        {newTopsters.map((item, index) => (
           <DraggableAlbum
             cover={item.image[3]['#text']}
             key={`${item.name}-topping`}
             index={index}
             onClick={() => {
-              let newToppings = userToppings.filter(
-                (item) => item !== userToppings[index]
+              let newToppings = newTopsters.filter(
+                (item) => item !== newTopsters[index]
               );
-              userToppingsHistory.toppingsInsert(
+              newTopstersHistory.topstersInsert(
                 currentNode,
                 newToppings,
-                userToppingsHistory,
+                newTopstersHistory,
                 nodesFromTail
               );
               setNodesFromTail(0);
-              setUserToppings(newToppings);
-              setCurrentNode(userToppingsHistory.getTailNode());
+              setNewTopsters(newToppings);
+              setCurrentNode(newTopstersHistory.getTailNode());
             }}
           />
         ))}

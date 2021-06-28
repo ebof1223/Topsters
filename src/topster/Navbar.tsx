@@ -12,7 +12,7 @@ interface Props {
     Title: string;
   };
   title: string;
-  toppings: TopsterTemplate[];
+  topsters: TopsterTemplate[];
   history: { push: (input: string) => void };
   id: string;
 }

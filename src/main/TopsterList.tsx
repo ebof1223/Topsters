@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
-import MiniToppings from './MiniTopster';
+import MiniTopsters from './MiniTopsters';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import styles from './main-styles/TopsterList-styles';
@@ -21,7 +21,7 @@ import red from '@material-ui/core/colors/red';
 import Tooltip from '@material-ui/core/Tooltip';
 
 interface Props {
-  toppings: TopsterTemplate[];
+  topsters: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -32,12 +32,12 @@ interface Props {
     heading: string;
     OuterContainer: string;
     nav: string;
-    toppings: string;
+    topsters: string;
   };
 }
 
 const TopsterList: React.FC<Props> = ({
-  toppings,
+  topsters,
   history,
   setTopsters,
   classes,
@@ -45,12 +45,12 @@ const TopsterList: React.FC<Props> = ({
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
-  const goToToppings = (id: string) => {
+  const toTopster = (id: string) => {
     history.push(`/topsters/${id}`);
   };
   const handleDeleteConfirmation = () => {
-    let newToppings = toppings.filter((item) => item.id !== toBeDeleted);
-    setTopsters([...newToppings]);
+    let newTopster = topsters.filter((item) => item.id !== toBeDeleted);
+    setTopsters([...newTopster]);
 
     setDeleteDialog(!deleteDialog);
   };
@@ -74,12 +74,12 @@ const TopsterList: React.FC<Props> = ({
             </Tooltip>
           </Link>
         </nav>
-        <TransitionGroup className={classes.toppings}>
-          {toppings.map((item: TopsterTemplate) => (
+        <TransitionGroup className={classes.topsters}>
+          {topsters.map((item: TopsterTemplate) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
-              <MiniToppings
+              <MiniTopsters
                 {...item}
-                handleClick={() => goToToppings(item.id)}
+                handleClick={() => toTopster(item.id)}
                 id={item.id}
                 deleteDialog={deleteDialog}
                 setDeleteDialog={setDeleteDialog}
@@ -91,7 +91,7 @@ const TopsterList: React.FC<Props> = ({
       </div>
       <Dialog open={deleteDialog} aria-labelledby="delete-dialog-title">
         <DialogTitle id="delete-dialog-title">
-          Delete this Toppings?
+          Delete this topsters?
         </DialogTitle>
         <List>
           <ListItem button onClick={handleDeleteConfirmation}>

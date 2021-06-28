@@ -41,13 +41,13 @@ interface Props {
     push: (input: string) => void;
   };
   match: { params: any };
-  setUserToppings: (args: object) => void;
-  userToppings: AlbumTemplate[] | undefined;
-  toppings: TopsterTemplate[];
+  setNewTopsters: (args: object) => void;
+  newTopsters: AlbumTemplate[] | undefined;
+  topsters: TopsterTemplate[];
   saveTopsters: (input: TopsterTemplate) => void;
-  userToppingsName: string;
-  setUserToppingsName: (input: string) => void;
-  userToppingsHistory: DoublyLinkedList;
+  newTopsterName: string;
+  setNewTopsterName: (input: string) => void;
+  newTopstersHistory: DoublyLinkedList;
   setCurrentNode: (input: {}) => void;
   currentNode: {
     data: Node;
@@ -62,19 +62,19 @@ interface Props {
   openConfirm: boolean;
 }
 
-const NewTopsterNav: React.FC<Props> = ({
+const NewTopsterNavStyles: React.FC<Props> = ({
   classes,
   openDrawer,
   setOpenDrawer,
   history,
-  setUserToppings,
-  userToppings,
-  toppings,
+  setNewTopsters,
+  newTopsters,
+  topsters,
   saveTopsters,
-  userToppingsName,
-  setUserToppingsName,
+  newTopsterName,
+  setNewTopsterName,
   match,
-  userToppingsHistory,
+  newTopstersHistory,
   setCurrentNode,
   currentNode,
   nodesFromTail,
@@ -85,12 +85,12 @@ const NewTopsterNav: React.FC<Props> = ({
   setOpenConfirm,
 }) => {
   const handleUndo = () => {
-    setUserToppings(currentNode.prev.data);
+    setNewTopsters(currentNode.prev.data);
     setCurrentNode(currentNode.prev);
     setNodesFromTail(nodesFromTail + 1);
   };
   const handleRedo = () => {
-    setUserToppings(currentNode.next.data);
+    setNewTopsters(currentNode.next.data);
     setCurrentNode(currentNode.next);
     setNodesFromTail(nodesFromTail - 1);
   };
@@ -174,21 +174,21 @@ const NewTopsterNav: React.FC<Props> = ({
             </Tooltip>
           )}
           <BackButton
-            userToppings={userToppings}
+            newTopsters={newTopsters}
             history={history}
             setCurrentNode={setCurrentNode}
-            userToppingsHistory={userToppingsHistory}
+            newTopstersHistory={newTopstersHistory}
           />
           <SaveButton
-            userToppingsName={userToppingsName}
-            setUserToppingsName={setUserToppingsName}
-            userToppings={userToppings}
-            toppings={toppings}
+            newTopsterName={newTopsterName}
+            setNewTopsterName={setNewTopsterName}
+            newTopsters={newTopsters}
+            topsters={topsters}
             history={history}
             saveTopsters={saveTopsters}
             match={match}
             setCurrentNode={setCurrentNode}
-            userToppingsHistory={userToppingsHistory}
+            newTopstersHistory={newTopstersHistory}
             openConfirm={openConfirm}
             setOpenConfirm={setOpenConfirm}
           />
@@ -198,4 +198,4 @@ const NewTopsterNav: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles, { withTheme: true })(NewTopsterNav);
+export default withStyles(styles, { withTheme: true })(NewTopsterNavStyles);

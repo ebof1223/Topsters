@@ -10,11 +10,11 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import CharacterCounter from './CharacterCounter';
 
 interface Props {
-  setUserToppingsName: (input: string) => void;
-  userToppingsName: string | null;
-  userToppings: AlbumTemplate[];
+  setNewTopsterName: (input: string) => void;
+  newTopsterName: string | null;
+  newTopsters: AlbumTemplate[];
   match: { params: { id: string } };
-  toppings: TopsterTemplate[];
+  topsters: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -22,21 +22,21 @@ interface Props {
   saveTopsters: (input: TopsterTemplate) => void;
   //FICXCC
   setCurrentNode: (input: any) => void;
-  userToppingsHistory: any;
+  newTopstersHistory: any;
   setOpenConfirm: (i: boolean) => void;
   openConfirm: boolean;
 }
 
 const SaveButton: React.FC<Props> = ({
-  setUserToppingsName,
-  userToppingsName,
-  userToppings,
-  toppings,
+  setNewTopsterName,
+  newTopsterName,
+  newTopsters,
+  topsters,
   history,
   saveTopsters,
   match,
   setCurrentNode,
-  userToppingsHistory,
+  newTopstersHistory,
   setOpenConfirm,
   openConfirm,
 }) => {
@@ -48,42 +48,42 @@ const SaveButton: React.FC<Props> = ({
     e.preventDefault();
     setErrors({ title: '' });
 
-    const newToppings: TopsterTemplate = {
-      title: userToppingsName,
-      id: userToppingsName.toLowerCase().replace(/ /g, '-'),
-      albums: userToppings,
+    const newTopster: TopsterTemplate = {
+      title: newTopsterName,
+      id: newTopsterName.toLowerCase().replace(/ /g, '-'),
+      albums: newTopsters,
     };
 
-    if (!userToppingsName) return setErrors({ title: 'Please enter a title' });
+    if (!newTopsterName) return setErrors({ title: 'Please enter a title' });
 
-    if (newToppings.albums.length !== 9)
+    if (newTopster.albums.length !== 9)
       return setErrors({
-        title: 'Toppings must contain 9 albums. Please complete your toppings,',
+        title: 'Topsters must contain 9 albums',
       });
-    if (userToppingsName.length > 20)
-      return setErrors({ title: 'Topping names may not exceed 21 characters' });
+    if (newTopsterName.length > 20)
+      return setErrors({ title: 'Topster names may not exceed 21 characters' });
 
     if (match.params.id) {
-      for (let [index, item] of toppings.entries()) {
+      for (let [index, item] of topsters.entries()) {
         if (item.id === match.params.id) {
-          toppings.splice(index, 1, newToppings);
+          topsters.splice(index, 1, newTopster);
         }
       }
     } else {
       if (
-        toppings.some(
-          (item: TopsterTemplate) => item.title === newToppings.title
+        topsters.some(
+          (item: TopsterTemplate) => item.title === newTopster.title
         )
       )
         return setErrors({ title: 'This title has already been taken' });
 
-      saveTopsters(newToppings);
+      saveTopsters(newTopster);
     }
 
     setOpenConfirm(false);
-    userToppingsHistory.clear();
+    newTopstersHistory.clear();
     setCurrentNode(null);
-    history.push(`/toppings/${newToppings.id}`);
+    history.push(`/topsters/${newTopster.id}`);
   };
   return (
     <div>
@@ -104,28 +104,28 @@ const SaveButton: React.FC<Props> = ({
         }}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">Save Toppings</DialogTitle>
+        <DialogTitle id="form-dialog-title">Save Topster</DialogTitle>
         <form onSubmit={(e) => handleSubmit(e)} autoComplete="off">
           <DialogContent>
             <DialogContentText>
               {match.params.id
-                ? 'Please confirm the title of your toppings.'
-                : 'Enter a name for your new toppings for the world to see!'}
+                ? 'Please confirm the title of your topsters.'
+                : 'Enter a name for your new topsters for the world to see!'}
             </DialogContentText>
             <TextField
               id="standard-basic"
-              label="Toppings Name"
-              name="userToppingsName"
-              value={userToppingsName}
+              label="Topster Name"
+              name="newTopsterName"
+              value={newTopsterName}
               onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-                setUserToppingsName(e.target.value)
+                setNewTopsterName(e.target.value)
               }
               helperText={errors?.title}
               error={Boolean(errors?.title)}
               fullWidth
             />
           </DialogContent>
-          <CharacterCounter userToppingsNameLength={userToppingsName.length} />
+          <CharacterCounter newTopsterNameLength={newTopsterName.length} />
           <DialogActions>
             <Button
               onClick={() => {

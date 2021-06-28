@@ -7,25 +7,25 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { AlbumTemplate } from '../interface';
 interface Props {
-  userToppings: AlbumTemplate[];
+  newTopsters: AlbumTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
   };
   ///FIXC
   setCurrentNode: (input: Node) => void;
-  userToppingsHistory: any;
+  newTopstersHistory: any;
 }
 const BackButton: React.FC<Props> = ({
-  userToppings,
+  newTopsters,
   history,
   setCurrentNode,
-  userToppingsHistory,
+  newTopstersHistory,
 }) => {
   const [openConfirm, setOpenConfirm] = useState(false);
 
   const handleClickOpen = () => {
-    userToppings.length ? setOpenConfirm(true) : history.goBack();
+    newTopsters.length ? setOpenConfirm(true) : history.goBack();
   };
 
   const handleClose = () => {
@@ -33,7 +33,7 @@ const BackButton: React.FC<Props> = ({
   };
 
   const handleBack = () => {
-    userToppingsHistory.clear();
+    newTopstersHistory.clear();
     setCurrentNode(null);
     history.goBack();
     setOpenConfirm(false);

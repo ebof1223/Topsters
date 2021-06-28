@@ -45,7 +45,7 @@ const styles = createStyles({
     padding: '1rem',
   },
 
-  toppings: {
+  topsters: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridAutoRows: 'repeat(3, 1fr)',

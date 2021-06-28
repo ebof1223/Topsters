@@ -1,7 +1,7 @@
 import { createStyles } from '@material-ui/core';
 
 const styles = createStyles({
-  Toppings: {
+  Topster: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -52,7 +52,7 @@ const styles = createStyles({
     },
   },
 
-  ToppingsDescription: {
+  Description: {
     '& h1': {
       fontSize: '2rem',
       fontFamily: 'Lexend Peta, sans-serif',
@@ -79,7 +79,7 @@ const styles = createStyles({
     width: '25vw',
     height: '65vh',
   },
-  ToppingsContainer: {
+  TopsterContainer: {
     background: 'rgb(255,255,255)',
     marginRight: '10rem',
     padding: '0.5rem',
@@ -89,7 +89,7 @@ const styles = createStyles({
     zIndex: 1,
   },
 
-  ToppingsAlbums: {
+  Albums: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 250px)',
     gridTemplateRows: 'repeat(3, 250px)',
@@ -102,7 +102,7 @@ const styles = createStyles({
     marginRight: '5%',
     height: '750px',
   },
-  ToppingsFooter: {
+  Footer: {
     position: 'absolute',
     bottom: 0,
     flexDirection: 'row',

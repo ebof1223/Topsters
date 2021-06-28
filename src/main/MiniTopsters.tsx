@@ -9,7 +9,7 @@ interface Props {
     root: string;
     title: string;
     avatar: string;
-    miniToppings: string;
+    MiniTopsters: string;
     deleteIcon: string;
     card: string;
   };
@@ -22,7 +22,7 @@ interface Props {
   setToBeDeleted: (input: string) => void;
 }
 
-const MiniToppings: React.FC<Props> = ({
+const MiniTopsters: React.FC<Props> = ({
   classes,
   albums,
   id,
@@ -33,7 +33,7 @@ const MiniToppings: React.FC<Props> = ({
 }) => {
   const miniToppings = albums.map((item) => (
     <div
-      className={classes.miniToppings}
+      className={classes.MiniTopsters}
       style={{
         background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
       }}
@@ -60,4 +60,4 @@ const MiniToppings: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles)(MiniToppings);
+export default withStyles(styles)(MiniTopsters);

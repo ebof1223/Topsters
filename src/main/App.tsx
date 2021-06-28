@@ -12,23 +12,23 @@ import Landing from '../landing/Landing';
 
 const App: React.FC = () => {
   const savedTopsters = JSON.parse(
-    window.localStorage.getItem('toppings') || '{}'
+    window.localStorage.getItem('topsters') || '{}'
   );
-  const [toppings, setTopsters] = useState(
+  const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
   );
 
   useLayoutEffect(() => {
-    window.localStorage.setItem('toppings', JSON.stringify(toppings));
+    window.localStorage.setItem('topsters', JSON.stringify(topsters));
   });
 
   const findTopsters = (id: string) => {
-    return toppings.find((topping: TopsterTemplate) => {
+    return topsters.find((topping: TopsterTemplate) => {
       return topping.id === id;
     });
   };
-  const saveTopsters = (newToppings: TopsterTemplate) => {
-    setTopsters([...toppings, newToppings]);
+  const saveTopsters = (newTopster: TopsterTemplate) => {
+    setTopsters([...topsters, newTopster]);
   };
 
   return (
@@ -52,7 +52,7 @@ const App: React.FC = () => {
                 render={(routeProps) => (
                   <Page>
                     <TopsterList
-                      toppings={toppings}
+                      topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
                     />
@@ -67,7 +67,7 @@ const App: React.FC = () => {
                     <NewTopster
                       saveTopsters={saveTopsters}
                       {...routeProps}
-                      toppings={toppings}
+                      topsters={topsters}
                     />
                   </Page>
                 )}
@@ -81,7 +81,7 @@ const App: React.FC = () => {
                       title={findTopsters(routeProps.match.params.id).title}
                       id={findTopsters(routeProps.match.params.id).id}
                       albums={findTopsters(routeProps.match.params.id).albums}
-                      toppings={toppings}
+                      topsters={topsters}
                       {...routeProps}
                     />
                   </Page>
@@ -95,7 +95,7 @@ const App: React.FC = () => {
                     <NewTopster
                       saveTopsters={saveTopsters}
                       {...routeProps}
-                      toppings={toppings}
+                      topsters={topsters}
                     />
                   </Page>
                 )}
@@ -104,7 +104,7 @@ const App: React.FC = () => {
                 render={(routeProps) => (
                   <Page>
                     <TopsterList
-                      toppings={toppings}
+                      topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
                     />

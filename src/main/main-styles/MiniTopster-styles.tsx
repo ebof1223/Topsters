@@ -28,7 +28,7 @@ const styles = createStyles({
     display: 'block ruby',
     paddingTop: '1rem',
   },
-  miniToppings: {
+  MiniTopsters: {
     height: '72px',
     width: '81.5px',
     display: 'block ruby',

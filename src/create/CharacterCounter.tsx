@@ -3,7 +3,7 @@ import { useLayoutEffect, useState } from 'react';
 import styles from './create-styles/CharacterCounterStyles';
 
 interface Props {
-  userToppingsNameLength: number;
+  newTopsterNameLength: number;
   classes: {
     root: string;
   };
@@ -11,7 +11,7 @@ interface Props {
 
 const CharacterCounter: React.FC<Props> = ({
   classes,
-  userToppingsNameLength,
+  newTopsterNameLength,
 }) => {
   const [ringState, setRingState] = useState({
     ringStyle: {
@@ -20,7 +20,7 @@ const CharacterCounter: React.FC<Props> = ({
     },
   });
   const circleLength = 2 * Math.PI * 15;
-  const colored = (circleLength * userToppingsNameLength) / 21;
+  const colored = (circleLength * newTopsterNameLength) / 21;
   const gray = circleLength - colored > 0 ? circleLength - colored : 0;
   const twitterBlue = 'rgb(29, 161, 242)';
 
@@ -28,15 +28,15 @@ const CharacterCounter: React.FC<Props> = ({
     setRingState({
       ringStyle: {
         stroke:
-          21 - userToppingsNameLength <= 0
+          21 - newTopsterNameLength <= 0
             ? 'red'
-            : 21 - userToppingsNameLength <= 10
+            : 21 - newTopsterNameLength <= 10
             ? 'orange'
             : twitterBlue,
         strokeDasharray: `${colored} ${gray}`,
       },
     });
-  }, [circleLength, colored, gray, userToppingsNameLength]);
+  }, [circleLength, colored, gray, newTopsterNameLength]);
   return (
     <svg className={classes.root}>
       <circle r="15" cx="50%" cy="50%" stroke="lightgray"></circle>

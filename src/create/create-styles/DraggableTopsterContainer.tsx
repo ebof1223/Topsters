@@ -1,7 +1,7 @@
 import { createStyles } from '@material-ui/styles';
 
 const styles = createStyles({
-  UserToppingsContainer: {
+  newTopstersContainer: {
     background: 'rgb(255,255,255)',
     padding: '0.5rem',
     borderRadius: '2px',

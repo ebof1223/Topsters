@@ -12,16 +12,16 @@ interface Props {
   id: string;
   albums: AlbumTemplate[];
   classes: {
-    Toppings: string;
+    Topster: string;
     LeftPanel: string;
     RightPanel: string;
-    ToppingsContainer: string;
-    ToppingsDescription: string;
-    ToppingsAlbums: string;
+    TopsterContainer: string;
+    Description: string;
+    Albums: string;
     record: string;
-    ToppingsFooter: string;
+    Footer: string;
   };
-  toppings: TopsterTemplate[];
+  topsters: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -33,7 +33,7 @@ const Topster: React.FC<Props> = ({
   id,
   albums,
   classes,
-  toppings,
+  topsters,
   history,
 }) => {
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
@@ -42,42 +42,42 @@ const Topster: React.FC<Props> = ({
     setSelectedAlbum(albums[index]);
   };
 
-  const toppingsIndex = (input: string, direction: string) => {
+  const topsterIndex = (input: string, direction: string) => {
     if (direction === 'left') {
-      for (let [index, topping] of toppings.entries()) {
-        if (topping.title === input && index - 1 > -1) return index - 1;
+      for (let [index, topster] of topsters.entries()) {
+        if (topster.title === input && index - 1 > -1) return index - 1;
       }
     } else if (direction === 'right') {
-      for (let [index, topping] of toppings.entries()) {
-        if (topping.title === input && index + 1 < toppings.length)
+      for (let [index, topster] of topsters.entries()) {
+        if (topster.title === input && index + 1 < topsters.length)
           return index + 1;
       }
     }
     return null;
   };
 
-  const shiftToppings = (direction: string) => {
-    let index = toppingsIndex(title, direction);
+  const shiftTopsters = (direction: string) => {
+    let index = topsterIndex(title, direction);
 
     if (index === null) {
       return -1;
     }
-    history.push(`/toppings/${toppings[index].id}`);
+    history.push(`/topsters/${topsters[index].id}`);
   };
   return (
     <>
-      <Navbar title={title} toppings={toppings} history={history} id={id} />
-      {toppingsIndex(title, 'left') !== null && (
+      <Navbar title={title} topsters={topsters} history={history} id={id} />
+      {topsterIndex(title, 'left') !== null && (
         <div
           className={classes.LeftPanel}
-          onClick={() => shiftToppings('left')}
+          onClick={() => shiftTopsters('left')}
         >
           <ArrowBackIosIcon />
-          <h3>{toppings[toppingsIndex(title, 'left')].title}</h3>
+          <h3>{topsters[topsterIndex(title, 'left')].title}</h3>
         </div>
       )}
-      <div className={classes.Toppings}>
-        <div className={classes.ToppingsDescription}>
+      <div className={classes.Topster}>
+        <div className={classes.Description}>
           <h1>{selectedAlbum.name}</h1>
           <h2>{selectedAlbum.artist}</h2>
           <ol>
@@ -97,8 +97,8 @@ const Topster: React.FC<Props> = ({
             ))}
           </ol>
         </div>
-        <Paper elevation={5} square className={classes.ToppingsContainer}>
-          <div className={classes.ToppingsAlbums}>
+        <Paper elevation={5} square className={classes.TopsterContainer}>
+          <div className={classes.Albums}>
             {albums.map((item: AlbumTemplate, index: number) => (
               <Album
                 key={item.name}
@@ -115,16 +115,16 @@ const Topster: React.FC<Props> = ({
           alt="vinyl-record"
         />
       </div>
-      {toppingsIndex(title, 'right') !== null && (
+      {topsterIndex(title, 'right') !== null && (
         <div
           className={classes.RightPanel}
-          onClick={() => shiftToppings('right')}
+          onClick={() => shiftTopsters('right')}
         >
-          <h3>{toppings[toppingsIndex(title, 'right')].title}</h3>
+          <h3>{topsters[topsterIndex(title, 'right')].title}</h3>
           <ArrowForwardIosIcon />
         </div>
       )}
-      <footer className={classes.ToppingsFooter}>{title}</footer>
+      <footer className={classes.Footer}>{title}</footer>
     </>
   );
 };

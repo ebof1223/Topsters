@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Results from './Results';
-import DraggableTopsterList from './DraggableTopsterContainer';
+import DraggableTopsterContainer from './DraggableTopsterContainer';
 import styles from '../create/create-styles/NewTopsterStyles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import arrayMove from 'array-move';
@@ -22,7 +22,7 @@ interface Props {
     location: any;
   };
   match: { params: any };
-  toppings: TopsterTemplate[];
+  topsters: TopsterTemplate[];
   classes: {
     root: string;
     hide: string;
@@ -34,28 +34,28 @@ interface Props {
     background: string;
   };
 }
-var userToppingsHistory: any;
+var newTopstersHistory: any;
 const NewTopster: React.FC<Props> = ({
   saveTopsters,
   history,
   match,
-  toppings,
+  topsters,
   classes,
 }) => {
   const retrieveTitle = () => {
-    for (let [index, item] of toppings.entries()) {
-      if (item.id === match.params.id) return toppings[index].title;
+    for (let [index, item] of topsters.entries()) {
+      if (item.id === match.params.id) return topsters[index].title;
     }
   };
   const editTitle = match.params.id ? retrieveTitle() : '';
-  let matchingAlbums = toppings.filter((item) => item.id === match.params.id);
+  let matchingAlbums = topsters.filter((item) => item.id === match.params.id);
 
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
 
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [userToppings, setUserToppings] = useState(editAlbums);
-  const [userToppingsName, setUserToppingsName] = useState(editTitle);
+  const [newTopsters, setNewTopsters] = useState(editAlbums);
+  const [newTopsterName, setNewTopsterName] = useState(editTitle);
   const [currentNode, setCurrentNode] = useState(null);
   const [nodesFromTail, setNodesFromTail] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
@@ -65,11 +65,11 @@ const NewTopster: React.FC<Props> = ({
   const [openConfirm, setOpenConfirm] = useState(false);
 
   useEffect(() => {
-    userToppingsHistory = new DoublyLinkedList();
-    userToppingsHistory.insert(editAlbums);
-    setCurrentNode(userToppingsHistory.getTailNode());
+    newTopstersHistory = new DoublyLinkedList();
+    newTopstersHistory.insert(editAlbums);
+    setCurrentNode(newTopstersHistory.getTailNode());
     return () => {
-      userToppingsHistory.clear();
+      newTopstersHistory.clear();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -83,16 +83,16 @@ const NewTopster: React.FC<Props> = ({
   }) => {
     document.body.style.cursor = 'default';
     if (oldIndex === newIndex) return;
-    let newToppings = arrayMove(userToppings, oldIndex, newIndex);
-    userToppingsHistory.toppingsInsert(
+    let newTopster = arrayMove(newTopsters, oldIndex, newIndex);
+    newTopstersHistory.topstersInsert(
       currentNode,
-      newToppings,
-      userToppingsHistory,
+      newTopster,
+      newTopstersHistory,
       nodesFromTail
     );
     setNodesFromTail(0);
-    setUserToppings(newToppings);
-    setCurrentNode(userToppingsHistory.getTailNode());
+    setNewTopsters(newTopster);
+    setCurrentNode(newTopstersHistory.getTailNode());
   };
 
   return (
@@ -101,14 +101,14 @@ const NewTopster: React.FC<Props> = ({
         openDrawer={openDrawer}
         setOpenDrawer={setOpenDrawer}
         history={history}
-        setUserToppings={setUserToppings}
-        toppings={toppings}
+        setNewTopsters={setNewTopsters}
+        topsters={topsters}
         saveTopsters={saveTopsters}
-        userToppingsName={userToppingsName}
-        userToppings={userToppings}
-        setUserToppingsName={setUserToppingsName}
+        newTopsterName={newTopsterName}
+        newTopsters={newTopsters}
+        setNewTopsterName={setNewTopsterName}
         match={match}
-        userToppingsHistory={userToppingsHistory}
+        newTopstersHistory={newTopstersHistory}
         setCurrentNode={setCurrentNode}
         currentNode={currentNode}
         nodesFromTail={nodesFromTail}
@@ -138,10 +138,10 @@ const NewTopster: React.FC<Props> = ({
           </div>
 
           <Results
-            setUserToppings={setUserToppings}
-            userToppings={userToppings}
+            setNewTopsters={setNewTopsters}
+            newTopsters={newTopsters}
             currentNode={currentNode}
-            userToppingsHistory={userToppingsHistory}
+            newTopstersHistory={newTopstersHistory}
             nodesFromTail={nodesFromTail}
             setNodesFromTail={setNodesFromTail}
             setCurrentNode={setCurrentNode}
@@ -169,13 +169,13 @@ const NewTopster: React.FC<Props> = ({
         >
           <div className={classes.drawerHeader} />
           <div className={classes.background}>
-            <DraggableTopsterList
+            <DraggableTopsterContainer
               axis="xy"
-              userToppings={userToppings}
-              setUserToppings={setUserToppings}
+              newTopsters={newTopsters}
+              setNewTopsters={setNewTopsters}
               onSortStart={() => (document.body.style.cursor = 'grabbing')}
               onSortEnd={onSortEnd}
-              userToppingsHistory={userToppingsHistory}
+              newTopstersHistory={newTopstersHistory}
               setCurrentNode={setCurrentNode}
               currentNode={currentNode}
               nodesFromTail={nodesFromTail}

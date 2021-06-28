@@ -8,14 +8,14 @@ interface Props {
     root: string;
     resultsContainer: string;
   };
-  setUserToppings: (args: AlbumTemplate[]) => void;
-  userToppings: AlbumTemplate[];
+  setNewTopsters: (args: AlbumTemplate[]) => void;
+  newTopsters: AlbumTemplate[];
   currentNode: {
     data: Node;
     next: Node;
     prev: Node;
   };
-  userToppingsHistory: any;
+  newTopstersHistory: any;
   nodesFromTail: number;
   setNodesFromTail: (input: number) => void;
   setCurrentNode: (input: {}) => void;
@@ -25,11 +25,11 @@ interface Props {
 
 const Results: React.FC<Props> = ({
   classes,
-  setUserToppings,
-  userToppings,
+  setNewTopsters,
+  newTopsters,
   currentNode,
   setCurrentNode,
-  userToppingsHistory,
+  newTopstersHistory,
   nodesFromTail,
   setNodesFromTail,
   results,
@@ -37,28 +37,28 @@ const Results: React.FC<Props> = ({
   const addToToppings = (itemIdx: number) => {
     console.log(results[itemIdx]);
     if (
-      userToppings.some(
+      newTopsters.some(
         (item: AlbumTemplate) => item.name === results[itemIdx].name
       )
     ) {
       console.log('DUPLICATE ERROR');
       return;
     }
-    if (userToppings.length > 8) {
+    if (newTopsters.length > 8) {
       console.log('EXCEEDED MAX TOPPINGS VALUE');
       return;
     }
 
-    let newToppings = [...userToppings, results[itemIdx]];
-    userToppingsHistory.toppingsInsert(
+    let newToppings = [...newTopsters, results[itemIdx]];
+    newTopstersHistory.topstersInsert(
       currentNode,
       newToppings,
-      userToppingsHistory,
+      newTopstersHistory,
       nodesFromTail
     );
     setNodesFromTail(0);
-    setUserToppings(newToppings);
-    setCurrentNode(userToppingsHistory.getTailNode());
+    setNewTopsters(newToppings);
+    setCurrentNode(newTopstersHistory.getTailNode());
   };
 
   return (
