@@ -1,4 +1,4 @@
-const defaultTopsters = [
+const userMade = [
   {
     title: 'Sample',
     id: 'sample',
@@ -2467,6 +2467,6 @@ const defaultTopsters = [
   },
 ];
 
-export { defaultTopsters };
+export { userMade };
 
 //need to account for artists with no mbid with user populations

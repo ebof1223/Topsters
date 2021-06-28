@@ -56,6 +56,14 @@ const SaveButton: React.FC<Props> = ({
 
     if (!newTopsterName) return setErrors({ title: 'Please enter a title' });
 
+    let reg = /^[A-Za-z0-9 ]+$/;
+
+    if (!reg.test(newTopster.id))
+      return setErrors({
+        title:
+          'Title can only contain numbers and letters. Please choose a differrent title .',
+      });
+
     if (newTopster.albums.length !== 9)
       return setErrors({
         title: 'Topsters must contain 9 albums',
@@ -111,6 +119,7 @@ const SaveButton: React.FC<Props> = ({
                 : 'Enter a name for your new topsters for the world to see!'}
             </DialogContentText>
             <TextField
+              autoFocus
               id="standard-basic"
               label="Topster Name"
               name="newTopsterName"

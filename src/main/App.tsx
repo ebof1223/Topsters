@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import { defaultTopsters } from './Example';
+import { userMade } from './Usermade-default';
 import { useState, useLayoutEffect } from 'react';
 import { TopsterTemplate } from '../interface.js';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -24,7 +24,7 @@ const App: React.FC = () => {
     JSON.parse(window.localStorage.getItem('How to use prompt'))
   );
   const [topsters, setTopsters] = useState(
-    Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
+    Object.keys(savedTopsters).length ? savedTopsters : userMade
   );
   console.log(window.localStorage);
 

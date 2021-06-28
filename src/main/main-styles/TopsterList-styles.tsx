@@ -24,7 +24,6 @@ const styles = createStyles({
     marginBottom: '3rem',
   },
   OuterContainer: {
-    width: '50%',
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
@@ -42,15 +41,13 @@ const styles = createStyles({
     width: '100%',
     justifyContent: 'space-between',
     color: 'white',
-    padding: '1rem',
+    padding: '1rem 0 4rem 0',
   },
 
   topsters: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gridAutoRows: 'repeat(3, 1fr)',
+    marginTop: '2rem',
+    display: 'flex',
     boxSizing: 'border-box',
-    margin: '0 auto',
     // width: '100%',
     // height: 'calc(100vh - 4rem)',
     //   [sizes.down('md')]: {

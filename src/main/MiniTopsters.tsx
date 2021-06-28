@@ -31,7 +31,7 @@ const MiniTopsters: React.FC<Props> = ({
   handleClick,
   setToBeDeleted,
 }) => {
-  const miniToppings = albums.map((item) => (
+  const MiniTopsters = albums.map((item) => (
     <div
       className={classes.MiniTopsters}
       style={{
@@ -54,7 +54,7 @@ const MiniTopsters: React.FC<Props> = ({
           className={classes.deleteIcon}
           onClick={(e) => handleDelete(e)}
         />
-        {miniToppings}
+        {MiniTopsters}
       </Paper>
     </div>
   );
