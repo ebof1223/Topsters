@@ -98,10 +98,8 @@ const SaveButton: React.FC<Props> = ({
         Save
       </Button>
       <Dialog
+        onBackdropClick={() => setOpenConfirm(false)}
         open={openConfirm}
-        onClose={() => {
-          setOpenConfirm(true);
-        }}
         aria-labelledby="form-dialog-title"
       >
         <DialogTitle id="form-dialog-title">Save Topster</DialogTitle>
