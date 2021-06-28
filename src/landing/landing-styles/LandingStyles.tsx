@@ -1,6 +1,5 @@
 import { createStyles } from '@material-ui/styles';
-import image1 from './topster-landing1.jpg';
-// import image2 from './topster-landing2.jpg';
+import image from './landing.jpg';
 
 const styles = createStyles({
   '@keyframes infiniteScrollBg': {
@@ -23,7 +22,7 @@ const styles = createStyles({
     width: '100%',
     position: 'relative',
     perspective: '1500px',
-    animation: '$infiniteScrollBg 150s infinite linear',
+    animation: '$infiniteScrollBg 500s infinite linear',
     '&::after': {
       content: "''",
       height: '500%',
@@ -31,7 +30,7 @@ const styles = createStyles({
       position: 'absolute',
       left: 0,
       top: 0,
-      background: `url(${image1})`,
+      background: `url(${image})`,
       backgroundSize: '100% 20%',
     },
   },
