@@ -56,9 +56,9 @@ const SaveButton: React.FC<Props> = ({
 
     if (!newTopsterName) return setErrors({ title: 'Please enter a title' });
 
-    let reg = /^[A-Za-z0-9 ]+$/;
+    let reg = /^[a-zA-Z0-9_ ]*$/;
 
-    if (!reg.test(newTopster.id))
+    if (!reg.test(newTopster.title))
       return setErrors({
         title:
           'Title can only contain numbers and letters. Please choose a differrent title .',

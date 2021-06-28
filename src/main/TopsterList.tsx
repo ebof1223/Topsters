@@ -74,6 +74,9 @@ const TopsterList: React.FC<Props> = ({
             </Tooltip>
           </Link>
         </nav>
+        <h1 style={{ color: '#fff', fontFamily: 'Merriweather, serif' }}>
+          /mu(sic) For You
+        </h1>
         <TransitionGroup className={classes.topsters}>
           {topsters.map((item: TopsterTemplate) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>

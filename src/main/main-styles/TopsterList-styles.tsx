@@ -10,7 +10,7 @@ const styles = createStyles({
   },
 
   root: {
-    backgroundColor: 'rgb(47,48,52)',
+    backgroundColor: 'rgb(23,23,26)',
     height: '100%',
     display: 'flex',
     alignItems: 'flex-start',
