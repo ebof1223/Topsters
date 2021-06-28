@@ -44,7 +44,7 @@ interface Props {
   setUserToppings: (args: object) => void;
   userToppings: AlbumTemplate[] | undefined;
   toppings: TopsterTemplate[];
-  saveToppings: (input: TopsterTemplate) => void;
+  saveTopsters: (input: TopsterTemplate) => void;
   userToppingsName: string;
   setUserToppingsName: (input: string) => void;
   userToppingsHistory: DoublyLinkedList;
@@ -62,7 +62,7 @@ interface Props {
   openConfirm: boolean;
 }
 
-const NewTopsterNavStyles: React.FC<Props> = ({
+const NewTopsterNav: React.FC<Props> = ({
   classes,
   openDrawer,
   setOpenDrawer,
@@ -70,7 +70,7 @@ const NewTopsterNavStyles: React.FC<Props> = ({
   setUserToppings,
   userToppings,
   toppings,
-  saveToppings,
+  saveTopsters,
   userToppingsName,
   setUserToppingsName,
   match,
@@ -185,7 +185,7 @@ const NewTopsterNavStyles: React.FC<Props> = ({
             userToppings={userToppings}
             toppings={toppings}
             history={history}
-            saveToppings={saveToppings}
+            saveTopsters={saveTopsters}
             match={match}
             setCurrentNode={setCurrentNode}
             userToppingsHistory={userToppingsHistory}
@@ -198,4 +198,4 @@ const NewTopsterNavStyles: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles, { withTheme: true })(NewTopsterNavStyles);
+export default withStyles(styles, { withTheme: true })(NewTopsterNav);

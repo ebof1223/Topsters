@@ -14,7 +14,7 @@ const App: React.FC = () => {
   const savedTopsters = JSON.parse(
     window.localStorage.getItem('toppings') || '{}'
   );
-  const [toppings, setToppings] = useState(
+  const [toppings, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
   );
 
@@ -27,8 +27,8 @@ const App: React.FC = () => {
       return topping.id === id;
     });
   };
-  const saveToppings = (newToppings: TopsterTemplate) => {
-    setToppings([...toppings, newToppings]);
+  const saveTopsters = (newToppings: TopsterTemplate) => {
+    setTopsters([...toppings, newToppings]);
   };
 
   return (
@@ -54,7 +54,7 @@ const App: React.FC = () => {
                     <TopsterList
                       toppings={toppings}
                       {...routeProps}
-                      setToppings={setToppings}
+                      setTopsters={setTopsters}
                     />
                   </Page>
                 )}
@@ -65,7 +65,7 @@ const App: React.FC = () => {
                 render={(routeProps) => (
                   <Page>
                     <NewTopster
-                      saveToppings={saveToppings}
+                      saveTopsters={saveTopsters}
                       {...routeProps}
                       toppings={toppings}
                     />
@@ -93,7 +93,7 @@ const App: React.FC = () => {
                 render={(routeProps) => (
                   <Page>
                     <NewTopster
-                      saveToppings={saveToppings}
+                      saveTopsters={saveTopsters}
                       {...routeProps}
                       toppings={toppings}
                     />
@@ -106,7 +106,7 @@ const App: React.FC = () => {
                     <TopsterList
                       toppings={toppings}
                       {...routeProps}
-                      setToppings={setToppings}
+                      setTopsters={setTopsters}
                     />
                   </Page>
                 )}

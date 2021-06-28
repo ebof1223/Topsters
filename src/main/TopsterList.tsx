@@ -26,7 +26,7 @@ interface Props {
     goBack: () => void;
     push: (input: string) => void;
   };
-  setToppings: (input: TopsterTemplate[]) => void;
+  setTopsters: (input: TopsterTemplate[]) => void;
   classes: {
     root: string;
     heading: string;
@@ -39,7 +39,7 @@ interface Props {
 const TopsterList: React.FC<Props> = ({
   toppings,
   history,
-  setToppings,
+  setTopsters,
   classes,
 }) => {
   const [deleteDialog, setDeleteDialog] = useState(false);
@@ -50,7 +50,7 @@ const TopsterList: React.FC<Props> = ({
   };
   const handleDeleteConfirmation = () => {
     let newToppings = toppings.filter((item) => item.id !== toBeDeleted);
-    setToppings([...newToppings]);
+    setTopsters([...newToppings]);
 
     setDeleteDialog(!deleteDialog);
   };

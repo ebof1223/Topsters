@@ -19,7 +19,7 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
   const handleEdit = () => {
-    history.push(`/toppings/edit/${id}`);
+    history.push(`/topsters/edit/${id}`);
   };
 
   return (

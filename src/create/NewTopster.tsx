@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import NewToppingsFormNav from './NewToppingsFormNav';
+import NewTopsterNav from './NewTopsterNav';
 import { withStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Results from './Results';
-import DraggableTopsterList from './DraggableTopsterList';
+import DraggableTopsterList from './DraggableTopsterContainer';
 import styles from '../create/create-styles/NewTopsterStyles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import arrayMove from 'array-move';
@@ -15,7 +15,7 @@ import DoublyLinkedList from 'dbly-linked-list';
 import Search from './Search';
 
 interface Props {
-  saveToppings: (input: TopsterTemplate) => void;
+  saveTopsters: (input: TopsterTemplate) => void;
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -36,7 +36,7 @@ interface Props {
 }
 var userToppingsHistory: any;
 const NewTopster: React.FC<Props> = ({
-  saveToppings,
+  saveTopsters,
   history,
   match,
   toppings,
@@ -97,13 +97,13 @@ const NewTopster: React.FC<Props> = ({
 
   return (
     <>
-      <NewToppingsFormNav
+      <NewTopsterNav
         openDrawer={openDrawer}
         setOpenDrawer={setOpenDrawer}
         history={history}
         setUserToppings={setUserToppings}
         toppings={toppings}
-        saveToppings={saveToppings}
+        saveTopsters={saveTopsters}
         userToppingsName={userToppingsName}
         userToppings={userToppings}
         setUserToppingsName={setUserToppingsName}

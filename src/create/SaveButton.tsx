@@ -19,7 +19,7 @@ interface Props {
     goBack: () => void;
     push: (input: string) => void;
   };
-  saveToppings: (input: TopsterTemplate) => void;
+  saveTopsters: (input: TopsterTemplate) => void;
   //FICXCC
   setCurrentNode: (input: any) => void;
   userToppingsHistory: any;
@@ -33,7 +33,7 @@ const SaveButton: React.FC<Props> = ({
   userToppings,
   toppings,
   history,
-  saveToppings,
+  saveTopsters,
   match,
   setCurrentNode,
   userToppingsHistory,
@@ -77,7 +77,7 @@ const SaveButton: React.FC<Props> = ({
       )
         return setErrors({ title: 'This title has already been taken' });
 
-      saveToppings(newToppings);
+      saveTopsters(newToppings);
     }
 
     setOpenConfirm(false);
