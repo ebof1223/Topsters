@@ -2,7 +2,6 @@ import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate } from '../interface';
 import Paper from '@material-ui/core/Paper';
 import styles from './main-styles/Recommended-styles';
-import DeleteIcon from '@material-ui/icons/Delete';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 
 interface Props {
@@ -28,10 +27,10 @@ interface Props {
 const Recommended: React.FC<Props> = ({
   classes,
   albums,
+  handleClick,
   id,
   deleteDialog,
   setDeleteDialog,
-  handleClick,
   setToBeDeleted,
   title,
 }) => {
@@ -45,20 +44,10 @@ const Recommended: React.FC<Props> = ({
     />
   ));
 
-  // const handleDelete = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
-  //   e.stopPropagation();
-  //   setToBeDeleted(id);
-  //   setDeleteDialog(!deleteDialog);
-  // };
-
   return (
     <div className={classes.root}>
       <Paper elevation={3} className={classes.card} onClick={handleClick}>
         <div className={classes.topsterGrid}>
-          {/* <DeleteIcon
-            className={classes.deleteIcon}
-            onClick={(e) => handleDelete(e)}
-          /> */}
           {Recommended}
           <div className={classes.PlayIcon}>
             <PlayCircleFilledIcon fontSize="large" />

@@ -1,9 +1,8 @@
 import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate } from '../interface';
 import Paper from '@material-ui/core/Paper';
-import styles from './main-styles/Recommended-styles';
+import styles from './main-styles/UserTopsters-styles';
 import DeleteIcon from '@material-ui/icons/Delete';
-import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 
 interface Props {
   classes: {
@@ -60,12 +59,9 @@ const UserTopsters: React.FC<Props> = ({
             onClick={(e) => handleDelete(e)}
           />
           {Recommended}
-          <div className={classes.PlayIcon}>
-            <PlayCircleFilledIcon fontSize="large" />
-          </div>
         </div>
-        <div className={classes.title}>{title}</div>
       </Paper>
+      {/* <div className={classes.title}>{title}</div> */}
     </div>
   );
 };

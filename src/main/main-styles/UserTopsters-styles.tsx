@@ -4,11 +4,11 @@ const styles = createStyles({
   root: {
     boxSizing: 'border-box',
     padding: '0.5rem',
+    margin: '-1rem -3rem',
   },
   card: {
-    background:
-      'linear-gradient(to top right,rgba(100, 213, 251, 0.3),rgba(228, 166, 249, 0.5)) fixed',
     cursor: 'pointer',
+    transform: 'scale(0.6)',
   },
   topsterGrid: {
     display: 'grid',
@@ -16,22 +16,22 @@ const styles = createStyles({
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridAutoRows: 'repeat(3, 1fr)',
     background: 'white',
-    width: '250px',
-    border: '2px solid #91a7ff',
-    borderRadius: '5px 5px 0 0',
+    width: '251px',
+    borderRadius: '5px',
     transition: 'all 0.3s ease',
+    border: '3px solid #91a7ff',
   },
-  title: {
-    fontFamily: 'Lexend, sans-serif',
-    fontWeight: 500,
-    color: '#fff',
-    fontSize: '1.5rem',
-    width: '100%',
-    paddingTop: '1rem',
-    display: 'block',
-    overflow: 'auto',
-    padding: '4rem 1rem',
-  },
+  // title: {
+  //   fontFamily: 'Lexend, sans-serif',
+  //   fontWeight: 500,
+  //   color: '#fff',
+  //   fontSize: '1.5rem',
+  //   width: '100%',
+  //   paddingTop: '1rem',
+  //   display: 'block',
+  //   overflow: 'auto',
+  //   padding: '4rem 1rem',
+  // },
   MiniTopsters: {
     height: '72px',
     width: '81.5px',
@@ -55,15 +55,6 @@ const styles = createStyles({
     '&:hover': {
       opacity: 1,
     },
-  },
-  PlayIcon: {
-    position: 'absolute',
-    color: 'rgb(252,252,252)',
-    bottom: '-1.5rem',
-    right: 0,
-    marginRight: '1rem',
-    marginTop: '10rem',
-    overflow: 'auto',
   },
 });
 export default styles;

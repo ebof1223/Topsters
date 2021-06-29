@@ -37,8 +37,11 @@ const styles = createStyles({
     // },
   },
   Fab: {
-    position: 'absolute',
-    right: '10%',
+    // position: 'absolute',
+    // right: '10%',
+    display: 'flex',
+    top: '40%',
+    left: '50%',
   },
   nav: {
     display: 'flex',
@@ -48,7 +51,10 @@ const styles = createStyles({
     padding: '1rem 0 4rem 0',
     flexDirection: 'row',
   },
-
+  RecommendedTitle: {
+    color: '#fff',
+    fontFamily: 'Merriweather, serif',
+  },
   Recommended: {
     marginTop: '2rem',
     display: 'flex',
@@ -62,6 +68,11 @@ const styles = createStyles({
     //     // gridTemplateColumns: 'repeat(1, 100%)',
     //     gridGap: '1.4rem',
     //   },
+  },
+  UserTopstersTitle: {
+    color: '#fff',
+    fontFamily: 'Merriweather, serif',
+    marginTop: '4rem',
   },
   UserTopsters: { display: 'flex' },
 });

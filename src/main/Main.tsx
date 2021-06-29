@@ -20,6 +20,8 @@ interface Props {
     Recommended: string;
     Fab: string;
     UserTopsters: string;
+    RecommendedTitle: string;
+    UserTopstersTitle: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -30,7 +32,7 @@ interface Props {
   recommended: any;
 }
 
-const TopsterList: React.FC<Props> = ({
+const Main: React.FC<Props> = ({
   topsters,
   history,
   setTopsters,
@@ -55,23 +57,8 @@ const TopsterList: React.FC<Props> = ({
   return (
     <div className={classes.root}>
       <div className={classes.OuterContainer}>
-        <nav className={classes.nav}>
-          <Link to={'/topsters/new'}>
-            <Tooltip title="Add">
-              <Fab
-                color="inherit"
-                aria-label="add"
-                size="large"
-                className={classes.Fab}
-              >
-                <AddIcon />
-              </Fab>
-            </Tooltip>
-          </Link>
-        </nav>
-        <h1 style={{ color: '#fff', fontFamily: 'Merriweather, serif' }}>
-          Recommended
-        </h1>
+        <nav className={classes.nav}></nav>
+        <h2 className={classes.RecommendedTitle}>Recommended</h2>
         <TransitionGroup className={classes.Recommended}>
           {recommended.map((item: any) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
@@ -86,19 +73,34 @@ const TopsterList: React.FC<Props> = ({
             </CSSTransition>
           ))}
         </TransitionGroup>
-        <TransitionGroup className={classes.UserTopsters}>
-          {topsters.map((item: TopsterTemplate) => (
-            <CSSTransition key={item.id} classNames="fade" timeout={500}>
-              <UserTopsters
-                {...item}
-                handleClick={() => toTopster(item.id, 'userTopster')}
-                id={item.id}
-                deleteDialog={deleteDialog}
-                setDeleteDialog={setDeleteDialog}
-                setToBeDeleted={setToBeDeleted}
-              />
-            </CSSTransition>
-          ))}
+        <h2 className={classes.UserTopstersTitle}>My Topsters</h2>
+        <TransitionGroup>
+          <div className={classes.UserTopsters}>
+            {topsters.map((item: TopsterTemplate) => (
+              <CSSTransition key={item.id} classNames="fade" timeout={500}>
+                <UserTopsters
+                  {...item}
+                  handleClick={() => toTopster(item.id, 'userTopster')}
+                  id={item.id}
+                  deleteDialog={deleteDialog}
+                  setDeleteDialog={setDeleteDialog}
+                  setToBeDeleted={setToBeDeleted}
+                />
+              </CSSTransition>
+            ))}
+            <Link to={'/topsters/new'}>
+              <Tooltip title="Add">
+                <Fab
+                  color="inherit"
+                  aria-label="add"
+                  size="small"
+                  className={classes.Fab}
+                >
+                  <AddIcon />
+                </Fab>
+              </Tooltip>
+            </Link>
+          </div>
         </TransitionGroup>
       </div>
       <DeleteModal
@@ -110,4 +112,4 @@ const TopsterList: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles)(TopsterList);
+export default withStyles(styles)(Main);
