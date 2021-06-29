@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
-import NewTopsterNav from './NewTopsterNav';
+import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { withStyles } from '@material-ui/core/styles';
+import NewTopsterNav from './NewTopsterNav';
+import Search from './Search';
+import HowToUse from './HowToUse';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
@@ -9,11 +12,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Results from './Results';
 import DraggableTopsterContainer from './DraggableTopsterContainer';
 import styles from '../create/create-styles/NewTopsterStyles';
-import { AlbumTemplate, TopsterTemplate } from '../interface';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
-import Search from './Search';
-import HowToUse from './HowToUse';
 
 interface Props {
   saveTopsters: (input: TopsterTemplate) => void;

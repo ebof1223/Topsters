@@ -70,7 +70,7 @@ const styles = createStyles({
     '& ol': {
       marginTop: '3rem',
       lineHeight: '2rem',
-      fontWeight: '300',
+      fontWeight: '400',
       marginLeft: '2rem',
       listStylePosition: 'inside',
       overflow: 'scroll',

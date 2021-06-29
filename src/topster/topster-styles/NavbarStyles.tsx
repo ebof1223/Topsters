@@ -18,6 +18,7 @@ const styles = createStyles({
       fontSize: '2rem',
     },
   },
+  Icon: { marginRight: '3rem', cursor: 'pointer', color: 'black' },
 });
 
 export default styles;

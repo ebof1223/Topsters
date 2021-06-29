@@ -1,16 +1,16 @@
 import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
+import { Paper } from '@material-ui/core';
+import { useState } from 'react';
 import Album from './Album';
 import Navbar from './Navbar';
 import styles from './topster-styles/TopsterStyles';
-import { Paper } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import { useState } from 'react';
 interface Props {
   title: string;
   id: string;
-  albums: AlbumTemplate[];
+  albums: any;
   classes: {
     Topster: string;
     LeftPanel: string;
@@ -21,7 +21,8 @@ interface Props {
     record: string;
     Footer: string;
   };
-  topsters: TopsterTemplate[];
+  topsters?: TopsterTemplate[];
+  recommended?: any;
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -35,7 +36,10 @@ const Topster: React.FC<Props> = ({
   classes,
   topsters,
   history,
+  recommended,
 }) => {
+  const listToBeRendered = recommended || topsters;
+
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
@@ -44,12 +48,12 @@ const Topster: React.FC<Props> = ({
 
   const topsterIndex = (input: string, direction: string) => {
     if (direction === 'left') {
-      for (let [index, topster] of topsters.entries()) {
+      for (let [index, topster] of listToBeRendered.entries()) {
         if (topster.title === input && index - 1 > -1) return index - 1;
       }
     } else if (direction === 'right') {
-      for (let [index, topster] of topsters.entries()) {
-        if (topster.title === input && index + 1 < topsters.length)
+      for (let [index, topster] of listToBeRendered.entries()) {
+        if (topster.title === input && index + 1 < listToBeRendered.length)
           return index + 1;
       }
     }
@@ -62,18 +66,27 @@ const Topster: React.FC<Props> = ({
     if (index === null) {
       return -1;
     }
-    history.push(`/topsters/${topsters[index].id}`);
+    history.push(
+      `/${recommended ? 'recommended' : 'topsters'}/${
+        listToBeRendered[index].id
+      }`
+    );
   };
   return (
     <>
-      <Navbar title={title} topsters={topsters} history={history} id={id} />
+      <Navbar
+        title={title}
+        history={history}
+        id={id}
+        type={recommended ? 'recommended' : 'topsters'}
+      />
       {topsterIndex(title, 'left') !== null && (
         <div
           className={classes.LeftPanel}
           onClick={() => shiftTopsters('left')}
         >
           <ArrowBackIosIcon />
-          <h3>{topsters[topsterIndex(title, 'left')].title}</h3>
+          <h3>{listToBeRendered[topsterIndex(title, 'left')].title}</h3>
         </div>
       )}
       <div className={classes.Topster}>
@@ -120,7 +133,7 @@ const Topster: React.FC<Props> = ({
           className={classes.RightPanel}
           onClick={() => shiftTopsters('right')}
         >
-          <h3>{topsters[topsterIndex(title, 'right')].title}</h3>
+          <h3>{listToBeRendered[topsterIndex(title, 'right')].title}</h3>
           <ArrowForwardIosIcon />
         </div>
       )}

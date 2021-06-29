@@ -15,7 +15,7 @@ const HowToUse: React.FC<Props> = ({ openHowTo, setOpenHowTo }) => {
   const handleClose = () => {
     if (checked) setOpenHowTo(false);
   };
-
+  console.log(checked);
   return (
     <div>
       <Dialog

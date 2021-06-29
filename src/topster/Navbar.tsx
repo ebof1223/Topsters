@@ -4,20 +4,21 @@ import { withStyles } from '@material-ui/styles';
 import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
-import { TopsterTemplate } from '../interface';
+import BookmarksIcon from '@material-ui/icons/Bookmarks';
 
 interface Props {
   classes: {
     Navbar: string;
     Title: string;
+    Icon: string;
   };
   title: string;
-  topsters: TopsterTemplate[];
   history: { push: (input: string) => void };
   id: string;
+  type?: string;
 }
 
-const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
+const Navbar: React.FC<Props> = ({ classes, title, id, history, type }) => {
   const handleEdit = () => {
     history.push(`/topsters/edit/${id}`);
   };
@@ -32,10 +33,11 @@ const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
       <div className={classes.Title}>
         <h3>{title}</h3>
       </div>
-      <EditIcon
-        style={{ marginRight: '3rem', cursor: 'pointer', color: 'black' }}
-        onClick={handleEdit}
-      />
+      {type === 'topsters' ? (
+        <EditIcon className={classes.Icon} onClick={handleEdit} />
+      ) : (
+        <BookmarksIcon className={classes.Icon} />
+      )}
     </header>
   );
 };
