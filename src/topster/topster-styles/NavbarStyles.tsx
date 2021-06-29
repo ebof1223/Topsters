@@ -11,8 +11,12 @@ const styles = createStyles({
     fontFamily: 'Lexend, sans-serif',
   },
   Title: {
-    fontSize: '2rem',
     margin: '-0.5rem',
+    '& h3': {
+      fontFamily: 'Lexend, sans-serif',
+      fontWeight: '300',
+      fontSize: '2rem',
+    },
   },
 });
 

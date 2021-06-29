@@ -124,7 +124,9 @@ const Topster: React.FC<Props> = ({
           <ArrowForwardIosIcon />
         </div>
       )}
-      <footer className={classes.Footer}>{title}</footer>
+      <footer className={classes.Footer}>
+        <h3>{title}</h3>
+      </footer>
     </>
   );
 };

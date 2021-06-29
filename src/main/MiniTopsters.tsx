@@ -52,9 +52,9 @@ const MiniTopsters: React.FC<Props> = ({
   };
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} onClick={handleClick}>
       <Paper elevation={3} className={classes.card}>
-        <div className={classes.topsterGrid} onClick={handleClick}>
+        <div className={classes.topsterGrid}>
           <DeleteIcon
             className={classes.deleteIcon}
             onClick={(e) => handleDelete(e)}

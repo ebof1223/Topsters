@@ -10,6 +10,7 @@ const styles = createStyles({
     height: '91.5vh',
     width: '91.5vw',
     margin: '4vh auto',
+    fontFamily: 'Lexend, sans-serif',
   },
 
   LeftPanel: {
@@ -29,6 +30,7 @@ const styles = createStyles({
       width: '15vw',
       alignItems: 'center',
       marginLeft: '-8rem',
+      fontWeight: '300',
     },
   },
 
@@ -44,6 +46,7 @@ const styles = createStyles({
       display: 'flex',
       flexDirection: 'column',
       fontFamily: 'Lexend, sans-serif',
+      fontWeight: '300',
       transform: 'rotate(-270deg)',
       fontSize: '2rem',
       width: '15vw',
@@ -54,19 +57,20 @@ const styles = createStyles({
 
   Description: {
     '& h1': {
+      fontFamily: 'Lexend, sans-serif',
+      fontWeight: '900',
       fontSize: '2rem',
-      fontFamily: 'Lexend Peta, sans-serif',
       marginLeft: '2rem',
     },
     '& h2': {
       fontSize: '1.5rem',
-      fontWeight: '700',
+      fontWeight: '500',
       marginLeft: '2rem',
     },
     '& ol': {
       marginTop: '3rem',
       lineHeight: '2rem',
-      fontWeight: '600',
+      fontWeight: '300',
       marginLeft: '2rem',
       listStylePosition: 'inside',
       overflow: 'scroll',
@@ -111,9 +115,12 @@ const styles = createStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontFamily: 'Lexend, sans-serif',
-    fontSize: '2rem',
     marginBottom: '0.5rem',
+    '& h3': {
+      fontFamily: 'Lexend, sans-serif',
+      fontWeight: '300',
+      fontSize: '2rem',
+    },
   },
 });
 

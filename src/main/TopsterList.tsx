@@ -75,7 +75,7 @@ const TopsterList: React.FC<Props> = ({
           </Link>
         </nav>
         <h1 style={{ color: '#fff', fontFamily: 'Merriweather, serif' }}>
-          /mu(sic) For You
+          Recommended
         </h1>
         <TransitionGroup className={classes.topsters}>
           {topsters.map((item: TopsterTemplate) => (

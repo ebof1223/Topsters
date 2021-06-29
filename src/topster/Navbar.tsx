@@ -29,7 +29,9 @@ const Navbar: React.FC<Props> = ({ classes, title, id, history }) => {
           style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
         />
       </Link>
-      <div className={classes.Title}>{title}</div>
+      <div className={classes.Title}>
+        <h3>{title}</h3>
+      </div>
       <EditIcon
         style={{ marginRight: '3rem', cursor: 'pointer', color: 'black' }}
         onClick={handleEdit}
