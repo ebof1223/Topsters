@@ -9,11 +9,6 @@ const styles = createStyles({
     background:
       'linear-gradient(to top right,rgba(100, 213, 251, 0.3),rgba(228, 166, 249, 0.5)) fixed',
     cursor: 'pointer',
-
-    // '&:hover': {
-    //   transform: 'translateY(-15px)',
-    //   transition: 'all 0.1s ease',
-    // },
   },
   topsterGrid: {
     display: 'grid',

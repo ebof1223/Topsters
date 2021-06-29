@@ -9737,6 +9737,6 @@ const recommended = [
     ],
   },
 ];
-export { recommended };
+export default  recommended ;
 
 //need to account for artists with no mbid with user populations

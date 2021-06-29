@@ -1,8 +1,8 @@
 import { withStyles } from '@material-ui/styles';
-import Paper from '@material-ui/core/Paper';
-import styles from './main-styles/MiniTopster-styles';
-import DeleteIcon from '@material-ui/icons/Delete';
 import { AlbumTemplate } from '../interface';
+import Paper from '@material-ui/core/Paper';
+import styles from './main-styles/Recommended-styles';
+import DeleteIcon from '@material-ui/icons/Delete';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 
 interface Props {
@@ -25,7 +25,7 @@ interface Props {
   setToBeDeleted: (input: string) => void;
 }
 
-const MiniTopsters: React.FC<Props> = ({
+const Recommended: React.FC<Props> = ({
   classes,
   albums,
   id,
@@ -35,7 +35,7 @@ const MiniTopsters: React.FC<Props> = ({
   setToBeDeleted,
   title,
 }) => {
-  const MiniTopsters = albums.map((item) => (
+  const Recommended = albums.map((item) => (
     <div
       className={classes.MiniTopsters}
       style={{
@@ -45,21 +45,21 @@ const MiniTopsters: React.FC<Props> = ({
     />
   ));
 
-  const handleDelete = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
-    e.stopPropagation();
-    setToBeDeleted(id);
-    setDeleteDialog(!deleteDialog);
-  };
+  // const handleDelete = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
+  //   e.stopPropagation();
+  //   setToBeDeleted(id);
+  //   setDeleteDialog(!deleteDialog);
+  // };
 
   return (
-    <div className={classes.root} onClick={handleClick}>
-      <Paper elevation={3} className={classes.card}>
+    <div className={classes.root}>
+      <Paper elevation={3} className={classes.card} onClick={handleClick}>
         <div className={classes.topsterGrid}>
-          <DeleteIcon
+          {/* <DeleteIcon
             className={classes.deleteIcon}
             onClick={(e) => handleDelete(e)}
-          />
-          {MiniTopsters}
+          /> */}
+          {Recommended}
           <div className={classes.PlayIcon}>
             <PlayCircleFilledIcon fontSize="large" />
           </div>
@@ -70,4 +70,4 @@ const MiniTopsters: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles)(MiniTopsters);
+export default withStyles(styles)(Recommended);

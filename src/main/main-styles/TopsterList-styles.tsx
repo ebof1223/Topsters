@@ -19,7 +19,7 @@ const styles = createStyles({
     overflowX: 'hidden',
   },
   heading: {
-    fontFamily: 'Lexend, sans-serif',
+    fontFamily: 'Montserrat, sans-serif',
     fontSize: '3rem',
     marginBottom: '3rem',
   },
@@ -28,6 +28,7 @@ const styles = createStyles({
     alignItems: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
+
     // [sizes.down('xl')]: {
     //   width: '80%',
     // },
@@ -35,16 +36,20 @@ const styles = createStyles({
     //   width: '75%',
     // },
   },
-
+  Fab: {
+    position: 'absolute',
+    right: '10%',
+  },
   nav: {
     display: 'flex',
     width: '100%',
     justifyContent: 'space-between',
     color: 'white',
     padding: '1rem 0 4rem 0',
+    flexDirection: 'row',
   },
 
-  topsters: {
+  Recommended: {
     marginTop: '2rem',
     display: 'flex',
     boxSizing: 'border-box',
@@ -58,6 +63,7 @@ const styles = createStyles({
     //     gridGap: '1.4rem',
     //   },
   },
+  UserTopsters: { display: 'flex' },
 });
 
 export default styles;

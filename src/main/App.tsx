@@ -1,10 +1,10 @@
 import { Route, Switch } from 'react-router-dom';
-import { recommended } from './recommended';
+import recommended from './recommended-sample';
 import { useState, useLayoutEffect } from 'react';
 import { TopsterTemplate } from '../interface.js';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Topster from '../topster/Topster';
-import TopsterList from './TopsterList';
+import Main from './Main';
 import NewTopster from '../create/NewTopster';
 import './main-styles/Page.css';
 import Page from './Page';
@@ -14,19 +14,18 @@ const App: React.FC = () => {
   const savedTopsters = JSON.parse(
     window.localStorage.getItem('topsters') || '{}'
   );
+  const howToWindow =
+    JSON.parse(window.localStorage.getItem('HowToUse')) || true;
 
   useLayoutEffect(() => {
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
-    window.localStorage.setItem('How to use prompt', JSON.stringify(openHowTo));
+    window.localStorage.setItem('HowToUse', JSON.stringify(openHowTo));
   });
 
-  const [openHowTo, setOpenHowTo] = useState(
-    JSON.parse(window.localStorage.getItem('How to use prompt'))
-  );
+  const [openHowTo, setOpenHowTo] = useState(howToWindow);
   const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : recommended
   );
-  console.log(window.localStorage);
 
   const findTopsters = (id: string) => {
     return topsters.find((topping: TopsterTemplate) => {
@@ -56,7 +55,7 @@ const App: React.FC = () => {
                 path="/home"
                 render={(routeProps) => (
                   <Page>
-                    <TopsterList
+                    <Main
                       topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
@@ -112,7 +111,7 @@ const App: React.FC = () => {
               <Route
                 render={(routeProps) => (
                   <Page>
-                    <TopsterList
+                    <Main
                       topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}

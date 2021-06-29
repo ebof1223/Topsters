@@ -1,39 +1,33 @@
 import { useState } from 'react';
 import { withStyles } from '@material-ui/styles';
-import { Link } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
-import MiniTopsters from './MiniTopsters';
+import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import styles from './main-styles/TopsterList-styles';
-import Dialog from '@material-ui/core/Dialog';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import ListItemText from '@material-ui/core/ListItemText';
-import CheckIcon from '@material-ui/icons/Check';
-import CloseIcon from '@material-ui/icons/Close';
-import Avatar from '@material-ui/core/Avatar';
-import blue from '@material-ui/core/colors/blue';
-import red from '@material-ui/core/colors/red';
 import Tooltip from '@material-ui/core/Tooltip';
+import styles from './main-styles/TopsterList-styles';
+import UserTopsters from './UserTopsters';
+import DeleteModal from './DeleteModal';
+import Recommended from './Recommended';
+import recommended from './recommended-sample';
 
 interface Props {
+  classes: {
+    root: string;
+    heading: string;
+    OuterContainer: string;
+    nav: string;
+    Recommended: string;
+    Fab: string;
+    UserTopsters: string;
+  };
   topsters: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
-  classes: {
-    root: string;
-    heading: string;
-    OuterContainer: string;
-    nav: string;
-    topsters: string;
-  };
 }
 
 const TopsterList: React.FC<Props> = ({
@@ -64,10 +58,7 @@ const TopsterList: React.FC<Props> = ({
                 color="inherit"
                 aria-label="add"
                 size="large"
-                style={{
-                  position: 'absolute',
-                  right: '10%',
-                }}
+                className={classes.Fab}
               >
                 <AddIcon />
               </Fab>
@@ -77,10 +68,24 @@ const TopsterList: React.FC<Props> = ({
         <h1 style={{ color: '#fff', fontFamily: 'Merriweather, serif' }}>
           Recommended
         </h1>
-        <TransitionGroup className={classes.topsters}>
+        <TransitionGroup className={classes.Recommended}>
+          {recommended.map((item: any) => (
+            <CSSTransition key={item.id} classNames="fade" timeout={500}>
+              <Recommended
+                {...item}
+                handleClick={() => toTopster(item.id)}
+                id={item.id}
+                deleteDialog={deleteDialog}
+                setDeleteDialog={setDeleteDialog}
+                setToBeDeleted={setToBeDeleted}
+              />
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
+        <TransitionGroup className={classes.UserTopsters}>
           {topsters.map((item: TopsterTemplate) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
-              <MiniTopsters
+              <UserTopsters
                 {...item}
                 handleClick={() => toTopster(item.id)}
                 id={item.id}
@@ -92,29 +97,11 @@ const TopsterList: React.FC<Props> = ({
           ))}
         </TransitionGroup>
       </div>
-      <Dialog open={deleteDialog} aria-labelledby="delete-dialog-title">
-        <DialogTitle id="delete-dialog-title">
-          Delete this topsters?
-        </DialogTitle>
-        <List>
-          <ListItem button onClick={handleDeleteConfirmation}>
-            <ListItemAvatar>
-              <Avatar style={{ backgroundColor: blue[100], color: blue[600] }}>
-                <CheckIcon />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="Delete"></ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => setDeleteDialog(!deleteDialog)}>
-            <ListItemAvatar>
-              <Avatar style={{ backgroundColor: red[100], color: red[600] }}>
-                <CloseIcon />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="Cancel"></ListItemText>
-          </ListItem>
-        </List>
-      </Dialog>
+      <DeleteModal
+        handleDeleteConfirmation={handleDeleteConfirmation}
+        deleteDialog={deleteDialog}
+        setDeleteDialog={setDeleteDialog}
+      />
     </div>
   );
 };
