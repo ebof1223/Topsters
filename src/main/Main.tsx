@@ -6,11 +6,10 @@ import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import Tooltip from '@material-ui/core/Tooltip';
-import styles from './main-styles/TopsterList-styles';
+import styles from './main-styles/Main-styles';
 import UserTopsters from './UserTopsters';
 import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
-import recommended from './recommended-sample';
 
 interface Props {
   classes: {
@@ -28,6 +27,7 @@ interface Props {
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
+  recommended: any;
 }
 
 const TopsterList: React.FC<Props> = ({
@@ -35,13 +35,17 @@ const TopsterList: React.FC<Props> = ({
   history,
   setTopsters,
   classes,
+  recommended,
 }) => {
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
-  const toTopster = (id: string) => {
-    history.push(`/topsters/${id}`);
+  const toTopster = (id: string, type: string) => {
+    type === 'recommended'
+      ? history.push(`/recommended/${id}`)
+      : history.push(`/topsters/${id}`);
   };
+
   const handleDeleteConfirmation = () => {
     let newTopster = topsters.filter((item) => item.id !== toBeDeleted);
     setTopsters([...newTopster]);
@@ -73,7 +77,7 @@ const TopsterList: React.FC<Props> = ({
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <Recommended
                 {...item}
-                handleClick={() => toTopster(item.id)}
+                handleClick={() => toTopster(item.id, 'recommended')}
                 id={item.id}
                 deleteDialog={deleteDialog}
                 setDeleteDialog={setDeleteDialog}
@@ -87,7 +91,7 @@ const TopsterList: React.FC<Props> = ({
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <UserTopsters
                 {...item}
-                handleClick={() => toTopster(item.id)}
+                handleClick={() => toTopster(item.id, 'userTopster')}
                 id={item.id}
                 deleteDialog={deleteDialog}
                 setDeleteDialog={setDeleteDialog}

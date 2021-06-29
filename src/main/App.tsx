@@ -24,12 +24,17 @@ const App: React.FC = () => {
 
   const [openHowTo, setOpenHowTo] = useState(howToWindow);
   const [topsters, setTopsters] = useState(
-    Object.keys(savedTopsters).length ? savedTopsters : recommended
+    Object.keys(savedTopsters).length ? savedTopsters : []
   );
 
-  const findTopsters = (id: string) => {
-    return topsters.find((topping: TopsterTemplate) => {
-      return topping.id === id;
+  const findUserTopsters = (id: string) => {
+    return topsters.find((topster: TopsterTemplate) => {
+      return topster.id === id;
+    });
+  };
+  const findRecommendedTopsters = (id: string) => {
+    return recommended.find((topster: any) => {
+      return topster.id === id;
     });
   };
   const saveTopsters = (newTopster: TopsterTemplate) => {
@@ -56,6 +61,7 @@ const App: React.FC = () => {
                 render={(routeProps) => (
                   <Page>
                     <Main
+                      recommended={recommended}
                       topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
@@ -80,13 +86,38 @@ const App: React.FC = () => {
               />
               <Route
                 exact
+                path="/recommended/:id"
+                render={(routeProps) => (
+                  <Page>
+                    <Topster
+                      title={
+                        findRecommendedTopsters(routeProps.match.params.id)
+                          .title
+                      }
+                      id={
+                        findRecommendedTopsters(routeProps.match.params.id).id
+                      }
+                      albums={
+                        findRecommendedTopsters(routeProps.match.params.id)
+                          .albums
+                      }
+                      recommended={recommended}
+                      {...routeProps}
+                    />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
                 path="/topsters/:id"
                 render={(routeProps) => (
                   <Page>
                     <Topster
-                      title={findTopsters(routeProps.match.params.id).title}
-                      id={findTopsters(routeProps.match.params.id).id}
-                      albums={findTopsters(routeProps.match.params.id).albums}
+                      title={findUserTopsters(routeProps.match.params.id).title}
+                      id={findUserTopsters(routeProps.match.params.id).id}
+                      albums={
+                        findUserTopsters(routeProps.match.params.id).albums
+                      }
                       topsters={topsters}
                       {...routeProps}
                     />
@@ -112,6 +143,7 @@ const App: React.FC = () => {
                 render={(routeProps) => (
                   <Page>
                     <Main
+                      recommended={recommended}
                       topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
