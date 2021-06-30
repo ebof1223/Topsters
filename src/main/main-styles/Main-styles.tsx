@@ -8,7 +8,12 @@ const styles = createStyles({
       transition: 'opacity 500ms ease-out',
     },
   },
-
+  BackButton: {
+    color: 'white',
+    position: 'absolute',
+    top: 10,
+    left: 25,
+  },
   root: {
     backgroundColor: 'rgb(23,23,26)',
     height: '100%',
@@ -69,12 +74,24 @@ const styles = createStyles({
     //     gridGap: '1.4rem',
     //   },
   },
-  UserTopstersTitle: {
+  TitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     marginTop: '4rem',
+    display: 'flex',
+    alignItems: 'center',
   },
-  UserTopsters: { display: 'flex' },
+  UserTopsters: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    overflowY: 'scroll',
+    overflowX: 'hidden',
+    gridGap: '0',
+    scrollbarWidth: 'none',
+    scrollSnapType: 'y mandatory',
+    height: '450px',
+    // backgroundColor: 'green',
+  },
 });
 
 export default styles;

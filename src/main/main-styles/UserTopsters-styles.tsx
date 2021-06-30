@@ -3,20 +3,25 @@ import { createStyles } from '@material-ui/styles';
 const styles = createStyles({
   root: {
     boxSizing: 'border-box',
-    padding: '0.5rem',
-    margin: '-1rem -3rem',
+    // margin: '-2rem -1rem -2rem -1rem',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    width: '200px',
+    scrollSnapType: 'y mandatory',
+    scrollSnapAlign: 'start',
   },
+
   card: {
     cursor: 'pointer',
-    transform: 'scale(0.6)',
+    transform: 'scale(0.65)',
   },
   topsterGrid: {
     display: 'grid',
-    position: 'relative',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridAutoRows: 'repeat(3, 1fr)',
+    position: 'relative',
     background: 'white',
-    width: '251px',
+    // width: '251px',
     borderRadius: '5px',
     transition: 'all 0.3s ease',
     border: '3px solid #91a7ff',
@@ -34,7 +39,7 @@ const styles = createStyles({
   // },
   MiniTopsters: {
     height: '72px',
-    width: '81.5px',
+    width: '72px',
     display: 'block ruby',
     position: 'relative',
     padding: '1rem',

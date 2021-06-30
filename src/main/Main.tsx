@@ -10,6 +10,7 @@ import styles from './main-styles/Main-styles';
 import UserTopsters from './UserTopsters';
 import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 interface Props {
   classes: {
@@ -21,7 +22,8 @@ interface Props {
     Fab: string;
     UserTopsters: string;
     RecommendedTitle: string;
-    UserTopstersTitle: string;
+    TitleContainer: string;
+    BackButton: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -56,6 +58,9 @@ const Main: React.FC<Props> = ({
   };
   return (
     <div className={classes.root}>
+      <Link to="/" className={classes.BackButton}>
+        <ArrowBackIcon fontSize="large" />
+      </Link>
       <div className={classes.OuterContainer}>
         <nav className={classes.nav}></nav>
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
@@ -73,7 +78,21 @@ const Main: React.FC<Props> = ({
             </CSSTransition>
           ))}
         </TransitionGroup>
-        <h2 className={classes.UserTopstersTitle}>My Topsters</h2>
+        <div className={classes.TitleContainer}>
+          <h2>My Topsters</h2>
+          <Link to={'/topsters/new'}>
+            <Tooltip title="Add">
+              <Fab
+                color="inherit"
+                aria-label="add"
+                size="small"
+                className={classes.Fab}
+              >
+                <AddIcon />
+              </Fab>
+            </Tooltip>
+          </Link>
+        </div>
         <TransitionGroup>
           <div className={classes.UserTopsters}>
             {topsters.map((item: TopsterTemplate) => (
@@ -88,18 +107,6 @@ const Main: React.FC<Props> = ({
                 />
               </CSSTransition>
             ))}
-            <Link to={'/topsters/new'}>
-              <Tooltip title="Add">
-                <Fab
-                  color="inherit"
-                  aria-label="add"
-                  size="small"
-                  className={classes.Fab}
-                >
-                  <AddIcon />
-                </Fab>
-              </Tooltip>
-            </Link>
           </div>
         </TransitionGroup>
       </div>
