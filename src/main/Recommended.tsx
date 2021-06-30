@@ -17,38 +17,31 @@ interface Props {
   };
   title: string;
   albums: AlbumTemplate[];
-  id: string;
-  deleteDialog: boolean;
-  setDeleteDialog: (input: boolean) => void;
   handleClick: () => void;
-  setToBeDeleted: (input: string) => void;
 }
 
 const Recommended: React.FC<Props> = ({
   classes,
   albums,
   handleClick,
-  id,
-  deleteDialog,
-  setDeleteDialog,
-  setToBeDeleted,
   title,
 }) => {
-  const Recommended = albums.map((item) => (
-    <div
-      className={classes.MiniTopsters}
-      style={{
-        background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
-      }}
-      key={item.name}
-    />
-  ));
-
   return (
     <div className={classes.root}>
       <Paper elevation={3} className={classes.card} onClick={handleClick}>
         <div className={classes.topsterGrid}>
-          {Recommended}
+          {albums.map((item) => (
+            <div
+              className={classes.MiniTopsters}
+              style={{
+                background:
+                  `url(${item.image[1]['#text']}) no-repeat center center/cover` &&
+                  `url(${item.image[2]['#text']}) no-repeat center center/cover` &&
+                  `url(${item.image[3]['#text']}) no-repeat center center/cover`,
+              }}
+              key={item.name}
+            />
+          ))}
           <div className={classes.PlayIcon}>
             <PlayCircleFilledIcon fontSize="large" />
           </div>

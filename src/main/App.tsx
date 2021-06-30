@@ -59,7 +59,7 @@ const App: React.FC = () => {
                   </Page>
                 )}
               />
-              {/* <Route
+              <Route
                 exact
                 path="/home"
                 render={(routeProps) => (
@@ -73,7 +73,7 @@ const App: React.FC = () => {
                     />
                   </Page>
                 )}
-              /> */}
+              />
               <Route
                 exact
                 path="/topsters/new"

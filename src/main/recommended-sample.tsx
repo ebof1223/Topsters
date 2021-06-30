@@ -3082,7 +3082,7 @@ const recommended = [
           },
           {
             '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/cced9669d6650c5ffc303ff5f6177a79.png',
+              'https://lastfm.freetls.fastly.net/i/u/174s/cced9669d6650c5ffc303ff5f6177a79.png',
             size: 'extralarge',
           },
           {
@@ -9737,6 +9737,6 @@ const recommended = [
     ],
   },
 ];
-export default  recommended ;
+export default recommended;
 
 //need to account for artists with no mbid with user populations

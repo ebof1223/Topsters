@@ -65,7 +65,7 @@ const Main: React.FC<Props> = ({
     history.push('/');
     setTimeout(() => {
       setOpenLandingModal(true);
-    }, 500);
+    }, 100);
   };
   return (
     <div className={classes.root}>
@@ -82,9 +82,6 @@ const Main: React.FC<Props> = ({
                 {...item}
                 handleClick={() => toTopster(item.id, 'recommended')}
                 id={item.id}
-                deleteDialog={deleteDialog}
-                setDeleteDialog={setDeleteDialog}
-                setToBeDeleted={setToBeDeleted}
               />
             </CSSTransition>
           ))}
