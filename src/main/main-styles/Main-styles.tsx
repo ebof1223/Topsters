@@ -11,6 +11,7 @@ const styles = createStyles({
   BackButton: {
     color: 'white',
     position: 'absolute',
+    cursor: 'pointer',
     top: 10,
     left: 25,
   },

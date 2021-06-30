@@ -21,7 +21,7 @@ const App: React.FC = () => {
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
     window.localStorage.setItem('HowToUse', JSON.stringify(openHowTo));
   });
-
+  const [openLandingModal, setOpenLandingModal] = useState(true);
   const [openHowTo, setOpenHowTo] = useState(howToWindow);
   const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : []
@@ -51,11 +51,15 @@ const App: React.FC = () => {
                 path="/"
                 render={(routeProps) => (
                   <Page>
-                    <Landing {...routeProps} />
+                    <Landing
+                      {...routeProps}
+                      openLandingModal={openLandingModal}
+                      setOpenLandingModal={setOpenLandingModal}
+                    />
                   </Page>
                 )}
               />
-              <Route
+              {/* <Route
                 exact
                 path="/home"
                 render={(routeProps) => (
@@ -65,10 +69,11 @@ const App: React.FC = () => {
                       topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
+                      setOpenLandingModal={setOpenLandingModal}
                     />
                   </Page>
                 )}
-              />
+              /> */}
               <Route
                 exact
                 path="/topsters/new"
@@ -147,6 +152,7 @@ const App: React.FC = () => {
                       topsters={topsters}
                       {...routeProps}
                       setTopsters={setTopsters}
+                      setOpenLandingModal={setOpenLandingModal}
                     />
                   </Page>
                 )}

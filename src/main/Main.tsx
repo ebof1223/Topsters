@@ -34,6 +34,7 @@ interface Props {
   };
   setTopsters: (input: TopsterTemplate[]) => void;
   recommended: any;
+  setOpenLandingModal: (i: boolean) => void;
 }
 
 const Main: React.FC<Props> = ({
@@ -42,6 +43,7 @@ const Main: React.FC<Props> = ({
   setTopsters,
   classes,
   recommended,
+  setOpenLandingModal,
 }) => {
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
@@ -58,11 +60,18 @@ const Main: React.FC<Props> = ({
 
     setDeleteDialog(!deleteDialog);
   };
+
+  const handleLandingModal = () => {
+    history.push('/');
+    setTimeout(() => {
+      setOpenLandingModal(true);
+    }, 500);
+  };
   return (
     <div className={classes.root}>
-      <Link to="/" className={classes.BackButton}>
+      <div onClick={handleLandingModal} className={classes.BackButton}>
         <ArrowBackIcon fontSize="large" />
-      </Link>
+      </div>
       <div className={classes.OuterContainer}>
         <nav className={classes.nav}></nav>
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
@@ -95,29 +104,27 @@ const Main: React.FC<Props> = ({
             </Tooltip>
           </Link>
         </div>
-        <TransitionGroup>
-          <div className={classes.subMain}>
-            <div className={classes.UserTopsters}>
-              {topsters.map((item: TopsterTemplate) => (
-                <CSSTransition key={item.id} classNames="fade" timeout={500}>
-                  <UserTopsters
-                    {...item}
-                    handleClick={() => toTopster(item.id, 'userTopster')}
-                    id={item.id}
-                    deleteDialog={deleteDialog}
-                    setDeleteDialog={setDeleteDialog}
-                    setToBeDeleted={setToBeDeleted}
-                  />
-                </CSSTransition>
-              ))}
-            </div>
-            <img
-              className={classes.AOTD}
-              src="https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
-              alt="album"
-            />
+        <div className={classes.subMain}>
+          <div className={classes.UserTopsters}>
+            {topsters.map((item: TopsterTemplate) => (
+              <CSSTransition key={item.id} classNames="fade" timeout={500}>
+                <UserTopsters
+                  {...item}
+                  handleClick={() => toTopster(item.id, 'userTopster')}
+                  id={item.id}
+                  deleteDialog={deleteDialog}
+                  setDeleteDialog={setDeleteDialog}
+                  setToBeDeleted={setToBeDeleted}
+                />
+              </CSSTransition>
+            ))}
           </div>
-        </TransitionGroup>
+          <img
+            className={classes.AOTD}
+            src="https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
+            alt="album"
+          />
+        </div>
       </div>
       <DeleteModal
         handleDeleteConfirmation={handleDeleteConfirmation}

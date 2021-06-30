@@ -10,12 +10,23 @@ interface Props {
     Image: string;
   };
   history: any;
+  openLandingModal: boolean;
+  setOpenLandingModal: (i: boolean) => void;
 }
 
-const Landing: React.FC<Props> = ({ classes, history }) => {
+const Landing: React.FC<Props> = ({
+  classes,
+  history,
+  openLandingModal,
+  setOpenLandingModal,
+}) => {
   return (
     <>
-      <LoginModule history={history} />
+      <LoginModule
+        history={history}
+        openLandingModal={openLandingModal}
+        setOpenLandingModal={setOpenLandingModal}
+      />
       <div className={classes.Scene}>
         <div className={classes.Frame}>
           <img className={classes.Image} src={image} alt="background albums" />

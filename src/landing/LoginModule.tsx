@@ -1,23 +1,30 @@
 import { Button } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
-import { useState } from 'react';
 import useStyles from './landing-styles/LoginModuleStyles';
 
 interface Props {
   history: any;
+  openLandingModal: boolean;
+  setOpenLandingModal: (i: boolean) => void;
 }
 
-const LoginModule: React.FC<Props> = ({ history }) => {
-  const [open, setOpen] = useState(true);
+const LoginModule: React.FC<Props> = ({
+  history,
+  openLandingModal,
+  setOpenLandingModal,
+}) => {
+  // const [open, setOpen] = useState(true);
   const classes = useStyles();
   const handleClose = () => {
-    setOpen(false);
-    history.push('/home');
+    setOpenLandingModal(false);
+    setTimeout(() => {
+      history.push('/home');
+    }, 500);
   };
   return (
     <div>
       <Modal
-        open={open}
+        open={openLandingModal}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
