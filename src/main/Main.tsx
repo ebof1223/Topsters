@@ -24,6 +24,8 @@ interface Props {
     RecommendedTitle: string;
     TitleContainer: string;
     BackButton: string;
+    subMain: string;
+    AOTD: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -94,19 +96,26 @@ const Main: React.FC<Props> = ({
           </Link>
         </div>
         <TransitionGroup>
-          <div className={classes.UserTopsters}>
-            {topsters.map((item: TopsterTemplate) => (
-              <CSSTransition key={item.id} classNames="fade" timeout={500}>
-                <UserTopsters
-                  {...item}
-                  handleClick={() => toTopster(item.id, 'userTopster')}
-                  id={item.id}
-                  deleteDialog={deleteDialog}
-                  setDeleteDialog={setDeleteDialog}
-                  setToBeDeleted={setToBeDeleted}
-                />
-              </CSSTransition>
-            ))}
+          <div className={classes.subMain}>
+            <div className={classes.UserTopsters}>
+              {topsters.map((item: TopsterTemplate) => (
+                <CSSTransition key={item.id} classNames="fade" timeout={500}>
+                  <UserTopsters
+                    {...item}
+                    handleClick={() => toTopster(item.id, 'userTopster')}
+                    id={item.id}
+                    deleteDialog={deleteDialog}
+                    setDeleteDialog={setDeleteDialog}
+                    setToBeDeleted={setToBeDeleted}
+                  />
+                </CSSTransition>
+              ))}
+            </div>
+            <img
+              className={classes.AOTD}
+              src="https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
+              alt="album"
+            />
           </div>
         </TransitionGroup>
       </div>

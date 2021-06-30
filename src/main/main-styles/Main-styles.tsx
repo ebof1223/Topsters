@@ -81,6 +81,17 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'center',
   },
+  subMain: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  AOTD: {
+    borderRadius: '5px',
+    border: '3px solid #91a7ff',
+    width: '400px',
+    height: '400px',
+    marginLeft: '5rem',
+  },
   UserTopsters: {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',

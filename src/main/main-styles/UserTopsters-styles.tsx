@@ -3,7 +3,6 @@ import { createStyles } from '@material-ui/styles';
 const styles = createStyles({
   root: {
     boxSizing: 'border-box',
-    // margin: '-2rem -1rem -2rem -1rem',
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
     width: '200px',
@@ -21,7 +20,6 @@ const styles = createStyles({
     gridAutoRows: 'repeat(3, 1fr)',
     position: 'relative',
     background: 'white',
-    // width: '251px',
     borderRadius: '5px',
     transition: 'all 0.3s ease',
     border: '3px solid #91a7ff',
