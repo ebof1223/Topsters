@@ -34,8 +34,8 @@ interface Props {
     contentShift: string;
     background: string;
   };
-  openHowTo: boolean;
-  setOpenHowTo: (i: boolean) => void;
+  setShowAgain: (i: boolean) => void;
+  showAgain: boolean;
 }
 var newTopstersHistory: any;
 const NewTopster: React.FC<Props> = ({
@@ -44,8 +44,8 @@ const NewTopster: React.FC<Props> = ({
   match,
   topsters,
   classes,
-  openHowTo,
-  setOpenHowTo,
+  setShowAgain,
+  showAgain,
 }) => {
   const retrieveTitle = () => {
     for (let [index, item] of topsters.entries()) {
@@ -102,7 +102,7 @@ const NewTopster: React.FC<Props> = ({
 
   return (
     <>
-      <HowToUse openHowTo={openHowTo} setOpenHowTo={setOpenHowTo} />
+      <HowToUse setShowAgain={setShowAgain} showAgain={showAgain} />
       <NewTopsterNav
         openDrawer={openDrawer}
         setOpenDrawer={setOpenDrawer}

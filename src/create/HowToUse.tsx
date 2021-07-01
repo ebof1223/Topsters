@@ -7,18 +7,23 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 interface Props {
-  openHowTo: boolean;
-  setOpenHowTo: (i: boolean) => void;
+  setShowAgain: (i: boolean) => void;
+  showAgain: boolean;
 }
-const HowToUse: React.FC<Props> = ({ openHowTo, setOpenHowTo }) => {
+const HowToUse: React.FC<Props> = ({ setShowAgain, showAgain }) => {
   const [checked, setChecked] = useState(false);
+  const [openModal, setOpenModal] = useState(showAgain);
+
   const handleClose = () => {
-    if (checked) setOpenHowTo(false);
+    setOpenModal(false);
+    if (checked) {
+      setShowAgain(false);
+    }
   };
   return (
     <div>
       <Dialog
-        open={openHowTo}
+        open={openModal}
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
         maxWidth="sm"

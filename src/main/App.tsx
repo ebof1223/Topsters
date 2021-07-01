@@ -14,15 +14,13 @@ const App: React.FC = () => {
   const savedTopsters = JSON.parse(
     window.localStorage.getItem('topsters') || '{}'
   );
-  const howToWindow =
-    JSON.parse(window.localStorage.getItem('HowToUse')) || true;
 
   useLayoutEffect(() => {
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
-    window.localStorage.setItem('HowToUse', JSON.stringify(openHowTo));
+    window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
   });
   const [openLandingModal, setOpenLandingModal] = useState(true);
-  const [openHowTo, setOpenHowTo] = useState(howToWindow);
+  const [showAgain, setShowAgain] = useState(true);
   const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : []
   );
@@ -83,8 +81,8 @@ const App: React.FC = () => {
                       saveTopsters={saveTopsters}
                       {...routeProps}
                       topsters={topsters}
-                      openHowTo={openHowTo}
-                      setOpenHowTo={setOpenHowTo}
+                      setShowAgain={setShowAgain}
+                      showAgain={showAgain}
                     />
                   </Page>
                 )}
@@ -138,8 +136,8 @@ const App: React.FC = () => {
                       saveTopsters={saveTopsters}
                       {...routeProps}
                       topsters={topsters}
-                      openHowTo={openHowTo}
-                      setOpenHowTo={setOpenHowTo}
+                      setShowAgain={setShowAgain}
+                      showAgain={showAgain}
                     />
                   </Page>
                 )}

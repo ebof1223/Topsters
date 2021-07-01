@@ -105,7 +105,6 @@ const Search: React.FC<Props> = ({
             let res = await axios.get(
               `${LASTFM_API_URL}?method=album.getinfo&api_key=${API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
             );
-            console.log(res.data.album.tracks);
             if (
               res.data.album &&
               res.data.album.tracks &&
@@ -119,7 +118,6 @@ const Search: React.FC<Props> = ({
         });
     } catch (error) {
       setNoResults(true);
-      console.log(error);
     }
     setIsLoading(false);
   };

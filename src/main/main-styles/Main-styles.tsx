@@ -101,8 +101,8 @@ const styles = createStyles({
     gridGap: '0',
     scrollbarWidth: 'none',
     scrollSnapType: 'y mandatory',
-    height: '450px',
-    // backgroundColor: 'green',
+    height: '400px',
+    width: '800px',
   },
 });
 

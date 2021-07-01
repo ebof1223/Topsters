@@ -12,6 +12,7 @@ const styles = createStyles({
 
   card: {
     cursor: 'pointer',
+    height: '200px',
     transform: 'scale(0.65)',
   },
   topsterGrid: {
