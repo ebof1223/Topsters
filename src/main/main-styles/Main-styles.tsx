@@ -75,7 +75,7 @@ const styles = createStyles({
     //     gridGap: '1.4rem',
     //   },
   },
-  TitleContainer: {
+  UserTitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     marginTop: '4rem',
@@ -84,14 +84,24 @@ const styles = createStyles({
   },
   subMain: {
     display: 'flex',
-    alignItems: 'center',
+    // alignItems: 'center',
   },
+  AOTDContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '-2rem',
+  },
+
   AOTD: {
     borderRadius: '5px',
     border: '3px solid #91a7ff',
     width: '400px',
     height: '400px',
     marginLeft: '5rem',
+  },
+  AOTDTitleContainer: {
+    color: '#fff',
+    fontFamily: 'Merriweather, serif',
   },
   UserTopsters: {
     display: 'grid',

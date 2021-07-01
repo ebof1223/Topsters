@@ -22,10 +22,12 @@ interface Props {
     Fab: string;
     UserTopsters: string;
     RecommendedTitle: string;
-    TitleContainer: string;
+    UserTitleContainer: string;
     BackButton: string;
     subMain: string;
+    AOTDContainer: string;
     AOTD: string;
+    AOTDTitleContainer: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -86,7 +88,7 @@ const Main: React.FC<Props> = ({
             </CSSTransition>
           ))}
         </TransitionGroup>
-        <div className={classes.TitleContainer}>
+        <div className={classes.UserTitleContainer}>
           <h2>My Topsters</h2>
           <Link to={'/topsters/new'}>
             <Tooltip title="Add">
@@ -116,11 +118,14 @@ const Main: React.FC<Props> = ({
               </CSSTransition>
             ))}
           </div>
-          <img
-            className={classes.AOTD}
-            src="https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
-            alt="album"
-          />
+          <div className={classes.AOTDContainer}>
+            {/* <h2 className={classes.AOTDTitleContainer}>Up Next...</h2> */}
+            <img
+              className={classes.AOTD}
+              src="https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
+              alt="album"
+            />
+          </div>
         </div>
       </div>
       <DeleteModal

@@ -86,38 +86,43 @@ const Search: React.FC<Props> = ({
     setResults([]);
     setIsLoading(true);
     setNoResults(false);
-    try {
-      await axios
-        .get(
-          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json`
-        )
-        .then((res) => {
-          console.log('this is our log', res.data.topalbums.album);
-          var albumsArray = res.data.topalbums.album.filter(
-            (item: AlbumTemplate) => item.image[3]['#text']
-          );
-          return albumsArray;
-        })
+    var albumsArrayCopy = [];
+    await axios
+      .get(
+        `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json`
+      )
+      .then((res) => {
+        console.log('this is our log', res.data.topalbums.album);
+        var albumsArray = res.data.topalbums.album.filter(
+          (item: AlbumTemplate) => item.image[3]['#text']
+        );
+        return albumsArray;
+      })
 
-        .then(async (albumsArray) => {
-          let albumsArrayCopy = [];
-          for (let album of albumsArray) {
+      .then(async (albumsArray) => {
+        for (let album of albumsArray) {
+          try {
             let res = await axios.get(
               `${LASTFM_API_URL}?method=album.getinfo&api_key=${API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
             );
             if (
               res.data.album &&
               res.data.album.tracks &&
+              res.data.album.tracks.track &&
               res.data.album.tracks.track.length > 1
             ) {
               albumsArrayCopy.push(res.data.album);
             }
+          } catch (error) {
+            console.log(error);
           }
-          setResults(albumsArrayCopy);
-          setOpenDrawer(true);
-        });
-    } catch (error) {
+        }
+      });
+    if (!albumsArrayCopy.length) {
       setNoResults(true);
+    } else {
+      setResults(albumsArrayCopy);
+      setOpenDrawer(true);
     }
     setIsLoading(false);
   };
