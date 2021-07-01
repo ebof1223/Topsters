@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
@@ -11,6 +11,7 @@ import UserTopsters from './UserTopsters';
 import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import BookmarksIcon from '@material-ui/icons/Bookmarks';
 
 interface Props {
   classes: {
@@ -38,7 +39,6 @@ interface Props {
   recommended: any;
   setOpenLandingModal: (i: boolean) => void;
 }
-
 const Main: React.FC<Props> = ({
   topsters,
   history,
@@ -47,6 +47,11 @@ const Main: React.FC<Props> = ({
   recommended,
   setOpenLandingModal,
 }) => {
+  const AlwaysScrollToBottom = () => {
+    const elementRef: React.MutableRefObject<any> = useRef();
+    useEffect(() => elementRef.current && elementRef.current.scrollIntoView());
+    return <div ref={elementRef} />;
+  };
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
@@ -117,14 +122,22 @@ const Main: React.FC<Props> = ({
                 />
               </CSSTransition>
             ))}
+            <AlwaysScrollToBottom />
           </div>
           <div className={classes.AOTDContainer}>
-            {/* <h2 className={classes.AOTDTitleContainer}>Up Next...</h2> */}
-            <img
-              className={classes.AOTD}
-              src="https://upload.wikimedia.org/wikipedia/en/3/38/Bob_Dylan_-_Blonde_on_Blonde.jpg"
-              alt="album"
-            />
+            <div className={classes.AOTD}>
+              <BookmarksIcon
+                style={{
+                  zIndex: 10,
+                  position: 'relative',
+                  marginLeft: '90%',
+                  marginTop: '2%',
+                  color: '#91a7ff',
+                  cursor: 'pointer',
+                }}
+                fontSize="large"
+              />
+            </div>
           </div>
         </div>
       </div>

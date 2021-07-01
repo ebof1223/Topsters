@@ -84,12 +84,11 @@ const styles = createStyles({
   },
   subMain: {
     display: 'flex',
-    // alignItems: 'center',
+    alignItems: 'center',
   },
   AOTDContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '-2rem',
   },
 
   AOTD: {
@@ -98,6 +97,7 @@ const styles = createStyles({
     width: '400px',
     height: '400px',
     marginLeft: '5rem',
+    cursor: 'pointer',
   },
   AOTDTitleContainer: {
     color: '#fff',

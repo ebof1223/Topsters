@@ -86,7 +86,7 @@ const Topster: React.FC<Props> = ({
           onClick={() => shiftTopsters('left')}
         >
           <ArrowBackIosIcon />
-          <h3>{listToBeRendered[topsterIndex(title, 'left')].title}</h3>
+          {/* <h3>{listToBeRendered[topsterIndex(title, 'left')].title}</h3> */}
         </div>
       )}
       <div className={classes.Topster}>
@@ -133,13 +133,13 @@ const Topster: React.FC<Props> = ({
           className={classes.RightPanel}
           onClick={() => shiftTopsters('right')}
         >
-          <h3>{listToBeRendered[topsterIndex(title, 'right')].title}</h3>
+          {/* <h3>{listToBeRendered[topsterIndex(title, 'right')].title}</h3> */}
           <ArrowForwardIosIcon />
         </div>
       )}
-      <footer className={classes.Footer}>
+      {/* <footer className={classes.Footer}>
         <h3>{title}</h3>
-      </footer>
+      </footer> */}
     </>
   );
 };
