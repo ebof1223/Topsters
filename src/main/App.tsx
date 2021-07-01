@@ -2,6 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import recommended from './recommended-sample';
 import { useState, useLayoutEffect } from 'react';
 import { TopsterTemplate } from '../interface.js';
+import Bookmarks from './Bookmarks';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Topster from '../topster/Topster';
 import Main from './Main';
@@ -14,9 +15,13 @@ const App: React.FC = () => {
   const savedTopsters = JSON.parse(
     window.localStorage.getItem('topsters') || '{}'
   );
+  const bookmarkedTopsters = JSON.parse(
+    window.localStorage.getItem('bookmarks') || '{}'
+  );
 
   useLayoutEffect(() => {
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
+    // window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
   });
   const [openLandingModal, setOpenLandingModal] = useState(true);
@@ -24,6 +29,11 @@ const App: React.FC = () => {
   const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : []
   );
+  const [bookmarks, setBookmarks] = useState<any>(
+    // Object.keys(bookmarkedTopsters).length ? bookmarkedTopsters : []
+    []
+  );
+  // console.log(bookmarks);
 
   const findUserTopsters = (id: string) => {
     return topsters.find((topster: TopsterTemplate) => {
@@ -74,6 +84,19 @@ const App: React.FC = () => {
               />
               <Route
                 exact
+                path="/bookmarks"
+                render={(routeProps) => (
+                  <Page>
+                    <Bookmarks
+                      {...routeProps}
+                      bookmarks={bookmarks}
+                      setBookmarks={setBookmarks}
+                    />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
                 path="/topsters/new"
                 render={(routeProps) => (
                   <Page>
@@ -104,8 +127,11 @@ const App: React.FC = () => {
                         findRecommendedTopsters(routeProps.match.params.id)
                           .albums
                       }
+                      topsters={topsters}
                       recommended={recommended}
                       {...routeProps}
+                      bookmarks={bookmarks}
+                      setBookmarks={setBookmarks}
                     />
                   </Page>
                 )}

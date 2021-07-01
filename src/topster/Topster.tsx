@@ -27,6 +27,8 @@ interface Props {
     goBack: () => void;
     push: (input: string) => void;
   };
+  bookmarks?: [];
+  setBookmarks?: any;
 }
 
 const Topster: React.FC<Props> = ({
@@ -37,6 +39,8 @@ const Topster: React.FC<Props> = ({
   topsters,
   history,
   recommended,
+  bookmarks,
+  setBookmarks,
 }) => {
   const listToBeRendered = recommended || topsters;
 
@@ -79,6 +83,9 @@ const Topster: React.FC<Props> = ({
         history={history}
         id={id}
         type={recommended ? 'recommended' : 'topsters'}
+        bookmarks={bookmarks}
+        setBookmarks={setBookmarks}
+        recommended={recommended}
       />
       {topsterIndex(title, 'left') !== null && (
         <div

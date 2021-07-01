@@ -21,6 +21,11 @@ const styles = createStyles({
     },
   },
   Icon: { marginRight: '3rem', cursor: 'pointer', color: 'black' },
+  IconOn: {
+    marginRight: '3rem',
+    cursor: 'pointer',
+    color: '#91a7ff',
+  },
 });
 
 export default styles;
