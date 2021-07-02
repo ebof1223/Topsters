@@ -5,6 +5,7 @@ import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
 
 interface Props {
   classes: {
@@ -33,14 +34,12 @@ const Navbar: React.FC<Props> = ({
   setBookmarks,
   recommended,
   initial,
-  setInitial,
 }) => {
   const [bookmarkSaved, setBookmarkSaved] = useState(initial);
-  // console.log(bookmarks);
+  const [openSnackBar, setOpenSnackBar] = useState(false);
 
   useEffect(() => {
     let current: any[];
-    // console.log(initial);
     if (initial) return;
     if (bookmarkSaved) {
       current = recommended.filter((item: { id: string }) => item.id === id);
@@ -56,26 +55,37 @@ const Navbar: React.FC<Props> = ({
     history.push(`/topsters/edit/${id}`);
   };
 
-  // if id is not in book marks, add it, turn icon purple, turn saved modal notification on
+  const handleBookmarkToggle = () => {
+    setBookmarkSaved(!bookmarkSaved);
+    if (!bookmarkSaved) {
+      setOpenSnackBar(true);
+    }
+  };
   return (
-    <header className={classes.Navbar}>
-      <Link to={'/home'}>
-        <HomeIcon
-          style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
-        />
-      </Link>
-      <div className={classes.Title}>
-        <h3>{title}</h3>
-      </div>
-      {type === 'topsters' ? (
-        <EditIcon className={classes.Icon} onClick={handleEdit} />
-      ) : (
-        <BookmarksIcon
-          className={bookmarkSaved ? classes.IconOn : classes.Icon}
-          onClick={() => setBookmarkSaved(!bookmarkSaved)}
-        />
-      )}
-    </header>
+    <>
+      <ToggleBookmarkSnackBar
+        openSnackBar={openSnackBar}
+        setOpenSnackBar={setOpenSnackBar}
+      />
+      <header className={classes.Navbar}>
+        <Link to={'/home'}>
+          <HomeIcon
+            style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
+          />
+        </Link>
+        <div className={classes.Title}>
+          <h3>{title}</h3>
+        </div>
+        {type === 'topsters' ? (
+          <EditIcon className={classes.Icon} onClick={handleEdit} />
+        ) : (
+          <BookmarksIcon
+            className={bookmarkSaved ? classes.IconOn : classes.Icon}
+            onClick={handleBookmarkToggle}
+          />
+        )}
+      </header>
+    </>
   );
 };
 
