@@ -22,8 +22,6 @@ export default function ToggleBookmarkSnackBar({
 }) {
   const classes = useStyles();
 
-  console.log(openSnackBar);
-
   return (
     <div className={classes.root}>
       <Snackbar

@@ -40,7 +40,7 @@ const Navbar: React.FC<Props> = ({
 
   useEffect(() => {
     let current: any[];
-    if (initial) return;
+    if (initial || !bookmarks) return;
     if (bookmarkSaved) {
       current = recommended.filter((item: { id: string }) => item.id === id);
       setBookmarks([...current, ...bookmarks]);

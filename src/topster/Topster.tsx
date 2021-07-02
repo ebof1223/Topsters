@@ -27,7 +27,7 @@ interface Props {
     goBack: () => void;
     push: (input: string) => void;
   };
-  bookmarks?: [];
+  bookmarks?: any;
   setBookmarks?: any;
 }
 
@@ -47,7 +47,7 @@ const Topster: React.FC<Props> = ({
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
 
   const [initial, setInitial] = useState(
-    bookmarks.some((item: any) => item.id === id)
+    bookmarks ? bookmarks.some((item: any) => item.id === id) : null
   );
 
   const selectAlbum = (index: number) => {

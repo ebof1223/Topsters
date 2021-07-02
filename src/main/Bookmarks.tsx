@@ -8,6 +8,7 @@ interface Props {
 }
 
 const Bookmarks: React.FC<Props> = ({ classes, bookmarks, setBookmarks }) => {
+  console.log(bookmarks);
   return <div></div>;
 };
 
