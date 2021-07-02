@@ -38,6 +38,8 @@ interface Props {
   setTopsters: (input: TopsterTemplate[]) => void;
   recommended: any;
   setOpenLandingModal: (i: boolean) => void;
+  bookmarks?: [];
+  setBookmarks?: any;
 }
 const Main: React.FC<Props> = ({
   topsters,
@@ -46,6 +48,8 @@ const Main: React.FC<Props> = ({
   classes,
   recommended,
   setOpenLandingModal,
+  bookmarks,
+  setBookmarks,
 }) => {
   const AlwaysScrollToBottom = () => {
     const elementRef: React.MutableRefObject<any> = useRef();

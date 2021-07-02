@@ -45,7 +45,10 @@ const Topster: React.FC<Props> = ({
   const listToBeRendered = recommended || topsters;
 
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
-  const [expectedBookmarkLength, setExpectedBookmarkLength] = useState(0);
+
+  const [initial, setInitial] = useState(
+    bookmarks.some((item: any) => item.id === id)
+  );
 
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
@@ -88,8 +91,8 @@ const Topster: React.FC<Props> = ({
         bookmarks={bookmarks}
         setBookmarks={setBookmarks}
         recommended={recommended}
-        expectedBookmarkLength={expectedBookmarkLength}
-        setExpectedBookmarkLength={setExpectedBookmarkLength}
+        initial={initial}
+        setInitial={setInitial}
       />
       {topsterIndex(title, 'left') !== null && (
         <div
