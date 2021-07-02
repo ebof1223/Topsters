@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
   useLayoutEffect(() => {
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
-    // window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
   });
   const [openLandingModal, setOpenLandingModal] = useState(true);
@@ -30,10 +30,9 @@ const App: React.FC = () => {
     Object.keys(savedTopsters).length ? savedTopsters : []
   );
   const [bookmarks, setBookmarks] = useState<any>(
-    // Object.keys(bookmarkedTopsters).length ? bookmarkedTopsters : []
-    []
+    Object.keys(bookmarkedTopsters).length ? bookmarkedTopsters : []
   );
-  // console.log(bookmarks);
+  console.log(bookmarks);
 
   const findUserTopsters = (id: string) => {
     return topsters.find((topster: TopsterTemplate) => {
@@ -78,6 +77,8 @@ const App: React.FC = () => {
                       {...routeProps}
                       setTopsters={setTopsters}
                       setOpenLandingModal={setOpenLandingModal}
+                      bookmarks={bookmarks}
+                      setBookmarks={setBookmarks}
                     />
                   </Page>
                 )}
@@ -177,6 +178,8 @@ const App: React.FC = () => {
                       {...routeProps}
                       setTopsters={setTopsters}
                       setOpenLandingModal={setOpenLandingModal}
+                      bookmarks={bookmarks}
+                      setBookmarks={setBookmarks}
                     />
                   </Page>
                 )}
