@@ -20,6 +20,8 @@ interface Props {
   bookmarks?: [];
   setBookmarks?: any;
   recommended?: any;
+  expectedBookmarkLength: number;
+  setExpectedBookmarkLength: any;
 }
 
 const Navbar: React.FC<Props> = ({
@@ -31,25 +33,33 @@ const Navbar: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
   recommended,
+  expectedBookmarkLength,
+  setExpectedBookmarkLength,
 }) => {
   var initial = bookmarks.some((item: any) => item.id === id);
   const [bookmarkSaved, setBookmarkSaved] = useState(initial);
-
+  let actualLength = bookmarks.length;
+  // console.log(actualLength, 'actual');
+  // console.log(expectedBookmarkLength, 'expected');
+  console.log(bookmarks);
   useEffect(() => {
+    if (expectedBookmarkLength === actualLength && actualLength !== 0) return;
+    // console.log('expected length === actual length and actual length !== 0');
     let current: any[];
     if (bookmarkSaved) {
       current = recommended.filter((item: { id: string }) => item.id === id);
-      // console.log(...current);
-      // console.log('before merge', bookmarks);
-      setBookmarks([...current]);
-      //need rerender here to update the bookmark state
-    } else {
-      current = bookmarks.filter((item: { id: string }) => item.id !== id);
-      setBookmarks([...current]);
+      setBookmarks([...current, ...bookmarks]);
+      setExpectedBookmarkLength(() => ++expectedBookmarkLength);
     }
+    // if (!bookmarkSaved) {
+    //   current = bookmarks.filter((item: { id: string }) => item.id !== id);
+    //   setBookmarks([...current]);
+    //   setBookmarkLength((expectedLength) => expectedLength - 1);
+    //   console.log('false');
+    // }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookmarkSaved]);
 
-  console.log(bookmarks);
   const handleEdit = () => {
     history.push(`/topsters/edit/${id}`);
   };

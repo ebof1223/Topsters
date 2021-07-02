@@ -3,8 +3,11 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     paper: {
-      position: 'absolute',
+      position: 'fixed',
       width: 400,
+      aspectRatio: '1/0.5',
+      margin: 'auto',
+      inset: 0,
       backgroundColor: theme.palette.background.paper,
       borderRadius: '2px',
       boxShadow: theme.shadows[5],

@@ -45,6 +45,8 @@ const Topster: React.FC<Props> = ({
   const listToBeRendered = recommended || topsters;
 
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
+  const [expectedBookmarkLength, setExpectedBookmarkLength] = useState(0);
+
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
     setSelectedAlbum(albums[index]);
@@ -86,6 +88,8 @@ const Topster: React.FC<Props> = ({
         bookmarks={bookmarks}
         setBookmarks={setBookmarks}
         recommended={recommended}
+        expectedBookmarkLength={expectedBookmarkLength}
+        setExpectedBookmarkLength={setExpectedBookmarkLength}
       />
       {topsterIndex(title, 'left') !== null && (
         <div
@@ -93,7 +97,6 @@ const Topster: React.FC<Props> = ({
           onClick={() => shiftTopsters('left')}
         >
           <ArrowBackIosIcon />
-          {/* <h3>{listToBeRendered[topsterIndex(title, 'left')].title}</h3> */}
         </div>
       )}
       <div className={classes.Topster}>
@@ -140,13 +143,9 @@ const Topster: React.FC<Props> = ({
           className={classes.RightPanel}
           onClick={() => shiftTopsters('right')}
         >
-          {/* <h3>{listToBeRendered[topsterIndex(title, 'right')].title}</h3> */}
           <ArrowForwardIosIcon />
         </div>
       )}
-      {/* <footer className={classes.Footer}>
-        <h3>{title}</h3>
-      </footer> */}
     </>
   );
 };

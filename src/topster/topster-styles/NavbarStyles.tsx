@@ -13,7 +13,6 @@ const styles = createStyles({
     marginTop: '0.5rem',
   },
   Title: {
-    // margin: '-0.5rem',
     '& h3': {
       fontFamily: 'Lexend, sans-serif',
       fontWeight: '300',
