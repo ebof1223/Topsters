@@ -15,24 +15,28 @@ const App: React.FC = () => {
   const savedTopsters = JSON.parse(
     window.localStorage.getItem('topsters') || '{}'
   );
-  const bookmarkedTopsters = JSON.parse(
+  const savedBookmarked = JSON.parse(
     window.localStorage.getItem('bookmarks') || '{}'
   );
-
-  useLayoutEffect(() => {
-    window.localStorage.setItem('topsters', JSON.stringify(topsters));
-    window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-    window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
-  });
   const [openLandingModal, setOpenLandingModal] = useState(true);
   const [showAgain, setShowAgain] = useState(true);
   const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : []
   );
-  const [bookmarks, setBookmarks] = useState<any>(
-    Object.keys(bookmarkedTopsters).length ? bookmarkedTopsters : []
+  const [bookmarks, setBookmarks] = useState(
+    Object.keys(savedBookmarked).length ? savedBookmarked : []
   );
-  console.log(bookmarks);
+
+  useLayoutEffect(() => {
+    window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    window.localStorage.setItem('topsters', JSON.stringify(topsters));
+    window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
+    console.log(
+      'ls bookmarks updated',
+      JSON.parse(window.localStorage.getItem('bookmarks'))
+    );
+  });
+  // Object.keys(bookmarkedTopsters).length ? bookmarddkedTopsters : []
 
   const findUserTopsters = (id: string) => {
     return topsters.find((topster: TopsterTemplate) => {

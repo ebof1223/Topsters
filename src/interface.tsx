@@ -16,5 +16,6 @@ export interface TopsterTemplate {
   title: string;
   id: string;
   albums: AlbumTemplate[];
+  bookmarked?: boolean;
   some?: (item: { title: string }) => boolean;
 }

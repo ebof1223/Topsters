@@ -46,10 +46,6 @@ const Topster: React.FC<Props> = ({
 
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
 
-  const [initial, setInitial] = useState(
-    bookmarks ? bookmarks.some((item: any) => item.id === id) : null
-  );
-
   const selectAlbum = (index: number) => {
     console.log(albums[index]);
     setSelectedAlbum(albums[index]);
@@ -91,8 +87,6 @@ const Topster: React.FC<Props> = ({
         bookmarks={bookmarks}
         setBookmarks={setBookmarks}
         recommended={recommended}
-        initial={initial}
-        setInitial={setInitial}
       />
       {topsterIndex(title, 'left') !== null && (
         <div

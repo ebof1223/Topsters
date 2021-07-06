@@ -21,8 +21,8 @@ interface Props {
   bookmarks?: [];
   setBookmarks?: any;
   recommended?: any;
-  initial: boolean;
-  setInitial: any;
+  filteredBookmarkIdArray?: any;
+  setFilteredBookmarkIdArray?: any;
 }
 const Navbar: React.FC<Props> = ({
   classes,
@@ -33,33 +33,35 @@ const Navbar: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
   recommended,
-  initial,
 }) => {
-  const [bookmarkSaved, setBookmarkSaved] = useState(initial);
+  //look if item is in local str, and if it is, use that bookmarked value
+  const [isBookmarked, setIsBookmarked] = useState(
+    bookmarks
+      ? recommended[
+          recommended.findIndex((item: { id: string }) => item.id === id)
+        ].bookmarked
+      : null
+  );
   const [openSnackBar, setOpenSnackBar] = useState(false);
-
   useEffect(() => {
-    let current: any[];
-    if (initial || !bookmarks) return;
-    if (bookmarkSaved) {
-      current = recommended.filter((item: { id: string }) => item.id === id);
-      setBookmarks([...current, ...bookmarks]);
-    } else {
-      current = bookmarks.filter((item: { id: string }) => item.id !== id);
-      setBookmarks([...current]);
-    }
+    if (!bookmarks) return;
+    isBookmarked && setOpenSnackBar(true);
+    let currentRecommendedTopster =
+      recommended[
+        recommended.findIndex((item: { id: string }) => item.id === id)
+      ];
+    currentRecommendedTopster.bookmarked = isBookmarked;
+    setBookmarks(recommended.filter((item: any) => item.bookmarked));
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [bookmarkSaved]);
+  }, [isBookmarked]);
 
   const handleEdit = () => {
     history.push(`/topsters/edit/${id}`);
   };
 
   const handleBookmarkToggle = () => {
-    setBookmarkSaved(!bookmarkSaved);
-    if (!bookmarkSaved) {
-      setOpenSnackBar(true);
-    }
+    setIsBookmarked(!isBookmarked);
   };
   return (
     <>
@@ -80,7 +82,7 @@ const Navbar: React.FC<Props> = ({
           <EditIcon className={classes.Icon} onClick={handleEdit} />
         ) : (
           <BookmarksIcon
-            className={bookmarkSaved ? classes.IconOn : classes.Icon}
+            className={isBookmarked ? classes.IconOn : classes.Icon}
             onClick={handleBookmarkToggle}
           />
         )}

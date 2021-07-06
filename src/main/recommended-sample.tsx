@@ -1,7 +1,8 @@
-const recommended = [
+var recommended = [
   {
     title: 'Mu Core',
     id: 'mu-core',
+    bookmarked: false,
     albums: [
       {
         name: 'In the Aeroplane Over the Sea',
@@ -1817,6 +1818,7 @@ const recommended = [
   {
     title: 'Sub Mu Core',
     id: 'sub-mu-core',
+    bookmarked: false,
     albums: [
       {
         name: '1000 gecs',
@@ -3595,6 +3597,7 @@ const recommended = [
   {
     title: 'Mu Obsessed',
     id: 'mu-obsessed',
+    bookmarked: false,
     albums: [
       {
         name: 'Yoshimi Battles The Pink Robots',
@@ -5478,6 +5481,7 @@ const recommended = [
   {
     title: 'Mu Eclectic',
     id: 'mu-eclectic',
+    bookmarked: false,
     albums: [
       {
         name: 'Det Som Engang Var',
@@ -7595,6 +7599,7 @@ const recommended = [
   {
     title: 'Mu But Weirder',
     id: 'mu-but-weirder',
+    bookmarked: false,
     albums: [
       {
         name: '1000 gecs',
