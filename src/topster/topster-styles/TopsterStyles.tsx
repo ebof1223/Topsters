@@ -84,6 +84,7 @@ const styles = createStyles({
     marginRight: '5rem',
     width: '25vw',
     height: '65vh',
+    behavior: 'smooth',
   },
   TopsterContainer: {
     background: 'rgb(255,255,255)',

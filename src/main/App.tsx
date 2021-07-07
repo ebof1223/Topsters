@@ -26,7 +26,7 @@ const App: React.FC = () => {
   const [bookmarks, setBookmarks] = useState(
     Object.keys(savedBookmarked).length ? savedBookmarked : []
   );
-  console.log(bookmarks);
+  // console.log(bookmarks);
 
   useEffect(() => {
     let localStorageBookmarks = JSON.parse(
@@ -49,10 +49,10 @@ const App: React.FC = () => {
     window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
     window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
-    console.log(
-      'ls bookmarks updated',
-      JSON.parse(window.localStorage.getItem('bookmarks'))
-    );
+    // console.log(
+    //   'ls bookmarks updated',
+    //   JSON.parse(window.localStorage.getItem('bookmarks'))
+    // );
   });
 
   const findUserTopsters = (id: string) => {

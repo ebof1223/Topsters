@@ -51,7 +51,7 @@ const Main: React.FC<Props> = ({
   bookmarks,
 }) => {
   const AlwaysScrollToBottom = () => {
-    const elementRef: React.MutableRefObject<any> = useRef();
+    const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
     useEffect(() => elementRef.current && elementRef.current.scrollIntoView());
     return <div ref={elementRef} />;
   };
@@ -130,7 +130,11 @@ const Main: React.FC<Props> = ({
             <AlwaysScrollToBottom />
           </div>
           {/* bookmarks */}
-          <div className={classes.AOTDContainer}>
+          <div
+            key={bookmarks[0].id}
+            onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
+            className={classes.AOTDContainer}
+          >
             <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
             {bookmarks[0].albums.map((item) => (
               <div

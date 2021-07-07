@@ -43,6 +43,7 @@ const Topster: React.FC<Props> = ({
   setBookmarks,
 }) => {
   const listToBeRendered = recommended || topsters;
+  console.log(listToBeRendered);
 
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
 
