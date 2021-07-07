@@ -62,7 +62,9 @@ const Navbar: React.FC<Props> = ({
 
   const handleBookmarkToggle = () => {
     setIsBookmarked(!isBookmarked);
-    setOpenSnackBar(true);
+    if (!isBookmarked) {
+      setOpenSnackBar(true);
+    }
   };
   return (
     <>
