@@ -98,6 +98,7 @@ const App: React.FC = () => {
                       {...routeProps}
                       setTopsters={setTopsters}
                       setOpenLandingModal={setOpenLandingModal}
+                      bookmarks={bookmarks}
                     />
                   </Page>
                 )}
@@ -197,6 +198,7 @@ const App: React.FC = () => {
                       {...routeProps}
                       setTopsters={setTopsters}
                       setOpenLandingModal={setOpenLandingModal}
+                      bookmarks={bookmarks}
                     />
                   </Page>
                 )}

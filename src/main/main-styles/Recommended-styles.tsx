@@ -24,8 +24,8 @@ const styles = createStyles({
   FavoriteIcon: {
     zIndex: 10,
     position: 'absolute',
-    marginLeft: '90%',
-    marginTop: '2%',
+    left: '88%',
+    top: '2%',
     color: '#91a7ff',
     cursor: 'pointer',
   },

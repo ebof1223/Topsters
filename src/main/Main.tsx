@@ -27,9 +27,9 @@ interface Props {
     BackButton: string;
     subMain: string;
     AOTDContainer: string;
-    AOTD: string;
     AOTDTitleContainer: string;
     LoyaltyIcon: string;
+    firstBookmarkedItem: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -39,6 +39,7 @@ interface Props {
   setTopsters: (input: TopsterTemplate[]) => void;
   recommended: TopsterTemplate[];
   setOpenLandingModal: (i: boolean) => void;
+  bookmarks: TopsterTemplate[];
 }
 const Main: React.FC<Props> = ({
   topsters,
@@ -47,6 +48,7 @@ const Main: React.FC<Props> = ({
   classes,
   recommended,
   setOpenLandingModal,
+  bookmarks,
 }) => {
   const AlwaysScrollToBottom = () => {
     const elementRef: React.MutableRefObject<any> = useRef();
@@ -129,9 +131,16 @@ const Main: React.FC<Props> = ({
           </div>
           {/* bookmarks */}
           <div className={classes.AOTDContainer}>
-            <div className={classes.AOTD}>
-              <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
-            </div>
+            <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
+            {bookmarks[0].albums.map((item) => (
+              <div
+                className={classes.firstBookmarkedItem}
+                style={{
+                  background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
+                }}
+                key={item.name}
+              />
+            ))}
           </div>
         </div>
       </div>

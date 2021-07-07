@@ -87,21 +87,26 @@ const styles = createStyles({
     alignItems: 'center',
   },
   AOTDContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-
-  AOTD: {
+    // display: 'flex',
+    // flexDirection: 'row',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gridAutoRows: 'repeat(3, 1fr)',
     borderRadius: '5px',
     border: '3px solid #91a7ff',
     width: '400px',
     height: '400px',
     marginLeft: '5rem',
     cursor: 'pointer',
+    position: 'relative',
   },
   AOTDTitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
+  },
+  firstBookmarkedItem: {
+    height: '131.5px',
+    display: 'block ruby',
   },
   UserTopsters: {
     display: 'grid',
@@ -116,9 +121,9 @@ const styles = createStyles({
   },
   LoyaltyIcon: {
     color: '#91a7ff',
-    position: 'relative',
+    position: 'absolute',
     left: '88%',
-    top: '3%',
+    top: '2%',
   },
 });
 
