@@ -33,7 +33,8 @@ const Navbar: React.FC<Props> = ({
   setBookmarks,
   recommended,
 }) => {
-  //look if item is in local str, and if it is, use that bookmarked value
+  const [openSnackBar, setOpenSnackBar] = useState(false);
+
   const [isBookmarked, setIsBookmarked] = useState(
     bookmarks
       ? recommended[
@@ -41,36 +42,14 @@ const Navbar: React.FC<Props> = ({
         ].bookmarked
       : null
   );
-  const [openSnackBar, setOpenSnackBar] = useState(false);
 
   useEffect(() => {
-    console.log('one time use effect');
-    let localStorageBookmarks = JSON.parse(
-      window.localStorage.getItem('bookmarks')
-    );
-    if (localStorageBookmarks.length) {
-      for (let lsItem of localStorageBookmarks) {
-        recommended.map((recItem) => {
-          if (lsItem.id === recItem.id) {
-            recItem.bookmarked = lsItem.bookmarked;
-            console.log('match!', recItem.bookmarked);
-          }
-        });
-      }
-      console.log('this is recommended', recommended);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
-    console.log('the other useEffect');
     if (!bookmarks) return;
-    isBookmarked && setOpenSnackBar(true);
+    // isBookmarked && setOpenSnackBar(true);
     let currentRecommendedTopster =
       recommended[
         recommended.findIndex((item: { id: string }) => item.id === id)
       ];
-    //this is the problem. its changing the bookmark state of the current topster
     currentRecommendedTopster.bookmarked = isBookmarked;
     setBookmarks(recommended.filter((item: any) => item.bookmarked));
 
@@ -83,6 +62,7 @@ const Navbar: React.FC<Props> = ({
 
   const handleBookmarkToggle = () => {
     setIsBookmarked(!isBookmarked);
+    setOpenSnackBar(true);
   };
   return (
     <>
