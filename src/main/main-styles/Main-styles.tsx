@@ -114,6 +114,12 @@ const styles = createStyles({
     height: '400px',
     width: '800px',
   },
+  LoyaltyIcon: {
+    color: '#91a7ff',
+    position: 'relative',
+    left: '88%',
+    top: '3%',
+  },
 });
 
 export default styles;

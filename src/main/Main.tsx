@@ -11,7 +11,7 @@ import UserTopsters from './UserTopsters';
 import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import LoyaltyIcon from '@material-ui/icons/Loyalty';
 
 interface Props {
   classes: {
@@ -29,6 +29,7 @@ interface Props {
     AOTDContainer: string;
     AOTD: string;
     AOTDTitleContainer: string;
+    LoyaltyIcon: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -36,10 +37,8 @@ interface Props {
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
-  recommended: any;
+  recommended: TopsterTemplate[];
   setOpenLandingModal: (i: boolean) => void;
-  bookmarks?: [];
-  setBookmarks?: any;
 }
 const Main: React.FC<Props> = ({
   topsters,
@@ -48,8 +47,6 @@ const Main: React.FC<Props> = ({
   classes,
   recommended,
   setOpenLandingModal,
-  bookmarks,
-  setBookmarks,
 }) => {
   const AlwaysScrollToBottom = () => {
     const elementRef: React.MutableRefObject<any> = useRef();
@@ -93,6 +90,8 @@ const Main: React.FC<Props> = ({
                 {...item}
                 handleClick={() => toTopster(item.id, 'recommended')}
                 id={item.id}
+                recommended={recommended}
+                title={item.title}
               />
             </CSSTransition>
           ))}
@@ -128,19 +127,10 @@ const Main: React.FC<Props> = ({
             ))}
             <AlwaysScrollToBottom />
           </div>
+          {/* bookmarks */}
           <div className={classes.AOTDContainer}>
             <div className={classes.AOTD}>
-              <BookmarksIcon
-                style={{
-                  zIndex: 10,
-                  position: 'relative',
-                  marginLeft: '90%',
-                  marginTop: '2%',
-                  color: '#91a7ff',
-                  cursor: 'pointer',
-                }}
-                fontSize="large"
-              />
+              <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
             </div>
           </div>
         </div>

@@ -34,6 +34,7 @@ const App: React.FC = () => {
     );
     if (localStorageBookmarks.length) {
       for (let lsItem of localStorageBookmarks) {
+        // eslint-disable-next-line array-callback-return
         recommended.map((recItem) => {
           if (lsItem.id === recItem.id) {
             recItem.bookmarked = lsItem.bookmarked;
@@ -97,8 +98,6 @@ const App: React.FC = () => {
                       {...routeProps}
                       setTopsters={setTopsters}
                       setOpenLandingModal={setOpenLandingModal}
-                      bookmarks={bookmarks}
-                      setBookmarks={setBookmarks}
                     />
                   </Page>
                 )}
@@ -198,8 +197,6 @@ const App: React.FC = () => {
                       {...routeProps}
                       setTopsters={setTopsters}
                       setOpenLandingModal={setOpenLandingModal}
-                      bookmarks={bookmarks}
-                      setBookmarks={setBookmarks}
                     />
                   </Page>
                 )}

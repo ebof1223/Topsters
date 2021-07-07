@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
-import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
 import { TopsterTemplate } from '../interface';
 
@@ -82,7 +82,7 @@ const Navbar: React.FC<Props> = ({
         {type === 'topsters' ? (
           <EditIcon className={classes.Icon} onClick={handleEdit} />
         ) : (
-          <BookmarksIcon
+          <FavoriteIcon
             className={isBookmarked ? classes.IconOn : classes.Icon}
             onClick={handleBookmarkToggle}
           />

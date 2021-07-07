@@ -21,6 +21,14 @@ const styles = createStyles({
     borderRadius: '5px 5px 0 0',
     transition: 'all 0.3s ease',
   },
+  FavoriteIcon: {
+    zIndex: 10,
+    position: 'absolute',
+    marginLeft: '90%',
+    marginTop: '2%',
+    color: '#91a7ff',
+    cursor: 'pointer',
+  },
   title: {
     fontFamily: 'Lexend, sans-serif',
     fontWeight: 500,
