@@ -6,6 +6,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
 import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
+import { TopsterTemplate } from '../interface';
 
 interface Props {
   classes: {
@@ -18,11 +19,9 @@ interface Props {
   history: { push: (input: string) => void };
   id: string;
   type?: string;
-  bookmarks?: [];
-  setBookmarks?: any;
-  recommended?: any;
-  filteredBookmarkIdArray?: any;
-  setFilteredBookmarkIdArray?: any;
+  bookmarks?: TopsterTemplate[];
+  setBookmarks?: (i: TopsterTemplate[]) => void;
+  recommended?: TopsterTemplate[];
 }
 const Navbar: React.FC<Props> = ({
   classes,
@@ -43,13 +42,35 @@ const Navbar: React.FC<Props> = ({
       : null
   );
   const [openSnackBar, setOpenSnackBar] = useState(false);
+
   useEffect(() => {
+    console.log('one time use effect');
+    let localStorageBookmarks = JSON.parse(
+      window.localStorage.getItem('bookmarks')
+    );
+    if (localStorageBookmarks.length) {
+      for (let lsItem of localStorageBookmarks) {
+        recommended.map((recItem) => {
+          if (lsItem.id === recItem.id) {
+            recItem.bookmarked = lsItem.bookmarked;
+            console.log('match!', recItem.bookmarked);
+          }
+        });
+      }
+      console.log('this is recommended', recommended);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    console.log('the other useEffect');
     if (!bookmarks) return;
     isBookmarked && setOpenSnackBar(true);
     let currentRecommendedTopster =
       recommended[
         recommended.findIndex((item: { id: string }) => item.id === id)
       ];
+    //this is the problem. its changing the bookmark state of the current topster
     currentRecommendedTopster.bookmarked = isBookmarked;
     setBookmarks(recommended.filter((item: any) => item.bookmarked));
 

@@ -22,13 +22,13 @@ interface Props {
     Footer: string;
   };
   topsters?: TopsterTemplate[];
-  recommended?: any;
+  recommended?: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
   };
-  bookmarks?: any;
-  setBookmarks?: any;
+  bookmarks?: TopsterTemplate[];
+  setBookmarks?: (i: TopsterTemplate[]) => void;
 }
 
 const Topster: React.FC<Props> = ({

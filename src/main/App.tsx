@@ -26,7 +26,11 @@ const App: React.FC = () => {
   const [bookmarks, setBookmarks] = useState(
     Object.keys(savedBookmarked).length ? savedBookmarked : []
   );
+  console.log(bookmarks);
 
+  // useEffect(() => {
+
+  // },[])
   useLayoutEffect(() => {
     window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
@@ -36,7 +40,6 @@ const App: React.FC = () => {
       JSON.parse(window.localStorage.getItem('bookmarks'))
     );
   });
-  // Object.keys(bookmarkedTopsters).length ? bookmarddkedTopsters : []
 
   const findUserTopsters = (id: string) => {
     return topsters.find((topster: TopsterTemplate) => {

@@ -1,4 +1,4 @@
-var recommended = [
+var recommended: any[] = [
   {
     title: 'Mu Core',
     id: 'mu-core',
