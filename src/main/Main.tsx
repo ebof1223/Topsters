@@ -132,7 +132,7 @@ const Main: React.FC<Props> = ({
           {/* bookmarks */}
           <div
             key={bookmarks[0].id}
-            onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
+            onClick={() => toTopster(bookmarks[0].id, 'recommended')}
             className={classes.AOTDContainer}
           >
             <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />

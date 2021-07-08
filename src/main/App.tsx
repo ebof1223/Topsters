@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import recommended from './recommended-sample';
-import { useState, useLayoutEffect, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { TopsterTemplate } from '../interface.js';
 import Bookmarks from './Bookmarks';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -45,14 +45,10 @@ const App: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
     window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
-    // console.log(
-    //   'ls bookmarks updated',
-    //   JSON.parse(window.localStorage.getItem('bookmarks'))
-    // );
   });
 
   const findUserTopsters = (id: string) => {

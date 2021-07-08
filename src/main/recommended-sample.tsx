@@ -9743,5 +9743,3 @@ var recommended: any[] = [
   },
 ];
 export default recommended;
-
-//need to account for artists with no mbid with user populations
