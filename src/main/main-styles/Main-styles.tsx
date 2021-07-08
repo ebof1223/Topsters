@@ -87,8 +87,6 @@ const styles = createStyles({
     alignItems: 'center',
   },
   AOTDContainer: {
-    // display: 'flex',
-    // flexDirection: 'row',
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridAutoRows: 'repeat(3, 1fr)',
@@ -99,6 +97,16 @@ const styles = createStyles({
     marginLeft: '5rem',
     cursor: 'pointer',
     position: 'relative',
+  },
+  AOTDContainerEmpty: {
+    borderRadius: '5px',
+    border: '3px solid #91a7ff',
+    width: '400px',
+    height: '400px',
+    marginLeft: '5rem',
+    cursor: 'pointer',
+    position: 'relative',
+    textAlign: 'center',
   },
   AOTDTitleContainer: {
     color: '#fff',
@@ -124,6 +132,13 @@ const styles = createStyles({
     position: 'absolute',
     left: '88%',
     top: '2%',
+  },
+  noBookmarks: {
+    marginTop: '40%',
+    fontSize: '2rem',
+    color: '#fff',
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 'inherit',
   },
 });
 

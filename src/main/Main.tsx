@@ -27,9 +27,11 @@ interface Props {
     BackButton: string;
     subMain: string;
     AOTDContainer: string;
+    AOTDContainerEmpty: string;
     AOTDTitleContainer: string;
     LoyaltyIcon: string;
     firstBookmarkedItem: string;
+    noBookmarks: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -86,7 +88,7 @@ const Main: React.FC<Props> = ({
         <nav className={classes.nav}></nav>
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
         <TransitionGroup className={classes.Recommended}>
-          {recommended.map((item: any) => (
+          {recommended.slice(0, 5).map((item: any) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <Recommended
                 {...item}
@@ -130,22 +132,30 @@ const Main: React.FC<Props> = ({
             <AlwaysScrollToBottom />
           </div>
           {/* bookmarks */}
-          <div
-            key={bookmarks[0].id}
-            onClick={() => toTopster(bookmarks[0].id, 'recommended')}
-            className={classes.AOTDContainer}
-          >
-            <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
-            {bookmarks[0].albums.map((item) => (
-              <div
-                className={classes.firstBookmarkedItem}
-                style={{
-                  background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
-                }}
-                key={item.name}
-              />
-            ))}
-          </div>
+
+          {bookmarks.length ? (
+            <div
+              key={bookmarks[0].id}
+              onClick={() => toTopster(bookmarks[0].id, 'recommended')}
+              className={classes.AOTDContainer}
+            >
+              <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
+              {bookmarks.length &&
+                bookmarks[0].albums.map((item) => (
+                  <div
+                    className={classes.firstBookmarkedItem}
+                    style={{
+                      background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
+                    }}
+                    key={item.name}
+                  />
+                ))}
+            </div>
+          ) : (
+            <div className={classes.AOTDContainerEmpty} key={'bookmarks'}>
+              <h3 className={classes.noBookmarks}>You're all caught up!</h3>
+            </div>
+          )}
         </div>
       </div>
       <DeleteModal

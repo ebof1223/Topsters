@@ -36,6 +36,7 @@ const Recommended: React.FC<Props> = ({
     recommended[
       recommended.findIndex((item: { id: string }) => item.id === id)
     ];
+
   return (
     <div className={classes.root}>
       <Paper elevation={3} className={classes.card} onClick={handleClick}>
