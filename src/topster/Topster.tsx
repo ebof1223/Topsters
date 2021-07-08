@@ -42,17 +42,21 @@ const Topster: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
 }) => {
-  const listToBeRendered = recommended || topsters;
-  // console.log(listToBeRendered);
+  var listToBeRendered = topsters;
+  console.log(recommended);
+  if (window.location.href.includes('recommended'))
+    listToBeRendered = recommended.slice(0, 5);
+
+  // if bookmarks
 
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
-
   const selectAlbum = (index: number) => {
-    console.log(albums[index]);
+    // console.log(albums[index]);
     setSelectedAlbum(albums[index]);
   };
 
   const topsterIndex = (input: string, direction: string) => {
+    // console.log(listToBeRendered);
     if (direction === 'left') {
       for (let [index, topster] of listToBeRendered.entries()) {
         if (topster.title === input && index - 1 > -1) return index - 1;

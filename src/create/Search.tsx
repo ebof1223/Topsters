@@ -87,20 +87,20 @@ const Search: React.FC<Props> = ({
     setIsLoading(true);
     setNoResults(false);
     var albumsArrayCopy = [];
-    await axios
-      .get(
-        `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json`
-      )
-      .then((res) => {
-        console.log('this is our log', res.data.topalbums.album);
-        var albumsArray = res.data.topalbums.album.filter(
-          (item: AlbumTemplate) => item.image[3]['#text']
-        );
-        return albumsArray;
-      })
+    try {
+      await axios
+        .get(
+          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json`
+        )
+        .then((res) => {
+          console.log('this is our log', res.data.topalbums.album);
+          var albumsArray = res.data.topalbums.album.filter(
+            (item: AlbumTemplate) => item.image[3]['#text']
+          );
+          return albumsArray;
+        })
 
-      .then(async (albumsArray) => {
-        try {
+        .then(async (albumsArray) => {
           for (let album of albumsArray) {
             let res = await axios.get(
               `${LASTFM_API_URL}?method=album.getinfo&api_key=${API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
@@ -114,10 +114,10 @@ const Search: React.FC<Props> = ({
               albumsArrayCopy.push(res.data.album);
             }
           }
-        } catch (error) {
-          console.log(error);
-        }
-      });
+        });
+    } catch (error) {
+      console.log(error);
+    }
     if (!albumsArrayCopy.length) {
       setNoResults(true);
     } else {

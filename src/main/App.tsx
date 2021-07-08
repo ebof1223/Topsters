@@ -32,7 +32,7 @@ const App: React.FC = () => {
     let localStorageBookmarks = JSON.parse(
       window.localStorage.getItem('bookmarks')
     );
-    if (localStorageBookmarks.length) {
+    if (localStorageBookmarks && localStorageBookmarks.length) {
       for (let lsItem of localStorageBookmarks) {
         // eslint-disable-next-line array-callback-return
         recommended.map((recItem) => {
