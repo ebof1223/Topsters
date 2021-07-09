@@ -46,10 +46,8 @@ const Topster: React.FC<Props> = ({
   var listToBeRendered = topsters;
   if (window.location.href.includes('recommended'))
     listToBeRendered = recommended;
-
-  // if bookmarks
-
-  // console.log(listToBeRendered);
+  if (window.location.href.includes('bookmarks')) listToBeRendered = bookmarks;
+  console.log(listToBeRendered);
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
     // console.log(albums[index]);
@@ -77,11 +75,13 @@ const Topster: React.FC<Props> = ({
     if (index === null) {
       return -1;
     }
-    history.push(
-      `/${recommended ? 'recommended' : 'topsters'}/${
-        listToBeRendered[index].id
-      }`
-    );
+
+    if (window.location.href.includes('recommended'))
+      history.push(`/recommended/${listToBeRendered[index].id}`);
+    if (window.location.href.includes('topsters'))
+      history.push(`/topsters/${listToBeRendered[index].id}`);
+    if (window.location.href.includes('bookmarks'))
+      history.push(`/bookmarks/${listToBeRendered[index].id}`);
   };
   return (
     <>

@@ -153,6 +153,33 @@ const App: React.FC = () => {
                   </Page>
                 )}
               />
+              {/* bookmarks */}
+              <Route
+                exact
+                path="/bookmarks/:id"
+                render={(routeProps) => (
+                  <Page>
+                    <Topster
+                      title={
+                        findRecommendedTopsters(routeProps.match.params.id)
+                          .title
+                      }
+                      id={
+                        findRecommendedTopsters(routeProps.match.params.id).id
+                      }
+                      albums={
+                        findRecommendedTopsters(routeProps.match.params.id)
+                          .albums
+                      }
+                      topsters={topsters}
+                      recommended={recommended}
+                      {...routeProps}
+                      bookmarks={bookmarks}
+                      setBookmarks={setBookmarks}
+                    />
+                  </Page>
+                )}
+              />
               <Route
                 exact
                 path="/topsters/:id"

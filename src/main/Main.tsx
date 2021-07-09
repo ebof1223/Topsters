@@ -61,9 +61,9 @@ const Main: React.FC<Props> = ({
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
   const toTopster = (id: string, type: string) => {
-    type === 'recommended'
-      ? history.push(`/recommended/${id}`)
-      : history.push(`/topsters/${id}`);
+    if (type === 'recommended') history.push(`/recommended/${id}`);
+    if (type === 'topsters') history.push(`/topsters/${id}`);
+    if (type === 'bookmarks') history.push(`/bookmarks/${id}`);
   };
 
   const handleDeleteConfirmation = () => {
@@ -137,7 +137,7 @@ const Main: React.FC<Props> = ({
           {bookmarks.length ? (
             <div
               key={bookmarks[0].id}
-              onClick={() => toTopster(bookmarks[0].id, 'recommended')}
+              onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
               className={classes.AOTDContainer}
             >
               <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
