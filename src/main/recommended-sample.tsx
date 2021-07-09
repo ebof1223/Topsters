@@ -1,4 +1,10203 @@
-var fullRecommended = [
+var recommendedAll = [
+  {
+    title: 'Fantano Best of 2016',
+    id: 'fantano-best-of-2016',
+    bookmarked: false,
+    albums: [
+      {
+        listeners: '229781',
+        playcount: '8781043',
+        wiki: {
+          published: '11 Nov 2020, 13:51',
+          content:
+            'Atrocity Exhibition is the fourth studio album by American rapper Danny Brown. It was released on September 27, 2016, by Warp Records. It is primarily produced by British producer Paul White. The album features guest appearances from Kendrick Lamar, Ab-Soul, Earl Sweatshirt, B-Real, Kelela and Petite Noir. Atrocity Exhibition received widespread acclaim from critics, appearing on the year-end lists of many publications and is considered to be one of the best albums of the 2010s. The album was supported by four singles: "When It Rain", "Pneumonia", "Really Doe", and "Ain\'t It Funny".  <a href="https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Atrocity Exhibition is the fourth studio album by American rapper Danny Brown. It was released on September 27, 2016, by Warp Records. It is primarily produced by British producer Paul White. The album features guest appearances from Kendrick Lamar, Ab-Soul, Earl Sweatshirt, B-Real, Kelela and Petite Noir. Atrocity Exhibition received widespread acclaim from critics, appearing on the year-end lists of many publications and is considered to be one of the best albums of the 2010s. The album was supported by four singles: "When It Rain", "Pneumonia", "Really Doe", and "Ain\'t It Funny". <a href="https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 1 },
+              duration: 172,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Downward+Spiral',
+              name: 'Downward Spiral',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 2 },
+              duration: 151,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Tell+Me+What+I+Don%27t+Know',
+              name: "Tell Me What I Don't Know",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 3 },
+              duration: 227,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Rolling+Stone+(feat.+Petite+Noir)',
+              name: 'Rolling Stone (feat. Petite Noir)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 4 },
+              duration: 319,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Really+Doe+(feat.+Kendrick+Lamar+&+Ab-Soul+&+Earl+Sweatshirt)',
+              name: 'Really Doe (feat. Kendrick Lamar & Ab-Soul & Earl Sweatshirt)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 5 },
+              duration: 127,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Lost',
+              name: 'Lost',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 6 },
+              duration: 177,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Ain%27t+it+Funny',
+              name: "Ain't it Funny",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 7 },
+              duration: 144,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Golddust',
+              name: 'Golddust',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 8 },
+              duration: 143,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/White+Lines',
+              name: 'White Lines',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 9 },
+              duration: 219,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Pneumonia',
+              name: 'Pneumonia',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 10 },
+              duration: 157,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Dance+In+The+Water',
+              name: 'Dance In The Water',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 11 },
+              duration: 138,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/From+the+Ground+(feat.+Kelela)',
+              name: 'From the Ground (feat. Kelela)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 12 },
+              duration: 195,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/When+It+Rain',
+              name: 'When It Rain',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 13 },
+              duration: 187,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Today',
+              name: 'Today',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 14 },
+              duration: 213,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Get+Hi+(feat.+B-Real)',
+              name: 'Get Hi (feat. B-Real)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Danny+Brown',
+                name: 'Danny Brown',
+                mbid: '960afc67-9c21-46dd-9c7f-ff2b509e3150',
+              },
+              '@attr': { rank: 15 },
+              duration: 229,
+              url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition/Hell+for+It',
+              name: 'Hell for It',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/514bed1643432ccf69854d30e35d24ba.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/514bed1643432ccf69854d30e35d24ba.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/514bed1643432ccf69854d30e35d24ba.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/514bed1643432ccf69854d30e35d24ba.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/514bed1643432ccf69854d30e35d24ba.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/514bed1643432ccf69854d30e35d24ba.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+            { name: 'holy shit', url: 'https://www.last.fm/tag/holy+shit' },
+            {
+              name: 'experimental hip-hop',
+              url: 'https://www.last.fm/tag/experimental+hip-hop',
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Danny+Brown/Atrocity+Exhibition',
+        artist: 'Danny Brown',
+        name: 'Atrocity Exhibition',
+        mbid: '042714b3-04fa-42eb-976a-84e69fc632d5',
+      },
+      {
+        listeners: '319640',
+        playcount: '5358245',
+        wiki: {
+          published: '02 Feb 2017, 10:36',
+          content:
+            'Blackstar (stylised as ★) is the 25th studio album by David Bowie, released on January 8, 2016, the date of Bowie\'s 69th birthday. The album features seven songs, with the title track being released as a single on November 20, 2015. \n\nBowie died on January 10, 2016 after a secret 18 month battle with cancer: it was 2 days after his 69th birthday and the release of Blackstar (2016). Tony Visconti - a producer and friend with Bowie for over 5 decades - commented "He made Blackstar for us — his parting gift . I knew for a year this was the way it would be. I wasn’t, however, prepared for it."\n\nThe album artwork was revealed through a video posted on Facebook on 18 November 2015, and a music video for the title track was released on Bowie\'s YouTube channel the following day. The song was later made available for purchase through the iTunes Store, as well as a pre-order for the entire album. The title track is being used as the opening music for the television series The Last Panthers. \n\nThe album was critically acclaimed and commercially successful, accumulating a Metacritic score of 86 and reaching #1 on the charts in many countries in its first week of release. It was Bowie\'s first #1 album in the U.S.\n\nGrammy Award (2017) - At the 59th Grammy Awards on Sun, February 12, 2017, Bowie took the award for "Best Rock Song" for "Blackstar". <a href="https://www.last.fm/music/David+Bowie/Blackstar">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Blackstar (stylised as ★) is the 25th studio album by David Bowie, released on January 8, 2016, the date of Bowie\'s 69th birthday. The album features seven songs, with the title track being released as a single on November 20, 2015. Bowie died on January 10, 2016 after a secret 18 month battle with cancer: it was 2 days after his 69th birthday and the release of Blackstar (2016). Tony Visconti - a producer and friend with Bowie for over 5 decades - commented "He made Blackstar for us — his parting gift . I knew for a year this <a href="https://www.last.fm/music/David+Bowie/Blackstar">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 1 },
+              duration: 598,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/Blackstar',
+              name: 'Blackstar',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 2 },
+              duration: 292,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/%27Tis+a+Pity+She+Was+a+Whore',
+              name: "'Tis a Pity She Was a Whore",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 3 },
+              duration: 382,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/Lazarus',
+              name: 'Lazarus',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 4 },
+              duration: 280,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/Sue+(Or+in+a+Season+of+Crime)',
+              name: 'Sue (Or in a Season of Crime)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 5 },
+              duration: 291,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/Girl+Loves+Me',
+              name: 'Girl Loves Me',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 6 },
+              duration: 284,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/Dollar+Days',
+              name: 'Dollar Days',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/David+Bowie',
+                name: 'David Bowie',
+                mbid: '5441c29d-3602-4898-b1a1-b77fa23b8e50',
+              },
+              '@attr': { rank: 7 },
+              duration: 347,
+              url: 'https://www.last.fm/music/David+Bowie/Blackstar/I+Can%27t+Give+Everything+Away',
+              name: "I Can't Give Everything Away",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/a63919a5f152e8242b735b022ded451d.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/a63919a5f152e8242b735b022ded451d.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/a63919a5f152e8242b735b022ded451d.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a63919a5f152e8242b735b022ded451d.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a63919a5f152e8242b735b022ded451d.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a63919a5f152e8242b735b022ded451d.png',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            { name: 'art rock', url: 'https://www.last.fm/tag/art+rock' },
+            { name: 'jazz', url: 'https://www.last.fm/tag/jazz' },
+            {
+              name: 'experimental rock',
+              url: 'https://www.last.fm/tag/experimental+rock',
+            },
+            { name: 'rock', url: 'https://www.last.fm/tag/rock' },
+          ],
+        },
+        url: 'https://www.last.fm/music/David+Bowie/Blackstar',
+        artist: 'David Bowie',
+        name: 'Blackstar',
+        mbid: '',
+      },
+      {
+        listeners: '151325',
+        playcount: '6182156',
+        wiki: {
+          published: '09 Sep 2016, 00:13',
+          content:
+            'The fifth studio album by the experimental hip-hop trio Death Grips, released on May 6, 2016 on Third Worlds and Harvest Records.\nFeatures guest vocals from Clementine Creevy and guitar from Nick Reinhart of the math rock band Tera Melos. <a href="https://www.last.fm/music/Death+Grips/Bottomless+Pit">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'The fifth studio album by the experimental hip-hop trio Death Grips, released on May 6, 2016 on Third Worlds and Harvest Records. Features guest vocals from Clementine Creevy and guitar from Nick Reinhart of the math rock band Tera Melos. <a href="https://www.last.fm/music/Death+Grips/Bottomless+Pit">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 1 },
+              duration: 188,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Giving+Bad+People+Good+Ideas',
+              name: 'Giving Bad People Good Ideas',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 2 },
+              duration: 258,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Hot+Head',
+              name: 'Hot Head',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 3 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Spikes',
+              name: 'Spikes',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 4 },
+              duration: 174,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Warping',
+              name: 'Warping',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 5 },
+              duration: 173,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Eh',
+              name: 'Eh',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 6 },
+              duration: 160,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Bubbles+Buried+In+This+Jungle',
+              name: 'Bubbles Buried In This Jungle',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 7 },
+              duration: 172,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Trash',
+              name: 'Trash',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 8 },
+              duration: 164,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Houdini',
+              name: 'Houdini',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 9 },
+              duration: 186,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/BB+Poison',
+              name: 'BB Poison',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 10 },
+              duration: 183,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Three+Bedrooms+in+a+Good+Neighborhood',
+              name: 'Three Bedrooms in a Good Neighborhood',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 11 },
+              duration: 146,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Ring+a+Bell',
+              name: 'Ring a Bell',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 12 },
+              duration: 197,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/80808',
+              name: '80808',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 13 },
+              duration: 175,
+              url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit/Bottomless+Pit',
+              name: 'Bottomless Pit',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/b52817f5a1bbab6bef03f9845892d362.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/b52817f5a1bbab6bef03f9845892d362.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/b52817f5a1bbab6bef03f9845892d362.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b52817f5a1bbab6bef03f9845892d362.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b52817f5a1bbab6bef03f9845892d362.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b52817f5a1bbab6bef03f9845892d362.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            {
+              name: 'experimental hip hop',
+              url: 'https://www.last.fm/tag/experimental+hip+hop',
+            },
+            {
+              name: 'industrial hip hop',
+              url: 'https://www.last.fm/tag/industrial+hip+hop',
+            },
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+            { name: 'industrial', url: 'https://www.last.fm/tag/industrial' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Death+Grips/Bottomless+Pit',
+        artist: 'Death Grips',
+        name: 'Bottomless Pit',
+        mbid: '4fc331f7-ffcf-43c6-87a1-c7d367fb9141',
+      },
+      {
+        listeners: '44812',
+        playcount: '788473',
+        wiki: {
+          published: '08 Aug 2016, 03:03',
+          content:
+            'The Glowing Man is the fourteenth studio album by American experimental band Swans, released June 17, 2016 on Young God and Mute.\n\nThe song "The World Looks Red/The World Looks Black" contains lyrics written by frontman Michael Gira that were used in the Sonic Youth song "The World Looks Red" in the album Confusion Is Sex. The music itself, however, is unrelated.  The title track has previously been referred to as "Black Hole Man" and "Black-Eyed Man". The song "When Will I Return?" was uploaded to YouTube on May 27, 2016. <a href="https://www.last.fm/music/Swans/The+Glowing+Man">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'The Glowing Man is the fourteenth studio album by American experimental band Swans, released June 17, 2016 on Young God and Mute. The song "The World Looks Red/The World Looks Black" contains lyrics written by frontman Michael Gira that were used in the Sonic Youth song "The World Looks Red" in the album Confusion Is Sex. The music itself, however, is unrelated. The title track has previously been referred to as "Black Hole Man" and "Black-Eyed Man". The song "When Will I Return?" was uploaded to YouTube on May 27, 2016. <a href="https://www.last.fm/music/Swans/The+Glowing+Man">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 1 },
+              duration: 763,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/Cloud+of+Forgetting',
+              name: 'Cloud of Forgetting',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 2 },
+              duration: 1512,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/Cloud+of+Unknowing',
+              name: 'Cloud of Unknowing',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 3 },
+              duration: 872,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/The+World+Looks+Red+%2F+The+World+Looks+Black',
+              name: 'The World Looks Red / The World Looks Black',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 4 },
+              duration: 271,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/People+Like+Us',
+              name: 'People Like Us',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 5 },
+              duration: 1254,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/Frankie+M',
+              name: 'Frankie M',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 6 },
+              duration: 324,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/When+Will+I+Return%3F',
+              name: 'When Will I Return?',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 7 },
+              duration: 1710,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/The+Glowing+Man',
+              name: 'The Glowing Man',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Swans',
+                name: 'Swans',
+                mbid: '3285dc48-9505-469d-ad8a-bdf2d3dba632',
+              },
+              '@attr': { rank: 8 },
+              duration: 375,
+              url: 'https://www.last.fm/music/Swans/The+Glowing+Man/Finally,+Peace',
+              name: 'Finally, Peace',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/cced9669d6650c5ffc303ff5f6177a79.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/cced9669d6650c5ffc303ff5f6177a79.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/cced9669d6650c5ffc303ff5f6177a79.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/cced9669d6650c5ffc303ff5f6177a79.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/cced9669d6650c5ffc303ff5f6177a79.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/cced9669d6650c5ffc303ff5f6177a79.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'post-rock', url: 'https://www.last.fm/tag/post-rock' },
+            {
+              name: 'experimental rock',
+              url: 'https://www.last.fm/tag/experimental+rock',
+            },
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+            { name: 'noise rock', url: 'https://www.last.fm/tag/noise+rock' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Swans/The+Glowing+Man',
+        artist: 'Swans',
+        name: 'The Glowing Man',
+        mbid: '030f7c79-6036-4cfb-89ef-dfe22670a0cb',
+      },
+      {
+        listeners: '214854',
+        playcount: '5961520',
+        wiki: {
+          published: '03 Mar 2021, 06:58',
+          content:
+            'We Got It from Here... Thank You 4 Your Service is the sixth and final studio album by legendary American hip hop group A Tribe Called Quest. It was released on November 11, 2016, by Epic Records and received overwhelmingly positive praise from critics and fans alike as well as reaching the #1 position in the billboard charts.\n\nThe album was recorded at the AbLab, the New Jersey home studio of group member Q-Tip. The recording featured guest appearances from Andre 3000, Kendrick Lamar, Jack White, Elton John, Kanye West, Anderson Paak, Talib Kweli, Consequence and Busta Rhymes. It was the final recorded appearance of group member Phife Dawg, who died in March 2016 from complications with diabetes. <a href="https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'We Got It from Here... Thank You 4 Your Service is the sixth and final studio album by legendary American hip hop group A Tribe Called Quest. It was released on November 11, 2016, by Epic Records and received overwhelmingly positive praise from critics and fans alike as well as reaching the #1 position in the billboard charts. The album was recorded at the AbLab, the New Jersey home studio of group member Q-Tip. The recording featured guest appearances from Andre 3000, Kendrick Lamar, Jack White, Elton John, Kanye West, Anderson Paak, Talib Kweli, Consequence and Busta Rhymes. It was <a href="https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 1 },
+              duration: 341,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/The+Space+Program',
+              name: 'The Space Program',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 2 },
+              duration: 172,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/We+The+People....',
+              name: 'We The People....',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 3 },
+              duration: 173,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Whateva+Will+Be',
+              name: 'Whateva Will Be',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 4 },
+              duration: 223,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Solid+Wall+of+Sound',
+              name: 'Solid Wall of Sound',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 5 },
+              duration: 214,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Dis+Generation',
+              name: 'Dis Generation',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 6 },
+              duration: 228,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Kids...',
+              name: 'Kids...',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 7 },
+              duration: 285,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Melatonin',
+              name: 'Melatonin',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 8 },
+              duration: 201,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Enough!!',
+              name: 'Enough!!',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 9 },
+              duration: 172,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Mobius',
+              name: 'Mobius',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 10 },
+              duration: 184,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Black+Spasmodic',
+              name: 'Black Spasmodic',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 11 },
+              duration: 164,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/The+Killing+Season',
+              name: 'The Killing Season',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 12 },
+              duration: 259,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Lost+Somebody',
+              name: 'Lost Somebody',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 13 },
+              duration: 282,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Movin+Backwards',
+              name: 'Movin Backwards',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 14 },
+              duration: 212,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Conrad+Tokyo',
+              name: 'Conrad Tokyo',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 15 },
+              duration: 198,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/Ego',
+              name: 'Ego',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/A+Tribe+Called+Quest',
+                name: 'A Tribe Called Quest',
+                mbid: '9689aa5a-4471-4fb4-9721-07cecda0fa9f',
+              },
+              '@attr': { rank: 16 },
+              duration: 322,
+              url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service/The+Donald',
+              name: 'The Donald',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/3a0af7b9f680a7a6b417436f3519aea0.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/3a0af7b9f680a7a6b417436f3519aea0.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/3a0af7b9f680a7a6b417436f3519aea0.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3a0af7b9f680a7a6b417436f3519aea0.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3a0af7b9f680a7a6b417436f3519aea0.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3a0af7b9f680a7a6b417436f3519aea0.png',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
+            { name: 'jazz rap', url: 'https://www.last.fm/tag/jazz+rap' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+          ],
+        },
+        url: 'https://www.last.fm/music/A+Tribe+Called+Quest/We+Got+It+From+Here...+Thank+You+4+Your+Service',
+        artist: 'A Tribe Called Quest',
+        name: 'We Got It From Here... Thank You 4 Your Service',
+        mbid: '48c7707f-2786-425e-826c-670e94d87d30',
+      },
+      {
+        listeners: '55407',
+        playcount: '790756',
+        wiki: {
+          published: '07 Jul 2016, 02:57',
+          content:
+            'Plays the Music of Twin Peaks is an album by American experimental band Xiu Xiu. Composed of cover versions of the music from the Twin Peaks soundtrack, it was released exclusively as a Record Store Day release on April 16, 2016 by Polyvinyl in the United States and Bella Union in Europe. It was produced by former Xiu Xiu member Jherek Bischoff and mixed by Deerhoof member Greg Saunier.\n\nThe covers were originally commissioned by Queensland Gallery of Modern Art for a 2015 exhibition, “David Lynch: Between Two Worlds”. Following the live performances at the exhibition, the band decided to record the covers in the studio. In accompaniment to the album, Xiu Xiu will be embarking an Europe tour in April 2016. In April 2016, the band released a shared music video for the tracks "Into the Night" and "Nightsea Wind", directed by Diego Barrera. <a href="https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Plays the Music of Twin Peaks is an album by American experimental band Xiu Xiu. Composed of cover versions of the music from the Twin Peaks soundtrack, it was released exclusively as a Record Store Day release on April 16, 2016 by Polyvinyl in the United States and Bella Union in Europe. It was produced by former Xiu Xiu member Jherek Bischoff and mixed by Deerhoof member Greg Saunier. The covers were originally commissioned by Queensland Gallery of Modern Art for a 2015 exhibition, “David Lynch: Between Two Worlds”. Following the live performances at the exhibition, the band decided to <a href="https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 1 },
+              duration: 304,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Laura+Palmer%27s+Theme',
+              name: "Laura Palmer's Theme",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 2 },
+              duration: 313,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Into+The+Night',
+              name: 'Into The Night',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 3 },
+              duration: 267,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Audrey%27s+Dance',
+              name: "Audrey's Dance",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 4 },
+              duration: 228,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Packard%27s+Vibration',
+              name: "Packard's Vibration",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 5 },
+              duration: 427,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Nightsea+Wind',
+              name: 'Nightsea Wind',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 6 },
+              duration: 352,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Blue+Frank+%2F+Pink+Room',
+              name: 'Blue Frank / Pink Room',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 7 },
+              duration: 408,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Sycamore+Tree',
+              name: 'Sycamore Tree',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 8 },
+              duration: 236,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Harold%27s+Theme',
+              name: "Harold's Theme",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 9 },
+              duration: 310,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Dance+of+the+Dream+Man',
+              name: 'Dance of the Dream Man',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 10 },
+              duration: 417,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Falling',
+              name: 'Falling',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 11 },
+              duration: 385,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Love+Theme+Farewell',
+              name: 'Love Theme Farewell',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Xiu+Xiu',
+                name: 'Xiu Xiu',
+                mbid: '8b431ac6-0806-4e4a-9b6b-1734370fa890',
+              },
+              '@attr': { rank: 12 },
+              duration: 470,
+              url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks/Josie%27s+Past',
+              name: "Josie's Past",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/b63581b9163fb6e55df3bfffec84120b.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/b63581b9163fb6e55df3bfffec84120b.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/b63581b9163fb6e55df3bfffec84120b.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b63581b9163fb6e55df3bfffec84120b.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b63581b9163fb6e55df3bfffec84120b.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b63581b9163fb6e55df3bfffec84120b.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            { name: 'noise', url: 'https://www.last.fm/tag/noise' },
+            {
+              name: 'dark ambient',
+              url: 'https://www.last.fm/tag/dark+ambient',
+            },
+            { name: 'noise rock', url: 'https://www.last.fm/tag/noise+rock' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Xiu+Xiu/Plays+the+Music+of+Twin+Peaks',
+        artist: 'Xiu Xiu',
+        name: 'Plays the Music of Twin Peaks',
+        mbid: '74e2257b-a10c-4a7d-a4d2-43324ecf7eb4',
+      },
+      {
+        listeners: '748577',
+        playcount: '66025858',
+        wiki: {
+          published: '03 Mar 2017, 18:40',
+          content:
+            'Blond(e) is the second studio album by American singer Frank Ocean. It was released on August 20, 2016, exclusively on the iTunes Store and Apple Music along with a CD from the Boys Don\'t Cry Magazine which features an extra verse on "Nikes" by KOHH.\n\n <a href="https://www.last.fm/music/Frank+Ocean/Blonde">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Blond(e) is the second studio album by American singer Frank Ocean. It was released on August 20, 2016, exclusively on the iTunes Store and Apple Music along with a CD from the Boys Don\'t Cry Magazine which features an extra verse on "Nikes" by KOHH. <a href="https://www.last.fm/music/Frank+Ocean/Blonde">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 1 },
+              duration: 314,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Nikes',
+              name: 'Nikes',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 2 },
+              duration: 249,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Ivy',
+              name: 'Ivy',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 3 },
+              duration: 184,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Pink+%252B+White',
+              name: 'Pink + White',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 4 },
+              duration: 87,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Be+Yourself',
+              name: 'Be Yourself',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 5 },
+              duration: 257,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Solo',
+              name: 'Solo',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 6 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Skyline+To',
+              name: 'Skyline To',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 7 },
+              duration: 249,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Self+Control',
+              name: 'Self Control',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 8 },
+              duration: 66,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Good+Guy',
+              name: 'Good Guy',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 9 },
+              duration: 307,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Nights',
+              name: 'Nights',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 10 },
+              duration: 79,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Solo+(Reprise)',
+              name: 'Solo (Reprise)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 11 },
+              duration: 158,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Pretty+Sweet',
+              name: 'Pretty Sweet',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 12 },
+              duration: 68,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Facebook+Story',
+              name: 'Facebook Story',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 13 },
+              duration: 85,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Close+to+You',
+              name: 'Close to You',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 14 },
+              duration: 248,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/White+Ferrari',
+              name: 'White Ferrari',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 15 },
+              duration: 334,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Seigfried',
+              name: 'Seigfried',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 16 },
+              duration: 178,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Godspeed',
+              name: 'Godspeed',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Frank+Ocean',
+                name: 'Frank Ocean',
+                mbid: 'e520459c-dff4-491d-a6e4-c97be35e0044',
+              },
+              '@attr': { rank: 17 },
+              duration: 564,
+              url: 'https://www.last.fm/music/Frank+Ocean/Blonde/Futura+Free',
+              name: 'Futura Free',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/b7498614ca565faaa2704654b638024e.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/b7498614ca565faaa2704654b638024e.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/b7498614ca565faaa2704654b638024e.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b7498614ca565faaa2704654b638024e.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b7498614ca565faaa2704654b638024e.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b7498614ca565faaa2704654b638024e.png',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'rnb', url: 'https://www.last.fm/tag/rnb' },
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            {
+              name: 'alternative rnb',
+              url: 'https://www.last.fm/tag/alternative+rnb',
+            },
+            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
+            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Frank+Ocean/Blonde',
+        artist: 'Frank Ocean',
+        name: 'Blonde',
+        mbid: '08f54f68-7c89-4e22-8a0f-ac2b06e48568',
+      },
+      {
+        listeners: '270193',
+        playcount: '8226978',
+        wiki: {
+          published: '05 May 2016, 10:04',
+          content:
+            'With Teens of Denial, his first real “studio” album with an actual band, Will Toledo moves from bedroom pop to something approaching classic rock grandeur and huge (if detailed and personal) narrative ambitions, with nods to the Cars, Pavement, Jonathan Richman, Wire, and William Onyeabor. Teens of Denial refracts Toledo’s particular, personal story of one difficult year through cultural touchstones such as the biography of Frank Sinatra, the evolution of the Me Generation as seen in Mad Men and elsewhere, plus elements of eastern and western theology. The whole thing flaunts a kind of conceptual, lyrical, and musical ambition that has been missing from far too much 21st-century music. Horns, keyboards, and elegant instrumental interludes set off art-garage moments; vivid vocal harmonies follow punk frenzy. The selfish captain of the capsized cruise liner in the Mediterranean in 2013 becomes a metaphor for struggles of the individual in society, as experienced by one hungover young man on the verge of adulthood. The album was produced by Steve Fisk (Nirvana, Beat Happening, Soundgarden) at his studio in Seattle, July-September 2015. This is the first full album of new music from Car Seat Headrest released on Matador. <a href="https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'With Teens of Denial, his first real “studio” album with an actual band, Will Toledo moves from bedroom pop to something approaching classic rock grandeur and huge (if detailed and personal) narrative ambitions, with nods to the Cars, Pavement, Jonathan Richman, Wire, and William Onyeabor. Teens of Denial refracts Toledo’s particular, personal story of one difficult year through cultural touchstones such as the biography of Frank Sinatra, the evolution of the Me Generation as seen in Mad Men and elsewhere, plus elements of eastern and western theology. The whole thing flaunts a kind of conceptual, lyrical, and musical ambition that <a href="https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 1 },
+              duration: 244,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Fill+In+The+Blank',
+              name: 'Fill In The Blank',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 2 },
+              duration: 465,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Vincent',
+              name: 'Vincent',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 3 },
+              duration: 303,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Destroyed+By+Hippie+Powers',
+              name: 'Destroyed By Hippie Powers',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 4 },
+              duration: 337,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/(Joe+Gets+Kicked+Out+of+School+for+Using)+Drugs+With+Friends+(But+Says+This+Isn%27t+a+Problem)',
+              name: "(Joe Gets Kicked Out of School for Using) Drugs With Friends (But Says This Isn't a Problem)",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 5 },
+              duration: 228,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Just+What+I+Needed%2FNot+Just+What+I+Needed',
+              name: 'Just What I Needed/Not Just What I Needed',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 6 },
+              duration: 374,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Drunk+Drivers%2FKiller+Whales',
+              name: 'Drunk Drivers/Killer Whales',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 7 },
+              duration: 240,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/1937+State+Park',
+              name: '1937 State Park',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 8 },
+              duration: 326,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Unforgiving+Girl+(She%27s+Not+An)',
+              name: "Unforgiving Girl (She's Not An)",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 9 },
+              duration: 512,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Cosmic+Hero',
+              name: 'Cosmic Hero',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 10 },
+              duration: 691,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/The+Ballad+of+the+Costa+Concordia',
+              name: 'The Ballad of the Costa Concordia',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 11 },
+              duration: 367,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Connect+The+Dots+(The+Saga+of+Frank+Sinatra)',
+              name: 'Connect The Dots (The Saga of Frank Sinatra)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Car+Seat+Headrest',
+                name: 'Car Seat Headrest',
+                mbid: '0fabbc1d-8d94-4a61-bd1d-1099ad1e4559',
+              },
+              '@attr': { rank: 12 },
+              duration: 78,
+              url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial/Joe+Goes+To+School',
+              name: 'Joe Goes To School',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/d604c0010c0c839da18d8c51b708df48.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/d604c0010c0c839da18d8c51b708df48.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/d604c0010c0c839da18d8c51b708df48.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/d604c0010c0c839da18d8c51b708df48.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/d604c0010c0c839da18d8c51b708df48.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/d604c0010c0c839da18d8c51b708df48.png',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'indie rock', url: 'https://www.last.fm/tag/indie+rock' },
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            { name: 'power pop', url: 'https://www.last.fm/tag/power+pop' },
+            { name: 'bagel', url: 'https://www.last.fm/tag/bagel' },
+            { name: 'lo-fi', url: 'https://www.last.fm/tag/lo-fi' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Car+Seat+Headrest/Teens+Of+Denial',
+        artist: 'Car Seat Headrest',
+        name: 'Teens Of Denial',
+        mbid: '0f46ffb8-36e6-4a0e-9ac6-beda6d5eacb1',
+      },
+      {
+        listeners: '46077',
+        playcount: '625650',
+        artist: 'Regina Spektor',
+        mbid: '08645c73-50ac-431d-b1da-b70100b57d17',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 1 },
+              duration: 239,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Bleeding+Heart',
+              name: 'Bleeding Heart',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 2 },
+              duration: 236,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Older+and+Taller',
+              name: 'Older and Taller',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 3 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Grand+Hotel',
+              name: 'Grand Hotel',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 4 },
+              duration: 213,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Small+Bill$',
+              name: 'Small Bill$',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 5 },
+              duration: 229,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Black+and+White',
+              name: 'Black and White',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 6 },
+              duration: 297,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/The+Light',
+              name: 'The Light',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 7 },
+              duration: 264,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/The+Trapper+and+the+Furrier',
+              name: 'The Trapper and the Furrier',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 8 },
+              duration: 229,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Tornadoland',
+              name: 'Tornadoland',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 9 },
+              duration: 397,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Obsolete',
+              name: 'Obsolete',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 10 },
+              duration: 241,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/Sellers+of+Flowers',
+              name: 'Sellers of Flowers',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 11 },
+              duration: 264,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/The+Visit',
+              name: 'The Visit',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 12 },
+              duration: 329,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/New+Year',
+              name: 'New Year',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 13 },
+              duration: 299,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/The+One+Who+Stayed+and+the+One+Who+Left+-+Bonus+Track',
+              name: 'The One Who Stayed and the One Who Left - Bonus Track',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Regina+Spektor',
+                name: 'Regina Spektor',
+                mbid: 'fbb375f9-48bb-4635-824e-4120273b3ba7',
+              },
+              '@attr': { rank: 14 },
+              duration: 200,
+              url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life/End+of+Thought',
+              name: 'End of Thought',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Regina+Spektor/Remember+Us+to+Life',
+        tags: {
+          tag: [
+            { name: '2016', url: 'https://www.last.fm/tag/2016' },
+            { name: 'american', url: 'https://www.last.fm/tag/american' },
+            { name: 'alternative', url: 'https://www.last.fm/tag/alternative' },
+            { name: 'ballads', url: 'https://www.last.fm/tag/ballads' },
+            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
+          ],
+        },
+        name: 'Remember Us to Life',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/b2197eed86a211de4f4dcb30e455190e.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/b2197eed86a211de4f4dcb30e455190e.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/b2197eed86a211de4f4dcb30e455190e.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b2197eed86a211de4f4dcb30e455190e.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b2197eed86a211de4f4dcb30e455190e.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b2197eed86a211de4f4dcb30e455190e.png',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Fantano Best of 2017',
+    id: 'fantano-best-of-2017',
+    bookmarked: false,
+    albums: [
+      {
+        listeners: '158258',
+        playcount: '3483813',
+        wiki: {
+          published: '06 Jun 2017, 05:40',
+          content:
+            'Pure Comedy is the third studio album by American folk musician Josh Tillman under his pseudonym Father John Misty. Its release was announced on January 23, 2017. It was released on April 7, 2017 on Bella Union in the UK and Europe and on Sub Pop in the rest of the world. This is Tillman\'s third studio album since his departure from Fleet Foxes. It was produced by Josh Tillman in collaboration with Jonathan Wilson, sound engineer Trevor Spencer and composer/double-bassist Gavin Bryars. <a href="https://www.last.fm/music/Father+John+Misty/Pure+Comedy">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Pure Comedy is the third studio album by American folk musician Josh Tillman under his pseudonym Father John Misty. Its release was announced on January 23, 2017. It was released on April 7, 2017 on Bella Union in the UK and Europe and on Sub Pop in the rest of the world. This is Tillman\'s third studio album since his departure from Fleet Foxes. It was produced by Josh Tillman in collaboration with Jonathan Wilson, sound engineer Trevor Spencer and composer/double-bassist Gavin Bryars. <a href="https://www.last.fm/music/Father+John+Misty/Pure+Comedy">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 1 },
+              duration: 385,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Pure+Comedy',
+              name: 'Pure Comedy',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 2 },
+              duration: 201,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Total+Entertainment+Forever',
+              name: 'Total Entertainment Forever',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 3 },
+              duration: 258,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Things+It+Would+Have+Been+Helpful+to+Know+Before+the+Revolution',
+              name: 'Things It Would Have Been Helpful to Know Before the Revolution',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 4 },
+              duration: 251,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Ballad+of+the+Dying+Man',
+              name: 'Ballad of the Dying Man',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 5 },
+              duration: 320,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Birdie',
+              name: 'Birdie',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 6 },
+              duration: 791,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Leaving+LA',
+              name: 'Leaving LA',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 7 },
+              duration: 282,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/A+Bigger+Paper+Bag',
+              name: 'A Bigger Paper Bag',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 8 },
+              duration: 244,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/When+The+God+Of+Love+Returns+There%27ll+Be+Hell+To+Pay',
+              name: "When The God Of Love Returns There'll Be Hell To Pay",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 9 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Smoochie',
+              name: 'Smoochie',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 10 },
+              duration: 192,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Two+Wildly+Different+Perspectives',
+              name: 'Two Wildly Different Perspectives',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 11 },
+              duration: 317,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/The+Memo',
+              name: 'The Memo',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 12 },
+              duration: 598,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/So+I%27m+Growing+Old+On+Magic+Mountain',
+              name: "So I'm Growing Old On Magic Mountain",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Father+John+Misty',
+                name: 'Father John Misty',
+                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
+              },
+              '@attr': { rank: 13 },
+              duration: 387,
+              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/In+Twenty+Years+Or+So',
+              name: 'In Twenty Years Or So',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2017', url: 'https://www.last.fm/tag/2017' },
+            { name: '10s', url: 'https://www.last.fm/tag/10s' },
+            { name: '2010s', url: 'https://www.last.fm/tag/2010s' },
+            {
+              name: 'best of 2017',
+              url: 'https://www.last.fm/tag/best+of+2017',
+            },
+            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy',
+        artist: 'Father John Misty',
+        name: 'Pure Comedy',
+        mbid: '340de01f-c2b0-4024-ac5e-ec1b6cc4788b',
+      },
+      {
+        listeners: '309854',
+        playcount: '13317986',
+        wiki: {
+          published: '11 Nov 2017, 17:43',
+          content:
+            'Saturation II (stylized as SATURATION II) is the second studio album by American boy band Brockhampton, released on August 25, 2017. Production is primarily handled by Romil Hemnani, alongside production duo Q3, bearface., Kevin Abstract and JOBA. SATURATION II is the follow-up to BROCKHAMPTON’s debut album SATURATION.  <a href="https://www.last.fm/music/BROCKHAMPTON/SATURATION+II">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Saturation II (stylized as SATURATION II) is the second studio album by American boy band Brockhampton, released on August 25, 2017. Production is primarily handled by Romil Hemnani, alongside production duo Q3, bearface., Kevin Abstract and JOBA. SATURATION II is the follow-up to BROCKHAMPTON’s debut album SATURATION. <a href="https://www.last.fm/music/BROCKHAMPTON/SATURATION+II">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 1 },
+              duration: 261,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/GUMMY',
+              name: 'GUMMY',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 2 },
+              duration: 227,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/QUEER',
+              name: 'QUEER',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 3 },
+              duration: 240,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/JELLO',
+              name: 'JELLO',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 4 },
+              duration: 80,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/TEETH',
+              name: 'TEETH',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 5 },
+              duration: 251,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SWAMP',
+              name: 'SWAMP',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 6 },
+              duration: 39,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SCENE',
+              name: 'SCENE',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 7 },
+              duration: 192,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/TOKYO',
+              name: 'TOKYO',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 8 },
+              duration: 80,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/JESUS',
+              name: 'JESUS',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 9 },
+              duration: 204,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/CHICK',
+              name: 'CHICK',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 10 },
+              duration: 249,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/JUNKY',
+              name: 'JUNKY',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 11 },
+              duration: 29,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SCENE+2',
+              name: 'SCENE 2',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 12 },
+              duration: 181,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/FIGHT',
+              name: 'FIGHT',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 13 },
+              duration: 274,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SWEET',
+              name: 'SWEET',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 14 },
+              duration: 202,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/GAMBA',
+              name: 'GAMBA',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 15 },
+              duration: 170,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SUNNY',
+              name: 'SUNNY',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/BROCKHAMPTON',
+                name: 'BROCKHAMPTON',
+                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
+              },
+              '@attr': { rank: 16 },
+              duration: 204,
+              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SUMMER',
+              name: 'SUMMER',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2017', url: 'https://www.last.fm/tag/2017' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+            { name: 'pop rap', url: 'https://www.last.fm/tag/pop+rap' },
+            {
+              name: 'alternative hip hop',
+              url: 'https://www.last.fm/tag/alternative+hip+hop',
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II',
+        artist: 'BROCKHAMPTON',
+        name: 'SATURATION II',
+        mbid: '9b311f6b-d5b7-4dbf-8744-405e743b6c68',
+      },
+      {
+        listeners: '132876',
+        playcount: '2189270',
+        wiki: {
+          published: '03 Mar 2017, 13:08',
+          content:
+            'WRITTEN AND RECORDED \nAugust 31st to Dec. 6th, 2016 in the same room where Geneviève died, using mostly her instruments, her guitar, her bass, her pick, her amp, her old family accordion, writing the words on her paper, looking out the same window. \nWhy share this much? Why open up like this? Why tell you, stranger, about these personal moments, the devastation and the hanging love? Our little family bubble was so sacred for so long. We carefully held it behind a curtain of privacy when we’d go out and do our art and music selves, too special to share, especially in our hyper-shared imbalanced times. Then we had a baby and this barrier felt even more important. (I still don’t want to tell you our daughter’s name.) Then in May 2015 they told us Geneviève had a surprise bad cancer, advanced pancreatic, and the ground opened up. What matters now? we thought. Then on July 9th 2016 she died at home and I belonged to nobody anymore. My internal moments felt like public property. The idea that I could have a self or personal preferences or songs eroded down into an absurd old idea leftover from a more self-indulgent time before I was a hospital-driver, a caregiver, a child-raiser, a griever. I am open now, and these songs poured out quickly in the fall, watching the days grey over and watching the neighbors across the alley tear down and rebuild their house. I make these songs and put them out into the world just to multiply my voice saying that I love her. I want it known. \n"Death Is Real" could be the name of this album. These cold mechanics of sickness and loss are real and inescapable, and can bring an alienating, detached sharpness. But it is not the thing I want to remember. A crow did look at me. There is an echo of Geneviève that still rings, a reminder of the love and infinity beneath all of this obliteration. That’s why. \n\n- Phil Elverum \nDec. 11th, 2016 \nAnacortes  <a href="https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'WRITTEN AND RECORDED August 31st to Dec. 6th, 2016 in the same room where Geneviève died, using mostly her instruments, her guitar, her bass, her pick, her amp, her old family accordion, writing the words on her paper, looking out the same window. Why share this much? Why open up like this? Why tell you, stranger, about these personal moments, the devastation and the hanging love? Our little family bubble was so sacred for so long. We carefully held it behind a curtain of privacy when we’d go out and do our art and music selves, too special to share, <a href="https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 1 },
+              duration: 170,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Real+Death',
+              name: 'Real Death',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 2 },
+              duration: 181,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Seaweed',
+              name: 'Seaweed',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 3 },
+              duration: 399,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Ravens',
+              name: 'Ravens',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 4 },
+              duration: 255,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Forest+Fire',
+              name: 'Forest Fire',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 5 },
+              duration: 247,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Swims',
+              name: 'Swims',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 6 },
+              duration: 142,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/My+Chasm',
+              name: 'My Chasm',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 7 },
+              duration: 145,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/When+I+Take+Out+The+Garbage+At+Night',
+              name: 'When I Take Out The Garbage At Night',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 8 },
+              duration: 160,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Emptiness,+Pt.+2',
+              name: 'Emptiness, Pt. 2',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 9 },
+              duration: 232,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Toothbrush+%2F+Trash',
+              name: 'Toothbrush / Trash',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 10 },
+              duration: 393,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Soria+Moria',
+              name: 'Soria Moria',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Mount+Eerie',
+                name: 'Mount Eerie',
+                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
+              },
+              '@attr': { rank: 11 },
+              duration: 141,
+              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Crow',
+              name: 'Crow',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/a08475fd09157515a411dc2577e3e58c.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/a08475fd09157515a411dc2577e3e58c.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/a08475fd09157515a411dc2577e3e58c.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a08475fd09157515a411dc2577e3e58c.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a08475fd09157515a411dc2577e3e58c.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a08475fd09157515a411dc2577e3e58c.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2017', url: 'https://www.last.fm/tag/2017' },
+            {
+              name: 'singer-songwriter',
+              url: 'https://www.last.fm/tag/singer-songwriter',
+            },
+            { name: 'indie folk', url: 'https://www.last.fm/tag/indie+folk' },
+            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
+            {
+              name: 'heartbreaking',
+              url: 'https://www.last.fm/tag/heartbreaking',
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me',
+        artist: 'Mount Eerie',
+        name: 'A Crow Looked At Me',
+        mbid: '4911b77c-d9fb-4498-b835-043e88f3f83b',
+      },
+      {
+        listeners: '100436',
+        playcount: '2755775',
+        wiki: {
+          published: '11 Nov 2020, 07:34',
+          content:
+            '4eva Is a Mighty Long Time is the third studio album by American rapper Big K.R.I.T., released on October 27, 2017, through Multi Alumni and distributed by BMG Rights Management. A double album, it is his first full-length release since his departure from Def Jam in 2016. The album features guest appearances from T.I., Lloyd, Bun B, Pimp C, CeeLo Green, Sleepy Brown, Joi, Jill Scott, Keyon Harrold, Bilal, Robert Glasper, Kenneth Whalum and Burniss Earl Travis II.\n\n4eva Is a Mighty Long Time was supported by four singles: "Confetti", "Keep the Devil Off", "Aux Cord" and "1999". The album charted at number seven on the US Billboard 200, and received generally positive reviews from critics. <a href="https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            '4eva Is a Mighty Long Time is the third studio album by American rapper Big K.R.I.T., released on October 27, 2017, through Multi Alumni and distributed by BMG Rights Management. A double album, it is his first full-length release since his departure from Def Jam in 2016. The album features guest appearances from T.I., Lloyd, Bun B, Pimp C, CeeLo Green, Sleepy Brown, Joi, Jill Scott, Keyon Harrold, Bilal, Robert Glasper, Kenneth Whalum and Burniss Earl Travis II. 4eva Is a Mighty Long Time was supported by four singles: "Confetti", "Keep the Devil Off", "Aux Cord" and "1999". The album <a href="https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 1 },
+              duration: 172,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Big+K.R.I.T.',
+              name: 'Big K.R.I.T.',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 2 },
+              duration: 198,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Confetti',
+              name: 'Confetti',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+T.I.',
+                name: 'Big K.R.I.T. feat. T.I.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 3 },
+              duration: 224,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+T.I./4eva+Is+a+Mighty+Long+Time/Big+Bank',
+              name: 'Big Bank',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 4 },
+              duration: 243,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Subenstein+(My+Sub+IV)',
+              name: 'Subenstein (My Sub IV)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Lloyd',
+                name: 'Big K.R.I.T. feat. Lloyd',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 5 },
+              duration: 222,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Lloyd/4eva+Is+a+Mighty+Long+Time/1999',
+              name: '1999',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bun+B+&+Pimp+C',
+                name: 'Big K.R.I.T. feat. Bun B & Pimp C',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 6 },
+              duration: 214,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bun+B+&+Pimp+C/4eva+Is+a+Mighty+Long+Time/Ride+Wit+Me',
+              name: 'Ride Wit Me',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+CeeLo+Green+&+Sleepy+Brown',
+                name: 'Big K.R.I.T. feat. CeeLo Green & Sleepy Brown',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 7 },
+              duration: 277,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+CeeLo+Green+&+Sleepy+Brown/4eva+Is+a+Mighty+Long+Time/Get+Up+2+Come+Down',
+              name: 'Get Up 2 Come Down',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 8 },
+              duration: 260,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Layup',
+              name: 'Layup',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 9 },
+              duration: 53,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Classic+Interlude',
+              name: 'Classic Interlude',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 10 },
+              duration: 195,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Aux+Cord',
+              name: 'Aux Cord',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 11 },
+              duration: 297,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Get+Away',
+              name: 'Get Away',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 12 },
+              duration: 240,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Justin+Scott',
+              name: 'Justin Scott',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 13 },
+              duration: 267,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Mixed+Messages',
+              name: 'Mixed Messages',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 14 },
+              duration: 310,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Keep+the+Devil+Off',
+              name: 'Keep the Devil Off',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 15 },
+              duration: 360,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Miss+Georgia+Fornia',
+              name: 'Miss Georgia Fornia',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 16 },
+              duration: 203,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Everlasting',
+              name: 'Everlasting',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Jill+Scott',
+                name: 'Big K.R.I.T. feat. Jill Scott',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 17 },
+              duration: 233,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Jill+Scott/4eva+Is+a+Mighty+Long+Time/Higher+Calling',
+              name: 'Higher Calling',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 18 },
+              duration: 48,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Weekend+(Interlude)',
+              name: 'Weekend (Interlude)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 19 },
+              duration: 254,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Price+of+Fame',
+              name: 'Price of Fame',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Keyon+Harrold',
+                name: 'Big K.R.I.T. feat. Keyon Harrold',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 20 },
+              duration: 311,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Keyon+Harrold/4eva+Is+a+Mighty+Long+Time/Drinking+Sessions',
+              name: 'Drinking Sessions',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bilal,+Robert+Glasper,+Kenneth+Whalum+III+&+Burniss+Earl+Travis+II',
+                name: 'Big K.R.I.T. feat. Bilal, Robert Glasper, Kenneth Whalum III & Burniss Earl Travis II',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 21 },
+              duration: 244,
+              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bilal,+Robert+Glasper,+Kenneth+Whalum+III+&+Burniss+Earl+Travis+II/4eva+Is+a+Mighty+Long+Time/The+Light',
+              name: 'The Light',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Big+K.R.I.T.',
+                name: 'Big K.R.I.T.',
+                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
+              },
+              '@attr': { rank: 22 },
+              duration: 264,
+              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Bury+Me+in+Gold',
+              name: 'Bury Me in Gold',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            {
+              name: 'how can a song be this fucking good',
+              url: 'https://www.last.fm/tag/how+can+a+song+be+this+fucking+good',
+            },
+            { name: 'personal', url: 'https://www.last.fm/tag/personal' },
+            {
+              name: 'southern hip hop',
+              url: 'https://www.last.fm/tag/southern+hip+hop',
+            },
+            { name: 'pop rap', url: 'https://www.last.fm/tag/pop+rap' },
+            {
+              name: 'dirty south',
+              url: 'https://www.last.fm/tag/dirty+south',
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time',
+        artist: 'Big K.R.I.T.',
+        name: '4eva Is a Mighty Long Time',
+        mbid: '2072a26b-e653-4dc7-898a-0f5c18eeea35',
+      },
+      {
+        listeners: '40471',
+        playcount: '460174',
+        artist: 'Sun Kil Moon',
+        mbid: '0b43d258-7485-4a28-8dd0-c5b5291624c2',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 1 },
+              duration: 637,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/God+Bless+Ohio',
+              name: 'God Bless Ohio',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 2 },
+              duration: 538,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Chili+Lemon+Peanuts',
+              name: 'Chili Lemon Peanuts',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 3 },
+              duration: 647,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Philadelphia+Cop',
+              name: 'Philadelphia Cop',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 4 },
+              duration: 474,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/The+Highway+Song',
+              name: 'The Highway Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 5 },
+              duration: 554,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Lone+Star',
+              name: 'Lone Star',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 6 },
+              duration: 390,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Window+Sash+Weights',
+              name: 'Window Sash Weights',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 7 },
+              duration: 313,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Sarah+Lawrence+College+Song',
+              name: 'Sarah Lawrence College Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 8 },
+              duration: 513,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Butch+Lullaby',
+              name: 'Butch Lullaby',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 9 },
+              duration: 744,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Stranger+Than+Paradise',
+              name: 'Stranger Than Paradise',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 10 },
+              duration: 437,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Early+June+Blues',
+              name: 'Early June Blues',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 11 },
+              duration: 479,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Bergen+to+Trondheim',
+              name: 'Bergen to Trondheim',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 12 },
+              duration: 478,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/I+Love+Portugal',
+              name: 'I Love Portugal',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 13 },
+              duration: 338,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Bastille+Day',
+              name: 'Bastille Day',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 14 },
+              duration: 429,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Vague+Rock+Song',
+              name: 'Vague Rock Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 15 },
+              duration: 450,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Seventies+TV+Show+Theme+Song',
+              name: 'Seventies TV Show Theme Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sun+Kil+Moon',
+                name: 'Sun Kil Moon',
+                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
+              },
+              '@attr': { rank: 16 },
+              duration: 373,
+              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/I+Love+You+Forever+and+Beyond+Eternity',
+              name: 'I Love You Forever and Beyond Eternity',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood',
+        tags: {
+          tag: [
+            { name: '2017', url: 'https://www.last.fm/tag/2017' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'folk-hop', url: 'https://www.last.fm/tag/folk-hop' },
+            {
+              name: 'spoken word',
+              url: 'https://www.last.fm/tag/spoken+word',
+            },
+            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
+          ],
+        },
+        name: 'Common as Light and Love Are Red Valleys of Blood',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/60467cec482a40ca23e1af06e414e440.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/60467cec482a40ca23e1af06e414e440.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/60467cec482a40ca23e1af06e414e440.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/60467cec482a40ca23e1af06e414e440.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/60467cec482a40ca23e1af06e414e440.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/60467cec482a40ca23e1af06e414e440.png',
+          },
+        ],
+      },
+      {
+        listeners: '9566',
+        playcount: '463631',
+        wiki: {
+          published: '01 Jan 2017, 09:36',
+          content:
+            'The third mash-up album by Neil Cicierega, released 23 January 2017.\n <a href="https://www.last.fm/music/Neil+Cicierega/Mouth+Moods">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'The third mash-up album by Neil Cicierega, released 23 January 2017. <a href="https://www.last.fm/music/Neil+Cicierega/Mouth+Moods">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 1 },
+              duration: 175,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/The+Starting+Line',
+              name: 'The Starting Line',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 2 },
+              duration: 149,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Floor+Corn',
+              name: 'Floor Corn',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 3 },
+              duration: 179,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/AC%2FVC',
+              name: 'AC/VC',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 4 },
+              duration: 131,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/300MB',
+              name: '300MB',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 5 },
+              duration: 29,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Revolution+%235',
+              name: 'Revolution #5',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 6 },
+              duration: 219,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Dear+Dinosaur',
+              name: 'Dear Dinosaur',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 7 },
+              duration: 212,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Annoyed+Grunt',
+              name: 'Annoyed Grunt',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 8 },
+              duration: 227,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Bustin',
+              name: 'Bustin',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 9 },
+              duration: 14,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Blockbuster',
+              name: 'Blockbuster',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 10 },
+              duration: 68,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Busta',
+              name: 'Busta',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 11 },
+              duration: 184,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Tiger',
+              name: 'Tiger',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 12 },
+              duration: 212,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/The+End',
+              name: 'The End',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 13 },
+              duration: 58,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Shady+Interlude',
+              name: 'Shady Interlude',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 14 },
+              duration: 277,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/T.I.M.E.',
+              name: 'T.I.M.E.',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 15 },
+              duration: 257,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Smooth',
+              name: 'Smooth',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 16 },
+              duration: 145,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Stand+By+Meme',
+              name: 'Stand By Meme',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 17 },
+              duration: 195,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Wallspin',
+              name: 'Wallspin',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 18 },
+              duration: 209,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Wow+Wow',
+              name: 'Wow Wow',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 19 },
+              duration: 224,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Mouth+Pressure',
+              name: 'Mouth Pressure',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Neil+Cicierega',
+                name: 'Neil Cicierega',
+                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
+              },
+              '@attr': { rank: 20 },
+              duration: 249,
+              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Shit',
+              name: 'Shit',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'mashup', url: 'https://www.last.fm/tag/mashup' },
+            {
+              name: 'plunderphonics',
+              url: 'https://www.last.fm/tag/plunderphonics',
+            },
+            { name: 'remix', url: 'https://www.last.fm/tag/remix' },
+            {
+              name: 'personal favourites',
+              url: 'https://www.last.fm/tag/personal+favourites',
+            },
+            { name: 'meme', url: 'https://www.last.fm/tag/meme' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods',
+        artist: 'Neil Cicierega',
+        name: 'Mouth Moods',
+        mbid: '593fff6f-824d-4621-8245-3e8b3b007744',
+      },
+      {
+        listeners: '29083',
+        playcount: '324907',
+        artist: 'Kirin J Callinan',
+        mbid: '64742c51-8ae0-4133-b170-27824fe38656',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 1 },
+              duration: 256,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/My+Moment',
+              name: 'My Moment',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 2 },
+              duration: 218,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/S.A.D.',
+              name: 'S.A.D.',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 3 },
+              duration: 194,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Down+2+Hang',
+              name: 'Down 2 Hang',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 4 },
+              duration: 240,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Living+Each+Day',
+              name: 'Living Each Day',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 5 },
+              duration: 283,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Big+Enough',
+              name: 'Big Enough',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 6 },
+              duration: 299,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Family+Home',
+              name: 'Family Home',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 7 },
+              duration: 271,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Tellin%27+Me+This',
+              name: "Tellin' Me This",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 8 },
+              duration: 190,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/This+Whole+Town',
+              name: 'This Whole Town',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 9 },
+              duration: 243,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Friend+Of+Lindy+Morrison',
+              name: 'Friend Of Lindy Morrison',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kirin+J+Callinan',
+                name: 'Kirin J Callinan',
+                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
+              },
+              '@attr': { rank: 10 },
+              duration: 233,
+              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Bravado',
+              name: 'Bravado',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado',
+        tags: {
+          tag: [
+            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
+            { name: 'eurodance', url: 'https://www.last.fm/tag/eurodance' },
+            { name: 'post-punk', url: 'https://www.last.fm/tag/post-punk' },
+            { name: 'synthpop', url: 'https://www.last.fm/tag/synthpop' },
+            { name: 'aaaaah', url: 'https://www.last.fm/tag/aaaaah' },
+          ],
+        },
+        name: 'Bravado',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '49496',
+        playcount: '814681',
+        artist: 'Algiers',
+        mbid: '04a68b9f-4382-49ef-b1f0-1c81cf71819a',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 1 },
+              duration: 190,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Walk+Like+A+Panther',
+              name: 'Walk Like A Panther',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 2 },
+              duration: 243,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Cry+Of+The+Martyrs',
+              name: 'Cry Of The Martyrs',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 3 },
+              duration: 252,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/The+Underside+Of+Power',
+              name: 'The Underside Of Power',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 4 },
+              duration: 272,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Death+March',
+              name: 'Death March',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 5 },
+              duration: 223,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/A+Murmur.+A+Sign.',
+              name: 'A Murmur. A Sign.',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 6 },
+              duration: 214,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Mme+Rieux',
+              name: 'Mme Rieux',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 7 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Cleveland',
+              name: 'Cleveland',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 8 },
+              duration: 153,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Animals',
+              name: 'Animals',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 9 },
+              duration: 172,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Plague+Years',
+              name: 'Plague Years',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 10 },
+              duration: 252,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Hymn+for+an+Average+Man',
+              name: 'Hymn for an Average Man',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 11 },
+              duration: 143,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Bury+Me+Standing',
+              name: 'Bury Me Standing',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Algiers',
+                name: 'Algiers',
+                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
+              },
+              '@attr': { rank: 12 },
+              duration: 325,
+              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/The+Cycle%2FThe+Spiral:+Time+to+Go+Down+Slowly',
+              name: 'The Cycle/The Spiral: Time to Go Down Slowly',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power',
+        tags: {
+          tag: [
+            { name: '2017', url: 'https://www.last.fm/tag/2017' },
+            { name: 'rock', url: 'https://www.last.fm/tag/rock' },
+            { name: 'gospel', url: 'https://www.last.fm/tag/gospel' },
+            { name: 'indie rock', url: 'https://www.last.fm/tag/indie+rock' },
+            { name: 'post-punk', url: 'https://www.last.fm/tag/post-punk' },
+          ],
+        },
+        name: 'The Underside Of Power',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/72e935ca8dcc0034251484a0283b36d6.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/72e935ca8dcc0034251484a0283b36d6.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/72e935ca8dcc0034251484a0283b36d6.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/72e935ca8dcc0034251484a0283b36d6.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/72e935ca8dcc0034251484a0283b36d6.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/72e935ca8dcc0034251484a0283b36d6.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '148761',
+        playcount: '2957092',
+        artist: 'Perfume Genius',
+        mbid: '19a16ab7-0853-4572-b9dc-70c3a18fda7e',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 1 },
+              duration: 233,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Whole+Life',
+              name: 'Whole Life',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 2 },
+              duration: 284,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Describe',
+              name: 'Describe',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 3 },
+              duration: 155,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Without+You',
+              name: 'Without You',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 4 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Jason',
+              name: 'Jason',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 5 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Leave',
+              name: 'Leave',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 6 },
+              duration: 303,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/On+the+Floor',
+              name: 'On the Floor',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 7 },
+              duration: 253,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Your+Body+Changes+Everything',
+              name: 'Your Body Changes Everything',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 8 },
+              duration: 321,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Moonbend',
+              name: 'Moonbend',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 9 },
+              duration: 208,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Just+a+Touch',
+              name: 'Just a Touch',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 10 },
+              duration: 267,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Nothing+at+All',
+              name: 'Nothing at All',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 11 },
+              duration: 181,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/One+More+Try',
+              name: 'One More Try',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 12 },
+              duration: 258,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Some+Dream',
+              name: 'Some Dream',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Perfume+Genius',
+                name: 'Perfume Genius',
+                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
+              },
+              '@attr': { rank: 13 },
+              duration: 202,
+              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Borrowed+Light',
+              name: 'Borrowed Light',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately',
+        tags: {
+          tag: [
+            { name: '2020', url: 'https://www.last.fm/tag/2020' },
+            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
+            { name: '2020s', url: 'https://www.last.fm/tag/2020s' },
+            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+          ],
+        },
+        name: 'Set My Heart On Fire Immediately',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/ca79d5a2dd935979e8c849c159bbdb13.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/ca79d5a2dd935979e8c849c159bbdb13.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/ca79d5a2dd935979e8c849c159bbdb13.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/ca79d5a2dd935979e8c849c159bbdb13.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/ca79d5a2dd935979e8c849c159bbdb13.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/ca79d5a2dd935979e8c849c159bbdb13.jpg',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Fantano Best of 2018',
+    id: 'fantano-best-of-2018',
+    albums: [
+      {
+        listeners: '121706',
+        playcount: '3420520',
+        wiki: {
+          published: '02 Feb 2019, 01:16',
+          content:
+            'You Won\'t Get What You Want is the fourth studio album by American rock band Daughters. It was released on October 26, 2018, through Ipecac Recordings. It is the band\'s first album since they broke up in late 2009. The album was released to universal critical acclaim, with many critics naming it one of the best albums of 2018. It marks a significant departure from the band\'s earlier style, moving away from mathcore towards a more industrial and noise rock influenced sound.\n\nThe album was met with widespread critical acclaim. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream critics, the album received an average score of 87, based on 11 reviews, which indicates "universal acclaim". The album was included on numerous end-of-year lists as one of the best albums of 2018. Pitchfork wrote that "Similar to their Providence art-metal contemporaries in the Body, Daughters’ accessibility is directly proportional to their uncompromising compositional choices—hypnotic dissonance, martial drums cranked to incapacitating volumes, scathing vocal repetition, all rendered through impossibly vivid production. This is not music interesting in growing on you: it consumes and dominates." PopMatters called it "the perfect return for Daughters. While aspects of the band\'s creative vision have been altered and their sound has further evolved, the core elements remain intact. The asphyxiating sound has been augmented with the inclusion of longer, heavier sludge influenced moments. The tension the band build is further explored through different means."\n\nCredits (adapted from liner notes):\n\nAll lyrics written by Alexis Marshall; all music composed by Nick Sadler.\n\nDaughters: \nAlexis S.F. Marshall – vocals, lyrics | \nJon Syverson – drums | \nNicolas Andrew Sadler – guitar, production | \nSamuel Walker – bass guitar \n\nAdditional personnel:\nSeth Manchester – recording, production | \nHeba Kadry – mastering | \nJesse Draxler – artwork | \nShawn Vesinaw – layout <a href="https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            "You Won't Get What You Want is the fourth studio album by American rock band Daughters. It was released on October 26, 2018, through Ipecac Recordings. It is the band's first album since they broke up in late 2009. The album was released to universal critical acclaim, with many critics naming it one of the best albums of 2018. It marks a significant departure from the band's earlier style, moving away from mathcore towards a more industrial and noise rock influenced sound. The album was met with widespread critical acclaim. At Metacritic, which assigns a normalized rating out of 100 <a href=\"https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want\">Read more on Last.fm</a>.",
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 1 },
+              duration: 355,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/City+Song',
+              name: 'City Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 2 },
+              duration: 304,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Long+Road,+No+Turns',
+              name: 'Long Road, No Turns',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 3 },
+              duration: 426,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Satan+In+The+Wait',
+              name: 'Satan In The Wait',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 4 },
+              duration: 129,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/The+Flammable+Man',
+              name: 'The Flammable Man',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 5 },
+              duration: 165,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/The+Lords+Song',
+              name: 'The Lords Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 6 },
+              duration: 287,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Less+Sex',
+              name: 'Less Sex',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 7 },
+              duration: 295,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Daughter',
+              name: 'Daughter',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 8 },
+              duration: 235,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/The+Reason+They+Hate+Me',
+              name: 'The Reason They Hate Me',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 9 },
+              duration: 447,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Ocean+Song',
+              name: 'Ocean Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Daughters',
+                name: 'Daughters',
+                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
+              },
+              '@attr': { rank: 10 },
+              duration: 269,
+              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Guest+House',
+              name: 'Guest House',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'noise rock', url: 'https://www.last.fm/tag/noise+rock' },
+            { name: '2018', url: 'https://www.last.fm/tag/2018' },
+            {
+              name: 'industrial rock',
+              url: 'https://www.last.fm/tag/industrial+rock',
+            },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+            { name: 'industrial', url: 'https://www.last.fm/tag/industrial' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want',
+        artist: 'Daughters',
+        name: "You Won't Get What You Want",
+        mbid: '1390ceef-1a9f-4540-b701-170318a7b868',
+      },
+      {
+        listeners: '2215',
+        playcount: '5152',
+        wiki: {
+          published: '07 Jul 2020, 23:16',
+          content:
+            'This is nothing. Glitch let people upload it to spotify under KSG name. <a href="https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'This is nothing. Glitch let people upload it to spotify under KSG name. <a href="https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 1 },
+              duration: 109,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Squeezing+Sara',
+              name: 'Squeezing Sara',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 2 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Kids+See+Ghosts',
+              name: 'Kids See Ghosts',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 3 },
+              duration: 58,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/The+Champ+Dance',
+              name: 'The Champ Dance',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 4 },
+              duration: 112,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Memory+Sizzle',
+              name: 'Memory Sizzle',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 5 },
+              duration: 116,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Silky+Drops',
+              name: 'Silky Drops',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 6 },
+              duration: 122,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Classic+Night',
+              name: 'Classic Night',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 7 },
+              duration: 144,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Beat+of+the+Dragon',
+              name: 'Beat of the Dragon',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 8 },
+              duration: 119,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Squeezing+Baby,+Pt.+2',
+              name: 'Squeezing Baby, Pt. 2',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Kids+See+Ghosts',
+                name: 'Kids See Ghosts',
+                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
+              },
+              '@attr': { rank: 9 },
+              duration: 191,
+              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Dance+of+the+Champ,+Pt.+2',
+              name: 'Dance of the Champ, Pt. 2',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/a5804db69f7c729a59475c15e96db9c1.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/a5804db69f7c729a59475c15e96db9c1.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/a5804db69f7c729a59475c15e96db9c1.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a5804db69f7c729a59475c15e96db9c1.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a5804db69f7c729a59475c15e96db9c1.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/a5804db69f7c729a59475c15e96db9c1.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'kanye west', url: 'https://www.last.fm/tag/kanye+west' },
+            {
+              name: 'alternative hip hop',
+              url: 'https://www.last.fm/tag/alternative+hip+hop',
+            },
+            { name: 'kid cudi', url: 'https://www.last.fm/tag/kid+cudi' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero',
+        artist: 'Kids See Ghosts',
+        name: 'Jamin Hero',
+        mbid: '',
+      },
+      {
+        listeners: '244926',
+        playcount: '10934190',
+        artist: 'JPEGMAFIA',
+        mbid: '476fe0aa-f4d3-487c-8ed3-c7eb3a0124f9',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 1 },
+              duration: 157,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/1539+N.+Calvert',
+              name: '1539 N. Calvert',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 2 },
+              duration: 151,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Real+Nega',
+              name: 'Real Nega',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 3 },
+              duration: 198,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Thug+Tears',
+              name: 'Thug Tears',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 4 },
+              duration: 85,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Dayum',
+              name: 'Dayum',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 5 },
+              duration: 152,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Baby+I%27m+Bleeding',
+              name: "Baby I'm Bleeding",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 6 },
+              duration: 93,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/My+Thoughts+On+Neogaf+Dying',
+              name: 'My Thoughts On Neogaf Dying',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 7 },
+              duration: 188,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Rock+N+Roll+Is+Dead',
+              name: 'Rock N Roll Is Dead',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Bobbi+Rush',
+                name: 'JPEGMAFIA feat. Bobbi Rush',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 8 },
+              duration: 195,
+              url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Bobbi+Rush/Veteran/DD+Form+214',
+              name: 'DD Form 214',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 9 },
+              duration: 161,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Germs',
+              name: 'Germs',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Freaky',
+                name: 'JPEGMAFIA feat. Freaky',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 10 },
+              duration: 80,
+              url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Freaky/Veteran/Libtard+Anthem',
+              name: 'Libtard Anthem',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 11 },
+              duration: 180,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Panic+Emoji',
+              name: 'Panic Emoji',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 12 },
+              duration: 83,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/DJ+Snitch+Bitch+Interlude',
+              name: 'DJ Snitch Bitch Interlude',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 13 },
+              duration: 124,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Whole+Foods',
+              name: 'Whole Foods',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 14 },
+              duration: 117,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Macaulay+Culkin',
+              name: 'Macaulay Culkin',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 15 },
+              duration: 213,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Williamsburg',
+              name: 'Williamsburg',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 16 },
+              duration: 86,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/I+Cannot+Fucking+Wait+Until+Morrissey+Dies',
+              name: 'I Cannot Fucking Wait Until Morrissey Dies',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Yung+Midpack',
+                name: 'JPEGMAFIA feat. Yung Midpack',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 17 },
+              duration: 282,
+              url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Yung+Midpack/Veteran/Rainbow+Six',
+              name: 'Rainbow Six',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 18 },
+              duration: 148,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/1488',
+              name: '1488',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/JPEGMAFIA',
+                name: 'JPEGMAFIA',
+                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
+              },
+              '@attr': { rank: 19 },
+              duration: 135,
+              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Curb+Stomp',
+              name: 'Curb Stomp',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/JPEGMAFIA/Veteran',
+        tags: {
+          tag: [
+            { name: '2018', url: 'https://www.last.fm/tag/2018' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+            { name: 'glitch hop', url: 'https://www.last.fm/tag/glitch+hop' },
+            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+          ],
+        },
+        name: 'Veteran',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/109adfe3cc11201e3fb97a246afc733d.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/109adfe3cc11201e3fb97a246afc733d.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/109adfe3cc11201e3fb97a246afc733d.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/109adfe3cc11201e3fb97a246afc733d.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/109adfe3cc11201e3fb97a246afc733d.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/109adfe3cc11201e3fb97a246afc733d.png',
+          },
+        ],
+      },
+      {
+        listeners: '12253',
+        playcount: '214819',
+        artist: 'Natalia Lafourcade',
+        mbid: '',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 1 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Musas/T%C3%BA+S%C3%AD+Sabes+Quererme',
+              name: 'Tú Sí Sabes Quererme',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 2 },
+              duration: 214,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Soledad+y+el+Mar',
+              name: 'Soledad y el Mar',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 3 },
+              duration: 209,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Mexicana+Hermosa',
+              name: 'Mexicana Hermosa',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 4 },
+              duration: 265,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Qu%C3%A9+He+Sacado+Con+Quererte',
+              name: 'Qué He Sacado Con Quererte',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 5 },
+              duration: 288,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Roc%C3%ADo+de+Todos+los+Campos',
+              name: 'Rocío de Todos los Campos',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 6 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Musas/Mi+tierra+veracruzana',
+              name: 'Mi tierra veracruzana',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 7 },
+              duration: 158,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Te+Vi+Pasar',
+              name: 'Te Vi Pasar',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 8 },
+              duration: 224,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Son+Amores+(That%27s+Amore)',
+              name: "Son Amores (That's Amore)",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 9 },
+              duration: 188,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/T%C3%BA+Me+Acostumbraste',
+              name: 'Tú Me Acostumbraste',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 10 },
+              duration: 223,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Soy+lo+Prohibido',
+              name: 'Soy lo Prohibido',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 11 },
+              duration: 300,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Tonada+de+Luna+Llena',
+              name: 'Tonada de Luna Llena',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Los+Macorinos',
+                name: 'Los Macorinos',
+                mbid: '',
+              },
+              '@attr': { rank: 12 },
+              duration: 197,
+              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Vals+Po%C3%A9tico+-+Instrumental',
+              name: 'Vals Poético - Instrumental',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Natalia+Lafourcade/Musas',
+        tags: {
+          tag: [
+            { name: '2017', url: 'https://www.last.fm/tag/2017' },
+            {
+              name: 'canciones espanolas',
+              url: 'https://www.last.fm/tag/canciones+espanolas',
+            },
+            { name: 'latin', url: 'https://www.last.fm/tag/latin' },
+            {
+              name: 'female vocalists',
+              url: 'https://www.last.fm/tag/female+vocalists',
+            },
+            { name: 'espanhol', url: 'https://www.last.fm/tag/espanhol' },
+          ],
+        },
+        name: 'Musas',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '174662',
+        playcount: '4830078',
+        wiki: {
+          published: '06 Jun 2018, 03:39',
+          content:
+            'Wide Awake! is the sixth studio album by American indie rock band Parquet Courts, released on May 18, 2018 on Rough Trade Records. The album was first announced in February 2018, while the album was recorded in December 2017 to January 2018. The band recruited Danger Mouse to produce the album, as the band claimed, as a way to push themselves outside of their comfort zone. Wide Awake! received critical acclaim upon its release. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream publications, the album received an average score of 84, based on 16 reviews, indicating "universal acclaim". <a href="https://www.last.fm/music/Parquet+Courts/Wide+Awake!">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Wide Awake! is the sixth studio album by American indie rock band Parquet Courts, released on May 18, 2018 on Rough Trade Records. The album was first announced in February 2018, while the album was recorded in December 2017 to January 2018. The band recruited Danger Mouse to produce the album, as the band claimed, as a way to push themselves outside of their comfort zone. Wide Awake! received critical acclaim upon its release. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream publications, the album received an average score of 84, based on 16 <a href="https://www.last.fm/music/Parquet+Courts/Wide+Awake!">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 1 },
+              duration: 241,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Total+Football',
+              name: 'Total Football',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 2 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Violence',
+              name: 'Violence',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 3 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Before+the+Water+Gets+Too+High',
+              name: 'Before the Water Gets Too High',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 4 },
+              duration: 163,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Mardi+Gras+Beads',
+              name: 'Mardi Gras Beads',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 5 },
+              duration: 194,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Almost+Had+To+Start+A+Fight%2FIn+And+Out+of+Patience',
+              name: 'Almost Had To Start A Fight/In And Out of Patience',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 6 },
+              duration: 175,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Freebird+II',
+              name: 'Freebird II',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 7 },
+              duration: 131,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Normalization',
+              name: 'Normalization',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 8 },
+              duration: 234,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Back+to+Earth',
+              name: 'Back to Earth',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 9 },
+              duration: 158,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Wide+Awake',
+              name: 'Wide Awake',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 10 },
+              duration: 82,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/NYC+Observation',
+              name: 'NYC Observation',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 11 },
+              duration: 101,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Extinction',
+              name: 'Extinction',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 12 },
+              duration: 162,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Death+Will+Bring+Change',
+              name: 'Death Will Bring Change',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Parquet+Courts',
+                name: 'Parquet Courts',
+                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
+              },
+              '@attr': { rank: 13 },
+              duration: 186,
+              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Tenderness',
+              name: 'Tenderness',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2018', url: 'https://www.last.fm/tag/2018' },
+            { name: 'indie rock', url: 'https://www.last.fm/tag/indie+rock' },
+            { name: 'art punk', url: 'https://www.last.fm/tag/art+punk' },
+            { name: 'indie', url: 'https://www.last.fm/tag/indie' },
+            { name: 'post punk', url: 'https://www.last.fm/tag/post+punk' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!',
+        artist: 'Parquet Courts',
+        name: 'Wide Awake!',
+        mbid: '2a827755-8940-40c6-8b3f-8dcb74dcaf02',
+      },
+      {
+        listeners: '145002',
+        playcount: '2817699',
+        wiki: {
+          published: '12 Dec 2018, 21:01',
+          content:
+            'Room 25 is the debut album by American poet and hip hop recording artist Noname. Recorded in about a month\'s time, the album chronicles the two years since the release of Noname\'s debut mixtape Telefone, most notably her move from Chicago to Los Angeles and an intense, short-lived relationship that resulted in the loss of her virginity at age 25.\n\nRoom 25 was executive produced by Phoelix, who previously worked as a producer on Telefone. It features guest appearances by Ravyn Lenae, Smino, Saba, Phoelix, amongst others. The album was self-released through digital services on September 14, 2018. <a href="https://www.last.fm/music/Noname/Room+25">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Room 25 is the debut album by American poet and hip hop recording artist Noname. Recorded in about a month\'s time, the album chronicles the two years since the release of Noname\'s debut mixtape Telefone, most notably her move from Chicago to Los Angeles and an intense, short-lived relationship that resulted in the loss of her virginity at age 25. Room 25 was executive produced by Phoelix, who previously worked as a producer on Telefone. It features guest appearances by Ravyn Lenae, Smino, Saba, Phoelix, amongst others. The album was self-released through digital services on September 14, 2018. <a href="https://www.last.fm/music/Noname/Room+25">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname',
+                name: 'Noname',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 1 },
+              duration: 94,
+              url: 'https://www.last.fm/music/Noname/Room+25/Self',
+              name: 'Self',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname',
+                name: 'Noname',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 2 },
+              duration: 133,
+              url: 'https://www.last.fm/music/Noname/Room+25/Blaxploitation',
+              name: 'Blaxploitation',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname+feat.+Adam+Ness',
+                name: 'Noname feat. Adam Ness',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 3 },
+              duration: 257,
+              url: 'https://www.last.fm/music/Noname+feat.+Adam+Ness/Room+25/Prayer+Song',
+              name: 'Prayer Song',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname+feat.+Phoelix',
+                name: 'Noname feat. Phoelix',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 4 },
+              duration: 278,
+              url: 'https://www.last.fm/music/Noname+feat.+Phoelix/Room+25/Window',
+              name: 'Window',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname',
+                name: 'Noname',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 5 },
+              duration: 219,
+              url: 'https://www.last.fm/music/Noname/Room+25/Don%27t+Forget+About+Me',
+              name: "Don't Forget About Me",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname',
+                name: 'Noname',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 6 },
+              duration: 168,
+              url: 'https://www.last.fm/music/Noname/Room+25/Regal',
+              name: 'Regal',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname+feat.+Ravyn+Lenae',
+                name: 'Noname feat. Ravyn Lenae',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 7 },
+              duration: 163,
+              url: 'https://www.last.fm/music/Noname+feat.+Ravyn+Lenae/Room+25/Montego+Bae',
+              name: 'Montego Bae',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname+feat.+Smino+&+Saba',
+                name: 'Noname feat. Smino & Saba',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 8 },
+              duration: 182,
+              url: 'https://www.last.fm/music/Noname+feat.+Smino+&+Saba/Room+25/Ace',
+              name: 'Ace',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname+feat.+Phoelix+&+Benjamin+Earl+Turner',
+                name: 'Noname feat. Phoelix & Benjamin Earl Turner',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 9 },
+              duration: 195,
+              url: 'https://www.last.fm/music/Noname+feat.+Phoelix+&+Benjamin+Earl+Turner/Room+25/Part+Of+Me',
+              name: 'Part Of Me',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname',
+                name: 'Noname',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 10 },
+              duration: 149,
+              url: 'https://www.last.fm/music/Noname/Room+25/With+You',
+              name: 'With You',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Noname+feat.+Yaw+&+Adam+Ness',
+                name: 'Noname feat. Yaw & Adam Ness',
+                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
+              },
+              '@attr': { rank: 11 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Noname+feat.+Yaw+&+Adam+Ness/Room+25/No+Name',
+              name: 'No Name',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/33797f84236c8bbc9a2cdffbe0ea5371.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/33797f84236c8bbc9a2cdffbe0ea5371.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/33797f84236c8bbc9a2cdffbe0ea5371.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/33797f84236c8bbc9a2cdffbe0ea5371.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/33797f84236c8bbc9a2cdffbe0ea5371.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/33797f84236c8bbc9a2cdffbe0ea5371.png',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2018', url: 'https://www.last.fm/tag/2018' },
+            { name: 'ghetto sage', url: 'https://www.last.fm/tag/ghetto+sage' },
+            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'soul', url: 'https://www.last.fm/tag/soul' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Noname/Room+25',
+        artist: 'Noname',
+        name: 'Room 25',
+        mbid: '5a73d966-e523-4b68-93c3-e09e999cfb40',
+      },
+      {
+        listeners: '121289',
+        playcount: '4193103',
+        wiki: {
+          published: '06 Jun 2018, 23:30',
+          content:
+            'Year of the Snitch is the sixth studio album by experimental hip hop group Death Grips, released on June 22, 2018, through Third Worlds and Harvest Records.\n\nWith the release of Steroids (Crouching Tiger Hidden Gabber Megamix), Death Grips announced they were "working on the new Death Grips album". The band has made apparent via social media that they had been working with ambitious collaborators for the creation of the project throughout the promotion of the album, including in-studio collaborations with Australian experimental musician Lucas Abela, New Zealand film director Andrew Adamson and Tool bassist Justin Chancellor.\n\nThe band posted a black and white image of text reading "Year of the Snitch - new album coming soon..." on their official webpage on March 22, 2018. Death Grips shared the album artwork for Year of the Snitch on April 6, 2018. The band\'s imprint label Third Worlds\' website was also updated with this information.\n\nThe tracklist for the album was released on April 11, through a video posted to social media and the band\'s YouTube channel. The video consisted of the track names being sent via SMS to the user of an iPhone through a screen recorder, while short videos played in the foreground. Accompanying the differing ringtones, screamed vocals of the band\'s frontman MC Ride can be heard.\n\nDeath Grips uploaded a music video for the track "Streaky" on their YouTube channel on May 5, 2018, as the album\'s first single, followed by the track "Black Paint" on May 15, and the music video for the third album single, "Flies", on May 22.\n\nThe band posted a short video to Instagram on May 23, featuring DJ Swamp performing on a turntable in a recording studio, with the caption stating that "the majority of Year of the Snitch features ".\n\nThe fourth single, "Hahaha", was uploaded by the band to their YouTube page on June 7. That same day, the album\'s release date was announced as June 22. A music video for the track "Dilemma" featuring Andrew Adamson was uploaded on the Death Grips YouTube channel on June 15. A sixth single, "Shitshow", was uploaded to YouTube two days later. Three days later, on June 20, the official video for "Shitshow" was released. It was directed by Zach Hill and Galen Pehrson. However, the video\'s extremely explicit nature led to YouTube taking down the video and giving Death Grips\' channel a community strike, after which the band re-uploaded the music video to Vimeo. The album leaked online on 21st June, and was officially released on streaming platforms on 22nd June, as well as on Death Grips\' YouTube. <a href="https://www.last.fm/music/Death+Grips/Year+of+the+Snitch">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Year of the Snitch is the sixth studio album by experimental hip hop group Death Grips, released on June 22, 2018, through Third Worlds and Harvest Records. With the release of Steroids (Crouching Tiger Hidden Gabber Megamix), Death Grips announced they were "working on the new Death Grips album". The band has made apparent via social media that they had been working with ambitious collaborators for the creation of the project throughout the promotion of the album, including in-studio collaborations with Australian experimental musician Lucas Abela, New Zealand film director Andrew Adamson and Tool bassist Justin Chancellor. The band posted <a href="https://www.last.fm/music/Death+Grips/Year+of+the+Snitch">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 1 },
+              duration: 212,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Death+Grips+Is+Online',
+              name: 'Death Grips Is Online',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 2 },
+              duration: 153,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Flies',
+              name: 'Flies',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 3 },
+              duration: 229,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Black+Paint',
+              name: 'Black Paint',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 4 },
+              duration: 210,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Linda%27s+in+Custody',
+              name: "Linda's in Custody",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 5 },
+              duration: 92,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/The+Horn+Section',
+              name: 'The Horn Section',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 6 },
+              duration: 215,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Hahaha',
+              name: 'Hahaha',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 7 },
+              duration: 105,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Shitshow',
+              name: 'Shitshow',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 8 },
+              duration: 176,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Streaky',
+              name: 'Streaky',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 9 },
+              duration: 234,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Dilemma',
+              name: 'Dilemma',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 10 },
+              duration: 145,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Little+Richard',
+              name: 'Little Richard',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 11 },
+              duration: 201,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/The+Fear',
+              name: 'The Fear',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 12 },
+              duration: 62,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Outro',
+              name: 'Outro',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Death+Grips',
+                name: 'Death Grips',
+                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
+              },
+              '@attr': { rank: 13 },
+              duration: 201,
+              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Disappointed',
+              name: 'Disappointed',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/17101ec892cf0dd4d09bef752c3015e1.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/17101ec892cf0dd4d09bef752c3015e1.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/17101ec892cf0dd4d09bef752c3015e1.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/17101ec892cf0dd4d09bef752c3015e1.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/17101ec892cf0dd4d09bef752c3015e1.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/17101ec892cf0dd4d09bef752c3015e1.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2018', url: 'https://www.last.fm/tag/2018' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+            { name: 'avant-garde', url: 'https://www.last.fm/tag/avant-garde' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+            { name: 'electronic', url: 'https://www.last.fm/tag/electronic' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch',
+        artist: 'Death Grips',
+        name: 'Year of the Snitch',
+        mbid: '4900bbf8-3a39-457e-b648-7d03c7a6c6af',
+      },
+      {
+        listeners: '428',
+        playcount: '2296',
+        artist: 'Sons of Kemet',
+        mbid: '0edb4cde-5fad-4f89-8f54-0542e1b3a4bb',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 1 },
+              duration: 401,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Ada+Eastman+%5BExplicit%5D',
+              name: 'My Queen Is Ada Eastman [Explicit]',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 2 },
+              duration: 331,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Mamie+Phipps+Clark',
+              name: 'My Queen Is Mamie Phipps Clark',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 3 },
+              duration: 340,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Harriet+Tubman',
+              name: 'My Queen Is Harriet Tubman',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 4 },
+              duration: 307,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Anna+Julia+Cooper',
+              name: 'My Queen Is Anna Julia Cooper',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 5 },
+              duration: 396,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Angela+Davis',
+              name: 'My Queen Is Angela Davis',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 6 },
+              duration: 404,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Nanny+Of+The+Maroons',
+              name: 'My Queen Is Nanny Of The Maroons',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 7 },
+              duration: 424,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Yaa+Asantewaa',
+              name: 'My Queen Is Yaa Asantewaa',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 8 },
+              duration: 320,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Albertina+Sisulu',
+              name: 'My Queen Is Albertina Sisulu',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Sons+of+Kemet',
+                name: 'Sons of Kemet',
+                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
+              },
+              '@attr': { rank: 9 },
+              duration: 412,
+              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Doreen+Lawrence+%5BExplicit%5D',
+              name: 'My Queen Is Doreen Lawrence [Explicit]',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D',
+        tags: {
+          tag: [
+            { name: 'jazz', url: 'https://www.last.fm/tag/jazz' },
+            {
+              name: 'robertitus coleccion',
+              url: 'https://www.last.fm/tag/robertitus+coleccion',
+            },
+            {
+              name: 'names of people',
+              url: 'https://www.last.fm/tag/names+of+people',
+            },
+            {
+              name: 'kings and queens',
+              url: 'https://www.last.fm/tag/kings+and+queens',
+            },
+            {
+              name: 'contemporary jazz',
+              url: 'https://www.last.fm/tag/contemporary+jazz',
+            },
+          ],
+        },
+        name: 'Your Queen Is A Reptile [Explicit]',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/764f70950b98b105d791f3c5651c41b5.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/764f70950b98b105d791f3c5651c41b5.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/764f70950b98b105d791f3c5651c41b5.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/764f70950b98b105d791f3c5651c41b5.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/764f70950b98b105d791f3c5651c41b5.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/764f70950b98b105d791f3c5651c41b5.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '102158',
+        playcount: '1761350',
+        artist: 'U.S. Girls',
+        mbid: '3b5db962-46e7-4a21-a667-95f80742deca',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 1 },
+              duration: 224,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Velvet+4+Sale',
+              name: 'Velvet 4 Sale',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 2 },
+              duration: 267,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Rage+Of+Plastics',
+              name: 'Rage Of Plastics',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 3 },
+              duration: 174,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/M.A.H.',
+              name: 'M.A.H.',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 4 },
+              duration: 25,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Why+Do+I+Lose+My+Voice+When+I+Have+Something+to+Say',
+              name: 'Why Do I Lose My Voice When I Have Something to Say',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 5 },
+              duration: 190,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Rosebud',
+              name: 'Rosebud',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 6 },
+              duration: 203,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Incidental+Boogie',
+              name: 'Incidental Boogie',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 7 },
+              duration: 246,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/L-Over',
+              name: 'L-Over',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 8 },
+              duration: 242,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Pearly+Gates',
+              name: 'Pearly Gates',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 9 },
+              duration: 211,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Poem',
+              name: 'Poem',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 10 },
+              duration: 13,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Traviata',
+              name: 'Traviata',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/U.S.+Girls',
+                name: 'U.S. Girls',
+                mbid: '036912f5-c717-498d-8958-6058de17bb70',
+              },
+              '@attr': { rank: 11 },
+              duration: 468,
+              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Time',
+              name: 'Time',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited',
+        tags: {
+          tag: [
+            { name: '2018', url: 'https://www.last.fm/tag/2018' },
+            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
+            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
+            {
+              name: 'best of 2018',
+              url: 'https://www.last.fm/tag/best+of+2018',
+            },
+            {
+              name: 'psychedelic rock',
+              url: 'https://www.last.fm/tag/psychedelic+rock',
+            },
+          ],
+        },
+        name: 'In A Poem Unlimited',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Fantano Best of 2019',
+    id: 'fantano-best-of-2019',
+    albums: [
+      {
+        listeners: '272540',
+        playcount: '12772808',
+        wiki: {
+          published: '06 Jun 2021, 00:06',
+          content:
+            'Charli is the third studio album by English singer and songwriter Charli XCX. It was released through Asylum and Atlantic Records UK on 13 September 2019.\n\nAfter a string of non-album singles in 2018, she released “1999” with Troye Sivan in 2018 October. The album’s new lead single, “Blame It on Your Love”, featuring Lizzo, was released in May 2019.\n\nOn June 13th, 2019, XCX confirmed that the record was titled Charli, and that the project was scheduled for release on September 13th, 2019. <a href="https://www.last.fm/music/Charli+XCX/Charli">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Charli is the third studio album by English singer and songwriter Charli XCX. It was released through Asylum and Atlantic Records UK on 13 September 2019. After a string of non-album singles in 2018, she released “1999” with Troye Sivan in 2018 October. The album’s new lead single, “Blame It on Your Love”, featuring Lizzo, was released in May 2019. On June 13th, 2019, XCX confirmed that the record was titled Charli, and that the project was scheduled for release on September 13th, 2019. <a href="https://www.last.fm/music/Charli+XCX/Charli">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 1 },
+              duration: 157,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Next+Level+Charli',
+              name: 'Next Level Charli',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 2 },
+              duration: 246,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Gone',
+              name: 'Gone',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 3 },
+              duration: 208,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Cross+You+Out+(feat.+Sky+Ferreira)',
+              name: 'Cross You Out (feat. Sky Ferreira)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 4 },
+              duration: 189,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/1999',
+              name: '1999',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 5 },
+              duration: 233,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Click+(feat.+Kim+Petras+and+Tommy+Cash)',
+              name: 'Click (feat. Kim Petras and Tommy Cash)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 6 },
+              duration: 225,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Warm+(feat.+HAIM)',
+              name: 'Warm (feat. HAIM)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 7 },
+              duration: 191,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Thoughts',
+              name: 'Thoughts',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 8 },
+              duration: 191,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Blame+It+on+Your+Love+(feat.+Lizzo)',
+              name: 'Blame It on Your Love (feat. Lizzo)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 9 },
+              duration: 203,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/White+Mercedes',
+              name: 'White Mercedes',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 10 },
+              duration: 208,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Silver+Cross',
+              name: 'Silver Cross',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 11 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/I+Don%27t+Wanna+Know',
+              name: "I Don't Wanna Know",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 12 },
+              duration: 185,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Official',
+              name: 'Official',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 13 },
+              duration: 275,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/Shake+It+(feat.+Big+Freedia,+CupcakKe,+Brooke+Candy+and+Pabllo+Vittar)',
+              name: 'Shake It (feat. Big Freedia, CupcakKe, Brooke Candy and Pabllo Vittar)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 14 },
+              duration: 153,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/February+2017+(feat.+Clairo+&+Yaeji)',
+              name: 'February 2017 (feat. Clairo & Yaeji)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Charli+XCX',
+                name: 'Charli XCX',
+                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
+              },
+              '@attr': { rank: 15 },
+              duration: 205,
+              url: 'https://www.last.fm/music/Charli+XCX/Charli/2099+(feat.+Troye+Sivan)',
+              name: '2099 (feat. Troye Sivan)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/8837b1b6f6edd46cd9982530d41a2f9b.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/8837b1b6f6edd46cd9982530d41a2f9b.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/8837b1b6f6edd46cd9982530d41a2f9b.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/8837b1b6f6edd46cd9982530d41a2f9b.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/8837b1b6f6edd46cd9982530d41a2f9b.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/8837b1b6f6edd46cd9982530d41a2f9b.png',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
+            { name: 'electropop', url: 'https://www.last.fm/tag/electropop' },
+            { name: 'indie', url: 'https://www.last.fm/tag/indie' },
+            { name: 'synthpop', url: 'https://www.last.fm/tag/synthpop' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Charli+XCX/Charli',
+        artist: 'Charli XCX',
+        name: 'Charli',
+        mbid: '6fdb3260-eac7-4ad9-8c72-92f45d9ca836',
+      },
+      {
+        listeners: '590430',
+        playcount: '32734934',
+        wiki: {
+          published: '06 Jun 2021, 08:06',
+          content:
+            'IGOR is Tyler, The Creator\'s sixth studio album, and was released on May 17, 2019. The announcement of the album came after some speculations the week before, followed by the release of four snippets on Tyler, The Creator\'s social media platforms. The album contains features from artists such as Kanye West and Playboi Carti and includes numerous vocal samples from comedian Jerrod Carmichael.\n\nShortly before the IGOR\'s release, Tyler issued instructions for listening to the project on Twitter:\n\n"IGOR. THIS IS NOT BASTARD. THIS IS NOT GOBLIN. THIS IS NOT WOLF. THIS IS NOT CHERRY BOMB. THIS IS NOT FLOWER BOY. THIS IS IGOR. PRONOUNCED EEE-GORE. DONT GO INTO THIS EXPECTING A RAP ALBUM. DONT GO INTO THIS EXPECTING ANY ALBUM. JUST GO, JUMP INTO IT. I BELIEVE THE FIRST LISTEN WORKS BEST ALL THE WAY THROUGH, NO SKIPS. FRONT TO BACK. NO DISTRACTIONS EITHER. NO CHECKING YOUR PHONE NO WATCHING TV NO HOLDING CONVO, FULL ATTN TOWARDS THE SOUNDS WHERE YOU CAN FORM YOUR OWN OPINIONS AND FEELINGS TOWARDS THE ALBUM. SOME GO ON WALKS, SOME DRIVE, SOME LAY IN BED AND SPONGE IT ALL UP. WHATEVER IT IS YOU CHOOSE , FULLY INDULGE. WITH VOLUME. AS MUCH AS I WOULD LIKE TO PAINT A PICTURE AND TELL YOU MY FAVORITE MOMENTS, I WOULD RATHER YOU FORM YOUR OWN. IF WE EVER CROSS PATHS, FEEL FREE TO ARTICULATE WHAT THOSE MOMENTS WERE FOR YOU, KEEP IT TIMELY THO IM NOT TRYNA HAVE AN OPRAH EPISODE. STANK YOU SMELLY MUCHO." <a href="https://www.last.fm/music/Tyler,+The+Creator/IGOR">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'IGOR is Tyler, The Creator\'s sixth studio album, and was released on May 17, 2019. The announcement of the album came after some speculations the week before, followed by the release of four snippets on Tyler, The Creator\'s social media platforms. The album contains features from artists such as Kanye West and Playboi Carti and includes numerous vocal samples from comedian Jerrod Carmichael. Shortly before the IGOR\'s release, Tyler issued instructions for listening to the project on Twitter: "IGOR. THIS IS NOT BASTARD. THIS IS NOT GOBLIN. THIS IS NOT WOLF. THIS IS NOT CHERRY BOMB. THIS IS NOT FLOWER BOY. THIS IS <a href="https://www.last.fm/music/Tyler,+The+Creator/IGOR">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 1 },
+              duration: 201,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/IGOR%27S+THEME',
+              name: "IGOR'S THEME",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 2 },
+              duration: 190,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/EARFQUAKE',
+              name: 'EARFQUAKE',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 3 },
+              duration: 212,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/I+THINK',
+              name: 'I THINK',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 4 },
+              duration: 14,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/Exactly+What+You+Run+From+You+End+Up+Chasing',
+              name: 'Exactly What You Run From You End Up Chasing',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 5 },
+              duration: 177,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/RUNNING+OUT+OF+TIME',
+              name: 'RUNNING OUT OF TIME',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 6 },
+              duration: 195,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/NEW+MAGIC+WAND',
+              name: 'NEW MAGIC WAND',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 7 },
+              duration: 210,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/A+BOY+IS+A+GUN*',
+              name: 'A BOY IS A GUN*',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 8 },
+              duration: 179,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/PUPPET',
+              name: 'PUPPET',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 9 },
+              duration: 206,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/WHAT%27S+GOOD',
+              name: "WHAT'S GOOD",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+the+Creator',
+                name: 'Tyler, the Creator',
+                mbid: 'f6beac20-5dfe-4d1f-ae02-0b0a740aafd6',
+              },
+              '@attr': { rank: 10 },
+              duration: 375,
+              url: 'https://www.last.fm/music/Tyler,+the+Creator/IGOR/GONE,+GONE+%2F+THANK+YOU',
+              name: 'GONE, GONE / THANK YOU',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+the+Creator',
+                name: 'Tyler, the Creator',
+                mbid: 'f6beac20-5dfe-4d1f-ae02-0b0a740aafd6',
+              },
+              '@attr': { rank: 11 },
+              duration: 161,
+              url: 'https://www.last.fm/music/Tyler,+the+Creator/IGOR/I+DON%27T+LOVE+YOU+ANYMORE',
+              name: "I DON'T LOVE YOU ANYMORE",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Tyler,+The+Creator',
+                name: 'Tyler, The Creator',
+                mbid: '',
+              },
+              '@attr': { rank: 12 },
+              duration: 265,
+              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/ARE+WE+STILL+FRIENDS%3F',
+              name: 'ARE WE STILL FRIENDS?',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/09bc862022fa580b820e065e51da7905.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/09bc862022fa580b820e065e51da7905.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/09bc862022fa580b820e065e51da7905.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/09bc862022fa580b820e065e51da7905.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/09bc862022fa580b820e065e51da7905.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/09bc862022fa580b820e065e51da7905.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            {
+              name: 'experimental hip hop',
+              url: 'https://www.last.fm/tag/experimental+hip+hop',
+            },
+            { name: 'alternative', url: 'https://www.last.fm/tag/alternative' },
+            { name: 'neo-soul', url: 'https://www.last.fm/tag/neo-soul' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR',
+        artist: 'Tyler, The Creator',
+        name: 'IGOR',
+        mbid: '4603cee3-ece6-435c-b0b7-7d9eb1842d36',
+      },
+      {
+        listeners: '28338',
+        playcount: '354446',
+        artist: 'Richard Dawson',
+        mbid: '2757d45c-3404-41db-92c2-a82a76d70363',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 1 },
+              duration: 400,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Civil+Servant',
+              name: 'Civil Servant',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 2 },
+              duration: 317,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/The+Queen%27s+Head',
+              name: "The Queen's Head",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 3 },
+              duration: 311,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Two+Halves',
+              name: 'Two Halves',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 4 },
+              duration: 398,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Jogging',
+              name: 'Jogging',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 5 },
+              duration: 274,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Heart+Emoji',
+              name: 'Heart Emoji',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 6 },
+              duration: 479,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Black+Triangle',
+              name: 'Black Triangle',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 7 },
+              duration: 607,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Fulfilment+Centre',
+              name: 'Fulfilment Centre',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 8 },
+              duration: 302,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Fresher%27s+Ball',
+              name: "Fresher's Ball",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 9 },
+              duration: 79,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/No-one',
+              name: 'No-one',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Richard+Dawson',
+                name: 'Richard Dawson',
+                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
+              },
+              '@attr': { rank: 10 },
+              duration: 329,
+              url: 'https://www.last.fm/music/Richard+Dawson/2020/Dead+Dog+in+an+Alleyway',
+              name: 'Dead Dog in an Alleyway',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Richard+Dawson/2020',
+        tags: {
+          tag: [
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            { name: 'art rock', url: 'https://www.last.fm/tag/art+rock' },
+            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
+            {
+              name: 'singer-songwriter',
+              url: 'https://www.last.fm/tag/singer-songwriter',
+            },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+          ],
+        },
+        name: '2020',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '52684',
+        playcount: '937439',
+        artist: 'LINGUA IGNOTA',
+        mbid: '1c763181-f440-4c90-822a-ffa33aa0fff8',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 1 },
+              duration: 282,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/FAITHFUL+SERVANT+FRIEND+OF+CHRIST',
+              name: 'FAITHFUL SERVANT FRIEND OF CHRIST',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 2 },
+              duration: 574,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/DO+YOU+DOUBT+ME+TRAITOR',
+              name: 'DO YOU DOUBT ME TRAITOR',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 3 },
+              duration: 393,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/BUTCHER+OF+THE+WORLD',
+              name: 'BUTCHER OF THE WORLD',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 4 },
+              duration: 273,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/MAY+FAILURE+BE+YOUR+NOOSE',
+              name: 'MAY FAILURE BE YOUR NOOSE',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 5 },
+              duration: 307,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/FRAGRANT+IS+MY+MANY+FLOWER%27D+CROWN',
+              name: "FRAGRANT IS MY MANY FLOWER'D CROWN",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 6 },
+              duration: 390,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/IF+THE+POISON+WON%27T+TAKE+YOU+MY+DOGS+WILL',
+              name: "IF THE POISON WON'T TAKE YOU MY DOGS WILL",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 7 },
+              duration: 283,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/DAY+OF+TEARS+AND+MOURNING',
+              name: 'DAY OF TEARS AND MOURNING',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 8 },
+              duration: 391,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/SORROW!+SORROW!+SORROW!',
+              name: 'SORROW! SORROW! SORROW!',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 9 },
+              duration: 444,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/SPITE+ALONE+HOLDS+ME+ALOFT',
+              name: 'SPITE ALONE HOLDS ME ALOFT',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 10 },
+              duration: 153,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/FUCKING+DEATHDEALER',
+              name: 'FUCKING DEATHDEALER',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
+                name: 'LINGUA IGNOTA',
+                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
+              },
+              '@attr': { rank: 11 },
+              duration: 473,
+              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/I+AM+THE+BEAST',
+              name: 'I AM THE BEAST',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA',
+        tags: {
+          tag: [
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            {
+              name: 'death industrial',
+              url: 'https://www.last.fm/tag/death+industrial',
+            },
+            {
+              name: 'neoclassical darkwave',
+              url: 'https://www.last.fm/tag/neoclassical+darkwave',
+            },
+            { name: '2010s', url: 'https://www.last.fm/tag/2010s' },
+            { name: 'industrial', url: 'https://www.last.fm/tag/industrial' },
+          ],
+        },
+        name: 'CALIGULA',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/963269723079464606685c3093a06c68.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/963269723079464606685c3093a06c68.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/963269723079464606685c3093a06c68.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/963269723079464606685c3093a06c68.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/963269723079464606685c3093a06c68.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/963269723079464606685c3093a06c68.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '153841',
+        playcount: '2688200',
+        wiki: {
+          published: '03 Mar 2019, 02:36',
+          content:
+            'Grey Area is the third studio album by English rapper Little Simz, released on 1 March 2019. It features contributions from Cleo Sol, Chronixx, Little Dragon and Michael Kiwanuka. <a href="https://www.last.fm/music/Little+Simz/GREY+Area">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'Grey Area is the third studio album by English rapper Little Simz, released on 1 March 2019. It features contributions from Cleo Sol, Chronixx, Little Dragon and Michael Kiwanuka. <a href="https://www.last.fm/music/Little+Simz/GREY+Area">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 1 },
+              duration: 169,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Offence',
+              name: 'Offence',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 2 },
+              duration: 186,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Boss',
+              name: 'Boss',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 3 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Selfish',
+              name: 'Selfish',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 4 },
+              duration: 280,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Wounds',
+              name: 'Wounds',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 5 },
+              duration: 154,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Venom',
+              name: 'Venom',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 6 },
+              duration: 191,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/101+Fm',
+              name: '101 Fm',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Dragon',
+                name: 'Little Dragon',
+                mbid: 'c8a9ae11-63bf-409b-8bf3-a96b3712a2ff',
+              },
+              '@attr': { rank: 7 },
+              duration: 208,
+              url: 'https://www.last.fm/music/Little+Dragon/GREY+Area/Pressure',
+              name: 'Pressure',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 8 },
+              duration: 196,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Therapy',
+              name: 'Therapy',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 9 },
+              duration: 295,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Sherbet+Sunset',
+              name: 'Sherbet Sunset',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Little+Simz',
+                name: 'Little Simz',
+                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
+              },
+              '@attr': { rank: 10 },
+              duration: 225,
+              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Flowers',
+              name: 'Flowers',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/65f4fe960a64b9cd2910492175b5b12a.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/65f4fe960a64b9cd2910492175b5b12a.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/65f4fe960a64b9cd2910492175b5b12a.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/65f4fe960a64b9cd2910492175b5b12a.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/65f4fe960a64b9cd2910492175b5b12a.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/65f4fe960a64b9cd2910492175b5b12a.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'check out', url: 'https://www.last.fm/tag/check+out' },
+            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Little+Simz/GREY+Area',
+        artist: 'Little Simz',
+        name: 'GREY Area',
+        mbid: '8accaa03-773b-457c-a7d6-e5cbcd528277',
+      },
+      {
+        listeners: '28463',
+        playcount: '398779',
+        wiki: {
+          published: '12 Dec 2019, 03:34',
+          content:
+            'H.A.Q.Q. is the fourth studio album by transcendental black metal band Liturgy. Featuring their characteristic yearning guitar harmonies, epic song structures, and intense drumming, H.A.Q.Q. boils over with harp, piano, gagaku ensemble, pitched percussion, strings, and digital manipulation. It represents a consolidation of the band’s sound to date, a combination of the mathematical complexity of 2011’s Aesthethica and the glitchy experimental fervor of 2015’s The Ark Work. While ecstatically invoking heaven, H.A.Q.Q. is also Liturgy’s most vulnerable record for Hunter Hunt-Hendrix, addressing anger and struggles around mental health, sexuality, and religion. In part a reflection on Liturgy’s uniquely controversial career, it attempts to render the spirit of a cultural era whose basic fabric is unravelling, and to generate an energy of prophecy and love in the name of what is to come.\n\nHunt-Hendrix composed the album during 2018, drawing from a reservoir of material, some of which had existed for years, while simultaneously creating the forthcoming opera Origin of the Alimonies and philosophical System of Transcendental Qabala (depicted graphically on H.A.Q.Q.’s album cover). These latter two projects represent an interdisciplinary effort to create a total meaning system. The composition of H.A.Q.Q. was a sudden detour, but it is related to these other works as a point of entry. After performing in the debut of Origin of the Alimonies in the fall of 2018, the band spent 6 months bringing the album to life before recording it in August of 2019 at Machines with Magnets with Seth Manchester.\n\nH.A.Q.Q. stands for Haelegen above Quality and Quantity, and represents Hunt-Hendrix’s uniquely marxist and psychoanalytic vision of God.\n\nHunter Hunt-Hendrix - guitar, vocals\nBernard Gann - guitar\nTia Vincent-Clark - bass\nLeo Didkovsky - drums\n\nEric Wubbels - piano on track 2\nCharlotte Mundy - voice on tracks 1 and 3\nCory Bracken - vibraphone on tracks 4 and 6\nLeo Didkovsky - glockenspiel on tracks 4 and 6\nHunter Hunt-Hendrix - piano on tracks 5, 7, 9\nMarilu Donovan - harp on tracks 1, 3, 6, 8\nTadlow Ensemble - strings on tracks 4 and 6\nLucie Vitovka - hichiriki on track 1\nAdam Robinson - ryuteki on track 1\n\nRecorded in August 2019 and mixed by Seth Manchester at Machines with Magnets. Mastered by Matt Colton at Metropolis Mastering <a href="https://www.last.fm/music/Liturgy/H.A.Q.Q.">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'H.A.Q.Q. is the fourth studio album by transcendental black metal band Liturgy. Featuring their characteristic yearning guitar harmonies, epic song structures, and intense drumming, H.A.Q.Q. boils over with harp, piano, gagaku ensemble, pitched percussion, strings, and digital manipulation. It represents a consolidation of the band’s sound to date, a combination of the mathematical complexity of 2011’s Aesthethica and the glitchy experimental fervor of 2015’s The Ark Work. While ecstatically invoking heaven, H.A.Q.Q. is also Liturgy’s most vulnerable record for Hunter Hunt-Hendrix, addressing anger and struggles around mental health, sexuality, and religion. In part a reflection on Liturgy’s uniquely controversial career, <a href="https://www.last.fm/music/Liturgy/H.A.Q.Q.">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 1 },
+              duration: 518,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./HAJJ',
+              name: 'HAJJ',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 2 },
+              duration: 139,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./EXACO+I',
+              name: 'EXACO I',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 3 },
+              duration: 227,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./VIRGINITY',
+              name: 'VIRGINITY',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 4 },
+              duration: 331,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./PASAQALIA',
+              name: 'PASAQALIA',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 5 },
+              duration: 136,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./EXACO+II',
+              name: 'EXACO II',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 6 },
+              duration: 489,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./God+of+Love',
+              name: 'God of Love',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 7 },
+              duration: 235,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./EXACO+III',
+              name: 'EXACO III',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 8 },
+              duration: 423,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./HAQQ',
+              name: 'HAQQ',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Liturgy',
+                name: 'Liturgy',
+                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
+              },
+              '@attr': { rank: 9 },
+              duration: 223,
+              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./.+.+.+.',
+              name: '. . . .',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/291f61ac93eff5d2ac42e601332c594a.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/291f61ac93eff5d2ac42e601332c594a.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/291f61ac93eff5d2ac42e601332c594a.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/291f61ac93eff5d2ac42e601332c594a.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/291f61ac93eff5d2ac42e601332c594a.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/291f61ac93eff5d2ac42e601332c594a.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            {
+              name: 'transcendental black metal',
+              url: 'https://www.last.fm/tag/transcendental+black+metal',
+            },
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            { name: 'black metal', url: 'https://www.last.fm/tag/black+metal' },
+            { name: 'metal', url: 'https://www.last.fm/tag/metal' },
+            { name: 'glitch', url: 'https://www.last.fm/tag/glitch' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q.',
+        artist: 'Liturgy',
+        name: 'H.A.Q.Q.',
+        mbid: '62652db8-3874-4768-81b7-2eb4448063a1',
+      },
+      {
+        listeners: '11156',
+        playcount: '133428',
+        artist: 'Matana Roberts',
+        mbid: '8aa90cdd-61c3-4aa6-b72a-6a4c12fc963c',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 1 },
+              duration: 108,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Jewels+Of+The+Sky:+Inscription',
+              name: 'Jewels Of The Sky: Inscription',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 2 },
+              duration: 243,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/As+Far+As+the+Eye+Can+See',
+              name: 'As Far As the Eye Can See',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 3 },
+              duration: 583,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Trail+Of+The+Smiling+Sphinx',
+              name: 'Trail Of The Smiling Sphinx',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 4 },
+              duration: 149,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Piddling',
+              name: 'Piddling',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 5 },
+              duration: 187,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Shoes+Of+Gold',
+              name: 'Shoes Of Gold',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 6 },
+              duration: 341,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Wild+Fire+Bare',
+              name: 'Wild Fire Bare',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 7 },
+              duration: 161,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Fit+To+Be+Tied',
+              name: 'Fit To Be Tied',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 8 },
+              duration: 297,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Her+Mighty+Waters+Run',
+              name: 'Her Mighty Waters Run',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 9 },
+              duration: 150,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/All+Things+Beautiful',
+              name: 'All Things Beautiful',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 10 },
+              duration: 196,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/In+The+Fold',
+              name: 'In The Fold',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 11 },
+              duration: 164,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Raise+Yourself+Up',
+              name: 'Raise Yourself Up',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 12 },
+              duration: 51,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Backbone+Once+More',
+              name: 'Backbone Once More',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matana+Roberts',
+                name: 'Matana Roberts',
+                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
+              },
+              '@attr': { rank: 13 },
+              duration: 170,
+              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/How+Bright+They+Shine',
+              name: 'How Bright They Shine',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis',
+        tags: {
+          tag: [
+            {
+              name: 'spiritual jazz',
+              url: 'https://www.last.fm/tag/spiritual+jazz',
+            },
+            {
+              name: 'constellation',
+              url: 'https://www.last.fm/tag/constellation',
+            },
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            {
+              name: 'constellations',
+              url: 'https://www.last.fm/tag/constellations',
+            },
+            { name: 'mythology', url: 'https://www.last.fm/tag/mythology' },
+          ],
+        },
+        name: 'COIN COIN Chapter Four: Memphis',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '43456',
+        playcount: '670878',
+        artist: 'Alex Cameron',
+        mbid: '0a9595e3-e4f1-41a2-8a3f-3a9a1a3ced8d',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 1 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Stepdad',
+              name: 'Stepdad',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 2 },
+              duration: 265,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Miami+Memory',
+              name: 'Miami Memory',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 3 },
+              duration: 256,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Far+From+Born+Again',
+              name: 'Far From Born Again',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 4 },
+              duration: 265,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Gaslight',
+              name: 'Gaslight',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 5 },
+              duration: 278,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Bad+For+The+Boys',
+              name: 'Bad For The Boys',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 6 },
+              duration: 184,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/End+is+Nigh',
+              name: 'End is Nigh',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 7 },
+              duration: 153,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/PC+With+Me',
+              name: 'PC With Me',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 8 },
+              duration: 192,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Divorce',
+              name: 'Divorce',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 9 },
+              duration: 225,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Other+Ladies',
+              name: 'Other Ladies',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Alex+Cameron',
+                name: 'Alex Cameron',
+                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
+              },
+              '@attr': { rank: 10 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Too+Far',
+              name: 'Too Far',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory',
+        tags: {
+          tag: [
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            { name: '2010s', url: 'https://www.last.fm/tag/2010s' },
+            { name: 'alternative', url: 'https://www.last.fm/tag/alternative' },
+            { name: 'synthpop', url: 'https://www.last.fm/tag/synthpop' },
+            { name: 'soft rock', url: 'https://www.last.fm/tag/soft+rock' },
+          ],
+        },
+        name: 'Miami Memory',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/5c7cba518675fb9dfbf263fd94b6190f.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/5c7cba518675fb9dfbf263fd94b6190f.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/5c7cba518675fb9dfbf263fd94b6190f.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/5c7cba518675fb9dfbf263fd94b6190f.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/5c7cba518675fb9dfbf263fd94b6190f.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/5c7cba518675fb9dfbf263fd94b6190f.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '26442',
+        playcount: '914761',
+        artist: 'Dorian Electra',
+        mbid: '',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 1 },
+              duration: 126,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Mr.+To+You',
+              name: 'Mr. To You',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 2 },
+              duration: 217,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Career+Boy',
+              name: 'Career Boy',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 3 },
+              duration: 175,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Daddy+Like',
+              name: 'Daddy Like',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 4 },
+              duration: 138,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Emasculate',
+              name: 'Emasculate',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 5 },
+              duration: 197,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Man+to+Man',
+              name: 'Man to Man',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 6 },
+              duration: 115,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Musical+Genius',
+              name: 'Musical Genius',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 7 },
+              duration: 196,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Flamboyant',
+              name: 'Flamboyant',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 8 },
+              duration: 175,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Guyliner',
+              name: 'Guyliner',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 9 },
+              duration: 151,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Live+By+the+Sword',
+              name: 'Live By the Sword',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 10 },
+              duration: 181,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Adam+&+Steve',
+              name: 'Adam & Steve',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 11 },
+              duration: 197,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/fReAkY+4+Life',
+              name: 'fReAkY 4 Life',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 12 },
+              duration: 172,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Tool+for+You',
+              name: 'Tool for You',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 13 },
+              duration: 142,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Under+the+Armor',
+              name: 'Under the Armor',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 14 },
+              duration: 165,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Guyliner,+Pt.+2',
+              name: 'Guyliner, Pt. 2',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 15 },
+              duration: 190,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Your+Kinda+Guy',
+              name: 'Your Kinda Guy',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Dorian+Electra',
+                name: 'Dorian Electra',
+                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
+              },
+              '@attr': { rank: 16 },
+              duration: 193,
+              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Adam+&+Steve+(Count+Baldor+Remix)',
+              name: 'Adam & Steve (Count Baldor Remix)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)',
+        tags: {
+          tag: [
+            { name: 'electropop', url: 'https://www.last.fm/tag/electropop' },
+            {
+              name: 'bubblegum bass',
+              url: 'https://www.last.fm/tag/bubblegum+bass',
+            },
+            { name: 'dance-pop', url: 'https://www.last.fm/tag/dance-pop' },
+            { name: '2019', url: 'https://www.last.fm/tag/2019' },
+            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
+          ],
+        },
+        name: 'Flamboyant (Deluxe)',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/e2b52e37f163aec9a2ff0f40ce558681.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/e2b52e37f163aec9a2ff0f40ce558681.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/e2b52e37f163aec9a2ff0f40ce558681.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/e2b52e37f163aec9a2ff0f40ce558681.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/e2b52e37f163aec9a2ff0f40ce558681.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/e2b52e37f163aec9a2ff0f40ce558681.jpg',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: 'Fantano Best of 2020',
+    id: 'fantano-best-of-2020',
+    albums: [
+      {
+        listeners: '164183',
+        playcount: '8044235',
+        wiki: {
+          published: '07 Jul 2020, 16:19',
+          content:
+            'What\'s Your Pleasure? is the fourth studio album by singer and songwriter Jessie Ware. It was released on June, 26th 2020 on Virgin EMI Records. \n\nWare co-wrote all of the 12 tracks with fellow british producer James Ford. The duo eventually enlisted writers and producers such as Benji B, Joseph Mount, Kindness, Morgan Geist, Matthew Tavares, and Midland. \n\nFive singles preceeded the release of the new record: Adore You, Mirage (Don\'t Stop), Spotlight, Ooh La La and Save a Kiss.  <a href="https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'What\'s Your Pleasure? is the fourth studio album by singer and songwriter Jessie Ware. It was released on June, 26th 2020 on Virgin EMI Records. Ware co-wrote all of the 12 tracks with fellow british producer James Ford. The duo eventually enlisted writers and producers such as Benji B, Joseph Mount, Kindness, Morgan Geist, Matthew Tavares, and Midland. Five singles preceeded the release of the new record: Adore You, Mirage (Don\'t Stop), Spotlight, Ooh La La and Save a Kiss. <a href="https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 1 },
+              duration: 331,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Spotlight',
+              name: 'Spotlight',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 2 },
+              duration: 278,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/What%27s+Your+Pleasure%3F',
+              name: "What's Your Pleasure?",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 3 },
+              duration: 228,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Ooh+La+La',
+              name: 'Ooh La La',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 4 },
+              duration: 239,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Soul+Control',
+              name: 'Soul Control',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 5 },
+              duration: 242,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Save+a+Kiss',
+              name: 'Save a Kiss',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 6 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Adore+You',
+              name: 'Adore You',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 7 },
+              duration: 298,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/In+Your+Eyes',
+              name: 'In Your Eyes',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 8 },
+              duration: 217,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Step+Into+My+Life',
+              name: 'Step Into My Life',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 9 },
+              duration: 243,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Read+My+Lips',
+              name: 'Read My Lips',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 10 },
+              duration: 287,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Mirage+(Don%27t+Stop)',
+              name: "Mirage (Don't Stop)",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 11 },
+              duration: 277,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/The+Kill',
+              name: 'The Kill',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Jessie+Ware',
+                name: 'Jessie Ware',
+                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
+              },
+              '@attr': { rank: 12 },
+              duration: 334,
+              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Remember+Where+You+Are',
+              name: 'Remember Where You Are',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
+          },
+        ],
+        tags: {
+          tag: [
+            { name: 'disco', url: 'https://www.last.fm/tag/disco' },
+            { name: '2020', url: 'https://www.last.fm/tag/2020' },
+            { name: 'dance-pop', url: 'https://www.last.fm/tag/dance-pop' },
+            { name: 'house', url: 'https://www.last.fm/tag/house' },
+            { name: 'nu-disco', url: 'https://www.last.fm/tag/nu-disco' },
+          ],
+        },
+        url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F',
+        artist: 'Jessie Ware',
+        name: "What's Your Pleasure?",
+        mbid: '12c4d585-ae20-43ff-8876-bbb4eadd545a',
+      },
+      {
+        listeners: '67355',
+        playcount: '1780215',
+        artist: 'clipping.',
+        mbid: '99dfae16-464c-49fb-95da-d83bf836a3be',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 1 },
+              duration: 65,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Intro',
+              name: 'Intro',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 2 },
+              duration: 299,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Say+the+Name',
+              name: 'Say the Name',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 3 },
+              duration: 30,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Wytchboard+(Interlude)',
+              name: 'Wytchboard (Interlude)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 4 },
+              duration: 201,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/96+Neve+Campbell+(feat.+Cam+&+China)',
+              name: '96 Neve Campbell (feat. Cam & China)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 5 },
+              duration: 156,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Something+Underneath',
+              name: 'Something Underneath',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 6 },
+              duration: 246,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Make+Them+Dead',
+              name: 'Make Them Dead',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 7 },
+              duration: 206,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/She+Bad',
+              name: 'She Bad',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 8 },
+              duration: 72,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Invocation+(feat.+Greg+Stuart)+%5BInterlude%5D',
+              name: 'Invocation (feat. Greg Stuart) [Interlude]',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 9 },
+              duration: 219,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Pain+Everyday+(feat.+Michael+Esposito)',
+              name: 'Pain Everyday (feat. Michael Esposito)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 10 },
+              duration: 217,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Check+the+Lock',
+              name: 'Check the Lock',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 11 },
+              duration: 209,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Looking+Like+Meat+(feat.+Ho99o9)',
+              name: 'Looking Like Meat (feat. Ho99o9)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 12 },
+              duration: 51,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Drove+(Interlude)',
+              name: 'Drove (Interlude)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 13 },
+              duration: 341,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Eaten+Alive+(with+Jeff+Parker+&+Ted+Byrnes)',
+              name: 'Eaten Alive (with Jeff Parker & Ted Byrnes)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 14 },
+              duration: 264,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Body+for+the+Pile+(feat.+SICKNESS)',
+              name: 'Body for the Pile (feat. SICKNESS)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 15 },
+              duration: 283,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Enlacing',
+              name: 'Enlacing',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/clipping.',
+                name: 'clipping.',
+                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
+              },
+              '@attr': { rank: 16 },
+              duration: 221,
+              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Secret+Piece',
+              name: 'Secret Piece',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned',
+        tags: {
+          tag: [
+            {
+              name: 'experimental hip-hop',
+              url: 'https://www.last.fm/tag/experimental+hip-hop',
+            },
+            { name: '2020', url: 'https://www.last.fm/tag/2020' },
+            { name: 'horrorcore', url: 'https://www.last.fm/tag/horrorcore' },
+            { name: 'witch house', url: 'https://www.last.fm/tag/witch+house' },
+            {
+              name: 'field recordings',
+              url: 'https://www.last.fm/tag/field+recordings',
+            },
+          ],
+        },
+        name: 'Visions of Bodies Being Burned',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/018cfaf835606f97de6dc3144a2bb38b.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/018cfaf835606f97de6dc3144a2bb38b.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/018cfaf835606f97de6dc3144a2bb38b.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/018cfaf835606f97de6dc3144a2bb38b.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/018cfaf835606f97de6dc3144a2bb38b.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/018cfaf835606f97de6dc3144a2bb38b.png',
+          },
+        ],
+      },
+      {
+        listeners: '12161',
+        playcount: '367883',
+        artist: 'Black Dresses',
+        mbid: 'c92657a1-333b-4147-8d2f-6af93ae45b36',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 1 },
+              duration: 248,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/LEFT+ARM+OF+LIFE',
+              name: 'LEFT ARM OF LIFE',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 2 },
+              duration: 175,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/DAMAGE+SUPPRESSOR',
+              name: 'DAMAGE SUPPRESSOR',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 3 },
+              duration: 164,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/ANGEL+HAIR',
+              name: 'ANGEL HAIR',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 4 },
+              duration: 160,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/BEAUTIFUL+FRIENDSHIP',
+              name: 'BEAUTIFUL FRIENDSHIP',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 5 },
+              duration: 191,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/IM+A+FREAK+CUZ+IM+ALWAYS+FREAKED+OUT',
+              name: 'IM A FREAK CUZ IM ALWAYS FREAKED OUT',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 6 },
+              duration: 276,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/BLISS+AND+STUPIDITY',
+              name: 'BLISS AND STUPIDITY',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 7 },
+              duration: 137,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/MiRRORGiRL',
+              name: 'MiRRORGiRL',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 8 },
+              duration: 227,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/MAYBE+THIS+WORLD+IS+ANOTHER+PLANETS+HELL%3F',
+              name: 'MAYBE THIS WORLD IS ANOTHER PLANETS HELL?',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 9 },
+              duration: 156,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/SCARED+2+DEATH',
+              name: 'SCARED 2 DEATH',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 10 },
+              duration: 153,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/EXPRESS+YOURSELF',
+              name: 'EXPRESS YOURSELF',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 11 },
+              duration: 169,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/SHARP+HALO',
+              name: 'SHARP HALO',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 12 },
+              duration: 81,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/IMPOSSIBLE+DREAM',
+              name: 'IMPOSSIBLE DREAM',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 13 },
+              duration: 183,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/PLEASE+BE+NICE',
+              name: 'PLEASE BE NICE',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 14 },
+              duration: 307,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/CREEP+U',
+              name: 'CREEP U',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Black+Dresses',
+                name: 'Black Dresses',
+                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
+              },
+              '@attr': { rank: 15 },
+              duration: 166,
+              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/666',
+              name: '666',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell',
+        tags: {
+          tag: [
+            {
+              name: 'industrial rock',
+              url: 'https://www.last.fm/tag/industrial+rock',
+            },
+            {
+              name: 'electro-industrial',
+              url: 'https://www.last.fm/tag/electro-industrial',
+            },
+            { name: 'noise pop', url: 'https://www.last.fm/tag/noise+pop' },
+            {
+              name: 'best of 2020',
+              url: 'https://www.last.fm/tag/best+of+2020',
+            },
+            {
+              name: 'industrial pop',
+              url: 'https://www.last.fm/tag/industrial+pop',
+            },
+          ],
+        },
+        name: 'Peaceful as Hell',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/798d600042fbc713c159fbfecb80bb88.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/798d600042fbc713c159fbfecb80bb88.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/798d600042fbc713c159fbfecb80bb88.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/798d600042fbc713c159fbfecb80bb88.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/798d600042fbc713c159fbfecb80bb88.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/798d600042fbc713c159fbfecb80bb88.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '36256',
+        playcount: '1133914',
+        wiki: {
+          published: '12 Dec 2020, 18:29',
+          content:
+            'アダンの風 (translated to english as windswept adan) is the 7th studio album by the folk japanese singer ichiko aoba, released on december 2, through her independent label "hermine". \n\nwindswept adan was entirely written and mostly composed / arranged by ichiko aoba.\n\nthe release of the album, アダンの風, was announced the october 30, along the upload of the music video for the single "porcelain".\n\nthe tracklist and album cover were announced the november 16, along the list of credits. <a href="https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
+          summary:
+            'アダンの風 (translated to english as windswept adan) is the 7th studio album by the folk japanese singer ichiko aoba, released on december 2, through her independent label "hermine". windswept adan was entirely written and mostly composed / arranged by ichiko aoba. the release of the album, アダンの風, was announced the october 30, along the upload of the music video for the single "porcelain". the tracklist and album cover were announced the november 16, along the list of credits. <a href="https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan">Read more on Last.fm</a>.',
+        },
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 1 },
+              duration: 295,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Prologue',
+              name: 'Prologue',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 2 },
+              duration: 228,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Pilgrimage',
+              name: 'Pilgrimage',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 3 },
+              duration: 269,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Porcelain',
+              name: 'Porcelain',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 4 },
+              duration: 118,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Horo',
+              name: 'Horo',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 5 },
+              duration: 196,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Easter+Lily',
+              name: 'Easter Lily',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 6 },
+              duration: 172,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Parfum+d%27%C3%A9toiles',
+              name: "Parfum d'étoiles",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 7 },
+              duration: 87,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Kirinaki+Shima',
+              name: 'Kirinaki Shima',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 8 },
+              duration: 237,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Sagu+Palm%27s+Song',
+              name: "Sagu Palm's Song",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 9 },
+              duration: 112,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/chinuhaji',
+              name: 'chinuhaji',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 10 },
+              duration: 227,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Chi+no+Kaze',
+              name: 'Chi no Kaze',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 11 },
+              duration: 178,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Hagupit',
+              name: 'Hagupit',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 12 },
+              duration: 285,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Dawn+in+the+Adan',
+              name: 'Dawn in the Adan',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 13 },
+              duration: 224,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/ohayashi',
+              name: 'ohayashi',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Ichiko+Aoba',
+                name: 'Ichiko Aoba',
+                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
+              },
+              '@attr': { rank: 14 },
+              duration: 367,
+              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Adan+no+Shima+no+Tanjyosai',
+              name: 'Adan no Shima no Tanjyosai',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
+          },
+        ],
+        tags: {
+          tag: [
+            {
+              name: 'singer-songwriter',
+              url: 'https://www.last.fm/tag/singer-songwriter',
+            },
+            { name: 'japanese', url: 'https://www.last.fm/tag/japanese' },
+            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
+            {
+              name: 'contemporary folk',
+              url: 'https://www.last.fm/tag/contemporary+folk',
+            },
+            {
+              name: 'chamber folk',
+              url: 'https://www.last.fm/tag/chamber+folk',
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan',
+        artist: 'Ichiko Aoba',
+        name: 'Windswept Adan',
+        mbid: '25d890b9-955a-4cf5-9a34-ef535461677a',
+      },
+      {
+        listeners: '10956',
+        playcount: '170662',
+        artist: 'Matmos',
+        mbid: '1efe5b9d-876a-4a50-8c0d-73845f66bb15',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 1 },
+              duration: 216,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Cold+Open',
+              name: 'Cold Open',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 2 },
+              duration: 152,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I,+Voxelman',
+              name: 'I, Voxelman',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 3 },
+              duration: 176,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Moteswarm',
+              name: 'Moteswarm',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 4 },
+              duration: 270,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Adam%27s+Apple',
+              name: "Adam's Apple",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 5 },
+              duration: 342,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Athens+New+Guinea+Gas+Can+Japan',
+              name: 'Athens New Guinea Gas Can Japan',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 6 },
+              duration: 296,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Thyrsus',
+              name: 'Thyrsus',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos,+clipping.',
+                name: 'Matmos, clipping.',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 7 },
+              duration: 417,
+              url: 'https://www.last.fm/music/Matmos,+clipping./The+Consuming+Flame:+Open+Exercises+in+Group+Form/Circle+of+Swords',
+              name: 'Circle of Swords',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 8 },
+              duration: 141,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Virgin+Unspotted',
+              name: 'Virgin Unspotted',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 9 },
+              duration: 201,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/No+Concept',
+              name: 'No Concept',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 10 },
+              duration: 235,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/In+The+Shape+of+Beasts',
+              name: 'In The Shape of Beasts',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 11 },
+              duration: 278,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Revelatory+Mint+Clot',
+              name: 'Revelatory Mint Clot',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 12 },
+              duration: 329,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Western+Clot+Rider',
+              name: 'Western Clot Rider',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 13 },
+              duration: 300,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Cocktail+Party+How+Glad+Am+I',
+              name: 'Cocktail Party How Glad Am I',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 14 },
+              duration: 61,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I%27m+Fine+I%27m+Fine',
+              name: "I'm Fine I'm Fine",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 15 },
+              duration: 358,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Adepts',
+              name: 'Adepts',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 16 },
+              duration: 126,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Maybeism',
+              name: 'Maybeism',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 17 },
+              duration: 155,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Garden+of+Tall+Boys',
+              name: 'Garden of Tall Boys',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 18 },
+              duration: 146,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Dancing+Your+Animal',
+              name: 'Dancing Your Animal',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 19 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Nice+Men+In+Stable+Relationships',
+              name: 'Nice Men In Stable Relationships',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 20 },
+              duration: 116,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Let+Us+In',
+              name: 'Let Us In',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 21 },
+              duration: 204,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Friendsylum',
+              name: 'Friendsylum',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos,+Yo+La+Tengo',
+                name: 'Matmos, Yo La Tengo',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 22 },
+              duration: 417,
+              url: 'https://www.last.fm/music/Matmos,+Yo+La+Tengo/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Io!+Lavendar+River+Karez',
+              name: 'Io! Lavendar River Karez',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 23 },
+              duration: 310,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/The+Void+At+the+Center',
+              name: 'The Void At the Center',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 24 },
+              duration: 202,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I+Know+What+I+Saw',
+              name: 'I Know What I Saw',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 25 },
+              duration: 366,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Sarabande',
+              name: 'Sarabande',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 26 },
+              duration: 220,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/The+Dead+City+of+Telphar',
+              name: 'The Dead City of Telphar',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 27 },
+              duration: 179,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Platformalism',
+              name: 'Platformalism',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 28 },
+              duration: 118,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Verminiatures',
+              name: 'Verminiatures',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 29 },
+              duration: 203,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Reciprocal+Realms',
+              name: 'Reciprocal Realms',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 30 },
+              duration: 60,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Unmastering',
+              name: 'Unmastering',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos,+Giant+Swan,+Rabit,+Max+Tundra',
+                name: 'Matmos, Giant Swan, Rabit, Max Tundra',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 31 },
+              duration: 169,
+              url: 'https://www.last.fm/music/Matmos,+Giant+Swan,+Rabit,+Max+Tundra/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I%27m+On+The+Team',
+              name: "I'm On The Team",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 32 },
+              duration: 426,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Blessed+Order+Of',
+              name: 'Blessed Order Of',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 33 },
+              duration: 198,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Floaters',
+              name: 'Floaters',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 34 },
+              duration: 259,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Goodnight+Loving+Bose+Ikard',
+              name: 'Goodnight Loving Bose Ikard',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 35 },
+              duration: 215,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Tworivers+Run',
+              name: 'Tworivers Run',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 36 },
+              duration: 787,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Boomchicka',
+              name: 'Boomchicka',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 37 },
+              duration: 341,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/EXTRATERRESTRIAL+MASTERS',
+              name: 'EXTRATERRESTRIAL MASTERS',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 38 },
+              duration: 230,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Circle+of+Shivers',
+              name: 'Circle of Shivers',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never',
+                name: 'Matmos, Oneohtrix Point Never',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 39 },
+              duration: 370,
+              url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Out+of+the+Serpent%27s+Mouth',
+              name: "Out of the Serpent's Mouth",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never',
+                name: 'Matmos, Oneohtrix Point Never',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 40 },
+              duration: 178,
+              url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Warm+Opening',
+              name: 'Warm Opening',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 41 },
+              duration: 61,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Decalcomaenads',
+              name: 'Decalcomaenads',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos,+Mouse+on+Mars',
+                name: 'Matmos, Mouse on Mars',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 42 },
+              duration: 138,
+              url: 'https://www.last.fm/music/Matmos,+Mouse+on+Mars/The+Consuming+Flame:+Open+Exercises+in+Group+Form/It+Isn%27t+Necessarily+The+Case',
+              name: "It Isn't Necessarily The Case",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 43 },
+              duration: 112,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Elsewards',
+              name: 'Elsewards',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Matmos',
+                name: 'Matmos',
+                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
+              },
+              '@attr': { rank: 44 },
+              duration: 347,
+              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/All+of+the+Powers+Lie+Quiet',
+              name: 'All of the Powers Lie Quiet',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form',
+        tags: {
+          tag: [
+            { name: 'electronic', url: 'https://www.last.fm/tag/electronic' },
+            {
+              name: 'experimental',
+              url: 'https://www.last.fm/tag/experimental',
+            },
+            { name: 'idm', url: 'https://www.last.fm/tag/idm' },
+            { name: 'glitch', url: 'https://www.last.fm/tag/glitch' },
+            {
+              name: 'plunderphonics',
+              url: 'https://www.last.fm/tag/plunderphonics',
+            },
+          ],
+        },
+        name: 'The Consuming Flame: Open Exercises in Group Form',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/d7fd19682504f8b1cde8edc5042a054d.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/d7fd19682504f8b1cde8edc5042a054d.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/d7fd19682504f8b1cde8edc5042a054d.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/d7fd19682504f8b1cde8edc5042a054d.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/d7fd19682504f8b1cde8edc5042a054d.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/d7fd19682504f8b1cde8edc5042a054d.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '18171',
+        playcount: '365868',
+        artist: 'Natalia Lafourcade',
+        mbid: '6af70be5-0c7a-4a74-8bd3-1a830ac3f75d',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites',
+                name: 'Natalia Lafourcade & Los Cojolites',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 1 },
+              duration: 270,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites/Un+Canto+por+M%C3%A9xico,+Vol.+1/El+Balaj%C3%BA+%2F+Serenata+Huasteca',
+              name: 'El Balajú / Serenata Huasteca',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/DJ+Carlos+Rivera+&+Natalia+Lafourcade',
+                name: 'DJ Carlos Rivera & Natalia Lafourcade',
+                mbid: '',
+              },
+              '@attr': { rank: 2 },
+              duration: null,
+              url: 'https://www.last.fm/music/DJ+Carlos+Rivera+&+Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Mexicana+Hermosa',
+              name: 'Mexicana Hermosa',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 3 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Veracruz',
+              name: 'Veracruz',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 4 },
+              duration: 264,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Una+Vida',
+              name: 'Una Vida',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade,+Los+Cojolites+&+Los+Aut%C3%A9nticos+Decadentes',
+                name: 'Natalia Lafourcade, Los Cojolites & Los Auténticos Decadentes',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 5 },
+              duration: 272,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade,+Los+Cojolites+&+Los+Aut%C3%A9nticos+Decadentes/Un+Canto+por+M%C3%A9xico,+Vol.+1/Hasta+la+Ra%C3%ADz',
+              name: 'Hasta la Raíz',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Leonel+Garc%C3%ADa',
+                name: 'Natalia Lafourcade & Leonel García',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 6 },
+              duration: null,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Leonel+Garc%C3%ADa/Un+Canto+por+M%C3%A9xico,+Vol.+1/Ya+No+Vivo+por+Vivir',
+              name: 'Ya No Vivo por Vivir',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 7 },
+              duration: 215,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Mi+Religi%C3%B3n',
+              name: 'Mi Religión',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+LaFourcade+&+Jorge+Drexler',
+                name: 'Natalia LaFourcade & Jorge Drexler',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 8 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Natalia+LaFourcade+&+Jorge+Drexler/Un+Canto+por+M%C3%A9xico,+Vol.+1/Para+Qu%C3%A9+Sufrir',
+              name: 'Para Qué Sufrir',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 9 },
+              duration: 237,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Nunca+es+suficiente',
+              name: 'Nunca es suficiente',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites',
+                name: 'Natalia Lafourcade & Los Cojolites',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 10 },
+              duration: 286,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites/Un+Canto+por+M%C3%A9xico,+Vol.+1/Sembrando+Flores',
+              name: 'Sembrando Flores',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 11 },
+              duration: 246,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Lo+Que+Construimos',
+              name: 'Lo Que Construimos',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Pante%C3%B3n+Rococ%C3%B3',
+                name: 'Natalia Lafourcade & Panteón Rococó',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 12 },
+              duration: null,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Pante%C3%B3n+Rococ%C3%B3/Un+Canto+por+M%C3%A9xico,+Vol.+1/Un+Derecho+de+Nacimiento',
+              name: 'Un Derecho de Nacimiento',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites',
+                name: 'Natalia Lafourcade & Los Cojolites',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 13 },
+              duration: 251,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites/Un+Canto+por+M%C3%A9xico,+Vol.+1/Mi+Tierra+Veracruzana',
+              name: 'Mi Tierra Veracruzana',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Natalia+Lafourcade',
+                name: 'Natalia Lafourcade',
+                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
+              },
+              '@attr': { rank: 14 },
+              duration: 311,
+              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Cucurrucuc%C3%BA+Paloma',
+              name: 'Cucurrucucú Paloma',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1',
+        tags: {
+          tag: [
+            { name: 'bolero', url: 'https://www.last.fm/tag/bolero' },
+            { name: '2015 gif', url: 'https://www.last.fm/tag/2015+gif' },
+            {
+              name: 'natalia lafourcade gif',
+              url: 'https://www.last.fm/tag/natalia+lafourcade+gif',
+            },
+            { name: 'love', url: 'https://www.last.fm/tag/love' },
+            { name: 'nice', url: 'https://www.last.fm/tag/nice' },
+          ],
+        },
+        name: 'Un Canto por México, Vol. 1',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '728',
+        playcount: '5869',
+        artist: 'Code Orange',
+        mbid: '',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 1 },
+              duration: 74,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/(deeperthanbefore)',
+              name: '(deeperthanbefore)',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 2 },
+              duration: 228,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Swallowing+the+Rabbit+Whole',
+              name: 'Swallowing the Rabbit Whole',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 3 },
+              duration: 201,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/In+Fear',
+              name: 'In Fear',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 4 },
+              duration: null,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/You+and+You+Alone+%5BExplicit%5D',
+              name: 'You and You Alone [Explicit]',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 5 },
+              duration: 226,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Who+I+Am',
+              name: 'Who I Am',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 6 },
+              duration: 184,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Cold.Metal.Place',
+              name: 'Cold.Metal.Place',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 7 },
+              duration: 227,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Sulfur+Surrounding',
+              name: 'Sulfur Surrounding',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 8 },
+              duration: 265,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/The+Easy+Way',
+              name: 'The Easy Way',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 9 },
+              duration: null,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Erasure+Scan+%5BExplicit%5D',
+              name: 'Erasure Scan [Explicit]',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 10 },
+              duration: 189,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Last+Ones+Left',
+              name: 'Last Ones Left',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 11 },
+              duration: 207,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Autumn+and+Carbine',
+              name: 'Autumn and Carbine',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 12 },
+              duration: 154,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Back+Inside+the+Glass',
+              name: 'Back Inside the Glass',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 13 },
+              duration: null,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/A+Sliver+%5BExplicit%5D',
+              name: 'A Sliver [Explicit]',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Code+Orange',
+                name: 'Code Orange',
+                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
+              },
+              '@attr': { rank: 14 },
+              duration: 279,
+              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Underneath',
+              name: 'Underneath',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D',
+        tags: {
+          tag: [
+            { name: 'hardcore', url: 'https://www.last.fm/tag/hardcore' },
+            { name: 'metalcore', url: 'https://www.last.fm/tag/metalcore' },
+            { name: '2020', url: 'https://www.last.fm/tag/2020' },
+            {
+              name: 'alternative metal',
+              url: 'https://www.last.fm/tag/alternative+metal',
+            },
+            { name: 'emo', url: 'https://www.last.fm/tag/emo' },
+          ],
+        },
+        name: 'Underneath [Explicit]',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/55f3f3c3e2476a36391be010e131f889.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/55f3f3c3e2476a36391be010e131f889.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/55f3f3c3e2476a36391be010e131f889.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/55f3f3c3e2476a36391be010e131f889.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/55f3f3c3e2476a36391be010e131f889.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/55f3f3c3e2476a36391be010e131f889.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '22953',
+        playcount: '316837',
+        artist: 'The Koreatown Oddity',
+        mbid: '5bbf6d68-cb76-4a32-af94-1962d18c22b6',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Baby+Rose,+C.S.+Armstrong',
+                name: 'The Koreatown Oddity feat. Baby Rose, C.S. Armstrong',
+                mbid: '',
+              },
+              '@attr': { rank: 1 },
+              duration: 176,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Baby+Rose,+C.S.+Armstrong/Little+Dominiques+Nosebleed/Looking+Back+from+the+Future',
+              name: 'Looking Back from the Future',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Sudan+Archives',
+                name: 'The Koreatown Oddity feat. Sudan Archives',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 2 },
+              duration: 266,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Sudan+Archives/Little+Dominiques+Nosebleed/Little+Dominiques+Nosebleed+Part+1',
+              name: 'Little Dominiques Nosebleed Part 1',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
+                name: 'The Koreatown Oddity',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 3 },
+              duration: 192,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Koreatown+Oddity',
+              name: 'Koreatown Oddity',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose',
+                name: 'The Koreatown Oddity feat. Jimetta Rose',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 4 },
+              duration: 200,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose/Little+Dominiques+Nosebleed/Chase+the+Spirit',
+              name: 'Chase the Spirit',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
+                name: 'The Koreatown Oddity',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 5 },
+              duration: 95,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Darknesses+Interlude',
+              name: 'Darknesses Interlude',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Taz+Arnold',
+                name: 'The Koreatown Oddity feat. Taz Arnold',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 6 },
+              duration: 181,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Taz+Arnold/Little+Dominiques+Nosebleed/Ginkabiloba',
+              name: 'Ginkabiloba',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
+                name: 'The Koreatown Oddity',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 7 },
+              duration: 138,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Weed+in+LA',
+              name: 'Weed in LA',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
+                name: 'The Koreatown Oddity',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 8 },
+              duration: 143,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Little+Dominiques+Nosebleed+Part+2',
+              name: 'Little Dominiques Nosebleed Part 2',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Ahwlee',
+                name: 'The Koreatown Oddity feat. Ahwlee',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 9 },
+              duration: 311,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Ahwlee/Little+Dominiques+Nosebleed/A+Bitch+Once+Told+Me',
+              name: 'A Bitch Once Told Me',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Trenttruce,+Edule,+Emmanuel+Coto',
+                name: 'The Koreatown Oddity feat. Trenttruce, Edule, Emmanuel Coto',
+                mbid: '',
+              },
+              '@attr': { rank: 10 },
+              duration: 236,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Trenttruce,+Edule,+Emmanuel+Coto/Little+Dominiques+Nosebleed/No+Llores',
+              name: 'No Llores',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Swift,+Skyler+Duf,+Fatlip,+Giovanni+Marks,+Nita+Darling,+Corrine+Atkinson',
+                name: 'The Koreatown Oddity feat. Swift, Skyler Duf, Fatlip, Giovanni Marks, Nita Darling, Corrine Atkinson',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 11 },
+              duration: 367,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Swift,+Skyler+Duf,+Fatlip,+Giovanni+Marks,+Nita+Darling,+Corrine+Atkinson/Little+Dominiques+Nosebleed/Attention+Challenge',
+              name: 'Attention Challenge',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
+                name: 'The Koreatown Oddity',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 12 },
+              duration: 169,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Kimchi',
+              name: 'Kimchi',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose,+Corrine+Atkinson',
+                name: 'The Koreatown Oddity feat. Jimetta Rose, Corrine Atkinson',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 13 },
+              duration: 326,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose,+Corrine+Atkinson/Little+Dominiques+Nosebleed/The+World%27s+Smallest+Violin',
+              name: "The World's Smallest Violin",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Anna+Wise',
+                name: 'The Koreatown Oddity feat. Anna Wise',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 14 },
+              duration: 180,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Anna+Wise/Little+Dominiques+Nosebleed/We+All+Want+Something',
+              name: 'We All Want Something',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Qur%27an+Shaheed,+Kintaro',
+                name: "The Koreatown Oddity feat. Qur'an Shaheed, Kintaro",
+                mbid: '',
+              },
+              '@attr': { rank: 15 },
+              duration: 277,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Qur%27an+Shaheed,+Kintaro/Little+Dominiques+Nosebleed/Lap+of+Luxury',
+              name: 'Lap of Luxury',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
+                name: 'The Koreatown Oddity',
+                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
+              },
+              '@attr': { rank: 16 },
+              duration: 167,
+              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Little+Dominiques+Nosebleed+Outro',
+              name: 'Little Dominiques Nosebleed Outro',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed',
+        tags: {
+          tag: [
+            {
+              name: 'gilles peterson',
+              url: 'https://www.last.fm/tag/gilles+peterson',
+            },
+            { name: 'eccentric', url: 'https://www.last.fm/tag/eccentric' },
+            { name: 'uplifting', url: 'https://www.last.fm/tag/uplifting' },
+            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
+            { name: 'warm', url: 'https://www.last.fm/tag/warm' },
+          ],
+        },
+        name: 'Little Dominiques Nosebleed',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/1e6629ceebc4b353a19a4dad792f5b25.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/1e6629ceebc4b353a19a4dad792f5b25.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/1e6629ceebc4b353a19a4dad792f5b25.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1e6629ceebc4b353a19a4dad792f5b25.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1e6629ceebc4b353a19a4dad792f5b25.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/1e6629ceebc4b353a19a4dad792f5b25.jpg',
+          },
+        ],
+      },
+      {
+        listeners: '45498',
+        playcount: '659212',
+        artist: 'Chris Stapleton',
+        mbid: '88ca6fb8-6d82-4666-8a50-d83aa148bba8',
+        tracks: {
+          track: [
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 1 },
+              duration: 240,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Starting+Over',
+              name: 'Starting Over',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 2 },
+              duration: 232,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Devil+Always+Made+Me+Think+Twice',
+              name: 'Devil Always Made Me Think Twice',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 3 },
+              duration: 310,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Cold',
+              name: 'Cold',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 4 },
+              duration: 224,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/When+I%27m+with+You',
+              name: "When I'm with You",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 5 },
+              duration: 178,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Arkansas',
+              name: 'Arkansas',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 6 },
+              duration: 275,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Joy+of+My+Life',
+              name: 'Joy of My Life',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 7 },
+              duration: 245,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Hillbilly+Blood',
+              name: 'Hillbilly Blood',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 8 },
+              duration: 211,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Maggie%27s+Song',
+              name: "Maggie's Song",
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 9 },
+              duration: 202,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Whiskey+Sunrise',
+              name: 'Whiskey Sunrise',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 10 },
+              duration: 196,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Worry+B+Gone',
+              name: 'Worry B Gone',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 11 },
+              duration: 241,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Old+Friends',
+              name: 'Old Friends',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 12 },
+              duration: 243,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Watch+You+Burn',
+              name: 'Watch You Burn',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 13 },
+              duration: 213,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/You+Should+Probably+Leave',
+              name: 'You Should Probably Leave',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+            {
+              artist: {
+                url: 'https://www.last.fm/music/Chris+Stapleton',
+                name: 'Chris Stapleton',
+                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
+              },
+              '@attr': { rank: 14 },
+              duration: 216,
+              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Nashville,+TN',
+              name: 'Nashville, TN',
+              streamable: { fulltrack: '0', '#text': '0' },
+            },
+          ],
+        },
+        url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over',
+        tags: {
+          tag: [
+            { name: 'chamber pop', url: 'https://www.last.fm/tag/chamber+pop' },
+            {
+              name: 'contemporary country',
+              url: 'https://www.last.fm/tag/contemporary+country',
+            },
+            { name: 'country', url: 'https://www.last.fm/tag/country' },
+            {
+              name: 'country soul',
+              url: 'https://www.last.fm/tag/country+soul',
+            },
+            {
+              name: 'country blues',
+              url: 'https://www.last.fm/tag/country+blues',
+            },
+          ],
+        },
+        name: 'Starting Over',
+        image: [
+          {
+            size: 'small',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/34s/b2167039217342816233276afef6608e.jpg',
+          },
+          {
+            size: 'medium',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/64s/b2167039217342816233276afef6608e.jpg',
+          },
+          {
+            size: 'large',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/174s/b2167039217342816233276afef6608e.jpg',
+          },
+          {
+            size: 'extralarge',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b2167039217342816233276afef6608e.jpg',
+          },
+          {
+            size: 'mega',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b2167039217342816233276afef6608e.jpg',
+          },
+          {
+            size: '',
+            '#text':
+              'https://lastfm.freetls.fastly.net/i/u/300x300/b2167039217342816233276afef6608e.jpg',
+          },
+        ],
+      },
+    ],
+  },
   {
     title: 'Mu Core',
     id: 'mu-core',
@@ -9741,8267 +19940,5 @@ var fullRecommended = [
       },
     ],
   },
-
-  {
-    title: 'Fantano Best of 2017',
-    id: 'fantano-best-of-2017',
-    bookmarked: false,
-    albums: [
-      {
-        listeners: '158258',
-        playcount: '3483813',
-        wiki: {
-          published: '06 Jun 2017, 05:40',
-          content:
-            'Pure Comedy is the third studio album by American folk musician Josh Tillman under his pseudonym Father John Misty. Its release was announced on January 23, 2017. It was released on April 7, 2017 on Bella Union in the UK and Europe and on Sub Pop in the rest of the world. This is Tillman\'s third studio album since his departure from Fleet Foxes. It was produced by Josh Tillman in collaboration with Jonathan Wilson, sound engineer Trevor Spencer and composer/double-bassist Gavin Bryars. <a href="https://www.last.fm/music/Father+John+Misty/Pure+Comedy">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Pure Comedy is the third studio album by American folk musician Josh Tillman under his pseudonym Father John Misty. Its release was announced on January 23, 2017. It was released on April 7, 2017 on Bella Union in the UK and Europe and on Sub Pop in the rest of the world. This is Tillman\'s third studio album since his departure from Fleet Foxes. It was produced by Josh Tillman in collaboration with Jonathan Wilson, sound engineer Trevor Spencer and composer/double-bassist Gavin Bryars. <a href="https://www.last.fm/music/Father+John+Misty/Pure+Comedy">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 1 },
-              duration: 385,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Pure+Comedy',
-              name: 'Pure Comedy',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 2 },
-              duration: 201,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Total+Entertainment+Forever',
-              name: 'Total Entertainment Forever',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 3 },
-              duration: 258,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Things+It+Would+Have+Been+Helpful+to+Know+Before+the+Revolution',
-              name: 'Things It Would Have Been Helpful to Know Before the Revolution',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 4 },
-              duration: 251,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Ballad+of+the+Dying+Man',
-              name: 'Ballad of the Dying Man',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 5 },
-              duration: 320,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Birdie',
-              name: 'Birdie',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 6 },
-              duration: 791,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Leaving+LA',
-              name: 'Leaving LA',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 7 },
-              duration: 282,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/A+Bigger+Paper+Bag',
-              name: 'A Bigger Paper Bag',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 8 },
-              duration: 244,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/When+The+God+Of+Love+Returns+There%27ll+Be+Hell+To+Pay',
-              name: "When The God Of Love Returns There'll Be Hell To Pay",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 9 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Smoochie',
-              name: 'Smoochie',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 10 },
-              duration: 192,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/Two+Wildly+Different+Perspectives',
-              name: 'Two Wildly Different Perspectives',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 11 },
-              duration: 317,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/The+Memo',
-              name: 'The Memo',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 12 },
-              duration: 598,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/So+I%27m+Growing+Old+On+Magic+Mountain',
-              name: "So I'm Growing Old On Magic Mountain",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Father+John+Misty',
-                name: 'Father John Misty',
-                mbid: '172053e5-a7fb-4548-a64d-c53858b5e775',
-              },
-              '@attr': { rank: 13 },
-              duration: 387,
-              url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy/In+Twenty+Years+Or+So',
-              name: 'In Twenty Years Or So',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a5f4f40937dad536c31ec1f110c0ec4b.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2017', url: 'https://www.last.fm/tag/2017' },
-            { name: '10s', url: 'https://www.last.fm/tag/10s' },
-            { name: '2010s', url: 'https://www.last.fm/tag/2010s' },
-            {
-              name: 'best of 2017',
-              url: 'https://www.last.fm/tag/best+of+2017',
-            },
-            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Father+John+Misty/Pure+Comedy',
-        artist: 'Father John Misty',
-        name: 'Pure Comedy',
-        mbid: '340de01f-c2b0-4024-ac5e-ec1b6cc4788b',
-      },
-      {
-        listeners: '309854',
-        playcount: '13317986',
-        wiki: {
-          published: '11 Nov 2017, 17:43',
-          content:
-            'Saturation II (stylized as SATURATION II) is the second studio album by American boy band Brockhampton, released on August 25, 2017. Production is primarily handled by Romil Hemnani, alongside production duo Q3, bearface., Kevin Abstract and JOBA. SATURATION II is the follow-up to BROCKHAMPTON’s debut album SATURATION.  <a href="https://www.last.fm/music/BROCKHAMPTON/SATURATION+II">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Saturation II (stylized as SATURATION II) is the second studio album by American boy band Brockhampton, released on August 25, 2017. Production is primarily handled by Romil Hemnani, alongside production duo Q3, bearface., Kevin Abstract and JOBA. SATURATION II is the follow-up to BROCKHAMPTON’s debut album SATURATION. <a href="https://www.last.fm/music/BROCKHAMPTON/SATURATION+II">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 1 },
-              duration: 261,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/GUMMY',
-              name: 'GUMMY',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 2 },
-              duration: 227,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/QUEER',
-              name: 'QUEER',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 3 },
-              duration: 240,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/JELLO',
-              name: 'JELLO',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 4 },
-              duration: 80,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/TEETH',
-              name: 'TEETH',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 5 },
-              duration: 251,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SWAMP',
-              name: 'SWAMP',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 6 },
-              duration: 39,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SCENE',
-              name: 'SCENE',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 7 },
-              duration: 192,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/TOKYO',
-              name: 'TOKYO',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 8 },
-              duration: 80,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/JESUS',
-              name: 'JESUS',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 9 },
-              duration: 204,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/CHICK',
-              name: 'CHICK',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 10 },
-              duration: 249,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/JUNKY',
-              name: 'JUNKY',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 11 },
-              duration: 29,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SCENE+2',
-              name: 'SCENE 2',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 12 },
-              duration: 181,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/FIGHT',
-              name: 'FIGHT',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 13 },
-              duration: 274,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SWEET',
-              name: 'SWEET',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 14 },
-              duration: 202,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/GAMBA',
-              name: 'GAMBA',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 15 },
-              duration: 170,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SUNNY',
-              name: 'SUNNY',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/BROCKHAMPTON',
-                name: 'BROCKHAMPTON',
-                mbid: '3ac96b4c-4f42-48c8-b793-84dbf54d7ac6',
-              },
-              '@attr': { rank: 16 },
-              duration: 204,
-              url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II/SUMMER',
-              name: 'SUMMER',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/5c50b8fb0d6073befc75e62e3aa938cf.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2017', url: 'https://www.last.fm/tag/2017' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
-            { name: 'pop rap', url: 'https://www.last.fm/tag/pop+rap' },
-            {
-              name: 'alternative hip hop',
-              url: 'https://www.last.fm/tag/alternative+hip+hop',
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/BROCKHAMPTON/SATURATION+II',
-        artist: 'BROCKHAMPTON',
-        name: 'SATURATION II',
-        mbid: '9b311f6b-d5b7-4dbf-8744-405e743b6c68',
-      },
-      {
-        listeners: '132876',
-        playcount: '2189270',
-        wiki: {
-          published: '03 Mar 2017, 13:08',
-          content:
-            'WRITTEN AND RECORDED \nAugust 31st to Dec. 6th, 2016 in the same room where Geneviève died, using mostly her instruments, her guitar, her bass, her pick, her amp, her old family accordion, writing the words on her paper, looking out the same window. \nWhy share this much? Why open up like this? Why tell you, stranger, about these personal moments, the devastation and the hanging love? Our little family bubble was so sacred for so long. We carefully held it behind a curtain of privacy when we’d go out and do our art and music selves, too special to share, especially in our hyper-shared imbalanced times. Then we had a baby and this barrier felt even more important. (I still don’t want to tell you our daughter’s name.) Then in May 2015 they told us Geneviève had a surprise bad cancer, advanced pancreatic, and the ground opened up. What matters now? we thought. Then on July 9th 2016 she died at home and I belonged to nobody anymore. My internal moments felt like public property. The idea that I could have a self or personal preferences or songs eroded down into an absurd old idea leftover from a more self-indulgent time before I was a hospital-driver, a caregiver, a child-raiser, a griever. I am open now, and these songs poured out quickly in the fall, watching the days grey over and watching the neighbors across the alley tear down and rebuild their house. I make these songs and put them out into the world just to multiply my voice saying that I love her. I want it known. \n"Death Is Real" could be the name of this album. These cold mechanics of sickness and loss are real and inescapable, and can bring an alienating, detached sharpness. But it is not the thing I want to remember. A crow did look at me. There is an echo of Geneviève that still rings, a reminder of the love and infinity beneath all of this obliteration. That’s why. \n\n- Phil Elverum \nDec. 11th, 2016 \nAnacortes  <a href="https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'WRITTEN AND RECORDED August 31st to Dec. 6th, 2016 in the same room where Geneviève died, using mostly her instruments, her guitar, her bass, her pick, her amp, her old family accordion, writing the words on her paper, looking out the same window. Why share this much? Why open up like this? Why tell you, stranger, about these personal moments, the devastation and the hanging love? Our little family bubble was so sacred for so long. We carefully held it behind a curtain of privacy when we’d go out and do our art and music selves, too special to share, <a href="https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 1 },
-              duration: 170,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Real+Death',
-              name: 'Real Death',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 2 },
-              duration: 181,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Seaweed',
-              name: 'Seaweed',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 3 },
-              duration: 399,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Ravens',
-              name: 'Ravens',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 4 },
-              duration: 255,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Forest+Fire',
-              name: 'Forest Fire',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 5 },
-              duration: 247,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Swims',
-              name: 'Swims',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 6 },
-              duration: 142,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/My+Chasm',
-              name: 'My Chasm',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 7 },
-              duration: 145,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/When+I+Take+Out+The+Garbage+At+Night',
-              name: 'When I Take Out The Garbage At Night',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 8 },
-              duration: 160,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Emptiness,+Pt.+2',
-              name: 'Emptiness, Pt. 2',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 9 },
-              duration: 232,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Toothbrush+%2F+Trash',
-              name: 'Toothbrush / Trash',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 10 },
-              duration: 393,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Soria+Moria',
-              name: 'Soria Moria',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Mount+Eerie',
-                name: 'Mount Eerie',
-                mbid: 'e5306b29-16c0-4520-bb05-6b21f041b2f0',
-              },
-              '@attr': { rank: 11 },
-              duration: 141,
-              url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me/Crow',
-              name: 'Crow',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/a08475fd09157515a411dc2577e3e58c.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/a08475fd09157515a411dc2577e3e58c.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/a08475fd09157515a411dc2577e3e58c.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a08475fd09157515a411dc2577e3e58c.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a08475fd09157515a411dc2577e3e58c.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a08475fd09157515a411dc2577e3e58c.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2017', url: 'https://www.last.fm/tag/2017' },
-            {
-              name: 'singer-songwriter',
-              url: 'https://www.last.fm/tag/singer-songwriter',
-            },
-            { name: 'indie folk', url: 'https://www.last.fm/tag/indie+folk' },
-            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
-            {
-              name: 'heartbreaking',
-              url: 'https://www.last.fm/tag/heartbreaking',
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Mount+Eerie/A+Crow+Looked+At+Me',
-        artist: 'Mount Eerie',
-        name: 'A Crow Looked At Me',
-        mbid: '4911b77c-d9fb-4498-b835-043e88f3f83b',
-      },
-      {
-        listeners: '100436',
-        playcount: '2755775',
-        wiki: {
-          published: '11 Nov 2020, 07:34',
-          content:
-            '4eva Is a Mighty Long Time is the third studio album by American rapper Big K.R.I.T., released on October 27, 2017, through Multi Alumni and distributed by BMG Rights Management. A double album, it is his first full-length release since his departure from Def Jam in 2016. The album features guest appearances from T.I., Lloyd, Bun B, Pimp C, CeeLo Green, Sleepy Brown, Joi, Jill Scott, Keyon Harrold, Bilal, Robert Glasper, Kenneth Whalum and Burniss Earl Travis II.\n\n4eva Is a Mighty Long Time was supported by four singles: "Confetti", "Keep the Devil Off", "Aux Cord" and "1999". The album charted at number seven on the US Billboard 200, and received generally positive reviews from critics. <a href="https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            '4eva Is a Mighty Long Time is the third studio album by American rapper Big K.R.I.T., released on October 27, 2017, through Multi Alumni and distributed by BMG Rights Management. A double album, it is his first full-length release since his departure from Def Jam in 2016. The album features guest appearances from T.I., Lloyd, Bun B, Pimp C, CeeLo Green, Sleepy Brown, Joi, Jill Scott, Keyon Harrold, Bilal, Robert Glasper, Kenneth Whalum and Burniss Earl Travis II. 4eva Is a Mighty Long Time was supported by four singles: "Confetti", "Keep the Devil Off", "Aux Cord" and "1999". The album <a href="https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 1 },
-              duration: 172,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Big+K.R.I.T.',
-              name: 'Big K.R.I.T.',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 2 },
-              duration: 198,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Confetti',
-              name: 'Confetti',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+T.I.',
-                name: 'Big K.R.I.T. feat. T.I.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 3 },
-              duration: 224,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+T.I./4eva+Is+a+Mighty+Long+Time/Big+Bank',
-              name: 'Big Bank',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 4 },
-              duration: 243,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Subenstein+(My+Sub+IV)',
-              name: 'Subenstein (My Sub IV)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Lloyd',
-                name: 'Big K.R.I.T. feat. Lloyd',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 5 },
-              duration: 222,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Lloyd/4eva+Is+a+Mighty+Long+Time/1999',
-              name: '1999',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bun+B+&+Pimp+C',
-                name: 'Big K.R.I.T. feat. Bun B & Pimp C',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 6 },
-              duration: 214,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bun+B+&+Pimp+C/4eva+Is+a+Mighty+Long+Time/Ride+Wit+Me',
-              name: 'Ride Wit Me',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+CeeLo+Green+&+Sleepy+Brown',
-                name: 'Big K.R.I.T. feat. CeeLo Green & Sleepy Brown',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 7 },
-              duration: 277,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+CeeLo+Green+&+Sleepy+Brown/4eva+Is+a+Mighty+Long+Time/Get+Up+2+Come+Down',
-              name: 'Get Up 2 Come Down',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 8 },
-              duration: 260,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Layup',
-              name: 'Layup',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 9 },
-              duration: 53,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Classic+Interlude',
-              name: 'Classic Interlude',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 10 },
-              duration: 195,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Aux+Cord',
-              name: 'Aux Cord',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 11 },
-              duration: 297,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Get+Away',
-              name: 'Get Away',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 12 },
-              duration: 240,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Justin+Scott',
-              name: 'Justin Scott',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 13 },
-              duration: 267,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Mixed+Messages',
-              name: 'Mixed Messages',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 14 },
-              duration: 310,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Keep+the+Devil+Off',
-              name: 'Keep the Devil Off',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 15 },
-              duration: 360,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Miss+Georgia+Fornia',
-              name: 'Miss Georgia Fornia',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 16 },
-              duration: 203,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Everlasting',
-              name: 'Everlasting',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Jill+Scott',
-                name: 'Big K.R.I.T. feat. Jill Scott',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 17 },
-              duration: 233,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Jill+Scott/4eva+Is+a+Mighty+Long+Time/Higher+Calling',
-              name: 'Higher Calling',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 18 },
-              duration: 48,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Weekend+(Interlude)',
-              name: 'Weekend (Interlude)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 19 },
-              duration: 254,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Price+of+Fame',
-              name: 'Price of Fame',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Keyon+Harrold',
-                name: 'Big K.R.I.T. feat. Keyon Harrold',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 20 },
-              duration: 311,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Keyon+Harrold/4eva+Is+a+Mighty+Long+Time/Drinking+Sessions',
-              name: 'Drinking Sessions',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bilal,+Robert+Glasper,+Kenneth+Whalum+III+&+Burniss+Earl+Travis+II',
-                name: 'Big K.R.I.T. feat. Bilal, Robert Glasper, Kenneth Whalum III & Burniss Earl Travis II',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 21 },
-              duration: 244,
-              url: 'https://www.last.fm/music/Big+K.R.I.T.+feat.+Bilal,+Robert+Glasper,+Kenneth+Whalum+III+&+Burniss+Earl+Travis+II/4eva+Is+a+Mighty+Long+Time/The+Light',
-              name: 'The Light',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Big+K.R.I.T.',
-                name: 'Big K.R.I.T.',
-                mbid: '7e966957-9b0b-4e19-b8a0-4206535d8052',
-              },
-              '@attr': { rank: 22 },
-              duration: 264,
-              url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time/Bury+Me+in+Gold',
-              name: 'Bury Me in Gold',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/ceb2982a2dfc2b308a79ab0347d022ec.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            {
-              name: 'how can a song be this fucking good',
-              url: 'https://www.last.fm/tag/how+can+a+song+be+this+fucking+good',
-            },
-            { name: 'personal', url: 'https://www.last.fm/tag/personal' },
-            {
-              name: 'southern hip hop',
-              url: 'https://www.last.fm/tag/southern+hip+hop',
-            },
-            { name: 'pop rap', url: 'https://www.last.fm/tag/pop+rap' },
-            {
-              name: 'dirty south',
-              url: 'https://www.last.fm/tag/dirty+south',
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Big+K.R.I.T./4eva+Is+a+Mighty+Long+Time',
-        artist: 'Big K.R.I.T.',
-        name: '4eva Is a Mighty Long Time',
-        mbid: '2072a26b-e653-4dc7-898a-0f5c18eeea35',
-      },
-      {
-        listeners: '40471',
-        playcount: '460174',
-        artist: 'Sun Kil Moon',
-        mbid: '0b43d258-7485-4a28-8dd0-c5b5291624c2',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 1 },
-              duration: 637,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/God+Bless+Ohio',
-              name: 'God Bless Ohio',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 2 },
-              duration: 538,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Chili+Lemon+Peanuts',
-              name: 'Chili Lemon Peanuts',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 3 },
-              duration: 647,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Philadelphia+Cop',
-              name: 'Philadelphia Cop',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 4 },
-              duration: 474,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/The+Highway+Song',
-              name: 'The Highway Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 5 },
-              duration: 554,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Lone+Star',
-              name: 'Lone Star',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 6 },
-              duration: 390,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Window+Sash+Weights',
-              name: 'Window Sash Weights',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 7 },
-              duration: 313,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Sarah+Lawrence+College+Song',
-              name: 'Sarah Lawrence College Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 8 },
-              duration: 513,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Butch+Lullaby',
-              name: 'Butch Lullaby',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 9 },
-              duration: 744,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Stranger+Than+Paradise',
-              name: 'Stranger Than Paradise',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 10 },
-              duration: 437,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Early+June+Blues',
-              name: 'Early June Blues',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 11 },
-              duration: 479,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Bergen+to+Trondheim',
-              name: 'Bergen to Trondheim',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 12 },
-              duration: 478,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/I+Love+Portugal',
-              name: 'I Love Portugal',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 13 },
-              duration: 338,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Bastille+Day',
-              name: 'Bastille Day',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 14 },
-              duration: 429,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Vague+Rock+Song',
-              name: 'Vague Rock Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 15 },
-              duration: 450,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/Seventies+TV+Show+Theme+Song',
-              name: 'Seventies TV Show Theme Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sun+Kil+Moon',
-                name: 'Sun Kil Moon',
-                mbid: 'ef2c6449-d02b-415b-ad8c-c14c08266552',
-              },
-              '@attr': { rank: 16 },
-              duration: 373,
-              url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood/I+Love+You+Forever+and+Beyond+Eternity',
-              name: 'I Love You Forever and Beyond Eternity',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Sun+Kil+Moon/Common+as+Light+and+Love+Are+Red+Valleys+of+Blood',
-        tags: {
-          tag: [
-            { name: '2017', url: 'https://www.last.fm/tag/2017' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'folk-hop', url: 'https://www.last.fm/tag/folk-hop' },
-            {
-              name: 'spoken word',
-              url: 'https://www.last.fm/tag/spoken+word',
-            },
-            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
-          ],
-        },
-        name: 'Common as Light and Love Are Red Valleys of Blood',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/60467cec482a40ca23e1af06e414e440.png',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/60467cec482a40ca23e1af06e414e440.png',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/60467cec482a40ca23e1af06e414e440.png',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/60467cec482a40ca23e1af06e414e440.png',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/60467cec482a40ca23e1af06e414e440.png',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/60467cec482a40ca23e1af06e414e440.png',
-          },
-        ],
-      },
-      {
-        listeners: '9566',
-        playcount: '463631',
-        wiki: {
-          published: '01 Jan 2017, 09:36',
-          content:
-            'The third mash-up album by Neil Cicierega, released 23 January 2017.\n <a href="https://www.last.fm/music/Neil+Cicierega/Mouth+Moods">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'The third mash-up album by Neil Cicierega, released 23 January 2017. <a href="https://www.last.fm/music/Neil+Cicierega/Mouth+Moods">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 1 },
-              duration: 175,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/The+Starting+Line',
-              name: 'The Starting Line',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 2 },
-              duration: 149,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Floor+Corn',
-              name: 'Floor Corn',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 3 },
-              duration: 179,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/AC%2FVC',
-              name: 'AC/VC',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 4 },
-              duration: 131,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/300MB',
-              name: '300MB',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 5 },
-              duration: 29,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Revolution+%235',
-              name: 'Revolution #5',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 6 },
-              duration: 219,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Dear+Dinosaur',
-              name: 'Dear Dinosaur',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 7 },
-              duration: 212,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Annoyed+Grunt',
-              name: 'Annoyed Grunt',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 8 },
-              duration: 227,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Bustin',
-              name: 'Bustin',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 9 },
-              duration: 14,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Blockbuster',
-              name: 'Blockbuster',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 10 },
-              duration: 68,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Busta',
-              name: 'Busta',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 11 },
-              duration: 184,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Tiger',
-              name: 'Tiger',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 12 },
-              duration: 212,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/The+End',
-              name: 'The End',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 13 },
-              duration: 58,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Shady+Interlude',
-              name: 'Shady Interlude',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 14 },
-              duration: 277,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/T.I.M.E.',
-              name: 'T.I.M.E.',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 15 },
-              duration: 257,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Smooth',
-              name: 'Smooth',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 16 },
-              duration: 145,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Stand+By+Meme',
-              name: 'Stand By Meme',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 17 },
-              duration: 195,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Wallspin',
-              name: 'Wallspin',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 18 },
-              duration: 209,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Wow+Wow',
-              name: 'Wow Wow',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 19 },
-              duration: 224,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Mouth+Pressure',
-              name: 'Mouth Pressure',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Neil+Cicierega',
-                name: 'Neil Cicierega',
-                mbid: '68f8885e-0752-480f-bf84-6d2fc67cff80',
-              },
-              '@attr': { rank: 20 },
-              duration: 249,
-              url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods/Shit',
-              name: 'Shit',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3aae2cd3c3036e65c9ef75b2c869aec8.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: 'mashup', url: 'https://www.last.fm/tag/mashup' },
-            {
-              name: 'plunderphonics',
-              url: 'https://www.last.fm/tag/plunderphonics',
-            },
-            { name: 'remix', url: 'https://www.last.fm/tag/remix' },
-            {
-              name: 'personal favourites',
-              url: 'https://www.last.fm/tag/personal+favourites',
-            },
-            { name: 'meme', url: 'https://www.last.fm/tag/meme' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Neil+Cicierega/Mouth+Moods',
-        artist: 'Neil Cicierega',
-        name: 'Mouth Moods',
-        mbid: '593fff6f-824d-4621-8245-3e8b3b007744',
-      },
-      {
-        listeners: '29083',
-        playcount: '324907',
-        artist: 'Kirin J Callinan',
-        mbid: '64742c51-8ae0-4133-b170-27824fe38656',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 1 },
-              duration: 256,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/My+Moment',
-              name: 'My Moment',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 2 },
-              duration: 218,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/S.A.D.',
-              name: 'S.A.D.',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 3 },
-              duration: 194,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Down+2+Hang',
-              name: 'Down 2 Hang',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 4 },
-              duration: 240,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Living+Each+Day',
-              name: 'Living Each Day',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 5 },
-              duration: 283,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Big+Enough',
-              name: 'Big Enough',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 6 },
-              duration: 299,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Family+Home',
-              name: 'Family Home',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 7 },
-              duration: 271,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Tellin%27+Me+This',
-              name: "Tellin' Me This",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 8 },
-              duration: 190,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/This+Whole+Town',
-              name: 'This Whole Town',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 9 },
-              duration: 243,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Friend+Of+Lindy+Morrison',
-              name: 'Friend Of Lindy Morrison',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kirin+J+Callinan',
-                name: 'Kirin J Callinan',
-                mbid: 'a3614a52-01f3-4f9d-999d-4bc650e2f2b1',
-              },
-              '@attr': { rank: 10 },
-              duration: 233,
-              url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado/Bravado',
-              name: 'Bravado',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Kirin+J+Callinan/Bravado',
-        tags: {
-          tag: [
-            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
-            { name: 'eurodance', url: 'https://www.last.fm/tag/eurodance' },
-            { name: 'post-punk', url: 'https://www.last.fm/tag/post-punk' },
-            { name: 'synthpop', url: 'https://www.last.fm/tag/synthpop' },
-            { name: 'aaaaah', url: 'https://www.last.fm/tag/aaaaah' },
-          ],
-        },
-        name: 'Bravado',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/dc260cd0d51ff9379fd7c650ba7e5dde.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '49496',
-        playcount: '814681',
-        artist: 'Algiers',
-        mbid: '04a68b9f-4382-49ef-b1f0-1c81cf71819a',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 1 },
-              duration: 190,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Walk+Like+A+Panther',
-              name: 'Walk Like A Panther',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 2 },
-              duration: 243,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Cry+Of+The+Martyrs',
-              name: 'Cry Of The Martyrs',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 3 },
-              duration: 252,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/The+Underside+Of+Power',
-              name: 'The Underside Of Power',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 4 },
-              duration: 272,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Death+March',
-              name: 'Death March',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 5 },
-              duration: 223,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/A+Murmur.+A+Sign.',
-              name: 'A Murmur. A Sign.',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 6 },
-              duration: 214,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Mme+Rieux',
-              name: 'Mme Rieux',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 7 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Cleveland',
-              name: 'Cleveland',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 8 },
-              duration: 153,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Animals',
-              name: 'Animals',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 9 },
-              duration: 172,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Plague+Years',
-              name: 'Plague Years',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 10 },
-              duration: 252,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Hymn+for+an+Average+Man',
-              name: 'Hymn for an Average Man',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 11 },
-              duration: 143,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/Bury+Me+Standing',
-              name: 'Bury Me Standing',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Algiers',
-                name: 'Algiers',
-                mbid: '685a5aa7-68b9-4293-9bd8-a6e4ac6b5160',
-              },
-              '@attr': { rank: 12 },
-              duration: 325,
-              url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power/The+Cycle%2FThe+Spiral:+Time+to+Go+Down+Slowly',
-              name: 'The Cycle/The Spiral: Time to Go Down Slowly',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Algiers/The+Underside+Of+Power',
-        tags: {
-          tag: [
-            { name: '2017', url: 'https://www.last.fm/tag/2017' },
-            { name: 'rock', url: 'https://www.last.fm/tag/rock' },
-            { name: 'gospel', url: 'https://www.last.fm/tag/gospel' },
-            { name: 'indie rock', url: 'https://www.last.fm/tag/indie+rock' },
-            { name: 'post-punk', url: 'https://www.last.fm/tag/post-punk' },
-          ],
-        },
-        name: 'The Underside Of Power',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/72e935ca8dcc0034251484a0283b36d6.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/72e935ca8dcc0034251484a0283b36d6.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/72e935ca8dcc0034251484a0283b36d6.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/72e935ca8dcc0034251484a0283b36d6.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/72e935ca8dcc0034251484a0283b36d6.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/72e935ca8dcc0034251484a0283b36d6.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '148761',
-        playcount: '2957092',
-        artist: 'Perfume Genius',
-        mbid: '19a16ab7-0853-4572-b9dc-70c3a18fda7e',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 1 },
-              duration: 233,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Whole+Life',
-              name: 'Whole Life',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 2 },
-              duration: 284,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Describe',
-              name: 'Describe',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 3 },
-              duration: 155,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Without+You',
-              name: 'Without You',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 4 },
-              duration: 185,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Jason',
-              name: 'Jason',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 5 },
-              duration: 185,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Leave',
-              name: 'Leave',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 6 },
-              duration: 303,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/On+the+Floor',
-              name: 'On the Floor',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 7 },
-              duration: 253,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Your+Body+Changes+Everything',
-              name: 'Your Body Changes Everything',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 8 },
-              duration: 321,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Moonbend',
-              name: 'Moonbend',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 9 },
-              duration: 208,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Just+a+Touch',
-              name: 'Just a Touch',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 10 },
-              duration: 267,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Nothing+at+All',
-              name: 'Nothing at All',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 11 },
-              duration: 181,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/One+More+Try',
-              name: 'One More Try',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 12 },
-              duration: 258,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Some+Dream',
-              name: 'Some Dream',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Perfume+Genius',
-                name: 'Perfume Genius',
-                mbid: 'c4ff10e0-ae5a-467d-a409-6e0b4bf241eb',
-              },
-              '@attr': { rank: 13 },
-              duration: 202,
-              url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately/Borrowed+Light',
-              name: 'Borrowed Light',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Perfume+Genius/Set+My+Heart+On+Fire+Immediately',
-        tags: {
-          tag: [
-            { name: '2020', url: 'https://www.last.fm/tag/2020' },
-            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
-            { name: '2020s', url: 'https://www.last.fm/tag/2020s' },
-            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-          ],
-        },
-        name: 'Set My Heart On Fire Immediately',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/ca79d5a2dd935979e8c849c159bbdb13.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/ca79d5a2dd935979e8c849c159bbdb13.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/ca79d5a2dd935979e8c849c159bbdb13.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/ca79d5a2dd935979e8c849c159bbdb13.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/ca79d5a2dd935979e8c849c159bbdb13.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/ca79d5a2dd935979e8c849c159bbdb13.jpg',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Fantano Best of 2018',
-    id: 'fantano-best-of-2018',
-    albums: [
-      {
-        listeners: '121706',
-        playcount: '3420520',
-        wiki: {
-          published: '02 Feb 2019, 01:16',
-          content:
-            'You Won\'t Get What You Want is the fourth studio album by American rock band Daughters. It was released on October 26, 2018, through Ipecac Recordings. It is the band\'s first album since they broke up in late 2009. The album was released to universal critical acclaim, with many critics naming it one of the best albums of 2018. It marks a significant departure from the band\'s earlier style, moving away from mathcore towards a more industrial and noise rock influenced sound.\n\nThe album was met with widespread critical acclaim. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream critics, the album received an average score of 87, based on 11 reviews, which indicates "universal acclaim". The album was included on numerous end-of-year lists as one of the best albums of 2018. Pitchfork wrote that "Similar to their Providence art-metal contemporaries in the Body, Daughters’ accessibility is directly proportional to their uncompromising compositional choices—hypnotic dissonance, martial drums cranked to incapacitating volumes, scathing vocal repetition, all rendered through impossibly vivid production. This is not music interesting in growing on you: it consumes and dominates." PopMatters called it "the perfect return for Daughters. While aspects of the band\'s creative vision have been altered and their sound has further evolved, the core elements remain intact. The asphyxiating sound has been augmented with the inclusion of longer, heavier sludge influenced moments. The tension the band build is further explored through different means."\n\nCredits (adapted from liner notes):\n\nAll lyrics written by Alexis Marshall; all music composed by Nick Sadler.\n\nDaughters: \nAlexis S.F. Marshall – vocals, lyrics | \nJon Syverson – drums | \nNicolas Andrew Sadler – guitar, production | \nSamuel Walker – bass guitar \n\nAdditional personnel:\nSeth Manchester – recording, production | \nHeba Kadry – mastering | \nJesse Draxler – artwork | \nShawn Vesinaw – layout <a href="https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            "You Won't Get What You Want is the fourth studio album by American rock band Daughters. It was released on October 26, 2018, through Ipecac Recordings. It is the band's first album since they broke up in late 2009. The album was released to universal critical acclaim, with many critics naming it one of the best albums of 2018. It marks a significant departure from the band's earlier style, moving away from mathcore towards a more industrial and noise rock influenced sound. The album was met with widespread critical acclaim. At Metacritic, which assigns a normalized rating out of 100 <a href=\"https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want\">Read more on Last.fm</a>.",
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 1 },
-              duration: 355,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/City+Song',
-              name: 'City Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 2 },
-              duration: 304,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Long+Road,+No+Turns',
-              name: 'Long Road, No Turns',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 3 },
-              duration: 426,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Satan+In+The+Wait',
-              name: 'Satan In The Wait',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 4 },
-              duration: 129,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/The+Flammable+Man',
-              name: 'The Flammable Man',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 5 },
-              duration: 165,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/The+Lords+Song',
-              name: 'The Lords Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 6 },
-              duration: 287,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Less+Sex',
-              name: 'Less Sex',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 7 },
-              duration: 295,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Daughter',
-              name: 'Daughter',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 8 },
-              duration: 235,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/The+Reason+They+Hate+Me',
-              name: 'The Reason They Hate Me',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 9 },
-              duration: 447,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Ocean+Song',
-              name: 'Ocean Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Daughters',
-                name: 'Daughters',
-                mbid: 'c9368a03-bf26-40b6-bdfa-9af8d10b568b',
-              },
-              '@attr': { rank: 10 },
-              duration: 269,
-              url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want/Guest+House',
-              name: 'Guest House',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/15e2aa6fbb9db93a7236039ae64ee1a3.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: 'noise rock', url: 'https://www.last.fm/tag/noise+rock' },
-            { name: '2018', url: 'https://www.last.fm/tag/2018' },
-            {
-              name: 'industrial rock',
-              url: 'https://www.last.fm/tag/industrial+rock',
-            },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-            { name: 'industrial', url: 'https://www.last.fm/tag/industrial' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Daughters/You+Won%27t+Get+What+You+Want',
-        artist: 'Daughters',
-        name: "You Won't Get What You Want",
-        mbid: '1390ceef-1a9f-4540-b701-170318a7b868',
-      },
-      {
-        listeners: '2215',
-        playcount: '5152',
-        wiki: {
-          published: '07 Jul 2020, 23:16',
-          content:
-            'This is nothing. Glitch let people upload it to spotify under KSG name. <a href="https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'This is nothing. Glitch let people upload it to spotify under KSG name. <a href="https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 1 },
-              duration: 109,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Squeezing+Sara',
-              name: 'Squeezing Sara',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 2 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Kids+See+Ghosts',
-              name: 'Kids See Ghosts',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 3 },
-              duration: 58,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/The+Champ+Dance',
-              name: 'The Champ Dance',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 4 },
-              duration: 112,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Memory+Sizzle',
-              name: 'Memory Sizzle',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 5 },
-              duration: 116,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Silky+Drops',
-              name: 'Silky Drops',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 6 },
-              duration: 122,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Classic+Night',
-              name: 'Classic Night',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 7 },
-              duration: 144,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Beat+of+the+Dragon',
-              name: 'Beat of the Dragon',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 8 },
-              duration: 119,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Squeezing+Baby,+Pt.+2',
-              name: 'Squeezing Baby, Pt. 2',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Kids+See+Ghosts',
-                name: 'Kids See Ghosts',
-                mbid: '793e220b-64f8-46d9-954d-e033dbcfeef4',
-              },
-              '@attr': { rank: 9 },
-              duration: 191,
-              url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero/Dance+of+the+Champ,+Pt.+2',
-              name: 'Dance of the Champ, Pt. 2',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/a5804db69f7c729a59475c15e96db9c1.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/a5804db69f7c729a59475c15e96db9c1.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/a5804db69f7c729a59475c15e96db9c1.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a5804db69f7c729a59475c15e96db9c1.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a5804db69f7c729a59475c15e96db9c1.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/a5804db69f7c729a59475c15e96db9c1.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'kanye west', url: 'https://www.last.fm/tag/kanye+west' },
-            {
-              name: 'alternative hip hop',
-              url: 'https://www.last.fm/tag/alternative+hip+hop',
-            },
-            { name: 'kid cudi', url: 'https://www.last.fm/tag/kid+cudi' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Kids+See+Ghosts/Jamin+Hero',
-        artist: 'Kids See Ghosts',
-        name: 'Jamin Hero',
-        mbid: '',
-      },
-      {
-        listeners: '244926',
-        playcount: '10934190',
-        artist: 'JPEGMAFIA',
-        mbid: '476fe0aa-f4d3-487c-8ed3-c7eb3a0124f9',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 1 },
-              duration: 157,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/1539+N.+Calvert',
-              name: '1539 N. Calvert',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 2 },
-              duration: 151,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Real+Nega',
-              name: 'Real Nega',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 3 },
-              duration: 198,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Thug+Tears',
-              name: 'Thug Tears',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 4 },
-              duration: 85,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Dayum',
-              name: 'Dayum',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 5 },
-              duration: 152,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Baby+I%27m+Bleeding',
-              name: "Baby I'm Bleeding",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 6 },
-              duration: 93,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/My+Thoughts+On+Neogaf+Dying',
-              name: 'My Thoughts On Neogaf Dying',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 7 },
-              duration: 188,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Rock+N+Roll+Is+Dead',
-              name: 'Rock N Roll Is Dead',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Bobbi+Rush',
-                name: 'JPEGMAFIA feat. Bobbi Rush',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 8 },
-              duration: 195,
-              url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Bobbi+Rush/Veteran/DD+Form+214',
-              name: 'DD Form 214',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 9 },
-              duration: 161,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Germs',
-              name: 'Germs',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Freaky',
-                name: 'JPEGMAFIA feat. Freaky',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 10 },
-              duration: 80,
-              url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Freaky/Veteran/Libtard+Anthem',
-              name: 'Libtard Anthem',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 11 },
-              duration: 180,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Panic+Emoji',
-              name: 'Panic Emoji',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 12 },
-              duration: 83,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/DJ+Snitch+Bitch+Interlude',
-              name: 'DJ Snitch Bitch Interlude',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 13 },
-              duration: 124,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Whole+Foods',
-              name: 'Whole Foods',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 14 },
-              duration: 117,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Macaulay+Culkin',
-              name: 'Macaulay Culkin',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 15 },
-              duration: 213,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Williamsburg',
-              name: 'Williamsburg',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 16 },
-              duration: 86,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/I+Cannot+Fucking+Wait+Until+Morrissey+Dies',
-              name: 'I Cannot Fucking Wait Until Morrissey Dies',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Yung+Midpack',
-                name: 'JPEGMAFIA feat. Yung Midpack',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 17 },
-              duration: 282,
-              url: 'https://www.last.fm/music/JPEGMAFIA+feat.+Yung+Midpack/Veteran/Rainbow+Six',
-              name: 'Rainbow Six',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 18 },
-              duration: 148,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/1488',
-              name: '1488',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/JPEGMAFIA',
-                name: 'JPEGMAFIA',
-                mbid: 'c42e60f4-4520-4954-b6e4-82bbdf532c11',
-              },
-              '@attr': { rank: 19 },
-              duration: 135,
-              url: 'https://www.last.fm/music/JPEGMAFIA/Veteran/Curb+Stomp',
-              name: 'Curb Stomp',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/JPEGMAFIA/Veteran',
-        tags: {
-          tag: [
-            { name: '2018', url: 'https://www.last.fm/tag/2018' },
-            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
-            { name: 'glitch hop', url: 'https://www.last.fm/tag/glitch+hop' },
-            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-          ],
-        },
-        name: 'Veteran',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/109adfe3cc11201e3fb97a246afc733d.png',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/109adfe3cc11201e3fb97a246afc733d.png',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/109adfe3cc11201e3fb97a246afc733d.png',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/109adfe3cc11201e3fb97a246afc733d.png',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/109adfe3cc11201e3fb97a246afc733d.png',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/109adfe3cc11201e3fb97a246afc733d.png',
-          },
-        ],
-      },
-      {
-        listeners: '12253',
-        playcount: '214819',
-        artist: 'Natalia Lafourcade',
-        mbid: '',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 1 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Musas/T%C3%BA+S%C3%AD+Sabes+Quererme',
-              name: 'Tú Sí Sabes Quererme',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 2 },
-              duration: 214,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Soledad+y+el+Mar',
-              name: 'Soledad y el Mar',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 3 },
-              duration: 209,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Mexicana+Hermosa',
-              name: 'Mexicana Hermosa',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 4 },
-              duration: 265,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Qu%C3%A9+He+Sacado+Con+Quererte',
-              name: 'Qué He Sacado Con Quererte',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 5 },
-              duration: 288,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Roc%C3%ADo+de+Todos+los+Campos',
-              name: 'Rocío de Todos los Campos',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 6 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Musas/Mi+tierra+veracruzana',
-              name: 'Mi tierra veracruzana',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 7 },
-              duration: 158,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Te+Vi+Pasar',
-              name: 'Te Vi Pasar',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 8 },
-              duration: 224,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Son+Amores+(That%27s+Amore)',
-              name: "Son Amores (That's Amore)",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 9 },
-              duration: 188,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/T%C3%BA+Me+Acostumbraste',
-              name: 'Tú Me Acostumbraste',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 10 },
-              duration: 223,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Soy+lo+Prohibido',
-              name: 'Soy lo Prohibido',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 11 },
-              duration: 300,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Tonada+de+Luna+Llena',
-              name: 'Tonada de Luna Llena',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Los+Macorinos',
-                name: 'Los Macorinos',
-                mbid: '',
-              },
-              '@attr': { rank: 12 },
-              duration: 197,
-              url: 'https://www.last.fm/music/Los+Macorinos/Musas/Vals+Po%C3%A9tico+-+Instrumental',
-              name: 'Vals Poético - Instrumental',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Natalia+Lafourcade/Musas',
-        tags: {
-          tag: [
-            { name: '2017', url: 'https://www.last.fm/tag/2017' },
-            {
-              name: 'canciones espanolas',
-              url: 'https://www.last.fm/tag/canciones+espanolas',
-            },
-            { name: 'latin', url: 'https://www.last.fm/tag/latin' },
-            {
-              name: 'female vocalists',
-              url: 'https://www.last.fm/tag/female+vocalists',
-            },
-            { name: 'espanhol', url: 'https://www.last.fm/tag/espanhol' },
-          ],
-        },
-        name: 'Musas',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1a0827003f30c68b3ef3eea5bba3dbc9.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '174662',
-        playcount: '4830078',
-        wiki: {
-          published: '06 Jun 2018, 03:39',
-          content:
-            'Wide Awake! is the sixth studio album by American indie rock band Parquet Courts, released on May 18, 2018 on Rough Trade Records. The album was first announced in February 2018, while the album was recorded in December 2017 to January 2018. The band recruited Danger Mouse to produce the album, as the band claimed, as a way to push themselves outside of their comfort zone. Wide Awake! received critical acclaim upon its release. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream publications, the album received an average score of 84, based on 16 reviews, indicating "universal acclaim". <a href="https://www.last.fm/music/Parquet+Courts/Wide+Awake!">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Wide Awake! is the sixth studio album by American indie rock band Parquet Courts, released on May 18, 2018 on Rough Trade Records. The album was first announced in February 2018, while the album was recorded in December 2017 to January 2018. The band recruited Danger Mouse to produce the album, as the band claimed, as a way to push themselves outside of their comfort zone. Wide Awake! received critical acclaim upon its release. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream publications, the album received an average score of 84, based on 16 <a href="https://www.last.fm/music/Parquet+Courts/Wide+Awake!">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 1 },
-              duration: 241,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Total+Football',
-              name: 'Total Football',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 2 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Violence',
-              name: 'Violence',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 3 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Before+the+Water+Gets+Too+High',
-              name: 'Before the Water Gets Too High',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 4 },
-              duration: 163,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Mardi+Gras+Beads',
-              name: 'Mardi Gras Beads',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 5 },
-              duration: 194,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Almost+Had+To+Start+A+Fight%2FIn+And+Out+of+Patience',
-              name: 'Almost Had To Start A Fight/In And Out of Patience',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 6 },
-              duration: 175,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Freebird+II',
-              name: 'Freebird II',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 7 },
-              duration: 131,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Normalization',
-              name: 'Normalization',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 8 },
-              duration: 234,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Back+to+Earth',
-              name: 'Back to Earth',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 9 },
-              duration: 158,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Wide+Awake',
-              name: 'Wide Awake',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 10 },
-              duration: 82,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/NYC+Observation',
-              name: 'NYC Observation',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 11 },
-              duration: 101,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Extinction',
-              name: 'Extinction',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 12 },
-              duration: 162,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Death+Will+Bring+Change',
-              name: 'Death Will Bring Change',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Parquet+Courts',
-                name: 'Parquet Courts',
-                mbid: 'e01755e3-58ab-4a5b-a9e9-a0a3bd3dff4c',
-              },
-              '@attr': { rank: 13 },
-              duration: 186,
-              url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!/Tenderness',
-              name: 'Tenderness',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/45d0cb38dca3b92a4c8d04b439f2b575.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2018', url: 'https://www.last.fm/tag/2018' },
-            { name: 'indie rock', url: 'https://www.last.fm/tag/indie+rock' },
-            { name: 'art punk', url: 'https://www.last.fm/tag/art+punk' },
-            { name: 'indie', url: 'https://www.last.fm/tag/indie' },
-            { name: 'post punk', url: 'https://www.last.fm/tag/post+punk' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Parquet+Courts/Wide+Awake!',
-        artist: 'Parquet Courts',
-        name: 'Wide Awake!',
-        mbid: '2a827755-8940-40c6-8b3f-8dcb74dcaf02',
-      },
-      {
-        listeners: '145002',
-        playcount: '2817699',
-        wiki: {
-          published: '12 Dec 2018, 21:01',
-          content:
-            'Room 25 is the debut album by American poet and hip hop recording artist Noname. Recorded in about a month\'s time, the album chronicles the two years since the release of Noname\'s debut mixtape Telefone, most notably her move from Chicago to Los Angeles and an intense, short-lived relationship that resulted in the loss of her virginity at age 25.\n\nRoom 25 was executive produced by Phoelix, who previously worked as a producer on Telefone. It features guest appearances by Ravyn Lenae, Smino, Saba, Phoelix, amongst others. The album was self-released through digital services on September 14, 2018. <a href="https://www.last.fm/music/Noname/Room+25">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Room 25 is the debut album by American poet and hip hop recording artist Noname. Recorded in about a month\'s time, the album chronicles the two years since the release of Noname\'s debut mixtape Telefone, most notably her move from Chicago to Los Angeles and an intense, short-lived relationship that resulted in the loss of her virginity at age 25. Room 25 was executive produced by Phoelix, who previously worked as a producer on Telefone. It features guest appearances by Ravyn Lenae, Smino, Saba, Phoelix, amongst others. The album was self-released through digital services on September 14, 2018. <a href="https://www.last.fm/music/Noname/Room+25">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname',
-                name: 'Noname',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 1 },
-              duration: 94,
-              url: 'https://www.last.fm/music/Noname/Room+25/Self',
-              name: 'Self',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname',
-                name: 'Noname',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 2 },
-              duration: 133,
-              url: 'https://www.last.fm/music/Noname/Room+25/Blaxploitation',
-              name: 'Blaxploitation',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname+feat.+Adam+Ness',
-                name: 'Noname feat. Adam Ness',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 3 },
-              duration: 257,
-              url: 'https://www.last.fm/music/Noname+feat.+Adam+Ness/Room+25/Prayer+Song',
-              name: 'Prayer Song',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname+feat.+Phoelix',
-                name: 'Noname feat. Phoelix',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 4 },
-              duration: 278,
-              url: 'https://www.last.fm/music/Noname+feat.+Phoelix/Room+25/Window',
-              name: 'Window',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname',
-                name: 'Noname',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 5 },
-              duration: 219,
-              url: 'https://www.last.fm/music/Noname/Room+25/Don%27t+Forget+About+Me',
-              name: "Don't Forget About Me",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname',
-                name: 'Noname',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 6 },
-              duration: 168,
-              url: 'https://www.last.fm/music/Noname/Room+25/Regal',
-              name: 'Regal',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname+feat.+Ravyn+Lenae',
-                name: 'Noname feat. Ravyn Lenae',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 7 },
-              duration: 163,
-              url: 'https://www.last.fm/music/Noname+feat.+Ravyn+Lenae/Room+25/Montego+Bae',
-              name: 'Montego Bae',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname+feat.+Smino+&+Saba',
-                name: 'Noname feat. Smino & Saba',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 8 },
-              duration: 182,
-              url: 'https://www.last.fm/music/Noname+feat.+Smino+&+Saba/Room+25/Ace',
-              name: 'Ace',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname+feat.+Phoelix+&+Benjamin+Earl+Turner',
-                name: 'Noname feat. Phoelix & Benjamin Earl Turner',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 9 },
-              duration: 195,
-              url: 'https://www.last.fm/music/Noname+feat.+Phoelix+&+Benjamin+Earl+Turner/Room+25/Part+Of+Me',
-              name: 'Part Of Me',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname',
-                name: 'Noname',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 10 },
-              duration: 149,
-              url: 'https://www.last.fm/music/Noname/Room+25/With+You',
-              name: 'With You',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Noname+feat.+Yaw+&+Adam+Ness',
-                name: 'Noname feat. Yaw & Adam Ness',
-                mbid: '1395c84b-2e84-4f25-9962-f1c0d5aa31ed',
-              },
-              '@attr': { rank: 11 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Noname+feat.+Yaw+&+Adam+Ness/Room+25/No+Name',
-              name: 'No Name',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/33797f84236c8bbc9a2cdffbe0ea5371.png',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/33797f84236c8bbc9a2cdffbe0ea5371.png',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/33797f84236c8bbc9a2cdffbe0ea5371.png',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/33797f84236c8bbc9a2cdffbe0ea5371.png',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/33797f84236c8bbc9a2cdffbe0ea5371.png',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/33797f84236c8bbc9a2cdffbe0ea5371.png',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2018', url: 'https://www.last.fm/tag/2018' },
-            { name: 'ghetto sage', url: 'https://www.last.fm/tag/ghetto+sage' },
-            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'soul', url: 'https://www.last.fm/tag/soul' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Noname/Room+25',
-        artist: 'Noname',
-        name: 'Room 25',
-        mbid: '5a73d966-e523-4b68-93c3-e09e999cfb40',
-      },
-      {
-        listeners: '121289',
-        playcount: '4193103',
-        wiki: {
-          published: '06 Jun 2018, 23:30',
-          content:
-            'Year of the Snitch is the sixth studio album by experimental hip hop group Death Grips, released on June 22, 2018, through Third Worlds and Harvest Records.\n\nWith the release of Steroids (Crouching Tiger Hidden Gabber Megamix), Death Grips announced they were "working on the new Death Grips album". The band has made apparent via social media that they had been working with ambitious collaborators for the creation of the project throughout the promotion of the album, including in-studio collaborations with Australian experimental musician Lucas Abela, New Zealand film director Andrew Adamson and Tool bassist Justin Chancellor.\n\nThe band posted a black and white image of text reading "Year of the Snitch - new album coming soon..." on their official webpage on March 22, 2018. Death Grips shared the album artwork for Year of the Snitch on April 6, 2018. The band\'s imprint label Third Worlds\' website was also updated with this information.\n\nThe tracklist for the album was released on April 11, through a video posted to social media and the band\'s YouTube channel. The video consisted of the track names being sent via SMS to the user of an iPhone through a screen recorder, while short videos played in the foreground. Accompanying the differing ringtones, screamed vocals of the band\'s frontman MC Ride can be heard.\n\nDeath Grips uploaded a music video for the track "Streaky" on their YouTube channel on May 5, 2018, as the album\'s first single, followed by the track "Black Paint" on May 15, and the music video for the third album single, "Flies", on May 22.\n\nThe band posted a short video to Instagram on May 23, featuring DJ Swamp performing on a turntable in a recording studio, with the caption stating that "the majority of Year of the Snitch features ".\n\nThe fourth single, "Hahaha", was uploaded by the band to their YouTube page on June 7. That same day, the album\'s release date was announced as June 22. A music video for the track "Dilemma" featuring Andrew Adamson was uploaded on the Death Grips YouTube channel on June 15. A sixth single, "Shitshow", was uploaded to YouTube two days later. Three days later, on June 20, the official video for "Shitshow" was released. It was directed by Zach Hill and Galen Pehrson. However, the video\'s extremely explicit nature led to YouTube taking down the video and giving Death Grips\' channel a community strike, after which the band re-uploaded the music video to Vimeo. The album leaked online on 21st June, and was officially released on streaming platforms on 22nd June, as well as on Death Grips\' YouTube. <a href="https://www.last.fm/music/Death+Grips/Year+of+the+Snitch">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Year of the Snitch is the sixth studio album by experimental hip hop group Death Grips, released on June 22, 2018, through Third Worlds and Harvest Records. With the release of Steroids (Crouching Tiger Hidden Gabber Megamix), Death Grips announced they were "working on the new Death Grips album". The band has made apparent via social media that they had been working with ambitious collaborators for the creation of the project throughout the promotion of the album, including in-studio collaborations with Australian experimental musician Lucas Abela, New Zealand film director Andrew Adamson and Tool bassist Justin Chancellor. The band posted <a href="https://www.last.fm/music/Death+Grips/Year+of+the+Snitch">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 1 },
-              duration: 212,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Death+Grips+Is+Online',
-              name: 'Death Grips Is Online',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 2 },
-              duration: 153,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Flies',
-              name: 'Flies',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 3 },
-              duration: 229,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Black+Paint',
-              name: 'Black Paint',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 4 },
-              duration: 210,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Linda%27s+in+Custody',
-              name: "Linda's in Custody",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 5 },
-              duration: 92,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/The+Horn+Section',
-              name: 'The Horn Section',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 6 },
-              duration: 215,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Hahaha',
-              name: 'Hahaha',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 7 },
-              duration: 105,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Shitshow',
-              name: 'Shitshow',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 8 },
-              duration: 176,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Streaky',
-              name: 'Streaky',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 9 },
-              duration: 234,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Dilemma',
-              name: 'Dilemma',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 10 },
-              duration: 145,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Little+Richard',
-              name: 'Little Richard',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 11 },
-              duration: 201,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/The+Fear',
-              name: 'The Fear',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 12 },
-              duration: 62,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Outro',
-              name: 'Outro',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Death+Grips',
-                name: 'Death Grips',
-                mbid: 'f9133036-ab3d-4e97-bd11-7a2c98ad148a',
-              },
-              '@attr': { rank: 13 },
-              duration: 201,
-              url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch/Disappointed',
-              name: 'Disappointed',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/17101ec892cf0dd4d09bef752c3015e1.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/17101ec892cf0dd4d09bef752c3015e1.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/17101ec892cf0dd4d09bef752c3015e1.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/17101ec892cf0dd4d09bef752c3015e1.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/17101ec892cf0dd4d09bef752c3015e1.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/17101ec892cf0dd4d09bef752c3015e1.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2018', url: 'https://www.last.fm/tag/2018' },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-            { name: 'avant-garde', url: 'https://www.last.fm/tag/avant-garde' },
-            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
-            { name: 'electronic', url: 'https://www.last.fm/tag/electronic' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Death+Grips/Year+of+the+Snitch',
-        artist: 'Death Grips',
-        name: 'Year of the Snitch',
-        mbid: '4900bbf8-3a39-457e-b648-7d03c7a6c6af',
-      },
-      {
-        listeners: '428',
-        playcount: '2296',
-        artist: 'Sons of Kemet',
-        mbid: '0edb4cde-5fad-4f89-8f54-0542e1b3a4bb',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 1 },
-              duration: 401,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Ada+Eastman+%5BExplicit%5D',
-              name: 'My Queen Is Ada Eastman [Explicit]',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 2 },
-              duration: 331,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Mamie+Phipps+Clark',
-              name: 'My Queen Is Mamie Phipps Clark',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 3 },
-              duration: 340,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Harriet+Tubman',
-              name: 'My Queen Is Harriet Tubman',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 4 },
-              duration: 307,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Anna+Julia+Cooper',
-              name: 'My Queen Is Anna Julia Cooper',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 5 },
-              duration: 396,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Angela+Davis',
-              name: 'My Queen Is Angela Davis',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 6 },
-              duration: 404,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Nanny+Of+The+Maroons',
-              name: 'My Queen Is Nanny Of The Maroons',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 7 },
-              duration: 424,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Yaa+Asantewaa',
-              name: 'My Queen Is Yaa Asantewaa',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 8 },
-              duration: 320,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Albertina+Sisulu',
-              name: 'My Queen Is Albertina Sisulu',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Sons+of+Kemet',
-                name: 'Sons of Kemet',
-                mbid: 'fee950a2-e68c-4e76-b1ae-ff6efdf68b11',
-              },
-              '@attr': { rank: 9 },
-              duration: 412,
-              url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D/My+Queen+Is+Doreen+Lawrence+%5BExplicit%5D',
-              name: 'My Queen Is Doreen Lawrence [Explicit]',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Sons+of+Kemet/Your+Queen+Is+A+Reptile+%5BExplicit%5D',
-        tags: {
-          tag: [
-            { name: 'jazz', url: 'https://www.last.fm/tag/jazz' },
-            {
-              name: 'robertitus coleccion',
-              url: 'https://www.last.fm/tag/robertitus+coleccion',
-            },
-            {
-              name: 'names of people',
-              url: 'https://www.last.fm/tag/names+of+people',
-            },
-            {
-              name: 'kings and queens',
-              url: 'https://www.last.fm/tag/kings+and+queens',
-            },
-            {
-              name: 'contemporary jazz',
-              url: 'https://www.last.fm/tag/contemporary+jazz',
-            },
-          ],
-        },
-        name: 'Your Queen Is A Reptile [Explicit]',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/764f70950b98b105d791f3c5651c41b5.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/764f70950b98b105d791f3c5651c41b5.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/764f70950b98b105d791f3c5651c41b5.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/764f70950b98b105d791f3c5651c41b5.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/764f70950b98b105d791f3c5651c41b5.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/764f70950b98b105d791f3c5651c41b5.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '102158',
-        playcount: '1761350',
-        artist: 'U.S. Girls',
-        mbid: '3b5db962-46e7-4a21-a667-95f80742deca',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 1 },
-              duration: 224,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Velvet+4+Sale',
-              name: 'Velvet 4 Sale',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 2 },
-              duration: 267,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Rage+Of+Plastics',
-              name: 'Rage Of Plastics',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 3 },
-              duration: 174,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/M.A.H.',
-              name: 'M.A.H.',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 4 },
-              duration: 25,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Why+Do+I+Lose+My+Voice+When+I+Have+Something+to+Say',
-              name: 'Why Do I Lose My Voice When I Have Something to Say',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 5 },
-              duration: 190,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Rosebud',
-              name: 'Rosebud',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 6 },
-              duration: 203,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Incidental+Boogie',
-              name: 'Incidental Boogie',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 7 },
-              duration: 246,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/L-Over',
-              name: 'L-Over',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 8 },
-              duration: 242,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Pearly+Gates',
-              name: 'Pearly Gates',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 9 },
-              duration: 211,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Poem',
-              name: 'Poem',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 10 },
-              duration: 13,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Traviata',
-              name: 'Traviata',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/U.S.+Girls',
-                name: 'U.S. Girls',
-                mbid: '036912f5-c717-498d-8958-6058de17bb70',
-              },
-              '@attr': { rank: 11 },
-              duration: 468,
-              url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited/Time',
-              name: 'Time',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/U.S.+Girls/In+A+Poem+Unlimited',
-        tags: {
-          tag: [
-            { name: '2018', url: 'https://www.last.fm/tag/2018' },
-            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
-            { name: 'art pop', url: 'https://www.last.fm/tag/art+pop' },
-            {
-              name: 'best of 2018',
-              url: 'https://www.last.fm/tag/best+of+2018',
-            },
-            {
-              name: 'psychedelic rock',
-              url: 'https://www.last.fm/tag/psychedelic+rock',
-            },
-          ],
-        },
-        name: 'In A Poem Unlimited',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3876fbd05f61904a4bb08b346d6ce6a2.jpg',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Fantano Best of 2019',
-    id: 'fantano-best-of-2019',
-    albums: [
-      {
-        listeners: '272540',
-        playcount: '12772808',
-        wiki: {
-          published: '06 Jun 2021, 00:06',
-          content:
-            'Charli is the third studio album by English singer and songwriter Charli XCX. It was released through Asylum and Atlantic Records UK on 13 September 2019.\n\nAfter a string of non-album singles in 2018, she released “1999” with Troye Sivan in 2018 October. The album’s new lead single, “Blame It on Your Love”, featuring Lizzo, was released in May 2019.\n\nOn June 13th, 2019, XCX confirmed that the record was titled Charli, and that the project was scheduled for release on September 13th, 2019. <a href="https://www.last.fm/music/Charli+XCX/Charli">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Charli is the third studio album by English singer and songwriter Charli XCX. It was released through Asylum and Atlantic Records UK on 13 September 2019. After a string of non-album singles in 2018, she released “1999” with Troye Sivan in 2018 October. The album’s new lead single, “Blame It on Your Love”, featuring Lizzo, was released in May 2019. On June 13th, 2019, XCX confirmed that the record was titled Charli, and that the project was scheduled for release on September 13th, 2019. <a href="https://www.last.fm/music/Charli+XCX/Charli">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 1 },
-              duration: 157,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Next+Level+Charli',
-              name: 'Next Level Charli',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 2 },
-              duration: 246,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Gone',
-              name: 'Gone',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 3 },
-              duration: 208,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Cross+You+Out+(feat.+Sky+Ferreira)',
-              name: 'Cross You Out (feat. Sky Ferreira)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 4 },
-              duration: 189,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/1999',
-              name: '1999',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 5 },
-              duration: 233,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Click+(feat.+Kim+Petras+and+Tommy+Cash)',
-              name: 'Click (feat. Kim Petras and Tommy Cash)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 6 },
-              duration: 225,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Warm+(feat.+HAIM)',
-              name: 'Warm (feat. HAIM)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 7 },
-              duration: 191,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Thoughts',
-              name: 'Thoughts',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 8 },
-              duration: 191,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Blame+It+on+Your+Love+(feat.+Lizzo)',
-              name: 'Blame It on Your Love (feat. Lizzo)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 9 },
-              duration: 203,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/White+Mercedes',
-              name: 'White Mercedes',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 10 },
-              duration: 208,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Silver+Cross',
-              name: 'Silver Cross',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 11 },
-              duration: 185,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/I+Don%27t+Wanna+Know',
-              name: "I Don't Wanna Know",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 12 },
-              duration: 185,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Official',
-              name: 'Official',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 13 },
-              duration: 275,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/Shake+It+(feat.+Big+Freedia,+CupcakKe,+Brooke+Candy+and+Pabllo+Vittar)',
-              name: 'Shake It (feat. Big Freedia, CupcakKe, Brooke Candy and Pabllo Vittar)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 14 },
-              duration: 153,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/February+2017+(feat.+Clairo+&+Yaeji)',
-              name: 'February 2017 (feat. Clairo & Yaeji)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Charli+XCX',
-                name: 'Charli XCX',
-                mbid: '260b6184-8828-48eb-945c-bc4cb6fc34ca',
-              },
-              '@attr': { rank: 15 },
-              duration: 205,
-              url: 'https://www.last.fm/music/Charli+XCX/Charli/2099+(feat.+Troye+Sivan)',
-              name: '2099 (feat. Troye Sivan)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/8837b1b6f6edd46cd9982530d41a2f9b.png',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/8837b1b6f6edd46cd9982530d41a2f9b.png',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/8837b1b6f6edd46cd9982530d41a2f9b.png',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/8837b1b6f6edd46cd9982530d41a2f9b.png',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/8837b1b6f6edd46cd9982530d41a2f9b.png',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/8837b1b6f6edd46cd9982530d41a2f9b.png',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
-            { name: 'electropop', url: 'https://www.last.fm/tag/electropop' },
-            { name: 'indie', url: 'https://www.last.fm/tag/indie' },
-            { name: 'synthpop', url: 'https://www.last.fm/tag/synthpop' },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Charli+XCX/Charli',
-        artist: 'Charli XCX',
-        name: 'Charli',
-        mbid: '6fdb3260-eac7-4ad9-8c72-92f45d9ca836',
-      },
-      {
-        listeners: '590430',
-        playcount: '32734934',
-        wiki: {
-          published: '06 Jun 2021, 08:06',
-          content:
-            'IGOR is Tyler, The Creator\'s sixth studio album, and was released on May 17, 2019. The announcement of the album came after some speculations the week before, followed by the release of four snippets on Tyler, The Creator\'s social media platforms. The album contains features from artists such as Kanye West and Playboi Carti and includes numerous vocal samples from comedian Jerrod Carmichael.\n\nShortly before the IGOR\'s release, Tyler issued instructions for listening to the project on Twitter:\n\n"IGOR. THIS IS NOT BASTARD. THIS IS NOT GOBLIN. THIS IS NOT WOLF. THIS IS NOT CHERRY BOMB. THIS IS NOT FLOWER BOY. THIS IS IGOR. PRONOUNCED EEE-GORE. DONT GO INTO THIS EXPECTING A RAP ALBUM. DONT GO INTO THIS EXPECTING ANY ALBUM. JUST GO, JUMP INTO IT. I BELIEVE THE FIRST LISTEN WORKS BEST ALL THE WAY THROUGH, NO SKIPS. FRONT TO BACK. NO DISTRACTIONS EITHER. NO CHECKING YOUR PHONE NO WATCHING TV NO HOLDING CONVO, FULL ATTN TOWARDS THE SOUNDS WHERE YOU CAN FORM YOUR OWN OPINIONS AND FEELINGS TOWARDS THE ALBUM. SOME GO ON WALKS, SOME DRIVE, SOME LAY IN BED AND SPONGE IT ALL UP. WHATEVER IT IS YOU CHOOSE , FULLY INDULGE. WITH VOLUME. AS MUCH AS I WOULD LIKE TO PAINT A PICTURE AND TELL YOU MY FAVORITE MOMENTS, I WOULD RATHER YOU FORM YOUR OWN. IF WE EVER CROSS PATHS, FEEL FREE TO ARTICULATE WHAT THOSE MOMENTS WERE FOR YOU, KEEP IT TIMELY THO IM NOT TRYNA HAVE AN OPRAH EPISODE. STANK YOU SMELLY MUCHO." <a href="https://www.last.fm/music/Tyler,+The+Creator/IGOR">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'IGOR is Tyler, The Creator\'s sixth studio album, and was released on May 17, 2019. The announcement of the album came after some speculations the week before, followed by the release of four snippets on Tyler, The Creator\'s social media platforms. The album contains features from artists such as Kanye West and Playboi Carti and includes numerous vocal samples from comedian Jerrod Carmichael. Shortly before the IGOR\'s release, Tyler issued instructions for listening to the project on Twitter: "IGOR. THIS IS NOT BASTARD. THIS IS NOT GOBLIN. THIS IS NOT WOLF. THIS IS NOT CHERRY BOMB. THIS IS NOT FLOWER BOY. THIS IS <a href="https://www.last.fm/music/Tyler,+The+Creator/IGOR">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 1 },
-              duration: 201,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/IGOR%27S+THEME',
-              name: "IGOR'S THEME",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 2 },
-              duration: 190,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/EARFQUAKE',
-              name: 'EARFQUAKE',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 3 },
-              duration: 212,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/I+THINK',
-              name: 'I THINK',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 4 },
-              duration: 14,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/Exactly+What+You+Run+From+You+End+Up+Chasing',
-              name: 'Exactly What You Run From You End Up Chasing',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 5 },
-              duration: 177,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/RUNNING+OUT+OF+TIME',
-              name: 'RUNNING OUT OF TIME',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 6 },
-              duration: 195,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/NEW+MAGIC+WAND',
-              name: 'NEW MAGIC WAND',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 7 },
-              duration: 210,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/A+BOY+IS+A+GUN*',
-              name: 'A BOY IS A GUN*',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 8 },
-              duration: 179,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/PUPPET',
-              name: 'PUPPET',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 9 },
-              duration: 206,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/WHAT%27S+GOOD',
-              name: "WHAT'S GOOD",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+the+Creator',
-                name: 'Tyler, the Creator',
-                mbid: 'f6beac20-5dfe-4d1f-ae02-0b0a740aafd6',
-              },
-              '@attr': { rank: 10 },
-              duration: 375,
-              url: 'https://www.last.fm/music/Tyler,+the+Creator/IGOR/GONE,+GONE+%2F+THANK+YOU',
-              name: 'GONE, GONE / THANK YOU',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+the+Creator',
-                name: 'Tyler, the Creator',
-                mbid: 'f6beac20-5dfe-4d1f-ae02-0b0a740aafd6',
-              },
-              '@attr': { rank: 11 },
-              duration: 161,
-              url: 'https://www.last.fm/music/Tyler,+the+Creator/IGOR/I+DON%27T+LOVE+YOU+ANYMORE',
-              name: "I DON'T LOVE YOU ANYMORE",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Tyler,+The+Creator',
-                name: 'Tyler, The Creator',
-                mbid: '',
-              },
-              '@attr': { rank: 12 },
-              duration: 265,
-              url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR/ARE+WE+STILL+FRIENDS%3F',
-              name: 'ARE WE STILL FRIENDS?',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/09bc862022fa580b820e065e51da7905.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/09bc862022fa580b820e065e51da7905.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/09bc862022fa580b820e065e51da7905.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/09bc862022fa580b820e065e51da7905.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/09bc862022fa580b820e065e51da7905.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/09bc862022fa580b820e065e51da7905.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            {
-              name: 'experimental hip hop',
-              url: 'https://www.last.fm/tag/experimental+hip+hop',
-            },
-            { name: 'alternative', url: 'https://www.last.fm/tag/alternative' },
-            { name: 'neo-soul', url: 'https://www.last.fm/tag/neo-soul' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Tyler,+The+Creator/IGOR',
-        artist: 'Tyler, The Creator',
-        name: 'IGOR',
-        mbid: '4603cee3-ece6-435c-b0b7-7d9eb1842d36',
-      },
-      {
-        listeners: '28338',
-        playcount: '354446',
-        artist: 'Richard Dawson',
-        mbid: '2757d45c-3404-41db-92c2-a82a76d70363',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 1 },
-              duration: 400,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Civil+Servant',
-              name: 'Civil Servant',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 2 },
-              duration: 317,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/The+Queen%27s+Head',
-              name: "The Queen's Head",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 3 },
-              duration: 311,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Two+Halves',
-              name: 'Two Halves',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 4 },
-              duration: 398,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Jogging',
-              name: 'Jogging',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 5 },
-              duration: 274,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Heart+Emoji',
-              name: 'Heart Emoji',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 6 },
-              duration: 479,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Black+Triangle',
-              name: 'Black Triangle',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 7 },
-              duration: 607,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Fulfilment+Centre',
-              name: 'Fulfilment Centre',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 8 },
-              duration: 302,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Fresher%27s+Ball',
-              name: "Fresher's Ball",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 9 },
-              duration: 79,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/No-one',
-              name: 'No-one',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Richard+Dawson',
-                name: 'Richard Dawson',
-                mbid: 'ee7923b9-5850-47b5-97cc-5cecdc21578d',
-              },
-              '@attr': { rank: 10 },
-              duration: 329,
-              url: 'https://www.last.fm/music/Richard+Dawson/2020/Dead+Dog+in+an+Alleyway',
-              name: 'Dead Dog in an Alleyway',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Richard+Dawson/2020',
-        tags: {
-          tag: [
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            { name: 'art rock', url: 'https://www.last.fm/tag/art+rock' },
-            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
-            {
-              name: 'singer-songwriter',
-              url: 'https://www.last.fm/tag/singer-songwriter',
-            },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-          ],
-        },
-        name: '2020',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/b9ce0cb228f7dd3a4463f88be9506c91.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '52684',
-        playcount: '937439',
-        artist: 'LINGUA IGNOTA',
-        mbid: '1c763181-f440-4c90-822a-ffa33aa0fff8',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 1 },
-              duration: 282,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/FAITHFUL+SERVANT+FRIEND+OF+CHRIST',
-              name: 'FAITHFUL SERVANT FRIEND OF CHRIST',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 2 },
-              duration: 574,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/DO+YOU+DOUBT+ME+TRAITOR',
-              name: 'DO YOU DOUBT ME TRAITOR',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 3 },
-              duration: 393,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/BUTCHER+OF+THE+WORLD',
-              name: 'BUTCHER OF THE WORLD',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 4 },
-              duration: 273,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/MAY+FAILURE+BE+YOUR+NOOSE',
-              name: 'MAY FAILURE BE YOUR NOOSE',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 5 },
-              duration: 307,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/FRAGRANT+IS+MY+MANY+FLOWER%27D+CROWN',
-              name: "FRAGRANT IS MY MANY FLOWER'D CROWN",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 6 },
-              duration: 390,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/IF+THE+POISON+WON%27T+TAKE+YOU+MY+DOGS+WILL',
-              name: "IF THE POISON WON'T TAKE YOU MY DOGS WILL",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 7 },
-              duration: 283,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/DAY+OF+TEARS+AND+MOURNING',
-              name: 'DAY OF TEARS AND MOURNING',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 8 },
-              duration: 391,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/SORROW!+SORROW!+SORROW!',
-              name: 'SORROW! SORROW! SORROW!',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 9 },
-              duration: 444,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/SPITE+ALONE+HOLDS+ME+ALOFT',
-              name: 'SPITE ALONE HOLDS ME ALOFT',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 10 },
-              duration: 153,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/FUCKING+DEATHDEALER',
-              name: 'FUCKING DEATHDEALER',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/LINGUA+IGNOTA',
-                name: 'LINGUA IGNOTA',
-                mbid: '5d12543f-4b37-4e6f-adb1-0e38f23e04b3',
-              },
-              '@attr': { rank: 11 },
-              duration: 473,
-              url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA/I+AM+THE+BEAST',
-              name: 'I AM THE BEAST',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/LINGUA+IGNOTA/CALIGULA',
-        tags: {
-          tag: [
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            {
-              name: 'death industrial',
-              url: 'https://www.last.fm/tag/death+industrial',
-            },
-            {
-              name: 'neoclassical darkwave',
-              url: 'https://www.last.fm/tag/neoclassical+darkwave',
-            },
-            { name: '2010s', url: 'https://www.last.fm/tag/2010s' },
-            { name: 'industrial', url: 'https://www.last.fm/tag/industrial' },
-          ],
-        },
-        name: 'CALIGULA',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/963269723079464606685c3093a06c68.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/963269723079464606685c3093a06c68.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/963269723079464606685c3093a06c68.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/963269723079464606685c3093a06c68.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/963269723079464606685c3093a06c68.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/963269723079464606685c3093a06c68.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '153841',
-        playcount: '2688200',
-        wiki: {
-          published: '03 Mar 2019, 02:36',
-          content:
-            'Grey Area is the third studio album by English rapper Little Simz, released on 1 March 2019. It features contributions from Cleo Sol, Chronixx, Little Dragon and Michael Kiwanuka. <a href="https://www.last.fm/music/Little+Simz/GREY+Area">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'Grey Area is the third studio album by English rapper Little Simz, released on 1 March 2019. It features contributions from Cleo Sol, Chronixx, Little Dragon and Michael Kiwanuka. <a href="https://www.last.fm/music/Little+Simz/GREY+Area">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 1 },
-              duration: 169,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Offence',
-              name: 'Offence',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 2 },
-              duration: 186,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Boss',
-              name: 'Boss',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 3 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Selfish',
-              name: 'Selfish',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 4 },
-              duration: 280,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Wounds',
-              name: 'Wounds',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 5 },
-              duration: 154,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Venom',
-              name: 'Venom',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 6 },
-              duration: 191,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/101+Fm',
-              name: '101 Fm',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Dragon',
-                name: 'Little Dragon',
-                mbid: 'c8a9ae11-63bf-409b-8bf3-a96b3712a2ff',
-              },
-              '@attr': { rank: 7 },
-              duration: 208,
-              url: 'https://www.last.fm/music/Little+Dragon/GREY+Area/Pressure',
-              name: 'Pressure',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 8 },
-              duration: 196,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Therapy',
-              name: 'Therapy',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 9 },
-              duration: 295,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Sherbet+Sunset',
-              name: 'Sherbet Sunset',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Little+Simz',
-                name: 'Little Simz',
-                mbid: '3cdb40fe-a63e-4bb9-b40d-17cda5f50979',
-              },
-              '@attr': { rank: 10 },
-              duration: 225,
-              url: 'https://www.last.fm/music/Little+Simz/GREY+Area/Flowers',
-              name: 'Flowers',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/65f4fe960a64b9cd2910492175b5b12a.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/65f4fe960a64b9cd2910492175b5b12a.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/65f4fe960a64b9cd2910492175b5b12a.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/65f4fe960a64b9cd2910492175b5b12a.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/65f4fe960a64b9cd2910492175b5b12a.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/65f4fe960a64b9cd2910492175b5b12a.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            { name: 'hip hop', url: 'https://www.last.fm/tag/hip+hop' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'check out', url: 'https://www.last.fm/tag/check+out' },
-            { name: 'hip-hop', url: 'https://www.last.fm/tag/hip-hop' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Little+Simz/GREY+Area',
-        artist: 'Little Simz',
-        name: 'GREY Area',
-        mbid: '8accaa03-773b-457c-a7d6-e5cbcd528277',
-      },
-      {
-        listeners: '28463',
-        playcount: '398779',
-        wiki: {
-          published: '12 Dec 2019, 03:34',
-          content:
-            'H.A.Q.Q. is the fourth studio album by transcendental black metal band Liturgy. Featuring their characteristic yearning guitar harmonies, epic song structures, and intense drumming, H.A.Q.Q. boils over with harp, piano, gagaku ensemble, pitched percussion, strings, and digital manipulation. It represents a consolidation of the band’s sound to date, a combination of the mathematical complexity of 2011’s Aesthethica and the glitchy experimental fervor of 2015’s The Ark Work. While ecstatically invoking heaven, H.A.Q.Q. is also Liturgy’s most vulnerable record for Hunter Hunt-Hendrix, addressing anger and struggles around mental health, sexuality, and religion. In part a reflection on Liturgy’s uniquely controversial career, it attempts to render the spirit of a cultural era whose basic fabric is unravelling, and to generate an energy of prophecy and love in the name of what is to come.\n\nHunt-Hendrix composed the album during 2018, drawing from a reservoir of material, some of which had existed for years, while simultaneously creating the forthcoming opera Origin of the Alimonies and philosophical System of Transcendental Qabala (depicted graphically on H.A.Q.Q.’s album cover). These latter two projects represent an interdisciplinary effort to create a total meaning system. The composition of H.A.Q.Q. was a sudden detour, but it is related to these other works as a point of entry. After performing in the debut of Origin of the Alimonies in the fall of 2018, the band spent 6 months bringing the album to life before recording it in August of 2019 at Machines with Magnets with Seth Manchester.\n\nH.A.Q.Q. stands for Haelegen above Quality and Quantity, and represents Hunt-Hendrix’s uniquely marxist and psychoanalytic vision of God.\n\nHunter Hunt-Hendrix - guitar, vocals\nBernard Gann - guitar\nTia Vincent-Clark - bass\nLeo Didkovsky - drums\n\nEric Wubbels - piano on track 2\nCharlotte Mundy - voice on tracks 1 and 3\nCory Bracken - vibraphone on tracks 4 and 6\nLeo Didkovsky - glockenspiel on tracks 4 and 6\nHunter Hunt-Hendrix - piano on tracks 5, 7, 9\nMarilu Donovan - harp on tracks 1, 3, 6, 8\nTadlow Ensemble - strings on tracks 4 and 6\nLucie Vitovka - hichiriki on track 1\nAdam Robinson - ryuteki on track 1\n\nRecorded in August 2019 and mixed by Seth Manchester at Machines with Magnets. Mastered by Matt Colton at Metropolis Mastering <a href="https://www.last.fm/music/Liturgy/H.A.Q.Q.">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'H.A.Q.Q. is the fourth studio album by transcendental black metal band Liturgy. Featuring their characteristic yearning guitar harmonies, epic song structures, and intense drumming, H.A.Q.Q. boils over with harp, piano, gagaku ensemble, pitched percussion, strings, and digital manipulation. It represents a consolidation of the band’s sound to date, a combination of the mathematical complexity of 2011’s Aesthethica and the glitchy experimental fervor of 2015’s The Ark Work. While ecstatically invoking heaven, H.A.Q.Q. is also Liturgy’s most vulnerable record for Hunter Hunt-Hendrix, addressing anger and struggles around mental health, sexuality, and religion. In part a reflection on Liturgy’s uniquely controversial career, <a href="https://www.last.fm/music/Liturgy/H.A.Q.Q.">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 1 },
-              duration: 518,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./HAJJ',
-              name: 'HAJJ',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 2 },
-              duration: 139,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./EXACO+I',
-              name: 'EXACO I',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 3 },
-              duration: 227,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./VIRGINITY',
-              name: 'VIRGINITY',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 4 },
-              duration: 331,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./PASAQALIA',
-              name: 'PASAQALIA',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 5 },
-              duration: 136,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./EXACO+II',
-              name: 'EXACO II',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 6 },
-              duration: 489,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./God+of+Love',
-              name: 'God of Love',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 7 },
-              duration: 235,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./EXACO+III',
-              name: 'EXACO III',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 8 },
-              duration: 423,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./HAQQ',
-              name: 'HAQQ',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Liturgy',
-                name: 'Liturgy',
-                mbid: '0ae0380a-11a6-4edf-b772-e0b53f0c61d7',
-              },
-              '@attr': { rank: 9 },
-              duration: 223,
-              url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q./.+.+.+.',
-              name: '. . . .',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/291f61ac93eff5d2ac42e601332c594a.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/291f61ac93eff5d2ac42e601332c594a.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/291f61ac93eff5d2ac42e601332c594a.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/291f61ac93eff5d2ac42e601332c594a.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/291f61ac93eff5d2ac42e601332c594a.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/291f61ac93eff5d2ac42e601332c594a.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            {
-              name: 'transcendental black metal',
-              url: 'https://www.last.fm/tag/transcendental+black+metal',
-            },
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            { name: 'black metal', url: 'https://www.last.fm/tag/black+metal' },
-            { name: 'metal', url: 'https://www.last.fm/tag/metal' },
-            { name: 'glitch', url: 'https://www.last.fm/tag/glitch' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Liturgy/H.A.Q.Q.',
-        artist: 'Liturgy',
-        name: 'H.A.Q.Q.',
-        mbid: '62652db8-3874-4768-81b7-2eb4448063a1',
-      },
-      {
-        listeners: '11156',
-        playcount: '133428',
-        artist: 'Matana Roberts',
-        mbid: '8aa90cdd-61c3-4aa6-b72a-6a4c12fc963c',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 1 },
-              duration: 108,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Jewels+Of+The+Sky:+Inscription',
-              name: 'Jewels Of The Sky: Inscription',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 2 },
-              duration: 243,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/As+Far+As+the+Eye+Can+See',
-              name: 'As Far As the Eye Can See',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 3 },
-              duration: 583,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Trail+Of+The+Smiling+Sphinx',
-              name: 'Trail Of The Smiling Sphinx',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 4 },
-              duration: 149,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Piddling',
-              name: 'Piddling',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 5 },
-              duration: 187,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Shoes+Of+Gold',
-              name: 'Shoes Of Gold',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 6 },
-              duration: 341,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Wild+Fire+Bare',
-              name: 'Wild Fire Bare',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 7 },
-              duration: 161,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Fit+To+Be+Tied',
-              name: 'Fit To Be Tied',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 8 },
-              duration: 297,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Her+Mighty+Waters+Run',
-              name: 'Her Mighty Waters Run',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 9 },
-              duration: 150,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/All+Things+Beautiful',
-              name: 'All Things Beautiful',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 10 },
-              duration: 196,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/In+The+Fold',
-              name: 'In The Fold',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 11 },
-              duration: 164,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Raise+Yourself+Up',
-              name: 'Raise Yourself Up',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 12 },
-              duration: 51,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/Backbone+Once+More',
-              name: 'Backbone Once More',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matana+Roberts',
-                name: 'Matana Roberts',
-                mbid: '5a735385-fad3-4b3c-913c-c79aa5853f13',
-              },
-              '@attr': { rank: 13 },
-              duration: 170,
-              url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis/How+Bright+They+Shine',
-              name: 'How Bright They Shine',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Matana+Roberts/COIN+COIN+Chapter+Four:+Memphis',
-        tags: {
-          tag: [
-            {
-              name: 'spiritual jazz',
-              url: 'https://www.last.fm/tag/spiritual+jazz',
-            },
-            {
-              name: 'constellation',
-              url: 'https://www.last.fm/tag/constellation',
-            },
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            {
-              name: 'constellations',
-              url: 'https://www.last.fm/tag/constellations',
-            },
-            { name: 'mythology', url: 'https://www.last.fm/tag/mythology' },
-          ],
-        },
-        name: 'COIN COIN Chapter Four: Memphis',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/60b47ae3cb3f3a1a81277640ef2afa36.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '43456',
-        playcount: '670878',
-        artist: 'Alex Cameron',
-        mbid: '0a9595e3-e4f1-41a2-8a3f-3a9a1a3ced8d',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 1 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Stepdad',
-              name: 'Stepdad',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 2 },
-              duration: 265,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Miami+Memory',
-              name: 'Miami Memory',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 3 },
-              duration: 256,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Far+From+Born+Again',
-              name: 'Far From Born Again',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 4 },
-              duration: 265,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Gaslight',
-              name: 'Gaslight',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 5 },
-              duration: 278,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Bad+For+The+Boys',
-              name: 'Bad For The Boys',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 6 },
-              duration: 184,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/End+is+Nigh',
-              name: 'End is Nigh',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 7 },
-              duration: 153,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/PC+With+Me',
-              name: 'PC With Me',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 8 },
-              duration: 192,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Divorce',
-              name: 'Divorce',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 9 },
-              duration: 225,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Other+Ladies',
-              name: 'Other Ladies',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Alex+Cameron',
-                name: 'Alex Cameron',
-                mbid: '0eabad49-1814-453a-8555-8a21edfbf0f4',
-              },
-              '@attr': { rank: 10 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory/Too+Far',
-              name: 'Too Far',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Alex+Cameron/Miami+Memory',
-        tags: {
-          tag: [
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            { name: '2010s', url: 'https://www.last.fm/tag/2010s' },
-            { name: 'alternative', url: 'https://www.last.fm/tag/alternative' },
-            { name: 'synthpop', url: 'https://www.last.fm/tag/synthpop' },
-            { name: 'soft rock', url: 'https://www.last.fm/tag/soft+rock' },
-          ],
-        },
-        name: 'Miami Memory',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/5c7cba518675fb9dfbf263fd94b6190f.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/5c7cba518675fb9dfbf263fd94b6190f.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/5c7cba518675fb9dfbf263fd94b6190f.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/5c7cba518675fb9dfbf263fd94b6190f.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/5c7cba518675fb9dfbf263fd94b6190f.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/5c7cba518675fb9dfbf263fd94b6190f.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '26442',
-        playcount: '914761',
-        artist: 'Dorian Electra',
-        mbid: '',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 1 },
-              duration: 126,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Mr.+To+You',
-              name: 'Mr. To You',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 2 },
-              duration: 217,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Career+Boy',
-              name: 'Career Boy',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 3 },
-              duration: 175,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Daddy+Like',
-              name: 'Daddy Like',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 4 },
-              duration: 138,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Emasculate',
-              name: 'Emasculate',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 5 },
-              duration: 197,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Man+to+Man',
-              name: 'Man to Man',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 6 },
-              duration: 115,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Musical+Genius',
-              name: 'Musical Genius',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 7 },
-              duration: 196,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Flamboyant',
-              name: 'Flamboyant',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 8 },
-              duration: 175,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Guyliner',
-              name: 'Guyliner',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 9 },
-              duration: 151,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Live+By+the+Sword',
-              name: 'Live By the Sword',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 10 },
-              duration: 181,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Adam+&+Steve',
-              name: 'Adam & Steve',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 11 },
-              duration: 197,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/fReAkY+4+Life',
-              name: 'fReAkY 4 Life',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 12 },
-              duration: 172,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Tool+for+You',
-              name: 'Tool for You',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 13 },
-              duration: 142,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Under+the+Armor',
-              name: 'Under the Armor',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 14 },
-              duration: 165,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Guyliner,+Pt.+2',
-              name: 'Guyliner, Pt. 2',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 15 },
-              duration: 190,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Your+Kinda+Guy',
-              name: 'Your Kinda Guy',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Dorian+Electra',
-                name: 'Dorian Electra',
-                mbid: 'aefba883-dfc2-45ee-bce4-1dd903b13341',
-              },
-              '@attr': { rank: 16 },
-              duration: 193,
-              url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)/Adam+&+Steve+(Count+Baldor+Remix)',
-              name: 'Adam & Steve (Count Baldor Remix)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Dorian+Electra/Flamboyant+(Deluxe)',
-        tags: {
-          tag: [
-            { name: 'electropop', url: 'https://www.last.fm/tag/electropop' },
-            {
-              name: 'bubblegum bass',
-              url: 'https://www.last.fm/tag/bubblegum+bass',
-            },
-            { name: 'dance-pop', url: 'https://www.last.fm/tag/dance-pop' },
-            { name: '2019', url: 'https://www.last.fm/tag/2019' },
-            { name: 'pop', url: 'https://www.last.fm/tag/pop' },
-          ],
-        },
-        name: 'Flamboyant (Deluxe)',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/e2b52e37f163aec9a2ff0f40ce558681.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/e2b52e37f163aec9a2ff0f40ce558681.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/e2b52e37f163aec9a2ff0f40ce558681.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/e2b52e37f163aec9a2ff0f40ce558681.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/e2b52e37f163aec9a2ff0f40ce558681.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/e2b52e37f163aec9a2ff0f40ce558681.jpg',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Fantano Best of 2020',
-    id: 'fantano-best-of-2020',
-    albums: [
-      {
-        listeners: '164183',
-        playcount: '8044235',
-        wiki: {
-          published: '07 Jul 2020, 16:19',
-          content:
-            'What\'s Your Pleasure? is the fourth studio album by singer and songwriter Jessie Ware. It was released on June, 26th 2020 on Virgin EMI Records. \n\nWare co-wrote all of the 12 tracks with fellow british producer James Ford. The duo eventually enlisted writers and producers such as Benji B, Joseph Mount, Kindness, Morgan Geist, Matthew Tavares, and Midland. \n\nFive singles preceeded the release of the new record: Adore You, Mirage (Don\'t Stop), Spotlight, Ooh La La and Save a Kiss.  <a href="https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'What\'s Your Pleasure? is the fourth studio album by singer and songwriter Jessie Ware. It was released on June, 26th 2020 on Virgin EMI Records. Ware co-wrote all of the 12 tracks with fellow british producer James Ford. The duo eventually enlisted writers and producers such as Benji B, Joseph Mount, Kindness, Morgan Geist, Matthew Tavares, and Midland. Five singles preceeded the release of the new record: Adore You, Mirage (Don\'t Stop), Spotlight, Ooh La La and Save a Kiss. <a href="https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 1 },
-              duration: 331,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Spotlight',
-              name: 'Spotlight',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 2 },
-              duration: 278,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/What%27s+Your+Pleasure%3F',
-              name: "What's Your Pleasure?",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 3 },
-              duration: 228,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Ooh+La+La',
-              name: 'Ooh La La',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 4 },
-              duration: 239,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Soul+Control',
-              name: 'Soul Control',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 5 },
-              duration: 242,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Save+a+Kiss',
-              name: 'Save a Kiss',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 6 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Adore+You',
-              name: 'Adore You',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 7 },
-              duration: 298,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/In+Your+Eyes',
-              name: 'In Your Eyes',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 8 },
-              duration: 217,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Step+Into+My+Life',
-              name: 'Step Into My Life',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 9 },
-              duration: 243,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Read+My+Lips',
-              name: 'Read My Lips',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 10 },
-              duration: 287,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Mirage+(Don%27t+Stop)',
-              name: "Mirage (Don't Stop)",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 11 },
-              duration: 277,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/The+Kill',
-              name: 'The Kill',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Jessie+Ware',
-                name: 'Jessie Ware',
-                mbid: '6ed40778-8d03-4a5c-ad35-93cf814627c9',
-              },
-              '@attr': { rank: 12 },
-              duration: 334,
-              url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F/Remember+Where+You+Are',
-              name: 'Remember Where You Are',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1efdf5b6ba52459efb7a4a3f60b0d2a8.jpg',
-          },
-        ],
-        tags: {
-          tag: [
-            { name: 'disco', url: 'https://www.last.fm/tag/disco' },
-            { name: '2020', url: 'https://www.last.fm/tag/2020' },
-            { name: 'dance-pop', url: 'https://www.last.fm/tag/dance-pop' },
-            { name: 'house', url: 'https://www.last.fm/tag/house' },
-            { name: 'nu-disco', url: 'https://www.last.fm/tag/nu-disco' },
-          ],
-        },
-        url: 'https://www.last.fm/music/Jessie+Ware/What%27s+Your+Pleasure%3F',
-        artist: 'Jessie Ware',
-        name: "What's Your Pleasure?",
-        mbid: '12c4d585-ae20-43ff-8876-bbb4eadd545a',
-      },
-      {
-        listeners: '67355',
-        playcount: '1780215',
-        artist: 'clipping.',
-        mbid: '99dfae16-464c-49fb-95da-d83bf836a3be',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 1 },
-              duration: 65,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Intro',
-              name: 'Intro',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 2 },
-              duration: 299,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Say+the+Name',
-              name: 'Say the Name',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 3 },
-              duration: 30,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Wytchboard+(Interlude)',
-              name: 'Wytchboard (Interlude)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 4 },
-              duration: 201,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/96+Neve+Campbell+(feat.+Cam+&+China)',
-              name: '96 Neve Campbell (feat. Cam & China)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 5 },
-              duration: 156,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Something+Underneath',
-              name: 'Something Underneath',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 6 },
-              duration: 246,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Make+Them+Dead',
-              name: 'Make Them Dead',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 7 },
-              duration: 206,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/She+Bad',
-              name: 'She Bad',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 8 },
-              duration: 72,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Invocation+(feat.+Greg+Stuart)+%5BInterlude%5D',
-              name: 'Invocation (feat. Greg Stuart) [Interlude]',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 9 },
-              duration: 219,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Pain+Everyday+(feat.+Michael+Esposito)',
-              name: 'Pain Everyday (feat. Michael Esposito)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 10 },
-              duration: 217,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Check+the+Lock',
-              name: 'Check the Lock',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 11 },
-              duration: 209,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Looking+Like+Meat+(feat.+Ho99o9)',
-              name: 'Looking Like Meat (feat. Ho99o9)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 12 },
-              duration: 51,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Drove+(Interlude)',
-              name: 'Drove (Interlude)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 13 },
-              duration: 341,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Eaten+Alive+(with+Jeff+Parker+&+Ted+Byrnes)',
-              name: 'Eaten Alive (with Jeff Parker & Ted Byrnes)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 14 },
-              duration: 264,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Body+for+the+Pile+(feat.+SICKNESS)',
-              name: 'Body for the Pile (feat. SICKNESS)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 15 },
-              duration: 283,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Enlacing',
-              name: 'Enlacing',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/clipping.',
-                name: 'clipping.',
-                mbid: '84ca8fa4-7cca-4948-a90a-cb44db29853d',
-              },
-              '@attr': { rank: 16 },
-              duration: 221,
-              url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned/Secret+Piece',
-              name: 'Secret Piece',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/clipping./Visions+of+Bodies+Being+Burned',
-        tags: {
-          tag: [
-            {
-              name: 'experimental hip-hop',
-              url: 'https://www.last.fm/tag/experimental+hip-hop',
-            },
-            { name: '2020', url: 'https://www.last.fm/tag/2020' },
-            { name: 'horrorcore', url: 'https://www.last.fm/tag/horrorcore' },
-            { name: 'witch house', url: 'https://www.last.fm/tag/witch+house' },
-            {
-              name: 'field recordings',
-              url: 'https://www.last.fm/tag/field+recordings',
-            },
-          ],
-        },
-        name: 'Visions of Bodies Being Burned',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/018cfaf835606f97de6dc3144a2bb38b.png',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/018cfaf835606f97de6dc3144a2bb38b.png',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/018cfaf835606f97de6dc3144a2bb38b.png',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/018cfaf835606f97de6dc3144a2bb38b.png',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/018cfaf835606f97de6dc3144a2bb38b.png',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/018cfaf835606f97de6dc3144a2bb38b.png',
-          },
-        ],
-      },
-      {
-        listeners: '12161',
-        playcount: '367883',
-        artist: 'Black Dresses',
-        mbid: 'c92657a1-333b-4147-8d2f-6af93ae45b36',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 1 },
-              duration: 248,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/LEFT+ARM+OF+LIFE',
-              name: 'LEFT ARM OF LIFE',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 2 },
-              duration: 175,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/DAMAGE+SUPPRESSOR',
-              name: 'DAMAGE SUPPRESSOR',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 3 },
-              duration: 164,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/ANGEL+HAIR',
-              name: 'ANGEL HAIR',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 4 },
-              duration: 160,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/BEAUTIFUL+FRIENDSHIP',
-              name: 'BEAUTIFUL FRIENDSHIP',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 5 },
-              duration: 191,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/IM+A+FREAK+CUZ+IM+ALWAYS+FREAKED+OUT',
-              name: 'IM A FREAK CUZ IM ALWAYS FREAKED OUT',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 6 },
-              duration: 276,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/BLISS+AND+STUPIDITY',
-              name: 'BLISS AND STUPIDITY',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 7 },
-              duration: 137,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/MiRRORGiRL',
-              name: 'MiRRORGiRL',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 8 },
-              duration: 227,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/MAYBE+THIS+WORLD+IS+ANOTHER+PLANETS+HELL%3F',
-              name: 'MAYBE THIS WORLD IS ANOTHER PLANETS HELL?',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 9 },
-              duration: 156,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/SCARED+2+DEATH',
-              name: 'SCARED 2 DEATH',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 10 },
-              duration: 153,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/EXPRESS+YOURSELF',
-              name: 'EXPRESS YOURSELF',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 11 },
-              duration: 169,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/SHARP+HALO',
-              name: 'SHARP HALO',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 12 },
-              duration: 81,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/IMPOSSIBLE+DREAM',
-              name: 'IMPOSSIBLE DREAM',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 13 },
-              duration: 183,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/PLEASE+BE+NICE',
-              name: 'PLEASE BE NICE',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 14 },
-              duration: 307,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/CREEP+U',
-              name: 'CREEP U',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Black+Dresses',
-                name: 'Black Dresses',
-                mbid: 'c5b2a3ca-4a5e-4ce2-a45a-ef69d909a498',
-              },
-              '@attr': { rank: 15 },
-              duration: 166,
-              url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell/666',
-              name: '666',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Black+Dresses/Peaceful+as+Hell',
-        tags: {
-          tag: [
-            {
-              name: 'industrial rock',
-              url: 'https://www.last.fm/tag/industrial+rock',
-            },
-            {
-              name: 'electro-industrial',
-              url: 'https://www.last.fm/tag/electro-industrial',
-            },
-            { name: 'noise pop', url: 'https://www.last.fm/tag/noise+pop' },
-            {
-              name: 'best of 2020',
-              url: 'https://www.last.fm/tag/best+of+2020',
-            },
-            {
-              name: 'industrial pop',
-              url: 'https://www.last.fm/tag/industrial+pop',
-            },
-          ],
-        },
-        name: 'Peaceful as Hell',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/798d600042fbc713c159fbfecb80bb88.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/798d600042fbc713c159fbfecb80bb88.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/798d600042fbc713c159fbfecb80bb88.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/798d600042fbc713c159fbfecb80bb88.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/798d600042fbc713c159fbfecb80bb88.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/798d600042fbc713c159fbfecb80bb88.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '36256',
-        playcount: '1133914',
-        wiki: {
-          published: '12 Dec 2020, 18:29',
-          content:
-            'アダンの風 (translated to english as windswept adan) is the 7th studio album by the folk japanese singer ichiko aoba, released on december 2, through her independent label "hermine". \n\nwindswept adan was entirely written and mostly composed / arranged by ichiko aoba.\n\nthe release of the album, アダンの風, was announced the october 30, along the upload of the music video for the single "porcelain".\n\nthe tracklist and album cover were announced the november 16, along the list of credits. <a href="https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.',
-          summary:
-            'アダンの風 (translated to english as windswept adan) is the 7th studio album by the folk japanese singer ichiko aoba, released on december 2, through her independent label "hermine". windswept adan was entirely written and mostly composed / arranged by ichiko aoba. the release of the album, アダンの風, was announced the october 30, along the upload of the music video for the single "porcelain". the tracklist and album cover were announced the november 16, along the list of credits. <a href="https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan">Read more on Last.fm</a>.',
-        },
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 1 },
-              duration: 295,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Prologue',
-              name: 'Prologue',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 2 },
-              duration: 228,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Pilgrimage',
-              name: 'Pilgrimage',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 3 },
-              duration: 269,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Porcelain',
-              name: 'Porcelain',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 4 },
-              duration: 118,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Horo',
-              name: 'Horo',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 5 },
-              duration: 196,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Easter+Lily',
-              name: 'Easter Lily',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 6 },
-              duration: 172,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Parfum+d%27%C3%A9toiles',
-              name: "Parfum d'étoiles",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 7 },
-              duration: 87,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Kirinaki+Shima',
-              name: 'Kirinaki Shima',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 8 },
-              duration: 237,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Sagu+Palm%27s+Song',
-              name: "Sagu Palm's Song",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 9 },
-              duration: 112,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/chinuhaji',
-              name: 'chinuhaji',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 10 },
-              duration: 227,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Chi+no+Kaze',
-              name: 'Chi no Kaze',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 11 },
-              duration: 178,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Hagupit',
-              name: 'Hagupit',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 12 },
-              duration: 285,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Dawn+in+the+Adan',
-              name: 'Dawn in the Adan',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 13 },
-              duration: 224,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/ohayashi',
-              name: 'ohayashi',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Ichiko+Aoba',
-                name: 'Ichiko Aoba',
-                mbid: 'fc3ae4dd-dcc5-4f99-a865-6bc1a5c9b705',
-              },
-              '@attr': { rank: 14 },
-              duration: 367,
-              url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan/Adan+no+Shima+no+Tanjyosai',
-              name: 'Adan no Shima no Tanjyosai',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3a39fc6acd5c9eb5f5c2ac532c8d69fa.png',
-          },
-        ],
-        tags: {
-          tag: [
-            {
-              name: 'singer-songwriter',
-              url: 'https://www.last.fm/tag/singer-songwriter',
-            },
-            { name: 'japanese', url: 'https://www.last.fm/tag/japanese' },
-            { name: 'folk', url: 'https://www.last.fm/tag/folk' },
-            {
-              name: 'contemporary folk',
-              url: 'https://www.last.fm/tag/contemporary+folk',
-            },
-            {
-              name: 'chamber folk',
-              url: 'https://www.last.fm/tag/chamber+folk',
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Ichiko+Aoba/Windswept+Adan',
-        artist: 'Ichiko Aoba',
-        name: 'Windswept Adan',
-        mbid: '25d890b9-955a-4cf5-9a34-ef535461677a',
-      },
-      {
-        listeners: '10956',
-        playcount: '170662',
-        artist: 'Matmos',
-        mbid: '1efe5b9d-876a-4a50-8c0d-73845f66bb15',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 1 },
-              duration: 216,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Cold+Open',
-              name: 'Cold Open',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 2 },
-              duration: 152,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I,+Voxelman',
-              name: 'I, Voxelman',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 3 },
-              duration: 176,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Moteswarm',
-              name: 'Moteswarm',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 4 },
-              duration: 270,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Adam%27s+Apple',
-              name: "Adam's Apple",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 5 },
-              duration: 342,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Athens+New+Guinea+Gas+Can+Japan',
-              name: 'Athens New Guinea Gas Can Japan',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 6 },
-              duration: 296,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Thyrsus',
-              name: 'Thyrsus',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos,+clipping.',
-                name: 'Matmos, clipping.',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 7 },
-              duration: 417,
-              url: 'https://www.last.fm/music/Matmos,+clipping./The+Consuming+Flame:+Open+Exercises+in+Group+Form/Circle+of+Swords',
-              name: 'Circle of Swords',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 8 },
-              duration: 141,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Virgin+Unspotted',
-              name: 'Virgin Unspotted',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 9 },
-              duration: 201,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/No+Concept',
-              name: 'No Concept',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 10 },
-              duration: 235,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/In+The+Shape+of+Beasts',
-              name: 'In The Shape of Beasts',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 11 },
-              duration: 278,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Revelatory+Mint+Clot',
-              name: 'Revelatory Mint Clot',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 12 },
-              duration: 329,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Western+Clot+Rider',
-              name: 'Western Clot Rider',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 13 },
-              duration: 300,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Cocktail+Party+How+Glad+Am+I',
-              name: 'Cocktail Party How Glad Am I',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 14 },
-              duration: 61,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I%27m+Fine+I%27m+Fine',
-              name: "I'm Fine I'm Fine",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 15 },
-              duration: 358,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Adepts',
-              name: 'Adepts',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 16 },
-              duration: 126,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Maybeism',
-              name: 'Maybeism',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 17 },
-              duration: 155,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Garden+of+Tall+Boys',
-              name: 'Garden of Tall Boys',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 18 },
-              duration: 146,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Dancing+Your+Animal',
-              name: 'Dancing Your Animal',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 19 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Nice+Men+In+Stable+Relationships',
-              name: 'Nice Men In Stable Relationships',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 20 },
-              duration: 116,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Let+Us+In',
-              name: 'Let Us In',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 21 },
-              duration: 204,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Friendsylum',
-              name: 'Friendsylum',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos,+Yo+La+Tengo',
-                name: 'Matmos, Yo La Tengo',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 22 },
-              duration: 417,
-              url: 'https://www.last.fm/music/Matmos,+Yo+La+Tengo/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Io!+Lavendar+River+Karez',
-              name: 'Io! Lavendar River Karez',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 23 },
-              duration: 310,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/The+Void+At+the+Center',
-              name: 'The Void At the Center',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 24 },
-              duration: 202,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I+Know+What+I+Saw',
-              name: 'I Know What I Saw',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 25 },
-              duration: 366,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Sarabande',
-              name: 'Sarabande',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 26 },
-              duration: 220,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/The+Dead+City+of+Telphar',
-              name: 'The Dead City of Telphar',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 27 },
-              duration: 179,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Platformalism',
-              name: 'Platformalism',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 28 },
-              duration: 118,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Verminiatures',
-              name: 'Verminiatures',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 29 },
-              duration: 203,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Reciprocal+Realms',
-              name: 'Reciprocal Realms',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 30 },
-              duration: 60,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Unmastering',
-              name: 'Unmastering',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos,+Giant+Swan,+Rabit,+Max+Tundra',
-                name: 'Matmos, Giant Swan, Rabit, Max Tundra',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 31 },
-              duration: 169,
-              url: 'https://www.last.fm/music/Matmos,+Giant+Swan,+Rabit,+Max+Tundra/The+Consuming+Flame:+Open+Exercises+in+Group+Form/I%27m+On+The+Team',
-              name: "I'm On The Team",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 32 },
-              duration: 426,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Blessed+Order+Of',
-              name: 'Blessed Order Of',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 33 },
-              duration: 198,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Floaters',
-              name: 'Floaters',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 34 },
-              duration: 259,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Goodnight+Loving+Bose+Ikard',
-              name: 'Goodnight Loving Bose Ikard',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 35 },
-              duration: 215,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Tworivers+Run',
-              name: 'Tworivers Run',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 36 },
-              duration: 787,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Boomchicka',
-              name: 'Boomchicka',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 37 },
-              duration: 341,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/EXTRATERRESTRIAL+MASTERS',
-              name: 'EXTRATERRESTRIAL MASTERS',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 38 },
-              duration: 230,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Circle+of+Shivers',
-              name: 'Circle of Shivers',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never',
-                name: 'Matmos, Oneohtrix Point Never',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 39 },
-              duration: 370,
-              url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Out+of+the+Serpent%27s+Mouth',
-              name: "Out of the Serpent's Mouth",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never',
-                name: 'Matmos, Oneohtrix Point Never',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 40 },
-              duration: 178,
-              url: 'https://www.last.fm/music/Matmos,+Oneohtrix+Point+Never/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Warm+Opening',
-              name: 'Warm Opening',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 41 },
-              duration: 61,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Decalcomaenads',
-              name: 'Decalcomaenads',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos,+Mouse+on+Mars',
-                name: 'Matmos, Mouse on Mars',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 42 },
-              duration: 138,
-              url: 'https://www.last.fm/music/Matmos,+Mouse+on+Mars/The+Consuming+Flame:+Open+Exercises+in+Group+Form/It+Isn%27t+Necessarily+The+Case',
-              name: "It Isn't Necessarily The Case",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 43 },
-              duration: 112,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/Elsewards',
-              name: 'Elsewards',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Matmos',
-                name: 'Matmos',
-                mbid: '46e8a8ee-d2cd-4165-9725-02f72d0027a9',
-              },
-              '@attr': { rank: 44 },
-              duration: 347,
-              url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form/All+of+the+Powers+Lie+Quiet',
-              name: 'All of the Powers Lie Quiet',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Matmos/The+Consuming+Flame:+Open+Exercises+in+Group+Form',
-        tags: {
-          tag: [
-            { name: 'electronic', url: 'https://www.last.fm/tag/electronic' },
-            {
-              name: 'experimental',
-              url: 'https://www.last.fm/tag/experimental',
-            },
-            { name: 'idm', url: 'https://www.last.fm/tag/idm' },
-            { name: 'glitch', url: 'https://www.last.fm/tag/glitch' },
-            {
-              name: 'plunderphonics',
-              url: 'https://www.last.fm/tag/plunderphonics',
-            },
-          ],
-        },
-        name: 'The Consuming Flame: Open Exercises in Group Form',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/d7fd19682504f8b1cde8edc5042a054d.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/d7fd19682504f8b1cde8edc5042a054d.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/d7fd19682504f8b1cde8edc5042a054d.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/d7fd19682504f8b1cde8edc5042a054d.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/d7fd19682504f8b1cde8edc5042a054d.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/d7fd19682504f8b1cde8edc5042a054d.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '18171',
-        playcount: '365868',
-        artist: 'Natalia Lafourcade',
-        mbid: '6af70be5-0c7a-4a74-8bd3-1a830ac3f75d',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites',
-                name: 'Natalia Lafourcade & Los Cojolites',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 1 },
-              duration: 270,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites/Un+Canto+por+M%C3%A9xico,+Vol.+1/El+Balaj%C3%BA+%2F+Serenata+Huasteca',
-              name: 'El Balajú / Serenata Huasteca',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/DJ+Carlos+Rivera+&+Natalia+Lafourcade',
-                name: 'DJ Carlos Rivera & Natalia Lafourcade',
-                mbid: '',
-              },
-              '@attr': { rank: 2 },
-              duration: null,
-              url: 'https://www.last.fm/music/DJ+Carlos+Rivera+&+Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Mexicana+Hermosa',
-              name: 'Mexicana Hermosa',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 3 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Veracruz',
-              name: 'Veracruz',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 4 },
-              duration: 264,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Una+Vida',
-              name: 'Una Vida',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade,+Los+Cojolites+&+Los+Aut%C3%A9nticos+Decadentes',
-                name: 'Natalia Lafourcade, Los Cojolites & Los Auténticos Decadentes',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 5 },
-              duration: 272,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade,+Los+Cojolites+&+Los+Aut%C3%A9nticos+Decadentes/Un+Canto+por+M%C3%A9xico,+Vol.+1/Hasta+la+Ra%C3%ADz',
-              name: 'Hasta la Raíz',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Leonel+Garc%C3%ADa',
-                name: 'Natalia Lafourcade & Leonel García',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 6 },
-              duration: null,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Leonel+Garc%C3%ADa/Un+Canto+por+M%C3%A9xico,+Vol.+1/Ya+No+Vivo+por+Vivir',
-              name: 'Ya No Vivo por Vivir',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 7 },
-              duration: 215,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Mi+Religi%C3%B3n',
-              name: 'Mi Religión',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+LaFourcade+&+Jorge+Drexler',
-                name: 'Natalia LaFourcade & Jorge Drexler',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 8 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Natalia+LaFourcade+&+Jorge+Drexler/Un+Canto+por+M%C3%A9xico,+Vol.+1/Para+Qu%C3%A9+Sufrir',
-              name: 'Para Qué Sufrir',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 9 },
-              duration: 237,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Nunca+es+suficiente',
-              name: 'Nunca es suficiente',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites',
-                name: 'Natalia Lafourcade & Los Cojolites',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 10 },
-              duration: 286,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites/Un+Canto+por+M%C3%A9xico,+Vol.+1/Sembrando+Flores',
-              name: 'Sembrando Flores',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 11 },
-              duration: 246,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Lo+Que+Construimos',
-              name: 'Lo Que Construimos',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Pante%C3%B3n+Rococ%C3%B3',
-                name: 'Natalia Lafourcade & Panteón Rococó',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 12 },
-              duration: null,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Pante%C3%B3n+Rococ%C3%B3/Un+Canto+por+M%C3%A9xico,+Vol.+1/Un+Derecho+de+Nacimiento',
-              name: 'Un Derecho de Nacimiento',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites',
-                name: 'Natalia Lafourcade & Los Cojolites',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 13 },
-              duration: 251,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade+&+Los+Cojolites/Un+Canto+por+M%C3%A9xico,+Vol.+1/Mi+Tierra+Veracruzana',
-              name: 'Mi Tierra Veracruzana',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Natalia+Lafourcade',
-                name: 'Natalia Lafourcade',
-                mbid: '2ceb4e66-4eaa-4dba-ad3a-30df3b742557',
-              },
-              '@attr': { rank: 14 },
-              duration: 311,
-              url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1/Cucurrucuc%C3%BA+Paloma',
-              name: 'Cucurrucucú Paloma',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Natalia+Lafourcade/Un+Canto+por+M%C3%A9xico,+Vol.+1',
-        tags: {
-          tag: [
-            { name: 'bolero', url: 'https://www.last.fm/tag/bolero' },
-            { name: '2015 gif', url: 'https://www.last.fm/tag/2015+gif' },
-            {
-              name: 'natalia lafourcade gif',
-              url: 'https://www.last.fm/tag/natalia+lafourcade+gif',
-            },
-            { name: 'love', url: 'https://www.last.fm/tag/love' },
-            { name: 'nice', url: 'https://www.last.fm/tag/nice' },
-          ],
-        },
-        name: 'Un Canto por México, Vol. 1',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/3e24ffd50a1ac79f3e652b1ee447ac81.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '728',
-        playcount: '5869',
-        artist: 'Code Orange',
-        mbid: '',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 1 },
-              duration: 74,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/(deeperthanbefore)',
-              name: '(deeperthanbefore)',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 2 },
-              duration: 228,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Swallowing+the+Rabbit+Whole',
-              name: 'Swallowing the Rabbit Whole',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 3 },
-              duration: 201,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/In+Fear',
-              name: 'In Fear',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 4 },
-              duration: null,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/You+and+You+Alone+%5BExplicit%5D',
-              name: 'You and You Alone [Explicit]',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 5 },
-              duration: 226,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Who+I+Am',
-              name: 'Who I Am',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 6 },
-              duration: 184,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Cold.Metal.Place',
-              name: 'Cold.Metal.Place',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 7 },
-              duration: 227,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Sulfur+Surrounding',
-              name: 'Sulfur Surrounding',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 8 },
-              duration: 265,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/The+Easy+Way',
-              name: 'The Easy Way',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 9 },
-              duration: null,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Erasure+Scan+%5BExplicit%5D',
-              name: 'Erasure Scan [Explicit]',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 10 },
-              duration: 189,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Last+Ones+Left',
-              name: 'Last Ones Left',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 11 },
-              duration: 207,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Autumn+and+Carbine',
-              name: 'Autumn and Carbine',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 12 },
-              duration: 154,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Back+Inside+the+Glass',
-              name: 'Back Inside the Glass',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 13 },
-              duration: null,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/A+Sliver+%5BExplicit%5D',
-              name: 'A Sliver [Explicit]',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Code+Orange',
-                name: 'Code Orange',
-                mbid: 'b87d5807-c37a-4d0e-a53c-9cdf6bc6caa1',
-              },
-              '@attr': { rank: 14 },
-              duration: 279,
-              url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D/Underneath',
-              name: 'Underneath',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Code+Orange/Underneath+%5BExplicit%5D',
-        tags: {
-          tag: [
-            { name: 'hardcore', url: 'https://www.last.fm/tag/hardcore' },
-            { name: 'metalcore', url: 'https://www.last.fm/tag/metalcore' },
-            { name: '2020', url: 'https://www.last.fm/tag/2020' },
-            {
-              name: 'alternative metal',
-              url: 'https://www.last.fm/tag/alternative+metal',
-            },
-            { name: 'emo', url: 'https://www.last.fm/tag/emo' },
-          ],
-        },
-        name: 'Underneath [Explicit]',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/55f3f3c3e2476a36391be010e131f889.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/55f3f3c3e2476a36391be010e131f889.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/55f3f3c3e2476a36391be010e131f889.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/55f3f3c3e2476a36391be010e131f889.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/55f3f3c3e2476a36391be010e131f889.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/55f3f3c3e2476a36391be010e131f889.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '22953',
-        playcount: '316837',
-        artist: 'The Koreatown Oddity',
-        mbid: '5bbf6d68-cb76-4a32-af94-1962d18c22b6',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Baby+Rose,+C.S.+Armstrong',
-                name: 'The Koreatown Oddity feat. Baby Rose, C.S. Armstrong',
-                mbid: '',
-              },
-              '@attr': { rank: 1 },
-              duration: 176,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Baby+Rose,+C.S.+Armstrong/Little+Dominiques+Nosebleed/Looking+Back+from+the+Future',
-              name: 'Looking Back from the Future',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Sudan+Archives',
-                name: 'The Koreatown Oddity feat. Sudan Archives',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 2 },
-              duration: 266,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Sudan+Archives/Little+Dominiques+Nosebleed/Little+Dominiques+Nosebleed+Part+1',
-              name: 'Little Dominiques Nosebleed Part 1',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
-                name: 'The Koreatown Oddity',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 3 },
-              duration: 192,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Koreatown+Oddity',
-              name: 'Koreatown Oddity',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose',
-                name: 'The Koreatown Oddity feat. Jimetta Rose',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 4 },
-              duration: 200,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose/Little+Dominiques+Nosebleed/Chase+the+Spirit',
-              name: 'Chase the Spirit',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
-                name: 'The Koreatown Oddity',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 5 },
-              duration: 95,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Darknesses+Interlude',
-              name: 'Darknesses Interlude',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Taz+Arnold',
-                name: 'The Koreatown Oddity feat. Taz Arnold',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 6 },
-              duration: 181,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Taz+Arnold/Little+Dominiques+Nosebleed/Ginkabiloba',
-              name: 'Ginkabiloba',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
-                name: 'The Koreatown Oddity',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 7 },
-              duration: 138,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Weed+in+LA',
-              name: 'Weed in LA',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
-                name: 'The Koreatown Oddity',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 8 },
-              duration: 143,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Little+Dominiques+Nosebleed+Part+2',
-              name: 'Little Dominiques Nosebleed Part 2',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Ahwlee',
-                name: 'The Koreatown Oddity feat. Ahwlee',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 9 },
-              duration: 311,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Ahwlee/Little+Dominiques+Nosebleed/A+Bitch+Once+Told+Me',
-              name: 'A Bitch Once Told Me',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Trenttruce,+Edule,+Emmanuel+Coto',
-                name: 'The Koreatown Oddity feat. Trenttruce, Edule, Emmanuel Coto',
-                mbid: '',
-              },
-              '@attr': { rank: 10 },
-              duration: 236,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Trenttruce,+Edule,+Emmanuel+Coto/Little+Dominiques+Nosebleed/No+Llores',
-              name: 'No Llores',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Swift,+Skyler+Duf,+Fatlip,+Giovanni+Marks,+Nita+Darling,+Corrine+Atkinson',
-                name: 'The Koreatown Oddity feat. Swift, Skyler Duf, Fatlip, Giovanni Marks, Nita Darling, Corrine Atkinson',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 11 },
-              duration: 367,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Swift,+Skyler+Duf,+Fatlip,+Giovanni+Marks,+Nita+Darling,+Corrine+Atkinson/Little+Dominiques+Nosebleed/Attention+Challenge',
-              name: 'Attention Challenge',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
-                name: 'The Koreatown Oddity',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 12 },
-              duration: 169,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Kimchi',
-              name: 'Kimchi',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose,+Corrine+Atkinson',
-                name: 'The Koreatown Oddity feat. Jimetta Rose, Corrine Atkinson',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 13 },
-              duration: 326,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Jimetta+Rose,+Corrine+Atkinson/Little+Dominiques+Nosebleed/The+World%27s+Smallest+Violin',
-              name: "The World's Smallest Violin",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Anna+Wise',
-                name: 'The Koreatown Oddity feat. Anna Wise',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 14 },
-              duration: 180,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Anna+Wise/Little+Dominiques+Nosebleed/We+All+Want+Something',
-              name: 'We All Want Something',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Qur%27an+Shaheed,+Kintaro',
-                name: "The Koreatown Oddity feat. Qur'an Shaheed, Kintaro",
-                mbid: '',
-              },
-              '@attr': { rank: 15 },
-              duration: 277,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity+feat.+Qur%27an+Shaheed,+Kintaro/Little+Dominiques+Nosebleed/Lap+of+Luxury',
-              name: 'Lap of Luxury',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/The+Koreatown+Oddity',
-                name: 'The Koreatown Oddity',
-                mbid: '601362ff-fc77-4600-b4da-6ccb927bccb7',
-              },
-              '@attr': { rank: 16 },
-              duration: 167,
-              url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed/Little+Dominiques+Nosebleed+Outro',
-              name: 'Little Dominiques Nosebleed Outro',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/The+Koreatown+Oddity/Little+Dominiques+Nosebleed',
-        tags: {
-          tag: [
-            {
-              name: 'gilles peterson',
-              url: 'https://www.last.fm/tag/gilles+peterson',
-            },
-            { name: 'eccentric', url: 'https://www.last.fm/tag/eccentric' },
-            { name: 'uplifting', url: 'https://www.last.fm/tag/uplifting' },
-            { name: 'rap', url: 'https://www.last.fm/tag/rap' },
-            { name: 'warm', url: 'https://www.last.fm/tag/warm' },
-          ],
-        },
-        name: 'Little Dominiques Nosebleed',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/1e6629ceebc4b353a19a4dad792f5b25.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/1e6629ceebc4b353a19a4dad792f5b25.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/1e6629ceebc4b353a19a4dad792f5b25.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1e6629ceebc4b353a19a4dad792f5b25.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1e6629ceebc4b353a19a4dad792f5b25.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/1e6629ceebc4b353a19a4dad792f5b25.jpg',
-          },
-        ],
-      },
-      {
-        listeners: '45498',
-        playcount: '659212',
-        artist: 'Chris Stapleton',
-        mbid: '88ca6fb8-6d82-4666-8a50-d83aa148bba8',
-        tracks: {
-          track: [
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 1 },
-              duration: 240,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Starting+Over',
-              name: 'Starting Over',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 2 },
-              duration: 232,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Devil+Always+Made+Me+Think+Twice',
-              name: 'Devil Always Made Me Think Twice',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 3 },
-              duration: 310,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Cold',
-              name: 'Cold',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 4 },
-              duration: 224,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/When+I%27m+with+You',
-              name: "When I'm with You",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 5 },
-              duration: 178,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Arkansas',
-              name: 'Arkansas',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 6 },
-              duration: 275,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Joy+of+My+Life',
-              name: 'Joy of My Life',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 7 },
-              duration: 245,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Hillbilly+Blood',
-              name: 'Hillbilly Blood',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 8 },
-              duration: 211,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Maggie%27s+Song',
-              name: "Maggie's Song",
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 9 },
-              duration: 202,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Whiskey+Sunrise',
-              name: 'Whiskey Sunrise',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 10 },
-              duration: 196,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Worry+B+Gone',
-              name: 'Worry B Gone',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 11 },
-              duration: 241,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Old+Friends',
-              name: 'Old Friends',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 12 },
-              duration: 243,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Watch+You+Burn',
-              name: 'Watch You Burn',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 13 },
-              duration: 213,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/You+Should+Probably+Leave',
-              name: 'You Should Probably Leave',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-            {
-              artist: {
-                url: 'https://www.last.fm/music/Chris+Stapleton',
-                name: 'Chris Stapleton',
-                mbid: '71d58182-aa37-4c04-b21a-efe46ea0f221',
-              },
-              '@attr': { rank: 14 },
-              duration: 216,
-              url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over/Nashville,+TN',
-              name: 'Nashville, TN',
-              streamable: { fulltrack: '0', '#text': '0' },
-            },
-          ],
-        },
-        url: 'https://www.last.fm/music/Chris+Stapleton/Starting+Over',
-        tags: {
-          tag: [
-            { name: 'chamber pop', url: 'https://www.last.fm/tag/chamber+pop' },
-            {
-              name: 'contemporary country',
-              url: 'https://www.last.fm/tag/contemporary+country',
-            },
-            { name: 'country', url: 'https://www.last.fm/tag/country' },
-            {
-              name: 'country soul',
-              url: 'https://www.last.fm/tag/country+soul',
-            },
-            {
-              name: 'country blues',
-              url: 'https://www.last.fm/tag/country+blues',
-            },
-          ],
-        },
-        name: 'Starting Over',
-        image: [
-          {
-            size: 'small',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/34s/b2167039217342816233276afef6608e.jpg',
-          },
-          {
-            size: 'medium',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/64s/b2167039217342816233276afef6608e.jpg',
-          },
-          {
-            size: 'large',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/174s/b2167039217342816233276afef6608e.jpg',
-          },
-          {
-            size: 'extralarge',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/b2167039217342816233276afef6608e.jpg',
-          },
-          {
-            size: 'mega',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/b2167039217342816233276afef6608e.jpg',
-          },
-          {
-            size: '',
-            '#text':
-              'https://lastfm.freetls.fastly.net/i/u/300x300/b2167039217342816233276afef6608e.jpg',
-          },
-        ],
-      },
-    ],
-  },
 ];
-export default fullRecommended;
+export default recommendedAll;

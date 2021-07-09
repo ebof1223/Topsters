@@ -22,7 +22,7 @@ interface Props {
     Footer: string;
   };
   topsters?: TopsterTemplate[];
-  recommended?: TopsterTemplate[];
+  recommended?: any;
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -44,12 +44,12 @@ const Topster: React.FC<Props> = ({
 }) => {
   ///PROBLEM
   var listToBeRendered = topsters;
-  // console.log(recommended);
   if (window.location.href.includes('recommended'))
     listToBeRendered = recommended;
 
   // if bookmarks
 
+  // console.log(listToBeRendered);
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
     // console.log(albums[index]);

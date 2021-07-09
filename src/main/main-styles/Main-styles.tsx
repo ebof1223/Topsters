@@ -65,6 +65,11 @@ const styles = createStyles({
     marginTop: '2rem',
     display: 'flex',
     boxSizing: 'border-box',
+    flexDirection: 'row',
+    overflow: 'auto',
+    scrollSnapType: 'x mandatory',
+    width: '1340px',
+    scrollbarWidth: 'none',
     // width: '100%',
     // height: 'calc(100vh - 4rem)',
     //   [sizes.down('md')]: {

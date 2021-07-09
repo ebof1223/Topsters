@@ -39,7 +39,7 @@ interface Props {
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
-  recommended: TopsterTemplate[];
+  recommended?: any;
   setOpenLandingModal: (i: boolean) => void;
   bookmarks: TopsterTemplate[];
 }
@@ -89,7 +89,7 @@ const Main: React.FC<Props> = ({
         <nav className={classes.nav}></nav>
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
         <TransitionGroup className={classes.Recommended}>
-          {recommended.slice(0, 5).map((item: any) => (
+          {recommended.map((item: any) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <Recommended
                 {...item}

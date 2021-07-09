@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import fullRecommended from './recommended-sample';
+import recommended from './recommended-sample';
 import { useState, useEffect } from 'react';
 import { TopsterTemplate } from '../interface.js';
 import Bookmarks from './Bookmarks';
@@ -27,23 +27,6 @@ const App: React.FC = () => {
     Object.keys(savedBookmarked).length ? savedBookmarked : []
   );
   // console.log(bookmarks);
-
-  const shuffle = (array) => {
-    var i = array.length,
-      j = 0,
-      temp: TopsterTemplate;
-    while (i--) {
-      j = Math.floor(Math.random() * (i + 1));
-      temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-
-    return array;
-  };
-  //rerun this for generation
-  //use effect on reload button
-  var recommended = shuffle(fullRecommended).slice(0, 5);
 
   useEffect(() => {
     let localStorageBookmarks = JSON.parse(
