@@ -42,10 +42,11 @@ const Topster: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
 }) => {
+  ///PROBLEM
   var listToBeRendered = topsters;
-  console.log(recommended);
+  // console.log(recommended);
   if (window.location.href.includes('recommended'))
-    listToBeRendered = recommended.slice(0, 5);
+    listToBeRendered = recommended;
 
   // if bookmarks
 

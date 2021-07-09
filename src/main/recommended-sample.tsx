@@ -1,4 +1,4 @@
-var recommended: any[] = [
+var fullRecommended = [
   {
     title: 'Mu Core',
     id: 'mu-core',
@@ -18004,4 +18004,4 @@ var recommended: any[] = [
     ],
   },
 ];
-export default recommended;
+export default fullRecommended;

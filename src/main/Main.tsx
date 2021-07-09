@@ -79,6 +79,7 @@ const Main: React.FC<Props> = ({
       setOpenLandingModal(true);
     }, 100);
   };
+
   return (
     <div className={classes.root}>
       <div onClick={handleLandingModal} className={classes.BackButton}>

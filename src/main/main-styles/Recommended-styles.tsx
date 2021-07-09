@@ -33,7 +33,7 @@ const styles = createStyles({
     fontFamily: 'Lexend, sans-serif',
     fontWeight: 500,
     color: '#fff',
-    fontSize: '1.5rem',
+    fontSize: '1.32rem',
     width: '100%',
     paddingTop: '1rem',
     display: 'block',
