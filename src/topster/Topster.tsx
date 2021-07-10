@@ -2,6 +2,7 @@ import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { Paper } from '@material-ui/core';
 import { useState } from 'react';
+import Tooltip from '@material-ui/core/Tooltip';
 import Album from './Album';
 import Navbar from './Navbar';
 import styles from './topster-styles/TopsterStyles';
@@ -42,20 +43,18 @@ const Topster: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
 }) => {
-  ///PROBLEM
   var listToBeRendered = topsters;
-  if (window.location.href.includes('recommended'))
+
+  if (window.location.href.includes('recommended')) {
     listToBeRendered = recommended;
+  }
   if (window.location.href.includes('bookmarks')) listToBeRendered = bookmarks;
-  console.log(listToBeRendered);
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
-    // console.log(albums[index]);
     setSelectedAlbum(albums[index]);
   };
 
   const topsterIndex = (input: string, direction: string) => {
-    // console.log(listToBeRendered);
     if (direction === 'left') {
       for (let [index, topster] of listToBeRendered.entries()) {
         if (topster.title === input && index - 1 > -1) return index - 1;
@@ -89,7 +88,6 @@ const Topster: React.FC<Props> = ({
         title={title}
         history={history}
         id={id}
-        type={recommended ? 'recommended' : 'topsters'}
         bookmarks={bookmarks}
         setBookmarks={setBookmarks}
         recommended={recommended}
@@ -99,7 +97,9 @@ const Topster: React.FC<Props> = ({
           className={classes.LeftPanel}
           onClick={() => shiftTopsters('left')}
         >
-          <ArrowBackIosIcon />
+          <Tooltip title="Previous">
+            <ArrowBackIosIcon />
+          </Tooltip>
         </div>
       )}
       <div className={classes.Topster}>
@@ -146,7 +146,9 @@ const Topster: React.FC<Props> = ({
           className={classes.RightPanel}
           onClick={() => shiftTopsters('right')}
         >
-          <ArrowForwardIosIcon />
+          <Tooltip title="Next">
+            <ArrowForwardIosIcon />
+          </Tooltip>
         </div>
       )}
     </>

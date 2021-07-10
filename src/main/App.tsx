@@ -26,7 +26,6 @@ const App: React.FC = () => {
   const [bookmarks, setBookmarks] = useState(
     Object.keys(savedBookmarked).length ? savedBookmarked : []
   );
-  // console.log(bookmarks);
 
   useEffect(() => {
     let localStorageBookmarks = JSON.parse(
@@ -99,19 +98,7 @@ const App: React.FC = () => {
                   </Page>
                 )}
               />
-              <Route
-                exact
-                path="/bookmarks"
-                render={(routeProps) => (
-                  <Page>
-                    <Bookmarks
-                      {...routeProps}
-                      bookmarks={bookmarks}
-                      setBookmarks={setBookmarks}
-                    />
-                  </Page>
-                )}
-              />
+
               <Route
                 exact
                 path="/topsters/new"
@@ -156,6 +143,19 @@ const App: React.FC = () => {
               {/* bookmarks */}
               <Route
                 exact
+                path="/bookmarks"
+                render={(routeProps) => (
+                  <Page>
+                    <Bookmarks
+                      {...routeProps}
+                      bookmarks={bookmarks}
+                      setBookmarks={setBookmarks}
+                    />
+                  </Page>
+                )}
+              />
+              <Route
+                exact
                 path="/bookmarks/:id"
                 render={(routeProps) => (
                   <Page>
@@ -180,6 +180,7 @@ const App: React.FC = () => {
                   </Page>
                 )}
               />
+
               <Route
                 exact
                 path="/topsters/:id"

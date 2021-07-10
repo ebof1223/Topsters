@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/styles';
+import Tooltip from '@material-ui/core/Tooltip';
 import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
@@ -28,7 +29,6 @@ const Navbar: React.FC<Props> = ({
   title,
   id,
   history,
-  type,
   bookmarks,
   setBookmarks,
   recommended,
@@ -45,7 +45,6 @@ const Navbar: React.FC<Props> = ({
 
   useEffect(() => {
     if (!bookmarks) return;
-    // isBookmarked && setOpenSnackBar(true);
     let currentRecommendedTopster =
       recommended[
         recommended.findIndex((item: { id: string }) => item.id === id)
@@ -74,21 +73,31 @@ const Navbar: React.FC<Props> = ({
       />
       <header className={classes.Navbar}>
         <Link to={'/home'}>
-          <HomeIcon
-            style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
-          />
+          <Tooltip title="Home">
+            <HomeIcon
+              style={{ marginLeft: '3rem', cursor: 'pointer', color: 'black' }}
+            />
+          </Tooltip>
         </Link>
         <div className={classes.Title}>
           <h3>{title}</h3>
         </div>
-        {type === 'topsters' ? (
-          <EditIcon className={classes.Icon} onClick={handleEdit} />
-        ) : (
-          <FavoriteIcon
-            className={isBookmarked ? classes.IconOn : classes.Icon}
-            onClick={handleBookmarkToggle}
-          />
+        {window.location.href.includes('topster') && (
+          <Tooltip title="Edit">
+            <EditIcon className={classes.Icon} onClick={handleEdit} />
+          </Tooltip>
         )}
+        {(window.location.href.includes('recommended') ||
+          window.location.href.includes('bookmarks')) && (
+          <Tooltip title={isBookmarked ? 'Unlike' : 'Like'}>
+            <FavoriteIcon
+              className={isBookmarked ? classes.IconOn : classes.Icon}
+              onClick={handleBookmarkToggle}
+            />
+          </Tooltip>
+        )}
+        {/* change handlebookmark toggle to return back to bookmarks page if user unlikes topster */}
+        {/* {window.location.href.includes('bookmarks') && <FavoriteIcon />} */}
       </header>
     </>
   );

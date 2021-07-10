@@ -11,8 +11,7 @@ import UserTopsters from './UserTopsters';
 import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import LoyaltyIcon from '@material-ui/icons/Loyalty';
-
+import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 interface Props {
   classes: {
     root: string;
@@ -29,7 +28,7 @@ interface Props {
     AOTDContainer: string;
     AOTDContainerEmpty: string;
     AOTDTitleContainer: string;
-    LoyaltyIcon: string;
+    CompareArrowsIcon: string;
     firstBookmarkedItem: string;
     noBookmarks: string;
   };
@@ -82,14 +81,16 @@ const Main: React.FC<Props> = ({
 
   return (
     <div className={classes.root}>
-      <div onClick={handleLandingModal} className={classes.BackButton}>
-        <ArrowBackIcon fontSize="large" />
-      </div>
       <div className={classes.OuterContainer}>
-        <nav className={classes.nav}></nav>
+        <div onClick={handleLandingModal} className={classes.BackButton}>
+          <Tooltip title="Landing">
+            <ArrowBackIcon fontSize="large" />
+          </Tooltip>
+        </div>
+        <nav className={classes.nav} />
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
         <TransitionGroup className={classes.Recommended}>
-          {recommended.map((item: any) => (
+          {recommended.map((item: TopsterTemplate) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <Recommended
                 {...item}
@@ -122,7 +123,7 @@ const Main: React.FC<Props> = ({
               <CSSTransition key={item.id} classNames="fade" timeout={500}>
                 <UserTopsters
                   {...item}
-                  handleClick={() => toTopster(item.id, 'userTopster')}
+                  handleClick={() => toTopster(item.id, 'topsters')}
                   id={item.id}
                   deleteDialog={deleteDialog}
                   setDeleteDialog={setDeleteDialog}
@@ -132,18 +133,19 @@ const Main: React.FC<Props> = ({
             ))}
             <AlwaysScrollToBottom />
           </div>
-          {/* bookmarks */}
-
           {bookmarks.length ? (
-            <div
-              key={bookmarks[0].id}
-              onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
-              className={classes.AOTDContainer}
-            >
-              <LoyaltyIcon fontSize="large" className={classes.LoyaltyIcon} />
+            <div key={bookmarks[0].id} className={classes.AOTDContainer}>
+              <Tooltip title="Rearrange">
+                <CompareArrowsIcon
+                  fontSize="large"
+                  className={classes.CompareArrowsIcon}
+                  onClick={() => history.push('/bookmarks')}
+                />
+              </Tooltip>
               {bookmarks.length &&
                 bookmarks[0].albums.map((item) => (
                   <div
+                    onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
                     className={classes.firstBookmarkedItem}
                     style={{
                       background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,

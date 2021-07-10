@@ -10,7 +10,7 @@ const styles = createStyles({
   },
   BackButton: {
     color: 'white',
-    position: 'absolute',
+    position: 'relative',
     cursor: 'pointer',
     top: 10,
     left: 25,
@@ -23,6 +23,7 @@ const styles = createStyles({
     justifyContent: 'center',
     overflowY: 'scroll',
     overflowX: 'hidden',
+    // paddingBottom: '3rem',
   },
   heading: {
     fontFamily: 'Montserrat, sans-serif',
@@ -43,8 +44,6 @@ const styles = createStyles({
     // },
   },
   Fab: {
-    // position: 'absolute',
-    // right: '10%',
     display: 'flex',
     top: '40%',
     left: '50%',
@@ -132,11 +131,12 @@ const styles = createStyles({
     height: '400px',
     width: '800px',
   },
-  LoyaltyIcon: {
-    color: '#91a7ff',
+  CompareArrowsIcon: {
+    color: 'rgb(120 92 124)',
     position: 'absolute',
     left: '88%',
     top: '2%',
+    zIndex: 10,
   },
   noBookmarks: {
     marginTop: '40%',

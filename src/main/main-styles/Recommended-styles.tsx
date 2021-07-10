@@ -28,7 +28,7 @@ const styles = createStyles({
     position: 'absolute',
     left: '88%',
     top: '2%',
-    color: '#91a7ff',
+    color: 'rgb(120 92 124)',
     cursor: 'pointer',
   },
   title: {
