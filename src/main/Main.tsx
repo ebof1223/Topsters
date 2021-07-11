@@ -31,6 +31,7 @@ interface Props {
     CompareArrowsIcon: string;
     firstBookmarkedItem: string;
     noBookmarks: string;
+    RecommendedSection: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -79,6 +80,14 @@ const Main: React.FC<Props> = ({
     }, 100);
   };
 
+  const sectionizedPer5Item = () => {
+    let recommendedCopy = [...recommended];
+    let sectionGrouping = [];
+    while (recommendedCopy.length)
+      sectionGrouping.push(recommendedCopy.splice(0, 5));
+    return sectionGrouping;
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.OuterContainer}>
@@ -90,16 +99,24 @@ const Main: React.FC<Props> = ({
         <nav className={classes.nav} />
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
         <TransitionGroup className={classes.Recommended}>
-          {recommended.map((item: TopsterTemplate) => (
-            <CSSTransition key={item.id} classNames="fade" timeout={500}>
-              <Recommended
-                {...item}
-                handleClick={() => toTopster(item.id, 'recommended')}
-                id={item.id}
-                recommended={recommended}
-                title={item.title}
-              />
-            </CSSTransition>
+          {/* section */}
+          {sectionizedPer5Item().map((group, i) => (
+            <section
+              key={`recommended-group-${i}`}
+              className={classes.RecommendedSection}
+            >
+              {group.map((item: TopsterTemplate) => (
+                <CSSTransition key={item.id} classNames="fade" timeout={500}>
+                  <Recommended
+                    {...item}
+                    handleClick={() => toTopster(item.id, 'recommended')}
+                    id={item.id}
+                    recommended={recommended}
+                    title={item.title}
+                  />
+                </CSSTransition>
+              ))}
+            </section>
           ))}
         </TransitionGroup>
         <div className={classes.UserTitleContainer}>
@@ -119,6 +136,7 @@ const Main: React.FC<Props> = ({
         </div>
         <div className={classes.subMain}>
           <div className={classes.UserTopsters}>
+            {/* section */}
             {topsters.map((item: TopsterTemplate) => (
               <CSSTransition key={item.id} classNames="fade" timeout={500}>
                 <UserTopsters

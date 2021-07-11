@@ -6,7 +6,7 @@ const styles = createStyles({
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
     width: '200px',
-    height: '200px',
+    // height: '200px',
     scrollSnapType: 'y mandatory',
     scrollSnapAlign: 'start',
   },

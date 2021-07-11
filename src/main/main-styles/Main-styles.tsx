@@ -13,7 +13,7 @@ const styles = createStyles({
     position: 'relative',
     cursor: 'pointer',
     top: 10,
-    left: 25,
+    // left: 25,
   },
   root: {
     backgroundColor: 'rgb(23,23,26)',
@@ -78,6 +78,12 @@ const styles = createStyles({
     //     // gridTemplateColumns: 'repeat(1, 100%)',
     //     gridGap: '1.4rem',
     //   },
+  },
+  RecommendedSection: {
+    display: 'flex',
+    flexDirection: 'row',
+    scrollSnapType: 'x mandatory',
+    scrollSnapAlign: 'start',
   },
   UserTitleContainer: {
     color: '#fff',

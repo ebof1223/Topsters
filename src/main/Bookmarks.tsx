@@ -25,12 +25,12 @@ const Bookmarks: React.FC<Props> = ({
 }) => {
   return (
     <div className={classes.root}>
+      {/* this needs to be its own component */}
       <div className={classes.BackButton} onClick={() => history.push('/home')}>
         <Tooltip title="Home">
           <ArrowBackIcon fontSize="large" />
         </Tooltip>
       </div>
-      {/* this needs to be its own component */}
       <div className={classes.outerContainer}>
         {bookmarks.map((bookmark: TopsterTemplate) => (
           <div

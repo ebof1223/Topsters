@@ -5,8 +5,8 @@ const styles = createStyles({
     backgroundColor: 'rgb(23,23,26)',
     height: '100%',
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'flex-start',
-    justifyContent: 'center',
   },
   outerContainer: {
     margin: 'auto',

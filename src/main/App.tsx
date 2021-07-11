@@ -18,6 +18,7 @@ const App: React.FC = () => {
   const savedBookmarked = JSON.parse(
     window.localStorage.getItem('bookmarks') || '{}'
   );
+
   const [openLandingModal, setOpenLandingModal] = useState(true);
   const [showAgain, setShowAgain] = useState(true);
   const [topsters, setTopsters] = useState(
