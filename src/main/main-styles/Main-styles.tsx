@@ -19,9 +19,9 @@ const styles = createStyles({
     backgroundColor: 'rgb(23,23,26)',
     height: '100%',
     display: 'flex',
-    alignItems: 'flex-start',
+    alignContent: 'flex-start',
     justifyContent: 'center',
-    overflowY: 'scroll',
+    overflowY: 'auto',
     overflowX: 'hidden',
     // paddingBottom: '3rem',
   },
@@ -34,7 +34,7 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    flexWrap: 'wrap',
+    // flexWrap: 'wrap',
 
     // [sizes.down('xl')]: {
     //   width: '80%',
@@ -60,7 +60,7 @@ const styles = createStyles({
     color: '#fff',
     fontFamily: 'Merriweather, serif',
   },
-  Recommended: {
+  RecommendedTopsters: {
     marginTop: '2rem',
     display: 'flex',
     boxSizing: 'border-box',
@@ -69,6 +69,7 @@ const styles = createStyles({
     scrollSnapType: 'x mandatory',
     width: '1340px',
     scrollbarWidth: 'none',
+    alignItems: 'center',
     // width: '100%',
     // height: 'calc(100vh - 4rem)',
     //   [sizes.down('md')]: {
@@ -79,12 +80,14 @@ const styles = createStyles({
     //     gridGap: '1.4rem',
     //   },
   },
+  RecommendedContainer: { display: 'flex', alignItems: 'center' },
   RecommendedSection: {
     display: 'flex',
     flexDirection: 'row',
     scrollSnapType: 'x mandatory',
     scrollSnapAlign: 'start',
   },
+  recommendedArrow: { fontSize: '100px' },
   UserTitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
@@ -94,7 +97,6 @@ const styles = createStyles({
   },
   UserTopsters: {
     display: 'flex',
-    // flexWrap: 'wrap',
     flexDirection: 'column',
     overflowY: 'auto',
     overflowX: 'hidden',
@@ -104,8 +106,6 @@ const styles = createStyles({
     width: '800px',
   },
   topstersSection: {
-    // display: 'flex',
-    // flexDirection: 'row',
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
     scrollSnapType: 'y mandatory',
@@ -114,6 +114,7 @@ const styles = createStyles({
   subMain: {
     display: 'flex',
     alignItems: 'center',
+    margin: '1rem auto',
   },
   AOTDContainer: {
     display: 'grid',
@@ -146,11 +147,11 @@ const styles = createStyles({
     display: 'block ruby',
   },
   CompareArrowsIcon: {
-    color: 'rgb(120 92 124)',
     position: 'absolute',
-    left: '88%',
+    left: '85%',
     top: '2%',
     zIndex: 10,
+    fontSize: '50px',
   },
   noBookmarks: {
     marginTop: '40%',

@@ -42,7 +42,7 @@ const Recommended: React.FC<Props> = ({
       <Paper elevation={3} className={classes.card} onClick={handleClick}>
         <div className={classes.topsterGrid}>
           {currentRecommended.bookmarked && (
-            <FavoriteIcon className={classes.FavoriteIcon} fontSize="small" />
+            <FavoriteIcon className={classes.FavoriteIcon} color="primary" />
           )}
           {albums.map((item) => (
             <div

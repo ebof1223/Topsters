@@ -24,10 +24,10 @@ const styles = createStyles({
   FavoriteIcon: {
     zIndex: 10,
     position: 'absolute',
-    left: '88%',
+    left: '83%',
     top: '2%',
-    color: 'rgb(120 92 124)',
     cursor: 'pointer',
+    fontSize: '35px',
   },
   title: {
     fontFamily: 'Lexend, sans-serif',

@@ -12,13 +12,16 @@ import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
+import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+
 interface Props {
   classes: {
     root: string;
     heading: string;
     OuterContainer: string;
     nav: string;
-    Recommended: string;
+    RecommendedTopsters: string;
     Fab: string;
     UserTopsters: string;
     RecommendedTitle: string;
@@ -32,7 +35,9 @@ interface Props {
     firstBookmarkedItem: string;
     noBookmarks: string;
     RecommendedSection: string;
+    RecommendedContainer: string;
     topstersSection: string;
+    recommendedArrow: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -55,7 +60,10 @@ const Main: React.FC<Props> = ({
 }) => {
   const AlwaysScrollToBottom = () => {
     const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
-    useEffect(() => elementRef.current && elementRef.current.scrollIntoView());
+    useEffect(
+      () => elementRef.current && elementRef.current.scrollIntoView(),
+      []
+    );
     return <div ref={elementRef} />;
   };
   const [deleteDialog, setDeleteDialog] = useState(false);
@@ -99,36 +107,43 @@ const Main: React.FC<Props> = ({
 
   return (
     <div className={classes.root}>
+      <div onClick={handleLandingModal} className={classes.BackButton}>
+        <Tooltip title="Landing">
+          <ArrowBackIcon fontSize="large" />
+        </Tooltip>
+      </div>
       <div className={classes.OuterContainer}>
-        <div onClick={handleLandingModal} className={classes.BackButton}>
-          <Tooltip title="Landing">
-            <ArrowBackIcon fontSize="large" />
-          </Tooltip>
-        </div>
         <nav className={classes.nav} />
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
-        <TransitionGroup className={classes.Recommended}>
-          {sectionizedPer5Item().map((group, i) => (
-            <CSSTransition
-              classNames="fade"
-              timeout={500}
-              key={`recommended-group-${i}`}
-            >
-              <section className={classes.RecommendedSection}>
-                {group.map((item: TopsterTemplate) => (
-                  <Recommended
-                    {...item}
-                    handleClick={() => toTopster(item.id, 'recommended')}
-                    id={item.id}
-                    recommended={recommended}
-                    title={item.title}
-                    key={`group-item-${item.id}`}
-                  />
-                ))}
-              </section>
-            </CSSTransition>
-          ))}
-        </TransitionGroup>
+        <div className={classes.RecommendedContainer}>
+          <ArrowLeftIcon className={classes.recommendedArrow} color="primary" />
+          <TransitionGroup className={classes.RecommendedTopsters}>
+            {sectionizedPer5Item().map((group, i) => (
+              <CSSTransition
+                classNames="fade"
+                timeout={500}
+                key={`recommended-group-${i}`}
+              >
+                <section className={classes.RecommendedSection}>
+                  {group.map((item: TopsterTemplate) => (
+                    <Recommended
+                      {...item}
+                      handleClick={() => toTopster(item.id, 'recommended')}
+                      id={item.id}
+                      recommended={recommended}
+                      title={item.title}
+                      key={`group-item-${item.id}`}
+                    />
+                  ))}
+                </section>
+              </CSSTransition>
+            ))}
+          </TransitionGroup>
+          <ArrowRightIcon
+            className={classes.recommendedArrow}
+            color="primary"
+          />
+        </div>
         <div className={classes.UserTitleContainer}>
           <h2>My Topsters</h2>
           <Link to={'/topsters/new'}>
@@ -171,9 +186,9 @@ const Main: React.FC<Props> = ({
             <div key={bookmarks[0].id} className={classes.AOTDContainer}>
               <Tooltip title="Rearrange">
                 <CompareArrowsIcon
-                  fontSize="large"
                   className={classes.CompareArrowsIcon}
                   onClick={() => history.push('/bookmarks')}
+                  color="primary"
                 />
               </Tooltip>
               {bookmarks.length &&
