@@ -92,6 +92,25 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'center',
   },
+  UserTopsters: {
+    display: 'flex',
+    // flexWrap: 'wrap',
+    flexDirection: 'column',
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    scrollbarWidth: 'none',
+    scrollSnapType: 'y mandatory',
+    height: '400px',
+    width: '800px',
+  },
+  topstersSection: {
+    // display: 'flex',
+    // flexDirection: 'row',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    scrollSnapType: 'y mandatory',
+    scrollSnapAlign: 'start',
+  },
   subMain: {
     display: 'flex',
     alignItems: 'center',
@@ -125,17 +144,6 @@ const styles = createStyles({
   firstBookmarkedItem: {
     height: '131.5px',
     display: 'block ruby',
-  },
-  UserTopsters: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
-    overflowY: 'scroll',
-    overflowX: 'hidden',
-    gridGap: '0',
-    scrollbarWidth: 'none',
-    scrollSnapType: 'y mandatory',
-    height: '400px',
-    width: '800px',
   },
   CompareArrowsIcon: {
     color: 'rgb(120 92 124)',

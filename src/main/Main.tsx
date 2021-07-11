@@ -32,6 +32,7 @@ interface Props {
     firstBookmarkedItem: string;
     noBookmarks: string;
     RecommendedSection: string;
+    topstersSection: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -88,6 +89,14 @@ const Main: React.FC<Props> = ({
     return sectionGrouping;
   };
 
+  const sectionizedPer8Item = () => {
+    let userTopstersCopy = [...topsters];
+    let sectionGrouping = [];
+    while (userTopstersCopy.length)
+      sectionGrouping.push(userTopstersCopy.splice(0, 8));
+    return sectionGrouping;
+  };
+
   return (
     <div className={classes.root}>
       <div className={classes.OuterContainer}>
@@ -99,24 +108,25 @@ const Main: React.FC<Props> = ({
         <nav className={classes.nav} />
         <h2 className={classes.RecommendedTitle}>Recommended</h2>
         <TransitionGroup className={classes.Recommended}>
-          {/* section */}
           {sectionizedPer5Item().map((group, i) => (
-            <section
+            <CSSTransition
+              classNames="fade"
+              timeout={500}
               key={`recommended-group-${i}`}
-              className={classes.RecommendedSection}
             >
-              {group.map((item: TopsterTemplate) => (
-                <CSSTransition key={item.id} classNames="fade" timeout={500}>
+              <section className={classes.RecommendedSection}>
+                {group.map((item: TopsterTemplate) => (
                   <Recommended
                     {...item}
                     handleClick={() => toTopster(item.id, 'recommended')}
                     id={item.id}
                     recommended={recommended}
                     title={item.title}
+                    key={`group-item-${item.id}`}
                   />
-                </CSSTransition>
-              ))}
-            </section>
+                ))}
+              </section>
+            </CSSTransition>
           ))}
         </TransitionGroup>
         <div className={classes.UserTitleContainer}>
@@ -136,20 +146,26 @@ const Main: React.FC<Props> = ({
         </div>
         <div className={classes.subMain}>
           <div className={classes.UserTopsters}>
-            {/* section */}
-            {topsters.map((item: TopsterTemplate) => (
-              <CSSTransition key={item.id} classNames="fade" timeout={500}>
-                <UserTopsters
-                  {...item}
-                  handleClick={() => toTopster(item.id, 'topsters')}
-                  id={item.id}
-                  deleteDialog={deleteDialog}
-                  setDeleteDialog={setDeleteDialog}
-                  setToBeDeleted={setToBeDeleted}
-                />
-              </CSSTransition>
+            {sectionizedPer8Item().map((group, i) => (
+              <section
+                key={`userTopsters-group-${i}`}
+                className={classes.topstersSection}
+              >
+                {group.map((item: TopsterTemplate) => (
+                  <CSSTransition key={item.id} classNames="fade" timeout={500}>
+                    <UserTopsters
+                      {...item}
+                      handleClick={() => toTopster(item.id, 'topsters')}
+                      id={item.id}
+                      deleteDialog={deleteDialog}
+                      setDeleteDialog={setDeleteDialog}
+                      setToBeDeleted={setToBeDeleted}
+                    />
+                  </CSSTransition>
+                ))}
+                <AlwaysScrollToBottom />
+              </section>
             ))}
-            <AlwaysScrollToBottom />
           </div>
           {bookmarks.length ? (
             <div key={bookmarks[0].id} className={classes.AOTDContainer}>
