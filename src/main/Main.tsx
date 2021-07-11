@@ -25,6 +25,7 @@ interface Props {
     Fab: string;
     UserTopsters: string;
     RecommendedTitle: string;
+    RecommendedTitleContainer: string;
     UserTitleContainer: string;
     BackButton: string;
     subMain: string;
@@ -38,6 +39,8 @@ interface Props {
     RecommendedContainer: string;
     topstersSection: string;
     recommendedArrow: string;
+    dotContainer: string;
+    dots: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -45,7 +48,7 @@ interface Props {
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
-  recommended?: any;
+  recommended: any;
   setOpenLandingModal: (i: boolean) => void;
   bookmarks: TopsterTemplate[];
 }
@@ -105,6 +108,15 @@ const Main: React.FC<Props> = ({
     return sectionGrouping;
   };
 
+  const dotIndicators = () => {
+    return (
+      <div className={classes.dotContainer}>
+        <div className={classes.dots} />
+        <div className={classes.dots} />
+      </div>
+    );
+  };
+
   return (
     <div className={classes.root}>
       <div onClick={handleLandingModal} className={classes.BackButton}>
@@ -114,7 +126,11 @@ const Main: React.FC<Props> = ({
       </div>
       <div className={classes.OuterContainer}>
         <nav className={classes.nav} />
-        <h2 className={classes.RecommendedTitle}>Recommended</h2>
+        <div className={classes.RecommendedTitleContainer}>
+          <h2 className={classes.RecommendedTitle}>Recommended</h2>
+          {/* DOTS STUFF HERE */}
+          {dotIndicators()}
+        </div>
         <div className={classes.RecommendedContainer}>
           <ArrowLeftIcon className={classes.recommendedArrow} color="primary" />
           <TransitionGroup className={classes.RecommendedTopsters}>
@@ -124,7 +140,7 @@ const Main: React.FC<Props> = ({
                 timeout={500}
                 key={`recommended-group-${i}`}
               >
-                <section className={classes.RecommendedSection}>
+                <section className={classes.RecommendedSection} id="test">
                   {group.map((item: TopsterTemplate) => (
                     <Recommended
                       {...item}

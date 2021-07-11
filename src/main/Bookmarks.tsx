@@ -14,7 +14,10 @@ interface Props {
   };
   bookmarks: TopsterTemplate[];
   setBookmarks: any;
-  history: any;
+  history: {
+    goBack: () => void;
+    push: (input: string) => void;
+  };
 }
 
 const Bookmarks: React.FC<Props> = ({

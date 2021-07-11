@@ -13,6 +13,7 @@ const styles = createStyles({
     position: 'relative',
     cursor: 'pointer',
     top: 10,
+    margin: '1rem 0',
     // left: 25,
   },
   root: {
@@ -53,13 +54,14 @@ const styles = createStyles({
     width: '100%',
     justifyContent: 'space-between',
     color: 'white',
-    padding: '1rem 0 4rem 0',
+    padding: '3rem 0 4rem 0',
     flexDirection: 'row',
   },
   RecommendedTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
   },
+  RecommendedTitleContainer: { display: 'flex' },
   RecommendedTopsters: {
     marginTop: '2rem',
     display: 'flex',
@@ -88,6 +90,20 @@ const styles = createStyles({
     scrollSnapAlign: 'start',
   },
   recommendedArrow: { fontSize: '100px' },
+  // DOTS STUFF HERE
+  dotContainer: {
+    display: 'flex',
+    alignContent: 'center',
+    alignItems: 'center',
+    marginLeft: '2rem',
+  },
+  dots: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50px',
+    background: 'hsla(0, 0%, 100%, .8)',
+    marginLeft: '1rem',
+  },
   UserTitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',

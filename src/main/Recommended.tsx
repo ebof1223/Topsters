@@ -19,7 +19,7 @@ interface Props {
   };
   title: string;
   albums: AlbumTemplate[];
-  recommended: TopsterTemplate[];
+  recommended?: TopsterTemplate[];
   handleClick: () => void;
   id: string;
 }
