@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
@@ -71,6 +71,7 @@ const Main: React.FC<Props> = ({
     );
     return <div ref={elementRef} />;
   };
+
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
 
@@ -109,24 +110,24 @@ const Main: React.FC<Props> = ({
       sectionGrouping.push(userTopstersCopy.splice(0, 8));
     return sectionGrouping;
   };
+  const dotIndicators = (direction: string, type: string) => {
+    var dotCount;
+    type === 'recommended'
+      ? (dotCount = new Array(Math.ceil(recommended.length / 5))).fill(0)
+      : (dotCount = new Array(Math.ceil(topsters.length / 8))).fill(0);
 
-  const dotIndicators = (direction: string) => {
     return (
       <>
-        <div
-          className={
-            direction === 'horizontal'
-              ? classes.dotsHorizontal
-              : classes.dotsVertical
-          }
-        />
-        <div
-          className={
-            direction === 'horizontal'
-              ? classes.dotsHorizontal
-              : classes.dotsVertical
-          }
-        />
+        {dotCount.map((item: null, i: number) => (
+          <div
+            className={
+              direction === 'horizontal'
+                ? classes.dotsHorizontal
+                : classes.dotsVertical
+            }
+            key={`recommended-dot-${i}`}
+          />
+        ))}
       </>
     );
   };
@@ -144,7 +145,7 @@ const Main: React.FC<Props> = ({
           <h2 className={classes.RecommendedTitle}>Recommended</h2>
           {/* DOTS STUFF HERE */}
           <div className={classes.dotContainerHorizontal}>
-            {dotIndicators('horizontal')}
+            {dotIndicators('horizontal', 'recommended')}
           </div>
         </div>
         <div className={classes.RecommendedContainer}>
@@ -194,7 +195,7 @@ const Main: React.FC<Props> = ({
         <div className={classes.subMain}>
           {/* DOTS STUFF HERE */}
           <div className={classes.dotContainerVertical}>
-            {dotIndicators('vertical')}
+            {dotIndicators('vertical', 'topsters')}
           </div>
           <div className={classes.UserTopsters}>
             {sectionizedPer8Item().map((group, i) => (
