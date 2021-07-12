@@ -18,7 +18,7 @@ const LoginModule: React.FC<Props> = ({
     setOpenLandingModal(false);
     setTimeout(() => {
       history.push('/home');
-    }, 100);
+    }, 250);
   };
   return (
     <div>

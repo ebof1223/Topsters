@@ -22,8 +22,9 @@ const styles = createStyles({
     display: 'flex',
     alignContent: 'flex-start',
     justifyContent: 'center',
-    overflowY: 'auto',
-    overflowX: 'hidden',
+    overflow: 'none',
+    // overflowY: 'auto',
+    // overflowX: 'hidden',
     // paddingBottom: '3rem',
   },
   heading: {
@@ -91,18 +92,31 @@ const styles = createStyles({
   },
   recommendedArrow: { fontSize: '100px' },
   // DOTS STUFF HERE
-  dotContainer: {
+  dotContainerHorizontal: {
     display: 'flex',
     alignContent: 'center',
     alignItems: 'center',
     marginLeft: '2rem',
   },
-  dots: {
+  dotContainerVertical: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignContent: 'center',
+    marginRight: '2rem',
+  },
+  dotsHorizontal: {
     width: '10px',
     height: '10px',
     borderRadius: '50px',
     background: 'hsla(0, 0%, 100%, .8)',
     marginLeft: '1rem',
+  },
+  dotsVertical: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50px',
+    background: 'hsla(0, 0%, 100%, .8)',
+    marginBottom: '1rem',
   },
   UserTitleContainer: {
     color: '#fff',

@@ -39,8 +39,10 @@ interface Props {
     RecommendedContainer: string;
     topstersSection: string;
     recommendedArrow: string;
-    dotContainer: string;
-    dots: string;
+    dotContainerHorizontal: string;
+    dotsHorizontal: string;
+    dotsVertical: string;
+    dotContainerVertical: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -108,12 +110,24 @@ const Main: React.FC<Props> = ({
     return sectionGrouping;
   };
 
-  const dotIndicators = () => {
+  const dotIndicators = (direction: string) => {
     return (
-      <div className={classes.dotContainer}>
-        <div className={classes.dots} />
-        <div className={classes.dots} />
-      </div>
+      <>
+        <div
+          className={
+            direction === 'horizontal'
+              ? classes.dotsHorizontal
+              : classes.dotsVertical
+          }
+        />
+        <div
+          className={
+            direction === 'horizontal'
+              ? classes.dotsHorizontal
+              : classes.dotsVertical
+          }
+        />
+      </>
     );
   };
 
@@ -129,7 +143,9 @@ const Main: React.FC<Props> = ({
         <div className={classes.RecommendedTitleContainer}>
           <h2 className={classes.RecommendedTitle}>Recommended</h2>
           {/* DOTS STUFF HERE */}
-          {dotIndicators()}
+          <div className={classes.dotContainerHorizontal}>
+            {dotIndicators('horizontal')}
+          </div>
         </div>
         <div className={classes.RecommendedContainer}>
           <ArrowLeftIcon className={classes.recommendedArrow} color="primary" />
@@ -176,6 +192,10 @@ const Main: React.FC<Props> = ({
           </Link>
         </div>
         <div className={classes.subMain}>
+          {/* DOTS STUFF HERE */}
+          <div className={classes.dotContainerVertical}>
+            {dotIndicators('vertical')}
+          </div>
           <div className={classes.UserTopsters}>
             {sectionizedPer8Item().map((group, i) => (
               <section
