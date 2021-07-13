@@ -73,7 +73,7 @@ const styles = createStyles({
     width: '1340px',
     scrollbarWidth: 'none',
     alignItems: 'center',
-    // width: '100%',
+
     // height: 'calc(100vh - 4rem)',
     //   [sizes.down('md')]: {
     //     // gridTemplateColumns: 'repeat(2, 50%)',
@@ -90,7 +90,15 @@ const styles = createStyles({
     scrollSnapType: 'x mandatory',
     scrollSnapAlign: 'start',
   },
-  recommendedArrow: { fontSize: '100px' },
+  recommendedArrowVisible: {
+    fontSize: '70px',
+    cursor: 'pointer',
+  },
+  recommendedArrowHidden: {
+    fontSize: '70px',
+    opacity: '0.2',
+    pointerEvents: 'none',
+  },
   // DOTS STUFF HERE
   dotContainerHorizontal: {
     display: 'flex',

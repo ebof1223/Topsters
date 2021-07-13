@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
@@ -38,7 +38,8 @@ interface Props {
     RecommendedSection: string;
     RecommendedContainer: string;
     topstersSection: string;
-    recommendedArrow: string;
+    recommendedArrowVisible: string;
+    recommendedArrowHidden: string;
     dotContainerHorizontal: string;
     dotsHorizontal: string;
     dotsVertical: string;
@@ -63,6 +64,7 @@ const Main: React.FC<Props> = ({
   setOpenLandingModal,
   bookmarks,
 }) => {
+  const RecommendedRef = useRef<any>();
   const AlwaysScrollToBottom = () => {
     const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
     useEffect(
@@ -71,15 +73,18 @@ const Main: React.FC<Props> = ({
     );
     return <div ref={elementRef} />;
   };
-
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
-
+  const [currentRecSection, setCurrentRecSection] = useState(null);
   const toTopster = (id: string, type: string) => {
     if (type === 'recommended') history.push(`/recommended/${id}`);
     if (type === 'topsters') history.push(`/topsters/${id}`);
     if (type === 'bookmarks') history.push(`/bookmarks/${id}`);
   };
+
+  useEffect(() => {
+    setCurrentRecSection(RecommendedRef.current.parentElement.childNodes[0]);
+  }, []);
 
   const handleDeleteConfirmation = () => {
     let newTopster = topsters.filter((item) => item.id !== toBeDeleted);
@@ -115,7 +120,6 @@ const Main: React.FC<Props> = ({
     type === 'recommended'
       ? (dotCount = new Array(Math.ceil(recommended.length / 5))).fill(0)
       : (dotCount = new Array(Math.ceil(topsters.length / 8))).fill(0);
-
     return (
       <>
         {dotCount.map((item: null, i: number) => (
@@ -130,6 +134,16 @@ const Main: React.FC<Props> = ({
         ))}
       </>
     );
+  };
+  const handleArrows = (direction: string) => {
+    if (direction === 'next' && currentRecSection.nextSibling) {
+      currentRecSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
+      setCurrentRecSection(currentRecSection.nextSibling);
+    }
+    if (direction === 'previous' && currentRecSection.previousSibling) {
+      currentRecSection.previousSibling?.scrollIntoView({ behavior: 'smooth' });
+      setCurrentRecSection(currentRecSection.previousSibling);
+    }
   };
 
   return (
@@ -149,7 +163,15 @@ const Main: React.FC<Props> = ({
           </div>
         </div>
         <div className={classes.RecommendedContainer}>
-          <ArrowLeftIcon className={classes.recommendedArrow} color="primary" />
+          <ArrowLeftIcon
+            className={
+              currentRecSection && currentRecSection.previousSibling
+                ? classes.recommendedArrowVisible
+                : classes.recommendedArrowHidden
+            }
+            color="primary"
+            onClick={() => handleArrows('previous')}
+          />
           <TransitionGroup className={classes.RecommendedTopsters}>
             {sectionizedPer5Item().map((group, i) => (
               <CSSTransition
@@ -157,7 +179,10 @@ const Main: React.FC<Props> = ({
                 timeout={500}
                 key={`recommended-group-${i}`}
               >
-                <section className={classes.RecommendedSection} id="test">
+                <section
+                  className={classes.RecommendedSection}
+                  ref={RecommendedRef}
+                >
                   {group.map((item: TopsterTemplate) => (
                     <Recommended
                       {...item}
@@ -172,9 +197,15 @@ const Main: React.FC<Props> = ({
               </CSSTransition>
             ))}
           </TransitionGroup>
+          {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
           <ArrowRightIcon
-            className={classes.recommendedArrow}
+            className={
+              currentRecSection && currentRecSection.nextSibling
+                ? classes.recommendedArrowVisible
+                : classes.recommendedArrowHidden
+            }
             color="primary"
+            onClick={() => handleArrows('next')}
           />
         </div>
         <div className={classes.UserTitleContainer}>
