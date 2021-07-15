@@ -64,26 +64,26 @@ const Main: React.FC<Props> = ({
   setOpenLandingModal,
   bookmarks,
 }) => {
-  const RecommendedRef = useRef<any>();
-  const AlwaysScrollToBottom = () => {
-    const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
-    useEffect(
-      () => elementRef.current && elementRef.current.scrollIntoView(),
-      []
-    );
-    return <div ref={elementRef} />;
-  };
+  const RecommendedSectionalRef = useRef(null);
+  const RecommendedContainerRef = useRef<any>(null);
+
+  const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
+  useEffect(() => {
+    elementRef.current && elementRef.current.scrollIntoView();
+    console.log('useeffect went off');
+  }, []);
+
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
   const [currentRecSection, setCurrentRecSection] = useState(null);
   const toTopster = (id: string, type: string) => {
-    if (type === 'recommended') history.push(`/recommended/${id}`);
-    if (type === 'topsters') history.push(`/topsters/${id}`);
-    if (type === 'bookmarks') history.push(`/bookmarks/${id}`);
+    history.push(`/${type}/${id}`);
   };
 
   useEffect(() => {
-    setCurrentRecSection(RecommendedRef.current.parentElement.childNodes[0]);
+    setCurrentRecSection(
+      RecommendedSectionalRef.current.parentElement.childNodes[0]
+    );
   }, []);
 
   const handleDeleteConfirmation = () => {
@@ -116,7 +116,7 @@ const Main: React.FC<Props> = ({
     return sectionGrouping;
   };
   const dotIndicators = (direction: string, type: string) => {
-    var dotCount;
+    var dotCount: Number[];
     type === 'recommended'
       ? (dotCount = new Array(Math.ceil(recommended.length / 5))).fill(0)
       : (dotCount = new Array(Math.ceil(topsters.length / 8))).fill(0);
@@ -135,6 +135,7 @@ const Main: React.FC<Props> = ({
       </>
     );
   };
+
   const handleArrows = (direction: string) => {
     if (direction === 'next' && currentRecSection.nextSibling) {
       currentRecSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
@@ -172,7 +173,10 @@ const Main: React.FC<Props> = ({
             color="primary"
             onClick={() => handleArrows('previous')}
           />
-          <TransitionGroup className={classes.RecommendedTopsters}>
+          <TransitionGroup
+            ref={RecommendedContainerRef}
+            className={classes.RecommendedTopsters}
+          >
             {sectionizedPer5Item().map((group, i) => (
               <CSSTransition
                 classNames="fade"
@@ -181,7 +185,7 @@ const Main: React.FC<Props> = ({
               >
                 <section
                   className={classes.RecommendedSection}
-                  ref={RecommendedRef}
+                  ref={RecommendedSectionalRef}
                 >
                   {group.map((item: TopsterTemplate) => (
                     <Recommended
@@ -197,7 +201,6 @@ const Main: React.FC<Props> = ({
               </CSSTransition>
             ))}
           </TransitionGroup>
-          {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
           <ArrowRightIcon
             className={
               currentRecSection && currentRecSection.nextSibling
@@ -246,7 +249,7 @@ const Main: React.FC<Props> = ({
                     />
                   </CSSTransition>
                 ))}
-                <AlwaysScrollToBottom />
+                <div ref={elementRef} />
               </section>
             ))}
           </div>
