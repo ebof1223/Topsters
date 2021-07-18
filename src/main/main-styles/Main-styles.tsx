@@ -68,7 +68,7 @@ const styles = createStyles({
     display: 'flex',
     boxSizing: 'border-box',
     flexDirection: 'row',
-    overflow: 'auto',
+    overflow: 'hidden',
     scrollSnapType: 'x mandatory',
     width: '1340px',
     scrollbarWidth: 'none',
@@ -105,6 +105,7 @@ const styles = createStyles({
     alignContent: 'center',
     alignItems: 'center',
     marginLeft: '2rem',
+    cursor: 'pointer',
   },
 
   dotContainerVertical: {
@@ -112,6 +113,7 @@ const styles = createStyles({
     flexDirection: 'column',
     alignContent: 'center',
     marginRight: '2rem',
+    cursor: 'pointer',
   },
   dotsHorizontalActive: {
     width: '10px',

@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
-import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
+import { Link, Element, Events, animateScroll as scroller } from 'react-scroll';
 import AddIcon from '@material-ui/icons/Add';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './main-styles/Main-styles';
@@ -14,6 +14,8 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 interface Props {
   classes: {
@@ -138,7 +140,7 @@ const Main: React.FC<Props> = ({
     return (
       <>
         {dotCount.map((item: null, i: number) => (
-          <div
+          <Link
             className={
               (type === 'recommended' &&
                 (i === currentRecIndex
@@ -150,6 +152,20 @@ const Main: React.FC<Props> = ({
                   : classes.dotsVerticalInactive))
             }
             key={`recommended-dot-${i}`}
+            activeClass="active"
+            to={`page-${i}`}
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => {
+              if (type === 'recommended') {
+                let element =
+                  RecommendedSectionalRef.current.parentElement.childNodes[i];
+                element.scrollIntoView({ behavior: 'smooth' });
+                setCurrentRecSection(element);
+                setCurrentRecIndex(i);
+              }
+            }}
           />
         ))}
       </>
@@ -231,18 +247,20 @@ const Main: React.FC<Props> = ({
         </div>
         <div className={classes.UserTitleContainer}>
           <h2>My Topsters</h2>
-          <Link to={'/topsters/new'}>
+          <div>
             <Tooltip title="Add">
               <Fab
-                color="inherit"
                 aria-label="add"
                 size="small"
                 className={classes.Fab}
+                onClick={() => {
+                  history.push('/topsters/new');
+                }}
               >
                 <AddIcon />
               </Fab>
             </Tooltip>
-          </Link>
+          </div>
         </div>
         <div className={classes.subMain}>
           <div className={classes.dotContainerVertical}>
@@ -251,7 +269,8 @@ const Main: React.FC<Props> = ({
           {/* <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
           <div className={classes.UserTopsters} ref={TopsterContainerRef}>
             {sectionizedPer8Item().map((group, i) => (
-              <section
+              <Element
+                name={`page-${i}`}
                 key={`userTopsters-group-${i}`}
                 className={classes.topstersSection}
               >
@@ -268,7 +287,7 @@ const Main: React.FC<Props> = ({
                   </CSSTransition>
                 ))}
                 <div ref={elementRef} />
-              </section>
+              </Element>
             ))}
           </div>
           {bookmarks.length ? (
