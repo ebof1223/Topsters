@@ -106,26 +106,46 @@ const styles = createStyles({
     alignItems: 'center',
     marginLeft: '2rem',
   },
+
   dotContainerVertical: {
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',
     marginRight: '2rem',
   },
-  dotsHorizontal: {
+  dotsHorizontalActive: {
     width: '10px',
     height: '10px',
     borderRadius: '50px',
     background: 'hsla(0, 0%, 100%, .8)',
     marginLeft: '1rem',
+    transform: 'scale(1.5)',
   },
-  dotsVertical: {
+  dotsHorizontalInactive: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50px',
+    background: 'hsla(0, 0%, 100%, .8)',
+    marginLeft: '1rem',
+    opacity: '0.3',
+  },
+  dotsVerticalActive: {
     width: '10px',
     height: '10px',
     borderRadius: '50px',
     background: 'hsla(0, 0%, 100%, .8)',
     marginBottom: '1rem',
+    transform: 'scale(1.5)',
   },
+  dotsVerticalInactive: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50px',
+    background: 'hsla(0, 0%, 100%, .8)',
+    marginBottom: '1rem',
+    opacity: '0.3',
+  },
+
   UserTitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
@@ -136,7 +156,7 @@ const styles = createStyles({
   UserTopsters: {
     display: 'flex',
     flexDirection: 'column',
-    overflowY: 'auto',
+    overflowY: 'scroll',
     overflowX: 'hidden',
     scrollbarWidth: 'none',
     scrollSnapType: 'y mandatory',

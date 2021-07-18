@@ -41,8 +41,10 @@ interface Props {
     recommendedArrowVisible: string;
     recommendedArrowHidden: string;
     dotContainerHorizontal: string;
-    dotsHorizontal: string;
-    dotsVertical: string;
+    dotsHorizontalActive: string;
+    dotsHorizontalInactive: string;
+    dotsVerticalActive: string;
+    dotsVerticalInactive: string;
     dotContainerVertical: string;
   };
   topsters: TopsterTemplate[];
@@ -65,25 +67,38 @@ const Main: React.FC<Props> = ({
   bookmarks,
 }) => {
   const RecommendedSectionalRef = useRef(null);
-  const RecommendedContainerRef = useRef<any>(null);
+  const TopsterContainerRef = useRef(null);
 
   const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
   useEffect(() => {
     elementRef.current && elementRef.current.scrollIntoView();
-    console.log('useeffect went off');
   }, []);
 
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
   const [currentRecSection, setCurrentRecSection] = useState(null);
+  const [currentTopSection, setCurrentTopSection] = useState(null);
+  const [currentRecIndex, setCurrentRecIndex] = useState(0);
+  const [currentTopsterIndex, setCurrentTopsterIndex] = useState(null);
+  // var onScreen: boolean;
+
   const toTopster = (id: string, type: string) => {
     history.push(`/${type}/${id}`);
   };
 
   useEffect(() => {
     setCurrentRecSection(
-      RecommendedSectionalRef.current.parentElement.childNodes[0]
+      RecommendedSectionalRef.current.parentElement.childNodes[currentRecIndex]
     );
+    setCurrentTopSection(
+      TopsterContainerRef.current.childNodes[
+        TopsterContainerRef.current.childNodes.length - 1
+      ]
+    );
+
+    setCurrentTopsterIndex(TopsterContainerRef.current.childNodes.length - 1);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleDeleteConfirmation = () => {
@@ -115,7 +130,7 @@ const Main: React.FC<Props> = ({
       sectionGrouping.push(userTopstersCopy.splice(0, 8));
     return sectionGrouping;
   };
-  const dotIndicators = (direction: string, type: string) => {
+  const dotIndicators = (type: string) => {
     var dotCount: Number[];
     type === 'recommended'
       ? (dotCount = new Array(Math.ceil(recommended.length / 5))).fill(0)
@@ -125,9 +140,14 @@ const Main: React.FC<Props> = ({
         {dotCount.map((item: null, i: number) => (
           <div
             className={
-              direction === 'horizontal'
-                ? classes.dotsHorizontal
-                : classes.dotsVertical
+              (type === 'recommended' &&
+                (i === currentRecIndex
+                  ? classes.dotsHorizontalActive
+                  : classes.dotsHorizontalInactive)) ||
+              (type === 'topsters' &&
+                (i === currentTopsterIndex
+                  ? classes.dotsVerticalActive
+                  : classes.dotsVerticalInactive))
             }
             key={`recommended-dot-${i}`}
           />
@@ -140,10 +160,12 @@ const Main: React.FC<Props> = ({
     if (direction === 'next' && currentRecSection.nextSibling) {
       currentRecSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
       setCurrentRecSection(currentRecSection.nextSibling);
+      setCurrentRecIndex(currentRecIndex + 1);
     }
     if (direction === 'previous' && currentRecSection.previousSibling) {
       currentRecSection.previousSibling?.scrollIntoView({ behavior: 'smooth' });
       setCurrentRecSection(currentRecSection.previousSibling);
+      setCurrentRecIndex(currentRecIndex - 1);
     }
   };
 
@@ -158,9 +180,8 @@ const Main: React.FC<Props> = ({
         <nav className={classes.nav} />
         <div className={classes.RecommendedTitleContainer}>
           <h2 className={classes.RecommendedTitle}>Recommended</h2>
-          {/* DOTS STUFF HERE */}
           <div className={classes.dotContainerHorizontal}>
-            {dotIndicators('horizontal', 'recommended')}
+            {dotIndicators('recommended')}
           </div>
         </div>
         <div className={classes.RecommendedContainer}>
@@ -173,10 +194,7 @@ const Main: React.FC<Props> = ({
             color="primary"
             onClick={() => handleArrows('previous')}
           />
-          <TransitionGroup
-            ref={RecommendedContainerRef}
-            className={classes.RecommendedTopsters}
-          >
+          <TransitionGroup className={classes.RecommendedTopsters}>
             {sectionizedPer5Item().map((group, i) => (
               <CSSTransition
                 classNames="fade"
@@ -227,11 +245,11 @@ const Main: React.FC<Props> = ({
           </Link>
         </div>
         <div className={classes.subMain}>
-          {/* DOTS STUFF HERE */}
           <div className={classes.dotContainerVertical}>
-            {dotIndicators('vertical', 'topsters')}
+            {dotIndicators('topsters')}
           </div>
-          <div className={classes.UserTopsters}>
+          {/* <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
+          <div className={classes.UserTopsters} ref={TopsterContainerRef}>
             {sectionizedPer8Item().map((group, i) => (
               <section
                 key={`userTopsters-group-${i}`}
