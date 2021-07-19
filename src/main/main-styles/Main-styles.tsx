@@ -158,7 +158,7 @@ const styles = createStyles({
   UserTopsters: {
     display: 'flex',
     flexDirection: 'column',
-    overflowY: 'scroll',
+    overflowY: 'hidden',
     overflowX: 'hidden',
     scrollbarWidth: 'none',
     scrollSnapType: 'y mandatory',

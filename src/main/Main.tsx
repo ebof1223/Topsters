@@ -165,6 +165,12 @@ const Main: React.FC<Props> = ({
                 setCurrentRecSection(element);
                 setCurrentRecIndex(i);
               }
+              if (type === 'topsters') {
+                let element = TopsterContainerRef.current.childNodes[i];
+                element.scrollIntoView({ behavior: 'smooth' });
+                setCurrentTopSection(element);
+                setCurrentTopsterIndex(i);
+              }
             }}
           />
         ))}
