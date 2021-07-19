@@ -8,6 +8,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
 import { TopsterTemplate } from '../interface';
+import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 
 interface Props {
   classes: {
@@ -15,6 +16,7 @@ interface Props {
     Title: string;
     Icon: string;
     IconOn: string;
+    shuffle: string;
   };
   title: string;
   history: { push: (input: string) => void };
@@ -65,6 +67,43 @@ const Navbar: React.FC<Props> = ({
       setOpenSnackBar(true);
     }
   };
+
+  const topRightIcon = () => {
+    const url = window.location.href;
+    if (url.includes('topsters'))
+      return (
+        <Tooltip title="Edit">
+          <EditIcon className={classes.Icon} onClick={handleEdit} />
+        </Tooltip>
+      );
+    if (url.includes('recommended'))
+      return (
+        <Tooltip title={isBookmarked ? 'Unlike' : 'Like'}>
+          <FavoriteIcon
+            className={isBookmarked ? classes.IconOn : classes.Icon}
+            onClick={handleBookmarkToggle}
+          />
+        </Tooltip>
+      );
+    if (url.includes('bookmarked'))
+      return (
+        <Tooltip title={'Rearrange'}>
+          <CompareArrowsIcon className={classes.shuffle} />
+        </Tooltip>
+      );
+    return (
+      <div
+        style={{
+          height: '40px',
+          width: '50px',
+          backgroundColor: '#fff',
+          opacity: 0,
+          marginLeft: '1.4rem',
+        }}
+      ></div>
+    );
+  };
+
   return (
     <>
       <ToggleBookmarkSnackBar
@@ -82,22 +121,7 @@ const Navbar: React.FC<Props> = ({
         <div className={classes.Title}>
           <h3>{title}</h3>
         </div>
-        {window.location.href.includes('topster') && (
-          <Tooltip title="Edit">
-            <EditIcon className={classes.Icon} onClick={handleEdit} />
-          </Tooltip>
-        )}
-        {(window.location.href.includes('recommended') ||
-          window.location.href.includes('bookmarks')) && (
-          <Tooltip title={isBookmarked ? 'Unlike' : 'Like'}>
-            <FavoriteIcon
-              className={isBookmarked ? classes.IconOn : classes.Icon}
-              onClick={handleBookmarkToggle}
-            />
-          </Tooltip>
-        )}
-        {/* change handlebookmark toggle to return back to bookmarks page if user unlikes topster */}
-        {/* {window.location.href.includes('bookmarks') && <FavoriteIcon />} */}
+        {topRightIcon()}
       </header>
     </>
   );

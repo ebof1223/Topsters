@@ -3,7 +3,6 @@ import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
 import Fab from '@material-ui/core/Fab';
-import { Link, Element, Events, animateScroll as scroller } from 'react-scroll';
 import AddIcon from '@material-ui/icons/Add';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './main-styles/Main-styles';
@@ -14,8 +13,8 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+// import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
+// import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 interface Props {
   classes: {
