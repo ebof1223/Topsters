@@ -140,7 +140,7 @@ const Main: React.FC<Props> = ({
     return (
       <>
         {dotCount.map((item: null, i: number) => (
-          <Link
+          <div
             className={
               (type === 'recommended' &&
                 (i === currentRecIndex
@@ -152,11 +152,6 @@ const Main: React.FC<Props> = ({
                   : classes.dotsVerticalInactive))
             }
             key={`recommended-dot-${i}`}
-            activeClass="active"
-            to={`page-${i}`}
-            spy={true}
-            smooth={true}
-            duration={500}
             onClick={() => {
               if (type === 'recommended') {
                 let element =
@@ -193,9 +188,13 @@ const Main: React.FC<Props> = ({
 
   return (
     <div className={classes.root}>
-      <div onClick={handleLandingModal} className={classes.BackButton}>
+      <div className={classes.BackButton}>
         <Tooltip title="Landing">
-          <ArrowBackIcon fontSize="large" />
+          <ArrowBackIcon
+            fontSize="large"
+            onClick={handleLandingModal}
+            style={{ cursor: 'pointer' }}
+          />
         </Tooltip>
       </div>
       <div className={classes.OuterContainer}>
@@ -219,7 +218,7 @@ const Main: React.FC<Props> = ({
           <TransitionGroup className={classes.RecommendedTopsters}>
             {sectionizedPer5Item().map((group, i) => (
               <CSSTransition
-                classNames="fade"
+                // classNames="fade"
                 timeout={500}
                 key={`recommended-group-${i}`}
               >
@@ -275,8 +274,7 @@ const Main: React.FC<Props> = ({
           {/* <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
           <div className={classes.UserTopsters} ref={TopsterContainerRef}>
             {sectionizedPer8Item().map((group, i) => (
-              <Element
-                name={`page-${i}`}
+              <div
                 key={`userTopsters-group-${i}`}
                 className={classes.topstersSection}
               >
@@ -293,7 +291,7 @@ const Main: React.FC<Props> = ({
                   </CSSTransition>
                 ))}
                 <div ref={elementRef} />
-              </Element>
+              </div>
             ))}
           </div>
           {bookmarks.length ? (

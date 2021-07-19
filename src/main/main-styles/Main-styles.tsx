@@ -11,10 +11,8 @@ const styles = createStyles({
   BackButton: {
     color: 'white',
     position: 'relative',
-    cursor: 'pointer',
     top: 10,
     margin: '1rem 0',
-    // left: 25,
   },
   root: {
     backgroundColor: 'rgb(23,23,26)',
