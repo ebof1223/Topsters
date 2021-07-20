@@ -47,6 +47,8 @@ interface Props {
     dotsVerticalActive: string;
     dotsVerticalInactive: string;
     dotContainerVertical: string;
+    BookmarkTitle: string;
+    BookmarkCapacity: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -81,7 +83,6 @@ const Main: React.FC<Props> = ({
   const [currentTopSection, setCurrentTopSection] = useState(null);
   const [currentRecIndex, setCurrentRecIndex] = useState(0);
   const [currentTopsterIndex, setCurrentTopsterIndex] = useState(null);
-  // var onScreen: boolean;
 
   const toTopster = (id: string, type: string) => {
     history.push(`/${type}/${id}`);
@@ -265,12 +266,19 @@ const Main: React.FC<Props> = ({
               </Fab>
             </Tooltip>
           </div>
+          <div className={classes.BookmarkTitle}>
+            <h2>
+              Up Next{' '}
+              <span className={classes.BookmarkCapacity}>
+                <sup>{`${bookmarks.length - 1}`}</sup> &frasl; <sub>9</sub>
+              </span>
+            </h2>
+          </div>
         </div>
         <div className={classes.subMain}>
           <div className={classes.dotContainerVertical}>
             {dotIndicators('topsters')}
           </div>
-          {/* <<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
           <div className={classes.UserTopsters} ref={TopsterContainerRef}>
             {sectionizedPer8Item().map((group, i) => (
               <div
@@ -293,6 +301,7 @@ const Main: React.FC<Props> = ({
               </div>
             ))}
           </div>
+
           {bookmarks.length ? (
             <div key={bookmarks[0].id} className={classes.AOTDContainer}>
               <Tooltip title="Rearrange">

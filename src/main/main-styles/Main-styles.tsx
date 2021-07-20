@@ -151,7 +151,10 @@ const styles = createStyles({
     fontFamily: 'Merriweather, serif',
     marginTop: '4rem',
     display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
     alignItems: 'center',
+    justifyContent: 'start',
   },
   UserTopsters: {
     display: 'flex',
@@ -174,6 +177,15 @@ const styles = createStyles({
     alignItems: 'center',
     margin: '1rem auto',
   },
+  BookmarkTitle: {
+    display: 'flex',
+    flexDirection: 'row',
+    color: '#fff',
+    fontFamily: 'Merriweather, serif',
+    alignSelf: 'center',
+    marginLeft: '57%',
+  },
+  BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
   AOTDContainer: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
