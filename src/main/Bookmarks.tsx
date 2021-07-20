@@ -5,12 +5,15 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import styles from './main-styles/Bookmarks-styles';
 import BookmarksContainer from './BookmarksContainer';
 import { arrayMove } from 'react-sortable-hoc';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 interface Props {
   classes: {
     root: string;
     topster: string;
     BackButton: string;
+    PriorityContainer: string;
+    PriorityText: string;
   };
   bookmarks: TopsterTemplate[];
   setBookmarks: any;
@@ -44,6 +47,10 @@ const Bookmarks: React.FC<Props> = ({
         <Tooltip title="Home">
           <ArrowBackIcon fontSize="large" onClick={() => history.goBack()} />
         </Tooltip>
+      </div>
+      <div className={classes.PriorityContainer}>
+        <KeyboardBackspaceIcon color="primary" fontSize="large" />
+        <h2 className={classes.PriorityText}>Priority</h2>
       </div>
       <BookmarksContainer
         axis="xy"

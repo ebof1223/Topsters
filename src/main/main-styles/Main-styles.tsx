@@ -159,7 +159,7 @@ const styles = createStyles({
     overflowY: 'hidden',
     overflowX: 'hidden',
     scrollbarWidth: 'none',
-    scrollSnapType: 'y mandatory',
+    // scrollSnapType: 'y mandatory',
     height: '400px',
     width: '800px',
   },
