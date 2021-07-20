@@ -217,7 +217,7 @@ const Main: React.FC<Props> = ({
           <TransitionGroup className={classes.RecommendedTopsters}>
             {sectionizedPer5Item().map((group, i) => (
               <CSSTransition
-                // classNames="fade"
+                classNames="fade"
                 timeout={500}
                 key={`recommended-group-${i}`}
               >

@@ -21,7 +21,6 @@ interface Props {
   setNewTopsters: (input: AlbumTemplate[]) => void;
   newTopstersHistory: DoublyLinkedList | any;
   setCurrentNode: (input: {}) => void;
-  ////FIX
   currentNode:
     | {
         data: Node;

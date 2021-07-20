@@ -44,7 +44,6 @@ const Navbar: React.FC<Props> = ({
         ].bookmarked
       : null
   );
-
   useEffect(() => {
     if (!bookmarks) return;
     let currentRecommendedTopster =
@@ -85,10 +84,13 @@ const Navbar: React.FC<Props> = ({
           />
         </Tooltip>
       );
-    if (url.includes('bookmarked'))
+    if (url.includes('bookmarks'))
       return (
         <Tooltip title={'Rearrange'}>
-          <CompareArrowsIcon className={classes.shuffle} />
+          <CompareArrowsIcon
+            className={classes.shuffle}
+            onClick={() => history.push('/bookmarks')}
+          />
         </Tooltip>
       );
     return (
