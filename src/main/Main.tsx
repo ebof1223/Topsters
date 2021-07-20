@@ -27,7 +27,7 @@ interface Props {
     UserTopsters: string;
     RecommendedTitle: string;
     RecommendedTitleContainer: string;
-    UserTitleContainer: string;
+    subMainTitle: string;
     BackButton: string;
     subMain: string;
     AOTDContainer: string;
@@ -117,21 +117,14 @@ const Main: React.FC<Props> = ({
     }, 100);
   };
 
-  const sectionizedPer5Item = () => {
-    let recommendedCopy = [...recommended];
-    let sectionGrouping = [];
-    while (recommendedCopy.length)
-      sectionGrouping.push(recommendedCopy.splice(0, 5));
-    return sectionGrouping;
+  const divideBySection = (type: typeof recommended | typeof topsters) => {
+    var sectionLength = type === recommended ? 5 : 8;
+    let copy = [...type];
+    let grouping = [];
+    while (copy.length) grouping.push(copy.splice(0, sectionLength));
+    return grouping;
   };
-
-  const sectionizedPer8Item = () => {
-    let userTopstersCopy = [...topsters];
-    let sectionGrouping = [];
-    while (userTopstersCopy.length)
-      sectionGrouping.push(userTopstersCopy.splice(0, 8));
-    return sectionGrouping;
-  };
+  // dot navigation
   const dotIndicators = (type: string) => {
     var dotCount: Number[];
     type === 'recommended'
@@ -216,7 +209,8 @@ const Main: React.FC<Props> = ({
             onClick={() => handleArrows('previous')}
           />
           <TransitionGroup className={classes.RecommendedTopsters}>
-            {sectionizedPer5Item().map((group, i) => (
+            {divideBySection(recommended).map((group, i) => (
+              // Recommended Sectional
               <CSSTransition
                 classNames="fade"
                 timeout={500}
@@ -250,7 +244,8 @@ const Main: React.FC<Props> = ({
             onClick={() => handleArrows('next')}
           />
         </div>
-        <div className={classes.UserTitleContainer}>
+        {/* submain container titles */}
+        <div className={classes.subMainTitle}>
           <h2>My Topsters</h2>
           <div>
             <Tooltip title="Add">
@@ -275,12 +270,14 @@ const Main: React.FC<Props> = ({
             </h2>
           </div>
         </div>
+        {/* submain-body */}
         <div className={classes.subMain}>
           <div className={classes.dotContainerVertical}>
             {dotIndicators('topsters')}
           </div>
           <div className={classes.UserTopsters} ref={TopsterContainerRef}>
-            {sectionizedPer8Item().map((group, i) => (
+            {divideBySection(topsters).map((group, i) => (
+              // Topster Sectional
               <div
                 key={`userTopsters-group-${i}`}
                 className={classes.topstersSection}
@@ -301,7 +298,7 @@ const Main: React.FC<Props> = ({
               </div>
             ))}
           </div>
-
+          {/* UpNext */}
           {bookmarks.length ? (
             <div key={bookmarks[0].id} className={classes.AOTDContainer}>
               <Tooltip title="Rearrange">

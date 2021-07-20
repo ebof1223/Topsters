@@ -146,7 +146,7 @@ const styles = createStyles({
     opacity: '0.3',
   },
 
-  UserTitleContainer: {
+  subMainTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     marginTop: '4rem',

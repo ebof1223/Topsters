@@ -61,5 +61,4 @@ const Bookmarks: React.FC<Props> = ({
     </div>
   );
 };
-
 export default withStyles(styles)(Bookmarks);
