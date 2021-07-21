@@ -13,6 +13,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import DotNavigation from './DotNavigation';
 // import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 // import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
@@ -41,12 +42,6 @@ interface Props {
     topstersSection: string;
     recommendedArrowVisible: string;
     recommendedArrowHidden: string;
-    dotContainerHorizontal: string;
-    dotsHorizontalActive: string;
-    dotsHorizontalInactive: string;
-    dotsVerticalActive: string;
-    dotsVerticalInactive: string;
-    dotContainerVertical: string;
     BookmarkTitle: string;
     BookmarkCapacity: string;
   };
@@ -82,7 +77,7 @@ const Main: React.FC<Props> = ({
   const [currentRecSection, setCurrentRecSection] = useState(null);
   const [currentTopSection, setCurrentTopSection] = useState(null);
   const [currentRecIndex, setCurrentRecIndex] = useState(0);
-  const [currentTopsterIndex, setCurrentTopsterIndex] = useState(null);
+  const [currentTopIndex, setCurrentTopIndex] = useState(null);
 
   const toTopster = (id: string, type: string) => {
     history.push(`/${type}/${id}`);
@@ -92,14 +87,13 @@ const Main: React.FC<Props> = ({
     setCurrentRecSection(
       RecommendedSectionalRef.current.parentElement.childNodes[currentRecIndex]
     );
+    // matters if we want navigation arrows
     setCurrentTopSection(
       TopsterContainerRef.current.childNodes[
         TopsterContainerRef.current.childNodes.length - 1
       ]
     );
-
-    setCurrentTopsterIndex(TopsterContainerRef.current.childNodes.length - 1);
-
+    setCurrentTopIndex(TopsterContainerRef.current.childNodes.length - 1);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -124,47 +118,6 @@ const Main: React.FC<Props> = ({
     while (copy.length) grouping.push(copy.splice(0, sectionLength));
     return grouping;
   };
-  // dot navigation
-  const dotIndicators = (type: string) => {
-    var dotCount: Number[];
-    type === 'recommended'
-      ? (dotCount = new Array(Math.ceil(recommended.length / 5))).fill(0)
-      : (dotCount = new Array(Math.ceil(topsters.length / 8))).fill(0);
-    return (
-      <>
-        {dotCount.map((item: null, i: number) => (
-          <div
-            className={
-              (type === 'recommended' &&
-                (i === currentRecIndex
-                  ? classes.dotsHorizontalActive
-                  : classes.dotsHorizontalInactive)) ||
-              (type === 'topsters' &&
-                (i === currentTopsterIndex
-                  ? classes.dotsVerticalActive
-                  : classes.dotsVerticalInactive))
-            }
-            key={`recommended-dot-${i}`}
-            onClick={() => {
-              if (type === 'recommended') {
-                let element =
-                  RecommendedSectionalRef.current.parentElement.childNodes[i];
-                element.scrollIntoView({ behavior: 'smooth' });
-                setCurrentRecSection(element);
-                setCurrentRecIndex(i);
-              }
-              if (type === 'topsters') {
-                let element = TopsterContainerRef.current.childNodes[i];
-                element.scrollIntoView({ behavior: 'smooth' });
-                setCurrentTopSection(element);
-                setCurrentTopsterIndex(i);
-              }
-            }}
-          />
-        ))}
-      </>
-    );
-  };
 
   const handleArrows = (direction: string) => {
     if (direction === 'next' && currentRecSection.nextSibling) {
@@ -178,7 +131,6 @@ const Main: React.FC<Props> = ({
       setCurrentRecIndex(currentRecIndex - 1);
     }
   };
-
   return (
     <div className={classes.root}>
       <div className={classes.BackButton}>
@@ -194,9 +146,19 @@ const Main: React.FC<Props> = ({
         <nav className={classes.nav} />
         <div className={classes.RecommendedTitleContainer}>
           <h2 className={classes.RecommendedTitle}>Recommended</h2>
-          <div className={classes.dotContainerHorizontal}>
-            {dotIndicators('recommended')}
-          </div>
+          <DotNavigation
+            type={recommended}
+            recommended={recommended}
+            topsters={topsters}
+            currentRecIndex={currentRecIndex}
+            setCurrentRecSection={setCurrentRecSection}
+            setCurrentRecIndex={setCurrentRecIndex}
+            currentTopsterIndex={currentTopIndex}
+            setCurrentTopSection={setCurrentTopSection}
+            setCurrentTopIndex={setCurrentTopIndex}
+            RecommendedSectionalRef={RecommendedSectionalRef}
+            TopsterContainerRef={TopsterContainerRef}
+          />
         </div>
         <div className={classes.RecommendedContainer}>
           <ArrowLeftIcon
@@ -272,9 +234,19 @@ const Main: React.FC<Props> = ({
         </div>
         {/* submain-body */}
         <div className={classes.subMain}>
-          <div className={classes.dotContainerVertical}>
-            {dotIndicators('topsters')}
-          </div>
+          <DotNavigation
+            type={topsters}
+            recommended={recommended}
+            topsters={topsters}
+            currentRecIndex={currentRecIndex}
+            setCurrentRecSection={setCurrentRecSection}
+            setCurrentRecIndex={setCurrentRecIndex}
+            currentTopsterIndex={currentTopIndex}
+            setCurrentTopSection={setCurrentTopSection}
+            setCurrentTopIndex={setCurrentTopIndex}
+            RecommendedSectionalRef={RecommendedSectionalRef}
+            TopsterContainerRef={TopsterContainerRef}
+          />
           <div className={classes.UserTopsters} ref={TopsterContainerRef}>
             {divideBySection(topsters).map((group, i) => (
               // Topster Sectional
