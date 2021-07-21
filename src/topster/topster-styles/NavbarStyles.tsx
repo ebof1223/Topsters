@@ -25,7 +25,6 @@ const styles = createStyles({
     cursor: 'pointer',
     color: '#91a7ff',
   },
-  shuffle: { marginRight: '3rem', cursor: 'pointer', color: 'black' },
 });
 
 export default styles;

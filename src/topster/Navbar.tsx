@@ -8,7 +8,6 @@ import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
 import { TopsterTemplate } from '../interface';
-import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 
 interface Props {
   classes: {
@@ -16,7 +15,6 @@ interface Props {
     Title: string;
     Icon: string;
     IconOn: string;
-    shuffle: string;
   };
   title: string;
   history: { push: (input: string) => void };
@@ -81,15 +79,6 @@ const Navbar: React.FC<Props> = ({
           <FavoriteIcon
             className={isBookmarked ? classes.IconOn : classes.Icon}
             onClick={handleBookmarkToggle}
-          />
-        </Tooltip>
-      );
-    if (url.includes('bookmarks'))
-      return (
-        <Tooltip title={'Rearrange'}>
-          <CompareArrowsIcon
-            className={classes.shuffle}
-            onClick={() => history.push('/bookmarks')}
           />
         </Tooltip>
       );

@@ -49,6 +49,7 @@ const Topster: React.FC<Props> = ({
     listToBeRendered = recommended;
   }
   if (window.location.href.includes('bookmarks')) listToBeRendered = bookmarks;
+
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
     setSelectedAlbum(albums[index]);

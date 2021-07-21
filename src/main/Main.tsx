@@ -100,7 +100,6 @@ const Main: React.FC<Props> = ({
   const handleDeleteConfirmation = () => {
     let newTopster = topsters.filter((item) => item.id !== toBeDeleted);
     setTopsters([...newTopster]);
-
     setDeleteDialog(!deleteDialog);
   };
 
@@ -280,17 +279,16 @@ const Main: React.FC<Props> = ({
                   color="primary"
                 />
               </Tooltip>
-              {bookmarks.length &&
-                bookmarks[0].albums.map((item) => (
-                  <div
-                    onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
-                    className={classes.firstBookmarkedItem}
-                    style={{
-                      background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
-                    }}
-                    key={item.name}
-                  />
-                ))}
+              {bookmarks[0].albums.map((item) => (
+                <div
+                  onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
+                  className={classes.firstBookmarkedItem}
+                  style={{
+                    background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
+                  }}
+                  key={item.name}
+                />
+              ))}
             </div>
           ) : (
             <div className={classes.AOTDContainerEmpty} key={'bookmarks'}>

@@ -1,7 +1,7 @@
 import { Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import { TopsterTemplate } from '../interface';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import HomeIcon from '@material-ui/icons/Home';
 import styles from './main-styles/Bookmarks-styles';
 import BookmarksContainer from './BookmarksContainer';
 import { arrayMove } from 'react-sortable-hoc';
@@ -18,7 +18,6 @@ interface Props {
   bookmarks: TopsterTemplate[];
   setBookmarks: any;
   history: {
-    goBack: () => void;
     push: (input: string) => void;
   };
 }
@@ -45,7 +44,7 @@ const Bookmarks: React.FC<Props> = ({
     <div className={classes.root}>
       <div className={classes.BackButton}>
         <Tooltip title="Home">
-          <ArrowBackIcon fontSize="large" onClick={() => history.goBack()} />
+          <HomeIcon fontSize="large" onClick={() => history.push('/home')} />
         </Tooltip>
       </div>
       <div className={classes.PriorityContainer}>
