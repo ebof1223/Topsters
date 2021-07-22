@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { Paper } from '@material-ui/core';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
 import Album from './Album';
 import Navbar from './Navbar';
@@ -43,18 +43,24 @@ const Topster: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
 }) => {
-  var listToBeRendered = topsters;
+  console.log(bookmarks);
 
-  if (window.location.href.includes('recommended')) {
-    listToBeRendered = recommended;
-  }
-  if (window.location.href.includes('bookmarks')) listToBeRendered = bookmarks;
-
+  const [listToBeRendered, setListToRendered] = useState(topsters);
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
     setSelectedAlbum(albums[index]);
   };
-
+  useEffect(() => {
+    if (window.location.href.includes('recommended')) {
+      setListToRendered(recommended);
+    }
+    if (window.location.href.includes('bookmarks'))
+      setListToRendered(bookmarks);
+    return () => {
+      setListToRendered(topsters);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const topsterIndex = (input: string, direction: string) => {
     if (direction === 'left') {
       for (let [index, topster] of listToBeRendered.entries()) {

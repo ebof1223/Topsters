@@ -1,4 +1,4 @@
-export interface AlbumTemplate {
+interface AlbumTemplate {
   tracks: any;
   artist: { name: string };
   image: {
@@ -12,10 +12,12 @@ export interface AlbumTemplate {
   length: number;
 }
 
-export interface TopsterTemplate {
+interface TopsterTemplate {
   title: string;
   id: string;
   albums: AlbumTemplate[];
   bookmarked?: boolean;
   some?: (item: { title: string }) => boolean;
 }
+
+export type {AlbumTemplate, TopsterTemplate}

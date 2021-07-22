@@ -15,7 +15,7 @@ import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import DotNavigation from './DotNavigation';
 // import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
-// import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+// import ArrowDropDownIcon from '@material-ui/bookmarksicons/ArrowDropDown';
 
 interface Props {
   classes: {
@@ -226,7 +226,7 @@ const Main: React.FC<Props> = ({
             <h2>
               Up Next{' '}
               <span className={classes.BookmarkCapacity}>
-                <sup>{`${bookmarks.length - 1}`}</sup> &frasl; <sub>9</sub>
+                <sup>{`${bookmarks.length}`}</sup> &frasl; <sub>9</sub>
               </span>
             </h2>
           </div>
