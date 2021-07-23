@@ -44,6 +44,7 @@ interface Props {
   setOpenLandingModal: (i: boolean) => void;
   bookmarks: TopsterTemplate[];
 }
+
 const Main: React.FC<Props> = ({
   topsters,
   history,
@@ -53,7 +54,6 @@ const Main: React.FC<Props> = ({
   setOpenLandingModal,
   bookmarks,
 }) => {
-  console.log(recommended);
   const RecommendedSectionalRef = useRef(null);
   const TopsterContainerRef = useRef(null);
 

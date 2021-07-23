@@ -56,7 +56,7 @@ const Search: React.FC<Props> = ({
       document.getElementById('fill').classList.remove(classes.fill);
       setTimeout(
         () => document.getElementById('fill').classList.add(classes.fill),
-        0
+        1
       );
       clearTimeout(timer);
       setIsTyping(true);

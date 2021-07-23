@@ -8,6 +8,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
 import { TopsterTemplate } from '../interface';
+import { Alert } from '@material-ui/lab';
+// import BookmarksExceededModal from '../../BookmarksExceededModal';
 
 interface Props {
   classes: {
@@ -40,23 +42,20 @@ const Navbar: React.FC<Props> = ({
   const [isBookmarked, setIsBookmarked] = useState(
     bookmarks ? recommended[currentBookmark].bookmarked : null
   );
-  ///TTHIS IS THE PROBLEM
-  console.log(bookmarks);
+  const [exceededError, setExceededError] = useState(false);
+
   useEffect(() => {
     if (!bookmarks) return;
     let currentRecommendedTopster = recommended[currentBookmark];
     currentRecommendedTopster.bookmarked = isBookmarked;
-    // setBookmarks([]);
     if (isBookmarked) {
       if (bookmarks.every((item) => item.id !== currentRecommendedTopster.id)) {
-        console.log('bookmark added');
         setBookmarks([...bookmarks, currentRecommendedTopster]);
       }
     }
     if (!isBookmarked) {
       for (let [index, item] of bookmarks.entries()) {
         if (currentRecommendedTopster.id === item.id) {
-          console.log('removed');
           bookmarks.splice(index, 1);
           setBookmarks(bookmarks);
           break;
@@ -66,11 +65,11 @@ const Navbar: React.FC<Props> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isBookmarked]);
 
-  const handleEdit = () => {
-    history.push(`/topsters/edit/${id}`);
-  };
-
   const handleBookmarkToggle = () => {
+    if (!isBookmarked && bookmarks.length > 8) {
+      console.log('exceeded');
+      return;
+    }
     setIsBookmarked(!isBookmarked);
     if (!isBookmarked) {
       setOpenSnackBar(true);
@@ -82,7 +81,12 @@ const Navbar: React.FC<Props> = ({
     if (url.includes('topsters'))
       return (
         <Tooltip title="Edit">
-          <EditIcon className={classes.Icon} onClick={handleEdit} />
+          <EditIcon
+            className={classes.Icon}
+            onClick={() => {
+              history.push(`/topsters/edit/${id}`);
+            }}
+          />
         </Tooltip>
       );
     if (url.includes('recommended'))
@@ -103,7 +107,7 @@ const Navbar: React.FC<Props> = ({
           opacity: 0,
           marginLeft: '1.4rem',
         }}
-      ></div>
+      />
     );
   };
 
