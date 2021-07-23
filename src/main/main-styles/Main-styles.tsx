@@ -43,11 +43,7 @@ const styles = createStyles({
     //   width: '75%',
     // },
   },
-  Fab: {
-    display: 'flex',
-    top: '40%',
-    left: '50%',
-  },
+
   nav: {
     display: 'flex',
     width: '100%',
@@ -98,16 +94,6 @@ const styles = createStyles({
     pointerEvents: 'none',
   },
 
-  subMainTitle: {
-    color: '#fff',
-    fontFamily: 'Merriweather, serif',
-    marginTop: '4rem',
-    display: 'flex',
-    flexDirection: 'row',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'start',
-  },
   UserTopsters: {
     display: 'flex',
     flexDirection: 'column',
@@ -129,15 +115,6 @@ const styles = createStyles({
     alignItems: 'center',
     margin: '1rem auto',
   },
-  BookmarkTitle: {
-    display: 'flex',
-    flexDirection: 'row',
-    color: '#fff',
-    fontFamily: 'Merriweather, serif',
-    alignSelf: 'center',
-    marginLeft: '57%',
-  },
-  BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
 
   AOTDTitleContainer: {
     color: '#fff',

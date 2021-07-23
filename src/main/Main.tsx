@@ -1,10 +1,9 @@
+import SubMainHeading from './SubMainHeading';
+import { TopsterTemplate } from '../interface';
 import { useEffect, useRef, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { TopsterTemplate } from '../interface';
 import UpNext from './UpNext';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './main-styles/Main-styles';
 import UserTopsters from './UserTopsters';
@@ -24,30 +23,24 @@ interface Props {
     OuterContainer: string;
     nav: string;
     RecommendedTopsters: string;
-    Fab: string;
     UserTopsters: string;
     RecommendedTitle: string;
     RecommendedTitleContainer: string;
-    subMainTitle: string;
     BackButton: string;
     subMain: string;
-
     AOTDTitleContainer: string;
-
     RecommendedSection: string;
     RecommendedContainer: string;
     topstersSection: string;
     recommendedArrowVisible: string;
     recommendedArrowHidden: string;
-    BookmarkTitle: string;
-    BookmarkCapacity: string;
   };
   topsters: TopsterTemplate[];
   history: {
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
-  recommended: any;
+  recommended?: any;
   setOpenLandingModal: (i: boolean) => void;
   bookmarks: TopsterTemplate[];
 }
@@ -60,6 +53,7 @@ const Main: React.FC<Props> = ({
   setOpenLandingModal,
   bookmarks,
 }) => {
+  console.log(recommended);
   const RecommendedSectionalRef = useRef(null);
   const TopsterContainerRef = useRef(null);
 
@@ -199,32 +193,7 @@ const Main: React.FC<Props> = ({
             onClick={() => handleArrows('next')}
           />
         </div>
-        {/* submain container titles */}
-        <div className={classes.subMainTitle}>
-          <h2>My Topsters</h2>
-          <div>
-            <Tooltip title="Add">
-              <Fab
-                aria-label="add"
-                size="small"
-                className={classes.Fab}
-                onClick={() => {
-                  history.push('/topsters/new');
-                }}
-              >
-                <AddIcon />
-              </Fab>
-            </Tooltip>
-          </div>
-          <div className={classes.BookmarkTitle}>
-            <h2>
-              Up Next{' '}
-              <span className={classes.BookmarkCapacity}>
-                <sup>{`${bookmarks.length}`}</sup> &frasl; <sub>9</sub>
-              </span>
-            </h2>
-          </div>
-        </div>
+        <SubMainHeading bookmarks={bookmarks} history={history} />
         {/* submain-body */}
         <div className={classes.subMain}>
           <DotNavigation
