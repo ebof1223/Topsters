@@ -6,9 +6,11 @@ import styles from './topster-styles/NavbarStyles';
 import EditIcon from '@material-ui/icons/Edit';
 import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import ToggleBookmarkSnackBar from '../ToggleBookmarkSnackBar';
+import ToggleBookmarkSnackBar from './ToggleBookmarkSnackBar';
 import { TopsterTemplate } from '../interface';
 import { Alert } from '@material-ui/lab';
+import ToggleBookmarkExceededSnackBar from './ToggleBookmarkExceededSnackBar';
+
 // import BookmarksExceededModal from '../../BookmarksExceededModal';
 
 interface Props {
@@ -36,13 +38,13 @@ const Navbar: React.FC<Props> = ({
   recommended,
 }) => {
   const [openSnackBar, setOpenSnackBar] = useState(false);
+  const [openExceededError, setOpenExceededError] = useState(false);
   const currentBookmark = recommended
     ? recommended.findIndex((item: { id: string }) => item.id === id)
     : null;
   const [isBookmarked, setIsBookmarked] = useState(
     bookmarks ? recommended[currentBookmark].bookmarked : null
   );
-  const [exceededError, setExceededError] = useState(false);
 
   useEffect(() => {
     if (!bookmarks) return;
@@ -67,7 +69,7 @@ const Navbar: React.FC<Props> = ({
 
   const handleBookmarkToggle = () => {
     if (!isBookmarked && bookmarks.length > 8) {
-      console.log('exceeded');
+      setOpenExceededError(true);
       return;
     }
     setIsBookmarked(!isBookmarked);
@@ -116,6 +118,10 @@ const Navbar: React.FC<Props> = ({
       <ToggleBookmarkSnackBar
         openSnackBar={openSnackBar}
         setOpenSnackBar={setOpenSnackBar}
+      />
+      <ToggleBookmarkExceededSnackBar
+        openExceededError={openExceededError}
+        setOpenExceededError={setOpenExceededError}
       />
       <header className={classes.Navbar}>
         <Link to={'/home'}>
