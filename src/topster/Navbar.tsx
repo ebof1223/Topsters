@@ -34,23 +34,35 @@ const Navbar: React.FC<Props> = ({
   recommended,
 }) => {
   const [openSnackBar, setOpenSnackBar] = useState(false);
-
+  const currentBookmark = recommended
+    ? recommended.findIndex((item: { id: string }) => item.id === id)
+    : null;
   const [isBookmarked, setIsBookmarked] = useState(
-    bookmarks
-      ? recommended[
-          recommended.findIndex((item: { id: string }) => item.id === id)
-        ].bookmarked
-      : null
+    bookmarks ? recommended[currentBookmark].bookmarked : null
   );
+  ///TTHIS IS THE PROBLEM
+  console.log(bookmarks);
   useEffect(() => {
     if (!bookmarks) return;
-    let currentRecommendedTopster =
-      recommended[
-        recommended.findIndex((item: { id: string }) => item.id === id)
-      ];
+    let currentRecommendedTopster = recommended[currentBookmark];
     currentRecommendedTopster.bookmarked = isBookmarked;
-    setBookmarks(recommended.filter((item: any) => item.bookmarked));
-
+    // setBookmarks([]);
+    if (isBookmarked) {
+      if (bookmarks.every((item) => item.id !== currentRecommendedTopster.id)) {
+        console.log('bookmark added');
+        setBookmarks([...bookmarks, currentRecommendedTopster]);
+      }
+    }
+    if (!isBookmarked) {
+      for (let [index, item] of bookmarks.entries()) {
+        if (currentRecommendedTopster.id === item.id) {
+          console.log('removed');
+          bookmarks.splice(index, 1);
+          setBookmarks(bookmarks);
+          break;
+        }
+      }
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isBookmarked]);
 

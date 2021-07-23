@@ -43,8 +43,6 @@ const Topster: React.FC<Props> = ({
   bookmarks,
   setBookmarks,
 }) => {
-  console.log(bookmarks);
-
   const [listToBeRendered, setListToRendered] = useState(topsters);
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {
