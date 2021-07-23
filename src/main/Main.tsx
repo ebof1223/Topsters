@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { TopsterTemplate } from '../interface';
+import UpNext from './UpNext';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -10,7 +11,6 @@ import UserTopsters from './UserTopsters';
 import DeleteModal from './DeleteModal';
 import Recommended from './Recommended';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import DotNavigation from './DotNavigation';
@@ -31,12 +31,9 @@ interface Props {
     subMainTitle: string;
     BackButton: string;
     subMain: string;
-    AOTDContainer: string;
-    AOTDContainerEmpty: string;
+
     AOTDTitleContainer: string;
-    CompareArrowsIcon: string;
-    firstBookmarkedItem: string;
-    noBookmarks: string;
+
     RecommendedSection: string;
     RecommendedContainer: string;
     topstersSection: string;
@@ -47,7 +44,6 @@ interface Props {
   };
   topsters: TopsterTemplate[];
   history: {
-    goBack: () => void;
     push: (input: string) => void;
   };
   setTopsters: (input: TopsterTemplate[]) => void;
@@ -78,10 +74,6 @@ const Main: React.FC<Props> = ({
   const [currentTopSection, setCurrentTopSection] = useState(null);
   const [currentRecIndex, setCurrentRecIndex] = useState(0);
   const [currentTopIndex, setCurrentTopIndex] = useState(null);
-
-  const toTopster = (id: string, type: string) => {
-    history.push(`/${type}/${id}`);
-  };
 
   useEffect(() => {
     setCurrentRecSection(
@@ -184,7 +176,9 @@ const Main: React.FC<Props> = ({
                   {group.map((item: TopsterTemplate) => (
                     <Recommended
                       {...item}
-                      handleClick={() => toTopster(item.id, 'recommended')}
+                      handleClick={() =>
+                        history.push(`/recommended/${item.id}`)
+                      }
                       id={item.id}
                       recommended={recommended}
                       title={item.title}
@@ -257,7 +251,7 @@ const Main: React.FC<Props> = ({
                   <CSSTransition key={item.id} classNames="fade" timeout={500}>
                     <UserTopsters
                       {...item}
-                      handleClick={() => toTopster(item.id, 'topsters')}
+                      handleClick={() => history.push(`/topsters/${item.id}`)}
                       id={item.id}
                       deleteDialog={deleteDialog}
                       setDeleteDialog={setDeleteDialog}
@@ -269,32 +263,7 @@ const Main: React.FC<Props> = ({
               </div>
             ))}
           </div>
-          {/* UpNext */}
-          {bookmarks.length ? (
-            <div key={bookmarks[0].id} className={classes.AOTDContainer}>
-              <Tooltip title="Rearrange">
-                <CompareArrowsIcon
-                  className={classes.CompareArrowsIcon}
-                  onClick={() => history.push('/bookmarks')}
-                  color="primary"
-                />
-              </Tooltip>
-              {bookmarks[0].albums.map((item) => (
-                <div
-                  onClick={() => toTopster(bookmarks[0].id, 'bookmarks')}
-                  className={classes.firstBookmarkedItem}
-                  style={{
-                    background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
-                  }}
-                  key={item.name}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className={classes.AOTDContainerEmpty} key={'bookmarks'}>
-              <h3 className={classes.noBookmarks}>You're all caught up!</h3>
-            </div>
-          )}
+          <UpNext bookmarks={bookmarks} history={history} />
         </div>
       </div>
       <DeleteModal

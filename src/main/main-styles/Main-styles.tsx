@@ -98,8 +98,6 @@ const styles = createStyles({
     pointerEvents: 'none',
   },
 
- 
-
   subMainTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
@@ -140,49 +138,10 @@ const styles = createStyles({
     marginLeft: '57%',
   },
   BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
-  AOTDContainer: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gridAutoRows: 'repeat(3, 1fr)',
-    borderRadius: '5px',
-    border: '3px solid #91a7ff',
-    width: '400px',
-    height: '400px',
-    marginLeft: '5rem',
-    cursor: 'pointer',
-    position: 'relative',
-  },
-  AOTDContainerEmpty: {
-    borderRadius: '5px',
-    border: '3px solid #91a7ff',
-    width: '400px',
-    height: '400px',
-    marginLeft: '5rem',
-    cursor: 'pointer',
-    position: 'relative',
-    textAlign: 'center',
-  },
+
   AOTDTitleContainer: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
-  },
-  firstBookmarkedItem: {
-    height: '131.5px',
-    display: 'block ruby',
-  },
-  CompareArrowsIcon: {
-    position: 'absolute',
-    left: '85%',
-    top: '2%',
-    zIndex: 10,
-    fontSize: '50px',
-  },
-  noBookmarks: {
-    marginTop: '40%',
-    fontSize: '2rem',
-    color: '#fff',
-    fontFamily: 'Montserrat, sans-serif',
-    fontWeight: 'inherit',
   },
 });
 
