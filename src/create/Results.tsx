@@ -2,6 +2,9 @@ import { AlbumTemplate } from '../interface';
 import { withStyles } from '@material-ui/styles';
 import styles from './create-styles/ResultsStyles';
 import ResultAlbum from './ResultAlbum';
+import { useState } from 'react';
+import TopsterDuplicateSnackBar from './TopsterDuplicateSnackBar';
+import TopsterExceededSnackBar from './TopsterExceededSnackBar';
 
 interface Props {
   classes: {
@@ -34,6 +37,8 @@ const Results: React.FC<Props> = ({
   setNodesFromTail,
   results,
 }) => {
+  const [duplicateError, setDuplicateError] = useState(false);
+  const [exceededError, setExceededError] = useState(false);
   const addToToppings = (itemIdx: number) => {
     console.log(results[itemIdx]);
     if (
@@ -42,9 +47,11 @@ const Results: React.FC<Props> = ({
       )
     ) {
       console.log('DUPLICATE ERROR');
+      setDuplicateError(true);
       return;
     }
     if (newTopsters.length > 8) {
+      setExceededError(true);
       console.log('EXCEEDED MAX TOPPINGS VALUE');
       return;
     }
@@ -63,6 +70,14 @@ const Results: React.FC<Props> = ({
 
   return (
     <>
+      <TopsterDuplicateSnackBar
+        duplicateError={duplicateError}
+        setDuplicateError={setDuplicateError}
+      />
+      <TopsterExceededSnackBar
+        exceededError={exceededError}
+        setExceededError={setExceededError}
+      />
       <div className={classes.resultsContainer}>
         {results.map((item: AlbumTemplate, index: number) => (
           <ResultAlbum

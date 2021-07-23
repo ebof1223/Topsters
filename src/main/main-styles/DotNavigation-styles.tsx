@@ -28,7 +28,7 @@ const styles = createStyles({
     width: '10px',
     height: '10px',
     borderRadius: '50px',
-    background: 'rgb(38,46,80)',
+    background: 'rgb(38,46,67)',
     marginLeft: '1rem',
     opacity: '0.3',
   },
