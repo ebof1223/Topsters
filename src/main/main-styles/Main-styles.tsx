@@ -120,6 +120,19 @@ const styles = createStyles({
     color: '#fff',
     fontFamily: 'Merriweather, serif',
   },
+  topsterScrollIconOn: {
+    position: 'relative',
+    marginLeft: '35%',
+    '&:hover': {
+      transform: 'scale(2)',
+      cursor: 'pointer',
+    },
+  },
+  topsterScrollIconOff: {
+    position: 'relative',
+    marginLeft: '35%',
+    opacity: 0,
+  },
 });
 
 export default styles;

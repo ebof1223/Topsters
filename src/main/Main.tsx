@@ -13,8 +13,8 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import DotNavigation from './DotNavigation';
-// import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
-// import ArrowDropDownIcon from '@material-ui/bookmarksicons/ArrowDropDown';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 interface Props {
   classes: {
@@ -34,6 +34,8 @@ interface Props {
     topstersSection: string;
     recommendedArrowVisible: string;
     recommendedArrowHidden: string;
+    topsterScrollIconOn: string;
+    topsterScrollIconOff: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -104,7 +106,7 @@ const Main: React.FC<Props> = ({
     return grouping;
   };
 
-  const handleArrows = (direction: string) => {
+  const handleRecArrows = (direction: string) => {
     if (direction === 'next' && currentRecSection.nextSibling) {
       currentRecSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
       setCurrentRecSection(currentRecSection.nextSibling);
@@ -114,6 +116,18 @@ const Main: React.FC<Props> = ({
       currentRecSection.previousSibling?.scrollIntoView({ behavior: 'smooth' });
       setCurrentRecSection(currentRecSection.previousSibling);
       setCurrentRecIndex(currentRecIndex - 1);
+    }
+  };
+  const handleTopArrows = (direction: string) => {
+    if (direction === 'next' && currentTopSection.nextSibling) {
+      currentTopSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
+      setCurrentTopSection(currentTopSection.nextSibling);
+      setCurrentTopIndex(currentTopIndex + 1);
+    }
+    if (direction === 'previous' && currentTopSection.previousSibling) {
+      currentTopSection.previousSibling?.scrollIntoView({ behavior: 'smooth' });
+      setCurrentTopSection(currentTopSection.previousSibling);
+      setCurrentTopIndex(currentTopIndex - 1);
     }
   };
   return (
@@ -153,7 +167,7 @@ const Main: React.FC<Props> = ({
                 : classes.recommendedArrowHidden
             }
             color="primary"
-            onClick={() => handleArrows('previous')}
+            onClick={() => handleRecArrows('previous')}
           />
           <TransitionGroup className={classes.RecommendedTopsters}>
             {divideBySection(recommended).map((group, i) => (
@@ -190,11 +204,21 @@ const Main: React.FC<Props> = ({
                 : classes.recommendedArrowHidden
             }
             color="primary"
-            onClick={() => handleArrows('next')}
+            onClick={() => handleRecArrows('next')}
           />
         </div>
         <SubMainHeading bookmarks={bookmarks} history={history} />
         {/* submain-body */}
+        {
+          <ExpandLessIcon
+            className={
+              currentTopSection.previousSibling
+                ? classes.topsterScrollIconOn
+                : classes.topsterScrollIconOff
+            }
+            onClick={() => handleTopArrows('previous')}
+          />
+        }
         <div className={classes.subMain}>
           <DotNavigation
             type={topsters}
@@ -234,6 +258,15 @@ const Main: React.FC<Props> = ({
           </div>
           <UpNext bookmarks={bookmarks} history={history} />
         </div>
+        {}
+        <ExpandMoreIcon
+          className={
+            currentTopSection.nextSibling
+              ? classes.topsterScrollIconOn
+              : classes.topsterScrollIconOff
+          }
+          onClick={() => handleTopArrows('next')}
+        />
       </div>
       <DeleteModal
         handleDeleteConfirmation={handleDeleteConfirmation}
