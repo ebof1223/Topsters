@@ -209,7 +209,7 @@ const Main: React.FC<Props> = ({
         </div>
         <SubMainHeading bookmarks={bookmarks} history={history} />
         {/* submain-body */}
-        {
+        {currentTopSection && (
           <ExpandLessIcon
             className={
               currentTopSection.previousSibling
@@ -218,7 +218,7 @@ const Main: React.FC<Props> = ({
             }
             onClick={() => handleTopArrows('previous')}
           />
-        }
+        )}
         <div className={classes.subMain}>
           <DotNavigation
             type={topsters}
@@ -258,15 +258,16 @@ const Main: React.FC<Props> = ({
           </div>
           <UpNext bookmarks={bookmarks} history={history} />
         </div>
-        {}
-        <ExpandMoreIcon
-          className={
-            currentTopSection.nextSibling
-              ? classes.topsterScrollIconOn
-              : classes.topsterScrollIconOff
-          }
-          onClick={() => handleTopArrows('next')}
-        />
+        {currentTopSection && (
+          <ExpandMoreIcon
+            className={
+              currentTopSection.nextSibling
+                ? classes.topsterScrollIconOn
+                : classes.topsterScrollIconOff
+            }
+            onClick={() => handleTopArrows('next')}
+          />
+        )}
       </div>
       <DeleteModal
         handleDeleteConfirmation={handleDeleteConfirmation}
