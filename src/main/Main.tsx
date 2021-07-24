@@ -18,9 +18,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 interface Props {
   classes: {
     root: string;
-    heading: string;
     OuterContainer: string;
-    nav: string;
     RecommendedTopsters: string;
     UserTopsters: string;
     RecommendedTitle: string;
@@ -140,7 +138,6 @@ const Main: React.FC<Props> = ({
             />
           </Tooltip>
         </div>
-        <nav className={classes.nav} />
         <div className={classes.RecommendedTitleContainer}>
           <h2 className={classes.RecommendedTitle}>Recommended</h2>
         </div>

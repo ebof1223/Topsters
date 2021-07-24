@@ -23,11 +23,6 @@ const styles = createStyles({
     overflow: 'none',
     width: '100%',
   },
-  heading: {
-    fontFamily: 'Montserrat, sans-serif',
-    fontSize: '3rem',
-    marginBottom: '3rem',
-  },
   OuterContainer: {
     display: 'flex',
     alignItems: 'flex-start',
@@ -44,25 +39,25 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       width: '410px',
+      transform: 'scale(0.9)',
     },
     // [sizes.down('sm')]: {
     //   width: '60%',
     // },
   },
 
-  nav: {
-    display: 'flex',
-    width: '100%',
-    justifyContent: 'space-between',
-    color: 'white',
-    padding: '3rem 0 4rem 0',
-    flexDirection: 'row',
-  },
   RecommendedTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
   },
-  RecommendedTitleContainer: { display: 'flex' },
+  RecommendedTitleContainer: {
+    marginTop: '5rem',
+    display: 'flex',
+    [sizes.down('xs')]: {
+      margin: 'auto',
+      marginTop: '-2rem',
+    },
+  },
   RecommendedTopsters: {
     margin: '2rem auto',
     display: 'flex',
@@ -83,17 +78,16 @@ const styles = createStyles({
     // [sizes.down('md')]: {
     //   gridTemplateColumns: 'repeat(2, 0%)',
     // },
-    // [sizes.down('xs')]: {
-    //   gridTemplateColumns: 'repeat(1, 100%)',
-    //   gridGap: '1.4rem',
-    // },
+    [sizes.down('xs')]: {
+      margin: 'auto',
+      marginTop: 0,
+    },
   },
 
   RecommendedContainer: {
     display: 'flex',
     alignItems: 'center',
     background: 'yellow',
-    // margin: '0 2rem',
     [sizes.down('xl')]: {
       width: '100%',
     },
