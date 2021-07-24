@@ -1,5 +1,5 @@
 import { createStyles } from '@material-ui/styles';
-// import sizes from '../../styles/sizes';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   '@global': {
@@ -21,9 +21,7 @@ const styles = createStyles({
     alignContent: 'flex-start',
     justifyContent: 'center',
     overflow: 'none',
-    // overflowY: 'auto',
-    // overflowX: 'hidden',
-    // paddingBottom: '3rem',
+    width: '100%',
   },
   heading: {
     fontFamily: 'Montserrat, sans-serif',
@@ -34,13 +32,21 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    // flexWrap: 'wrap',
-
-    // [sizes.down('xl')]: {
-    //   width: '80%',
-    // },
-    // [sizes.down('xs')]: {
-    //   width: '75%',
+    backgroundColor: 'red',
+    [sizes.down('xl')]: {
+      width: '1210px',
+    },
+    [sizes.down('lg')]: {
+      width: '940px',
+    },
+    [sizes.down('md')]: {
+      width: '670px',
+    },
+    [sizes.down('xs')]: {
+      width: '410px',
+    },
+    // [sizes.down('sm')]: {
+    //   width: '60%',
     // },
   },
 
@@ -58,26 +64,43 @@ const styles = createStyles({
   },
   RecommendedTitleContainer: { display: 'flex' },
   RecommendedTopsters: {
-    marginTop: '2rem',
+    margin: '2rem auto',
     display: 'flex',
     boxSizing: 'border-box',
     flexDirection: 'row',
     overflow: 'hidden',
     scrollSnapType: 'x mandatory',
-    width: '1340px',
+    width: '83.75rem',
     scrollbarWidth: 'none',
     alignItems: 'center',
+    // [sizes.down('xl')]: {
+    //   minWidth: '1100px',
+    // },
+    // [sizes.down('lg')]: {
+    //   width: '87.5%',
+    // },
 
-    // height: 'calc(100vh - 4rem)',
-    //   [sizes.down('md')]: {
-    //     // gridTemplateColumns: 'repeat(2, 50%)',
-    //   },
-    //   [sizes.down('xs')]: {
-    //     // gridTemplateColumns: 'repeat(1, 100%)',
-    //     gridGap: '1.4rem',
-    //   },
+    // [sizes.down('md')]: {
+    //   gridTemplateColumns: 'repeat(2, 0%)',
+    // },
+    // [sizes.down('xs')]: {
+    //   gridTemplateColumns: 'repeat(1, 100%)',
+    //   gridGap: '1.4rem',
+    // },
   },
-  RecommendedContainer: { display: 'flex', alignItems: 'center' },
+
+  RecommendedContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    background: 'yellow',
+    // margin: '0 2rem',
+    [sizes.down('xl')]: {
+      width: '100%',
+    },
+    // [sizes.down('lg')]: {
+    //   width: '70%',
+    // },
+  },
   RecommendedSection: {
     display: 'flex',
     flexDirection: 'row',
@@ -93,7 +116,6 @@ const styles = createStyles({
     opacity: '0.2',
     pointerEvents: 'none',
   },
-
   UserTopsters: {
     display: 'flex',
     flexDirection: 'column',
@@ -103,6 +125,12 @@ const styles = createStyles({
     // scrollSnapType: 'y mandatory',
     height: '400px',
     width: '800px',
+    [sizes.down('xl')]: {
+      width: '48%',
+    },
+    // [sizes.down('lg')]: {
+    //   width: '57%',
+    // },
   },
   topstersSection: {
     display: 'grid',

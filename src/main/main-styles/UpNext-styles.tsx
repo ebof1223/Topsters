@@ -28,6 +28,8 @@ const styles = createStyles({
     top: '2%',
     zIndex: 10,
     fontSize: '50px',
+    color: '#91a7ff',
+    borderRadius: '15px',
   },
   firstBookmarkedItem: {
     height: '131.5px',

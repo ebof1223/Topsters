@@ -10,7 +10,6 @@ const styles = createStyles({
       transform: 'translateY(-300%)',
     },
   },
-
   Scene: {
     width: '100vw',
     height: '100vh',

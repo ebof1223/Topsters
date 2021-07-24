@@ -12,7 +12,6 @@ import Recommended from './Recommended';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import DotNavigation from './DotNavigation';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -75,7 +74,6 @@ const Main: React.FC<Props> = ({
     setCurrentRecSection(
       RecommendedSectionalRef.current.parentElement.childNodes[currentRecIndex]
     );
-    // matters if we want navigation arrows
     setCurrentTopSection(
       TopsterContainerRef.current.childNodes[
         TopsterContainerRef.current.childNodes.length - 1
@@ -132,32 +130,19 @@ const Main: React.FC<Props> = ({
   };
   return (
     <div className={classes.root}>
-      <div className={classes.BackButton}>
-        <Tooltip title="Landing">
-          <ArrowBackIcon
-            fontSize="large"
-            onClick={handleLandingModal}
-            style={{ cursor: 'pointer' }}
-          />
-        </Tooltip>
-      </div>
       <div className={classes.OuterContainer}>
+        <div className={classes.BackButton}>
+          <Tooltip title="Landing">
+            <ArrowBackIcon
+              fontSize="large"
+              onClick={handleLandingModal}
+              style={{ cursor: 'pointer' }}
+            />
+          </Tooltip>
+        </div>
         <nav className={classes.nav} />
         <div className={classes.RecommendedTitleContainer}>
           <h2 className={classes.RecommendedTitle}>Recommended</h2>
-          <DotNavigation
-            type={recommended}
-            recommended={recommended}
-            topsters={topsters}
-            currentRecIndex={currentRecIndex}
-            setCurrentRecSection={setCurrentRecSection}
-            setCurrentRecIndex={setCurrentRecIndex}
-            currentTopsterIndex={currentTopIndex}
-            setCurrentTopSection={setCurrentTopSection}
-            setCurrentTopIndex={setCurrentTopIndex}
-            RecommendedSectionalRef={RecommendedSectionalRef}
-            TopsterContainerRef={TopsterContainerRef}
-          />
         </div>
         <div className={classes.RecommendedContainer}>
           <ArrowLeftIcon
@@ -171,7 +156,6 @@ const Main: React.FC<Props> = ({
           />
           <TransitionGroup className={classes.RecommendedTopsters}>
             {divideBySection(recommended).map((group, i) => (
-              // Recommended Sectional
               <CSSTransition
                 classNames="fade"
                 timeout={500}
@@ -208,7 +192,6 @@ const Main: React.FC<Props> = ({
           />
         </div>
         <SubMainHeading bookmarks={bookmarks} history={history} />
-        {/* submain-body */}
         {currentTopSection && (
           <ExpandLessIcon
             className={
@@ -220,22 +203,8 @@ const Main: React.FC<Props> = ({
           />
         )}
         <div className={classes.subMain}>
-          <DotNavigation
-            type={topsters}
-            recommended={recommended}
-            topsters={topsters}
-            currentRecIndex={currentRecIndex}
-            setCurrentRecSection={setCurrentRecSection}
-            setCurrentRecIndex={setCurrentRecIndex}
-            currentTopsterIndex={currentTopIndex}
-            setCurrentTopSection={setCurrentTopSection}
-            setCurrentTopIndex={setCurrentTopIndex}
-            RecommendedSectionalRef={RecommendedSectionalRef}
-            TopsterContainerRef={TopsterContainerRef}
-          />
           <div className={classes.UserTopsters} ref={TopsterContainerRef}>
             {divideBySection(topsters).map((group, i) => (
-              // Topster Sectional
               <div
                 key={`userTopsters-group-${i}`}
                 className={classes.topstersSection}

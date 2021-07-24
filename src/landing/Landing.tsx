@@ -9,7 +9,10 @@ interface Props {
     Frame: string;
     Image: string;
   };
-  history: any;
+  history: {
+    goBack: () => void;
+    push: (input: string) => void;
+  };
   openLandingModal: boolean;
   setOpenLandingModal: (i: boolean) => void;
 }

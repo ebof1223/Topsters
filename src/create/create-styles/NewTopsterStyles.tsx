@@ -14,7 +14,6 @@ const styles = (theme: {
     root: {
       display: 'flex',
     },
-
     hide: {
       display: 'none',
     },

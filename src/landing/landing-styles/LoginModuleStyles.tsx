@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       position: 'fixed',
       width: 400,
+      height: 275,
       aspectRatio: '1/0.5',
       margin: 'auto',
       inset: 0,
