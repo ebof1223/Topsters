@@ -10,6 +10,7 @@ interface Props {
     dotsHorizontalInactive: string;
     dotsVerticalActive: string;
     dotsVerticalInactive: string;
+    EmptyDots: string;
   };
   type: TopsterTemplate[];
   recommended: TopsterTemplate[];
@@ -54,10 +55,12 @@ const DotNavigation: React.FC<Props> = ({
       {arrayPerSection.map((item: null, i: number) => (
         <div
           className={
-            (type === recommended &&
-              (i === currentRecIndex
-                ? classes.dotsHorizontalActive
-                : classes.dotsHorizontalInactive)) ||
+            (topsters.length < 8
+              ? classes.EmptyDots
+              : type === recommended &&
+                (i === currentRecIndex
+                  ? classes.dotsHorizontalActive
+                  : classes.dotsHorizontalInactive)) ||
             (type === topsters &&
               (i === currentTopsterIndex
                 ? classes.dotsVerticalActive

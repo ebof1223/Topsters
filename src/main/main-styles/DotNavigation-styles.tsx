@@ -48,6 +48,13 @@ const styles = createStyles({
     marginBottom: '1rem',
     opacity: '0.3',
   },
+  EmptyDots: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50px',
+    marginBottom: '1rem',
+    opacity: 0,
+  },
 });
 
 export default styles;
