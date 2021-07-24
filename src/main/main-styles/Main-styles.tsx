@@ -68,16 +68,6 @@ const styles = createStyles({
     width: '83.75rem',
     scrollbarWidth: 'none',
     alignItems: 'center',
-    // [sizes.down('xl')]: {
-    //   minWidth: '1100px',
-    // },
-    // [sizes.down('lg')]: {
-    //   width: '87.5%',
-    // },
-
-    // [sizes.down('md')]: {
-    //   gridTemplateColumns: 'repeat(2, 0%)',
-    // },
     [sizes.down('xs')]: {
       margin: 'auto',
       marginTop: 0,
@@ -120,22 +110,28 @@ const styles = createStyles({
     height: '400px',
     width: '800px',
     [sizes.down('xl')]: {
-      width: '48%',
+      width: '40%',
     },
     // [sizes.down('lg')]: {
     //   width: '57%',
     // },
   },
   topstersSection: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
+    display: 'flex',
+    flexWrap: 'wrap',
+    // display: 'grid',
+    // gridTemplateColumns: 'repeat(4, 1fr)',
     scrollSnapType: 'y mandatory',
     scrollSnapAlign: 'start',
+    // [sizes.down('xl')]: {
+    // gridTemplateColumns: 'repeat(3, 1fr)',
+    // },
   },
   subMain: {
     display: 'flex',
     alignItems: 'center',
     margin: '1rem auto',
+    justifyContent: 'center',
   },
 
   AOTDTitleContainer: {

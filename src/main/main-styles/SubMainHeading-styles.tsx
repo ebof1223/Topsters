@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/core';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   subMainTitle: {
@@ -9,7 +10,7 @@ const styles = createStyles({
     flexDirection: 'row',
     width: '100%',
     alignItems: 'center',
-    justifyContent: 'start',
+    justifyContent: 'space-between',
   },
   BookmarkTitle: {
     display: 'flex',
@@ -17,13 +18,23 @@ const styles = createStyles({
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     alignSelf: 'center',
-    marginLeft: '57%',
+    marginRight: '25%',
+    [sizes.down('xl')]: {
+      width: '40%',
+      marginRight: '3%',
+    },
   },
   BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
-  Fab: {
+  topsterTitleContainer: {
     display: 'flex',
-    top: '40%',
-    left: '50%',
+    alignItems: 'center',
+    [sizes.down('xl')]: {
+      marginLeft: '13%',
+    },
+  },
+  topstersTitle: {},
+  Fab: {
+    left: '30%',
   },
 });
 

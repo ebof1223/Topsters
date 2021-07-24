@@ -10,6 +10,8 @@ interface Props {
     subMainTitle: string;
     BookmarkTitle: string;
     BookmarkCapacity: string;
+    topstersTitle: string;
+    topsterTitleContainer: string;
   };
   history: {
     push: (input: string) => void;
@@ -20,20 +22,22 @@ interface Props {
 const SubMainHeading: React.FC<Props> = ({ classes, bookmarks, history }) => {
   return (
     <div className={classes.subMainTitle}>
-      <h2>My Topsters</h2>
-      <div>
-        <Tooltip title="Add">
-          <Fab
-            aria-label="add"
-            size="small"
-            className={classes.Fab}
-            onClick={() => {
-              history.push('/topsters/new');
-            }}
-          >
-            <AddIcon />
-          </Fab>
-        </Tooltip>
+      <div className={classes.topsterTitleContainer}>
+        <h2 className={classes.topstersTitle}>My Topsters</h2>
+        <div>
+          <Tooltip title="Add">
+            <Fab
+              aria-label="add"
+              size="small"
+              className={classes.Fab}
+              onClick={() => {
+                history.push('/topsters/new');
+              }}
+            >
+              <AddIcon />
+            </Fab>
+          </Tooltip>
+        </div>
       </div>
       <div className={classes.BookmarkTitle}>
         <h2>
