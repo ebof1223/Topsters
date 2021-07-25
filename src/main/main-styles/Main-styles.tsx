@@ -41,9 +41,6 @@ const styles = createStyles({
       width: '410px',
       transform: 'scale(0.9)',
     },
-    // [sizes.down('sm')]: {
-    //   width: '60%',
-    // },
   },
 
   RecommendedTitle: {
@@ -51,7 +48,7 @@ const styles = createStyles({
     fontFamily: 'Merriweather, serif',
   },
   RecommendedTitleContainer: {
-    marginTop: '5rem',
+    marginTop: '1rem',
     display: 'flex',
     [sizes.down('xs')]: {
       margin: 'auto',
@@ -106,26 +103,17 @@ const styles = createStyles({
     overflowY: 'hidden',
     overflowX: 'hidden',
     scrollbarWidth: 'none',
-    // scrollSnapType: 'y mandatory',
     height: '400px',
     width: '800px',
     [sizes.down('xl')]: {
-      width: '40%',
+      width: '475px',
     },
-    // [sizes.down('lg')]: {
-    //   width: '57%',
-    // },
   },
   topstersSection: {
     display: 'flex',
     flexWrap: 'wrap',
-    // display: 'grid',
-    // gridTemplateColumns: 'repeat(4, 1fr)',
     scrollSnapType: 'y mandatory',
     scrollSnapAlign: 'start',
-    // [sizes.down('xl')]: {
-    // gridTemplateColumns: 'repeat(3, 1fr)',
-    // },
   },
   subMain: {
     display: 'flex',
@@ -138,17 +126,40 @@ const styles = createStyles({
     color: '#fff',
     fontFamily: 'Merriweather, serif',
   },
-  topsterScrollIconOn: {
+  topsterScrollUpIconOn: {
     position: 'relative',
-    marginLeft: '35%',
+    marginLeft: '33%',
     '&:hover': {
       transform: 'scale(2)',
+      transition: 'background 0.5s ease',
       cursor: 'pointer',
     },
+    [sizes.down('xl')]: {
+      marginLeft: '26.5%',
+      marginBottom: '-2%',
+      marginTop: '2%',
+    },
   },
-  topsterScrollIconOff: {
+  topsterScrollUpIconOff: {
     position: 'relative',
-    marginLeft: '35%',
+    marginLeft: '33%',
+    opacity: 0,
+  },
+  topsterScrollDownIconOn: {
+    position: 'relative',
+    marginLeft: '33%',
+    '&:hover': {
+      transform: 'scale(2)',
+      transition: 'background 0.5s ease',
+      cursor: 'pointer',
+    },
+    [sizes.down('xl')]: {
+      marginLeft: '26.5%',
+    },
+  },
+  topsterScrollDownIconOff: {
+    position: 'relative',
+    marginLeft: '33%',
     opacity: 0,
   },
 });

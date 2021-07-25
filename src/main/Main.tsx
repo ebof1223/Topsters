@@ -31,8 +31,10 @@ interface Props {
     topstersSection: string;
     recommendedArrowVisible: string;
     recommendedArrowHidden: string;
-    topsterScrollIconOn: string;
-    topsterScrollIconOff: string;
+    topsterScrollDownIconOn: string;
+    topsterScrollDownIconOff: string;
+    topsterScrollUpIconOn: string;
+    topsterScrollUpIconOff: string;
   };
   topsters: TopsterTemplate[];
   history: {
@@ -193,8 +195,8 @@ const Main: React.FC<Props> = ({
           <ExpandLessIcon
             className={
               currentTopSection.previousSibling
-                ? classes.topsterScrollIconOn
-                : classes.topsterScrollIconOff
+                ? classes.topsterScrollUpIconOn
+                : classes.topsterScrollUpIconOff
             }
             onClick={() => handleTopArrows('previous')}
           />
@@ -228,8 +230,8 @@ const Main: React.FC<Props> = ({
           <ExpandMoreIcon
             className={
               currentTopSection.nextSibling
-                ? classes.topsterScrollIconOn
-                : classes.topsterScrollIconOff
+                ? classes.topsterScrollDownIconOn
+                : classes.topsterScrollDownIconOff
             }
             onClick={() => handleTopArrows('next')}
           />

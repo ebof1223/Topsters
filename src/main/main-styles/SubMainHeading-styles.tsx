@@ -29,13 +29,14 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'center',
     [sizes.down('xl')]: {
-      marginLeft: '13%',
+      marginLeft: '10%',
     },
   },
   topstersTitle: {},
   Fab: {
     left: '30%',
   },
+  // move arrows
 });
 
 export default styles;
