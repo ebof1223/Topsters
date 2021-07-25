@@ -13,6 +13,9 @@ const styles = createStyles({
     position: 'relative',
     top: 10,
     margin: '1rem 0',
+    [sizes.down('xs')]: {
+      marginTop: '-3rem',
+    },
   },
   root: {
     backgroundColor: 'rgb(23,23,26)',
@@ -20,7 +23,7 @@ const styles = createStyles({
     display: 'flex',
     alignContent: 'flex-start',
     justifyContent: 'center',
-    overflow: 'none',
+    overflow: 'none !important',
     width: '100%',
   },
   OuterContainer: {
@@ -45,14 +48,14 @@ const styles = createStyles({
   RecommendedTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
+    [sizes.down('xs')]: {
+      marginLeft: '1rem',
+      marginTop: '-1rem',
+    },
   },
   RecommendedTitleContainer: {
     marginTop: '1rem',
     display: 'flex',
-    [sizes.down('xs')]: {
-      margin: 'auto',
-      marginTop: '-2rem',
-    },
   },
   RecommendedTopsters: {
     margin: '2rem auto',
@@ -64,10 +67,6 @@ const styles = createStyles({
     width: '83.75rem',
     scrollbarWidth: 'none',
     alignItems: 'center',
-    [sizes.down('xs')]: {
-      margin: 'auto',
-      marginTop: 0,
-    },
   },
 
   RecommendedContainer: {
@@ -76,9 +75,9 @@ const styles = createStyles({
     [sizes.down('xl')]: {
       width: '100%',
     },
-    // [sizes.down('lg')]: {
-    //   width: '70%',
-    // },
+    [sizes.down('xs')]: {
+      marginTop: '-2rem',
+    },
   },
   RecommendedSection: {
     display: 'flex',
@@ -114,7 +113,10 @@ const styles = createStyles({
       padding: 0,
       margin: 'auto',
       transform: 'scale(0.85)',
-      // width: '1100px',
+    },
+    [sizes.down('xs')]: {
+      width: '900px',
+      marginLeft: '-2rem',
     },
   },
   topstersSection: {
@@ -127,7 +129,6 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'center',
     margin: '1rem auto',
-    // background: 'green',
     justifyContent: 'center',
     [sizes.down('lg')]: { width: 'inherit', paddingRight: '2rem' },
     [sizes.down('md')]: { marginLeft: '2rem' },
@@ -160,6 +161,9 @@ const styles = createStyles({
       marginBottom: '-12%',
       marginTop: '4%',
     },
+    [sizes.down('xs')]: {
+      marginLeft: '23%',
+    },
   },
   topsterScrollUpIconOff: {
     position: 'relative',
@@ -179,6 +183,9 @@ const styles = createStyles({
       marginLeft: '20%',
       marginBottom: '-12%',
       marginTop: '4%',
+    },
+    [sizes.down('xs')]: {
+      marginLeft: '23%',
     },
   },
   topsterScrollDownIconOn: {
@@ -201,6 +208,9 @@ const styles = createStyles({
       marginLeft: '20%',
       marginTop: '-8%',
     },
+    [sizes.down('xs')]: {
+      marginLeft: '23%',
+    },
   },
   topsterScrollDownIconOff: {
     position: 'relative',
@@ -217,6 +227,9 @@ const styles = createStyles({
     [sizes.down('md')]: {
       marginLeft: '20%',
       marginTop: '-8%',
+    },
+    [sizes.down('xs')]: {
+      marginLeft: '23%',
     },
   },
 });

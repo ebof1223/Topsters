@@ -14,6 +14,9 @@ const styles = createStyles({
     [sizes.down('lg')]: {
       marginTop: '0',
     },
+    [sizes.down('xs')]: {
+      marginTop: '-1rem',
+    },
   },
   BookmarkTitle: {
     display: 'flex',

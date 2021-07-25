@@ -15,13 +15,15 @@ const styles = createStyles({
       width: '60%',
     },
     [sizes.down('md')]: {
-      width: '100%',
-    },
-    [sizes.down('md')]: {
       padding: 0,
       margin: '2rem auto 2rem auto',
       transform: 'scale(0.70)',
       width: '1000px',
+    },
+    [sizes.down('xs')]: {
+      margin: 0,
+      // transform: 'scale(0.40)',
+      // width: '1000px',
     },
   },
   AOTDContainerEmpty: {
@@ -42,10 +44,16 @@ const styles = createStyles({
     fontSize: '50px',
     color: '#91a7ff',
     borderRadius: '15px',
+    [sizes.down('xs')]: {
+      left: '75%',
+    },
   },
   firstBookmarkedItem: {
     height: '131.5px',
     display: 'block ruby',
+    [sizes.down('xs')]: {
+      height: '70px',
+    },
   },
 
   noBookmarks: {
