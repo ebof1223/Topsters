@@ -20,7 +20,6 @@ interface Props {
     Description: string;
     Albums: string;
     record: string;
-    Footer: string;
   };
   topsters?: TopsterTemplate[];
   recommended?: any;

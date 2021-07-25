@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/core';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   Topster: {
@@ -9,9 +10,6 @@ const styles = createStyles({
     backgroundColor: 'rgb(47,48,52)',
     position: 'fixed',
     inset: '4rem',
-    // height: '91.5vh',
-    // width: '91.5vw',
-    // margin: '4vh auto',
     fontFamily: 'Lexend, sans-serif',
   },
 
@@ -85,15 +83,20 @@ const styles = createStyles({
     width: '25vw',
     height: '65vh',
     behavior: 'smooth',
+    [sizes.down('xl')]: { width: '30vw', height: '50vh' },
+    [sizes.down('lg')]: { width: '30vw', marginRight: '0' },
+    [sizes.down('md')]: { display: 'none' },
   },
   TopsterContainer: {
     background: 'rgb(255,255,255)',
-    marginRight: '10rem',
+    marginRight: '2rem',
     padding: '0.5rem',
     borderRadius: '2px',
     display: 'flex',
     flexDirection: 'column',
     zIndex: 1,
+    [sizes.down('lg')]: { transform: 'scale(0.65)', marginRight: '-6rem' },
+    [sizes.down('md')]: { transform: 'scale(0.45)', margin: '0 auto' },
   },
 
   Albums: {
@@ -108,22 +111,8 @@ const styles = createStyles({
     right: 0,
     marginRight: '5%',
     height: '750px',
-  },
-  Footer: {
-    position: 'absolute',
-    bottom: 0,
-    flexDirection: 'row',
-    width: '100%',
-    minHeight: '3.5vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: '0.5rem',
-    '& h3': {
-      fontFamily: 'Lexend, sans-serif',
-      fontWeight: '300',
-      fontSize: '2rem',
-    },
+    [sizes.down('xl')]: { marginRight: '2%' },
+    [sizes.down('lg')]: { display: 'none' },
   },
 });
 

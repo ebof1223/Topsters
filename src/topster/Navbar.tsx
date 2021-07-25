@@ -8,10 +8,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ToggleBookmarkSnackBar from './ToggleBookmarkSnackBar';
 import { TopsterTemplate } from '../interface';
-import { Alert } from '@material-ui/lab';
 import ToggleBookmarkExceededSnackBar from './ToggleBookmarkExceededSnackBar';
-
-// import BookmarksExceededModal from '../../BookmarksExceededModal';
 
 interface Props {
   classes: {

@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   Navbar: {
@@ -17,6 +18,8 @@ const styles = createStyles({
       fontFamily: 'Lexend, sans-serif',
       fontWeight: '300',
       fontSize: '2rem',
+      [sizes.down('md')]: { fontSize: '1.5rem' },
+      [sizes.down('xs')]: { fontSize: '0.8rem' },
     },
   },
   Icon: { marginRight: '3rem', cursor: 'pointer', color: 'black' },
