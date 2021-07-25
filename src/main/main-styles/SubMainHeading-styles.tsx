@@ -26,9 +26,7 @@ const styles = createStyles({
       width: '40%',
       marginRight: '3%',
     },
-    [sizes.down('lg')]: {
-      // marginLeft: '0',
-    },
+    [sizes.down('md')]: { marginTop: 0 },
   },
   BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
   topsterTitleContainer: {
@@ -42,9 +40,13 @@ const styles = createStyles({
     [sizes.down('lg')]: {
       marginLeft: '-4rem',
     },
+    [sizes.down('md')]: {
+      marginLeft: '-1rem',
+    },
   },
   Fab: {
     left: '30%',
+    [sizes.down('lg')]: {},
   },
 });
 

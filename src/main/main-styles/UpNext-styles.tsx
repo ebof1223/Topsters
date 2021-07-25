@@ -12,11 +12,16 @@ const styles = createStyles({
     cursor: 'pointer',
     position: 'relative',
     [sizes.down('lg')]: {
-      // transform: 'scale(0.9)',
       width: '60%',
-      // minHeight: '300px',
-      // height: '250px',
-      // marginRight: '3.5rem',
+    },
+    [sizes.down('md')]: {
+      width: '100%',
+    },
+    [sizes.down('md')]: {
+      padding: 0,
+      margin: '2rem auto 2rem auto',
+      transform: 'scale(0.70)',
+      width: '1000px',
     },
   },
   AOTDContainerEmpty: {

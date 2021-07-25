@@ -110,6 +110,12 @@ const styles = createStyles({
       marginLeft: '2rem',
       width: '553px',
     },
+    [sizes.down('md')]: {
+      padding: 0,
+      margin: 'auto',
+      transform: 'scale(0.85)',
+      // width: '1100px',
+    },
   },
   topstersSection: {
     display: 'flex',
@@ -124,6 +130,7 @@ const styles = createStyles({
     // background: 'green',
     justifyContent: 'center',
     [sizes.down('lg')]: { width: 'inherit', paddingRight: '2rem' },
+    [sizes.down('md')]: { marginLeft: '2rem' },
   },
 
   AOTDTitleContainer: {
@@ -148,6 +155,11 @@ const styles = createStyles({
       marginBottom: '-4%',
       marginTop: '2%',
     },
+    [sizes.down('md')]: {
+      marginLeft: '20%',
+      marginBottom: '-12%',
+      marginTop: '4%',
+    },
   },
   topsterScrollUpIconOff: {
     position: 'relative',
@@ -162,6 +174,11 @@ const styles = createStyles({
       marginLeft: '25%',
       marginBottom: '-4%',
       marginTop: '2%',
+    },
+    [sizes.down('md')]: {
+      marginLeft: '20%',
+      marginBottom: '-12%',
+      marginTop: '4%',
     },
   },
   topsterScrollDownIconOn: {
@@ -180,6 +197,10 @@ const styles = createStyles({
       marginLeft: '25%',
       marginTop: '-2%',
     },
+    [sizes.down('md')]: {
+      marginLeft: '20%',
+      marginTop: '-8%',
+    },
   },
   topsterScrollDownIconOff: {
     position: 'relative',
@@ -192,6 +213,10 @@ const styles = createStyles({
     [sizes.down('lg')]: {
       marginLeft: '25%',
       marginTop: '-2%',
+    },
+    [sizes.down('md')]: {
+      marginLeft: '20%',
+      marginTop: '-8%',
     },
   },
 });
