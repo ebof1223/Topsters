@@ -115,6 +115,7 @@ const styles = createStyles({
       transform: 'scale(0.85)',
     },
     [sizes.down('xs')]: {
+      transform: 'scale(0.7)',
       width: '900px',
       marginLeft: '-2rem',
     },
@@ -163,6 +164,8 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       marginLeft: '23%',
+      marginTop: '-1rem',
+      top: '5%',
     },
   },
   topsterScrollUpIconOff: {
@@ -186,6 +189,8 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       marginLeft: '23%',
+      marginTop: '-1rem',
+      top: '5%',
     },
   },
   topsterScrollDownIconOn: {
@@ -210,6 +215,7 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       marginLeft: '23%',
+      bottom: '6%',
     },
   },
   topsterScrollDownIconOff: {
@@ -230,6 +236,7 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       marginLeft: '23%',
+      bottom: '6%',
     },
   },
 });

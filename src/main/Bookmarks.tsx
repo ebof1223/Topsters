@@ -38,7 +38,6 @@ const Bookmarks: React.FC<Props> = ({
     document.body.style.cursor = 'default';
     if (oldIndex === newIndex) return;
     let newBookmarks = arrayMove(bookmarks, oldIndex, newIndex);
-    console.log(newBookmarks);
     setBookmarks([...newBookmarks]);
   };
   return (

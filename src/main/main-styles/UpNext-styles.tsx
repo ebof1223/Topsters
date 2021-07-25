@@ -22,8 +22,6 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       margin: 0,
-      // transform: 'scale(0.40)',
-      // width: '1000px',
     },
   },
   AOTDContainerEmpty: {
@@ -35,6 +33,18 @@ const styles = createStyles({
     cursor: 'pointer',
     position: 'relative',
     textAlign: 'center',
+    [sizes.down('lg')]: {
+      width: '60%',
+    },
+    [sizes.down('md')]: {
+      padding: 0,
+      margin: '2rem auto 2rem auto',
+      transform: 'scale(0.70)',
+      width: '1000px',
+    },
+    [sizes.down('xs')]: {
+      height: '250px',
+    },
   },
   CompareArrowsIcon: {
     position: 'absolute',
