@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   root: {
@@ -6,6 +7,7 @@ const styles = createStyles({
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'start',
   },
   PriorityContainer: {
     alignSelf: 'center',
@@ -20,6 +22,11 @@ const styles = createStyles({
       fontWeight: '500',
       fontFamily: 'Lexend, sans-serif',
     },
+    [sizes.down('xs')]: {
+      marginBottom: '-7rem',
+      marginTop: '0rem',
+      marginRight: '1rem',
+    },
   },
   PriorityText: {
     color: '#fff',
@@ -28,8 +35,7 @@ const styles = createStyles({
     color: 'white',
     position: 'relative',
     cursor: 'pointer',
-    top: 10,
-    left: 25,
+    padding: '1rem',
   },
 });
 
