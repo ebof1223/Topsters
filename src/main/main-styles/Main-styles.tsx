@@ -27,7 +27,6 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    backgroundColor: 'red',
     [sizes.down('xl')]: {
       width: '1210px',
     },
@@ -74,7 +73,6 @@ const styles = createStyles({
   RecommendedContainer: {
     display: 'flex',
     alignItems: 'center',
-    background: 'yellow',
     [sizes.down('xl')]: {
       width: '100%',
     },
@@ -108,6 +106,10 @@ const styles = createStyles({
     [sizes.down('xl')]: {
       width: '475px',
     },
+    [sizes.down('lg')]: {
+      marginLeft: '2rem',
+      width: '553px',
+    },
   },
   topstersSection: {
     display: 'flex',
@@ -119,7 +121,9 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'center',
     margin: '1rem auto',
+    // background: 'green',
     justifyContent: 'center',
+    [sizes.down('lg')]: { width: 'inherit', paddingRight: '2rem' },
   },
 
   AOTDTitleContainer: {
@@ -135,8 +139,13 @@ const styles = createStyles({
       cursor: 'pointer',
     },
     [sizes.down('xl')]: {
-      marginLeft: '26.5%',
+      marginLeft: '27%',
       marginBottom: '-2%',
+      marginTop: '2%',
+    },
+    [sizes.down('lg')]: {
+      marginLeft: '25%',
+      marginBottom: '-4%',
       marginTop: '2%',
     },
   },
@@ -144,6 +153,16 @@ const styles = createStyles({
     position: 'relative',
     marginLeft: '33%',
     opacity: 0,
+    [sizes.down('xl')]: {
+      marginLeft: '27%',
+      marginBottom: '-2%',
+      marginTop: '2%',
+    },
+    [sizes.down('lg')]: {
+      marginLeft: '25%',
+      marginBottom: '-4%',
+      marginTop: '2%',
+    },
   },
   topsterScrollDownIconOn: {
     position: 'relative',
@@ -154,13 +173,26 @@ const styles = createStyles({
       cursor: 'pointer',
     },
     [sizes.down('xl')]: {
-      marginLeft: '26.5%',
+      marginLeft: '27%',
+      marginTop: '-2%',
+    },
+    [sizes.down('lg')]: {
+      marginLeft: '25%',
+      marginTop: '-2%',
     },
   },
   topsterScrollDownIconOff: {
     position: 'relative',
     marginLeft: '33%',
     opacity: 0,
+    [sizes.down('xl')]: {
+      marginLeft: '27%',
+      marginTop: '-2%',
+    },
+    [sizes.down('lg')]: {
+      marginLeft: '25%',
+      marginTop: '-2%',
+    },
   },
 });
 

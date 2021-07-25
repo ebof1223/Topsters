@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 const styles = createStyles({
   AOTDContainer: {
     display: 'grid',
@@ -7,10 +8,16 @@ const styles = createStyles({
     borderRadius: '5px',
     border: '3px solid #91a7ff',
     width: '400px',
-    height: '400px',
     marginLeft: '5rem',
     cursor: 'pointer',
     position: 'relative',
+    [sizes.down('lg')]: {
+      // transform: 'scale(0.9)',
+      width: '60%',
+      // minHeight: '300px',
+      // height: '250px',
+      // marginRight: '3.5rem',
+    },
   },
   AOTDContainerEmpty: {
     borderRadius: '5px',

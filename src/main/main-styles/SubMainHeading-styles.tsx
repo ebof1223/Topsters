@@ -5,12 +5,15 @@ const styles = createStyles({
   subMainTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
-    marginTop: '4rem',
+    marginTop: '2rem',
     display: 'flex',
     flexDirection: 'row',
     width: '100%',
     alignItems: 'center',
     justifyContent: 'space-between',
+    [sizes.down('lg')]: {
+      marginTop: '0',
+    },
   },
   BookmarkTitle: {
     display: 'flex',
@@ -23,6 +26,9 @@ const styles = createStyles({
       width: '40%',
       marginRight: '3%',
     },
+    [sizes.down('lg')]: {
+      // marginLeft: '0',
+    },
   },
   BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
   topsterTitleContainer: {
@@ -32,11 +38,14 @@ const styles = createStyles({
       marginLeft: '10%',
     },
   },
-  topstersTitle: {},
+  topstersTitle: {
+    [sizes.down('lg')]: {
+      marginLeft: '-4rem',
+    },
+  },
   Fab: {
     left: '30%',
   },
-  // move arrows
 });
 
 export default styles;
