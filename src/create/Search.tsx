@@ -141,7 +141,11 @@ const Search: React.FC<Props> = ({
             className={classes.searchBarXS}
             onChange={(e) => setUserSearch(e.target.value)}
           />
-          <input type="submit" className={classes.searchBarXSBtn} />
+          <input
+            type="submit"
+            value="Search"
+            className={classes.searchBarXSBtn}
+          />
         </form>
       </div>
       <div className={classes.root}>

@@ -48,15 +48,16 @@ const styles = () =>
       backgroundColor: 'red',
     },
     searchBarXSContainer: {
-      [sizes.down('xs')]: {
+      [sizes.down('lg')]: {
         position: 'absolute',
-        left: '16.5%',
-        top: '15%',
+        top: '20%',
+        left: '50%',
+        transform: 'translate(-50%,-50%)',
         zIndex: 5,
       },
     },
     searchBarXS: {
-      [sizes.down('xs')]: {
+      [sizes.down('lg')]: {
         width: '300px',
         display: 'flex',
         backdropFilter: 'blur(10px)',
@@ -69,8 +70,6 @@ const styles = () =>
         borderLeft: '5px solid rgba(225,225,225, 0.1)',
         borderRight: 'alignSelf 3px solid rgba(225,225,225, 0.3)',
       },
-
-      // display:'none'
     },
     searchBarXSBtn: {
       width: '300px',

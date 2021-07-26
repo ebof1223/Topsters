@@ -50,6 +50,13 @@ const styles = (theme: {
     btnContainer: {
       display: 'flex',
       marginRight: '2rem',
+      [sizes.down('lg')]: {
+        marginRight: '5rem',
+      },
+      [sizes.down('xs')]: {
+        transform: 'scale(0.8)',
+        marginLeft: '-3rem',
+      },
     },
   });
 
