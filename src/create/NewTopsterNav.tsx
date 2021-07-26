@@ -18,6 +18,7 @@ import DoublyLinkedList from 'dbly-linked-list';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import ErrorIcon from '@material-ui/icons/Error';
 import Tooltip from '@material-ui/core/Tooltip';
+import sizes from '../sizes';
 
 type Node = {
   data: AlbumTemplate[] | null;
@@ -108,7 +109,6 @@ const NewTopsterNavStyles: React.FC<Props> = ({
     <Button
       onClick={handleRedo}
       disabled={currentNode && currentNode.next === null}
-      style={{ marginRight: '5rem' }}
     >
       <RedoIcon />
     </Button>

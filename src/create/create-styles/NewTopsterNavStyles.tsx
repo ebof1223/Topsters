@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 import drawerWidth from './constants';
 
 const styles = (theme: {
@@ -34,6 +35,14 @@ const styles = (theme: {
         easing: theme.transitions.easing.easeOut,
         duration: theme.transitions.duration.enteringScreen,
       }),
+      [sizes.down('md')]: {
+        width: `calc(100% - ${350}px)`,
+        marginLeft: '350px',
+      },
+      [sizes.down('xs')]: {
+        width: `calc(100% - ${200}px)`,
+        marginLeft: '200px',
+      },
     },
     menuButton: {
       marginRight: theme.spacing(2),

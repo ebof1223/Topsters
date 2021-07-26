@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 import drawerWidth from './constants';
 
 const styles = (theme: {
@@ -20,9 +21,13 @@ const styles = (theme: {
     drawer: {
       width: drawerWidth,
       flexShrink: 0,
+      [sizes.down('md')]: { width: 350 },
+      [sizes.down('xs')]: { width: 200 },
     },
     drawerPaper: {
       width: drawerWidth,
+      [sizes.down('md')]: { width: 350 },
+      [sizes.down('xs')]: { width: 200 },
     },
     drawerHeader: {
       display: 'flex',
@@ -40,6 +45,8 @@ const styles = (theme: {
         duration: theme.transitions.duration.leavingScreen,
       }),
       marginLeft: -drawerWidth,
+      [sizes.down('md')]: { marginLeft: -350 },
+      [sizes.down('xs')]: { width: -200 },
     },
     contentShift: {
       transition: theme.transitions.create('margin', {
@@ -53,11 +60,10 @@ const styles = (theme: {
       flexDirection: 'row',
       alignItems: 'center',
       backgroundColor: 'rgb(47,48,52)',
-      height: '90vh',
-      width: '90vw',
+      position: 'fixed',
+      inset: '4rem',
       margin: '2vh auto',
-      justifyContent: 'space-between',
-      borderRadius: '2px',
+      justifyContent: 'center',
     },
   });
 

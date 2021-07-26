@@ -6,6 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { AlbumTemplate } from '../interface';
+import sizes from '../sizes';
 interface Props {
   newTopsters: AlbumTemplate[];
   history: {
@@ -41,7 +42,7 @@ const BackButton: React.FC<Props> = ({
   return (
     <div style={{ marginLeft: '2rem' }}>
       <Button variant="contained" color="secondary" onClick={handleClickOpen}>
-        Go Back
+        Back
       </Button>
       <Dialog
         open={openConfirm}

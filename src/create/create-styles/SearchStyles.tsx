@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/core';
+import sizes from '../../sizes';
 
 const styles = () =>
   createStyles({
@@ -33,6 +34,7 @@ const styles = () =>
       borderTop: '5px solid rgba(225,225,225, 0.2)',
       borderLeft: '5px solid rgba(225,225,225, 0.1)',
       borderRight: 'alignSelf 3px solid rgba(225,225,225, 0.3)',
+      [sizes.down('xs')]: {},
     },
     ProgressBar: {
       height: '5px',

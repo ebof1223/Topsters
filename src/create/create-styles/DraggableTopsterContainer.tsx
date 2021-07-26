@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   newTopstersContainer: {
@@ -11,6 +12,12 @@ const styles = createStyles({
     gridGap: '10px',
     zIndex: 5,
     margin: 'auto',
+    [sizes.down('md')]: {
+      transform: 'scale(0.8)',
+    },
+    [sizes.down('xs')]: {
+      transform: 'scale(0.6)',
+    },
   },
 });
 
