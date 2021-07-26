@@ -14,6 +14,9 @@ interface Props {
     '@keyframes fill': string;
     Hide: string;
     fill: any;
+    searchBarXSContainer: string;
+    searchBarXS: string;
+    searchBarXSBtn: string;
   };
   userSearch: string;
   setUserSearch: (input: string) => void;
@@ -52,6 +55,7 @@ const Search: React.FC<Props> = ({
       return;
 
     const keydownEventListener = () => {
+      if (window.innerWidth <= 576) return;
       if (openConfirm) return;
       if (!/^[0-9a-zA-Z]*$/) return;
       document.getElementById('fill').classList.remove(classes.fill);
@@ -127,30 +131,42 @@ const Search: React.FC<Props> = ({
     }
     setIsLoading(false);
   };
-  // console.log(sizes.down('xs')[19]);
+
   return (
-    <div className={classes.root}>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <div
-          className={isTyping ? classes.Overlay : classes.Hide}
-          ref={overlay}
-        >
+    <>
+      <div className={classes.searchBarXSContainer}>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <input
-            ref={focusSearch}
-            id="focusSearch"
-            autoFocus
-            autoComplete="off"
-            className={classes.SearchBar}
-            value={userSearch}
             type="text"
+            className={classes.searchBarXS}
             onChange={(e) => setUserSearch(e.target.value)}
           />
-          <div className={classes.ProgressBar}>
-            <div className={classes.fill} id="fill" />
+          <input type="submit" className={classes.searchBarXSBtn} />
+        </form>
+      </div>
+      <div className={classes.root}>
+        <form onSubmit={(e) => handleSubmit(e)}>
+          <div
+            className={isTyping ? classes.Overlay : classes.Hide}
+            ref={overlay}
+          >
+            <input
+              ref={focusSearch}
+              id="focusSearch"
+              autoFocus
+              autoComplete="off"
+              className={classes.SearchBar}
+              value={userSearch}
+              type="text"
+              onChange={(e) => setUserSearch(e.target.value)}
+            />
+            <div className={classes.ProgressBar}>
+              <div className={classes.fill} id="fill" />
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
+    </>
   );
 };
 export default withStyles(styles)(Search);

@@ -34,7 +34,6 @@ const styles = () =>
       borderTop: '5px solid rgba(225,225,225, 0.2)',
       borderLeft: '5px solid rgba(225,225,225, 0.1)',
       borderRight: 'alignSelf 3px solid rgba(225,225,225, 0.3)',
-      [sizes.down('xs')]: { opactiy: 1 },
     },
     ProgressBar: {
       height: '5px',
@@ -47,6 +46,34 @@ const styles = () =>
       animation: '$fill 3s linear',
       borderRadius: '5px',
       backgroundColor: 'red',
+    },
+    searchBarXSContainer: {
+      [sizes.down('xs')]: {
+        position: 'absolute',
+        left: '16.5%',
+        top: '15%',
+        zIndex: 5,
+      },
+    },
+    searchBarXS: {
+      [sizes.down('xs')]: {
+        width: '300px',
+        display: 'flex',
+        backdropFilter: 'blur(10px)',
+        backgroundColor: 'rgba(255, 255, 255, 0.65)',
+        padding: '1rem 2rem',
+        fontSize: '4rem',
+        textAlign: 'center',
+        outline: 'none',
+        borderTop: '5px solid rgba(225,225,225, 0.2)',
+        borderLeft: '5px solid rgba(225,225,225, 0.1)',
+        borderRight: 'alignSelf 3px solid rgba(225,225,225, 0.3)',
+      },
+
+      // display:'none'
+    },
+    searchBarXSBtn: {
+      width: '300px',
     },
   });
 

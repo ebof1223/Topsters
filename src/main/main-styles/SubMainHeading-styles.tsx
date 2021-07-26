@@ -16,6 +16,7 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       marginTop: '-1rem',
+      fontSize: '0.8rem',
     },
   },
   BookmarkTitle: {

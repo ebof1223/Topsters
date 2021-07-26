@@ -49,8 +49,9 @@ const styles = createStyles({
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     [sizes.down('xs')]: {
-      marginLeft: '7.5rem',
+      marginLeft: '8.5rem',
       marginTop: '-1rem',
+      fontSize: '1.2rem',
     },
   },
   RecommendedTitleContainer: {
@@ -115,9 +116,10 @@ const styles = createStyles({
       transform: 'scale(0.85)',
     },
     [sizes.down('xs')]: {
-      transform: 'scale(0.7)',
+      transform: 'scale(0.6)',
       width: '900px',
       marginLeft: '-2rem',
+      marginTop: '-2.5rem',
     },
   },
   topstersSection: {
@@ -165,7 +167,7 @@ const styles = createStyles({
     [sizes.down('xs')]: {
       marginLeft: '23%',
       marginTop: '-1rem',
-      top: '5%',
+      top: '2%',
     },
   },
   topsterScrollUpIconOff: {
@@ -190,7 +192,7 @@ const styles = createStyles({
     [sizes.down('xs')]: {
       marginLeft: '23%',
       marginTop: '-1rem',
-      top: '5%',
+      top: '2%',
     },
   },
   topsterScrollDownIconOn: {
@@ -215,7 +217,7 @@ const styles = createStyles({
     },
     [sizes.down('xs')]: {
       marginLeft: '23%',
-      bottom: '6%',
+      bottom: '8%',
     },
   },
   topsterScrollDownIconOff: {

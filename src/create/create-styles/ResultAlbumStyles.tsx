@@ -8,7 +8,6 @@ const styles = createStyles({
     width: '150px',
     scrollSnapType: 'y mandatory',
     scrollSnapAlign: 'start',
-    // scrollSnapStop: 'always',
     '&:hover': {
       cursor: 'pointer',
     },

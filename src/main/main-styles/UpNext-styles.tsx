@@ -21,7 +21,8 @@ const styles = createStyles({
       width: '1000px',
     },
     [sizes.down('xs')]: {
-      margin: 0,
+      marginTop: '-2.5rem',
+      marginRight: '1.5rem',
     },
   },
   AOTDContainerEmpty: {
