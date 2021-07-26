@@ -1,5 +1,4 @@
 import { createStyles } from '@material-ui/styles';
-import sizes from '../../sizes';
 
 const styles = createStyles({
   root: {
@@ -34,7 +33,7 @@ const styles = createStyles({
     fontFamily: 'Lexend, sans-serif',
     fontWeight: 500,
     color: '#fff',
-    fontSize: '1.32rem',
+    fontSize: '1.3rem',
     width: '100%',
     paddingTop: '1rem',
     display: 'block',

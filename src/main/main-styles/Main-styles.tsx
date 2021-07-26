@@ -23,8 +23,9 @@ const styles = createStyles({
     display: 'flex',
     alignContent: 'flex-start',
     justifyContent: 'center',
-    overflow: 'none !important',
+    overflow: 'none',
     width: '100%',
+    fontFamily: 'Lexend, sans-serif',
   },
   OuterContainer: {
     display: 'flex',

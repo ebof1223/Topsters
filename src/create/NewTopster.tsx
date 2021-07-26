@@ -167,7 +167,7 @@ const NewTopster: React.FC<Props> = ({
           openConfirm={openConfirm}
           setOpenConfirm={setOpenConfirm}
         />
-
+     
         <main
           className={clsx(classes.content, {
             [classes.contentShift]: openDrawer,

@@ -72,7 +72,10 @@ const styles = () =>
       },
     },
     searchBarXSBtn: {
-      width: '300px',
+      [sizes.down('lg')]: {
+        width: '300px',
+        padding: '1rem',
+      },
     },
   });
 
