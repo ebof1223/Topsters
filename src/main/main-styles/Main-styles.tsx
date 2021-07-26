@@ -49,7 +49,7 @@ const styles = createStyles({
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     [sizes.down('xs')]: {
-      marginLeft: '1rem',
+      marginLeft: '7.5rem',
       marginTop: '-1rem',
     },
   },

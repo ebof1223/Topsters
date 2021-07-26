@@ -34,7 +34,7 @@ const styles = () =>
       borderTop: '5px solid rgba(225,225,225, 0.2)',
       borderLeft: '5px solid rgba(225,225,225, 0.1)',
       borderRight: 'alignSelf 3px solid rgba(225,225,225, 0.3)',
-      [sizes.down('xs')]: {},
+      [sizes.down('xs')]: { opactiy: 1 },
     },
     ProgressBar: {
       height: '5px',

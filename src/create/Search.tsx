@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
 import { AlbumTemplate } from '../interface';
 import { useEffect, useRef, useState } from 'react';
+import sizes from '../sizes';
 const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
 interface Props {
   classes: {
@@ -126,7 +127,7 @@ const Search: React.FC<Props> = ({
     }
     setIsLoading(false);
   };
-
+  // console.log(sizes.down('xs')[19]);
   return (
     <div className={classes.root}>
       <form onSubmit={(e) => handleSubmit(e)}>
