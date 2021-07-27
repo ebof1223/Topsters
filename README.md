@@ -4,7 +4,8 @@ Inspired by the social media trend of sharing your favoirte albums/artists in co
 
 I wanted to create a user-friendly music-based web application that stored collections of albums that I enjoyed and I think this project achieves that spectacularly. This project also includes some premade topsters of popular music establishments and critics that the user may find interesting. Further, I also plan on creating a version that integrates a spotify music player so the user can enjoy any particular collection of music without having to tediously look up each album individually in order to taste test it. 
 
-![Screen Shot 2021-07-27 at 5 46 33 PM (2)](https://user-images.githubusercontent.com/66833914/127237269-78d91a8d-d805-41dd-972d-7b90464e6648.JPG)
+![Screen Shot 2021-07-27 at 5 47 13 PM](https://user-images.githubusercontent.com/66833914/127237305-ba243164-b4ed-4349-80b4-9b701033a6d4.jpg)
+
 
 
 ![Screen Recording 2021-07-26 at 8 29 30 PM](https://user-images.githubusercontent.com/66833914/127236649-bdae2fe9-b745-4915-84c9-bdd268f12cd1.gif)
