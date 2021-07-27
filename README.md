@@ -21,5 +21,7 @@ Technologies/Packages
   View past top albums by relevant music critics and institutions
   Bookmark topsters and rearrange the order for future listening (Demo)
   
-  
-  
+  # Notes
+  I realize the search is a bit on the slower side. I personally don't like the results to contain repeated images or images for singles, remixes, deluxe editions etc,. To that end, after the initial artist's disocgraphy fetch, the algorithm cross references each results and verifies that it's indeed an album and the the album's title isnt already present. This does a decent job of filtering some of the results with the caveat that the final results take a bit longer to retrieve. There will still be some errors however, since some singles or remixes are labeled as 'albums', and some albums with identical album covers will have completely and sometimes lengthy differences, string-wise. 
+ 
+ This application is optimal on desktop. I tried my best to accomodate smaller screen resolutions, but the UI is certainly not the best, especially in the topster create page. 
