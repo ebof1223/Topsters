@@ -1,10 +1,10 @@
-# Topsters
+# Topsters 
 
 Inspired by the social media trend of sharing your favoirte albums/artists in collage form. 
 
 I wanted to create a user-friendly music-based web application that stored collections of albums that I enjoyed and I think this project achieves that spectacularly. This project also includes some premade topsters of popular music establishments and critics that the user may find interesting. Further, I also plan on creating a version that integrates a spotify music player so the user can enjoy any particular collection of music without having to tediously look up each album individually in order to taste test it. 
 
-<> insert gif <>
+![Topsters Demo](demo. gif) / ! [](demo. gif)
 
 
 Technologies/Packages
