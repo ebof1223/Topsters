@@ -13,6 +13,9 @@ const styles = createStyles({
     cursor: 'pointer',
     height: '200px',
     transform: 'scale(0.65)',
+    '&:focus, &:hover': {
+      filter: 'brightness(115%) saturate(100%)',
+    },
   },
   topsterGrid: {
     display: 'grid',
@@ -24,17 +27,6 @@ const styles = createStyles({
     transition: 'all 0.3s ease',
     border: '3px solid #91a7ff',
   },
-  // title: {
-  //   fontFamily: 'Lexend, sans-serif',
-  //   fontWeight: 500,
-  //   color: '#fff',
-  //   fontSize: '1.5rem',
-  //   width: '100%',
-  //   paddingTop: '1rem',
-  //   display: 'block',
-  //   overflow: 'auto',
-  //   padding: '4rem 1rem',
-  // },
   MiniTopsters: {
     height: '72px',
     width: '72px',

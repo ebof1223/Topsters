@@ -11,6 +11,9 @@ const styles = createStyles({
     marginLeft: '5rem',
     cursor: 'pointer',
     position: 'relative',
+    '&:focus, &:hover': {
+      filter: 'brightness(115%) saturate(100%)',
+    },
     [sizes.down('lg')]: {
       width: '60%',
     },

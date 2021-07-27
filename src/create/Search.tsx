@@ -45,6 +45,7 @@ const Search: React.FC<Props> = ({
 }) => {
   const focusSearch: React.MutableRefObject<any> = useRef();
   const overlay: React.MutableRefObject<any> = useRef();
+  const searchBarXS: React.MutableRefObject<any> = useRef();
   const [isTyping, setIsTyping] = useState(false);
   useEffect(() => {
     var timer: any;
@@ -80,11 +81,12 @@ const Search: React.FC<Props> = ({
     };
   }, [classes.fill, history.location.pathname, openConfirm, setUserSearch]);
 
-  const handleSubmit = (e: any): void => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     setIsTyping(false);
     getDiscography(userSearch);
     setUserSearch('');
+    console.log(searchBarXS.current);
   };
 
   const getDiscography = async (artist: string) => {
@@ -140,6 +142,8 @@ const Search: React.FC<Props> = ({
             type="text"
             className={classes.searchBarXS}
             onChange={(e) => setUserSearch(e.target.value)}
+            ref={searchBarXS}
+            value={userSearch}
           />
           <input
             type="submit"
