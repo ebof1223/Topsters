@@ -6,7 +6,8 @@ I wanted to create a user-friendly music-based web application that stored colle
 
 ![Screen Shot 2021-07-26 at 8 21 41 PM](https://user-images.githubusercontent.com/66833914/127235148-28bbee3b-0739-4116-8686-06a7261abd47.jpg)
 
-![demo](https://user-images.githubusercontent.com/66833914/127235066-ca484512-9d90-4f07-807f-0daa549db3f9.gif)
+![Screen Recording 2021-07-26 at 8 29 30 PM](https://user-images.githubusercontent.com/66833914/127236649-bdae2fe9-b745-4915-84c9-bdd268f12cd1.gif)
+
 
 
 
