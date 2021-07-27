@@ -11,11 +11,10 @@ I wanted to create a user-friendly music-based web application that stored colle
 
 
 
-Technologies/Packages
-  React
-  Typescript
-  Material UI
-  react-sortable-hoc
+  React |
+  Typescript |
+  Material UI |
+  react-sortable-hoc |
   Transition Group
   
   # Features
