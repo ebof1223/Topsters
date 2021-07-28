@@ -31,7 +31,9 @@ I wanted to create a user-friendly music-based web application that stored colle
   I realize the search is a bit on the slower side. I personally don't like the results to contain repeated images or images for singles, remixes, deluxe editions etc,. To that end, after the initial artist's discography is fetched, the algorithm cross references each result and verifies it's album status and confirms that each listing has more than 1 track (which would be the case in most singles). This does a decent job of filtering some of the results with the caveat that the final results take a bit longer to retrieve. However, its not perfect. For example, The Microphones in 2020 record is a single ~45 minute track so it'd get filtered out. Some singles have more than 1 track attatched to the, such as Baby by Justin Bieber and the same song ft. Ludacris. Another edge case would be albums with identical album covers, but lengthy differences in their titles, stringwise. A great example would be all the re-released versions (super deluxed editions, ultimate deluxe editions) of many commercially successful records such as Nirvana's 'Nevermind' or The Beatles' 'Abbey Road'. I initially thought I'd use string similarities using something like Levenshtein distance but concluded that any similarity quotient I'd use would be completley arbitary not to metion it would generate many false positives such as Led Zeppelin I - IV, or Man on the Moon I-III.
   
  2. Search Results
+ 
   You may notice that no results are found for some artists, or a particular album isn't showing up. The culprit may be the search algorithm, but in my experience, it's more often the case that there are misentries present, i.e misspelled titles, no cover art images attatched, etc,. An unfortunate example would be King Crimson: upon further investigation, it turns out none of the 50+ initial album results have any images. 
  
- 3.
- This application is optimal on desktop. I tried my best to accomodate smaller screen resolutions, but the UI is certainly not the best, especially in the topster create page. 
+ 3. Optimization
+
+  This application is optimal on desktop. I did my best to accomodate smaller screen resolutions while staying true to the original design, but it ultimately lead to a cramped UI, especially in the topster create page. 
