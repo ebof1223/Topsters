@@ -23,6 +23,7 @@ A music-based web application that fetches cover art via the ‘Last.fm’ API t
   * View past top albums by relevant music critics and institutions.
   * Bookmark topsters and rearrange their order, setting a priority to a topsters for future listening.
   * Verification, such as a character limit on titles, snackbar errors such as duplicate albums and album over-capacity.
+  * Feed that displays recommended topsters (static), created topsters, and bookmarks.
   
   # Notes
   
