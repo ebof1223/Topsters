@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
 import { AlbumTemplate } from '../interface';
 import { useEffect, useRef, useState } from 'react';
-const LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/';
+const LASTFM_API_URL = 'https://ws.audioscrobbler.com/2.0/';
 interface Props {
   classes: {
     root: string;
@@ -85,7 +85,6 @@ const Search: React.FC<Props> = ({
     setIsTyping(false);
     getDiscography(userSearch);
     setUserSearch('');
-    console.log(searchBarXS.current);
   };
 
   const getDiscography = async (artist: string) => {
