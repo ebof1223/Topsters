@@ -15,9 +15,9 @@ const styles = () =>
     Overlay: {
       pointerEvents: 'none',
       position: 'absolute',
-      bottom: 0,
-      right: '35%',
       top: '50%',
+      left: '50%',
+      transform: 'translate(-50%,-50%)',
       zIndex: 10,
     },
     SearchBar: {
