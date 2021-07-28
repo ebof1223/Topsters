@@ -24,6 +24,7 @@ I wanted to create a user-friendly music-based web application that stored colle
   * When viewed, all topsters showcase the full tracklist from any given album.
   * View past top albums by relevant music critics and institutions.
   * Bookmark topsters and rearrange their order, setting a priority to a topsters for future listening.
+  * Verification systems in place, such as a character limit on topsters titles, duplicate titles, and snack bar errors when adding duplicate albums.
   
   # Notes
   1. Search Speed
