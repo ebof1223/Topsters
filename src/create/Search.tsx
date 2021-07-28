@@ -85,6 +85,7 @@ const Search: React.FC<Props> = ({
     setIsTyping(false);
     getDiscography(userSearch);
     setUserSearch('');
+    console.log(searchBarXS.current);
   };
 
   const getDiscography = async (artist: string) => {
@@ -95,7 +96,7 @@ const Search: React.FC<Props> = ({
     try {
       await axios
         .get(
-          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json&autocorrect[0|1]&limit=99`
+          `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json&autocorrect[0|1]`
         )
         .then((res) => {
           console.log('this is our log', res.data.topalbums.album);

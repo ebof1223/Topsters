@@ -10,10 +10,11 @@ import NewTopster from '../create/NewTopster';
 import './main-styles/Page.css';
 import Page from './Page';
 import Landing from '../landing/Landing';
+import defaultTopsters from './defaultTopsters';
 
 const App: React.FC = () => {
   const savedTopsters = JSON.parse(
-    window.localStorage.getItem('topsters') || '{}'
+    window.localStorage.getItem('topsters') || `{}`
   );
   const savedBookmarked = JSON.parse(
     window.localStorage.getItem('bookmarks') || '{}'
@@ -22,7 +23,7 @@ const App: React.FC = () => {
   const [openLandingModal, setOpenLandingModal] = useState(true);
   const [showAgain, setShowAgain] = useState(true);
   const [topsters, setTopsters] = useState(
-    Object.keys(savedTopsters).length ? savedTopsters : []
+    Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
   );
   const [bookmarks, setBookmarks] = useState(
     Object.keys(savedBookmarked).length ? savedBookmarked : []

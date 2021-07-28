@@ -81,7 +81,7 @@ const Results: React.FC<Props> = ({
       <div className={classes.resultsContainer}>
         {results.map((item: AlbumTemplate, index: number) => (
           <ResultAlbum
-            key={`${item.name}-result`}
+            key={`${item.name}-${item.artist}-result`}
             onClick={() => addToToppings(index)}
             cover={item.image[3]['#text']}
           />
