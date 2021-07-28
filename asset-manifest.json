@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ebof1223.github.io/topsters/static/css/main.1af4b615.chunk.css",
+    "main.js": "/ebof1223.github.io/topsters/static/js/main.2aa6a86e.chunk.js",
+    "main.js.map": "/ebof1223.github.io/topsters/static/js/main.2aa6a86e.chunk.js.map",
+    "runtime-main.js": "/ebof1223.github.io/topsters/static/js/runtime-main.ffefd832.js",
+    "runtime-main.js.map": "/ebof1223.github.io/topsters/static/js/runtime-main.ffefd832.js.map",
+    "static/js/2.4fdaf416.chunk.js": "/ebof1223.github.io/topsters/static/js/2.4fdaf416.chunk.js",
+    "static/js/2.4fdaf416.chunk.js.map": "/ebof1223.github.io/topsters/static/js/2.4fdaf416.chunk.js.map",
+    "index.html": "/ebof1223.github.io/topsters/index.html",
+    "static/css/main.1af4b615.chunk.css.map": "/ebof1223.github.io/topsters/static/css/main.1af4b615.chunk.css.map",
+    "static/js/2.4fdaf416.chunk.js.LICENSE.txt": "/ebof1223.github.io/topsters/static/js/2.4fdaf416.chunk.js.LICENSE.txt",
+    "static/media/landing.cf842c59.jpg": "/ebof1223.github.io/topsters/static/media/landing.cf842c59.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ffefd832.js",
+    "static/js/2.4fdaf416.chunk.js",
+    "static/css/main.1af4b615.chunk.css",
+    "static/js/main.2aa6a86e.chunk.js"
+  ]
+}
