@@ -1,5 +1,7 @@
 # Topsters 
 
+https://ebof1223.github.io/topsters/
+
 Inspired by the social media trend of sharing your favoirte albums/artists in collage form. 
 
 A music-based web application that fetches cover art via the ‘Last.fm’ API that is subsequently stored in an interactive 3 x 3 album art collage or ‘topster’ of the user’s favorite albums and artists, which are saved for future reference. Additionally, includes a static recommended feed loaded with premade topsters from various music instituions, critics, and forums that can be bookmarked and rearranged based on the user’s listening priorities. When viewed individually, each topster displays an enumerated track listing of each album, along with additional meta data on the artist/album.
@@ -38,4 +40,4 @@ A music-based web application that fetches cover art via the ‘Last.fm’ API t
 
  3. Optimization
 
-  This application is optimal on desktop. I did my best to accomodate smaller screen resolutions while staying true to the original design, but it ultimately lead to a cramped UI, especially in the topster create page. 
+  This application is optimal on desktop. I did my best to accomodate smaller screen resolutions while staying true to the original design, but it ultimately lead to a cramped UI, especially in the topster create page. I'd go as far to say that this application isn't well equipped for smart phones, without significant changes to the UI.
