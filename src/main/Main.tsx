@@ -129,120 +129,126 @@ const Main: React.FC<Props> = ({
     }
   };
   return (
-    <div className={classes.root}>
-      <div className={classes.OuterContainer}>
-        <div className={classes.BackButton}>
-          <Tooltip title="Landing">
-            <ArrowBackIcon
-              fontSize="large"
-              onClick={handleLandingModal}
-              style={{ cursor: 'pointer' }}
+    <>
+      <div className={classes.root}>
+        <div className={classes.OuterContainer}>
+          <div className={classes.BackButton}>
+            <Tooltip title="Landing">
+              <ArrowBackIcon
+                fontSize="large"
+                onClick={handleLandingModal}
+                style={{ cursor: 'pointer' }}
+              />
+            </Tooltip>
+          </div>
+          <div className={classes.RecommendedTitleContainer}>
+            <h2 className={classes.RecommendedTitle}>Recommended</h2>
+          </div>
+          <div className={classes.RecommendedContainer}>
+            <ArrowLeftIcon
+              className={
+                currentRecSection && currentRecSection.previousSibling
+                  ? classes.recommendedArrowVisible
+                  : classes.recommendedArrowHidden
+              }
+              color="primary"
+              onClick={() => handleRecArrows('previous')}
             />
-          </Tooltip>
-        </div>
-        <div className={classes.RecommendedTitleContainer}>
-          <h2 className={classes.RecommendedTitle}>Recommended</h2>
-        </div>
-        <div className={classes.RecommendedContainer}>
-          <ArrowLeftIcon
-            className={
-              currentRecSection && currentRecSection.previousSibling
-                ? classes.recommendedArrowVisible
-                : classes.recommendedArrowHidden
-            }
-            color="primary"
-            onClick={() => handleRecArrows('previous')}
-          />
-          <TransitionGroup className={classes.RecommendedTopsters}>
-            {divideBySection(recommended).map((group, i) => (
-              <CSSTransition
-                classNames="fade"
-                timeout={500}
-                key={`recommended-group-${i}`}
-              >
-                <section
-                  className={classes.RecommendedSection}
-                  ref={RecommendedSectionalRef}
+            <TransitionGroup className={classes.RecommendedTopsters}>
+              {divideBySection(recommended).map((group, i) => (
+                <CSSTransition
+                  classNames="fade"
+                  timeout={500}
+                  key={`recommended-group-${i}`}
+                >
+                  <section
+                    className={classes.RecommendedSection}
+                    ref={RecommendedSectionalRef}
+                  >
+                    {group.map((item: TopsterTemplate) => (
+                      <Recommended
+                        {...item}
+                        handleClick={() =>
+                          history.push(`/recommended/${item.id}`)
+                        }
+                        id={item.id}
+                        recommended={recommended}
+                        title={item.title}
+                        key={`group-item-${item.id}`}
+                      />
+                    ))}
+                  </section>
+                </CSSTransition>
+              ))}
+            </TransitionGroup>
+            <ArrowRightIcon
+              className={
+                currentRecSection && currentRecSection.nextSibling
+                  ? classes.recommendedArrowVisible
+                  : classes.recommendedArrowHidden
+              }
+              color="primary"
+              onClick={() => handleRecArrows('next')}
+            />
+          </div>
+          <SubMainHeading bookmarks={bookmarks} history={history} />
+          {currentTopSection && (
+            <ExpandLessIcon
+              className={
+                currentTopSection.previousSibling
+                  ? classes.topsterScrollUpIconOn
+                  : classes.topsterScrollUpIconOff
+              }
+              onClick={() => handleTopArrows('previous')}
+            />
+          )}
+          <div className={classes.subMain}>
+            <div className={classes.UserTopsters} ref={TopsterContainerRef}>
+              {divideBySection(topsters).map((group, i) => (
+                <div
+                  key={`userTopsters-group-${i}`}
+                  className={classes.topstersSection}
                 >
                   {group.map((item: TopsterTemplate) => (
-                    <Recommended
-                      {...item}
-                      handleClick={() =>
-                        history.push(`/recommended/${item.id}`)
-                      }
-                      id={item.id}
-                      recommended={recommended}
-                      title={item.title}
-                      key={`group-item-${item.id}`}
-                    />
+                    <CSSTransition
+                      key={item.id}
+                      classNames="fade"
+                      timeout={500}
+                    >
+                      <UserTopsters
+                        {...item}
+                        handleClick={() => history.push(`/topsters/${item.id}`)}
+                        id={item.id}
+                        deleteDialog={deleteDialog}
+                        setDeleteDialog={setDeleteDialog}
+                        setToBeDeleted={setToBeDeleted}
+                      />
+                    </CSSTransition>
                   ))}
-                </section>
-              </CSSTransition>
-            ))}
-          </TransitionGroup>
-          <ArrowRightIcon
-            className={
-              currentRecSection && currentRecSection.nextSibling
-                ? classes.recommendedArrowVisible
-                : classes.recommendedArrowHidden
-            }
-            color="primary"
-            onClick={() => handleRecArrows('next')}
-          />
-        </div>
-        <SubMainHeading bookmarks={bookmarks} history={history} />
-        {currentTopSection && (
-          <ExpandLessIcon
-            className={
-              currentTopSection.previousSibling
-                ? classes.topsterScrollUpIconOn
-                : classes.topsterScrollUpIconOff
-            }
-            onClick={() => handleTopArrows('previous')}
-          />
-        )}
-        <div className={classes.subMain}>
-          <div className={classes.UserTopsters} ref={TopsterContainerRef}>
-            {divideBySection(topsters).map((group, i) => (
-              <div
-                key={`userTopsters-group-${i}`}
-                className={classes.topstersSection}
-              >
-                {group.map((item: TopsterTemplate) => (
-                  <CSSTransition key={item.id} classNames="fade" timeout={500}>
-                    <UserTopsters
-                      {...item}
-                      handleClick={() => history.push(`/topsters/${item.id}`)}
-                      id={item.id}
-                      deleteDialog={deleteDialog}
-                      setDeleteDialog={setDeleteDialog}
-                      setToBeDeleted={setToBeDeleted}
-                    />
-                  </CSSTransition>
-                ))}
-                <div ref={elementRef} />
-              </div>
-            ))}
+                  <div ref={elementRef} />
+                </div>
+              ))}
+            </div>
+            <UpNext bookmarks={bookmarks} history={history} />
           </div>
-          <UpNext bookmarks={bookmarks} history={history} />
+          {currentTopSection && (
+            <ExpandMoreIcon
+              className={
+                currentTopSection.nextSibling
+                  ? classes.topsterScrollDownIconOn
+                  : classes.topsterScrollDownIconOff
+              }
+              onClick={() => handleTopArrows('next')}
+            />
+          )}
         </div>
-        {currentTopSection && (
-          <ExpandMoreIcon
-            className={
-              currentTopSection.nextSibling
-                ? classes.topsterScrollDownIconOn
-                : classes.topsterScrollDownIconOff
-            }
-            onClick={() => handleTopArrows('next')}
-          />
-        )}
       </div>
       <DeleteModal
         handleDeleteConfirmation={handleDeleteConfirmation}
         deleteDialog={deleteDialog}
         setDeleteDialog={setDeleteDialog}
       />
-    </div>
+    </>
   );
 };
 
