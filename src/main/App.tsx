@@ -2,7 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import recommended from './recommended-sample';
 import { useState, useEffect } from 'react';
 import { TopsterTemplate } from '../interface.js';
-import Bookmarks from './Bookmarks';
+import Bookmarks from '../bookmarks/Bookmarks';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Topster from '../topster/Topster';
 import Main from './Main';

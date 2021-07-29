@@ -20,8 +20,8 @@ interface Props {
   id: string;
   deleteDialog: boolean;
   setDeleteDialog: (input: boolean) => void;
-  handleClick: () => void;
   setToBeDeleted: (input: string) => void;
+  handleClick: () => void;
 }
 
 const UserTopsters: React.FC<Props> = ({

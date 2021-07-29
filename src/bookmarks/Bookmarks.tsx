@@ -2,7 +2,7 @@ import { Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import { TopsterTemplate } from '../interface';
 import HomeIcon from '@material-ui/icons/Home';
-import styles from './main-styles/Bookmarks-styles';
+import styles from './bookmarks-styles/Bookmarks-styles';
 import BookmarksContainer from './BookmarksContainer';
 import { arrayMove } from 'react-sortable-hoc';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';

@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/styles';
 import { TopsterTemplate } from '../interface';
-import styles from './main-styles/BookmarksContainer-styles';
+import styles from '../bookmarks/bookmarks-styles/BookmarksContainer-styles';
 import { SortableContainer } from 'react-sortable-hoc';
 import DraggableBookmark from './DraggableBookmark';
 

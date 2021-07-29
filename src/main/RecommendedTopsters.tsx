@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import Paper from '@material-ui/core/Paper';
-import styles from './main-styles/Recommended-styles';
+import styles from './main-styles/RecommendedTopsters-styles';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
@@ -24,7 +24,7 @@ interface Props {
   id: string;
 }
 
-const Recommended: React.FC<Props> = ({
+const RecommendedTopsters: React.FC<Props> = ({
   classes,
   albums,
   handleClick,
@@ -66,4 +66,4 @@ const Recommended: React.FC<Props> = ({
   );
 };
 
-export default withStyles(styles)(Recommended);
+export default withStyles(styles)(RecommendedTopsters);

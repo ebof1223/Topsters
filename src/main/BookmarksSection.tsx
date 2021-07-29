@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/styles';
-import styles from './main-styles/UpNext-styles';
+import styles from './main-styles/BookmarksSection-styles';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import { Tooltip } from '@material-ui/core';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
@@ -11,6 +11,10 @@ interface Props {
     CompareArrowsIcon: string;
     firstBookmarkedItem: string;
     noBookmarks: string;
+    AOTDTitleContainer: string;
+    BookmarkTitle: string;
+    BookmarkCapacity: string;
+    sectionWrapper: string;
   };
   bookmarks: TopsterTemplate[];
   history: {
@@ -20,7 +24,15 @@ interface Props {
 
 const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
   return (
-    <>
+    <section className={classes.sectionWrapper}>
+      <div className={classes.BookmarkTitle}>
+        <h2>
+          Up Next{' '}
+          <span className={classes.BookmarkCapacity}>
+            <sup>{`${bookmarks.length}`}</sup> &frasl; <sub>9</sub>
+          </span>
+        </h2>
+      </div>
       {bookmarks.length ? (
         <div key={bookmarks[0].id} className={classes.AOTDContainer}>
           <Tooltip title="Rearrange">
@@ -46,7 +58,7 @@ const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
           <h3 className={classes.noBookmarks}>You're all caught up!</h3>
         </div>
       )}
-    </>
+    </section>
   );
 };
 
