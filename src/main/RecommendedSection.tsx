@@ -2,11 +2,11 @@ import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { withStyles } from '@material-ui/styles';
 import RecommendedTopsters from './RecommendedTopsters';
+import recommendedAll from './recommended-sample';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import { TopsterTemplate } from '../interface';
 import styles from './main-styles/RecommendedSection-styles';
-import recommendedAll from './recommended-sample';
 
 interface Props {
   classes: {
