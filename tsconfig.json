@@ -25,6 +25,7 @@
     "topster/NavbarStyles.tsx",
     "topster/Navbar.tsx",
     "topster/topster-styles/ToppingsStyles.tsx",
-    "topster/Toppings.tsx"
+    "topster/Toppings.tsx",
+    "Carousel.tsx"
   ]
 }

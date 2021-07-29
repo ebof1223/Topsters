@@ -1,7 +1,7 @@
 import { createStyles } from '@material-ui/styles';
 import sizes from '../../sizes';
 const styles = createStyles({
-  sectionWrapper: { marginRight: '2rem' },
+  sectionWrapper: { margin: '0 auto' },
   AOTDContainer: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
