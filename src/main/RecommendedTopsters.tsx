@@ -56,9 +56,7 @@ const RecommendedTopsters: React.FC<Props> = ({
               key={item.name}
             />
           ))}
-          <div className={classes.PlayIcon}>
-            <PlayCircleFilledIcon fontSize="large" />
-          </div>
+          <PlayCircleFilledIcon fontSize="large" className={classes.PlayIcon} />
         </div>
         <div className={classes.title}>{title}</div>
       </Paper>
