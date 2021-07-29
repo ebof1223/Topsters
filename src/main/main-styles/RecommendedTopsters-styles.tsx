@@ -1,4 +1,5 @@
 import { createStyles } from '@material-ui/styles';
+import sizes from '../../sizes';
 
 const styles = createStyles({
   root: {
@@ -12,6 +13,16 @@ const styles = createStyles({
     '&:focus, &:hover': {
       filter: 'brightness(120%) saturate(120%)',
     },
+    [sizes.down('xl')]: {
+      transform: 'scale(0.9)',
+    },
+    [sizes.down('lg')]: {
+      transform: 'scale(0.8)',
+    },
+    [sizes.down('md')]: {
+      transform: 'scale(0.7)',
+    },
+    [sizes.down('xs')]: { transform: 'scale(0.5)' },
   },
   topsterGrid: {
     display: 'grid',

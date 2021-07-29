@@ -3,10 +3,9 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { withStyles } from '@material-ui/styles';
 import RecommendedTopsters from './RecommendedTopsters';
 import recommendedAll from './recommended-sample';
-import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import { TopsterTemplate } from '../interface';
 import styles from './main-styles/RecommendedSection-styles';
+import Carousel from 'react-elastic-carousel';
 
 interface Props {
   classes: {
@@ -21,6 +20,13 @@ interface Props {
     push: (input: string) => void;
   };
 }
+const breakPoints = [
+  { width: 200, itemsToShow: 1, itemsToScroll: 1 },
+  { width: 300, itemsToShow: 2, itemstoScroll: 2 },
+  { width: 600, itemsToShow: 3, itemsToScroll: 3 },
+  { width: 900, itemsToShow: 4, itemsToScroll: 4 },
+  { width: 1200, itemsToShow: 5, itemsToScroll: 5 },
+];
 const RecommendedSection: React.FC<Props> = ({
   classes,
   recommended,
@@ -30,32 +36,25 @@ const RecommendedSection: React.FC<Props> = ({
     <section className={classes.sectionWrapper}>
       <h2 className={classes.RecommendedTitle}>Recommended</h2>
       <div className={classes.RecommendedContainer}>
-        <ArrowLeftIcon
-          className={classes.recommendedArrowVisible}
-          color="primary"
-          // onClick={() => handleRecArrows('previous')}
-        />
         <TransitionGroup>
           <CSSTransition classNames="fade" timeout={500}>
             <div className={classes.RecommendedTopsters}>
               {/* FIIXXXXXXX */}
-              {recommendedAll.map((item: any) => (
-                <RecommendedTopsters
-                  {...item}
-                  handleClick={() => history.push(`/recommended/${item.id}`)}
-                  id={item.id}
-                  recommended={recommended}
-                  title={item.title}
-                  key={`${item.id}`}
-                />
-              ))}
+              <Carousel isRTL={true} breakPoints={breakPoints}>
+                {recommendedAll.map((item: any) => (
+                  <RecommendedTopsters
+                    {...item}
+                    handleClick={() => history.push(`/recommended/${item.id}`)}
+                    id={item.id}
+                    recommended={recommended}
+                    title={item.title}
+                    key={`${item.id}`}
+                  />
+                ))}
+              </Carousel>
             </div>
           </CSSTransition>
         </TransitionGroup>
-        <ArrowRightIcon
-          className={classes.recommendedArrowVisible}
-          color="primary"
-        />
       </div>
     </section>
   );

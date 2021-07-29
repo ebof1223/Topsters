@@ -5,6 +5,7 @@ const styles = createStyles({
   sectionWrapper: {
     gridColumn: '1/5',
     margin: '0 auto',
+    [sizes.down('xs')]: { margin: '2rem auto' },
   },
   RecommendedTitle: {
     color: '#fff',
@@ -13,16 +14,15 @@ const styles = createStyles({
   RecommendedContainer: {
     display: 'flex',
     alignItems: 'center',
-    // overflow: 'hidden',
   },
   RecommendedTopsters: {
     width: '70vw',
     overflow: 'hidden',
     margin: '2rem auto',
     display: 'flex',
-    // flexDirection: 'row',
     scrollSnapType: 'x mandatory',
     scrollbarWidth: 'none',
+    [sizes.down('xs')]: { margin: '-15% auto 0 auto' },
   },
   recommendedArrowVisible: {
     fontSize: '70px',
