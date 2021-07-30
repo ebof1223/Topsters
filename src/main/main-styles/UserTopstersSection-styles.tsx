@@ -27,40 +27,19 @@ const styles = createStyles({
   Fab: {
     marginLeft: '1rem',
   },
-  UserTopsters: {
-    // display: 'flex',
-    // flexDirection: 'column',
-    // overflowY: 'hidden',
-    // overflowX: 'hidden',
-    // scrollbarWidth: 'none',
-    // width: '100%',
-    // height: '400px',
-    // width: '800px',
-    // [sizes.down('xl')]: {
-    //   width: '475px',
-    // },
-    // [sizes.down('lg')]: {
-    //   marginLeft: '2rem',
-    //   width: '553px',
-    // },
-    // [sizes.down('md')]: {
-    //   padding: 0,
-    //   margin: 'auto',
-    //   transform: 'scale(0.85)',
-    // },
-    // [sizes.down('xs')]: {
-    //   transform: 'scale(0.6)',
-    //   width: '900px',
-    //   marginLeft: '-2rem',
-    //   marginTop: '-2.5rem',
-    // },
+  TopstersSection: {
+    overflow: 'auto',
+    height: '400px',
+    // // margin: 'auto',
   },
-  topstersSection: {
+
+  UserTopsters: {
     display: 'flex',
     flexWrap: 'wrap',
     scrollSnapType: 'y mandatory',
     scrollSnapAlign: 'start',
   },
+
   topsterScrollUpIconOn: {
     // position: 'relative',
     // marginLeft: '33%',

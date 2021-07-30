@@ -14,8 +14,8 @@ const styles = createStyles({
     width: '100vw',
     height: '100vh',
     display: 'grid',
-    gridTemplateColumns: '12% 38% 50%',
-    // gridTemplateColumns: '1fr 2fr 10fr',
+    gridTemplateColumns: '1fr 3fr 3fr 1fr',
+    gridTemplateRows: '1fr 3fr 3fr 2fr',
     padding: '0 10%',
   },
   BackButton: {

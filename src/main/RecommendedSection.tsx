@@ -39,7 +39,6 @@ const RecommendedSection: React.FC<Props> = ({
         <TransitionGroup>
           <CSSTransition classNames="fade" timeout={500}>
             <div className={classes.RecommendedTopsters}>
-              {/* FIIXXXXXXX */}
               <Carousel isRTL={true} breakPoints={breakPoints}>
                 {recommendedAll.map((item: any) => (
                   <RecommendedTopsters

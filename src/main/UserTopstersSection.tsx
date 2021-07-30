@@ -9,7 +9,7 @@ import { TopsterTemplate } from '../interface';
 
 interface Props {
   classes: {
-    topstersSection: string;
+    TopstersSection: string;
     UserTopsters: string;
     topstersTitle: string;
     topsterTitleContainer: string;
@@ -41,12 +41,6 @@ const UserTopstersSection: React.FC<Props> = ({
 
   return (
     <section className={classes.sectionWrapper}>
-      {/* {currentTopSection && ( */}
-      {/* <ExpandLessIcon
-        className={classes.topsterScrollUpIconOn}
-        onClick={() => handleTopArrows('previous')}
-      /> */}
-      {/* )} */}
       <div className={classes.topsterTitleContainer}>
         <h2 className={classes.topstersTitle}>My Topsters</h2>
         <div>
@@ -64,8 +58,8 @@ const UserTopstersSection: React.FC<Props> = ({
           </Tooltip>
         </div>
       </div>
-      <div className={classes.UserTopsters}>
-        <div className={classes.topstersSection}>
+      <div className={classes.TopstersSection}>
+        <div className={classes.UserTopsters}>
           {topsters.map((item: TopsterTemplate) => (
             <CSSTransition key={item.id} classNames="fade" timeout={500}>
               <UserTopsters
@@ -81,12 +75,6 @@ const UserTopstersSection: React.FC<Props> = ({
           <div ref={elementRef} />
         </div>
       </div>
-      {/* {currentTopSection && ( */}
-      {/* <ExpandMoreIcon
-        className={classes.topsterScrollDownIconOn}
-        onClick={() => handleTopArrows('next')}
-      /> */}
-      {/* )} */}
     </section>
   );
 };

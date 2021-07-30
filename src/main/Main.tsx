@@ -35,23 +35,6 @@ const Main: React.FC<Props> = ({
 }) => {
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
-  // const [currentRecSection, setCurrentRecSection] = useState(null);
-  // const [currentTopSection, setCurrentTopSection] = useState(null);
-  // const [currentRecIndex, setCurrentRecIndex] = useState(0);
-  // const [currentTopIndex, setCurrentTopIndex] = useState(null);
-
-  // useEffect(() => {
-  //   setCurrentRecSection(
-  //     RecommendedSectionalRef.current.parentElement.childNodes[currentRecIndex]
-  //   );
-  //   setCurrentTopSection(
-  //     TopsterContainerRef.current.childNodes[
-  //       TopsterContainerRef.current.childNodes.length - 1
-  //     ]
-  //   );
-  //   setCurrentTopIndex(TopsterContainerRef.current.childNodes.length - 1);
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
 
   const handleDeleteConfirmation = () => {
     let newTopster = topsters.filter((item) => item.id !== toBeDeleted);
@@ -66,38 +49,6 @@ const Main: React.FC<Props> = ({
     }, 100);
   };
 
-  // const divideBySection = (type: typeof recommended | typeof topsters) => {
-  //   var sectionLength = type === recommended ? 5 : 8;
-  //   let copy = [...type];
-  //   let grouping = [];
-  //   while (copy.length) grouping.push(copy.splice(0, sectionLength));
-  //   return grouping;
-  // };
-
-  // const handleRecArrows = (direction: string) => {
-  //   if (direction === 'next' && currentRecSection.nextSibling) {
-  //     currentRecSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
-  //     setCurrentRecSection(currentRecSection.nextSibling);
-  //     setCurrentRecIndex(currentRecIndex + 1);
-  //   }
-  //   if (direction === 'previous' && currentRecSection.previousSibling) {
-  //     currentRecSection.previousSibling?.scrollIntoView({ behavior: 'smooth' });
-  //     setCurrentRecSection(currentRecSection.previousSibling);
-  //     setCurrentRecIndex(currentRecIndex - 1);
-  //   }
-  // };
-  // const handleTopArrows = (direction: string) => {
-  //   if (direction === 'next' && currentTopSection.nextSibling) {
-  //     currentTopSection.nextSibling?.scrollIntoView({ behavior: 'smooth' });
-  //     setCurrentTopSection(currentTopSection.nextSibling);
-  //     setCurrentTopIndex(currentTopIndex + 1);
-  //   }
-  //   if (direction === 'previous' && currentTopSection.previousSibling) {
-  //     currentTopSection.previousSibling?.scrollIntoView({ behavior: 'smooth' });
-  //     setCurrentTopSection(currentTopSection.previousSibling);
-  //     setCurrentTopIndex(currentTopIndex - 1);
-  //   }
-  // };
   return (
     <>
       <div className={classes.root}>

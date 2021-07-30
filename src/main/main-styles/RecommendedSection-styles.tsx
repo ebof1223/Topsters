@@ -12,7 +12,8 @@ const styles = createStyles({
     fontSize: '2rem',
     fontFamily: 'Merriweather, serif',
     position: 'relative',
-    left: '5.5%',
+    left: '7%',
+    [sizes.down('xs')]: { textAlign: 'center', left: 0 },
   },
   RecommendedContainer: {
     display: 'flex',
@@ -27,15 +28,6 @@ const styles = createStyles({
     scrollbarWidth: 'none',
     [sizes.down('xs')]: { margin: '-15% auto 0 auto' },
   },
-  recommendedArrowVisible: {
-    fontSize: '70px',
-    cursor: 'pointer',
-  },
-  // recommendedArrowHidden: {
-  //   fontSize: '70px',
-  //   opacity: '0.2',
-  //   pointerEvents: 'none',
-  // },
 });
 
 export default styles;
