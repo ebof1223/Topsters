@@ -3,7 +3,6 @@ import sizes from '../../sizes';
 
 const styles = createStyles({
   sectionWrapper: {
-    // gridColumn: '1/4',
     marginLeft: '2rem',
   },
   topsterTitleContainer: {
@@ -16,7 +15,7 @@ const styles = createStyles({
   topstersTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
-    marginTop: '2rem',
+    fontSize: '2rem',
     // [sizes.down('lg')]: {
     //   marginLeft: '-4rem',
     // },
@@ -25,14 +24,14 @@ const styles = createStyles({
     // },
   },
   Fab: {
-    // left: '30%',
+    marginLeft: '1rem',
   },
   UserTopsters: {
-    display: 'flex',
-    flexDirection: 'column',
-    overflowY: 'hidden',
-    overflowX: 'hidden',
-    scrollbarWidth: 'none',
+    // display: 'flex',
+    // flexDirection: 'column',
+    // overflowY: 'hidden',
+    // overflowX: 'hidden',
+    // scrollbarWidth: 'none',
     // width: '100%',
     // height: '400px',
     // width: '800px',

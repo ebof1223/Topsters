@@ -3,7 +3,6 @@ import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { withStyles } from '@material-ui/core/styles';
 import NewTopsterNav from './NewTopsterNav';
 import Search from './Search';
-import HowToUse from './HowToUse';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
@@ -34,8 +33,6 @@ interface Props {
     contentShift: string;
     background: string;
   };
-  setShowAgain: (i: boolean) => void;
-  showAgain: boolean;
 }
 var newTopstersHistory: any;
 const NewTopster: React.FC<Props> = ({
@@ -44,8 +41,6 @@ const NewTopster: React.FC<Props> = ({
   match,
   topsters,
   classes,
-  setShowAgain,
-  showAgain,
 }) => {
   const retrieveTitle = () => {
     for (let [index, item] of topsters.entries()) {
@@ -102,7 +97,6 @@ const NewTopster: React.FC<Props> = ({
 
   return (
     <>
-      <HowToUse setShowAgain={setShowAgain} showAgain={showAgain} />
       <NewTopsterNav
         openDrawer={openDrawer}
         setOpenDrawer={setOpenDrawer}
@@ -167,7 +161,7 @@ const NewTopster: React.FC<Props> = ({
           openConfirm={openConfirm}
           setOpenConfirm={setOpenConfirm}
         />
-     
+
         <main
           className={clsx(classes.content, {
             [classes.contentShift]: openDrawer,

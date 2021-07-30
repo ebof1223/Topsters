@@ -82,20 +82,15 @@ const styles = createStyles({
     flexDirection: 'row',
     color: '#fff',
     fontFamily: 'Merriweather, serif',
-    alignSelf: 'center',
-    marginRight: '25%',
+    fontSize: '1.5rem',
+    marginBottom: '1rem',
     [sizes.down('xl')]: {
       width: '40%',
       marginRight: '3%',
     },
     [sizes.down('md')]: { marginTop: 0 },
   },
-  BookmarkCapacity: { fontSize: '14px', paddingLeft: '10px' },
-
-  AOTDTitleContainer: {
-    color: '#fff',
-    fontFamily: 'Merriweather, serif',
-  },
+  BookmarkCapacity: { fontSize: '1rem', marginLeft: '10px' },
 });
 
 export default styles;

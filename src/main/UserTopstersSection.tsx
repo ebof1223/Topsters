@@ -5,8 +5,6 @@ import UserTopsters from './UserTopsters';
 import { CSSTransition } from 'react-transition-group';
 import styles from './main-styles/UserTopstersSection-styles';
 import { useEffect, useRef } from 'react';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { TopsterTemplate } from '../interface';
 
 interface Props {

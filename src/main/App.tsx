@@ -21,7 +21,6 @@ const App: React.FC = () => {
   );
 
   const [openLandingModal, setOpenLandingModal] = useState(true);
-  const [showAgain, setShowAgain] = useState(true);
   const [topsters, setTopsters] = useState(
     Object.keys(savedTopsters).length ? savedTopsters : defaultTopsters
   );
@@ -49,7 +48,6 @@ const App: React.FC = () => {
   useEffect(() => {
     window.localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     window.localStorage.setItem('topsters', JSON.stringify(topsters));
-    window.localStorage.setItem('HowToUse', JSON.stringify(showAgain));
   });
 
   const findUserTopsters = (id: string) => {
@@ -110,8 +108,6 @@ const App: React.FC = () => {
                       saveTopsters={saveTopsters}
                       {...routeProps}
                       topsters={topsters}
-                      setShowAgain={setShowAgain}
-                      showAgain={showAgain}
                     />
                   </Page>
                 )}
@@ -209,8 +205,6 @@ const App: React.FC = () => {
                       saveTopsters={saveTopsters}
                       {...routeProps}
                       topsters={topsters}
-                      setShowAgain={setShowAgain}
-                      showAgain={showAgain}
                     />
                   </Page>
                 )}
