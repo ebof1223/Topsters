@@ -6,12 +6,11 @@ import { AlbumTemplate, TopsterTemplate } from '../interface';
 
 interface Props {
   classes: {
-    AOTDContainer: string;
-    AOTDContainerEmpty: string;
+    bookmarkContainer: string;
+    bookmarkContainerEmpty: string;
     CompareArrowsIcon: string;
-    firstBookmarkedItem: string;
+    firstBookmarkedAlbum: string;
     noBookmarks: string;
-    AOTDTitleContainer: string;
     BookmarkTitle: string;
     BookmarkCapacity: string;
     sectionWrapper: string;
@@ -34,7 +33,7 @@ const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
         </h2>
       </div>
       {bookmarks.length ? (
-        <div key={bookmarks[0].id} className={classes.AOTDContainer}>
+        <div key={bookmarks[0].id} className={classes.bookmarkContainer}>
           <Tooltip title="Rearrange">
             <CompareArrowsIcon
               className={classes.CompareArrowsIcon}
@@ -45,7 +44,7 @@ const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
           {bookmarks[0].albums.map((item: AlbumTemplate) => (
             <div
               onClick={() => history.push(`/bookmarks/${bookmarks[0].id}`)}
-              className={classes.firstBookmarkedItem}
+              className={classes.firstBookmarkedAlbum}
               style={{
                 background: `url(${item.image[3]['#text']}) no-repeat center center/cover`,
               }}
@@ -54,7 +53,7 @@ const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
           ))}
         </div>
       ) : (
-        <div className={classes.AOTDContainerEmpty} key={'bookmarks'}>
+        <div className={classes.bookmarkContainerEmpty} key={'bookmarks'}>
           <h3 className={classes.noBookmarks}>You're all caught up!</h3>
         </div>
       )}

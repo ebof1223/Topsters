@@ -1,11 +1,18 @@
 import { createStyles } from '@material-ui/styles';
 import sizes from '../../sizes';
 const styles = createStyles({
-  sectionWrapper: { margin: '0 auto' },
-  AOTDContainer: {
+  sectionWrapper: {
+    margin: '0 auto',
+    [sizes.down('xs')]: {
+      gridArea: 'bookmarks',
+    },
+    '@media all and (width: 667px) and (height: 375px)': {
+      gridArea: 'bookmarks',
+    },
+  },
+  bookmarkContainer: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gridAutoRows: 'repeat(3, 1fr)',
     borderRadius: '5px',
     border: '3px solid #91a7ff',
     width: '22vw',
@@ -14,21 +21,20 @@ const styles = createStyles({
     '&:focus, &:hover': {
       filter: 'brightness(115%) saturate(100%)',
     },
-    // [sizes.down('lg')]: {
-    //   width: '60%',
-    // },
-    // [sizes.down('md')]: {
-    //   padding: 0,
-    //   margin: '2rem auto 2rem auto',
-    //   transform: 'scale(0.70)',
-    //   width: '1000px',
-    // },
-    // [sizes.down('xs')]: {
-    //   marginTop: '-2.5rem',
-    //   marginRight: '1.5rem',
-    // },
+    [sizes.down('lg')]: {
+      top: '10%',
+    },
+    [sizes.down('md')]: {
+      top: '20%',
+    },
+    [sizes.down('xs')]: {
+      display: 'none',
+    },
+    '@media all and (width: 667px) and (height: 375px)': {
+      display: 'none',
+    },
   },
-  AOTDContainerEmpty: {
+  bookmarkContainerEmpty: {
     borderRadius: '5px',
     border: '3px solid #91a7ff',
     width: '400px',
@@ -37,18 +43,6 @@ const styles = createStyles({
     cursor: 'pointer',
     position: 'relative',
     textAlign: 'center',
-    [sizes.down('lg')]: {
-      width: '60%',
-    },
-    [sizes.down('md')]: {
-      padding: 0,
-      margin: '2rem auto 2rem auto',
-      transform: 'scale(0.70)',
-      width: '1000px',
-    },
-    [sizes.down('xs')]: {
-      height: '250px',
-    },
   },
   CompareArrowsIcon: {
     position: 'absolute',
@@ -58,15 +52,17 @@ const styles = createStyles({
     fontSize: '50px',
     color: '#91a7ff',
     borderRadius: '15px',
-    [sizes.down('xs')]: {
-      left: '75%',
-    },
+    [sizes.down('lg')]: { left: '75%', top: 0 },
+    [sizes.down('md')]: { left: '70%', top: 0 },
   },
-  firstBookmarkedItem: {
+  firstBookmarkedAlbum: {
     height: '131.5px',
-    display: 'block ruby',
-    [sizes.down('xs')]: {
-      height: '70px',
+
+    [sizes.down('lg')]: {
+      height: '80px',
+    },
+    [sizes.down('md')]: {
+      height: '60px',
     },
   },
 
@@ -84,11 +80,6 @@ const styles = createStyles({
     fontFamily: 'Merriweather, serif',
     fontSize: '1.5rem',
     marginBottom: '1rem',
-    [sizes.down('xl')]: {
-      width: '40%',
-      marginRight: '3%',
-    },
-    [sizes.down('md')]: { marginTop: 0 },
   },
   BookmarkCapacity: { fontSize: '1rem', marginLeft: '10px' },
 });

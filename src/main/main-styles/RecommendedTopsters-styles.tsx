@@ -20,7 +20,7 @@ const styles = createStyles({
       transform: 'scale(0.8)',
     },
     [sizes.down('md')]: {
-      transform: 'scale(0.7)',
+      transform: 'scale(0.75)',
     },
     [sizes.down('xs')]: { transform: 'scale(0.5)' },
   },

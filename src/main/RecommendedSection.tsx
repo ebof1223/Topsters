@@ -13,7 +13,6 @@ interface Props {
     RecommendedTitle: string;
     RecommendedTopsters: string;
     RecommendedContainer: string;
-    recommendedArrowVisible: string;
   };
   recommended?: TopsterTemplate[];
   history: {

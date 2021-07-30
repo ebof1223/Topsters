@@ -3,34 +3,50 @@ import sizes from '../../sizes';
 
 const styles = createStyles({
   sectionWrapper: {
-    // marginLeft: '2rem',
     gridColumn: '2/3',
+    [sizes.down('xs')]: {
+      gridArea: 'topsters',
+    },
+    '@media all and (width: 667px) and (height: 375px)': {
+      gridArea: 'topsters',
+    },
   },
   topsterTitleContainer: {
     display: 'flex',
     alignItems: 'center',
-    // [sizes.down('xl')]: {
-    //   marginLeft: '10%',
-    // },
+    [sizes.down('xs')]: {
+      justifyContent: 'center',
+    },
   },
   topstersTitle: {
     color: '#fff',
     fontFamily: 'Merriweather, serif',
     fontSize: '2rem',
-    // [sizes.down('lg')]: {
-    //   marginLeft: '-4rem',
-    // },
-    // [sizes.down('md')]: {
-    //   marginLeft: '-1rem',
-    // },
+    [sizes.down('xs')]: {
+      alignItems: 'center',
+    },
+    '@media all and (width: 667px) and (height: 375px)': {
+      margin: '0 auto',
+    },
   },
   Fab: {
     marginLeft: '1rem',
+    [sizes.down('xs')]: {
+      display: 'none',
+    },
+    '@media all and (width: 667px) and (height: 375px)': {
+      display: 'none',
+    },
   },
   TopstersSection: {
     overflow: 'auto',
     height: '400px',
-    // // margin: 'auto',
+    [sizes.down('xs')]: {
+      display: 'none',
+    },
+    '@media all and (width: 667px) and (height: 375px)': {
+      display: 'none',
+    },
   },
 
   UserTopsters: {
@@ -38,61 +54,6 @@ const styles = createStyles({
     flexWrap: 'wrap',
     scrollSnapType: 'y mandatory',
     scrollSnapAlign: 'start',
-  },
-
-  topsterScrollUpIconOn: {
-    // position: 'relative',
-    // marginLeft: '33%',
-    // '&:hover': {
-    //   transform: 'scale(2)',
-    //   transition: 'background 0.5s ease',
-    //   cursor: 'pointer',
-    // },
-    // [sizes.down('xl')]: {
-    //   marginLeft: '27%',
-    //   marginBottom: '-2%',
-    //   marginTop: '2%',
-    // },
-    // [sizes.down('lg')]: {
-    //   marginLeft: '25%',
-    //   marginBottom: '-4%',
-    //   marginTop: '2%',
-    // },
-    // [sizes.down('md')]: {
-    //   marginLeft: '20%',
-    //   marginBottom: '-12%',
-    //   marginTop: '4%',
-    // },
-    // [sizes.down('xs')]: {
-    //   marginLeft: '23%',
-    //   marginTop: '-1rem',
-    //   top: '2%',
-    // },
-  },
-  topsterScrollDownIconOn: {
-    // position: 'relative',
-    // marginLeft: '33%',
-    // '&:hover': {
-    //   transform: 'scale(2)',
-    //   transition: 'background 0.5s ease',
-    //   cursor: 'pointer',
-    // },
-    // [sizes.down('xl')]: {
-    //   marginLeft: '27%',
-    //   marginTop: '-2%',
-    // },
-    // [sizes.down('lg')]: {
-    //   marginLeft: '25%',
-    //   marginTop: '-2%',
-    // },
-    // [sizes.down('md')]: {
-    //   marginLeft: '20%',
-    //   marginTop: '-8%',
-    // },
-    // [sizes.down('xs')]: {
-    //   marginLeft: '23%',
-    //   bottom: '8%',
-    // },
   },
 });
 
