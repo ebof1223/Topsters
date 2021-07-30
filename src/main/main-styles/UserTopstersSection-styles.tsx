@@ -3,7 +3,8 @@ import sizes from '../../sizes';
 
 const styles = createStyles({
   sectionWrapper: {
-    marginLeft: '2rem',
+    // marginLeft: '2rem',
+    gridColumn: '2/3',
   },
   topsterTitleContainer: {
     display: 'flex',

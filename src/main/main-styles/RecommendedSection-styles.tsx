@@ -12,7 +12,7 @@ const styles = createStyles({
     fontSize: '2rem',
     fontFamily: 'Merriweather, serif',
     position: 'relative',
-    right: '5.5%',
+    left: '5.5%',
   },
   RecommendedContainer: {
     display: 'flex',
