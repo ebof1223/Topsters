@@ -40,4 +40,4 @@ A music-based web application that fetches cover art via the ‘Last.fm’ API t
 
  3. Optimization
 
-  This application is optimal on desktop. I did my best to accomodate smaller screen resolutions while staying true to the original design, but it ultimately lead to a cramped UI, especially in the topster create page. This led me to withdrawing from the mobile experience all together. The application is still responsive (excluding media landscape mode) but it's vestigial to say the least. This is hopefully to encourage users to try the application on desktop for the full experience. 
+  This application is optimal on desktop. I did my best to accomodate smaller screen resolutions while staying true to the original design, but it ultimately lead to a cramped UI, especially in the topster create page. This led me to withdrawing from the mobile experience all together. The application is still responsive (excluding media landscape mode) although there are definitley some points that can result in the layout looking odd.  This is hopefully to encourage users to try the application on desktop for the full experience. 
