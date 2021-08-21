@@ -10,7 +10,7 @@ const styles = createStyles({
     cursor: 'pointer',
     background:
       'linear-gradient(to top right,rgba(100, 213, 251, 0.3),rgba(228, 166, 249, 0.5)) fixed',
-    '&:focus, &:hover': {
+    '&:hover': {
       filter: 'brightness(120%) saturate(120%)',
     },
     [sizes.down('xl')]: {
