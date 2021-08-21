@@ -46,7 +46,7 @@ const styles = createStyles({
     fontFamily: 'Lexend, sans-serif',
     fontWeight: 500,
     color: '#fff',
-    fontSize: '1.275rem',
+    fontSize: '1.1rem',
     marginRight: '10px',
     paddingTop: '1rem',
     padding: '4rem 1rem',
