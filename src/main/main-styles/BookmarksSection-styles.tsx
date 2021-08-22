@@ -80,6 +80,7 @@ const styles = createStyles({
     fontFamily: 'Merriweather, serif',
     fontSize: '1.5rem',
     marginBottom: '1rem',
+    cursor: 'pointer',
   },
   BookmarkCapacity: { fontSize: '1rem', marginLeft: '10px' },
 });

@@ -14,6 +14,7 @@ const styles = createStyles({
   topsterTitleContainer: {
     display: 'flex',
     alignItems: 'center',
+    cursor: 'pointer',
     [sizes.down('xs')]: {
       justifyContent: 'center',
     },

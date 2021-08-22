@@ -42,7 +42,12 @@ const UserTopstersSection: React.FC<Props> = ({
   return (
     <section className={classes.sectionWrapper}>
       <div className={classes.topsterTitleContainer}>
-        <h2 className={classes.topstersTitle}>My Topsters</h2>
+        <h2
+          className={classes.topstersTitle}
+          onClick={() => history.push(`/topsters/${topsters[0].id}`)}
+        >
+          My Topsters
+        </h2>
         <div>
           <Tooltip title="Add">
             <Fab

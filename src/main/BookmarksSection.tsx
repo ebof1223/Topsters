@@ -25,7 +25,7 @@ const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
   return (
     <section className={classes.sectionWrapper}>
       <div className={classes.BookmarkTitle}>
-        <h2>
+        <h2 onClick={() => history.push(`/bookmarks/${bookmarks[0].id}`)}>
           Up Next{' '}
           <span className={classes.BookmarkCapacity}>
             <sup>{`${bookmarks.length}`}</sup> &frasl; <sub>9</sub>
