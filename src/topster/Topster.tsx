@@ -1,13 +1,14 @@
 import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { Paper } from '@material-ui/core';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
 import Album from './Album';
 import Navbar from './Navbar';
 import styles from './topster-styles/TopsterStyles';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { UserContext } from '../main/UserContext';
 interface Props {
   title: string;
   id: string;
@@ -21,7 +22,6 @@ interface Props {
     Albums: string;
     record: string;
   };
-  topsters?: TopsterTemplate[];
   recommended?: any;
   history: {
     goBack: () => void;
@@ -36,12 +36,12 @@ const Topster: React.FC<Props> = ({
   id,
   albums,
   classes,
-  topsters,
   history,
   recommended,
   bookmarks,
   setBookmarks,
 }) => {
+  const topsters = useContext(UserContext);
   const [listToBeRendered, setListToRendered] = useState(topsters);
   const [selectedAlbum, setSelectedAlbum] = useState<AlbumTemplate>(albums[0]);
   const selectAlbum = (index: number) => {

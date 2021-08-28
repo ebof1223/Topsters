@@ -32,7 +32,6 @@ const UserTopsters: React.FC<Props> = ({
   setDeleteDialog,
   handleClick,
   setToBeDeleted,
-  title,
 }) => {
   const Recommended = albums.map((item) => (
     <div

@@ -43,7 +43,6 @@ interface Props {
   match: { params: any };
   setNewTopsters: (args: object) => void;
   newTopsters: AlbumTemplate[] | undefined;
-  topsters: TopsterTemplate[];
   saveTopsters: (input: TopsterTemplate) => void;
   newTopsterName: string;
   setNewTopsterName: (input: string) => void;
@@ -69,7 +68,6 @@ const NewTopsterNavStyles: React.FC<Props> = ({
   history,
   setNewTopsters,
   newTopsters,
-  topsters,
   saveTopsters,
   newTopsterName,
   setNewTopsterName,
@@ -182,7 +180,6 @@ const NewTopsterNavStyles: React.FC<Props> = ({
             newTopsterName={newTopsterName}
             setNewTopsterName={setNewTopsterName}
             newTopsters={newTopsters}
-            topsters={topsters}
             history={history}
             saveTopsters={saveTopsters}
             match={match}

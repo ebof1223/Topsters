@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -8,13 +8,13 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import CharacterCounter from './CharacterCounter';
+import { UserContext } from '../main/UserContext';
 
 interface Props {
   setNewTopsterName: (input: string) => void;
   newTopsterName: string | null;
   newTopsters: AlbumTemplate[];
   match: { params: { id: string } };
-  topsters: TopsterTemplate[];
   history: {
     goBack: () => void;
     push: (input: string) => void;
@@ -31,7 +31,6 @@ const SaveButton: React.FC<Props> = ({
   setNewTopsterName,
   newTopsterName,
   newTopsters,
-  topsters,
   history,
   saveTopsters,
   match,
@@ -40,6 +39,7 @@ const SaveButton: React.FC<Props> = ({
   setOpenConfirm,
   openConfirm,
 }) => {
+  const topsters = useContext(UserContext);
   const [errors, setErrors] = React.useState<{ title: string }>({
     title: '',
   });

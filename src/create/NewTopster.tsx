@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { withStyles } from '@material-ui/core/styles';
 import NewTopsterNav from './NewTopsterNav';
@@ -13,6 +13,7 @@ import DraggableTopsterContainer from './DraggableTopsterContainer';
 import styles from '../create/create-styles/NewTopsterStyles';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
+import { UserContext } from '../main/UserContext';
 
 interface Props {
   saveTopsters: (input: TopsterTemplate) => void;
@@ -22,7 +23,6 @@ interface Props {
     location: any;
   };
   match: { params: any };
-  topsters: TopsterTemplate[];
   classes: {
     root: string;
     hide: string;
@@ -39,16 +39,18 @@ const NewTopster: React.FC<Props> = ({
   saveTopsters,
   history,
   match,
-  topsters,
   classes,
 }) => {
+  const topsters = useContext(UserContext);
   const retrieveTitle = () => {
     for (let [index, item] of topsters.entries()) {
       if (item.id === match.params.id) return topsters[index].title;
     }
   };
   const editTitle = match.params.id ? retrieveTitle() : '';
-  let matchingAlbums = topsters.filter((item) => item.id === match.params.id);
+  let matchingAlbums = topsters.filter(
+    (item: TopsterTemplate) => item.id === match.params.id
+  );
 
   const editAlbums =
     match.params.id && matchingAlbums.length ? matchingAlbums[0].albums : [];
@@ -102,7 +104,6 @@ const NewTopster: React.FC<Props> = ({
         setOpenDrawer={setOpenDrawer}
         history={history}
         setNewTopsters={setNewTopsters}
-        topsters={topsters}
         saveTopsters={saveTopsters}
         newTopsterName={newTopsterName}
         newTopsters={newTopsters}

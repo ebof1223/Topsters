@@ -4,8 +4,9 @@ import AddIcon from '@material-ui/icons/Add';
 import UserTopsters from './UserTopsters';
 import { CSSTransition } from 'react-transition-group';
 import styles from './main-styles/UserTopstersSection-styles';
-import { useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { TopsterTemplate } from '../interface';
+import { UserContext } from './UserContext';
 
 interface Props {
   classes: {
@@ -24,7 +25,6 @@ interface Props {
   deleteDialog: boolean;
   setDeleteDialog: (input: boolean) => void;
   setToBeDeleted: (input: string) => void;
-  topsters: TopsterTemplate[];
 }
 const UserTopstersSection: React.FC<Props> = ({
   classes,
@@ -32,13 +32,12 @@ const UserTopstersSection: React.FC<Props> = ({
   deleteDialog,
   setDeleteDialog,
   setToBeDeleted,
-  topsters,
 }) => {
   const elementRef: React.MutableRefObject<HTMLDivElement> = useRef();
   useEffect(() => {
     elementRef.current && elementRef.current.scrollIntoView();
   }, []);
-
+  const topsters = useContext(UserContext);
   return (
     <section className={classes.sectionWrapper}>
       <div className={classes.topsterTitleContainer}>

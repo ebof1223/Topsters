@@ -1,5 +1,5 @@
 import { TopsterTemplate } from '../interface';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from './main-styles/Main-styles';
@@ -8,13 +8,13 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import RecommendedSection from './RecommendedSection';
 import UserTopstersSection from './UserTopstersSection';
 import BookmarksSection from './BookmarksSection';
+import { UserContext } from './UserContext';
 
 interface Props {
   classes: {
     root: string;
     BackButton: string;
   };
-  topsters: TopsterTemplate[];
   history: {
     push: (input: string) => void;
   };
@@ -25,7 +25,6 @@ interface Props {
 }
 
 const Main: React.FC<Props> = ({
-  topsters,
   history,
   setTopsters,
   classes,
@@ -35,9 +34,12 @@ const Main: React.FC<Props> = ({
 }) => {
   const [deleteDialog, setDeleteDialog] = useState(false);
   const [toBeDeleted, setToBeDeleted] = useState(null);
+  let test = useContext(UserContext);
 
   const handleDeleteConfirmation = () => {
-    let newTopster = topsters.filter((item) => item.id !== toBeDeleted);
+    let newTopster = test.filter(
+      (item: TopsterTemplate) => item.id !== toBeDeleted
+    );
     setTopsters([...newTopster]);
     setDeleteDialog(!deleteDialog);
   };
@@ -48,7 +50,6 @@ const Main: React.FC<Props> = ({
       setOpenLandingModal(true);
     }, 100);
   };
-
   return (
     <>
       <div className={classes.root}>
@@ -67,7 +68,6 @@ const Main: React.FC<Props> = ({
           deleteDialog={deleteDialog}
           setDeleteDialog={setDeleteDialog}
           setToBeDeleted={setToBeDeleted}
-          topsters={topsters}
         />
         <BookmarksSection bookmarks={bookmarks} history={history} />
       </div>

@@ -11,6 +11,7 @@ import './main-styles/Page.css';
 import Page from './Page';
 import Landing from '../landing/Landing';
 import defaultTopsters from './defaultTopsters';
+import { UserContext } from './UserContext';
 
 const App: React.FC = () => {
   const savedTopsters = JSON.parse(
@@ -64,169 +65,159 @@ const App: React.FC = () => {
     setTopsters([...topsters, newTopster]);
   };
   return (
-    <Route
-      render={({ location }) => (
-        <TransitionGroup>
-          <CSSTransition classNames="page" timeout={500} key={location.key}>
-            <Switch location={location}>
-              <Route
-                exact
-                path="/"
-                render={(routeProps) => (
-                  <Page>
-                    <Landing
-                      {...routeProps}
-                      openLandingModal={openLandingModal}
-                      setOpenLandingModal={setOpenLandingModal}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/home"
-                render={(routeProps) => (
-                  <Page>
-                    <Main
-                      recommended={recommended}
-                      topsters={topsters}
-                      {...routeProps}
-                      setTopsters={setTopsters}
-                      setOpenLandingModal={setOpenLandingModal}
-                      bookmarks={bookmarks}
-                    />
-                  </Page>
-                )}
-              />
+    <UserContext.Provider value={topsters}>
+      <Route
+        render={({ location }) => (
+          <TransitionGroup>
+            <CSSTransition classNames="page" timeout={500} key={location.key}>
+              <Switch location={location}>
+                <Route
+                  exact
+                  path="/"
+                  render={(routeProps) => (
+                    <Page>
+                      <Landing
+                        {...routeProps}
+                        openLandingModal={openLandingModal}
+                        setOpenLandingModal={setOpenLandingModal}
+                      />
+                    </Page>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/home"
+                  render={(routeProps) => (
+                    <Page>
+                      <Main
+                        recommended={recommended}
+                        {...routeProps}
+                        setTopsters={setTopsters}
+                        setOpenLandingModal={setOpenLandingModal}
+                        bookmarks={bookmarks}
+                      />
+                    </Page>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/topsters/new"
+                  render={(routeProps) => (
+                    <Page>
+                      <NewTopster saveTopsters={saveTopsters} {...routeProps} />
+                    </Page>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/recommended/:id"
+                  render={(routeProps) => (
+                    <Page>
+                      <Topster
+                        title={
+                          findRecommendedTopsters(routeProps.match.params.id)
+                            .title
+                        }
+                        id={
+                          findRecommendedTopsters(routeProps.match.params.id).id
+                        }
+                        albums={
+                          findRecommendedTopsters(routeProps.match.params.id)
+                            .albums
+                        }
+                        recommended={recommended}
+                        {...routeProps}
+                        bookmarks={bookmarks}
+                        setBookmarks={setBookmarks}
+                      />
+                    </Page>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/bookmarks"
+                  render={(routeProps) => (
+                    <Page>
+                      <Bookmarks
+                        {...routeProps}
+                        bookmarks={bookmarks}
+                        setBookmarks={setBookmarks}
+                      />
+                    </Page>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/bookmarks/:id"
+                  render={(routeProps) => (
+                    <Page>
+                      <Topster
+                        title={
+                          findRecommendedTopsters(routeProps.match.params.id)
+                            .title
+                        }
+                        id={
+                          findRecommendedTopsters(routeProps.match.params.id).id
+                        }
+                        albums={
+                          findRecommendedTopsters(routeProps.match.params.id)
+                            .albums
+                        }
+                        recommended={recommended}
+                        {...routeProps}
+                        bookmarks={bookmarks}
+                        setBookmarks={setBookmarks}
+                      />
+                    </Page>
+                  )}
+                />
 
-              <Route
-                exact
-                path="/topsters/new"
-                render={(routeProps) => (
-                  <Page>
-                    <NewTopster
-                      saveTopsters={saveTopsters}
-                      {...routeProps}
-                      topsters={topsters}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/recommended/:id"
-                render={(routeProps) => (
-                  <Page>
-                    <Topster
-                      title={
-                        findRecommendedTopsters(routeProps.match.params.id)
-                          .title
-                      }
-                      id={
-                        findRecommendedTopsters(routeProps.match.params.id).id
-                      }
-                      albums={
-                        findRecommendedTopsters(routeProps.match.params.id)
-                          .albums
-                      }
-                      topsters={topsters}
-                      recommended={recommended}
-                      {...routeProps}
-                      bookmarks={bookmarks}
-                      setBookmarks={setBookmarks}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/bookmarks"
-                render={(routeProps) => (
-                  <Page>
-                    <Bookmarks
-                      {...routeProps}
-                      bookmarks={bookmarks}
-                      setBookmarks={setBookmarks}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/bookmarks/:id"
-                render={(routeProps) => (
-                  <Page>
-                    <Topster
-                      title={
-                        findRecommendedTopsters(routeProps.match.params.id)
-                          .title
-                      }
-                      id={
-                        findRecommendedTopsters(routeProps.match.params.id).id
-                      }
-                      albums={
-                        findRecommendedTopsters(routeProps.match.params.id)
-                          .albums
-                      }
-                      topsters={topsters}
-                      recommended={recommended}
-                      {...routeProps}
-                      bookmarks={bookmarks}
-                      setBookmarks={setBookmarks}
-                    />
-                  </Page>
-                )}
-              />
-
-              <Route
-                exact
-                path="/topsters/:id"
-                render={(routeProps) => (
-                  <Page>
-                    <Topster
-                      title={findUserTopsters(routeProps.match.params.id).title}
-                      id={findUserTopsters(routeProps.match.params.id).id}
-                      albums={
-                        findUserTopsters(routeProps.match.params.id).albums
-                      }
-                      topsters={topsters}
-                      {...routeProps}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                exact
-                path="/topsters/edit/:id"
-                render={(routeProps) => (
-                  <Page>
-                    <NewTopster
-                      saveTopsters={saveTopsters}
-                      {...routeProps}
-                      topsters={topsters}
-                    />
-                  </Page>
-                )}
-              />
-              <Route
-                render={(routeProps) => (
-                  <Page>
-                    <Main
-                      recommended={recommended}
-                      topsters={topsters}
-                      {...routeProps}
-                      setTopsters={setTopsters}
-                      setOpenLandingModal={setOpenLandingModal}
-                      bookmarks={bookmarks}
-                    />
-                  </Page>
-                )}
-              />
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
-      )}
-    />
+                <Route
+                  exact
+                  path="/topsters/:id"
+                  render={(routeProps) => (
+                    <Page>
+                      <Topster
+                        title={
+                          findUserTopsters(routeProps.match.params.id).title
+                        }
+                        id={findUserTopsters(routeProps.match.params.id).id}
+                        albums={
+                          findUserTopsters(routeProps.match.params.id).albums
+                        }
+                        {...routeProps}
+                      />
+                    </Page>
+                  )}
+                />
+                <Route
+                  exact
+                  path="/topsters/edit/:id"
+                  render={(routeProps) => (
+                    <Page>
+                      <NewTopster saveTopsters={saveTopsters} {...routeProps} />
+                    </Page>
+                  )}
+                />
+                <Route
+                  render={(routeProps) => (
+                    <Page>
+                      <Main
+                        recommended={recommended}
+                        {...routeProps}
+                        setTopsters={setTopsters}
+                        setOpenLandingModal={setOpenLandingModal}
+                        bookmarks={bookmarks}
+                      />
+                    </Page>
+                  )}
+                />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )}
+      />
+    </UserContext.Provider>
   );
 };
 
