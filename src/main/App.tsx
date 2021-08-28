@@ -138,7 +138,6 @@ const App: React.FC = () => {
                   </Page>
                 )}
               />
-              {/* bookmarks */}
               <Route
                 exact
                 path="/bookmarks"
