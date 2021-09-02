@@ -1,5 +1,5 @@
-// import sizes from './sizes';
 import { createStyles } from '@material-ui/styles';
+
 const styles = createStyles({
   Album: {
     background: '#444',
@@ -12,15 +12,6 @@ const styles = createStyles({
     '&:hover': {
       cursor: 'pointer',
     },
-    // [sizes.down('lg')]: {
-    //   width: '25%',
-    // },
-    // [sizes.down('md')]: {
-    //   width: '50%',
-    // },
-    // [sizes.down('xs')]: {
-    //   width: '100%',
-    // },
   },
   SelectedAlbum: {
     background: '#444',

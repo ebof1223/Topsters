@@ -1,14 +1,16 @@
-import { withStyles } from '@material-ui/styles';
-import { AlbumTemplate, TopsterTemplate } from '../interface';
-import { Paper } from '@material-ui/core';
 import { useContext, useEffect, useState } from 'react';
-import Tooltip from '@material-ui/core/Tooltip';
+
 import Album from './Components/Album/Album';
-import Navbar from './Components/Navbar/Navbar';
-import styles from './TopsterStyles';
+import { AlbumTemplate, TopsterTemplate } from '../../App/Constants/interface';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { Paper } from '@material-ui/core';
+import Navbar from './Components/Navbar/Navbar';
+import styles from './TopsterStyles';
+import Tooltip from '@material-ui/core/Tooltip';
 import { UserContext } from '../Home/Sections/UserTopsters/Hooks/UserContext';
+import { withStyles } from '@material-ui/styles';
+
 interface Props {
   title: string;
   id: string;
