@@ -1,7 +1,8 @@
 import React from 'react';
-import { withStyles } from '@material-ui/styles';
+
 import { Paper } from '@material-ui/core';
 import styles from './AlbumStyles';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   cover: string;

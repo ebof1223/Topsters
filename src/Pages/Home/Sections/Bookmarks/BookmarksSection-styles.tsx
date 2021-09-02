@@ -3,7 +3,8 @@ import sizes from '../../../../App/Constants/sizes';
 
 const styles = createStyles({
   sectionWrapper: {
-    margin: '0 auto',
+    margin: '-5rem auto 0 auto',
+    transform: 'scale(0.80)',
     [sizes.down('xs')]: {
       gridArea: 'bookmarks',
     },

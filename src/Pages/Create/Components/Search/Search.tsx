@@ -94,15 +94,14 @@ const Search: React.FC<Props> = ({
     setResults([]);
     setIsLoading(true);
     setNoResults(false);
-    var albumsArrayCopy = [];
+    let albumsArrayCopy = [];
     try {
       await axios
         .get(
           `${LASTFM_API_URL}?method=artist.gettopalbums&artist=${artist}&api_key=${API_KEY}&format=json&autocorrect[0|1]`
         )
         .then((res) => {
-          console.log('this is our log', res.data.topalbums.album);
-          var albumsArray = res.data.topalbums.album.filter(
+          const albumsArray = res.data.topalbums.album.filter(
             (item: AlbumTemplate) => item.image[3]['#text']
           );
           return albumsArray;
@@ -110,7 +109,7 @@ const Search: React.FC<Props> = ({
 
         .then(async (albumsArray) => {
           for (let album of albumsArray) {
-            let res = await axios.get(
+            const res = await axios.get(
               `${LASTFM_API_URL}?method=album.getinfo&api_key=${API_KEY}&artist=${album.artist.name}&album=${album.name}&format=json`
             );
             if (

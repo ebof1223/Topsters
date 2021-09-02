@@ -43,13 +43,16 @@ const NewTopster: React.FC<Props> = ({
   classes,
 }) => {
   const topsters = useContext(UserContext);
+
   const retrieveTitle = () => {
     for (let [index, item] of topsters.entries()) {
       if (item.id === match.params.id) return topsters[index].title;
     }
   };
+
   const editTitle = match.params.id ? retrieveTitle() : '';
-  let matchingAlbums = topsters.filter(
+
+  const matchingAlbums = topsters.filter(
     (item: TopsterTemplate) => item.id === match.params.id
   );
 

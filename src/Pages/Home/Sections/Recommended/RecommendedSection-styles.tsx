@@ -5,7 +5,7 @@ const styles = createStyles({
   sectionWrapper: {
     gridColumn: '1/5',
     margin: '0 auto',
-
+    transform: 'scale(0.85)',
     [sizes.down('xs')]: {
       margin: '2rem auto',
       gridArea: 'recommended',
