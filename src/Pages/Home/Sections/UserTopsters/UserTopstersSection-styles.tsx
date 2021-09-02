@@ -4,7 +4,7 @@ import sizes from '../../../../App/Constants/sizes';
 const styles = createStyles({
   sectionWrapper: {
     gridColumn: '2/3',
-    margin: '-5rem auto 0 auto',
+    marginTop: '-5rem',
     transform: 'scale(0.80)',
     [sizes.down('xs')]: {
       gridArea: 'topsters',
