@@ -1,9 +1,12 @@
+import axios from 'axios';
+import { useEffect, useRef, useState } from 'react';
+
+import { AlbumTemplate } from '../../../../App/Constants/interface';
 import styles from './SearchStyles';
 import { withStyles } from '@material-ui/styles';
-import axios from 'axios';
-import { AlbumTemplate } from '../interface';
-import { useEffect, useRef, useState } from 'react';
+
 const LASTFM_API_URL = 'https://ws.audioscrobbler.com/2.0/';
+
 interface Props {
   classes: {
     root: string;
