@@ -1,17 +1,18 @@
 import { Route, Switch } from 'react-router-dom';
-import recommended from '../Pages/Home/Sections/Recommended/Data/RecommendedData';
-import { useState, useEffect } from 'react';
-import { TopsterTemplate } from './Constants/interface.js';
-import Bookmarks from '../Pages/Bookmarks/';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Topster from '../Pages/Topster/Topster';
-import Main from '../Pages/Home/Home';
-import NewTopster from '../Pages/Create/NewTopster';
-import './main-styles/Page.css';
-import Page from '../Pages/Page';
-import Landing from '../Pages/Landing/Landing';
+import { useState, useEffect } from 'react';
+
+import Bookmarks from '../Pages/Bookmarks/';
 import defaultTopsters from '../Pages/Home/Sections/UserTopsters/Data/DefaultTopsters';
+import Landing from '../Pages/Landing/Landing';
+import NewTopster from '../Pages/Create/NewTopster';
+import Main from '../Pages/Home/Home';
+import Page from '../Pages/Page';
+import recommended from '../Pages/Home/Sections/Recommended/Data/RecommendedData';
+import { TopsterTemplate } from './Constants/interface.js';
+import Topster from '../Pages/Topster/Topster';
 import { UserContext } from '../Pages/Home/Sections/UserTopsters/Hooks/UserContext';
+import '../Pages/Page.css';
 
 const App: React.FC = () => {
   const savedTopsters = JSON.parse(
