@@ -1,13 +1,17 @@
 import React, { useContext } from 'react';
-import { AlbumTemplate, TopsterTemplate } from '../interface';
+
+import {
+  AlbumTemplate,
+  TopsterTemplate,
+} from '../../../../../App/Constants/interface';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
+import CharacterCounter from './SaveFeature/CharacterCounter';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import CharacterCounter from './SaveFeature/CharacterCounter';
+import TextField from '@material-ui/core/TextField';
 import { UserContext } from '../../../../Home/Sections/UserTopsters/Hooks/UserContext';
 
 interface Props {
@@ -20,7 +24,6 @@ interface Props {
     push: (input: string) => void;
   };
   saveTopsters: (input: TopsterTemplate) => void;
-  //FICXCC
   setCurrentNode: (input: any) => void;
   newTopstersHistory: any;
   setOpenConfirm: (i: boolean) => void;
