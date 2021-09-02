@@ -1,5 +1,5 @@
-import { withStyles } from '@material-ui/styles';
 import styles from './ResultsItemStyles';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   cover: string;
