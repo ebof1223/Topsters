@@ -1,7 +1,7 @@
-import { withStyles } from '@material-ui/styles';
+import image from './Images/landing.jpg';
+import LoginModule from './Components/WelcomeModule/WelcomeModule';
 import styles from './LandingStyles';
-import image from './landing-styles/landing.jpg';
-import LoginModule from './Components/Welcome Module/WelcomeModule';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {

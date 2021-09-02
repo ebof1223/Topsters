@@ -1,5 +1,5 @@
 import { createStyles } from '@material-ui/styles';
-import image from './landing.jpg';
+import image from './Images/landing.jpg';
 
 const styles = createStyles({
   '@keyframes infiniteScrollBg': {

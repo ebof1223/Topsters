@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { withStyles } from '@material-ui/styles';
-import Tooltip from '@material-ui/core/Tooltip';
-import styles from './NavbarStyles';
+
 import EditIcon from '@material-ui/icons/Edit';
-import HomeIcon from '@material-ui/icons/Home';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import ToggleBookmarkSnackBar from './ToggleBookmarkSnackBar';
-import { TopsterTemplate } from '../interface';
+import HomeIcon from '@material-ui/icons/Home';
+import styles from './NavbarStyles';
 import ToggleBookmarkExceededSnackBar from '../SnackBars/ToggleBookmarkExceededSnackBar';
+import ToggleBookmarkSnackBar from '../SnackBars/ToggleBookmarkSnackBar';
+import Tooltip from '@material-ui/core/Tooltip';
+import { TopsterTemplate } from '../../../../App/Constants/interface';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {

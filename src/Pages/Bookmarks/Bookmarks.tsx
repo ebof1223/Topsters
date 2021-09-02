@@ -1,12 +1,12 @@
-import { Tooltip } from '@material-ui/core';
-import { withStyles } from '@material-ui/styles';
 import { arrayMove } from 'react-sortable-hoc';
 
-import { TopsterTemplate } from '../../App/Constants/interface';
-import HomeIcon from '@material-ui/icons/Home';
-import styles from './Bookmarks-styles';
 import BookmarksContainer from './Components/DraggableField';
+import HomeIcon from '@material-ui/icons/Home';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import styles from './Bookmarks-styles';
+import { Tooltip } from '@material-ui/core';
+import { TopsterTemplate } from '../../App/Constants/interface';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {
