@@ -1,4 +1,4 @@
-import styles from './create-styles/SearchStyles';
+import styles from './SearchStyles';
 import { withStyles } from '@material-ui/styles';
 import axios from 'axios';
 import { AlbumTemplate } from '../interface';

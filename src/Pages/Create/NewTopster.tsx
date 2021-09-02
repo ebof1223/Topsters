@@ -1,19 +1,19 @@
 import { useContext, useEffect, useState } from 'react';
 import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { withStyles } from '@material-ui/core/styles';
-import NewTopsterNav from './NewTopsterNav';
-import Search from './Search';
+import NewTopsterNav from './Components/Navbar/Nav';
+import Search from './Components/Search/Search';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import Results from './Results';
-import DraggableTopsterContainer from './DraggableTopsterContainer';
-import styles from '../create/create-styles/NewTopsterStyles';
+import Results from './Components/Results/ResultsField';
+import DraggableTopsterContainer from './Components/Topster Grid/DraggableField';
+import styles from './NewTopsterStyles';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
-import { UserContext } from '../main/UserContext';
+import { UserContext } from '../Home/Sections/UserTopsters/Hooks/UserContext';
 
 interface Props {
   saveTopsters: (input: TopsterTemplate) => void;

@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/styles';
-import styles from './main-styles/BookmarksSection-styles';
+import styles from './BookmarksSection-styles';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import { Tooltip } from '@material-ui/core';
 import { AlbumTemplate, TopsterTemplate } from '../interface';

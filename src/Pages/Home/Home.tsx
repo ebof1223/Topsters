@@ -2,13 +2,13 @@ import { TopsterTemplate } from '../interface';
 import { useContext, useState } from 'react';
 import { withStyles } from '@material-ui/styles';
 import Tooltip from '@material-ui/core/Tooltip';
-import styles from './main-styles/Main-styles';
-import DeleteModal from './DeleteModal';
+import styles from './Home-styles';
+import DeleteModal from './Sections/UserTopsters/Components/Delete Modal/DeleteModal';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import RecommendedSection from './RecommendedSection';
-import UserTopstersSection from './UserTopstersSection';
-import BookmarksSection from './BookmarksSection';
-import { UserContext } from './UserContext';
+import RecommendedSection from './Sections/Recommended/RecommendedSection';
+import UserTopstersSection from './Sections/UserTopsters/UserTopstersSection';
+import BookmarksSection from './Sections/Bookmarks/BookmarksSection';
+import { UserContext } from './Sections/UserTopsters/Hooks/UserContext';
 
 interface Props {
   classes: {

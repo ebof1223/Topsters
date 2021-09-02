@@ -1,6 +1,6 @@
 import { Button } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
-import useStyles from './landing-styles/LoginModuleStyles';
+import useStyles from './WelcomeModuleStyles';
 
 interface Props {
   history: any;

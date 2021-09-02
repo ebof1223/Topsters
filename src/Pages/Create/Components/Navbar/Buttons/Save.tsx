@@ -7,8 +7,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import CharacterCounter from './CharacterCounter';
-import { UserContext } from '../main/UserContext';
+import CharacterCounter from './SaveFeature/CharacterCounter';
+import { UserContext } from '../../../../Home/Sections/UserTopsters/Hooks/UserContext';
 
 interface Props {
   setNewTopsterName: (input: string) => void;

@@ -1,12 +1,12 @@
 import { Fab, Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import AddIcon from '@material-ui/icons/Add';
-import UserTopsters from './UserTopsters';
+import UserTopsters from './Components/UserTopsterElement/UserTopsterElement';
 import { CSSTransition } from 'react-transition-group';
-import styles from './main-styles/UserTopstersSection-styles';
+import styles from './UserTopstersSection-styles';
 import { useContext, useEffect, useRef } from 'react';
 import { TopsterTemplate } from '../interface';
-import { UserContext } from './UserContext';
+import { UserContext } from './Hooks/UserContext';
 
 interface Props {
   classes: {

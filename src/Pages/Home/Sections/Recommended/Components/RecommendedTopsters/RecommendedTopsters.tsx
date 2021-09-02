@@ -1,9 +1,13 @@
 import { withStyles } from '@material-ui/styles';
-import { AlbumTemplate, TopsterTemplate } from '../interface';
-import Paper from '@material-ui/core/Paper';
-import styles from './main-styles/RecommendedTopsters-styles';
-import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+
+import {
+  AlbumTemplate,
+  TopsterTemplate,
+} from '../../../../../../App/Constants/interface';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import Paper from '@material-ui/core/Paper';
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import styles from './RecommendedTopsters-styles';
 
 interface Props {
   classes: {

@@ -1,10 +1,10 @@
 import { AlbumTemplate } from '../interface';
 import { withStyles } from '@material-ui/styles';
-import styles from './create-styles/ResultsStyles';
-import ResultAlbum from './ResultAlbum';
+import styles from './ResultsFieldStyles';
+import ResultAlbum from './ResultsItem';
 import { useState } from 'react';
-import TopsterDuplicateSnackBar from './TopsterDuplicateSnackBar';
-import TopsterExceededSnackBar from './TopsterExceededSnackBar';
+import TopsterDuplicateSnackBar from '../SnackBars/TopsterDuplicate';
+import TopsterExceededSnackBar from '../SnackBars/TopsterAlbumCountExceeded';
 
 interface Props {
   classes: {

@@ -3,12 +3,12 @@ import { AlbumTemplate, TopsterTemplate } from '../interface';
 import { Paper } from '@material-ui/core';
 import { useContext, useEffect, useState } from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
-import Album from './Album';
-import Navbar from './Navbar';
-import styles from './topster-styles/TopsterStyles';
+import Album from './Components/Album/Album';
+import Navbar from './Components/Navbar/Navbar';
+import styles from './TopsterStyles';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import { UserContext } from '../Home/UserContext';
+import { UserContext } from '../Home/Sections/UserTopsters/Hooks/UserContext';
 interface Props {
   title: string;
   id: string;

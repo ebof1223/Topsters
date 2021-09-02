@@ -1,7 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
 import { Paper } from '@material-ui/core';
-import styles from './topster-styles/AlbumStyles';
+import styles from './AlbumStyles';
 
 interface Props {
   cover: string;

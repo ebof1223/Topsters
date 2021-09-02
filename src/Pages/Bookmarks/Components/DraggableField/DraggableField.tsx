@@ -1,8 +1,9 @@
-import { withStyles } from '@material-ui/styles';
-import { TopsterTemplate } from '../../App/Constants/interface';
-import styles from './bookmarks-styles/BookmarksContainer-styles';
 import { SortableContainer } from 'react-sortable-hoc';
-import DraggableBookmark from './DraggableBookmark';
+
+import DraggableBookmark from '../DraggableElement/DraggableBookmark';
+import styles from './DraggableField-styles';
+import { TopsterTemplate } from '../../../../App/Constants/interface';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {

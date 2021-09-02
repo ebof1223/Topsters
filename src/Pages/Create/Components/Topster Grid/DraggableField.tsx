@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import { SortableContainer } from 'react-sortable-hoc';
 import DraggableAlbum from './DraggableAlbum';
 import { AlbumTemplate } from '../interface';
-import styles from './create-styles/DraggableTopsterContainer';
+import styles from './DraggableFieldStyles';
 import DoublyLinkedList from 'dbly-linked-list';
 
 type Node = {

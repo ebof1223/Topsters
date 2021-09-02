@@ -1,7 +1,11 @@
-import { withStyles } from '@material-ui/styles';
 import { SortableElement } from 'react-sortable-hoc';
-import { AlbumTemplate, TopsterTemplate } from '../../App/Constants/interface';
-import styles from './bookmarks-styles/DraggableBookmark-styles';
+
+import {
+  AlbumTemplate,
+  TopsterTemplate,
+} from '../../../../App/Constants/interface';
+import { withStyles } from '@material-ui/styles';
+import styles from './DraggableBookmark-styles';
 
 interface Props {
   classes: {

@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/styles';
 import { AlbumTemplate } from '../interface';
 import Paper from '@material-ui/core/Paper';
-import styles from './main-styles/UserTopsters-styles';
+import styles from './UserTopsterElement-styles';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 interface Props {
@@ -60,7 +60,6 @@ const UserTopsters: React.FC<Props> = ({
           {Recommended}
         </div>
       </Paper>
-      {/* <div className={classes.title}>{title}</div> */}
     </div>
   );
 };

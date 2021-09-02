@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/styles';
 import { useLayoutEffect, useState } from 'react';
-import styles from './create-styles/CharacterCounterStyles';
+import styles from './CharacterCounterStyles';
 
 interface Props {
   newTopsterNameLength: number;
