@@ -1,19 +1,20 @@
-import { useContext, useEffect, useState } from 'react';
-import { AlbumTemplate, TopsterTemplate } from '../interface';
-import { withStyles } from '@material-ui/core/styles';
-import NewTopsterNav from './Components/Navbar/Nav';
-import Search from './Components/Search/Search';
-import clsx from 'clsx';
-import Drawer from '@material-ui/core/Drawer';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import Results from './Components/Results/ResultsField';
-import DraggableTopsterContainer from './Components/Topster Grid/DraggableField';
-import styles from './NewTopsterStyles';
 import arrayMove from 'array-move';
 import DoublyLinkedList from 'dbly-linked-list';
+import clsx from 'clsx';
+import { useContext, useEffect, useState } from 'react';
+
+import { AlbumTemplate, TopsterTemplate } from '../../App/Constants/interface';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import Divider from '@material-ui/core/Divider';
+import DraggableField from './Components/TopsterGrid/DraggableField';
+import Drawer from '@material-ui/core/Drawer';
+import IconButton from '@material-ui/core/IconButton';
+import NewTopsterNav from './Components/Navbar/Nav';
+import Results from './Components/Results/ResultsField';
+import Search from './Components/Search/Search';
+import styles from './NewTopsterStyles';
 import { UserContext } from '../Home/Sections/UserTopsters/Hooks/UserContext';
+import { withStyles } from '@material-ui/core/styles';
 
 interface Props {
   saveTopsters: (input: TopsterTemplate) => void;
@@ -170,7 +171,7 @@ const NewTopster: React.FC<Props> = ({
         >
           <div className={classes.drawerHeader} />
           <div className={classes.background}>
-            <DraggableTopsterContainer
+            <DraggableField
               axis="xy"
               newTopsters={newTopsters}
               setNewTopsters={setNewTopsters}
