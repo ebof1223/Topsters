@@ -1,6 +1,6 @@
 import { createStyles } from '@material-ui/styles';
-import sizes from '../../../../App/Constants/sizes';
 import drawerWidth from '../../../../App/Constants/drawerwidth';
+import sizes from '../../../../App/Constants/sizes';
 
 const styles = (theme: {
   transitions: {
