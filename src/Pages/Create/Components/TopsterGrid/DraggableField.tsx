@@ -1,10 +1,11 @@
-import { Paper } from '@material-ui/core';
-import { withStyles } from '@material-ui/styles';
-import { SortableContainer } from 'react-sortable-hoc';
-import DraggableAlbum from './DraggableAlbum';
-import { AlbumTemplate } from '../interface';
-import styles from './DraggableFieldStyles';
 import DoublyLinkedList from 'dbly-linked-list';
+import { SortableContainer } from 'react-sortable-hoc';
+
+import { AlbumTemplate } from '../../../../App/Constants/interface';
+import DraggableAlbum from './DraggableAlbum';
+import { Paper } from '@material-ui/core';
+import styles from './DraggableFieldStyles';
+import { withStyles } from '@material-ui/styles';
 
 type Node = {
   data: AlbumTemplate[] | null;
