@@ -1,8 +1,11 @@
-import { withStyles } from '@material-ui/styles';
-import styles from './BookmarksSection-styles';
+import {
+  AlbumTemplate,
+  TopsterTemplate,
+} from '../../../../App/Constants/interface';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
+import styles from './BookmarksSection-styles';
 import { Tooltip } from '@material-ui/core';
-import { AlbumTemplate, TopsterTemplate } from '../interface';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {

@@ -1,11 +1,12 @@
 import React from 'react';
+import Carousel from 'react-elastic-carousel';
+
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { withStyles } from '@material-ui/styles';
 import RecommendedTopsters from './Components/RecommendedTopsters/RecommendedTopsters';
 import recommendedAll from './Data/RecommendedData';
-import { TopsterTemplate } from '../interface';
 import styles from './RecommendedSection-styles';
-import Carousel from 'react-elastic-carousel';
+import { TopsterTemplate } from '../../../../App/Constants/interface';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {
