@@ -1,8 +1,8 @@
-import { withStyles } from '@material-ui/styles';
-import { AlbumTemplate } from '../interface';
+import { AlbumTemplate } from '../../../../../../App/Constants/interface';
+import DeleteIcon from '@material-ui/icons/Delete';
 import Paper from '@material-ui/core/Paper';
 import styles from './UserTopsterElement-styles';
-import DeleteIcon from '@material-ui/icons/Delete';
+import { withStyles } from '@material-ui/styles';
 
 interface Props {
   classes: {

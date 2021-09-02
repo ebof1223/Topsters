@@ -7,10 +7,11 @@ import {
   ListItemAvatar,
   ListItemText,
 } from '@material-ui/core';
+import blue from '@material-ui/core/colors/blue';
 import CheckIcon from '@material-ui/icons/Check';
 import CloseIcon from '@material-ui/icons/Close';
-import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
+
 interface Props {
   deleteDialog: boolean;
   setDeleteDialog: (i: boolean) => void;
