@@ -57,10 +57,14 @@ const SaveButton: React.FC<Props> = ({
       albums: newTopsters,
     };
 
-    if (!newTopsterName) return setErrors({ title: 'Please enter a title' });
+    if (!newTopsterName.trim()) {
+      setNewTopsterName('');
+      return setErrors({ title: 'Please enter a title' });
+    }
 
-    let reg = /^[a-zA-Z0-9_ ]*$/;
+    const reg = /^[a-zA-Z0-9_ ]*$/;
 
+    //regex for valid characters (numbers and letters)
     if (!reg.test(newTopster.title))
       return setErrors({
         title:
@@ -71,6 +75,7 @@ const SaveButton: React.FC<Props> = ({
       return setErrors({
         title: 'Topsters must contain 9 albums',
       });
+
     if (newTopsterName.length > 20)
       return setErrors({ title: 'Topster names may not exceed 21 characters' });
 

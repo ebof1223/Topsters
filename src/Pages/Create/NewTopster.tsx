@@ -35,7 +35,9 @@ interface Props {
     background: string;
   };
 }
+
 var newTopstersHistory: any;
+
 const NewTopster: React.FC<Props> = ({
   saveTopsters,
   history,

@@ -24,6 +24,7 @@ const CharacterCounter: React.FC<Props> = ({
   const gray = circleLength - colored > 0 ? circleLength - colored : 0;
   const twitterBlue = 'rgb(29, 161, 242)';
 
+  //re-renders on every user character input to update fill on circle, indicating character counter
   useLayoutEffect(() => {
     setRingState({
       ringStyle: {
@@ -37,6 +38,7 @@ const CharacterCounter: React.FC<Props> = ({
       },
     });
   }, [circleLength, colored, gray, newTopsterNameLength]);
+
   return (
     <svg className={classes.root}>
       <circle r="15" cx="50%" cy="50%" stroke="lightgray"></circle>
