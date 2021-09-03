@@ -3,12 +3,13 @@ import sizes from '../../../../App/Constants/sizes';
 
 const styles = createStyles({
   outerContainer: {
-    margin: '3rem auto ',
+    margin: '2rem auto ',
     display: 'grid',
     overflow: 'none',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridAutoRows: 'repeat(3, 1fr)',
     gridGap: '1rem',
+    transform: 'scale(0.9)',
     [sizes.down('lg')]: {
       transform: 'scale(0.9)',
     },

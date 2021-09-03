@@ -12,7 +12,7 @@ const styles = createStyles({
   PriorityContainer: {
     alignSelf: 'center',
     position: 'relative',
-    marginTop: '10rem',
+    marginTop: '5rem',
     display: 'flex',
     justifyContent: 'space-between',
     width: '150px',
