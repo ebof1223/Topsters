@@ -45,10 +45,12 @@ const Search: React.FC<Props> = ({
   history,
   openConfirm,
 }) => {
+
   const focusSearch: React.MutableRefObject<any> = useRef();
   const overlay: React.MutableRefObject<any> = useRef();
   const searchBarXS: React.MutableRefObject<any> = useRef();
   const [isTyping, setIsTyping] = useState(false);
+  
   useEffect(() => {
     var timer: any;
     if (

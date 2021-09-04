@@ -29,21 +29,21 @@ const UpNext: React.FC<Props> = ({ classes, bookmarks, history }) => {
     <section className={classes.sectionWrapper}>
       <div className={classes.BookmarkTitle}>
         <h2 onClick={() => history.push(`/bookmarks/${bookmarks[0].id}`)}>
-          Up Next{' '}
+          Bookmarks{' '}
           <span className={classes.BookmarkCapacity}>
             <sup>{`${bookmarks.length}`}</sup> &frasl; <sub>9</sub>
           </span>
-        </h2>
+        </h2>{' '}
+        <Tooltip title="Rearrange">
+          <CompareArrowsIcon
+            className={classes.CompareArrowsIcon}
+            onClick={() => history.push('/bookmarks')}
+            color="primary"
+          />
+        </Tooltip>
       </div>
       {bookmarks.length ? (
         <div key={bookmarks[0].id} className={classes.bookmarkContainer}>
-          <Tooltip title="Rearrange">
-            <CompareArrowsIcon
-              className={classes.CompareArrowsIcon}
-              onClick={() => history.push('/bookmarks')}
-              color="primary"
-            />
-          </Tooltip>
           {bookmarks[0].albums.map((item: AlbumTemplate) => (
             <div
               onClick={() => history.push(`/bookmarks/${bookmarks[0].id}`)}
