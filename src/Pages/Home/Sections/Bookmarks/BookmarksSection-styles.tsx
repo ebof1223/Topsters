@@ -83,7 +83,11 @@ const styles = createStyles({
     marginBottom: '1rem',
     cursor: 'pointer',
   },
-  BookmarkCapacity: { fontSize: '1rem', marginLeft: '10px' },
+  BookmarkCapacity: {
+    fontSize: '1rem',
+    marginLeft: '10px',
+    [sizes.down('lg')]: { display: 'none', margin: '0 auto' },
+  },
 });
 
 export default styles;
