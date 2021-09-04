@@ -27,7 +27,7 @@ A music-based web application that fetches cover art via the ‘Last.fm’ API t
   * Verification, such as a character limit on titles, snackbar errors such as duplicate albums and album over-capacity.
   * Feed that displays recommended topsters (static), created topsters, and bookmarks.
   
-  # Notes
+  # Issues
   
   1. Search Speed
 
