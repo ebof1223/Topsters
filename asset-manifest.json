@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/topsters/static/css/main.339922db.chunk.css",
-    "main.js": "/topsters/static/js/main.632aeb3e.chunk.js",
-    "main.js.map": "/topsters/static/js/main.632aeb3e.chunk.js.map",
+    "main.js": "/topsters/static/js/main.f0be2837.chunk.js",
+    "main.js.map": "/topsters/static/js/main.f0be2837.chunk.js.map",
     "runtime-main.js": "/topsters/static/js/runtime-main.9614fb1f.js",
     "runtime-main.js.map": "/topsters/static/js/runtime-main.9614fb1f.js.map",
-    "static/js/2.2307a8ed.chunk.js": "/topsters/static/js/2.2307a8ed.chunk.js",
-    "static/js/2.2307a8ed.chunk.js.map": "/topsters/static/js/2.2307a8ed.chunk.js.map",
+    "static/js/2.6a1e4cd6.chunk.js": "/topsters/static/js/2.6a1e4cd6.chunk.js",
+    "static/js/2.6a1e4cd6.chunk.js.map": "/topsters/static/js/2.6a1e4cd6.chunk.js.map",
     "index.html": "/topsters/index.html",
     "static/css/main.339922db.chunk.css.map": "/topsters/static/css/main.339922db.chunk.css.map",
-    "static/js/2.2307a8ed.chunk.js.LICENSE.txt": "/topsters/static/js/2.2307a8ed.chunk.js.LICENSE.txt",
+    "static/js/2.6a1e4cd6.chunk.js.LICENSE.txt": "/topsters/static/js/2.6a1e4cd6.chunk.js.LICENSE.txt",
     "static/media/landing.cf842c59.jpg": "/topsters/static/media/landing.cf842c59.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9614fb1f.js",
-    "static/js/2.2307a8ed.chunk.js",
+    "static/js/2.6a1e4cd6.chunk.js",
     "static/css/main.339922db.chunk.css",
-    "static/js/main.632aeb3e.chunk.js"
+    "static/js/main.f0be2837.chunk.js"
   ]
 }
