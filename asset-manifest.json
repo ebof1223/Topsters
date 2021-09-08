@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/topsters/static/css/main.339922db.chunk.css",
-    "main.js": "/topsters/static/js/main.f0be2837.chunk.js",
-    "main.js.map": "/topsters/static/js/main.f0be2837.chunk.js.map",
-    "runtime-main.js": "/topsters/static/js/runtime-main.9614fb1f.js",
-    "runtime-main.js.map": "/topsters/static/js/runtime-main.9614fb1f.js.map",
-    "static/js/2.6a1e4cd6.chunk.js": "/topsters/static/js/2.6a1e4cd6.chunk.js",
-    "static/js/2.6a1e4cd6.chunk.js.map": "/topsters/static/js/2.6a1e4cd6.chunk.js.map",
-    "index.html": "/topsters/index.html",
-    "static/css/main.339922db.chunk.css.map": "/topsters/static/css/main.339922db.chunk.css.map",
-    "static/js/2.6a1e4cd6.chunk.js.LICENSE.txt": "/topsters/static/js/2.6a1e4cd6.chunk.js.LICENSE.txt",
-    "static/media/landing.cf842c59.jpg": "/topsters/static/media/landing.cf842c59.jpg"
+    "main.css": "/Topsters/static/css/main.339922db.chunk.css",
+    "main.js": "/Topsters/static/js/main.f0be2837.chunk.js",
+    "main.js.map": "/Topsters/static/js/main.f0be2837.chunk.js.map",
+    "runtime-main.js": "/Topsters/static/js/runtime-main.629f86c3.js",
+    "runtime-main.js.map": "/Topsters/static/js/runtime-main.629f86c3.js.map",
+    "static/js/2.5a384be2.chunk.js": "/Topsters/static/js/2.5a384be2.chunk.js",
+    "static/js/2.5a384be2.chunk.js.map": "/Topsters/static/js/2.5a384be2.chunk.js.map",
+    "index.html": "/Topsters/index.html",
+    "static/css/main.339922db.chunk.css.map": "/Topsters/static/css/main.339922db.chunk.css.map",
+    "static/js/2.5a384be2.chunk.js.LICENSE.txt": "/Topsters/static/js/2.5a384be2.chunk.js.LICENSE.txt",
+    "static/media/landing.cf842c59.jpg": "/Topsters/static/media/landing.cf842c59.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9614fb1f.js",
-    "static/js/2.6a1e4cd6.chunk.js",
+    "static/js/runtime-main.629f86c3.js",
+    "static/js/2.5a384be2.chunk.js",
     "static/css/main.339922db.chunk.css",
     "static/js/main.f0be2837.chunk.js"
   ]
