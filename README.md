@@ -1,6 +1,6 @@
 # Topsters 
 
-https://ebof1223.github.io/topsters/
+https://ebof1223.github.io/Topsters/
 
 Inspired by the social media trend of sharing your favoirte albums/artists in collage form. 
 
